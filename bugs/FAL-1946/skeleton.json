@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_d592dc5b36f5",
+  "skeleton_text": "MATCH (:HOLE_LABEL1{HOLE_PROP1:HOLE_VALUE1})-[r2:HOLE_RELTYPE1]->(n7:HOLE_LABEL2:HOLE_LABEL3{HOLE_PROP2:HOLE_VALUE2, HOLE_PROP3:HOLE_VALUE3}) CREATE (n7)<-[:HOLE_RELTYPE2]-() DETACH DELETE n7 RETURN n7",
+  "source_id": null,
+  "source_query_id": "neo4j#13596",
+  "holes": []
+}

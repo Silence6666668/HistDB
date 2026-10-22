@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_15ce0f130fbb",
+  "skeleton_text": "CALL {\n CREATE ()\n RETURN 0 AS x\n} MATCH ()--()\nRETURN 0",
+  "source_id": "FalkorDB/FalkorDB#621",
+  "source_query_id": "FalkorDB__FalkorDB__621__q001",
+  "holes": []
+}

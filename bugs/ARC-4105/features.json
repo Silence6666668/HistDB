@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_803f3b76279f",
+    "machine_name": "multiple_node_aliasing_in_return",
+    "description": "Returning both original node property and aggregated results from multiple nodes",
+    "tags": [
+      "return",
+      "alias",
+      "aggregation",
+      "multiple_nodes"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ed9e54a2f195",
+    "machine_name": "multiple_node_type_returns",
+    "description": "RETURN clause projects multiple nodes of different types (A and B) without aggregation or transformation, testing projection of heterogeneous node sets.",
+    "tags": [
+      "return",
+      "multiple_nodes",
+      "heterogeneous_types",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_8ea4ae4da028",
+    "machine_name": "variable_reuse_in_aggregation",
+    "description": "Reuses a variable defined in the MATCH clause within an aggregation function, testing variable scope and binding.",
+    "tags": [
+      "variable",
+      "scope",
+      "aggregation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_c1108365ba36",
+    "machine_name": "multi_label_node_pattern",
+    "description": "Node pattern with multiple labels in MATCH clause",
+    "tags": [
+      "node_pattern",
+      "label",
+      "match"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_e572971be0a7",
+    "machine_name": "return_aliased_variables",
+    "description": "Returns variables that have been renamed through aliasing in earlier clauses",
+    "tags": [
+      "return",
+      "aliasing",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_89900cfe97ca",
+    "machine_name": "list_comprehension_on_path_nodes",
+    "description": "Return list comprehension extracting property from all nodes in a path",
+    "tags": [
+      "list_comprehension",
+      "nodes",
+      "property_extraction",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

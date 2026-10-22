@@ -1,0 +1,42 @@
+schema_version: 1
+family_id: HISTDB-FAL-011
+title: Anonymous pattern predicate after WITH fails filtered-alias resolution
+paper_set: fixed-version-50
+dbms: falkordb
+symptom: a legal anonymous predicate raises an internal @anon alias error
+issue:
+  url: https://github.com/FalkorDB/FalkorDB/issues/1997
+  status: confirmed
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_anonymous_pattern_predicate_after_with_may_fail_with_filtered_alias_errors.md
+targets:
+  buggy:
+    id: falkordb-4.16.8
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Alice', age:30})-[:KNOWS {since:2020}]->(:Person {name:'Bob', age:25})"
+  query: |-
+    MATCH (n:Person)
+    WHERE n.age > 20
+    WITH n
+    WHERE ()<-[:KNOWS {since:2020}]-()
+    RETURN n.name AS name
+    ORDER BY n.name
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: error_matches
+  category: FalkorDB.QueryError
+  pattern: '(?i)Unable to resolve filtered alias.*@anon'
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: FalkorDB__FalkorDB__1318__q001
+  case_id: case_727540c351ff
+  source_artifacts:
+    - issue_reports/submitted/falkordb/2026-5-1/falkordb_anonymous_pattern_predicate_after_with_may_fail_with_filtered_alias_errors.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []

@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_ae22ebfc5108",
+  "skeleton_text": "MATCH (n:HOLE_LABEL) WHERE EXISTS { MATCH (n) } RETURN n.HOLE_PROPERTY as HOLE_ALIAS",
+  "source_id": "memgraph/memgraph#3412",
+  "source_query_id": "memgraph__memgraph__3412__q001",
+  "holes": []
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "feature_id": "ft_e7c1e4c61093",
+    "machine_name": "implicit_relationship_direction",
+    "description": "Specifies relationship directions explicitly in the pattern (e.g., <- and ->), testing direction handling in CREATE.",
+    "tags": [
+      "relationship",
+      "direction",
+      "explicit",
+      "pattern"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_07b90e555780",
+    "machine_name": "return_literal_with_order_by_only",
+    "description": "RETURN clause with a simple literal (0) followed only by an ORDER BY clause, without WHERE or other clauses, testing minimal query structure with ordering.",
+    "tags": [
+      "RETURN",
+      "literal",
+      "ORDER BY",
+      "minimal_query"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3a1d85e42e7b",
+    "machine_name": "aggregation_with_typo",
+    "description": "An aggregation function with a typographical error in its name, which may test error handling or case sensitivity in function names.",
+    "tags": [
+      "aggregation",
+      "typo",
+      "error_handling",
+      "function_name"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_73becd9806d4",
+    "machine_name": "count_aggregation_on_labeled_nodes",
+    "description": "Counts all nodes with a specific label using the COUNT aggregation function.",
+    "tags": [
+      "aggregation",
+      "count",
+      "label",
+      "node_count"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7af7c5d0b1c8",
+    "machine_name": "create_chain_pattern",
+    "description": "CREATE clause with a chain of nodes and relationships forming a linear path pattern.",
+    "tags": [
+      "create",
+      "path_pattern",
+      "linear_chain"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_4615b1850f0b",
+    "machine_name": "parameterized_create_with_set",
+    "description": "Create a node with properties set from a parameter map using SET clause",
+    "tags": [
+      "write",
+      "parameter",
+      "create",
+      "set",
+      "return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

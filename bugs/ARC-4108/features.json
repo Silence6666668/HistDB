@@ -1,0 +1,88 @@
+[
+  {
+    "feature_id": "ft_2e6724c2f455",
+    "machine_name": "label_only_pattern",
+    "description": "Use a node pattern with only a label and no properties or relationships.",
+    "tags": [
+      "pattern",
+      "label",
+      "no_properties"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7741cc920018",
+    "machine_name": "cartesian_product_of_nodes",
+    "description": "Cartesian product of 9 independent node matches, potentially generating exponential result size.",
+    "tags": [
+      "cartesian_product",
+      "performance",
+      "combinatorial"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_5ee52e6508db",
+    "machine_name": "merge_with_property_creation",
+    "description": "MERGE clause creating a node with a property that may not exist, potentially leaving other properties null",
+    "tags": [
+      "write",
+      "merge",
+      "property",
+      "null_semantics"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_4237c83d618b",
+    "machine_name": "merge_with_composite_key",
+    "description": "MERGE relationship using a composite key (type and property) to ensure uniqueness",
+    "tags": [
+      "merge",
+      "composite_key",
+      "relationship_uniqueness"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_95ac9ceaacae",
+    "machine_name": "node_alias_projection",
+    "description": "Project and return a node using an alias defined in the MATCH clause.",
+    "tags": [
+      "projection",
+      "alias",
+      "node_return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_50a69033d6a0",
+    "machine_name": "create_with_return_all",
+    "description": "Creating a node and immediately returning all its properties and labels with RETURN *, testing projection behavior after creation.",
+    "tags": [
+      "create",
+      "return",
+      "projection",
+      "immediate_return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

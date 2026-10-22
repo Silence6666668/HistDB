@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_dfb81c06b981",
+  "skeleton_text": "MATCH (u:User)-->(g:Group)-->(p:Parcel)\n WHERE u.uuuid = ${ bearer.uuid }\n AND g.uuid = ${ uuid } AND p.uuid = ${ parcel_id }\n WITH u, g, p\n OPTIONAL MATCH (g)<--(a:Assign)\n WITH DISTINCT u, g, p, a\n MATCH (tenant:User)-[rel:IS_TENANT]->(p)\n WHERE tenant.uuid = ${ tenant_id }\n AND ( (u)-->(a)-->(p) OR (u)-[:IS_OWNER]->(g) )\n RETURN DISTINCT rel AS is_in, tenant AS the_tenant, p AS parcel",
+  "source_id": "RedisGraph/RedisGraph#1268",
+  "source_query_id": "RedisGraph__RedisGraph__1268__q007",
+  "holes": []
+}

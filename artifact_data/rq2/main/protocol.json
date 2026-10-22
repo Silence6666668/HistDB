@@ -1,0 +1,8 @@
+{
+  "source_run": "rq2_ws_paired_30x1000_20261014",
+  "feature_count": 3,
+  "shuffle_seed": 20261014,
+  "independent_generator_runs": false,
+  "eligibility_feature_count": 3,
+  "selected_cohorts_are_jointly_retained": true
+}

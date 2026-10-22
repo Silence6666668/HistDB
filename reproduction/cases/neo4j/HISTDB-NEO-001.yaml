@@ -1,0 +1,50 @@
+schema_version: 1
+family_id: HISTDB-NEO-001
+title: Alias shadowing under outer aggregation reaches an internal scope error
+paper_set: fixed-version-50
+dbms: neo4j
+symptom: internal error instead of a user-facing alias-shadowing diagnostic
+issue:
+  url: https://github.com/neo4j/neo4j/issues/13810
+  status: confirmed
+  report_path: reproduction/report_snapshots/neo4j/13810.md
+targets:
+  buggy:
+    id: neo4j-2026.04.0
+  fixed: []
+test:
+  setup:
+    - |-
+      MATCH (n) DETACH DELETE n;
+      CREATE (:Person {name:'Bob', age:25})-[:HAS_DOG]->(:Dog {name:'Rex'});
+  query: |-
+    CYPHER 25
+    MATCH (person:Person)
+    CALL (person) {
+      MATCH (person)-[:HAS_DOG]->(dog:Dog)
+      RETURN dog.name AS petName
+    }
+    RETURN count(*) AS outerCnt,
+           COUNT {
+             MATCH (person)-[:HAS_DOG]->(dog:Dog)
+             RETURN dog.name AS petName
+           } AS numPets
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: error_matches
+  category: Neo.DatabaseError.General.UnknownError
+  pattern: '(?i)(Introduced variables have not been computed yet|TransactionStateTransitionException)'
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: neo4j_github_13810__q002
+  case_id: null
+  source_artifacts:
+    - reproduction/report_snapshots/neo4j/13810.md
+    - data/oracle2_smoke/neo4j_silence6666668_issue_details_20260815.json
+    - data/feedback_runs/confirmed_bug_feedback_small_20260719_v1/normalized/prepared_queries.jsonl
+  skeleton_ids:
+    - sk_c2eba415798f
+  feature_ids: []

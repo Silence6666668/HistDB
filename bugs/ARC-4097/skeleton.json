@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_9d19719b4a62",
+  "skeleton_text": "match (a) return exists{with a return *}",
+  "source_id": null,
+  "source_query_id": "neo4j#13156",
+  "holes": []
+}

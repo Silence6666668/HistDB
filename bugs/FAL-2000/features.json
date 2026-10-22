@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_f9e25737bb03",
+    "machine_name": "merge_with_complex_property_mapping",
+    "description": "MERGE with property values derived from CSV row data including type conversions and nested structures",
+    "tags": [
+      "merge",
+      "csv_mapping",
+      "type_conversion",
+      "nested_properties"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_25527eb796eb",
+    "machine_name": "create_relationship_to_anonymous_node",
+    "description": "Creates a relationship from a named node to an anonymous node with properties, testing relationship creation without intermediate variable binding.",
+    "tags": [
+      "create",
+      "relationship",
+      "anonymous_node"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_62c51a52833f",
+    "machine_name": "multiple_relationship_type_match",
+    "description": "Match relationships of multiple types (R1 or R2) between nodes of specific labels (A and B).",
+    "tags": [
+      "relationship_type",
+      "multiple_types",
+      "label_match"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_1511c5d0f4d2",
+    "machine_name": "relationship_without_variable",
+    "description": "Creates a relationship without assigning it to a variable, focusing on relationship pattern syntax and direction.",
+    "tags": [
+      "relationship",
+      "anonymous",
+      "direction"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_0ce202448f91",
+    "machine_name": "multiple_numeric_properties",
+    "description": "Assigns two distinct numeric properties (N and M) with the same value (0) to a node, testing property initialization.",
+    "tags": [
+      "properties",
+      "numeric",
+      "initialization",
+      "multiple_properties"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ac8b80f4450c",
+    "machine_name": "single_label_match_return_function",
+    "description": "Matches nodes by a single label and returns a computed function result without aliasing.",
+    "tags": [
+      "match",
+      "label",
+      "return",
+      "no_alias"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

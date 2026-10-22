@@ -1,0 +1,40 @@
+schema_version: 1
+family_id: HISTDB-ARC-008
+title: Repeated self-referential updates apply only the last row
+paper_set: fixed-version-50
+dbms: arcadedb
+symptom: row-fanout increments persist as 33 instead of accumulating to 36
+issue:
+  url: https://github.com/ArcadeData/arcadedb/issues/4016
+  status: confirmed
+  report_path: issue_reports/submitted/arcadedb/2026-4-25/arcadedb_repeated_self_referential_property_update_across_row_fanout_may_apply_only_last_row.md
+targets:
+  buggy: {id: arcadedb-26.4.1}
+  fixed: []
+observation: {reported_version: 26.4.1-SNAPSHOT, execution_target: "arcadedata/arcadedb:26.4.1"}
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Alice', age:30})"
+  query: |-
+    MATCH (p:Person {name:'Alice'})
+    UNWIND [1, 2, 3] AS i
+    SET p.age = p.age + i
+    WITH DISTINCT p
+    RETURN p.age AS age
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: scalar_equals
+  field: age
+  expected_buggy: 33
+  expected_correct: 36
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: RedisGraph__RedisGraph__2865__q007
+  case_id: null
+  source_artifacts:
+    - issue_reports/submitted/arcadedb/2026-4-25/arcadedb_repeated_self_referential_property_update_across_row_fanout_may_apply_only_last_row.md
+  skeleton_ids: []
+  feature_ids: []
+

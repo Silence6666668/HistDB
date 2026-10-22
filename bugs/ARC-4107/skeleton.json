@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_a817535edc0b",
+  "skeleton_text": "CREATE (HOLE_NODE); MATCH (HOLE_NODE) WITH HOLE_EXPR as HOLE_VAR ORDER BY reduce(a=HOLE_VAR,b IN HOLE_LIST|HOLE_EXPR) RETURN HOLE_EXPR",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#460",
+  "holes": []
+}

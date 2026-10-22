@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "verified_utc": "2026-10-11T08:03:22.951377+00:00",
+  "manifest": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\baseline_samples_manifest.json",
+  "manifest_sha256": "09317caf24e6444362dd634c6852f6b398318cefbda9b25796501ec41164a3aa",
+  "total_queries": 210000,
+  "source_mappings_verified": 210000,
+  "file_hashes_verified": 452,
+  "tools": {
+    "Dinkel": {
+      "groups": 30,
+      "queries_per_group": 1000,
+      "total_queries": 30000,
+      "within_tool_duplicates": 0
+    },
+    "GDBMeter": {
+      "groups": 30,
+      "queries_per_group": 1000,
+      "total_queries": 30000,
+      "within_tool_duplicates": 0
+    },
+    "GDsmith": {
+      "groups": 30,
+      "queries_per_group": 1000,
+      "total_queries": 30000,
+      "within_tool_duplicates": 0
+    },
+    "GRASpDB": {
+      "groups": 30,
+      "queries_per_group": 1000,
+      "total_queries": 30000,
+      "within_tool_duplicates": 0
+    },
+    "GRev": {
+      "groups": 30,
+      "queries_per_group": 1000,
+      "total_queries": 30000,
+      "within_tool_duplicates": 0
+    },
+    "Gamera": {
+      "groups": 30,
+      "queries_per_group": 1000,
+      "total_queries": 30000,
+      "within_tool_duplicates": 0
+    },
+    "HistDB": {
+      "groups": 30,
+      "queries_per_group": 1000,
+      "total_queries": 30000,
+      "within_tool_duplicates": 0
+    }
+  },
+  "no_database_execution": true,
+  "cross_tool_overlap_allowed": true
+}

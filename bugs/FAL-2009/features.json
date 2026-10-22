@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_eec8b4b5fd82",
+    "machine_name": "multiple_set_operations",
+    "description": "Performs multiple property assignments on the same node variable in a single SET clause",
+    "tags": [
+      "write",
+      "property_assignment",
+      "multiple_assignments",
+      "variable_reuse"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_95e8b5297e53",
+    "machine_name": "no_variable_binding_for_created_node",
+    "description": "Creates a node without binding it to a variable for later reference.",
+    "tags": [
+      "variable",
+      "binding",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_427c22d5a5bd",
+    "machine_name": "single_statement_create_pattern",
+    "description": "Create a pattern with two nodes and a relationship in a single CREATE statement.",
+    "tags": [
+      "write",
+      "pattern",
+      "single_statement"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_718d6d5bae69",
+    "machine_name": "mixed_write_operations",
+    "description": "Combination of MERGE, DELETE, and CREATE operations in a single query, testing complex write behavior and transaction semantics",
+    "tags": [
+      "merge",
+      "delete",
+      "create",
+      "write_combination"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_67e3296abe8b",
+    "machine_name": "create_without_variable",
+    "description": "Create a node without assigning it to a variable, testing implicit node creation behavior.",
+    "tags": [
+      "write",
+      "anonymous_node",
+      "creation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_44d70996b657",
+    "machine_name": "merge_node_with_properties",
+    "description": "MERGE clause creating a node with a label and property condition, ensuring existence or creation",
+    "tags": [
+      "write",
+      "merge",
+      "node_creation",
+      "property_condition"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

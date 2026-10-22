@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_296bf6d746f1",
+  "skeleton_text": "MATCH (a:HOLE_LABEL_A)-[r]->(b:HOLE_LABEL_B) CREATE (a)-[rr:HOLE_REL_TYPE_1]->(b) CREATE (a)-[rrr:HOLE_REL_TYPE_2]->(b)",
+  "source_id": "memgraph/memgraph#762",
+  "source_query_id": "memgraph__memgraph__762__q005",
+  "holes": []
+}

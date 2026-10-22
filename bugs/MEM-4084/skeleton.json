@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_9a32ba201300",
+  "skeleton_text": "MATCH (f_d)<-[]-(dd:HOLE_LABEL_0) WHERE dd.HOLE_PROP_0 >= HOLE_NUM_0 AND dd.HOLE_PROP_1 <= HOLE_NUM_1 WITH distinct f_d LIMIT HOLE_NUM_2 RETURN COUNT(f_d.HOLE_PROP_2) as transport_flag_count, COUNT(f_d.HOLE_PROP_3) as transport_flag_count, COUNT( id(f_d)) as record_count",
+  "source_id": "RedisGraph/RedisGraph#921",
+  "source_query_id": "RedisGraph__RedisGraph__921__q001",
+  "holes": []
+}

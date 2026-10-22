@@ -1,0 +1,42 @@
+schema_version: 1
+family_id: HISTDB-ARC-001
+title: Literal false in WHERE is ignored
+paper_set: fixed-version-50
+dbms: arcadedb
+symptom: a row survives a literal-false filter
+issue:
+  url: https://github.com/ArcadeData/arcadedb/issues/4112
+  status: confirmed
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_where_false_literal_predicate_may_be_ignored.md
+targets:
+  buggy: {id: arcadedb-26.4.1}
+  fixed: []
+observation:
+  reported_version: 26.4.1-SNAPSHOT
+  execution_target: arcadedata/arcadedb:26.4.1
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Alice'})"
+  query: |-
+    MATCH (p:Person)
+    WHERE false
+    RETURN p.name AS name
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: false
+  expected_buggy:
+    - {name: Alice}
+  expected_correct: []
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: ArcadeData__arcadedb__3218__q001
+  case_id: case_2061d2085e03
+  source_artifacts:
+    - issue_reports/submitted/arcadedb/2026-5-1/arcadedb_where_false_literal_predicate_may_be_ignored.md
+    - paper/bug_example_panels_by_database_20260810.md
+  skeleton_ids: []
+  feature_ids: []
+

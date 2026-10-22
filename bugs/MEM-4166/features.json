@@ -1,0 +1,149 @@
+[
+  {
+    "feature_id": "ft_cc7fecc648f2",
+    "machine_name": "merge_without_on_create",
+    "description": "MERGE clause with only ON MATCH branch, no ON CREATE branch specified",
+    "tags": [
+      "merge",
+      "on_match",
+      "partial_branch",
+      "conditional"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_76ddfeb28b88",
+    "machine_name": "function_call_in_return",
+    "description": "Embedding a function call directly in the RETURN clause to test expression evaluation and result aliasing (implicit or explicit).",
+    "tags": [
+      "function",
+      "expression",
+      "return",
+      "evaluation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_b4a8a6bc4dc2",
+    "machine_name": "relationship_creation_with_explicit_variable",
+    "description": "Creating a relationship while assigning it to a variable",
+    "tags": [
+      "relationship",
+      "variable_assignment",
+      "creation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_b22ab4a8b31e",
+    "machine_name": "exact_property_value_match",
+    "description": "WHERE clause with exact equality comparisons on string properties",
+    "tags": [
+      "where",
+      "property",
+      "equality",
+      "string"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_dbb5055911a5",
+    "machine_name": "round_function_with_large_integer_precision",
+    "description": "Using the round() function with a very large integer precision argument (2147483647) to test numeric function behavior with extreme values.",
+    "tags": [
+      "function",
+      "numeric",
+      "edge_case",
+      "precision"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_1e6cd09b594b",
+    "machine_name": "anonymous_node_creation",
+    "description": "MERGE creates a node without variable binding, testing anonymous node behavior in write operations.",
+    "tags": [
+      "anonymous_node",
+      "no_variable",
+      "write_operation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_5740382b0870",
+    "machine_name": "remove_label_from_all_nodes",
+    "description": "Removes a specific label from every node in the graph, testing bulk label removal operations.",
+    "tags": [
+      "write",
+      "label",
+      "bulk",
+      "remove"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_c7637a88c1ad",
+    "machine_name": "map_projection_in_return",
+    "description": "Returning a map with computed values using map projection syntax",
+    "tags": [
+      "map_projection",
+      "return",
+      "aliasing"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_af0a225287ab",
+    "machine_name": "relationship_creation_between_existing_nodes",
+    "description": "Create relationships between previously defined nodes in the same CREATE statement",
+    "tags": [
+      "write",
+      "relationship",
+      "creation",
+      "multiple_edges",
+      "same_statement"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_13e60f7554a3",
+    "machine_name": "match_multiple_nodes_with_list_elements",
+    "description": "Matching multiple nodes in separate patterns using elements from a list, with each node bound to a specific list index.",
+    "tags": [
+      "multi_match",
+      "indexed_access",
+      "node_lookup"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

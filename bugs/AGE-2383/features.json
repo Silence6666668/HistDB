@@ -1,0 +1,91 @@
+[
+  {
+    "feature_id": "ft_847bfd7f86d8",
+    "machine_name": "property_assignment_with_string_literal",
+    "description": "Assigns a property to a node using a string literal as the property value.",
+    "tags": [
+      "write",
+      "property",
+      "string_literal",
+      "assignment"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_69e8db4605a5",
+    "machine_name": "implicit_node_variable_omission",
+    "description": "Omits an explicit variable for the created node, making it inaccessible later in the query.",
+    "tags": [
+      "create",
+      "variable",
+      "implicit",
+      "inaccessible"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_658d91b289c5",
+    "machine_name": "mixed_read_write_in_single_query",
+    "description": "Combination of OPTIONAL MATCH (read) and MERGE (write) in one query, testing read-write interaction.",
+    "tags": [
+      "read_write",
+      "clause_combination",
+      "transaction"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7c461baf7722",
+    "machine_name": "unwind_null_map",
+    "description": "UNWIND with a map containing a null value, testing null propagation in property access.",
+    "tags": [
+      "unwind",
+      "null",
+      "map",
+      "property_access"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_0535565bdbb6",
+    "machine_name": "label_filtered_node_scan",
+    "description": "Scan nodes filtered by a specific label, returning all properties of matched nodes.",
+    "tags": [
+      "scan",
+      "label",
+      "node",
+      "return_all"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_62d1b9fe6f55",
+    "machine_name": "string_contains_predicate",
+    "description": "Filter nodes using CONTAINS string predicate",
+    "tags": [
+      "where",
+      "predicate",
+      "string",
+      "contains"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

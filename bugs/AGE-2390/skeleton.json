@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_7110654c0731",
+  "skeleton_text": "CREATE (HOLE_NODE_LABEL) WITH HOLE_WITH_EXPRESSION AS HOLE_VARIABLE MATCH ({HOLE_PROPERTY_KEY: HOLE_VARIABLE}) MATCH (HOLE_NODE_LABEL) RETURN HOLE_RETURN_EXPRESSION",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#747",
+  "holes": []
+}

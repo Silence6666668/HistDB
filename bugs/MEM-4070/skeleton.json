@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_2bff76952c78",
+  "skeleton_text": "MATCH (HOLE_NODE_LABEL:HOLE_LABEL) RETURN HOLE_NODE_VARIABLE.HOLE_PROPERTY_NAME ORDER BY HOLE_NODE_VARIABLE.HOLE_ORDER_PROPERTY LIMIT HOLE_LIMIT",
+  "source_id": null,
+  "source_query_id": "RedisGraph/RedisGraph#589",
+  "holes": []
+}

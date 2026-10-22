@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_c3c5fdeb88d0",
+  "skeleton_text": "MATCH (src_node:HOLE_LABEL_0 { sys_id:HOLE_LABEL_1, id:HOLE_LABEL_2 }) WHERE OUTDEGREE(src_node) = HOLE_NUM_0 MERGE dst_node:HOLE_LABEL_3 MERGE (src_node)-[:HOLE_LABEL_4]->(dst_node) SET src_node.HOLE_PROP_0=HOLE_STR_2 WITH src_node, dst_node RETURN dst_node.HOLE_PROP_1 AS system_id, dst_node.HOLE_PROP_2 AS id UNION ALL OPTIONAL MATCH (src_node)-[:HOLE_LABEL_5]->(old_loc) RETURN old_loc.HOLE_PROP_3 AS system_id, old_loc.HOLE_PROP_4 AS id",
+  "source_id": "RedisGraph/RedisGraph#1348",
+  "source_query_id": "RedisGraph__RedisGraph__1348__q006",
+  "holes": []
+}

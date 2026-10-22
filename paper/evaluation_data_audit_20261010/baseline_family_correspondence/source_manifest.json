@@ -1,0 +1,192 @@
+{
+  "audit_date": "2026-10-10",
+  "root": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp",
+  "source_count": 37,
+  "sources": [
+    {
+      "path": "data/batch_runs/historical_bug_queries_parallel_llm_v1_skeleton_resume/stage2/instantiation_inputs.jsonl",
+      "bytes": 28189389,
+      "sha256": "634403c7466fdc0a164d633c17e9ba0c6ea24bd73b831d73ae8e86ef2d2821ed"
+    },
+    {
+      "path": "data/batch_runs/historical_bug_queries_parallel_llm_v1_stage3x10_skeleton_20260429b/stage3_main/instantiated_cases.jsonl",
+      "bytes": 4817390,
+      "sha256": "f552be21527428ea58592d2e6d08e935f47efc630fc79af861a13870195f4cbe"
+    },
+    {
+      "path": "data/batch_runs/historical_bug_queries_parallel_llm_v1_stage4_neo4j_falkordb_4_18_2_skeleton_20260501/execution_results.jsonl",
+      "bytes": 13856434,
+      "sha256": "5917092f317f48555aef94409ca94c2a9c859ad0ff3290fce0a155d4dfe6a2f2"
+    },
+    {
+      "path": "data/feedback_runs/confirmed_bug_feedback_small_20260719_v1/stage2/skeleton_feature_inputs.jsonl",
+      "bytes": 1892632,
+      "sha256": "ea2691a53b9186ec6e5e62baa282cf7023d38ecc038bbf17284bae09e890128f"
+    },
+    {
+      "path": "data/feedback_runs/confirmed_bug_feedback_small_20260719_v1/stage3/skeleton_feature/instantiated_cases.jsonl",
+      "bytes": 495507,
+      "sha256": "366d919d7c9226667e0d6a5ee6eb48314039c2d766c332cb60baa936cc3bbbad"
+    },
+    {
+      "path": "data/stage3_feature_fragment_only_multi_filtered_v4/instantiated_cases.jsonl",
+      "bytes": 2696717,
+      "sha256": "fc413c220ae0159bb9bd15c61371eeb0e56e54e35238c37b5d9037a3d83dc10d"
+    },
+    {
+      "path": "data/stage4_feature_fragment_only_multi_filtered_v4/execution_results.jsonl",
+      "bytes": 11760507,
+      "sha256": "7ae03941ea88880631ed7181d32f9e0b055ba00b6cc5d0b506cb0af326db198c"
+    },
+    {
+      "path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_optional_match_on_two_bound_variables_may_crash_server.md",
+      "bytes": 4152,
+      "sha256": "622ff92f5f16ec60b87bdaf50c79066ec05294041f475c5f10f80316cc335247"
+    },
+    {
+      "path": "issue_reports/submitted/falkordb/2026-7-13/falkordb_duplicate_property_keys_in_merge_patterns_may_crash_server.md",
+      "bytes": 6700,
+      "sha256": "a78b549cb7478b9698a102c02b2a8f93dfe131376664c2d2b6ff6ae705048eb3"
+    },
+    {
+      "path": "paper/baseline_bug_report_validation_20260629_tool_internal/clean_rerun_gdsmith_falkordb/manual_minimized_latest_recheck_2026-07-13/README.md",
+      "bytes": 2958,
+      "sha256": "0f374ec428575d81c9317c0f23e04621f6426e88e1128410f05f9c0153c4d570"
+    },
+    {
+      "path": "paper/baseline_bug_report_validation_20260629_tool_internal/clean_rerun_gdsmith_falkordb/manual_minimized_latest_recheck_2026-07-13/gdsmith_falkordb_minimized_repro.cypher",
+      "bytes": 95,
+      "sha256": "db06953d454ff850d6868b893995aff470c15ac7b6cd5ec8bc2454710b1ed566"
+    },
+    {
+      "path": "paper/baseline_bug_report_validation_20260629_tool_internal/clean_rerun_gdsmith_falkordb/manual_minimized_latest_recheck_2026-07-13/issue_submission_status.md",
+      "bytes": 2485,
+      "sha256": "dae0151f0e68b36cef94a0ea465a3b463f7528b01aef9b2f94d878c9e09d1c06"
+    },
+    {
+      "path": "paper/baseline_bug_report_validation_20260629_tool_internal/clean_rerun_gdsmith_falkordb/manual_minimized_latest_recheck_2026-07-13/latest_and_fixed_recheck_results.jsonl",
+      "bytes": 16512,
+      "sha256": "85836b38ea97b01c57306bc3077027de69a668b7401a95bc3fdc931a8f5ce215"
+    },
+    {
+      "path": "paper/baseline_bug_report_validation_20260629_tool_internal/clean_rerun_gdsmith_falkordb/manual_minimized_latest_recheck_2026-07-13/latest_and_fixed_recheck_summary.json",
+      "bytes": 944,
+      "sha256": "389e9a6ee500121e17abb593a5df78ca4a58b7822d7a39e317b5464ff4887f18"
+    },
+    {
+      "path": "paper/baseline_bug_report_validation_20260629_tool_internal/clean_rerun_gdsmith_falkordb/manual_minimized_latest_recheck_2026-07-13/minimization_trials.csv",
+      "bytes": 2913,
+      "sha256": "c18f7bc62d3e1e2c99361ca932a4522984207ac5871e1d2020ec04b24edf7052"
+    },
+    {
+      "path": "paper/baseline_experiment_records_2026-07-12/dinkel_falkordb_4_16_8_24h_rerun_patched_20260711/analysis/manual_family_human_minimized_repros/latest_v4_18_11_recheck/control_queries_v4_18_11_results.jsonl",
+      "bytes": 3047,
+      "sha256": "d215181389c3ed51dfa0299b78be23c68f71c6bdab28171b8e3cf5c2b164eb3f"
+    },
+    {
+      "path": "paper/baseline_experiment_records_2026-07-12/dinkel_falkordb_4_16_8_24h_rerun_patched_20260711/analysis/manual_family_human_minimized_repros/latest_v4_18_11_recheck/issue_submission_status.md",
+      "bytes": 3046,
+      "sha256": "8ed8fcb5c691accf1ef5ecdfc2c049f43d3b31c82149be177fbe5d7292910019"
+    },
+    {
+      "path": "paper/baseline_experiment_records_2026-07-12/dinkel_falkordb_4_16_8_24h_rerun_patched_20260711/analysis/manual_family_human_minimized_repros/latest_v4_18_11_recheck/latest_v4_18_11_recheck_results.jsonl",
+      "bytes": 15230,
+      "sha256": "fbf06ff44d723ff1de692d2b4ee4af1d91c6d45f0ad37ae0579ef56313263d21"
+    },
+    {
+      "path": "paper/baseline_experiment_records_2026-07-12/dinkel_falkordb_4_16_8_24h_rerun_patched_20260711/analysis/manual_family_human_minimized_repros/latest_v4_18_11_recheck/latest_v4_18_11_recheck_summary.csv",
+      "bytes": 1270,
+      "sha256": "63827a34f50d806734a7a96a15c74101212b27907dadc27a032445d4c7c03fd0"
+    },
+    {
+      "path": "paper/evaluation_data_audit_20261010/rq3_histdb_family_identity_50.csv",
+      "bytes": 14712,
+      "sha256": "d17d29556e4e06f4a6fb6ffee2c9c8202ccd30a184e24e2b49e5d8b8e7b0f0cb"
+    },
+    {
+      "path": "paper/evaluation_data_audit_20261010/rq3_overlap_aggregate_source.json",
+      "bytes": 1339,
+      "sha256": "1f9ed544ebfa5fbc62ef1f8c40711c33472d8cc3f9d01d0d19ebbfbee5fd80f9"
+    },
+    {
+      "path": "paper/final/histdb_oopsla27_round1.tex",
+      "bytes": 128260,
+      "sha256": "ace48cfc847304b89204e3071e3cf767d5db12299a75c528f1adc5c4844f7a91"
+    },
+    {
+      "path": "paper/graspdb_neo4j_final_issue_audit_2026-07-13/graspdb_neo4j_minimized_repro.cypher",
+      "bytes": 382,
+      "sha256": "8ec5020c7de05bc217b6f47c4f31ee242e008e5291c2c5a3b51c892c3f78f4db"
+    },
+    {
+      "path": "paper/graspdb_neo4j_final_issue_audit_2026-07-13/issue_submission_status.md",
+      "bytes": 1980,
+      "sha256": "a9449c0daa62cddb04a6ab2002dc1694f57b3a733954c275e2588fb2512045b5"
+    },
+    {
+      "path": "paper/graspdb_neo4j_final_issue_audit_2026-07-13/summary.json",
+      "bytes": 1144,
+      "sha256": "69ffba8d5b8297e9d989f67cbda8c3bda02465eef7084776c8d9bd98e5d456c1"
+    },
+    {
+      "path": "paper/graspdb_neo4j_scope_dependency_minimization_2026-07-08.md",
+      "bytes": 3223,
+      "sha256": "73a1144a172d508f8bb96afd8b4be26203e6ce650d50b5d9fbcea64deca8097a"
+    },
+    {
+      "path": "paper/neo4j_graspdb_scope_dependency_recheck_2026-07-09.md",
+      "bytes": 2664,
+      "sha256": "90792bec2d7b54a31437f41d69c76607b5a48ce3fc6cba50a92913c793a3951a"
+    },
+    {
+      "path": "reproduction/audits/missing-lineage-exact-candidates.csv",
+      "bytes": 242643,
+      "sha256": "d0730097671ecfe679016ce968986bcb85fd064c2ee9444287fe11a16d2274d1"
+    },
+    {
+      "path": "reproduction/cases/neo4j/HISTDB-NEO-001.yaml",
+      "bytes": 1524,
+      "sha256": "085fa430011c2b594817e81166816eeee6c5e2421d37b3f87a0f87598249093e"
+    },
+    {
+      "path": "reproduction/evidence_148/FAL-1981/evidence.json",
+      "bytes": 1227,
+      "sha256": "2b32960373b78387a99cb5611da421a59ced3e42592976941ae3111e33cd4696"
+    },
+    {
+      "path": "reproduction/evidence_148/FAL-1981/provenance.json",
+      "bytes": 619,
+      "sha256": "6e54be22b3fdd28553fa7a847aebe1003b6dce88735982e49c813a2a976d459f"
+    },
+    {
+      "path": "reproduction/evidence_148/FAL-2196/evidence.json",
+      "bytes": 1388,
+      "sha256": "e9f905b19e7768fcddbb308e94fed1a1162712213c10a458b4e75742600b52a8"
+    },
+    {
+      "path": "reproduction/evidence_148/FAL-2196/provenance.json",
+      "bytes": 833,
+      "sha256": "8f1bc8164969f6d8cfd90871f4d482ad81edbf31a4a80fd3a9135890f509d8d9"
+    },
+    {
+      "path": "reproduction/family-map.csv",
+      "bytes": 68561,
+      "sha256": "5616d0bf8d02c0293cc585076cc20d71d7c7da67b6b46727bed06ad291f07d71"
+    },
+    {
+      "path": "reproduction/report_snapshots/neo4j/13810.md",
+      "bytes": 2117,
+      "sha256": "d937b56d9f5309ff8e5fe3de14111c634b5f962a65202834989de43c77a515a4"
+    },
+    {
+      "path": "reproduction/report_snapshots/neo4j/13827.md",
+      "bytes": 1688,
+      "sha256": "0c28970ecb6685c4398ca0c63c730c17dfbe9891c5f207a75ffff753f118d998"
+    },
+    {
+      "path": "reproduction/report_snapshots/neo4j/13859.md",
+      "bytes": 1337,
+      "sha256": "1ff71a72a018b42b8fe104025d2d07605f0467aaf09533be4106551c40ef08e2"
+    }
+  ]
+}

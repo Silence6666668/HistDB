@@ -1,0 +1,54 @@
+schema_version: 1
+family_id: HISTDB-FAL-003
+title: CALL subquery MERGE drops an outer row
+paper_set: fixed-version-50
+dbms: falkordb
+symptom: only one of two independent outer bindings survives a write subquery
+issue:
+  url: https://github.com/FalkorDB/FalkorDB/issues/1846
+  status: confirmed
+  report_path: issue_reports/submitted/falkordb/old/falkordb_call_subquery_merge_may_drop_rows.md
+targets:
+  buggy:
+    id: falkordb-4.16.8
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - |-
+      CREATE (j:Person {name:'John'}),
+             (a:Person {name:'Anna'}),
+             (g:Country {name:'Germany'}),
+             (j)-[:KNOWS]->(a),
+             (j)-[:VISITED]->(g)
+  query: |-
+    MATCH (:Person {name:'John'})--(m)
+    CALL {
+      WITH m
+      MERGE (m)-[:LOCATED_IN]->(:City {name:'Paris'})
+      RETURN m.name AS connected_name
+    }
+    RETURN connected_name
+    ORDER BY connected_name
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: true
+  expected_buggy:
+    - {connected_name: Anna}
+  expected_correct:
+    - {connected_name: Anna}
+    - {connected_name: Germany}
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: FalkorDB__FalkorDB__1785__q002
+  case_id: case_8d16c29e9cd7
+  source_artifacts:
+    - issue_reports/submitted/falkordb/old/falkordb_call_subquery_merge_may_drop_rows.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

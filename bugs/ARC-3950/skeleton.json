@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_06b1a7f819f6",
+  "skeleton_text": "MATCH (m:HOLE_LABEL_0) WITH m AS m ORDER BY m.HOLE_PROP_0 DESC SKIP HOLE_NUM_0 LIMIT HOLE_NUM_1 MATCH (m)<-[:HOLE_LABEL_1]-(a:HOLE_LABEL_2) RETURN toJSON(m{.HOLE_PROP_1}) AS movies, toJSON(a{.HOLE_PROP_2}) AS actors",
+  "source_id": "RedisGraph/RedisGraph#2561",
+  "source_query_id": "RedisGraph__RedisGraph__2561__q002",
+  "holes": []
+}

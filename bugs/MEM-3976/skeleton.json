@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_b47be5158cc9",
+  "skeleton_text": "MATCH (d {name: HOLE_NAME}) OPTIONAL MATCH (d)-[t:HOLE_REL_TYPE]-(tag:HOLE_LABEL) RETURN { d: d, tags: collect(DISTINCT {id: ID(t), short_code: tag.HOLE_PROP_1, description: tag.HOLE_PROP_2}) }",
+  "source_id": "memgraph/memgraph#1525",
+  "source_query_id": "memgraph__memgraph__1525__q009",
+  "holes": []
+}

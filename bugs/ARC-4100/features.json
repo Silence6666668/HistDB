@@ -1,0 +1,88 @@
+[
+  {
+    "feature_id": "ft_a01ecdbdd5e8",
+    "machine_name": "create_node_with_property_array",
+    "description": "Create a single node with a property containing an array of integers",
+    "tags": [
+      "write",
+      "node_creation",
+      "property_array",
+      "integer_array"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_6b257af4b2a0",
+    "machine_name": "exact_property_match",
+    "description": "Uses exact property values (not ranges or comparisons) to match nodes",
+    "tags": [
+      "property",
+      "exact_match",
+      "filter"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_6f5af4862cc8",
+    "machine_name": "aggregation_in_list_index",
+    "description": "Using aggregation result (count) directly as index for list access",
+    "tags": [
+      "aggregation",
+      "list_indexing",
+      "count",
+      "list_access"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_e3700dce8b5b",
+    "machine_name": "anonymous_node_with_label",
+    "description": "Creates a node with a label but no variable binding, testing anonymous node handling.",
+    "tags": [
+      "anonymous",
+      "label",
+      "no_variable"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_e0adff5a6879",
+    "machine_name": "return_node_after_optional_match_and_set",
+    "description": "RETURN of a node variable after OPTIONAL MATCH and SET operations, checking if modifications affect returned values.",
+    "tags": [
+      "return",
+      "node_variable",
+      "clause_combination"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_4d894f092402",
+    "machine_name": "aggregation_count",
+    "description": "Count the number of matched nodes.",
+    "tags": [
+      "aggregation",
+      "count",
+      "return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

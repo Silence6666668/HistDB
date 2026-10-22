@@ -1,0 +1,13 @@
+{
+  "input_path": "D:\\sci\\works\\get bugs\\memgraph query\\memgraph_pipeline_run\\05_prepared_queries\\prepared_queries.jsonl",
+  "output_dir": "data\\stage1_memgraph_llm",
+  "skeleton_mode": "llm",
+  "feature_mode": "llm",
+  "skeleton_model": "deepseek-chat",
+  "feature_model": "deepseek-chat",
+  "processed_queries": 433,
+  "extracted_feature_items": 1641,
+  "skipped": 0,
+  "unique_skeletons": 366,
+  "feature_groups": 1248
+}

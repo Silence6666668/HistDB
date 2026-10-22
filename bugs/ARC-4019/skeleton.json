@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_061ed7aa2af4",
+  "skeleton_text": "MATCH (n:HOLE_LABEL_0) WITH n.HOLE_PROP_0 AS id, CASE WHEN n.HOLE_PROP_1 THEN n.HOLE_PROP_2 ELSE HOLE_NUM_0 END AS W1, CASE WHEN n.HOLE_PROP_3 THEN n.HOLE_PROP_4 ELSE HOLE_NUM_1 END AS W2 RETURN id, W1+HOLE_NUM_2*W2 AS score ORDER BY score DESC",
+  "source_id": "RedisGraph/RedisGraph#742",
+  "source_query_id": "RedisGraph__RedisGraph__742__q002",
+  "holes": []
+}

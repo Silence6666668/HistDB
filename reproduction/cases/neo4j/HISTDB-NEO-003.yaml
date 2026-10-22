@@ -1,0 +1,53 @@
+schema_version: 1
+family_id: HISTDB-NEO-003
+title: OPTIONAL MATCH coalesce result differs across Neo4j runtimes
+paper_set: fixed-version-50
+dbms: neo4j
+symptom: slotted runtime returns null instead of the empty-string coalesce fallback
+issue:
+  url: https://github.com/neo4j/neo4j/issues/13859
+  status: confirmed
+  report_path: reproduction/report_snapshots/neo4j/13859.md
+targets:
+  buggy:
+    id: neo4j-2026.06.0
+  fixed: []
+test:
+  setup:
+    - |-
+      CYPHER 25
+      MATCH (n:Missing) DETACH DELETE n
+  query: |-
+    CYPHER 25 runtime = slotted
+    OPTIONAL MATCH (n:Missing)-->(m)
+    RETURN DISTINCT coalesce(n.name, '') AS v ORDER BY v
+  cleanup:
+    - MATCH (n:Missing) DETACH DELETE n
+oracle:
+  type: exact_rows
+  expected_buggy:
+    - v: null
+  expected_correct:
+    - v: ''
+  ordered: true
+  reference_query: |-
+    CYPHER 25 runtime = parallel
+    OPTIONAL MATCH (n:Missing)-->(m)
+    RETURN DISTINCT coalesce(n.name, '') AS v ORDER BY v
+  equivalence_preconditions:
+    - both queries execute against the same empty Missing-label graph state
+    - runtime selection is the only query difference
+    - DISTINCT and ORDER BY fix the single-row observation
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: neo4j_github_13859__q003
+  case_id: null
+  source_artifacts:
+    - reproduction/report_snapshots/neo4j/13859.md
+    - data/oracle2_smoke/neo4j_silence6666668_issue_details_20260815.json
+    - data/feedback_runs/confirmed_bug_feedback_small_20260719_v1/normalized/prepared_queries.jsonl
+  skeleton_ids:
+    - sk_0c4c9be7980f
+  feature_ids: []

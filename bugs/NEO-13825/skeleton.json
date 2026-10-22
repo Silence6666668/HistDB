@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_d6ae3296a92e",
+  "skeleton_text": "CYPHER 25 MATCH (p:Person) FILTER p.city = 'NYC' WITH collect(p) AS persons UNWIND persons AS person WITH person.name AS name, person.city AS city WHERE false WITH name, city, 1 AS dummy UNWIND [[name, city], [name, 'NYC']] AS pair WITH pair[0] AS n, pair[1] AS c, dummy MATCH (n:Person) WHERE n.city = c WITH n, c, dummy CALL (n, c) { RETURN n.name AS n_name, c AS c_val } WITH n_name, c_val, dummy RETURN toLower(n_name) AS result",
+  "source_id": "RedisGraph/RedisGraph#2670",
+  "source_query_id": "",
+  "holes": []
+}

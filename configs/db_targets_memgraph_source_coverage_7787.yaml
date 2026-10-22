@@ -1,0 +1,12 @@
+targets:
+  - name: memgraph_source_coverage
+    enabled: true
+    engine: bolt
+    uri: bolt://localhost:7787
+    host: localhost
+    port: 7787
+    fetch_limit: 0
+    query_timeout_sec: 8
+    hard_timeout_sec: 0
+    pre_case_queries:
+      - MATCH (n) DETACH DELETE n

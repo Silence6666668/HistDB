@@ -1,0 +1,91 @@
+[
+  {
+    "feature_id": "ft_bc7d813a62c8",
+    "machine_name": "aggregation_count",
+    "description": "Return count of matched nodes after filtering",
+    "tags": [
+      "aggregation",
+      "count",
+      "return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_5828a97c7cb9",
+    "machine_name": "foreach_delete_relationships_and_endnodes",
+    "description": "Use FOREACH to iterate over reversed relationships of a path, deleting each relationship and its end node",
+    "tags": [
+      "write",
+      "foreach",
+      "delete",
+      "reverse",
+      "relationships",
+      "endNode"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ff82e5dca6b1",
+    "machine_name": "create_clause_without_variables",
+    "description": "Uses CREATE clause without assigning variables to the created nodes, making them anonymous.",
+    "tags": [
+      "write",
+      "create",
+      "anonymous_nodes",
+      "no_variables"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_48c53e3ed7f0",
+    "machine_name": "optional_match_with_negated_condition",
+    "description": "OPTIONAL MATCH with WHERE clause using inequality operator to filter opposite condition from main MATCH",
+    "tags": [
+      "optional_match",
+      "where_clause",
+      "inequality",
+      "negated_condition"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_9734f04012e9",
+    "machine_name": "return_property_of_bound_node",
+    "description": "RETURN clause projecting a property from a node bound in a MATCH clause.",
+    "tags": [
+      "projection",
+      "property_access",
+      "return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_dc5fdeeacff5",
+    "machine_name": "return_relationship_variable",
+    "description": "Returns a relationship variable directly in the final projection, testing the handling of relationship properties or null values.",
+    "tags": [
+      "return",
+      "relationship_output",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "feature_id": "ft_38e61f4974ae",
+    "machine_name": "query_pattern_limit_pagination_return",
+    "description": "该查询包含 RETURN、LIMIT 子句，带有分页控制。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#2185",
+    "source_query_id": "neo4j__2185__q001"
+  },
+  {
+    "feature_id": "ft_7caee1a99156",
+    "machine_name": "query_pattern_limit_pagination",
+    "description": "该查询包含 LIMIT 子句，带有分页控制。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12321",
+    "source_query_id": "neo4j__12321__q002"
+  },
+  {
+    "feature_id": "ft_8fda1f712b71",
+    "machine_name": "query_pattern_return",
+    "description": "该查询包含 RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#2119",
+    "source_query_id": "ArcadeData__arcadedb__2119__q001"
+  }
+]

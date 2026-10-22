@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_d0012dcbb931",
+  "skeleton_text": "MATCH p=(a:A)-[*]->(b:B)-[*0]->(c:C) return [n in nodes(p) | labels(n)[0]] as paths",
+  "source_id": "RedisGraph/RedisGraph#2877",
+  "source_query_id": "RedisGraph__RedisGraph__2877__q005",
+  "holes": []
+}

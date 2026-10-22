@@ -1,0 +1,346 @@
+{
+  "confirmed": [
+    {
+      "family": "falkordb_delete_then_merge_count_zero_after_relationship_delete",
+      "db": "FalkorDB",
+      "status": "confirmed_existing_or_adjacent_family",
+      "representative": "FalkorDB__FalkorDB__299__q001 / case_aba990a0c57f",
+      "evidence_files": [
+        "rerun_falkordb_delete_merge_count.json",
+        "rerun_falkordb_delete_merge_count_neo4j_control.json",
+        "rerun_falkordb_delete_merge_count_memgraph_control.json"
+      ],
+      "manual_decision": "FalkorDB returns count(*)=0 stably; Neo4j and Memgraph controls return count(*)=1. Count as one FalkorDB write/delete visibility family."
+    },
+    {
+      "family": "age_match_cannot_see_nodes_created_earlier_in_same_query",
+      "db": "Apache AGE",
+      "status": "confirmed_existing_family",
+      "representative": "FalkorDB__FalkorDB__774__q002 / case_aaab54220260",
+      "evidence_files": [
+        "rerun_age_create_match_visibility_simple.json"
+      ],
+      "manual_decision": "AGE returns empty rows for CREATE ... WITH ... MATCH over created nodes; maps to submitted AGE same-query create/MATCH visibility family."
+    },
+    {
+      "family": "memgraph_later_union_branch_may_not_see_nodes_created_in_earlier_branch",
+      "db": "Memgraph",
+      "status": "confirmed_existing_family",
+      "representative": "ArcadeData__arcadedb__3391__q001 / case_e10bcf89d503",
+      "evidence_files": [
+        "rerun_memgraph_create_union_read_visibility.json",
+        "rerun_memgraph_create_union_read_visibility_neo4j_control.json"
+      ],
+      "manual_decision": "Memgraph later UNION ALL MATCH does not see Charlie created in earlier branch; Neo4j returns the extra Charlie row. Maps to submitted node visibility union family."
+    },
+    {
+      "family": "memgraph_later_union_branch_may_not_see_nodes_created_by_merge_in_earlier_branch",
+      "db": "Memgraph",
+      "status": "confirmed_existing_family_same_as_union_visibility",
+      "representative": "FalkorDB__FalkorDB__830__q003 / case_124fcb40fa0b",
+      "evidence_files": [
+        "rerun_memgraph_union_merge_visibility.json",
+        "rerun_memgraph_union_merge_visibility_neo4j_control.json"
+      ],
+      "manual_decision": "Same broad family as previous: second UNION ALL branch does not see nodes created/merged by first branch. Not counted as separate family unless splitting CREATE vs MERGE variants."
+    },
+    {
+      "family": "memgraph_list_comprehension_filter_null_predicate_may_drop_result",
+      "db": "Memgraph",
+      "status": "confirmed_existing_family",
+      "representative": "ArcadeData__arcadedb__3560__q003 / case_9513cf9ab154",
+      "evidence_files": [
+        "rerun_memgraph_list_comprehension_null_predicate.json",
+        "rerun_memgraph_list_comprehension_null_predicate_neo4j_control.json"
+      ],
+      "manual_decision": "List contains Item without age/city; Neo4j filters nonmatching/null predicate element and returns Charlie, Memgraph returns empty. Maps to submitted list-comprehension null predicate family."
+    },
+    {
+      "family": "memgraph_call_subquery_outer_variable_scope_may_drop_rows",
+      "db": "Memgraph",
+      "status": "confirmed_existing_or_adjacent_family",
+      "representative": "RedisGraph__RedisGraph__2729__q007 / case_f22247059043",
+      "evidence_files": [
+        "rerun_memgraph_call_with_outer_variable.json",
+        "rerun_memgraph_call_with_outer_variable_neo4j_control.json"
+      ],
+      "manual_decision": "CALL { WITH p MATCH ... } returns Alice/Bob on Neo4j but empty on Memgraph. Adjacent to submitted CALL outer-variable/subquery scope families."
+    },
+    {
+      "family": "falkordb_aggregation_after_with_where_false_may_return_zero_rows",
+      "db": "FalkorDB",
+      "status": "confirmed_existing_family",
+      "representative": "RedisGraph__RedisGraph__1150__q004 / case_923e2535a1f1",
+      "evidence_files": [
+        "rerun_falkordb_where_false_aggregate.json",
+        "rerun_falkordb_where_false_aggregate_neo4j_control.json"
+      ],
+      "manual_decision": "After WHERE false, Neo4j returns one aggregate row cnt=0; FalkorDB returns zero rows in 3/3 reruns. Maps to submitted aggregation-after-with-where-false family."
+    },
+    {
+      "family": "falkordb_call_subquery_merge_may_drop_rows",
+      "db": "FalkorDB",
+      "status": "confirmed_existing_family",
+      "representative": "FalkorDB__FalkorDB__1785__q002 / case_8d16c29e9cd7",
+      "evidence_files": [
+        "rerun_falkordb_call_merge_drops_rows.json",
+        "rerun_falkordb_call_merge_drops_rows_neo4j_control.json"
+      ],
+      "manual_decision": "CALL subquery containing MERGE preserves only Alice on FalkorDB; clean Neo4j runs return Alice/Bob/Charlie. Maps to submitted CALL-subquery MERGE/drop-rows family."
+    },
+    {
+      "family": "memgraph_call_union_outer_scope_count_distribution_may_differ",
+      "db": "Memgraph",
+      "status": "confirmed_existing_family_with_clean_run_caveat",
+      "representative": "RedisGraph__RedisGraph__2667__q002 / case_1c43bd96d99e",
+      "evidence_files": [
+        "rerun_memgraph_call_union_outer_scope_distribution.json",
+        "rerun_memgraph_call_union_outer_scope_distribution_neo4j_control.json"
+      ],
+      "manual_decision": "Ignoring one artificial concurrent-transaction failure and one dirty Neo4j cleanup run, clean runs show Memgraph assigns UNION subquery outputs to different outer p rows than Neo4j. Maps to submitted CALL UNION outer-scope distribution family."
+    },
+    {
+      "family": "memgraph_pattern_comprehension_correlation_may_admit_unrelated_rows",
+      "db": "Memgraph",
+      "status": "confirmed_existing_family_with_clean_run_caveat",
+      "representative": "RedisGraph__RedisGraph__1847__q004 / case_6ff41c447ee1",
+      "evidence_files": [
+        "rerun_memgraph_pattern_comprehension_correlation_any.json",
+        "rerun_memgraph_pattern_comprehension_correlation_any_neo4j_control.json"
+      ],
+      "manual_decision": "Clean Neo4j runs return Bob/Alice; Memgraph stably includes unrelated David. Trigger is ANY over correlated pattern comprehension; adjacent to submitted inline/pattern-comprehension correlation-loss family."
+    },
+    {
+      "family": "falkordb_later_union_branches_may_not_see_nodes_created_before_union",
+      "db": "FalkorDB",
+      "status": "confirmed_existing_family",
+      "representative": "FalkorDB__FalkorDB__399__q002 / case_bcd1bd58e8b5",
+      "evidence_files": [
+        "rerun_falkordb_union_read_after_unwind_create.json",
+        "rerun_falkordb_union_read_after_unwind_create_neo4j_control.json"
+      ],
+      "manual_decision": "FalkorDB returns only first-branch rows after UNWIND CREATE; clean Neo4j runs include later UNION ALL branch rows that read the created Person nodes. Maps to submitted FalkorDB later-union-branch visibility family."
+    },
+    {
+      "family": "falkordb_variable_length_path_may_undercount_or_miss_reachable_nodes",
+      "db": "FalkorDB",
+      "status": "confirmed_existing_family",
+      "representative": "RedisGraph__RedisGraph__464__q003 / case_ee59b0eac771",
+      "evidence_files": [
+        "rerun_falkordb_varlength_optional_count.json",
+        "rerun_falkordb_varlength_optional_count_neo4j_control.json"
+      ],
+      "manual_decision": "FalkorDB stably misses Alice->Diana reachable by KNOWS*1..2; Neo4j returns the row. Maps to FalkorDB variable-length path undercount/self-loop/path family."
+    },
+    {
+      "family": "memgraph_label_only_merge_binding_may_expand_after_later_same_label_merge",
+      "db": "Memgraph",
+      "status": "confirmed_existing_family",
+      "representative": "FalkorDB__FalkorDB__243__q003 / case_e82461f7927b",
+      "evidence_files": [
+        "rerun_memgraph_label_only_merge_binding.json",
+        "rerun_memgraph_label_only_merge_binding_neo4j_control.json"
+      ],
+      "manual_decision": "Memgraph returns five e bindings including Eve, although e was bound by an earlier label-only MERGE before the later MERGE of Eve. Neo4j returns four pre-Eve bindings. Maps to submitted label-only MERGE binding expansion family."
+    },
+    {
+      "family": "memgraph_reusing_relationship_variable_in_later_match_reports_redeclaring_variable",
+      "db": "Memgraph",
+      "status": "confirmed_existing_family",
+      "representative": "ArcadeData__arcadedb__3359__q001 / case_72a6b622f998",
+      "evidence_files": [
+        "rerun_memgraph_reuse_relationship_variable.json",
+        "rerun_memgraph_reuse_relationship_variable_neo4j_control.json"
+      ],
+      "manual_decision": "Memgraph rejects a legal rematch of an in-scope relationship variable with Redeclaring variable: r in 3/3 runs; Neo4j accepts the query. Maps to submitted relationship-variable reuse wrong-error family."
+    },
+    {
+      "db": "Memgraph",
+      "family": "memgraph_order_by_projected_property_bug",
+      "status": "confirmed_existing_family",
+      "representative": "FalkorDB__FalkorDB__1548__q002 / case_7b664d1420b8",
+      "decision": "Memgraph rejects ORDER BY over a projected scalar property expression after a legal write/read query with \"Only nodes, edges, maps, temporal types and graphs have properties\"; Neo4j accepts 3/3. Maps to submitted projected-property ORDER BY wrong-error family.",
+      "evidence": [
+        "rerun_memgraph_order_by_projected_property.json",
+        "rerun_memgraph_order_by_projected_property_neo4j_control.json"
+      ]
+    },
+    {
+      "db": "FalkorDB",
+      "family": "falkordb_match_on_multiple_carried_variables_with_where_may_fail_filtered_alias",
+      "status": "confirmed_existing_family",
+      "representative": "FalkorDB__FalkorDB__1280__q001 / case_1bc866395fc0",
+      "decision": "FalkorDB fails a legal OPTIONAL MATCH/WITH carried variable rematch with filtered alias p in 3/3 runs; Neo4j accepts 3/3. Maps to submitted carried-variable filtered-alias family.",
+      "evidence": [
+        "rerun_falkordb_filtered_alias_carried_p.json",
+        "rerun_falkordb_filtered_alias_carried_p_neo4j_control.json"
+      ]
+    },
+    {
+      "db": "FalkorDB",
+      "family": "falkordb_created_relationship_may_be_invisible_to_later_match",
+      "status": "confirmed_existing_family",
+      "representative": "FalkorDB__FalkorDB__1311__q001 / case_81d4657fd17c",
+      "decision": "FalkorDB creates a KNOWS relationship and then fails to match it later in the same query, returning empty rows in 3/3 runs; Neo4j returns the created relationship row in 3/3 runs. Maps to submitted created-relationship visibility family.",
+      "evidence": [
+        "rerun_falkordb_created_relationship_invisible.json",
+        "rerun_falkordb_created_relationship_invisible_neo4j_control.json"
+      ]
+    },
+    {
+      "db": "Memgraph",
+      "family": "memgraph_union_limit_hang",
+      "status": "confirmed_existing_family",
+      "representative": "ArcadeData__arcadedb__2111__q001 / case_1d8302d65aa7",
+      "manual_decision": "A tiny UNION ALL query with per-branch ORDER BY/LIMIT times out on Memgraph in 3/3 runs; Neo4j accepts 3/3 and returns Alice/Bob. Maps to submitted Memgraph UNION/LIMIT hang family.",
+      "evidence_files": [
+        "rerun_memgraph_union_limit_contains_timeout.json",
+        "rerun_memgraph_union_limit_contains_timeout_neo4j_control.json"
+      ]
+    },
+    {
+      "db": "FalkorDB",
+      "family": "falkordb_pattern_exists_in_where_may_fail_with_filtered_alias",
+      "status": "confirmed_existing_family",
+      "representative": "ArcadeData__arcadedb__3148__q002 / case_1a9d10be2e39",
+      "manual_decision": "FalkorDB reports filtered alias for a legal EXISTS(pattern) query even though the following LIMIT 0 should yield an empty aggregate result; Neo4j returns cnt=0 in 3/3 runs. Maps to submitted pattern-exists filtered-alias family.",
+      "evidence_files": [
+        "rerun_falkordb_exists_filtered_alias_limit0.json",
+        "rerun_falkordb_exists_filtered_alias_limit0_neo4j_control.json"
+      ]
+    },
+    {
+      "db": "FalkorDB",
+      "family": "falkordb_all_list_predicate_on_carried_variable_after_with_may_filter_matching_rows",
+      "status": "confirmed_existing_family",
+      "representative": "FalkorDB__FalkorDB__349__q011 / case_390b867b078a",
+      "manual_decision": "FalkorDB drops rows when all(...) is applied after carrying a node through WITH; Neo4j and Memgraph return the matching Alice/Bob rows in 3/3 reruns. Maps to the submitted all-list-predicate-after-WITH family.",
+      "evidence_files": [
+        "rerun_falkordb_all_keys_predicate_empty.json",
+        "rerun_falkordb_all_keys_predicate_empty_neo4j_control.json"
+      ]
+    },
+    {
+      "db": "Apache AGE",
+      "family": "age_unwind_null_where_is_null_may_drop_null_row",
+      "status": "confirmed_existing_or_adjacent_family",
+      "representative": "FalkorDB__FalkorDB__137__q001 / case_b216eedcd04b",
+      "manual_decision": "AGE drops rows produced by UNWIND [null] before WHERE x IS NULL / aggregation; Neo4j returns one aggregate row count=3 in 3/3 reruns. Adjacent to submitted AGE UNWIND-null/null-aggregate handling families.",
+      "evidence_files": [
+        "rerun_age_unwind_null_where_is_null_count.json",
+        "rerun_age_unwind_null_where_is_null_count_neo4j_control.json"
+      ]
+    },
+    {
+      "db": "Memgraph",
+      "family": "memgraph_aggregate_plus_scalar_subexpression_over_empty_input_may_return_no_rows",
+      "status": "confirmed_existing_family",
+      "representative": "FalkorDB__FalkorDB__37__q005 / case_e8279b2b0853",
+      "manual_decision": "Memgraph returns zero rows for an aggregate-plus-scalar expression over empty input, while Neo4j returns a single aggregate row with value 3 in 3/3 reruns. Maps to submitted Memgraph aggregate-plus-scalar empty-input family.",
+      "evidence_files": [
+        "rerun_memgraph_is_null_match_after_optional_empty.json",
+        "rerun_memgraph_is_null_match_after_optional_empty_neo4j_control.json"
+      ]
+    },
+    {
+      "db": "Apache AGE",
+      "family": "age_optional_collect_null_friendname_may_survive_is_not_null_filter",
+      "status": "confirmed_existing_or_adjacent_family",
+      "representative": "neo4j__13172__q001 / case_a4d4ff505e13",
+      "manual_decision": "AGE keeps null friendName rows after UNWIND/WHERE friendName IS NOT NULL in 3/3 reruns, while Neo4j returns only Alice/Bob and Diana/Eve. Adjacent to submitted AGE list/null filtering and null-element handling families.",
+      "evidence_files": [
+        "rerun_age_optional_collect_null_survives_filter.json",
+        "rerun_age_optional_collect_null_survives_filter_neo4j_control.json"
+      ]
+    },
+    {
+      "family": "falkordb_pattern_comprehension_in_where_may_fail_with_filtered_alias",
+      "db": "FalkorDB",
+      "status": "confirmed_same_as_submitted_pattern_comprehension_filtered_alias_family",
+      "representative": "FalkorDB__FalkorDB__310__q002 / case_aaa5bfe9cf28",
+      "evidence_files": [
+        "rerun_falkordb_pattern_comprehension_filtered_alias_where.json",
+        "rerun_falkordb_pattern_comprehension_filtered_alias_where_neo4j_control.json"
+      ],
+      "manual_decision": "FalkorDB fails 3/3 with Unable to resolve filtered alias for a pattern comprehension in WHERE; Neo4j 2026.03.1 control passes 3/3. Counts as the submitted FalkorDB pattern-comprehension filtered-alias family."
+    },
+    {
+      "family": "memgraph_unnamed_map_projection_may_use_expression_text_as_column_name",
+      "db": "Memgraph",
+      "status": "confirmed_same_as_submitted_unnamed_map_projection_schema_family",
+      "representative": "ArcadeData__arcadedb__3475__q001 / case_cc1708ff14ab",
+      "evidence_files": [
+        "rerun_memgraph_unnamed_map_projection_column_name_seq.json",
+        "rerun_memgraph_unnamed_map_projection_column_name_neo4j_control.json"
+      ],
+      "manual_decision": "Memgraph passes 3/3 but returns the unnamed map projection column as the full expression text; Neo4j control returns the variable-derived column name. Counts as the submitted unnamed map projection schema family."
+    },
+    {
+      "family": "memgraph_call_union_return_star_drops_column",
+      "db": "Memgraph",
+      "status": "confirmed_same_as_submitted_call_union_return_star_schema_family",
+      "representative": "neo4j__12797__q002 / case_b5f05255d6a1",
+      "evidence_files": [
+        "rerun_memgraph_call_union_return_star_drops_column.json",
+        "rerun_memgraph_call_union_return_star_drops_column_neo4j_control.json"
+      ],
+      "manual_decision": "Memgraph passes 3/3 but outer RETURN * only exposes nextPath and drops the CALL/UNION subquery result column; Neo4j control exposes nextPath and result. Counts as the submitted CALL UNION RETURN * column-loss family."
+    },
+    {
+      "family": "memgraph_later_union_all_branch_may_not_see_relationships_created_in_earlier_branch",
+      "db": "Memgraph",
+      "status": "confirmed_same_as_submitted_relationship_union_visibility_family",
+      "representative": "RedisGraph__RedisGraph__924__q004 / case_dac029db6abd",
+      "evidence_files": [
+        "rerun_memgraph_union_relationship_visibility.json",
+        "rerun_memgraph_union_relationship_visibility_neo4j_control.json"
+      ],
+      "manual_decision": "Memgraph passes 3/3 but returns only the write-branch row after creating a relationship in the first UNION ALL branch; Neo4j control returns both write and later read rows 3/3. This is the submitted relationship analogue of UNION write-visibility."
+    },
+    {
+      "family": "falkordb_any_list_predicate_on_with_bound_list_variable_may_filter_matching_rows",
+      "db": "FalkorDB",
+      "status": "confirmed_same_as_submitted_any_carried_list_predicate_family",
+      "representative": "FalkorDB__FalkorDB__866__q002 / case_7b181ae848f5",
+      "evidence_files": [
+        "rerun_falkordb_any_carried_list_variable.json",
+        "rerun_falkordb_any_carried_list_variable_neo4j_control.json"
+      ],
+      "manual_decision": "FalkorDB passes 3/3 but filters all rows for WHERE ANY(v IN c ...) where c is introduced by WITH; Neo4j control returns five rows 3/3. Counts as the submitted ANY over WITH-bound list variable family."
+    }
+  ],
+  "pending_or_rejected": [
+    {
+      "family": "age_mixed_unwind_optional_create_relationship_crashes_server",
+      "db": "Apache AGE",
+      "status": "confirmed_crash_pending_dedup",
+      "representative": "FalkorDB__FalkorDB__226__q003 / case_aa51689e3a8c",
+      "evidence_files": [
+        "rerun_age_crash_mixed_unwind.json"
+      ],
+      "manual_decision": "AGE backend connection terminates on every run. Needs minimization/dedup against existing AGE crash/write/null-binding families before adding to final count."
+    },
+    {
+      "family": "arcadedb_negative_array_size_large_cluster",
+      "db": "ArcadeDB",
+      "status": "not_counted_unstable_environment_or_state_contamination",
+      "representative": "ArcadeData__arcadedb__2038__q001 / case_02a564384436",
+      "evidence_files": [
+        "rerun_arcadedb_negative_path.json"
+      ],
+      "manual_decision": "Raw Stage4 cluster was huge, but representative passed 3x on clean ArcadeDB 26.4.1 temp container. Do not count as single-query bug."
+    },
+    {
+      "family": "arcadedb_create_match_visibility_dirty_baseline",
+      "db": "ArcadeDB",
+      "status": "not_counted_clean_recheck_passed",
+      "representative": "FalkorDB__FalkorDB__774__q002 / case_aaab54220260",
+      "evidence_files": [
+        "rerun_arcadedb_create_match_visibility_simple.json"
+      ],
+      "manual_decision": "Dirty baseline suggested empty result, but clean ArcadeDB temp container returns expected rows. Do not count."
+    }
+  ],
+  "deduped_count_so_far": 27,
+  "last_updated": "2026-08-13"
+}

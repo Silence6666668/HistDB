@@ -1,0 +1,39 @@
+schema_version: 1
+family_id: HISTDB-ARC-016
+title: EXISTS subquery returning an outer variable evaluates false
+paper_set: fixed-version-50
+dbms: arcadedb
+symptom: a nonempty correlated unit subquery reports false
+issue:
+  url: https://github.com/ArcadeData/arcadedb/issues/4097
+  status: confirmed
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_exists_subquery_returning_outer_variable_expression_may_evaluate_as_false.md
+targets:
+  buggy: {id: arcadedb-26.4.1}
+  fixed: []
+observation: {reported_version: 26.4.1-SNAPSHOT, execution_target: "arcadedata/arcadedb:26.4.1"}
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Node {id:1, name:'test'}), (:Node {id:2, name:'other'})"
+  query: |-
+    MATCH (n)
+    RETURN exists { RETURN n AS x } AS result
+    ORDER BY result
+    LIMIT 1
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: scalar_equals
+  field: result
+  expected_buggy: false
+  expected_correct: true
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: ArcadeData__arcadedb__3267__q001
+  case_id: case_fad01c162280
+  source_artifacts:
+    - issue_reports/submitted/arcadedb/2026-5-1/arcadedb_exists_subquery_returning_outer_variable_expression_may_evaluate_as_false.md
+  skeleton_ids: []
+  feature_ids: []
+

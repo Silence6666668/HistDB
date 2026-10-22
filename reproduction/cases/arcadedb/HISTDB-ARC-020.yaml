@@ -1,0 +1,40 @@
+schema_version: 1
+family_id: HISTDB-ARC-020
+title: Pattern comprehension over existing relationships returns an empty list
+paper_set: fixed-version-50
+dbms: arcadedb
+symptom: three existing KNOWS relationships project as no elements
+issue:
+  url: https://github.com/ArcadeData/arcadedb/issues/4106
+  status: confirmed
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_pattern_comprehension_over_existing_relationships_may_evaluate_as_empty_list.md
+targets:
+  buggy: {id: arcadedb-26.4.1}
+  fixed: []
+observation: {reported_version: 26.4.1-SNAPSHOT, execution_target: "arcadedata/arcadedb:26.4.1"}
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - |-
+      CREATE (a:Person {name:'Alice'}),
+             (b:Person {name:'Bob'}),
+             (c:Person {name:'Charlie'}),
+             (a)-[:KNOWS {since:2020}]->(b),
+             (b)-[:KNOWS {since:2019}]->(c),
+             (a)-[:KNOWS {since:2021}]->(c)
+  query: "RETURN [(p:Person)-[r:KNOWS]->(q:Person) | q.name] AS xs"
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: scalar_equals
+  field: xs
+  expected_buggy: []
+  expected_correct: [Bob, Charlie, Charlie]
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: RedisGraph__RedisGraph__2086__q001
+  case_id: case_99f3a0927571
+  source_artifacts:
+    - issue_reports/submitted/arcadedb/2026-5-1/arcadedb_pattern_comprehension_over_existing_relationships_may_evaluate_as_empty_list.md
+  skeleton_ids: []
+  feature_ids: []

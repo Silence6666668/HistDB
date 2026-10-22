@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_f39bb33eaf92",
+  "skeleton_text": "MATCH (n0 {id : 5}), (n1 {id : 5}) MERGE(n0)-[r :T38{k490 : true, k486 : true, k485 : -1782193271, k487 : true, id : 10, k489 : true}]->(n1)",
+  "source_id": "FalkorDB/FalkorDB#751",
+  "source_query_id": "FalkorDB__FalkorDB__751__q002",
+  "holes": []
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "feature_id": "ft_3cc37fb7c693",
+    "machine_name": "query_pattern_path_pattern_return",
+    "description": "该查询包含 RETURN 子句，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#407",
+    "source_query_id": "FalkorDB__FalkorDB__407__q002"
+  },
+  {
+    "feature_id": "ft_3ac01e9cf56f",
+    "machine_name": "relationship_type_specification_in_create",
+    "description": "Specifies a relationship type 'A' during creation, testing type assignment and subsequent operations.",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "RedisGraph/RedisGraph#3041",
+    "source_query_id": "RedisGraph__RedisGraph__3041__q001"
+  },
+  {
+    "feature_id": "ft_8fda1f712b71",
+    "machine_name": "query_pattern_return",
+    "description": "该查询包含 RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#2119",
+    "source_query_id": "ArcadeData__arcadedb__2119__q001"
+  }
+]

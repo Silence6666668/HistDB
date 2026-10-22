@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_5b1a2c5b3e98",
+  "skeleton_text": "match (a) call{with a return exists{return min(a)} as k} return k",
+  "source_id": "neo4j#13201",
+  "source_query_id": "q_000324",
+  "holes": []
+}

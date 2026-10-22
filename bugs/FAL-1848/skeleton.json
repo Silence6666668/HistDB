@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_8b9d221379c4",
+  "skeleton_text": "MATCH (n) DETACH DELETE n; CREATE (a:HOLE_LABEL_1 {HOLE_PROPERTY_1: HOLE_VALUE_1}), (b:HOLE_LABEL_1 {HOLE_PROPERTY_1: HOLE_VALUE_2}), (a)-[:HOLE_REL_TYPE_1]->(b), (a)-[:HOLE_REL_TYPE_2]->(b); MATCH (p:HOLE_LABEL_1) WHERE p.HOLE_PROPERTY_1 = HOLE_VALUE_1 MATCH (p)-[:HOLE_REL_TYPE_1|HOLE_REL_TYPE_2]->(friend) WITH friend, count(*) AS connectionCount RETURN friend.HOLE_PROPERTY_1 AS HOLE_RETURN_ALIAS_1, connectionCount ORDER BY HOLE_RETURN_ALIAS_1",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#1848",
+  "holes": []
+}

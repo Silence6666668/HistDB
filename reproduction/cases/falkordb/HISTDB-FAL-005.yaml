@@ -1,0 +1,47 @@
+schema_version: 1
+family_id: HISTDB-FAL-005
+title: Later UNION branches miss nodes created before the UNION
+paper_set: fixed-version-50
+dbms: falkordb
+symptom: the second branch sees only a subset of nodes created earlier in the same query
+issue:
+  url: https://github.com/FalkorDB/FalkorDB/issues/2009
+  status: confirmed
+  report_path: issue_reports/submitted/falkordb/2026-5-7/falkordb_later_union_branches_may_not_see_nodes_created_before_union.md
+targets:
+  buggy:
+    id: falkordb-4.16.8
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+  query: |-
+    CREATE (:Person {name:'Alice', age:30}), (:Person {name:'Bob', age:25})
+    WITH count(*) AS dummy
+    MATCH (n:Person) WHERE n.age > 25
+    RETURN n.name AS name
+    UNION
+    MATCH (n:Person) WHERE n.age <= 25
+    RETURN n.name AS name
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: false
+  expected_buggy:
+    - {name: Alice}
+  expected_correct:
+    - {name: Alice}
+    - {name: Bob}
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: RedisGraph__RedisGraph__548__q002
+  case_id: case_81e2a0bb5cdb
+  source_artifacts:
+    - issue_reports/submitted/falkordb/2026-5-7/falkordb_later_union_branches_may_not_see_nodes_created_before_union.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

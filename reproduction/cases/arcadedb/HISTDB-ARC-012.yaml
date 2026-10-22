@@ -1,0 +1,38 @@
+schema_version: 1
+family_id: HISTDB-ARC-012
+title: Anonymous middle node in a linear pattern matches no rows
+paper_set: fixed-version-50
+dbms: arcadedb
+symptom: the anonymous City position breaks an otherwise valid two-hop match
+issue:
+  url: https://github.com/ArcadeData/arcadedb/issues/4092
+  status: confirmed
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_anonymous_middle_node_in_linear_pattern_may_match_no_rows.md
+targets:
+  buggy: {id: arcadedb-26.4.1}
+  fixed: []
+observation: {reported_version: 26.4.1-SNAPSHOT, execution_target: "arcadedata/arcadedb:26.4.1"}
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (a:Person {id:1, name:'Alice'}), (c:City {name:'New York'}), (u:Country {name:'USA'}), (a)-[:KNOWS]->(c), (c)-[:LOCATED_IN]->(u)"
+  query: |-
+    MATCH (a:Person)-[:KNOWS]->(:City)-[:LOCATED_IN]->(b:Country)
+    RETURN a.name AS person_name, b.name AS country_name
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: false
+  expected_buggy: []
+  expected_correct:
+    - {person_name: Alice, country_name: USA}
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: FalkorDB__FalkorDB__1437__q002
+  case_id: case_6434ef2623e9
+  source_artifacts:
+    - issue_reports/submitted/arcadedb/2026-5-1/arcadedb_anonymous_middle_node_in_linear_pattern_may_match_no_rows.md
+  skeleton_ids: []
+  feature_ids: []
+

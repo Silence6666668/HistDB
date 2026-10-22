@@ -1,0 +1,40 @@
+schema_version: 1
+family_id: HISTDB-MEM-008
+title: Limited UNION ALL read followed by a matched write hangs
+paper_set: fixed-version-50
+dbms: memgraph
+symptom: the trigger exceeds its query timeout while the service remains reachable
+issue:
+  url: https://github.com/memgraph/memgraph/issues/4067
+  status: confirmed
+  report_path: issue_reports/submitted/memgraph/2026-4-23/memgraph_union_all_limited_read_branch_followed_by_matched_write_hangs_candidate.md
+targets:
+  buggy:
+    id: memgraph-3.9.0
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Alice'}), (:Person {name:'Bob'}), (:Person {name:'Charlie'})"
+  query: |-
+    MATCH (p:Person {name:'Alice'}) RETURN p.name AS name LIMIT 1
+    UNION ALL
+    MATCH (p:Person)
+    CREATE (p)-[:FRIEND]->(:Person {name:'David'})
+    RETURN p.name AS name
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: timeout
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: RedisGraph__RedisGraph__2667__q002
+  case_id: null
+  source_artifacts:
+    - issue_reports/submitted/memgraph/2026-4-23/memgraph_union_all_limited_read_branch_followed_by_matched_write_hangs_candidate.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

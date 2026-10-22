@@ -1,0 +1,46 @@
+name: histdb-repro
+
+services:
+  neo4j:
+    image: "${NEO4J_IMAGE:-neo4j:2026.03.1}"
+    profiles: ["neo4j"]
+    ports:
+      - "${NEO4J_HOST_PORT:-17687}:${NEO4J_CONTAINER_PORT:-7687}"
+    environment:
+      NEO4J_AUTH: "${NEO4J_AUTH_VALUE:-neo4j/${NEO4J_PASSWORD:-histdb-repro-password}}"
+
+  memgraph:
+    image: "${MEMGRAPH_IMAGE:-memgraph/memgraph:3.9.0}"
+    # Some official tags publish Cmd=[""]; recent binaries reject that empty
+    # positional argument. This stable flag replaces the image CMD entirely.
+    command: ["--bolt-port=7687"]
+    profiles: ["memgraph"]
+    ports:
+      - "${MEMGRAPH_HOST_PORT:-17688}:7687"
+
+  falkordb:
+    image: "${FALKORDB_IMAGE:-falkordb/falkordb:v4.16.8}"
+    profiles: ["falkordb"]
+    ports:
+      - "${FALKORDB_HOST_PORT:-16379}:6379"
+
+  arcadedb:
+    image: "${ARCADEDB_IMAGE:-arcadedata/arcadedb:26.4.1}"
+    # Older official images use the relative CMD `server.sh`, which current
+    # OCI runtimes reject. The absolute path is stable across old/new images.
+    command: ["/home/arcadedb/bin/server.sh"]
+    profiles: ["arcadedb"]
+    ports:
+      - "${ARCADEDB_HOST_PORT:-12480}:2480"
+    environment:
+      JAVA_OPTS: "-Darcadedb.server.rootPassword=${ARCADEDB_PASSWORD:-histdb-repro-password}"
+
+  apache-age:
+    image: "${AGE_IMAGE:-apache/age:latest}"
+    profiles: ["apache_age"]
+    ports:
+      - "${AGE_HOST_PORT:-15455}:5432"
+    environment:
+      POSTGRES_USER: postgresUser
+      POSTGRES_PASSWORD: "${AGE_PASSWORD:-histdb-repro-password}"
+      POSTGRES_DB: postgresDB

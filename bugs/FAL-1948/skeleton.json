@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_909df65e6fa6",
+  "skeleton_text": "MATCH (n:KEBAB) return n",
+  "source_id": "ArcadeData/arcadedb#3114",
+  "source_query_id": "ArcadeData__arcadedb__3114__q004",
+  "holes": []
+}

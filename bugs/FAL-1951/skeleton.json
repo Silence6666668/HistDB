@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_b72380d26800",
+  "skeleton_text": "UNWIND ['ID|1', 'ID|2', 'ID|3'] AS id MATCH q=(m:movie {ID:id})-[*0..1]->(n) RETURN m, COLLECT(NODES(q)), COLLECT(RELATIONSHIPS(q))",
+  "source_id": "RedisGraph/RedisGraph#1752",
+  "source_query_id": "RedisGraph__RedisGraph__1752__q001",
+  "holes": []
+}

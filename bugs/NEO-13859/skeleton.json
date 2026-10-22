@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_12745ad6e064",
+  "skeleton_text": "MATCH (p:Person) WHERE p.age = 20 OR p.age = 25 OPTIONAL MATCH (p)-[r:LIVING_IN]->(c:Country) RETURN DISTINCT p.name, COALESCE(c.name, 'No country') AS country_name ORDER BY p.name LIMIT 10",
+  "source_id": "memgraph/memgraph#2481",
+  "source_query_id": "memgraph__memgraph__2481__q002",
+  "holes": []
+}

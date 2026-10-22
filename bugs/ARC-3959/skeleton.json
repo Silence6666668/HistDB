@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_41211fb4930e",
+  "skeleton_text": "MATCH (x:HOLE_LABEL_0) CALL { MATCH (d:HOLE_LABEL_1) RETURN COLLECT(DISTINCT d) AS dogs } RETURN COLLECT(DISTINCT(x)), dogs",
+  "source_id": "FalkorDB/FalkorDB#1012",
+  "source_query_id": "FalkorDB__FalkorDB__1012__q001",
+  "holes": []
+}

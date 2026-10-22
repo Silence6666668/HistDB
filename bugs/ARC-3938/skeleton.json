@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_32b1fe125f08",
+  "skeleton_text": "MATCH (p:HOLE_LABEL_0) WHERE isEmpty(p.HOLE_PROP_0) RETURN p.HOLE_PROP_1 AS result, p.HOLE_PROP_2",
+  "source_id": "ArcadeData/arcadedb#3447",
+  "source_query_id": "ArcadeData__arcadedb__3447__q002",
+  "holes": []
+}

@@ -1,0 +1,44 @@
+schema_version: 1
+family_id: HISTDB-ARC-005
+title: MERGE with an unbound label-only endpoint reuses an existing node
+paper_set: fixed-version-50
+dbms: arcadedb
+symptom: MERGE binds TechCorp instead of creating a fresh Company endpoint
+issue:
+  url: https://github.com/ArcadeData/arcadedb/issues/3998
+  status: confirmed
+  report_path: issue_reports/submitted/arcadedb/2026-4-24/arcadedb_merge_with_unbound_label_only_endpoint_may_reuse_existing_node.md
+targets:
+  buggy: {id: arcadedb-26.4.1}
+  fixed: []
+observation: {reported_version: 26.4.1-SNAPSHOT, execution_target: "arcadedata/arcadedb:26.4.1"}
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Alice'}), (:Company {name:'TechCorp', industry:'Technology'})"
+  query: |-
+    MATCH (p:Person {name:'Alice'})
+    MERGE (p)-[r:WORKS_AT {since:2020}]->(c:Company)
+    WITH c
+    MATCH (company:Company)
+    RETURN c.name AS merged_company_name,
+           c.industry AS merged_industry,
+           count(company) AS total_companies
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: false
+  expected_buggy:
+    - {merged_company_name: TechCorp, merged_industry: Technology, total_companies: 1}
+  expected_correct:
+    - {merged_company_name: null, merged_industry: null, total_companies: 2}
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: ArcadeData__arcadedb__3148__q001
+  case_id: null
+  source_artifacts:
+    - issue_reports/submitted/arcadedb/2026-4-24/arcadedb_merge_with_unbound_label_only_endpoint_may_reuse_existing_node.md
+  skeleton_ids: []
+  feature_ids: []
+

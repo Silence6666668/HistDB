@@ -1,0 +1,1366 @@
+{
+  "audit_date": "2026-10-10",
+  "new_db_execution": false,
+  "new_test_generation": false,
+  "gdsmith": {
+    "input": [
+      {
+        "source": "data/batch_runs/historical_bug_queries_parallel_llm_v1_skeleton_resume/stage2/instantiation_inputs.jsonl",
+        "line": 850,
+        "record": {
+          "query_id": "FalkorDB__FalkorDB__1281__q002",
+          "source_id": "FalkorDB/FalkorDB#1281",
+          "repo": "FalkorDB/FalkorDB",
+          "issue_number": 1281,
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/1281",
+          "prepared_source_name": "falkordb",
+          "prepared_source_path": "D:\\sci\\works\\爬虫\\multi_db_pipeline\\falkordb\\05_prepared_queries\\falkorDB_queries.jsonl",
+          "skeleton_id": "sk_c91e77b51dd5",
+          "skeleton_text": "MATCH (HOLE_NODE1), (HOLE_NODE2) OPTIONAL MATCH (HOLE_NODE1), (HOLE_NODE2) RETURN HOLE_RETURN_EXPR",
+          "guidance_skeleton_text": "MATCH (HOLE_NODE1), (HOLE_NODE2) OPTIONAL MATCH (HOLE_NODE1), (HOLE_NODE2) RETURN HOLE_RETURN_EXPR",
+          "holes": [
+            {
+              "name": "HOLE_NODE1",
+              "type": "node_variable",
+              "original": "n"
+            },
+            {
+              "name": "HOLE_NODE2",
+              "type": "node_variable",
+              "original": "n1"
+            },
+            {
+              "name": "HOLE_RETURN_EXPR",
+              "type": "return_expression",
+              "original": "n"
+            }
+          ],
+          "generation_strategy": "skeleton",
+          "feature_selection": "random_constrained",
+          "feature_selection_seed": 271828,
+          "selected_feature_ids": [
+            "ft_7de667ac1f7c",
+            "ft_282cc4484718",
+            "ft_45e35c4379ef",
+            "ft_a98f650e166a",
+            "ft_bc3c5ca9a402",
+            "ft_012bb5f35d31"
+          ],
+          "selected_feature_query_ids": [
+            "FalkorDB__FalkorDB__735__q013",
+            "RedisGraph__RedisGraph__1481__q003",
+            "RedisGraph__RedisGraph__2865__q003",
+            "RedisGraph__RedisGraph__360__q002",
+            "RedisGraph__RedisGraph__526__q004",
+            "neo4j__13047__q001"
+          ],
+          "feature_items": [
+            {
+              "feature_id": "ft_7de667ac1f7c",
+              "text": "single_column_result",
+              "description": "Returns exactly one column from a query, testing simple result set structure.",
+              "evidence": null,
+              "tags": [
+                "result_structure",
+                "single_column"
+              ]
+            },
+            {
+              "feature_id": "ft_282cc4484718",
+              "text": "label_based_node_filtering",
+              "description": "Filters nodes by specific labels (B and A) in a path traversal.",
+              "evidence": null,
+              "tags": [
+                "label",
+                "filter",
+                "node"
+              ]
+            },
+            {
+              "feature_id": "ft_45e35c4379ef",
+              "text": "merge_with_multiple_properties",
+              "description": "MERGE creates a relationship with multiple properties including string, boolean, integer, and numeric values",
+              "evidence": null,
+              "tags": [
+                "merge",
+                "relationship",
+                "properties",
+                "write"
+              ]
+            },
+            {
+              "feature_id": "ft_a98f650e166a",
+              "text": "count_star_aggregation",
+              "description": "RETURN clause with COUNT(*) aggregation, testing basic aggregation behavior without grouping or filtering.",
+              "evidence": null,
+              "tags": [
+                "return",
+                "aggregation",
+                "count",
+                "star"
+              ]
+            },
+            {
+              "feature_id": "ft_bc3c5ca9a402",
+              "text": "relationship_labels_return",
+              "description": "Returning the labels of a relationship variable directly in the RETURN clause, which tests relationship type metadata extraction.",
+              "evidence": null,
+              "tags": [
+                "return",
+                "labels",
+                "relationship",
+                "metadata"
+              ]
+            },
+            {
+              "feature_id": "ft_012bb5f35d31",
+              "text": "descending_order_by_property",
+              "description": "ORDER BY with DESC modifier on a projected property alias",
+              "evidence": null,
+              "tags": [
+                "ordering",
+                "desc",
+                "property_alias"
+              ]
+            }
+          ],
+          "retrieval_backend": "lexical",
+          "retrieval_query": {
+            "query_id": "FalkorDB__FalkorDB__1281__q002",
+            "skeleton_id": "sk_c91e77b51dd5",
+            "structure_keywords": [
+              "match",
+              "optional match",
+              "return",
+              "node variable",
+              "node variable",
+              "return expression"
+            ],
+            "feature_keywords": [
+              "single_column_result",
+              "result structure",
+              "single column",
+              "label_based_node_filtering",
+              "label",
+              "filter",
+              "node",
+              "merge_with_multiple_properties",
+              "merge",
+              "relationship",
+              "properties",
+              "write"
+            ],
+            "hole_needs": [
+              "node_variable",
+              "node_variable",
+              "return_expression"
+            ],
+            "retrieval_text": "match ; optional match ; return ; node variable ; return expression ; single_column_result ; result structure ; single column ; label_based_node_filtering ; label ; filter ; node ; merge_with_multiple_properties ; merge ; relationship ; properties ; write",
+            "retrieval_tokens": [
+              "node",
+              "variable",
+              "expression",
+              "column",
+              "result",
+              "result",
+              "structure",
+              "column",
+              "label",
+              "based",
+              "node",
+              "filtering",
+              "label",
+              "filter",
+              "node",
+              "multiple",
+              "properties",
+              "relationship",
+              "properties",
+              "write"
+            ]
+          },
+          "fragment_groups": [
+            {
+              "group_type": "feature",
+              "items": [
+                {
+                  "fragment_id": "frag_2cb5ece2943b",
+                  "query_id": "RedisGraph__RedisGraph__2865__q003",
+                  "source_id": "RedisGraph/RedisGraph#2865",
+                  "source_type": "feature",
+                  "group_hint": "feature",
+                  "text": "label_based_node_filtering",
+                  "tags": [
+                    "feature",
+                    "label",
+                    "filter",
+                    "node"
+                  ],
+                  "metadata": {
+                    "repo": "RedisGraph/RedisGraph",
+                    "issue_number": 2865,
+                    "url": "https://github.com/RedisGraph/RedisGraph/issues/2865"
+                  },
+                  "score": 3.10883,
+                  "overlap_tokens": [
+                    "based",
+                    "filtering",
+                    "label",
+                    "node"
+                  ]
+                },
+                {
+                  "fragment_id": "frag_b35adbd3070c",
+                  "query_id": "FalkorDB__FalkorDB__355__q007",
+                  "source_id": "FalkorDB/FalkorDB#355",
+                  "source_type": "feature",
+                  "group_hint": "feature",
+                  "text": "label_based_node_filtering",
+                  "tags": [
+                    "feature",
+                    "node_filter",
+                    "label",
+                    "schema_constraint"
+                  ],
+                  "metadata": {
+                    "repo": "FalkorDB/FalkorDB",
+                    "issue_number": 355,
+                    "url": "https://github.com/FalkorDB/FalkorDB/issues/355"
+                  },
+                  "score": 3.10883,
+                  "overlap_tokens": [
+                    "based",
+                    "filtering",
+                    "label",
+                    "node"
+                  ]
+                },
+                {
+                  "fragment_id": "frag_ed6e3c776c2d",
+                  "query_id": "RedisGraph__RedisGraph__2865__q001",
+                  "source_id": "RedisGraph/RedisGraph#2865",
+                  "source_type": "feature",
+                  "group_hint": "feature",
+                  "text": "label_based_node_filtering",
+                  "tags": [
+                    "feature",
+                    "label",
+                    "filtering",
+                    "node",
+                    "pattern"
+                  ],
+                  "metadata": {
+                    "repo": "RedisGraph/RedisGraph",
+                    "issue_number": 2865,
+                    "url": "https://github.com/RedisGraph/RedisGraph/issues/2865"
+                  },
+                  "score": 3.10883,
+                  "overlap_tokens": [
+                    "based",
+                    "filtering",
+                    "label",
+                    "node"
+                  ]
+                },
+                {
+                  "fragment_id": "frag_2929009e3993",
+                  "query_id": "RedisGraph__RedisGraph__526__q008",
+                  "source_id": "RedisGraph/RedisGraph#526",
+                  "source_type": "feature",
+                  "group_hint": "feature",
+                  "text": "single_column_result",
+                  "tags": [
+                    "feature",
+                    "projection",
+                    "single_column"
+                  ],
+                  "metadata": {
+                    "repo": "RedisGraph/RedisGraph",
+                    "issue_number": 526,
+                    "url": "https://github.com/RedisGraph/RedisGraph/issues/526"
+                  },
+                  "score": 2.884064,
+                  "overlap_tokens": [
+                    "column",
+                    "result"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "output": [
+      {
+        "source": "data/batch_runs/historical_bug_queries_parallel_llm_v1_stage3x10_skeleton_20260429b/stage3_main/instantiated_cases.jsonl",
+        "line": 3235,
+        "record": {
+          "query_id": "FalkorDB__FalkorDB__1281__q002",
+          "source_id": "FalkorDB/FalkorDB#1281",
+          "prepared_source_name": "falkordb",
+          "prepared_source_path": "D:\\sci\\works\\爬虫\\multi_db_pipeline\\falkordb\\05_prepared_queries\\falkorDB_queries.jsonl",
+          "skeleton_id": "sk_c91e77b51dd5",
+          "setup_queries": [
+            "CREATE (a:Person {name: 'Alice', age: 30}), (b:Person {name: 'Bob', age: 25}), (c:City {name: 'NYC'})"
+          ],
+          "main_query": "MATCH (a:Person), (b:Person) OPTIONAL MATCH (a), (b) RETURN count(*) AS cnt ORDER BY cnt DESC",
+          "cleanup_queries": [],
+          "used_group_types": [
+            "feature"
+          ],
+          "notes": "The skeleton is preserved with two MATCH clauses. The OPTIONAL MATCH uses the same nodes. The RETURN clause uses count(*) aggregation and descending order by the count, which is a single column result. Labels are used for node filtering. Relationship labels are not used because the skeleton does not include relationships; the feature 'relationship_labels_return' is not applicable here, but the query remains executable.",
+          "generation_method": "llm",
+          "model": "deepseek-chat",
+          "generation_strategy": "skeleton",
+          "variant_index": 0,
+          "total_variants": 1,
+          "family_bias": null,
+          "case_id": "case_141536e97b92",
+          "validation": {
+            "is_valid": true,
+            "errors": []
+          }
+        }
+      }
+    ],
+    "execution": [
+      {
+        "source": "data/batch_runs/historical_bug_queries_parallel_llm_v1_stage4_neo4j_falkordb_4_18_2_skeleton_20260501/execution_results.jsonl",
+        "line": 6469,
+        "record": {
+          "query_id": "FalkorDB__FalkorDB__1281__q002",
+          "case_id": "case_141536e97b92",
+          "target": "neo4j_docker",
+          "status": "passed",
+          "error": null,
+          "elapsed_ms": 63.268,
+          "main_query": "MATCH (a:Person), (b:Person) OPTIONAL MATCH (a), (b) RETURN count(*) AS cnt ORDER BY cnt DESC",
+          "query_timeout_sec": 10.0,
+          "restart_count": 0,
+          "phases": [
+            {
+              "phase": "pre_case",
+              "statement": "MATCH (n) DETACH DELETE n",
+              "elapsed_ms": 48.896,
+              "keys": [],
+              "records": [],
+              "records_truncated": false,
+              "counters": {
+                "constraints_added": 0,
+                "constraints_removed": 0,
+                "contains_system_updates": false,
+                "contains_updates": true,
+                "indexes_added": 0,
+                "indexes_removed": 0,
+                "labels_added": 0,
+                "labels_removed": 0,
+                "nodes_created": 0,
+                "nodes_deleted": 2,
+                "properties_set": 0,
+                "relationships_created": 0,
+                "relationships_deleted": 0,
+                "system_updates": 0
+              },
+              "query_type": "w",
+              "query_timeout_sec": 10.0
+            },
+            {
+              "phase": "setup",
+              "statement": "CREATE (a:Person {name: 'Alice', age: 30}), (b:Person {name: 'Bob', age: 25}), (c:City {name: 'NYC'})",
+              "elapsed_ms": 6.181,
+              "keys": [],
+              "records": [],
+              "records_truncated": false,
+              "counters": {
+                "constraints_added": 0,
+                "constraints_removed": 0,
+                "contains_system_updates": false,
+                "contains_updates": true,
+                "indexes_added": 0,
+                "indexes_removed": 0,
+                "labels_added": 3,
+                "labels_removed": 0,
+                "nodes_created": 3,
+                "nodes_deleted": 0,
+                "properties_set": 5,
+                "relationships_created": 0,
+                "relationships_deleted": 0,
+                "system_updates": 0
+              },
+              "query_type": "w",
+              "query_timeout_sec": 10.0
+            },
+            {
+              "phase": "main",
+              "statement": "MATCH (a:Person), (b:Person) OPTIONAL MATCH (a), (b) RETURN count(*) AS cnt ORDER BY cnt DESC",
+              "elapsed_ms": 7.281,
+              "keys": [
+                "cnt"
+              ],
+              "records": [
+                {
+                  "cnt": 4
+                }
+              ],
+              "records_truncated": false,
+              "counters": {
+                "constraints_added": 0,
+                "constraints_removed": 0,
+                "contains_system_updates": false,
+                "contains_updates": false,
+                "indexes_added": 0,
+                "indexes_removed": 0,
+                "labels_added": 0,
+                "labels_removed": 0,
+                "nodes_created": 0,
+                "nodes_deleted": 0,
+                "properties_set": 0,
+                "relationships_created": 0,
+                "relationships_deleted": 0,
+                "system_updates": 0
+              },
+              "query_type": "r",
+              "query_timeout_sec": 10.0
+            }
+          ]
+        }
+      },
+      {
+        "source": "data/batch_runs/historical_bug_queries_parallel_llm_v1_stage4_neo4j_falkordb_4_18_2_skeleton_20260501/execution_results.jsonl",
+        "line": 6470,
+        "record": {
+          "query_id": "FalkorDB__FalkorDB__1281__q002",
+          "case_id": "case_141536e97b92",
+          "target": "falkordb_docker_4_18_2",
+          "status": "failed",
+          "error": "FalkorDB connection closed unexpectedly.",
+          "elapsed_ms": 1257.368,
+          "main_query": "MATCH (a:Person), (b:Person) OPTIONAL MATCH (a), (b) RETURN count(*) AS cnt ORDER BY cnt DESC",
+          "query_timeout_sec": 10.0,
+          "phases": [
+            {
+              "phase": "setup",
+              "statement": "CREATE (a:Person {name: 'Alice', age: 30}), (b:Person {name: 'Bob', age: 25}), (c:City {name: 'NYC'})",
+              "elapsed_ms": 1.487,
+              "keys": [],
+              "records": [],
+              "records_truncated": false,
+              "counters": {
+                "labels_added": 2,
+                "nodes_created": 3,
+                "properties_set": 5,
+                "cached_execution": 0,
+                "query_internal_execution_time": "0.127176 milliseconds"
+              },
+              "query_type": "cypher(falkordb-resp)",
+              "query_timeout_sec": 10.0
+            }
+          ]
+        }
+      }
+    ],
+    "baseline_recheck_summary": {
+      "source": "paper/baseline_bug_report_validation_20260629_tool_internal/clean_rerun_gdsmith_falkordb/manual_minimized_latest_recheck_2026-07-13/latest_and_fixed_recheck_summary.json",
+      "record": {
+        "generated_at": "2026-07-13T03:49:47",
+        "source_family_key": "f5954cd36d09",
+        "source_candidate_id": "cde02385445c",
+        "source_tool": "GDsmith",
+        "target": "FalkorDB",
+        "fixed_experiment_image": "falkordb/falkordb:v4.16.8",
+        "latest_image_checked": "falkordb/falkordb:latest",
+        "latest_alias_digest_observed_before_run": "sha256:2496643cabd67e87fd82458383400c049324daec1fe674ba0db4c5bdaca5d25f",
+        "minimized_query": "MATCH () WITH min(1) AS a WHERE 0=1 OPTIONAL MATCH (m), (x) OPTIONAL MATCH (x), (m) RETURN 1",
+        "minimized_query_len": 92,
+        "trial_count": 10,
+        "confirmed_trials": 5,
+        "recheck_count": 9,
+        "confirmed_rechecks": 3,
+        "recheck_by_image": {
+          "falkordb/falkordb:latest": {
+            "runs": 3,
+            "confirmed": 0
+          },
+          "falkordb/falkordb:v4.16.8": {
+            "runs": 3,
+            "confirmed": 3
+          },
+          "falkordb/falkordb:v4.18.11": {
+            "runs": 3,
+            "confirmed": 0
+          }
+        }
+      }
+    }
+  },
+  "dinkel": {
+    "feedback_input": [
+      {
+        "source": "data/feedback_runs/confirmed_bug_feedback_small_20260719_v1/stage2/skeleton_feature_inputs.jsonl",
+        "line": 170,
+        "record": {
+          "query_id": "falkordb_falkordb_duplicate_property_keys_in_merge_patterns_may_crash_server_344256dfe7__q004",
+          "source_id": "falkordb_falkordb_duplicate_property_keys_in_merge_patterns_may_crash_server_344256dfe7",
+          "repo": null,
+          "issue_number": null,
+          "url": null,
+          "prepared_source_name": "falkordb",
+          "prepared_source_path": "issue_reports/submitted/falkordb/2026-7-13/falkordb_duplicate_property_keys_in_merge_patterns_may_crash_server.md",
+          "skeleton_id": "sk_292aa2865bb7",
+          "skeleton_text": "OPTIONAL MATCH(a) MERGE(b{x:HOLE_LABEL_0,x:HOLE_LABEL_1})<-[:HOLE_LABEL_2]-(c) ON MATCH SET a:HOLE_LABEL_3",
+          "guidance_skeleton_text": "OPTIONAL MATCH(a) MERGE(b{x:HOLE_LABEL_0,x:HOLE_LABEL_1})<-[:HOLE_LABEL_2]-(c) ON MATCH SET a:HOLE_LABEL_3",
+          "holes": [
+            {
+              "name": "HOLE_NUM_0",
+              "type": "number_literal",
+              "original": "1"
+            },
+            {
+              "name": "HOLE_NUM_1",
+              "type": "number_literal",
+              "original": "2"
+            },
+            {
+              "name": "HOLE_RELTYPE_0",
+              "type": "rel_type",
+              "original": "[:S"
+            },
+            {
+              "name": "HOLE_LABEL_0",
+              "type": "label",
+              "original": ":HOLE_NUM_0"
+            },
+            {
+              "name": "HOLE_LABEL_1",
+              "type": "label",
+              "original": ":HOLE_NUM_1"
+            },
+            {
+              "name": "HOLE_LABEL_2",
+              "type": "label",
+              "original": ":HOLE_RELTYPE_0"
+            },
+            {
+              "name": "HOLE_LABEL_3",
+              "type": "label",
+              "original": ":L"
+            }
+          ],
+          "generation_strategy": "feature-driven-soft",
+          "feature_selection": "random_constrained",
+          "feature_selection_seed": 20260719,
+          "feature_run_salt": "1503ffd010a41513",
+          "randomize_feature_selection": true,
+          "selected_feature_ids": [
+            "ft_1722484e385d",
+            "ft_921e9196ac68",
+            "ft_dadf5b1d617e"
+          ],
+          "selected_feature_query_ids": [
+            "arcadedb_arcadedb_set_may_leave_other_aliases_to_same_node_stale_7f5cbd7114__q006",
+            "arcadedb_arcadedb_where_false_literal_predicate_may_be_ignored_e6291e06f5__q002",
+            "falkordb_falkordb_nested_pattern_comprehension_inside_list_comprehension_may_ignore_outer_variable_18314d43ae__q005"
+          ],
+          "feature_items": [
+            {
+              "feature_id": "ft_dadf5b1d617e",
+              "text": "query_pattern_create_delete_match_nodes",
+              "description": "该查询包含 MATCH、DELETE、CREATE、MATCH、RETURN 子句，属于写查询，包含图模式路径匹配。",
+              "evidence": null,
+              "tags": [
+                "create",
+                "delete",
+                "match",
+                "nodes",
+                "path_pattern",
+                "return",
+                "write"
+              ]
+            },
+            {
+              "feature_id": "ft_1722484e385d",
+              "text": "query_pattern_match_return_where",
+              "description": "该查询包含 MATCH、WHERE、RETURN 子句。",
+              "evidence": null,
+              "tags": [
+                "match",
+                "return",
+                "where"
+              ]
+            },
+            {
+              "feature_id": "ft_921e9196ac68",
+              "text": "query_pattern_match_return_set_with",
+              "description": "该查询包含 MATCH、WITH、MATCH、SET、RETURN 子句，属于写查询。",
+              "evidence": null,
+              "tags": [
+                "match",
+                "return",
+                "set",
+                "with",
+                "write"
+              ]
+            }
+          ],
+          "retrieval_backend": "lexical",
+          "retrieval_query": {
+            "query_id": "falkordb_falkordb_duplicate_property_keys_in_merge_patterns_may_crash_server_344256dfe7__q004",
+            "skeleton_id": "sk_292aa2865bb7",
+            "structure_keywords": [
+              "optional match",
+              "merge",
+              "match",
+              "set",
+              "number literal",
+              "number literal",
+              "rel type",
+              "label",
+              "label",
+              "label",
+              "label"
+            ],
+            "feature_keywords": [
+              "query_pattern_create_delete_match_nodes",
+              "create",
+              "delete",
+              "match",
+              "nodes",
+              "path pattern",
+              "return",
+              "write",
+              "query_pattern_match_return_where",
+              "where",
+              "query_pattern_match_return_set_with",
+              "set"
+            ],
+            "hole_needs": [
+              "number_literal",
+              "number_literal",
+              "rel_type",
+              "label",
+              "label",
+              "label",
+              "label"
+            ],
+            "retrieval_text": "optional match ; merge ; match ; set ; number literal ; rel type ; label ; query_pattern_create_delete_match_nodes ; create ; delete ; nodes ; path pattern ; return ; write ; query_pattern_match_return_where ; where ; query_pattern_match_return_set_with",
+            "retrieval_tokens": [
+              "number",
+              "literal",
+              "rel",
+              "type",
+              "label",
+              "pattern",
+              "nodes",
+              "nodes",
+              "path",
+              "pattern",
+              "write",
+              "pattern",
+              "pattern"
+            ]
+          },
+          "official_filter_profile": "none",
+          "official_filter_allowed_sources": [],
+          "official_filter_removed_reasons": {},
+          "fragment_groups": [
+            {
+              "group_type": "structure",
+              "items": [
+                {
+                  "fragment_id": "frag_1cd7a6cad99d",
+                  "query_id": "arcadedb_arcadedb_anonymous_middle_node_in_linear_pattern_may_match_no_rows_838b176c4b__q001",
+                  "source_id": "arcadedb_arcadedb_anonymous_middle_node_in_linear_pattern_may_match_no_rows_838b176c4b",
+                  "source_type": "feature",
+                  "group_hint": "structure",
+                  "text": "query_pattern_create_match_path_pattern_write",
+                  "tags": [
+                    "feature",
+                    "create",
+                    "match",
+                    "path_pattern",
+                    "write"
+                  ],
+                  "metadata": {
+                    "repo": null,
+                    "issue_number": null,
+                    "url": null
+                  },
+                  "score": 2.745257,
+                  "overlap_tokens": [
+                    "path",
+                    "pattern",
+                    "write"
+                  ]
+                },
+                {
+                  "fragment_id": "frag_2a14ea739bdf",
+                  "query_id": "falkordb_falkordb_create_path_binding_may_report_variable_not_defined_c26715abb8__q001",
+                  "source_id": "falkordb_falkordb_create_path_binding_may_report_variable_not_defined_c26715abb8",
+                  "source_type": "feature",
+                  "group_hint": "structure",
+                  "text": "query_pattern_create_path_pattern_return_write",
+                  "tags": [
+                    "feature",
+                    "create",
+                    "path_pattern",
+                    "return",
+                    "write"
+                  ],
+                  "metadata": {
+                    "repo": null,
+                    "issue_number": null,
+                    "url": null
+                  },
+                  "score": 2.745257,
+                  "overlap_tokens": [
+                    "path",
+                    "pattern",
+                    "write"
+                  ]
+                },
+                {
+                  "fragment_id": "frag_3d48ba8879bb",
+                  "query_id": "arcadedb_arcadedb_pattern_comprehension_over_existing_relationships_may_evaluate_as_empty_list_a0ebdc9b83__q001",
+                  "source_id": "arcadedb_arcadedb_pattern_comprehension_over_existing_relationships_may_evaluate_as_empty_list_a0ebdc9b83",
+                  "source_type": "feature",
+                  "group_hint": "structure",
+                  "text": "query_pattern_create_path_pattern_write",
+                  "tags": [
+                    "feature",
+                    "create",
+                    "path_pattern",
+                    "write"
+                  ],
+                  "metadata": {
+                    "repo": null,
+                    "issue_number": null,
+                    "url": null
+                  },
+                  "score": 2.745257,
+                  "overlap_tokens": [
+                    "path",
+                    "pattern",
+                    "write"
+                  ]
+                }
+              ]
+            },
+            {
+              "group_type": "feature",
+              "items": [
+                {
+                  "fragment_id": "frag_495b0d07b741",
+                  "query_id": "falkordb_falkordb_contains_predicate_may_misparse_string_concatenation_lhs_1e3181400f__q001",
+                  "source_id": "falkordb_falkordb_contains_predicate_may_misparse_string_concatenation_lhs_1e3181400f",
+                  "source_type": "feature",
+                  "group_hint": "feature",
+                  "text": "query_pattern_create_delete_match_write",
+                  "tags": [
+                    "feature",
+                    "create",
+                    "delete",
+                    "match",
+                    "write"
+                  ],
+                  "metadata": {
+                    "repo": null,
+                    "issue_number": null,
+                    "url": null
+                  },
+                  "score": 2.357465,
+                  "overlap_tokens": [
+                    "pattern",
+                    "write"
+                  ]
+                },
+                {
+                  "fragment_id": "frag_664e61a8fb6d",
+                  "query_id": "neo4j_github_13812__q004",
+                  "source_id": "neo4j_github_13812",
+                  "source_type": "feature",
+                  "group_hint": "feature",
+                  "text": "query_pattern_create_delete_return_write",
+                  "tags": [
+                    "feature",
+                    "create",
+                    "delete",
+                    "return",
+                    "write"
+                  ],
+                  "metadata": {
+                    "repo": "neo4j/neo4j",
+                    "issue_number": 13812,
+                    "url": "https://github.com/neo4j/neo4j/issues/13812"
+                  },
+                  "score": 2.357465,
+                  "overlap_tokens": [
+                    "pattern",
+                    "write"
+                  ]
+                },
+                {
+                  "fragment_id": "frag_80f6b92c607c",
+                  "query_id": "falkordb_falkordb_delete_null_literal_may_error_instead_of_noop_4e7fec9ac8__q002",
+                  "source_id": "falkordb_falkordb_delete_null_literal_may_error_instead_of_noop_4e7fec9ac8",
+                  "source_type": "feature",
+                  "group_hint": "feature",
+                  "text": "query_pattern_delete_return_with_write",
+                  "tags": [
+                    "feature",
+                    "delete",
+                    "return",
+                    "with",
+                    "write"
+                  ],
+                  "metadata": {
+                    "repo": null,
+                    "issue_number": null,
+                    "url": null
+                  },
+                  "score": 2.357465,
+                  "overlap_tokens": [
+                    "pattern",
+                    "write"
+                  ]
+                }
+              ]
+            }
+          ],
+          "run_id": "confirmed_bug_feedback_small_20260719_v1",
+          "generation_lane": "skeleton_feature",
+          "feedback_lane": "skeleton_feature",
+          "source_report_ids": [
+            "falkordb_falkordb_duplicate_property_keys_in_merge_patterns_may_crash_server_344256dfe7"
+          ],
+          "source_query_ids": [
+            "falkordb_falkordb_duplicate_property_keys_in_merge_patterns_may_crash_server_344256dfe7__q004"
+          ],
+          "source_issue_urls": [],
+          "retrieval_fragment_ids": [
+            "frag_1cd7a6cad99d",
+            "frag_2a14ea739bdf",
+            "frag_3d48ba8879bb",
+            "frag_495b0d07b741",
+            "frag_664e61a8fb6d",
+            "frag_80f6b92c607c"
+          ],
+          "introduced_in_run": "confirmed_bug_feedback_small_20260719_v1",
+          "selected_skeleton_id": "sk_292aa2865bb7"
+        }
+      }
+    ],
+    "feedback_output": [
+      {
+        "source": "data/feedback_runs/confirmed_bug_feedback_small_20260719_v1/stage3/skeleton_feature/instantiated_cases.jsonl",
+        "line": 156,
+        "record": {
+          "query_id": "falkordb_falkordb_duplicate_property_keys_in_merge_patterns_may_crash_server_344256dfe7__q004",
+          "source_id": "falkordb_falkordb_duplicate_property_keys_in_merge_patterns_may_crash_server_344256dfe7",
+          "prepared_source_name": "falkordb",
+          "prepared_source_path": "issue_reports/submitted/falkordb/2026-7-13/falkordb_duplicate_property_keys_in_merge_patterns_may_crash_server.md",
+          "skeleton_id": "sk_292aa2865bb7",
+          "setup_queries": [
+            "CREATE (a:Person {name: 'Alice'})",
+            "CREATE (b:Person {name: 'Bob'})",
+            "CREATE (c:Person {name: 'Carol'})",
+            "CREATE (a)-[:KNOWS]->(b)",
+            "CREATE (b)-[:KNOWS]->(c)"
+          ],
+          "main_query": "OPTIONAL MATCH (a) MERGE (b {x: 'target', x: 'duplicate'})<-[:KNOWS]-(c) ON MATCH SET a:Processed RETURN a.name, b.x, c.name",
+          "cleanup_queries": [
+            "MATCH (n) DETACH DELETE n"
+          ],
+          "used_group_types": [
+            "structure",
+            "feature"
+          ],
+          "notes": "Interaction axes: OPTIONAL/null preservation, write-read visibility (MERGE + ON MATCH SET), path cardinality (variable-length path via MERGE pattern). The query uses a duplicate property key in the MERGE pattern to stress parser/planner behavior; setup creates a small graph so the OPTIONAL MATCH yields rows and the MERGE can match or create. Control rewrite: replace the duplicate property key with a single key (e.g., {x: 'target'}) and compare results; also try removing the ON MATCH SET to observe write visibility differences.",
+          "generation_method": "llm",
+          "model": "deepseek-chat",
+          "generation_strategy": "feature-driven-soft",
+          "variant_index": 0,
+          "total_variants": 1,
+          "family_bias": null,
+          "complexity_profile": "default",
+          "generation_profile": "portable_crossdb",
+          "diversity_profile": "semantic_edges",
+          "feature_prompt_format": "natural_language_with_machine_name_tags_evidence_v1",
+          "dialect_filter_retry_attempts": 0,
+          "case_id": "case_d2152a6a92e0",
+          "dialect_filter_violations": [],
+          "validation": {
+            "is_valid": true,
+            "errors": []
+          },
+          "quality": {
+            "generation_profile": "portable_crossdb",
+            "diversity_profile": "semantic_edges",
+            "require_doc_grounding": false,
+            "has_official_doc_grounding": false,
+            "fingerprint": "create (a:person {name: <str>}) create (b:person {name: <str>}) create (c:person {name: <str>}) create (a)-[:knows]->(b) create (b)-[:knows]->(c) optional match (a) merge (b {x: <str>, x: <str>})<-[:knows]-(c) on match set a:processed return a.name, b.x, c.name match (n) detach delete n",
+            "tags": [
+              "optional_match",
+              "write",
+              "merge_on_create_match"
+            ],
+            "quality_gate_errors": []
+          },
+          "quality_retry_attempts": 0
+        }
+      }
+    ],
+    "reconstruction_provenance": {
+      "source": "reproduction/evidence_148/FAL-2196/provenance.json",
+      "record": {
+        "claim_boundary": "This package demonstrates that archived pre-report knowledge could plausibly form an input to the submitted test. It does not establish that the selected skeleton or features were the original generation input.",
+        "evidence_tier": {
+          "code": "A",
+          "historical_composition_eligible": true,
+          "label": "cross-report historical reconstruction",
+          "reasons": []
+        },
+        "lineage_level": "submitted_test_only",
+        "lineage_role": "reconstructed_generation_input",
+        "report_opened_at": "2026-07-12T19:27:42Z",
+        "report_opened_at_basis": "frozen_issue_manifest",
+        "selected_feature_sources": [
+          "RedisGraph__RedisGraph__3073__q001",
+          "FalkorDB__FalkorDB__462__q001",
+          "FalkorDB__FalkorDB__789__q003",
+          "FalkorDB__FalkorDB__1554__q003"
+        ],
+        "selected_skeleton_source": "neo4j__13569__q001"
+      }
+    },
+    "setup_only_exact_matches": [
+      {
+        "report_id": "FAL-2196",
+        "match_class": "exact_shape_only",
+        "block_index": "4",
+        "block_heading": "To Reproduce",
+        "target_variant_kind": "block",
+        "case_id": "case_38ce77a6f8cb",
+        "query_id": "FalkorDB__FalkorDB__647__q004",
+        "source_id": "FalkorDB/FalkorDB#647",
+        "generation_strategy": "feature-fragment-only",
+        "skeleton_id": "sk_88e439518519",
+        "source_path": "data/batch_runs/historical_bug_queries_parallel_llm_v1_feature_only_random_20260511/stage3x10/stage3_main/instantiated_cases.jsonl",
+        "source_line": "1794",
+        "submitted_query": "CREATE(),()",
+        "archived_main_query": "CREATE (), ()"
+      },
+      {
+        "report_id": "FAL-2196",
+        "match_class": "exact_shape_only",
+        "block_index": "4",
+        "block_heading": "To Reproduce",
+        "target_variant_kind": "block",
+        "case_id": "case_874b6790b3f9",
+        "query_id": "neo4j__13317__q001",
+        "source_id": "neo4j#13317",
+        "generation_strategy": "",
+        "skeleton_id": "sk_0a496e47a942",
+        "source_path": "data/batch_runs/historical_bug_queries_rerun_20260418_full/stage3_main_heuristic_v2/instantiated_cases.jsonl",
+        "source_line": "40",
+        "submitted_query": "CREATE(),()",
+        "archived_main_query": "CREATE (),();"
+      },
+      {
+        "report_id": "FAL-2196",
+        "match_class": "exact_shape_only",
+        "block_index": "4",
+        "block_heading": "To Reproduce",
+        "target_variant_kind": "block",
+        "case_id": "case_8351b4ad663e",
+        "query_id": "FalkorDB__FalkorDB__61__q002",
+        "source_id": "FalkorDB/FalkorDB#61",
+        "generation_strategy": "",
+        "skeleton_id": "sk_7a69232f13a5",
+        "source_path": "data/batch_runs/historical_bug_queries_rerun_20260418_full/stage3_main_heuristic_v2/instantiated_cases.jsonl",
+        "source_line": "135",
+        "submitted_query": "CREATE(),()",
+        "archived_main_query": "CREATE (),()"
+      },
+      {
+        "report_id": "FAL-2196",
+        "match_class": "exact_shape_only",
+        "block_index": "4",
+        "block_heading": "To Reproduce",
+        "target_variant_kind": "block",
+        "case_id": "case_6193d99dd394",
+        "query_id": "RedisGraph__RedisGraph__3193__q002",
+        "source_id": "RedisGraph/RedisGraph#3193",
+        "generation_strategy": "",
+        "skeleton_id": "sk_7a69232f13a5",
+        "source_path": "data/batch_runs/historical_bug_queries_rerun_20260418_full/stage3_main_heuristic_v2/instantiated_cases.jsonl",
+        "source_line": "261",
+        "submitted_query": "CREATE(),()",
+        "archived_main_query": "CREATE (),()"
+      },
+      {
+        "report_id": "FAL-2196",
+        "match_class": "exact_shape_only",
+        "block_index": "4",
+        "block_heading": "To Reproduce",
+        "target_variant_kind": "block",
+        "case_id": "case_ba49cf18c921",
+        "query_id": "q_000388",
+        "source_id": "neo4j#13317",
+        "generation_strategy": "",
+        "skeleton_id": "sk_0a496e47a942",
+        "source_path": "data/stage3_runs/stage3_llm/instantiated_cases.jsonl",
+        "source_line": "382",
+        "submitted_query": "CREATE(),()",
+        "archived_main_query": "CREATE (),()"
+      },
+      {
+        "report_id": "FAL-2196",
+        "match_class": "exact_shape_only",
+        "block_index": "4",
+        "block_heading": "To Reproduce",
+        "target_variant_kind": "block",
+        "case_id": "case_9e86f019211d",
+        "query_id": "q_000388",
+        "source_id": "neo4j#13317",
+        "generation_strategy": "",
+        "skeleton_id": "sk_0a496e47a942",
+        "source_path": "data/stage3_runs/stage3_merged_heuristic/instantiated_cases.jsonl",
+        "source_line": "40",
+        "submitted_query": "CREATE(),()",
+        "archived_main_query": "CREATE (),();"
+      }
+    ]
+  },
+  "graspdb": {
+    "histdb_neighbor_output": [
+      {
+        "source": "data/stage3_feature_fragment_only_multi_filtered_v4/instantiated_cases.jsonl",
+        "line": 734,
+        "record": {
+          "query_id": "q_000449",
+          "source_id": "neo4j#13487",
+          "skeleton_id": "sk_895cf893bc83",
+          "setup_queries": [
+            "CREATE (p1:Person {name: 'Alice', age: 30}), (p2:Person {name: 'Bob', age: 25}), (p3:Person {name: 'Charlie', age: 35}), (p1)-[:HAS_CAT]->(:Cat {name: 'Whiskers'}), (p2)-[:HAS_DOG]->(:Dog {name: 'Rex'}), (p3)-[:HAS_CAT]->(:Cat {name: 'Mittens'}), (p3)-[:HAS_DOG]->(:Dog {name: 'Buddy'})"
+          ],
+          "main_query": "MATCH (person:Person) WHERE NOT (person)-[:HAS_CAT]->() CALL { WITH person OPTIONAL MATCH (person)-[:HAS_DOG]->(dog:Dog) RETURN dog.name AS petName UNION ALL OPTIONAL MATCH (person)-[:HAS_CAT]->(cat:Cat) RETURN cat.name AS petName } RETURN person.name AS name, AVG(person.age) AS avgAge, COUNT { MATCH (person)-[:HAS_DOG]->(dog:Dog) RETURN dog.name AS petName UNION MATCH (person)-[:HAS_CAT]->(cat:Cat) RETURN cat.name AS petName } AS numPets ORDER BY avgAge DESC LIMIT 2",
+          "cleanup_queries": [
+            "MATCH (n) DETACH DELETE n"
+          ],
+          "used_group_types": [
+            "predicate",
+            "aggregation",
+            "ordering",
+            "other"
+          ],
+          "notes": "Generated a compact read query that tightly integrates all listed features: query_pattern_call_case_merge_return (simulated via CALL subquery with UNION ALL), query_pattern_limit_match_pagination_return (via LIMIT), query_pattern_call_merge_return_subquery (via CALL subquery), negated_relationship_existence (via WHERE NOT), single_property_assignment (via person.age in AVG), and query_pattern_aggregation_avg_case_order_by (via AVG and ORDER BY). The query uses COUNT subquery with UNION from fragments, interacts features meaningfully (e.g., filtering persons without cats, counting pets, averaging age), and is executable with minimal setup.",
+          "generation_method": "llm",
+          "model": "deepseek-chat",
+          "generation_strategy": "feature-fragment-only",
+          "variant_index": 0,
+          "total_variants": 4,
+          "case_id": "case_cde60b15d6dd",
+          "validation": {
+            "is_valid": true,
+            "errors": []
+          },
+          "filter_preferred_hits": 5,
+          "filter_reasons": []
+        }
+      }
+    ],
+    "histdb_neighbor_execution": [
+      {
+        "source": "data/stage4_feature_fragment_only_multi_filtered_v4/execution_results.jsonl",
+        "line": 1467,
+        "record": {
+          "query_id": "q_000449",
+          "case_id": "case_cde60b15d6dd",
+          "target": "neo4j_docker",
+          "status": "failed",
+          "error": "{neo4j_code: Neo.DatabaseError.General.UnknownError} {message: Scope dependencies have not been computed yet} {gql_status: 50N00} {gql_status_description: error: general processing exception - internal error. Internal exception raised TransactionStateTransitionException: Scope dependencies have not been computed yet}",
+          "elapsed_ms": 128.154,
+          "main_query": "MATCH (person:Person) WHERE NOT (person)-[:HAS_CAT]->() CALL { WITH person OPTIONAL MATCH (person)-[:HAS_DOG]->(dog:Dog) RETURN dog.name AS petName UNION ALL OPTIONAL MATCH (person)-[:HAS_CAT]->(cat:Cat) RETURN cat.name AS petName } RETURN person.name AS name, AVG(person.age) AS avgAge, COUNT { MATCH (person)-[:HAS_DOG]->(dog:Dog) RETURN dog.name AS petName UNION MATCH (person)-[:HAS_CAT]->(cat:Cat) RETURN cat.name AS petName } AS numPets ORDER BY avgAge DESC LIMIT 2",
+          "query_timeout_sec": 10.0,
+          "restart_count": 0,
+          "phases": [
+            {
+              "phase": "pre_case",
+              "statement": "MATCH (n) DETACH DELETE n",
+              "elapsed_ms": 51.322,
+              "keys": [],
+              "records": [],
+              "records_truncated": false,
+              "counters": {
+                "constraints_added": 0,
+                "constraints_removed": 0,
+                "contains_system_updates": false,
+                "contains_updates": false,
+                "indexes_added": 0,
+                "indexes_removed": 0,
+                "labels_added": 0,
+                "labels_removed": 0,
+                "nodes_created": 0,
+                "nodes_deleted": 0,
+                "properties_set": 0,
+                "relationships_created": 0,
+                "relationships_deleted": 0,
+                "system_updates": 0
+              },
+              "query_type": "w",
+              "query_timeout_sec": 10.0
+            },
+            {
+              "phase": "setup",
+              "statement": "CREATE (p1:Person {name: 'Alice', age: 30}), (p2:Person {name: 'Bob', age: 25}), (p3:Person {name: 'Charlie', age: 35}), (p1)-[:HAS_CAT]->(:Cat {name: 'Whiskers'}), (p2)-[:HAS_DOG]->(:Dog {name: 'Rex'}), (p3)-[:HAS_CAT]->(:Cat {name: 'Mittens'}), (p3)-[:HAS_DOG]->(:Dog {name: 'Buddy'})",
+              "elapsed_ms": 13.611,
+              "keys": [],
+              "records": [],
+              "records_truncated": false,
+              "counters": {
+                "constraints_added": 0,
+                "constraints_removed": 0,
+                "contains_system_updates": false,
+                "contains_updates": true,
+                "indexes_added": 0,
+                "indexes_removed": 0,
+                "labels_added": 7,
+                "labels_removed": 0,
+                "nodes_created": 7,
+                "nodes_deleted": 0,
+                "properties_set": 10,
+                "relationships_created": 4,
+                "relationships_deleted": 0,
+                "system_updates": 0
+              },
+              "query_type": "w",
+              "query_timeout_sec": 10.0
+            },
+            {
+              "phase": "cleanup",
+              "statement": "MATCH (n) DETACH DELETE n",
+              "elapsed_ms": 48.788,
+              "keys": [],
+              "records": [],
+              "records_truncated": false,
+              "counters": {
+                "constraints_added": 0,
+                "constraints_removed": 0,
+                "contains_system_updates": false,
+                "contains_updates": true,
+                "indexes_added": 0,
+                "indexes_removed": 0,
+                "labels_added": 0,
+                "labels_removed": 0,
+                "nodes_created": 0,
+                "nodes_deleted": 7,
+                "properties_set": 0,
+                "relationships_created": 0,
+                "relationships_deleted": 4,
+                "system_updates": 0
+              },
+              "query_type": "w",
+              "query_timeout_sec": 10.0
+            }
+          ]
+        }
+      },
+      {
+        "source": "data/stage4_feature_fragment_only_multi_filtered_v4/execution_results.jsonl",
+        "line": 1468,
+        "record": {
+          "query_id": "q_000449",
+          "case_id": "case_cde60b15d6dd",
+          "target": "memgraph_docker",
+          "status": "failed",
+          "error": "{neo4j_code: Memgraph.ClientError.MemgraphError.MemgraphError} {message: Error on line 1 position 303 with the ( token. The underlying parsing error is no viable alternative at input 'COUNT{MATCH('. Take a look at clauses around and try to fix the query.} {gql_status: 50N42} {gql_status_description: error: general processing exception - unexpected error. Error on line 1 position 303 with the ( token. The underlying parsing error is no viable alternative at input 'COUNT{MATCH('. Take a look at clauses around and try to fix the query.}",
+          "elapsed_ms": 325.398,
+          "main_query": "MATCH (person:Person) WHERE NOT (person)-[:HAS_CAT]->() CALL { WITH person OPTIONAL MATCH (person)-[:HAS_DOG]->(dog:Dog) RETURN dog.name AS petName UNION ALL OPTIONAL MATCH (person)-[:HAS_CAT]->(cat:Cat) RETURN cat.name AS petName } RETURN person.name AS name, AVG(person.age) AS avgAge, COUNT { MATCH (person)-[:HAS_DOG]->(dog:Dog) RETURN dog.name AS petName UNION MATCH (person)-[:HAS_CAT]->(cat:Cat) RETURN cat.name AS petName } AS numPets ORDER BY avgAge DESC LIMIT 2",
+          "query_timeout_sec": 10.0,
+          "restart_count": 0,
+          "phases": [
+            {
+              "phase": "pre_case",
+              "statement": "MATCH (n) DETACH DELETE n",
+              "elapsed_ms": 152.213,
+              "keys": [],
+              "records": [],
+              "records_truncated": false,
+              "counters": {
+                "constraints_added": 0,
+                "constraints_removed": 0,
+                "contains_system_updates": false,
+                "contains_updates": false,
+                "indexes_added": 0,
+                "indexes_removed": 0,
+                "labels_added": 0,
+                "labels_removed": 0,
+                "nodes_created": 0,
+                "nodes_deleted": 0,
+                "properties_set": 0,
+                "relationships_created": 0,
+                "relationships_deleted": 0,
+                "system_updates": 0
+              },
+              "query_type": "rw",
+              "query_timeout_sec": 10.0
+            },
+            {
+              "phase": "setup",
+              "statement": "CREATE (p1:Person {name: 'Alice', age: 30}), (p2:Person {name: 'Bob', age: 25}), (p3:Person {name: 'Charlie', age: 35}), (p1)-[:HAS_CAT]->(:Cat {name: 'Whiskers'}), (p2)-[:HAS_DOG]->(:Dog {name: 'Rex'}), (p3)-[:HAS_CAT]->(:Cat {name: 'Mittens'}), (p3)-[:HAS_DOG]->(:Dog {name: 'Buddy'})",
+              "elapsed_ms": 1.314,
+              "keys": [],
+              "records": [],
+              "records_truncated": false,
+              "counters": {
+                "constraints_added": 0,
+                "constraints_removed": 0,
+                "contains_system_updates": false,
+                "contains_updates": true,
+                "indexes_added": 0,
+                "indexes_removed": 0,
+                "labels_added": 7,
+                "labels_removed": 0,
+                "nodes_created": 7,
+                "nodes_deleted": 0,
+                "properties_set": 0,
+                "relationships_created": 4,
+                "relationships_deleted": 0,
+                "system_updates": 0
+              },
+              "query_type": "rw",
+              "query_timeout_sec": 10.0
+            },
+            {
+              "phase": "cleanup",
+              "statement": "MATCH (n) DETACH DELETE n",
+              "elapsed_ms": 167.08,
+              "keys": [],
+              "records": [],
+              "records_truncated": false,
+              "counters": {
+                "constraints_added": 0,
+                "constraints_removed": 0,
+                "contains_system_updates": false,
+                "contains_updates": true,
+                "indexes_added": 0,
+                "indexes_removed": 0,
+                "labels_added": 0,
+                "labels_removed": 0,
+                "nodes_created": 0,
+                "nodes_deleted": 7,
+                "properties_set": 0,
+                "relationships_created": 0,
+                "relationships_deleted": 4,
+                "system_updates": 0
+              },
+              "query_type": "rw",
+              "query_timeout_sec": 10.0
+            }
+          ],
+          "hard_timeout_sec": 25.0
+        }
+      }
+    ],
+    "legacy_baseline_summary": {
+      "source": "paper/graspdb_neo4j_final_issue_audit_2026-07-13/summary.json",
+      "record": {
+        "generated_at": "2026-07-13",
+        "tool": "GRASpDB",
+        "target": "Neo4j",
+        "fixed_experiment_version": "neo4j:2026.03.1",
+        "latest_rechecked_version": "neo4j:2026.05.0",
+        "family_count": 3,
+        "families": [
+          {
+            "index": "107",
+            "family_key": "81ef662ab19682a7",
+            "category": "neo4j_internal_scope_error"
+          },
+          {
+            "index": "108",
+            "family_key": "89e5706b57a46041",
+            "category": "neo4j_internal_scope_error"
+          },
+          {
+            "index": "109",
+            "family_key": "f186a547b2686d14",
+            "category": "neo4j_internal_scope_error"
+          }
+        ],
+        "root_pattern": "COUNT { CALL { WITH * ... } } used inside write-clause property construction triggers Neo.DatabaseError.General.UnknownError: Scope dependencies have not been computed yet on Neo4j 2026.03.1.",
+        "latest_recheck": "No repro on neo4j:2026.05.0 for minimized and original/transformed queries.",
+        "counting_decision": "Count as 3 GRASpDB/Neo4j issue-level true bugs under the project family-level baseline counting table; do not submit as new current Neo4j issues because latest checked version no longer reproduces."
+      }
+    },
+    "legacy_count_is_not_reconciled_root_family_count": true
+  },
+  "catalog_rows": [
+    {
+      "report_id": "FAL-1981",
+      "dbms": "falkordb",
+      "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1981",
+      "report_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_optional_match_on_two_bound_variables_may_crash_server.md",
+      "maintainer_status": "confirmed",
+      "fix_status": "fixed",
+      "candidate_family_key": "optional match on two already bound variables may crash the server",
+      "paper_family_id": "",
+      "reproduction_scope": "index_only",
+      "evidence_notes": "non-exact normalized-title match; similarity=0.900; GitHub title: `OPTIONAL MATCH` on two already-bound variables may crash the server",
+      "index_only_reason": "Awaiting fixed-version family reconciliation in Tasks 8-12"
+    },
+    {
+      "report_id": "FAL-2196",
+      "dbms": "falkordb",
+      "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/2196",
+      "report_path": "reproduction/report_snapshots/falkordb/2196.md",
+      "maintainer_status": "confirmed",
+      "fix_status": "fixed",
+      "candidate_family_key": "merge patterns with duplicate property keys followed by on match set may crash the server",
+      "paper_family_id": "",
+      "reproduction_scope": "index_only",
+      "evidence_notes": "index snapshot generated; no unique local submitted-report title match; best_similarity=0.639; GitHub title: `MERGE` patterns with duplicate property keys followed by `ON MATCH SET` may crash the server",
+      "index_only_reason": "Awaiting fixed-version family reconciliation in Tasks 8-12"
+    },
+    {
+      "report_id": "NEO-13810",
+      "dbms": "neo4j",
+      "issue_url": "https://github.com/neo4j/neo4j/issues/13810",
+      "report_path": "reproduction/report_snapshots/neo4j/13810.md",
+      "maintainer_status": "confirmed",
+      "fix_status": "fixed",
+      "candidate_family_key": "alias shadowing inside count subquery under outer aggregation may trigger internal unknownerror instead of a normal shadowing error",
+      "paper_family_id": "HISTDB-NEO-001",
+      "reproduction_scope": "paper_fixed_version",
+      "evidence_notes": "reviewed cached issue body and minimized trigger",
+      "index_only_reason": ""
+    },
+    {
+      "report_id": "NEO-13827",
+      "dbms": "neo4j",
+      "issue_url": "https://github.com/neo4j/neo4j/issues/13827",
+      "report_path": "reproduction/report_snapshots/neo4j/13827.md",
+      "maintainer_status": "confirmed",
+      "fix_status": "fixed",
+      "candidate_family_key": "planner internal error with next followed by union branch using filter false before unwind",
+      "paper_family_id": "HISTDB-NEO-002",
+      "reproduction_scope": "paper_fixed_version",
+      "evidence_notes": "reviewed cached issue body plus paper Cypher 5/25 equivalence evidence",
+      "index_only_reason": ""
+    },
+    {
+      "report_id": "NEO-13859",
+      "dbms": "neo4j",
+      "issue_url": "https://github.com/neo4j/neo4j/issues/13859",
+      "report_path": "reproduction/report_snapshots/neo4j/13859.md",
+      "maintainer_status": "confirmed",
+      "fix_status": "fixed",
+      "candidate_family_key": "optional match with distinct and order by returns different coalesce result across runtimes",
+      "paper_family_id": "HISTDB-NEO-003",
+      "reproduction_scope": "paper_fixed_version",
+      "evidence_notes": "reviewed cached issue body and runtime controls",
+      "index_only_reason": ""
+    }
+  ]
+}

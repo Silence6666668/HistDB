@@ -1,0 +1,91 @@
+[
+  {
+    "feature_id": "ft_e0ff4042df02",
+    "machine_name": "union_of_merge_return",
+    "description": "Two independent MERGE operations combined with UNION, each returning a constant alias.",
+    "tags": [
+      "union",
+      "merge",
+      "return",
+      "alias",
+      "constant"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d7c4a8da72d4",
+    "machine_name": "merge_relationship_with_property_constraint",
+    "description": "MERGE creates a relationship between two matched nodes with specific labels and property constraints, ensuring existence without duplication.",
+    "tags": [
+      "merge",
+      "relationship",
+      "constraint"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_94d1e96de72c",
+    "machine_name": "order_by_descending_aggregate",
+    "description": "Order results by aggregated value in descending order",
+    "tags": [
+      "ordering",
+      "descending",
+      "aggregate",
+      "alias_reference"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_c9dda773b70d",
+    "machine_name": "return_all_properties",
+    "description": "RETURN * to project all properties of matched nodes",
+    "tags": [
+      "return",
+      "projection",
+      "wildcard"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_63f81c0c0dfa",
+    "machine_name": "alias_unused_in_subsequent_clauses",
+    "description": "Defining an alias (c) in WITH that is not referenced in later clauses, which may test optimizer behavior with unused variables.",
+    "tags": [
+      "with",
+      "alias",
+      "unused_variable",
+      "optimization"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_dc3ed6ab8b2b",
+    "machine_name": "string_property_comparison_in_not",
+    "description": "NOT predicate applied to a string comparison ('o' < property), testing lexicographic order and negation",
+    "tags": [
+      "predicate",
+      "string",
+      "comparison",
+      "negation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

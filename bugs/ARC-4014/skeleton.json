@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_51a5b6383634",
+  "skeleton_text": "MATCH (c)-[:HOLE_REL_TYPE*HOLE_MIN_HOPS..HOLE_MAX_HOPS]->(p) WHERE c.HOLE_PROP_NAME = HOLE_VALUE RETURN p.HOLE_PROP_NAME AS name UNION MATCH (c)-[:HOLE_REL_TYPE*HOLE_MIN_HOPS..HOLE_MAX_HOPS]->(p) WHERE p.HOLE_PROP_NAME = HOLE_VALUE RETURN c.HOLE_PROP_NAME AS name",
+  "source_id": "RedisGraph/RedisGraph#748",
+  "source_query_id": "RedisGraph__RedisGraph__748__q009",
+  "holes": []
+}

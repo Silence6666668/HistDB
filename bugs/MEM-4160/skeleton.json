@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_c387debf1857",
+  "skeleton_text": "MATCH (HOLE_NODE1) MATCH (HOLE_NODE2) CREATE (HOLE_NODE1)-[:HOLE_REL_TYPE]->(HOLE_NODE2)",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#367",
+  "holes": []
+}

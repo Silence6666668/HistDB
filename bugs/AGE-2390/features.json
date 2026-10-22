@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_48406c48236d",
+    "machine_name": "multiple_merge_operations",
+    "description": "Executes multiple MERGE operations sequentially in the same query, which can test transaction behavior and intermediate state effects.",
+    "tags": [
+      "write",
+      "merge",
+      "sequence"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_37d27a775099",
+    "machine_name": "create_node_with_properties",
+    "description": "Create a single node with a label and multiple string properties, including one with a placeholder format specifier.",
+    "tags": [
+      "write",
+      "node_creation",
+      "properties",
+      "string_placeholder"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_5e6077120f76",
+    "machine_name": "match_set_label_on_relationship",
+    "description": "Adds a label to a relationship after matching a pattern, testing label assignment on relationships.",
+    "tags": [
+      "write",
+      "label",
+      "relationship",
+      "match_set"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_58bf686318a3",
+    "machine_name": "create_relationship_between_new_nodes",
+    "description": "Creates a relationship between newly created nodes in the same CREATE statement",
+    "tags": [
+      "write",
+      "relationship_creation",
+      "new_nodes",
+      "single_statement"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_fc6481b1f903",
+    "machine_name": "return_deleted_node_property",
+    "description": "Returns a property from a node after it has been deleted, testing null or ghost value semantics in write queries.",
+    "tags": [
+      "return",
+      "deletion",
+      "null_semantics",
+      "property_access"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_29661153378f",
+    "machine_name": "multi_property_node_creation",
+    "description": "Creating nodes with multiple numeric and string properties from array elements",
+    "tags": [
+      "create",
+      "properties",
+      "array_index"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

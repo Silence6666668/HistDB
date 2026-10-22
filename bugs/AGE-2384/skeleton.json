@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_f5f5b870ca7b",
+  "skeleton_text": "RETURN [[(HOLE_NODE_VAR)-->(HOLE_NODE_VAR) | HOLE_NODE_VAR]]",
+  "source_id": "memgraph/memgraph#2716",
+  "source_query_id": "memgraph__memgraph__2716__q002",
+  "holes": []
+}

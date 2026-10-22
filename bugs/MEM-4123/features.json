@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_89383a2e9869",
+    "machine_name": "duplicate_property_values",
+    "description": "Create nodes with identical property values, testing uniqueness constraints or duplicate handling.",
+    "tags": [
+      "property",
+      "duplicate",
+      "write",
+      "constraint"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_c866b5122684",
+    "machine_name": "node_variable_aliasing",
+    "description": "Use distinct variable names (n0, n1) for nodes created in the same operation.",
+    "tags": [
+      "variable",
+      "aliasing",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_59d03dccb1bc",
+    "machine_name": "with_limit_before_second_match",
+    "description": "Using WITH LIMIT to restrict rows before a subsequent MATCH clause, which can affect cardinality and performance.",
+    "tags": [
+      "with",
+      "limit",
+      "cardinality",
+      "performance"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3281d3a9d947",
+    "machine_name": "multi_node_match_with_properties",
+    "description": "Matching multiple nodes with property filters in separate patterns",
+    "tags": [
+      "match",
+      "property_filter",
+      "multiple_nodes"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_4a6246a41ff4",
+    "machine_name": "match_merge_combination",
+    "description": "Combination of MATCH for nodes followed by MERGE for relationship creation",
+    "tags": [
+      "clause_combination",
+      "match",
+      "merge",
+      "write_operation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_11b9e83de5f9",
+    "machine_name": "limit_in_subquery",
+    "description": "Subquery returning exactly one result using LIMIT 1",
+    "tags": [
+      "subquery",
+      "LIMIT",
+      "single_result",
+      "cardinality"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

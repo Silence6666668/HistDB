@@ -1,0 +1,62 @@
+[
+  {
+    "feature_id": "ft_e492e2dc43ad",
+    "machine_name": "query_pattern_create_match_merge_return",
+    "description": "该查询包含 MERGE、CREATE、SET、MATCH、SET、RETURN 子句，属于写查询。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#2116",
+    "source_query_id": "ArcadeData__arcadedb__2116__q001"
+  },
+  {
+    "feature_id": "ft_4fcc34f001b2",
+    "machine_name": "query_pattern_create_match_path_pattern_return",
+    "description": "该查询包含 CREATE、WITH、MATCH、RETURN 子句，属于写查询，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3332",
+    "source_query_id": "ArcadeData__arcadedb__3332__q001"
+  },
+  {
+    "feature_id": "ft_3a44fde42bf7",
+    "machine_name": "query_pattern_match_order_by_path_pattern_return",
+    "description": "该查询包含 MATCH、RETURN、ORDER BY 子句，带有排序逻辑，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3711",
+    "source_query_id": "ArcadeData__arcadedb__3711__q005"
+  },
+  {
+    "feature_id": "ft_6ac9768b4f25",
+    "machine_name": "query_pattern_create_match_path_pattern_with",
+    "description": "该查询包含 WITH、MATCH、CREATE 子句，属于写查询，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3766",
+    "source_query_id": "ArcadeData__arcadedb__3766__q003"
+  },
+  {
+    "feature_id": "ft_e19121bcf686",
+    "machine_name": "query_pattern_match_path_pattern_return_set",
+    "description": "该查询包含 MATCH、SET、RETURN 子句，属于写查询，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1394",
+    "source_query_id": "FalkorDB__FalkorDB__1394__q004"
+  },
+  {
+    "feature_id": "ft_eb4a95c8339a",
+    "machine_name": "multiple_write_clauses",
+    "description": "Combining multiple write clauses (CREATE, DELETE, MERGE) in a single query without explicit ordering or separation, testing execution order and side effects.",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "memgraph/memgraph#2093",
+    "source_query_id": "memgraph__memgraph__2093__q002"
+  }
+]

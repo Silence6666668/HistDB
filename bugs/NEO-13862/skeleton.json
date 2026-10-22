@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_3abf1f1359c1",
+  "skeleton_text": "CYPHER 25 MATCH (c:Customer)-[:BUYS]->(p:Product) RETURN c AS customer, p AS product NEXT RETURN product.name AS product, COUNT(customer) AS numberOfCustomers ORDER BY numberOfCustomers DESC, product SKIP 1 LIMIT 2",
+  "source_id": "neo4j#13127",
+  "source_query_id": "full__q_000247",
+  "holes": []
+}

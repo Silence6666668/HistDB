@@ -1,0 +1,47 @@
+schema_version: 1
+family_id: HISTDB-ARC-004
+title: Collected relationship list drops rows after a variable-length MATCH
+paper_set: fixed-version-50
+dbms: arcadedb
+symptom: carrying collect(r) into a later traversal produces zero rows
+issue:
+  url: https://github.com/ArcadeData/arcadedb/issues/3997
+  status: confirmed
+  report_path: issue_reports/submitted/arcadedb/2026-4-24/arcadedb_collected_relationship_list_may_drop_rows_after_later_variable_length_match.md
+targets:
+  buggy: {id: arcadedb-26.4.1}
+  fixed: []
+observation: {reported_version: 26.4.1-SNAPSHOT, execution_target: "arcadedata/arcadedb:26.4.1"}
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - |-
+      CREATE (a:Person {name:'Alice', age:30}),
+             (b:Person {name:'Bob', age:25}),
+             (c:Person {name:'Charlie', age:35}),
+             (a)-[:KNOWS {since:2020}]->(b),
+             (b)-[:KNOWS {since:2019}]->(c)
+  query: |-
+    MATCH (a:Person {name:'Alice'})-[r:KNOWS]->(b:Person)
+    WITH a, collect(r) AS rels
+    MATCH path = (a)-[:KNOWS*1..2]->(c:Person)
+    RETURN length(path) AS len, size(rels) AS relationCount
+    ORDER BY len
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: true
+  expected_buggy: []
+  expected_correct:
+    - {len: 1, relationCount: 1}
+    - {len: 2, relationCount: 1}
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: FalkorDB__FalkorDB__349__q002
+  case_id: null
+  source_artifacts:
+    - issue_reports/submitted/arcadedb/2026-4-24/arcadedb_collected_relationship_list_may_drop_rows_after_later_variable_length_match.md
+  skeleton_ids: []
+  feature_ids: []
+

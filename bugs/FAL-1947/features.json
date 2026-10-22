@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_4f6a4e8392c4",
+    "machine_name": "merge_with_complex_pattern",
+    "description": "MERGE with a 4-node pattern including self-reference, multiple relationship types, and node labels.",
+    "tags": [
+      "merge",
+      "pattern",
+      "self_reference",
+      "multiple_labels"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_273e3bbdc979",
+    "machine_name": "pattern_in_list_comprehension",
+    "description": "Embedding a relationship pattern inside a list comprehension to produce a scalar value.",
+    "tags": [
+      "list_comprehension",
+      "pattern_embedding",
+      "scalar_projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_0637d0fbe447",
+    "machine_name": "property_projection_with_alias",
+    "description": "Return a specific property from nodes with an alias in the projection",
+    "tags": [
+      "projection",
+      "property",
+      "alias"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_70ab5633a926",
+    "machine_name": "variable_length_path_zero_to_unbounded",
+    "description": "MATCH with variable-length path using *0.. (zero to unbounded hops), including the start node itself.",
+    "tags": [
+      "match",
+      "path",
+      "variable_length",
+      "zero_min",
+      "unbounded_max"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7a95d4a4362d",
+    "machine_name": "create_delete_create_chain",
+    "description": "Sequential CREATE, DELETE, and CREATE operations on the same variable within a single query, testing transaction atomicity and variable reuse.",
+    "tags": [
+      "write",
+      "transaction",
+      "variable_reuse",
+      "atomicity"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3b60fe5d5c6f",
+    "machine_name": "with_clause_for_variable_preservation",
+    "description": "Use WITH clause to preserve variables between MATCH clauses without filtering",
+    "tags": [
+      "with",
+      "variable_preservation",
+      "clause_separation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

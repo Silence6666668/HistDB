@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_d29c905d7a0d",
+  "skeleton_text": "MATCH (p:HOLE_LABEL_0{age:HOLE_LABEL_1}) RETURN p UNION ALL MATCH(p:HOLE_LABEL_2{age:HOLE_LABEL_3}) RETURN p ORDER BY p.HOLE_PROP_0 ASC",
+  "source_id": "RedisGraph/RedisGraph#764",
+  "source_query_id": "RedisGraph__RedisGraph__764__q003",
+  "holes": []
+}

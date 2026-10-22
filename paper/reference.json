@@ -1,0 +1,18 @@
+{
+  "paper_sha256": "2fb476769cbdcad882ddbe9b94e88f821360e0a73ccbc09b948dd9a59b379508",
+  "rq2_display_names": {
+    "W": "WR",
+    "S": "CR"
+  },
+  "matched_paper_tables": [
+    4,
+    5,
+    6
+  ],
+  "historical_corpus_counts_verified": {
+    "reports": 1646,
+    "skeleton_records": 4574,
+    "unique_skeletons": 3591,
+    "feature_records": 18603
+  }
+}

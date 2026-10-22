@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_3a7f44577141",
+    "machine_name": "single_node_creation_no_label",
+    "description": "Creating a single node without any labels, only with properties",
+    "tags": [
+      "write",
+      "node_creation",
+      "no_label",
+      "anonymous_node"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_dae26e0a23e9",
+    "machine_name": "anonymous_node_creation",
+    "description": "Create a node without assigning a variable",
+    "tags": [
+      "write",
+      "node_creation",
+      "anonymous"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_2f83c2e04be9",
+    "machine_name": "anonymous_node_creation",
+    "description": "Creates nodes without assigning variables, testing node creation without subsequent reference.",
+    "tags": [
+      "write",
+      "node",
+      "anonymous",
+      "label"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_2e8da65fc356",
+    "machine_name": "write_operation_without_return",
+    "description": "Perform a write operation (CREATE) without a RETURN clause, typical for data insertion queries.",
+    "tags": [
+      "write",
+      "no_return",
+      "create"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_380a158ee12f",
+    "machine_name": "call_subquery_with_skip_in_create",
+    "description": "Uses a CALL subquery that performs a CREATE and returns a result with SKIP applied, potentially testing subquery isolation or write effects.",
+    "tags": [
+      "subquery",
+      "create",
+      "skip",
+      "return",
+      "aggregation_like"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d616fdd8fffb",
+    "machine_name": "create_chain_pattern_with_variable_reuse",
+    "description": "CREATE clause with a chain pattern where nodes and relationships are reused in a single statement",
+    "tags": [
+      "write",
+      "pattern",
+      "variable_reuse"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

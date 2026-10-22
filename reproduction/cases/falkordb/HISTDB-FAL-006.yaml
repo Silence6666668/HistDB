@@ -1,0 +1,44 @@
+schema_version: 1
+family_id: HISTDB-FAL-006
+title: A self-loop-contributed bounded path is omitted
+paper_set: fixed-version-50
+dbms: falkordb
+symptom: one of two valid variable-length paths to the same endpoint is missing
+issue:
+  url: https://github.com/FalkorDB/FalkorDB/issues/1959
+  status: confirmed
+  report_path: issue_reports/submitted/falkordb/2026-4-29/falkordb_variable_length_path_may_ignore_self_loop_contributed_paths.md
+targets:
+  buggy:
+    id: falkordb-4.16.8
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+  query: |-
+    CREATE (d:Person {name:'Diana'}),
+           (b:Person {name:'Bob'}),
+           (d)-[:KNOWS]->(b),
+           (d)-[:KNOWS]->(d)
+    WITH d, b
+    MATCH path = (d)-[:KNOWS*1..2]->(b)
+    RETURN count(path) AS pathCount
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: scalar_equals
+  field: pathCount
+  expected_buggy: 1
+  expected_correct: 2
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: RedisGraph__RedisGraph__464__q003
+  case_id: case_ee59b0eac771
+  source_artifacts:
+    - issue_reports/submitted/falkordb/2026-4-29/falkordb_variable_length_path_may_ignore_self_loop_contributed_paths.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

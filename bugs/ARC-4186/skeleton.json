@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_a97b3027ac01",
+  "skeleton_text": "MATCH (n:CHUNK) WHERE ID(n) IN $ids RETURN n.text as text, ID(n) as id",
+  "source_id": "ArcadeData/arcadedb#3132",
+  "source_query_id": "ArcadeData__arcadedb__3132__q001",
+  "holes": []
+}

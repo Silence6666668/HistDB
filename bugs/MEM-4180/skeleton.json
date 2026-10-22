@@ -1,0 +1,33 @@
+{
+  "skeleton_id": "sk_ab28826ea646",
+  "skeleton_text": "match (HOLE_NODE_LABEL: HOLE_LABEL) optional match (HOLE_NODE_LABEL)-->(HOLE_REL_NODE: HOLE_REL_LABEL) with HOLE_NODE_LABEL, collect(HOLE_REL_NODE) as HOLE_COLLECTION_NAME return HOLE_NODE_LABEL, HOLE_COLLECTION_NAME",
+  "source_id": "neo4j#12657",
+  "source_query_id": "neo4j__12657__q001",
+  "holes": [
+    {
+      "name": "HOLE_NODE_LABEL",
+      "type": "node_alias",
+      "original": "ob"
+    },
+    {
+      "name": "HOLE_LABEL",
+      "type": "node_label",
+      "original": "OB"
+    },
+    {
+      "name": "HOLE_REL_NODE",
+      "type": "node_alias",
+      "original": "e"
+    },
+    {
+      "name": "HOLE_REL_LABEL",
+      "type": "node_label",
+      "original": "Exposure"
+    },
+    {
+      "name": "HOLE_COLLECTION_NAME",
+      "type": "variable_name",
+      "original": "exposures"
+    }
+  ]
+}

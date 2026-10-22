@@ -1,0 +1,8 @@
+{
+  "source_run": "rq2_ws_4features_5000_20261015",
+  "feature_count": 4,
+  "shuffle_seed": 20261014,
+  "independent_generator_runs": false,
+  "eligibility_feature_count": 5,
+  "selected_cohorts_are_jointly_retained": true
+}

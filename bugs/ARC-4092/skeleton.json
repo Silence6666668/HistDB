@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_dac9d5c4f876",
+  "skeleton_text": "MATCH (HOLE_NODE1:HOLE_LABEL1)-[:HOLE_REL_TYPE1]->(:HOLE_LABEL2)-[:HOLE_REL_TYPE2]->(HOLE_NODE2:HOLE_LABEL3) RETURN HOLE_NODE2.HOLE_PROP1",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#1437",
+  "holes": []
+}

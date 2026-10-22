@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_8bf38680931c",
+    "machine_name": "multiple_match_clauses",
+    "description": "Two consecutive MATCH clauses without intervening clauses, which may affect scoping or performance.",
+    "tags": [
+      "clause_combination",
+      "scoping"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a9d227c301c3",
+    "machine_name": "large_month_duration",
+    "description": "Using a duration with an extremely large month value (P1754475719991321997M) that may test overflow or precision handling",
+    "tags": [
+      "duration",
+      "edge_case",
+      "large_value",
+      "month_component"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_bcd2b9554f98",
+    "machine_name": "return_labels_function",
+    "description": "Use the Labels() function in the RETURN clause to retrieve the labels of a node.",
+    "tags": [
+      "return",
+      "function",
+      "label_retrieval"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_c892de601ccd",
+    "machine_name": "unwind_with_parameterized_collection",
+    "description": "Using UNWIND to iterate over a parameterized collection ($edges), enabling batch processing of input data.",
+    "tags": [
+      "unwind",
+      "parameter",
+      "iteration",
+      "batch"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_e50cdcac3764",
+    "machine_name": "string_contains_empty_string",
+    "description": "Use of CONTAINS string predicate with an empty string as both the source and substring, which always evaluates to true.",
+    "tags": [
+      "predicate",
+      "string",
+      "contains",
+      "empty_string",
+      "edge_case"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7fc62704cc8c",
+    "machine_name": "collect_nodes_for_later_use",
+    "description": "Collect all nodes of a label into a list for subsequent operations, enabling batch processing.",
+    "tags": [
+      "aggregation",
+      "collect",
+      "batch_processing",
+      "intermediate_result"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

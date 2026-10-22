@@ -1,0 +1,47 @@
+schema_version: 1
+family_id: HISTDB-MEM-001
+title: Duplicate string literals in an IN predicate duplicate matching rows
+paper_set: fixed-version-50
+dbms: memgraph
+symptom: one matching row is emitted once for each duplicate string literal
+issue:
+  url: https://github.com/memgraph/memgraph/issues/4123
+  status: confirmed
+  report_path: issue_reports/submitted/memgraph/2026-5-7/memgraph_in_predicate_with_duplicate_string_literals_may_duplicate_matching_rows.md
+targets:
+  buggy:
+    id: memgraph-3.9.0
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Alice'}), (:Person {name:'Bob'}), (:Person {name:'Charlie'})"
+  query: |-
+    MATCH (q:Person)
+    WHERE q.name IN ['Alice', 'Alice', 'Bob']
+    RETURN q.name AS name
+    ORDER BY name
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: true
+  expected_buggy:
+    - {name: Alice}
+    - {name: Alice}
+    - {name: Bob}
+  expected_correct:
+    - {name: Alice}
+    - {name: Bob}
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: FalkorDB__FalkorDB__164__q006
+  case_id: case_fbcde9409952
+  source_artifacts:
+    - issue_reports/submitted/memgraph/2026-5-7/memgraph_in_predicate_with_duplicate_string_literals_may_duplicate_matching_rows.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

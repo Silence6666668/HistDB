@@ -1,0 +1,87 @@
+[
+  {
+    "feature_id": "ft_3b2bc99e1be2",
+    "machine_name": "single_property_node_merge",
+    "description": "MERGE operation with exactly one property defined in the property map, testing property matching and creation behavior.",
+    "tags": [
+      "property_count",
+      "merge_semantics",
+      "exact_match"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f2cd30931c29",
+    "machine_name": "variable_reuse_in_aggregation",
+    "description": "Reusing relationship variable from MATCH pattern in aggregation function",
+    "tags": [
+      "variable_reuse",
+      "aggregation",
+      "relationship_variable"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_152dc13d5a1a",
+    "machine_name": "unwind_with_mixed_literal_and_property",
+    "description": "UNWIND with array containing both literal values and node property references",
+    "tags": [
+      "unwind",
+      "mixed_array",
+      "property_access"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_de0b1e32b8da",
+    "machine_name": "single_constant_return",
+    "description": "Query that returns a constant value (1) as the final result, ignoring any matched data.",
+    "tags": [
+      "return",
+      "constant",
+      "no_projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_78befb390ad3",
+    "machine_name": "return_created_node",
+    "description": "Returns the newly created node after property assignment, verifying the node and its properties are accessible immediately.",
+    "tags": [
+      "read",
+      "projection",
+      "node_return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_e64cacc575b3",
+    "machine_name": "multi_with_chain_variable_reuse",
+    "description": "Multiple consecutive WITH clauses passing and reusing variables through query stages",
+    "tags": [
+      "with_chain",
+      "variable_passing",
+      "query_staging",
+      "alias_reuse"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

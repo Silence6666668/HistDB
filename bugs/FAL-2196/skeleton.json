@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_e16b1d8abb9c",
+  "skeleton_text": "MERGE (n:HOLE_LABEL_0) ON MATCH SET n.HOLE_PROP_0=size([()-[]->()|HOLE_NUM_0])",
+  "source_id": "neo4j#13569",
+  "source_query_id": "neo4j__13569__q001",
+  "holes": []
+}

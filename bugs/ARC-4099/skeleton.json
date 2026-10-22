@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_b45b79b918fe",
+  "skeleton_text": "RETURN HOLE_RETURN_EXPRESSION_1, [HOLE_FUNCTION_1(HOLE_ARGUMENT_1), HOLE_FUNCTION_2(HOLE_ARGUMENT_2)] ORDER BY (CASE WHEN (HOLE_BOOLEAN_EXPRESSION OR HOLE_NULL) THEN HOLE_NUMERIC_VALUE END)",
+  "source_id": null,
+  "source_query_id": "neo4j#13164",
+  "holes": []
+}

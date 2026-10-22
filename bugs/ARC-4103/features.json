@@ -1,0 +1,91 @@
+[
+  {
+    "feature_id": "ft_2382123b7251",
+    "machine_name": "node_creation_with_property_from_iteration",
+    "description": "Creates nodes with a property value derived directly from the iteration variable in UNWIND.",
+    "tags": [
+      "node_creation",
+      "property",
+      "iteration",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f286d494705f",
+    "machine_name": "directed_relationship_traversal",
+    "description": "Traverses a directed relationship type between two nodes and returns properties from both nodes.",
+    "tags": [
+      "match",
+      "relationship",
+      "directed",
+      "property_access"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_54811d89fd81",
+    "machine_name": "set_property_after_merge",
+    "description": "SET clause after MERGE to update a property, independent of ON CREATE/ON MATCH.",
+    "tags": [
+      "merge",
+      "set",
+      "property_update",
+      "node"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_582c05248483",
+    "machine_name": "merge_node_with_label",
+    "description": "Create or match a node with a specific label using MERGE clause",
+    "tags": [
+      "write",
+      "merge",
+      "node",
+      "label"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f2e4401dd4e4",
+    "machine_name": "set_on_path_nodes",
+    "description": "Using SET clause to modify properties on all nodes in a path variable.",
+    "tags": [
+      "write",
+      "property_update",
+      "path_nodes"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d0523c7e5af0",
+    "machine_name": "single_node_creation",
+    "description": "Creates a single node without labels or properties.",
+    "tags": [
+      "write",
+      "node_creation",
+      "no_labels",
+      "no_properties"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

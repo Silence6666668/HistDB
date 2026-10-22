@@ -1,0 +1,1050 @@
+% !TeX program = pdflatex
+\documentclass[acmsmall,screen,anonymous]{acmart}
+% FSE 2027 Research Papers: single-column anonymous review submission.
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage{placeins}
+\usepackage{flafter}
+% Keep the ACM page geometry, body typography, and float spacing unchanged.
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{patterns,positioning}
+\usepackage{pifont}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\input{tables/table_style.tex}
+\renewcommand{\histdbtablefont}{\small}
+\renewcommand{\histdbtablenotefont}{\footnotesize}
+\newcommand{\runningcodefont}{\ttfamily\mdseries\fontsize{8.1pt}{9.4pt}\selectfont}
+\newcommand{\cnpara}[1]{\par\noindent\textbf{#1.}\ }
+\setlist{leftmargin=*, itemsep=0.2em, topsep=0.35em}
+\setcopyright{none}
+\captionsetup[lstlisting]{skip=5pt}
+
+\lstdefinelanguage{Cypher}{
+morekeywords={CYPHER,NEXT,MATCH,OPTIONAL,WHERE,RETURN,WITH,UNWIND,CREATE,MERGE,DELETE,DETACH,SET,REMOVE,CALL,UNION,ALL,ORDER,BY,LIMIT,SKIP,AS,AND,OR,NOT,IN,IS,NULL,true,false,CASE,WHEN,THEN,ELSE,END,LET,FILTER,DISTINCT,FOREACH,EXISTS},
+  sensitive=false,
+  morecomment=[l]{//},
+  morestring=[b]",
+  morestring=[b]'
+}
+
+\definecolor{PaperBlue}{HTML}{3F6078}
+\definecolor{PaperGreen}{HTML}{66786B}
+\definecolor{PaperOrange}{HTML}{87705C}
+\definecolor{PaperPurple}{HTML}{6C6974}
+\definecolor{PaperRed}{HTML}{875C5C}
+\definecolor{ChartBlue}{HTML}{4A79A8}
+\definecolor{ChartLightBlue}{HTML}{86B6D9}
+\definecolor{ChartBase}{HTML}{C9D1D7}
+\definecolor{ChartGrid}{HTML}{D7DEE3}
+\definecolor{ChartAxis}{HTML}{606A72}
+\definecolor{BugLogic}{HTML}{4A79A8}
+\definecolor{BugInternal}{HTML}{D4A24C}
+\definecolor{BugCrash}{HTML}{C65F5B}
+\definecolor{BugOther}{HTML}{8B8197}
+\definecolor{PaperGray}{HTML}{F3F4F5}
+\definecolor{PaperBorder}{HTML}{AEB5BC}
+\definecolor{PaperInk}{HTML}{2B3D4B}
+\definecolor{PaperMuted}{HTML}{68737C}
+\definecolor{PaperCodeBg}{HTML}{FAFBFC}
+\definecolor{PaperGreenBg}{HTML}{F1F4F1}
+\definecolor{PaperRedBg}{HTML}{F7F1F1}
+
+\pgfplotsset{
+  histdb axis/.style={
+    tick label style={font=\fontsize{6.8pt}{7.7pt}\selectfont},
+    label style={font=\fontsize{7.0pt}{7.9pt}\selectfont},
+    title style={font=\fontsize{7.6pt}{8.4pt}\selectfont\bfseries},
+    grid=major,
+    grid style={draw=ChartGrid,line width=0.24pt},
+    axis line style={draw=ChartAxis,line width=0.34pt},
+    tick style={draw=ChartAxis,line width=0.30pt},
+    axis x line*=bottom,
+    axis y line*=left,
+    clip=false
+  },
+  histdb xbar/.style={
+    histdb axis,
+    xbar,
+    bar width=7.4pt,
+    enlarge y limits=0.12,
+    xmajorgrids=true,
+    ymajorgrids=false,
+    nodes near coords,
+    nodes near coords style={font=\fontsize{7pt}{8pt}\selectfont,anchor=west,text=PaperInk},
+    every node near coord/.append style={/pgf/number format/fixed,/pgf/number format/fixed zerofill,/pgf/number format/precision=2}
+  }
+}
+% Use restrained green highlighting for Cypher keywords.
+\definecolor{QueryKeyword}{HTML}{187A2F}
+\definecolor{QueryComment}{HTML}{777777}
+\definecolor{QueryString}{HTML}{202124}
+\definecolor{QueryBorder}{HTML}{5C5F62}
+\definecolor{QueryLineNo}{HTML}{767676}
+
+\lstdefinestyle{cypher}{
+  language=Cypher,
+  basicstyle=\ttfamily\fontsize{8.1pt}{9.4pt}\selectfont,
+  keywordstyle=\color{QueryKeyword},
+  stringstyle=\color{QueryString},
+  commentstyle=\color{QueryComment},
+  aboveskip=0.40em,
+  belowskip=0.40em,
+  abovecaptionskip=0.4em,
+  belowcaptionskip=0pt,
+  breaklines=true,
+  breakatwhitespace=false,
+  breakindent=1.2em,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  frame=single,
+  framerule=0.45pt,
+  framesep=2.6pt,
+  rulecolor=\color{QueryBorder},
+  backgroundcolor=\color{white},
+  xleftmargin=1.55em,
+  xrightmargin=0.15em,
+  framexleftmargin=1.35em,
+  framexrightmargin=0.25em,
+  numbers=left,
+  numberstyle=\fontsize{6.2pt}{7pt}\selectfont\color{QueryLineNo},
+  numbersep=6pt,
+  stepnumber=1,
+  numberblanklines=true,
+  captionpos=b
+}
+\lstdefinestyle{cypherpass}{style=cypher}
+\lstdefinestyle{cypherfail}{style=cypher}
+\lstdefinestyle{cyphertable}{
+  style=cypher,
+  frame=none,
+  xleftmargin=1.35em,
+  xrightmargin=0pt,
+  framexleftmargin=0pt,
+  framexrightmargin=0pt,
+  aboveskip=0.2em,
+  belowskip=0.1em
+}
+
+% Paper-style issue examples with thin borders and restrained syntax highlighting.
+\definecolor{IssueFrame}{HTML}{55595C}
+\definecolor{IssueComment}{HTML}{777777}
+\definecolor{IssueKeyword}{HTML}{187A2F}
+\definecolor{IssueString}{HTML}{202124}
+\definecolor{IssueActual}{HTML}{A63D3D}
+\definecolor{IssueCheck}{HTML}{30363B}
+% Fixed-size status marks avoid clipping and baseline drift in compact examples.
+\newcommand{\statusok}{\mbox{\raisebox{-0.08ex}{\textcolor{PaperGreen}{\fontsize{9.2pt}{10pt}\selectfont\ding{51}}}}}
+\newcommand{\statusbad}{\mbox{\raisebox{-0.08ex}{\textcolor{IssueActual}{\fontsize{9.2pt}{10pt}\selectfont\ding{55}}}}}
+\newcommand{\paperthinrule}{\par\noindent{\color{PaperBorder}\rule{\linewidth}{0.25pt}}\par}
+\lstdefinestyle{issuegallery}{
+  language=Cypher,
+  basicstyle=\ttfamily\mdseries\fontsize{7.9pt}{9.25pt}\selectfont,
+  keywordstyle=\color{IssueKeyword}\mdseries,
+  stringstyle=\color{IssueString}\mdseries,
+  commentstyle=\color{IssueComment}\mdseries,
+  frame=single,
+  framerule=0.38pt,
+  rulecolor=\color{IssueFrame},
+  backgroundcolor=\color{white},
+  framesep=4pt,
+  xleftmargin=17pt,
+  xrightmargin=4pt,
+  framexleftmargin=13pt,
+  framexrightmargin=0pt,
+  numbers=left,
+  numberstyle=\ttfamily\mdseries\fontsize{6.3pt}{7.2pt}\selectfont\color{IssueComment},
+  numbersep=7pt,
+  stepnumber=1,
+  numberblanklines=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  breakindent=1.05em,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  aboveskip=7pt,
+  belowskip=6pt,
+  escapeinside={(*@}{@*)}
+}
+\newcommand{\issuecasecaption}[1]{%
+  \par\noindent{\small\bfseries #1}\par
+}
+
+
+% Borderless code style for listings embedded in framed panels.
+\lstdefinestyle{paperinside}{
+  style=issuegallery,
+  frame=none,
+  xleftmargin=1.28em,
+  xrightmargin=0pt,
+  framexleftmargin=0pt,
+  framexrightmargin=0pt,
+  framesep=0pt,
+  numbersep=6pt,
+  aboveskip=0pt,
+  belowskip=0pt
+}
+
+% Neutral stage panels used by the four-stage motivating example.
+\newtcolorbox{stagepaperbox}[2][]{
+  enhanced,
+  colback=white,
+  colframe=PaperBorder,
+  colbacktitle=PaperInk,
+  coltitle=white,
+  title={#2},
+  fonttitle=\bfseries\small,
+  boxrule=0.40pt,
+  titlerule=0pt,
+  arc=0.5pt,
+  left=3pt,
+  right=3pt,
+  top=2.0pt,
+  bottom=2.0pt,
+  before skip=0pt,
+  after skip=0pt,
+  #1
+}
+
+
+% Full-width case listings follow the text; no nested, unequal code panels.
+\lstdefinestyle{runningtrace}{
+  style=issuegallery,
+  basicstyle=\ttfamily\mdseries\fontsize{8.8pt}{10.3pt}\selectfont,
+  numberstyle=\ttfamily\mdseries\fontsize{6.5pt}{7.5pt}\selectfont\color{IssueComment},
+  frame=lines,
+  framerule=0.35pt,
+  framesep=4pt,
+  xleftmargin=17pt,
+  xrightmargin=1pt,
+  framexleftmargin=13pt,
+  framexrightmargin=0pt,
+  aboveskip=0.55\baselineskip,
+  belowskip=0.55\baselineskip,
+  captionpos=b
+}
+
+% Paper-style oracle panel.
+\newtcolorbox{oraclepaperbox}[2][]{
+  enhanced,
+  colback=white,
+  colframe=PaperBorder,
+  colbacktitle=white,
+  coltitle=PaperInk,
+  title={#2},
+  fonttitle=\bfseries\small,
+  boxrule=0.40pt,
+  titlerule=0.25pt,
+  arc=0pt,
+  left=3pt,
+  right=3pt,
+  top=2.0pt,
+  bottom=2.0pt,
+  before skip=0pt,
+  after skip=0pt,
+  #1
+}
+
+% Single-column oracle comparison with two compact side-by-side panels.
+\newtcolorbox{oraclecomparebox}[1][]{
+  enhanced,
+  sidebyside,
+  sidebyside align=top seam,
+  sidebyside gap=4pt,
+  lefthand width=0.40\columnwidth,
+  colback=white,
+  colframe=PaperBorder,
+  boxrule=0.40pt,
+  segmentation style={solid,draw=PaperBorder,line width=0.25pt},
+  arc=0pt,
+  left=2.5pt,
+  right=2.5pt,
+  top=2.5pt,
+  bottom=2.5pt,
+  before skip=0pt,
+  after skip=0pt,
+  #1
+}
+
+% Standalone bug example in which code and outcomes share one frame.
+\newtcolorbox{issuepaperbox}[1][]{
+  enhanced,
+  colback=white,
+  colframe=PaperBorder,
+  boxrule=0.40pt,
+  arc=0pt,
+  left=4pt,
+  right=4pt,
+  top=3pt,
+  bottom=3pt,
+  before skip=0pt,
+  after skip=0pt,
+  #1
+}
+
+% Display expected and observed outcomes as unnumbered text rather than comments.
+\newcommand{\outcomeok}[2]{%
+  \par
+  {\footnotesize\color{PaperInk}\textbf{Expected:}\ \texttt{#1}\par}%
+  {\footnotesize\color{PaperInk}\textbf{Observed:}\ \texttt{#2}\nobreak\hspace{0.35em}\statusok\par}%
+}
+\newcommand{\outcomebad}[2]{%
+  \par
+  {\footnotesize\color{PaperInk}\textbf{Expected:}\ \texttt{#1}\par}%
+  {\footnotesize\color{PaperInk}\textbf{Observed:}\ \texttt{#2}\nobreak\hspace{0.35em}\statusbad\par}%
+}
+
+\lstdefinestyle{featurelist}{
+  basicstyle=\ttfamily\scriptsize,
+  frame=single,
+  framerule=0.35pt,
+  rulecolor=\color{PaperBorder},
+  backgroundcolor=\color{PaperCodeBg},
+  xleftmargin=0.4em,
+  xrightmargin=0.4em,
+  numbers=left,
+  numberstyle=\tiny\color{PaperMuted},
+  numbersep=5pt,
+  breaklines=true,
+  columns=fullflexible,
+  keepspaces=true,
+  captionpos=b
+}
+\lstset{style=cypher}
+\newcommand{\querylistingneedspace}{\Needspace{8\baselineskip}}
+\lstnewenvironment{querylisting}[1][]{\querylistingneedspace\lstset{style=cypher,#1}}{}
+\lstnewenvironment{buglisting}[1][]{\querylistingneedspace\lstset{style=cypherfail,#1}}{}
+\lstnewenvironment{controllisting}[1][]{\querylistingneedspace\lstset{style=cypherpass,#1}}{}
+\lstnewenvironment{featurelisting}[1][]{\querylistingneedspace\lstset{style=featurelist,#1}}{}
+
+\newcounter{histdbalgorithm}
+\newenvironment{histdbalgorithm}[2][tbp]{%
+  \begin{figure}[#1]
+  \centering
+  \refstepcounter{histdbalgorithm}%
+  \begin{minipage}{\columnwidth}
+  \small
+  \hrule height 0.65pt\relax\vspace{3pt}
+  \noindent\textbf{Algorithm~\thehistdbalgorithm:} #2\par
+  \vspace{3pt}\hrule height 0.35pt\relax\vspace{4pt}
+  \ifdefined\Description
+  \Description{Pseudocode algorithm summarizing one stage of the HistDB testing pipeline.}
+  \fi
+}{%
+  \par\vspace{3pt}\hrule height 0.65pt\relax
+  \end{minipage}
+  \end{figure}
+}
+\lstdefinelanguage{Pseudocode}{
+  morekeywords={Input,Output,Function,for,each,to,do,if,then,else,return,while,in},
+  sensitive=true,
+  morecomment=[l]{//},
+  morestring=[b]"
+}
+\lstdefinestyle{pseudocode}{
+  language=Pseudocode,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\bfseries,
+  commentstyle=\color{green!45!black},
+  numbers=left,
+  numberstyle=\ttfamily\fontsize{6.7pt}{7.4pt}\selectfont,
+  numbersep=6.6pt,
+  frame=none,
+  xleftmargin=1.42em,
+  aboveskip=2pt,
+  belowskip=0pt,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  breaklines=true,
+  breakatwhitespace=false,
+  breakindent=1.2em
+}
+\newcommand{\algorithminput}[1]{\noindent\textbf{Input:} #1\par}
+\newcommand{\algorithmoutput}[1]{\noindent\textbf{Output:} #1\par}
+
+\newtcolorbox{promptcard}[2][]{
+  enhanced,
+  colback=white,
+  colframe=PaperBorder,
+  colbacktitle=white,
+  coltitle=PaperInk,
+  title={#2},
+  fonttitle=\histdbtablefont\bfseries,
+  fontupper=\histdbtablefont,
+  boxrule=0.40pt,
+  titlerule=0.35pt,
+  arc=0pt,
+  left=4.5pt,
+  right=4.5pt,
+  top=3.0pt,
+  bottom=3.0pt,
+  toptitle=2.8pt,
+  bottomtitle=2.2pt,
+  before skip=0pt,
+  after skip=0pt,
+  #1
+}
+
+\newtcolorbox{casebox}[2][]{
+  enhanced,
+  colback=PaperGray,
+  colframe=PaperBorder,
+  colbacktitle=PaperInk,
+  coltitle=white,
+  title={#2},
+  fonttitle=\bfseries\small,
+  boxrule=0.40pt,
+  arc=1.0pt,
+  left=3pt,
+  right=3pt,
+  top=2.4pt,
+  bottom=2.4pt,
+  before skip=3pt,
+  after skip=3pt,
+  #1
+}
+
+\newtcolorbox{querylineagebox}{
+  enhanced,
+  colback=white,
+  colframe=PaperBorder,
+  boxrule=0.40pt,
+  segmentation style={solid,draw=PaperBorder,line width=0.25pt},
+  arc=0pt,
+  left=3pt,
+  right=3pt,
+  top=2.3pt,
+  bottom=2.3pt,
+  before skip=2pt,
+  after skip=1.5pt
+}
+
+\newtcolorbox{oracleoutcomebox}[3][]{
+  enhanced,
+  colback=white,
+  colframe=PaperBorder,
+  colbacktitle=PaperInk,
+  coltitle=white,
+  title={#2},
+  fonttitle=\bfseries\small,
+  boxrule=0.40pt,
+  arc=1.0pt,
+  left=4pt,
+  right=4pt,
+  top=3pt,
+  bottom=3pt,
+  before skip=1.5pt,
+  after skip=1.5pt,
+  #1
+}
+
+% Compact expected/observed result tables for executable examples.
+\newcommand{\resulttableok}[2]{%
+  \par
+  {\histdbtablefont
+  \setlength{\tabcolsep}{3.4pt}%
+  \renewcommand{\arraystretch}{1.10}%
+  \arrayrulecolor{PaperBorder}%
+  \begin{tabularx}{\linewidth}{@{}>{\bfseries\color{PaperInk}}l>{\raggedright\arraybackslash}X@{}}
+    \toprule
+    Expected & #1 \\
+    \midrule
+    Observed & {\bfseries\color{PaperGreen}#2\nobreak\hspace{0.35em}\statusok} \\
+    \bottomrule
+  \end{tabularx}}%
+}
+\newcommand{\resulttablebad}[2]{%
+  \par
+  {\histdbtablefont
+  \setlength{\tabcolsep}{3.4pt}%
+  \renewcommand{\arraystretch}{1.10}%
+  \arrayrulecolor{PaperBorder}%
+  \begin{tabularx}{\linewidth}{@{}>{\bfseries\color{PaperInk}}l>{\raggedright\arraybackslash}X@{}}
+    \toprule
+    Expected & #1 \\
+    \midrule
+    Observed & {\bfseries\color{PaperRed}#2\nobreak\hspace{0.35em}\statusbad} \\
+    \bottomrule
+  \end{tabularx}}%
+}
+
+% Standalone bug example that keeps code and outcomes in one visual block.
+\newtcolorbox{bugexamplebox}[1][]{
+  enhanced,
+  breakable,
+  colback=white,
+  colframe=PaperBorder,
+  boxrule=0.40pt,
+  arc=0.8pt,
+  left=3pt,
+  right=3pt,
+  top=2pt,
+  bottom=2pt,
+  before skip=3pt,
+  after skip=4pt,
+  #1
+}
+
+
+\setlength{\emergencystretch}{1.5em}
+
+\acmConference[FSE '27]{ACM International Conference on the Foundations of Software Engineering}{July 12--16, 2027}{Shenzhen, China}
+\acmBooktitle{ACM International Conference on the Foundations of Software Engineering (FSE '27), July 12--16, 2027, Shenzhen, China}
+\acmYear{2027}
+\copyrightyear{2027}
+\acmDOI{}
+\acmISBN{}
+% Review metadata only: no publication volume or article number is assigned yet.
+\makeatletter
+\AtBeginDocument{%
+  \apptocmd{\ps@standardpagestyle}{\fancyfoot[RO,LE]{\footnotesize Submitted to FSE 2027}}{}{}
+  \apptocmd{\ps@firstpagestyle}{\fancyfoot[RO,LE]{\footnotesize Submitted to FSE 2027}}{}{}
+  \pagestyle{standardpagestyle}%
+}
+\makeatother
+
+\begin{document}
+
+\title{HistDB: Testing Cypher-Compatible Graph Databases with Historical Bug Reports}
+\author{Anonymous Author(s)}
+\affiliation{
+  \institution{Anonymous Institution}
+  \country{}
+}
+
+\begin{abstract}
+Testing Cypher-compatible graph database management systems (GDBMSs) requires exercising interactions among graph topology, variable scope, aggregation, and updates. Existing generators construct increasingly complex executable queries, but provide limited guidance on which valid semantic interactions deserve priority during testing. Historical bug reports contain such failure evidence, yet their triggers entangle reusable behaviors with report-specific query structures and graph states, making reuse beyond individual regression cases difficult.
+
+We present HistDB, which decomposes historical bug triggers into reusable query skeletons and semantic features. Given a seed skeleton, HistDB ranks candidate features by skeleton--feature affinity, composes features originating from different reports, and jointly instantiates the required graph state and Cypher query using retrieved context and dialect documentation.
+
+In task-matched experiments, cross-report sourcing increased realized combination coverage and produced76\% more mechanism pairs absent from the indexed historical corpus than a within-report control. Across Neo4j, Memgraph, FalkorDB, Apache AGE, and ArcadeDB, HistDB yielded 148 manually validated reports, of which 125 were confirmed by maintainers and 100 were fixed, while achieving the highest line coverage on Neo4j and Memgraph among the evaluated tools. These results show that recombining structured historical bug knowledge provides effective guidance for constructing Cypher tests informed by prior failures.
+\end{abstract}
+
+\begin{CCSXML}
+<ccs2012>
+ <concept>
+  <concept_id>10011007.10011074.10011099.10011102</concept_id>
+  <concept_desc>Software and its engineering~Software testing and debugging</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10002951.10003260.10003261</concept_id>
+  <concept_desc>Information systems~Graph-based database models</concept_desc>
+  <concept_significance>300</concept_significance>
+ </concept>
+</ccs2012>
+\end{CCSXML}
+\ccsdesc[500]{Software and its engineering~Software testing and debugging}
+\ccsdesc[300]{Information systems~Graph-based database models}
+\keywords{graph database testing, Cypher, historical bugs, test generation, large language models, differential testing, metamorphic testing}
+
+\maketitle
+
+\section{Introduction}
+
+Cypher-compatible GDBMSs support applications including knowledge graphs, recommendation, and social-network analysis. A single Cypher query can combine path traversal, variable binding, aggregation, subqueries, null handling, and graph updates. Bugs may arise from the interaction of these behaviors with graph topology and intermediate result cardinality, rather than from an individual clause in isolation. Testing therefore requires both executable queries and a strategy for exploring their feature interactions \cite{ref3,ref7}.
+
+Existing tools guide query generation through different forms of context. GDsmith combines graph-guided pattern generation with data-guided condition generation \cite{ref3}. Dinkel maintains query context and graph-schema state to construct complex queries \cite{ref7}, while DGDB uses LLMs to generate graph queries \cite{ref8}. These approaches substantially improve the generation of executable tests. However, these forms of guidance do not explicitly use historical failure evidence to prioritize interactions during generation. Consequently, two feature combinations may both be valid and constructible even though only one resembles contexts that have previously exposed implementation defects. Exploring the large space of valid Cypher interactions therefore still lacks failure-informed prioritization.
+
+Historical bug reports provide complementary evidence through the queries, graph states, and execution contexts that exposed real defects. Prior work recovers and adapts individual historical PoCs or reuses failure-associated program ingredients \cite{refBugForge,refJavaTailor,refHistFuzz,ref27}. HistDB instead asks how knowledge from multiple Cypher failures can be abstracted and recombined while respecting clause structure, variable dependencies, and graph conditions.
+
+This transfer raises two challenges. First, reusable clause structure and semantic behaviors must be distinguished from application-specific labels, constants, and data without losing their query context. Second, selecting several features does not ensure that they can interact. Path traversal requires appropriate graph topology; scope-sensitive filtering and aggregation depend on variable bindings and intermediate rows. Instantiation therefore requires skeleton-conditioned feature prioritization and coordinated construction of the query and graph state.
+
+We present HistDB to address these representation and instantiation challenges. HistDB extracts query skeletons that describe clause structure and variable scope, alongside semantic features that describe behaviors associated with historical failures. A seed skeleton independently scores candidate features by structural affinity before cross-report sampling. Retrieval-augmented generation (RAG) supplies historical examples and target-dialect documentation to support instantiation. An LLM then uses this context to jointly generate setup statements, a query, and cleanup statements. Execution discrepancies are reproduced, minimized, and manually reviewed before reporting.
+
+We evaluate HistDB through three research questions. RQ1 measures bug-report outcomes and maintainer responses. RQ2 uses 1,000 task-matched retained queries per variant to assess cross-report selection and historically unseen realized combinations. RQ3 compares code coverage under a fixed time budget, query diversity under equal sample sizes, and validated findings within each tool's evaluated target scope.
+
+This paper makes the following contributions:
+\begin{itemize}
+\item \textbf{Cross-report abstraction of historical bug knowledge.} We decompose historical Cypher triggers into complementary query skeletons and semantic features, allowing reusable behaviors to transfer beyond the individual PoCs in which they originally appeared.
+\item \textbf{Skeleton-conditioned cross-report composition.} We independently score each candidate feature against a seed skeleton, sample features from different reports, and jointly instantiate the graph state and query for the resulting combination, rather than treating historical triggers only as preserved test cases or fuzzing seeds.
+\item \textbf{Evaluation.} We study bug discovery across five GDBMSs, cross- versus within-report feature sourcing, the effects of feature selection and skeleton guidance, and comparisons with six existing testing tools.
+\end{itemize}
+
+\section{Background}
+\label{sec:background}
+
+
+
+\subsection{Cypher Testing}
+
+Cypher combines graph patterns, variable scope, aggregation, subqueries, and updates \cite{ref1,ref9,ref10,refCypherManual}. An executable GDBMS test must establish the graph state required by the query under test. We therefore model a test scenario as
+$\tau=\langle S,q,C\rangle$, where $S$ is a sequence of setup statements, $q$ is the query under test, and $C$ is a sequence of cleanup statements. For engine $e$, the execution observation is $\Omega(e,\tau)=\langle\mathrm{status},\mathrm{result},\mathrm{error}\rangle$. When a write test requires explicit state-observation queries, HistDB executes them after $q$ and before $C$, and includes their outputs in $result$.
+
+Successful parsing and execution do not imply that a query meaningfully exercises its intended semantics. The graph state and clause context determine which behaviors a test exercises. For example, a pattern comprehension after WITH may depend on a node bound by an earlier relationship match. HistDB therefore generates complete graph--query scenarios that target feature interactions.
+
+\subsection{Historical Bug Knowledge}
+
+From reconstructable historical triggers, HistDB extracts two reusable representations: \emph{query skeletons}, which retain clause order, variable propagation, path bindings, and read/write boundaries; and \emph{semantic features}, which describe behaviors such as correlated evaluation, null propagation, aggregation boundaries, variable visibility, and read-after-write behavior. Keeping these representations separate allows one report's skeleton to guide the composition of features originating from other reports.
+
+\section{HistDB Design}
+\label{sec:approach}
+
+\subsection{Overview}
+\label{sec:overview}
+
+Figure~\ref{fig:pipeline} summarizes three synthesis operations followed by execution and validation. HistDB extracts skeletons and semantic-feature records from historical reports, uses a seed skeleton to guide feature selection, and retrieves examples and dialect documentation for joint graph--query generation. The LLM instantiates setup statements, a query, and cleanup statements. Compatible executions and justified equivalent formulations provide observations for reproduction and review. The running example traces these representations through one case; the subsequent subsections define the extraction, selection, and generation procedures.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{figures/overview.pdf}
+\caption{HistDB workflow.}
+  \ifdefined\Description
+  \Description{Historical bug reports yield skeletons and semantic features. A seed skeleton guides feature selection; retrieved examples and dialect documentation support joint graph and query generation. Execution observations lead to reproduction, minimization, and review. }
+  \fi
+  \label{fig:pipeline}
+\end{figure*}
+
+\subsection{Running Example: From a Generated Test to a Confirmed Bug}
+\label{sec:running-example}
+\label{sec:motivating-example}
+
+HistDB generated the case in Figure~\ref{fig:running-example-lineage} from an explicit seed skeleton and cross-report feature guidance. The figure follows its complete lineage to the discrepancy later reported as Memgraph issue~\#4160.
+
+\begin{figure*}[t]
+  \centering
+  \input{figures/fig_running_example_lineage}
+\caption{Skeleton-guided lineage of a confirmed finding. The seed skeleton and cross-report features are parallel inputs to joint instantiation. Execution exposes a Memgraph-only wrong result, and reduction retains contributions from both inputs before maintainer confirmation.}
+  \Description{Three equal-width stages form a straight vertical evidence chain. The first stage places a seed MATCH-MATCH-CREATE skeleton beside six realized cross-report features. The next shows a generated query that returns Alice on Neo4j and FalkorDB but null on Memgraph. The last shows the minimized failure-inducing query. A note distinguishes selection, activation, causality, and population-level historical novelty.}
+  \label{fig:running-example-lineage}
+\end{figure*}
+
+\cnpara{Composition and execution}
+The seed \texttt{sk\_c387debf1857}, extracted from the query indexed as FalkorDB \#367, contains two node-binding \lstinline|MATCH| clauses followed by a typed \lstinline|CREATE|. Ten feature IDs from ten other historical queries guide instantiation. The generated query preserves that skeleton and visibly realizes six descriptions: a write subquery, multiple writes, typed relationships, update followed by return, a self-loop, and property-constrained single-node matches. Four selected descriptions are absent and are not counted as activated. In the fixed-version experiment, Neo4j 2026.03.1 and FalkorDB 4.16.8 return \texttt{Alice}; Memgraph 3.9.0 returns \texttt{null} after successful execution.
+
+\cnpara{Reduction and boundary checks}
+The published five-line reduction retains the skeleton's two-node binding structure and the selected \lstinline|CALL|-subquery write across a \lstinline|WITH| boundary. Neo4j returns \texttt{Alice}, whereas Memgraph returns \texttt{null}. Three controls---moving the write outside \lstinline|CALL|, explicitly importing \texttt{a,b} inside the subquery, and replacing the write with a read-only return---all preserve \texttt{Alice} on both engines. The removed self-loop, trailing writes, and property update are therefore not credited with causing the failure.
+
+\cnpara{Maintainer evidence}
+Memgraph classified issue~\#4160 as a bug and closed it through PR~\#4487, merged on August 7, 2026. The maintainer explanation identifies incorrect scoping of un-imported names in \lstinline|CALL| subqueries, explicitly lists \#4160 among the closed reports, and records regression verification.\footnote{\url{https://github.com/memgraph/memgraph/issues/4160}; \url{https://github.com/memgraph/memgraph/pull/4487}. Status checked September 21, 2026.} The example establishes a skeleton-guided, cross-report path to a confirmed defect; RQ2, rather than this single case, measures historical novelty over matched populations.
+
+\subsection{Historical Bug Knowledge Extraction}
+\label{sec:knowledge-extraction}
+
+HistDB extracts structured generation inputs from historical bug reports. The corpus contains reports from the five evaluated projects and RedisGraph, obtained from public issues, regression tests, and developer discussions. Each record stores the target system and version, setup statements when available, the triggering query, expected and observed behavior, issue status, and source URL. A report is retained when its trigger and required graph conditions can be reconstructed and maintainer evidence indicates a confirmed or fixed bug. Closed issues without supporting bug evidence and reports of invalid input are excluded. When setup statements are absent, the generation stage constructs a graph that satisfies the trigger's recorded conditions.
+
+\cnpara{Query skeletons}
+A query skeleton represents the clause structure of a historical trigger. For a historical query $q_h$, we write its skeleton as $s=\langle\pi,H,A\rangle$, where $\pi$ is the clause sequence, $H$ contains typed placeholders, and $A$ summarizes structural indicators derived from the skeleton and its metadata. Extraction preserves clauses such as \lstinline|MATCH|, \lstinline|CALL|, \lstinline|WITH|, and \lstinline|RETURN|, as well as aggregation sites, path patterns, and update boundaries. It replaces concrete labels, relationship types, property names, literals, and application variables with reusable placeholders. The skeleton provides structural guidance; generation may change its clause sequence to accommodate selected features.
+
+\cnpara{Semantic features}
+A semantic feature describes a query-language behavior associated with a historical trigger. Each feature contains a concise description, tags, structural indicators, source clauses in which it occurs, and provenance. Representative examples include variable propagation through subqueries, null propagation across \lstinline|OPTIONAL MATCH|, aggregation over empty input, path projection, pagination boundaries, and read-after-write visibility. Features may originate from the seed report or other reports; each record links to its source query.
+
+Skeletons and features retain separate provenance links: skeletons refer to the source query structure, whereas feature IDs refer to the extracted descriptions and their source reports. Both extraction tasks return structured JSON, and the complete prompts are included in the artifact.
+
+
+
+\subsection{Skeleton--Feature Affinity Sampling and Retrieval}
+\label{sec:feature-selection}
+
+In the skeleton-guided configuration, HistDB samples a seed skeleton and ranks features from the global pool using an affinity score. The skeleton provides structural context, while selected features specify additional behaviors to instantiate. The score is computed independently for each skeleton--feature pair. It is neither a feature--feature compatibility check nor a guarantee that the selected features will jointly appear, execute, or influence a failure. RQ2 separately evaluates cross-report feature sourcing, affinity-weighted sampling, and explicit skeleton guidance; Section~\ref{sec:running-example} illustrates the same skeleton-guided path for one confirmed finding.
+
+\cnpara{Skeleton--feature affinity}
+Let $s$ be a seed skeleton, $f$ a candidate feature, and $\mathcal{R}_a$ the set of affinity scoring rules. HistDB assigns $f$ the weighted score
+\begin{equation}
+a(s,f)=\sum_{r\in\mathcal{R}_a} w_r\,\mathbf{1}[r(s,f)],
+\label{eq:skeleton-feature-affinity}
+\end{equation}
+
+where $w_r$ is the weight of rule $r$ and $\mathbf{1}[\cdot]$ is the indicator function. The rules use clause and tag overlap, hole types, read/write flags, and indicators for subqueries, optional matching, ordering, pagination, paths, and aggregation. This heuristic score ranks candidate features by structural affinity.
+
+\cnpara{Feature sampling}
+Let $\mathcal{F}$ be the feature pool and $\mathcal{A}(s)=\{f\in\mathcal{F}:a(s,f)>0\}$. If this set is empty, we set $\mathcal{A}(s)=\mathcal{F}$. This pool is fixed before sampling. At step $t$, let $\mathcal{A}_t(s)=\mathcal{A}(s)\setminus\{f_1,\ldots,f_{t-1}\}$ contain the unselected candidates. For nonempty $\mathcal{A}_t(s)$, we sample $f\in\mathcal{A}_t(s)$ with probability
+\begin{equation}
+p_t(f\mid s)=
+\frac{a(s,f)+\alpha}
+{\sum_{g\in\mathcal{A}_t(s)}\left(a(s,g)+\alpha\right)},
+\qquad \alpha=1.
+\label{eq:feature-sampling}
+\end{equation}
+
+Sampling stops when the requested number of features has been selected or the pool is exhausted. The additive weight $\alpha=1$ makes sampling uniform when all initial scores are zero.
+
+\begin{table}[htbp]
+\input{tables/table_01_compatibility.tex}
+\end{table}
+
+
+Table~\ref{tab:affinity-signals} illustrates the scoring indicators for a read-only skeleton containing \lstinline|CALL|, \lstinline|WITH|, \lstinline|RETURN|, and a subquery, but no path placeholder or update clause. Subquery-related candidates match more indicators than path- or write-related candidates. The implementation uses fixed heuristic weights, including four points per clause/tag overlap and six for a matching subquery indicator. Equation~\ref{eq:feature-sampling} uses the resulting scores for sampling without replacement.
+
+
+
+\cnpara{Retrieval}
+HistDB uses retrieval-augmented generation \cite{ref11} to supply context for test synthesis. After feature selection, it constructs a retrieval request from the seed skeleton and selected features. The selected features specify the behaviors to instantiate, while retrieved query fragments and target-dialect documentation provide examples of syntax and clause context.
+
+The synthesis loop samples a skeleton, selects features using Equations~\ref{eq:skeleton-feature-affinity} and~\ref{eq:feature-sampling}, retrieves supporting context, and applies output checks and bounded retries before execution.
+
+\subsection{Joint Graph and Query Generation}
+\label{sec:joint-generation}
+
+The selected skeleton and features specify the structure and behaviors to instantiate in a test. Each generated scenario is $\tau=\langle S,q,C\rangle$: setup statements $S$ create the graph required by query $q$, and cleanup statements $C$ restore the test environment. In the skeleton-guided configuration, the LLM receives the seed skeleton, selected semantic features, retrieved examples, and target-dialect evidence, and instantiates them in one compact scenario. Figure~\ref{fig:running-example-lineage} illustrates this joint construction: its generated test preserves the seed's two bindings and typed write, then extends them with a scope boundary, write subquery, and observable return.
+
+\cnpara{Graph-state construction}
+HistDB generates setup statements and a query in the same model request. Setup generation is guided by the data and topology requirements of the selected features. Examples include unmatched patterns for OPTIONAL MATCH, empty or grouped input for aggregation, boundary cardinalities for pagination, and observable state changes for update tests. The prompt requests compact graph states that expose the selected conditions. Execution records query outcomes and result cardinalities; the retained logs also record validation failures and retries.
+
+\cnpara{Output format and validation}
+HistDB rejects malformed output and unresolved placeholders. The generation contract requires structured setup, main-query, cleanup, and notes fields; the complete prompt is included in the artifact. Passing this input check means only that a test can be submitted for execution---an execution error remains an observation for validation, not evidence of correct behavior.
+
+\subsection{Dialect-Aware Execution and Candidate Validation}
+\label{sec:execution-validation}
+
+Execution checking supports the synthesis pipeline. HistDB compares portable tests across compatible implementations \cite{ref40} and uses available equivalent formulations for auxiliary within-system checks \cite{ref41,ref42,ref43}. It does not assume that every target-specific construct has a portable equivalent.
+
+HistDB executes setup and query statements from a clean graph state and normalizes the observation $\Omega(e,\tau)$ defined in Section~\ref{sec:background} as
+\[
+\widehat{\Omega}(e,\tau)=\left\langle
+\operatorname{status},\mathcal{N}(\operatorname{keys},\operatorname{rows}),
+\mathcal{N}(\operatorname{error})\right\rangle .
+\]
+The comparator normalizes serialized values and column representations, retains result multiplicities, and assesses row order against the query's ordering requirements. Timeouts and crashes remain distinct statuses. For write tests, explicit observation queries record the post-query graph state before cleanup.
+
+\cnpara{Portability and equivalent formulations}
+The portability filter excludes constructs outside the compared engines' shared dialect. Target- and version-specific syntax is checked only where supported. In the reported implementation, the equivalent-query rules are evaluated on Neo4j/Cypher~25. They include selected binding, filtering, sequential, and branch formulations, with conditions on scope, intermediate rows, duplicate handling, ordering, and side effects. For example, selected uses of \lstinline|NEXT| and standalone \lstinline|FILTER| can be compared with an earlier Cypher formulation under the applicable rule's preconditions. The original and rewritten queries use separate clean states initialized by the same setup. A rewrite is rejected when its semantic equivalence cannot be justified; an unsupported construct is not, by itself, a database bug.
+
+\cnpara{Candidate validation and reporting}
+After checking dialect compatibility and reproducibility, we minimize the graph setup and query. A reduction is retained only when the reduced test preserves the observed failure. Candidates are grouped for manual review by target engine, normalized query structure, semantic features, error signature, and minimized behavior. Manual review compares failure conditions; maintainer feedback or fix evidence is used when available to assess shared root causes.
+
+Each report includes the tested version, a minimized reproducer, expected and observed behavior, and execution logs. Confirmation and fix status follow the maintainer-evidence criteria in Section~\ref{sec:rq1}. Validated reports can supply skeletons, features, and retrieval examples for a subsequent corpus snapshot; evaluation runs use a frozen snapshot.
+
+\section{Evaluation}
+\label{sec:evaluation}
+
+\subsection{Experimental Setup}
+\label{sec:eval-setup}
+
+\cnpara{Research questions}
+Our evaluation addresses three research questions:
+\begin{itemize}
+\item \textbf{RQ1 (bug discovery):} What bugs does HistDB identify, and how do maintainers respond to the reports?
+\item \textbf{RQ2 (historical composition):} To what extent does cross-report feature sourcing increase realized combination coverage and historical novelty, and how do skeleton-conditioned sampling and explicit skeleton guidance contribute?
+\item \textbf{RQ3 (baseline comparison):} How does HistDB compare with existing testing tools in code coverage, query diversity, and validated findings?
+\end{itemize}
+
+\cnpara{Target systems and versions}
+We evaluate HistDB on Neo4j, Memgraph, FalkorDB, ArcadeDB, and Apache AGE. The targets implement different subsets and extensions of Cypher. Table~\ref{tab:gdbms-basic-info-cn} lists the targets; the reporting campaign and controlled experiments use the versions specified with their respective results.
+
+\begin{table}[htbp]
+\input{tables/table_03_target_systems.tex}
+\end{table}
+
+\cnpara{Experimental protocol}
+For each experiment, we fix the Docker image or source artifact, client interface, historical-corpus snapshot, model configuration, random seed, timeout, and execution budget. Tests begin from a clean state obtained through cleanup, reconstruction, or instance reset. RQ1 counts bug reports, RQ2 measures generated query text, and RQ3 compares coverage, sampled query diversity, and manually grouped bug families. We compare coverage only under the same target system, instrumentation scope, and time budget. Bug counts are reported for the tool--target combinations included in the family audit.
+
+\subsection{RQ1: Bug Discovery}
+\label{sec:rq1}
+
+
+RQ1 counts submitted bug reports retained after clean-state reproduction, minimization, semantic review, and issue-tracker screening. As of August 25, 2026, this process retained 148 of 161 submissions; the other 13 were expected behavior, invalid, known duplicates, attributed to another project, outside the evaluated versions, or unresolved.
+\cnpara{Report status}
+Table~\ref{tab:bug-status-cn} summarizes report status on August 25, 2026. \emph{Reported} counts submitted issues retained after manual validation. \emph{Confirmed} requires an explicit maintainer reproduction, confirmation, acceptance as a bug, or equivalent maintainer-side fix evidence. \emph{Fixed} requires an explicit maintainer fix statement, a merged fix, or an identified release containing the correction. The confirmed and fixed counts include only cases with documented maintainer evidence.
+
+\begin{table}[htbp]
+\input{tables/table_04_bug_status.tex}
+\end{table}
+
+
+
+\cnpara{Maintainer confirmation and fixes}
+Maintainers confirmed 125 reports and fixed 100, corresponding to 84.5\% and 67.6\% of the 148 retained reports, respectively. Every evaluated GDBMS contributes both confirmed and fixed reports. At the snapshot date, 5 of Memgraph's 26 confirmed reports had documented fixes, compared with 50 of ArcadeDB's 51.
+
+\cnpara{Failure categories}
+Among the 148 retained reports, 109 are wrong-result logic bugs, 29 are internal errors that leave the service available, 7 crash the database process or service, and 3 are reproducible hangs or other failures. Logic bugs dominate four targets, while 11 of Neo4j's 14 reports are internal errors.
+
+
+\cnpara{Answer to RQ1}
+HistDB yielded 148 manually validated reports across five GDBMSs. Maintainers confirmed 125 reports and fixed 100.
+
+\subsection{RQ2: Historical Feature Composition}
+\label{sec:rq2}
+
+RQ2 first tests the cross-report claim directly. W (Within-report) and S (cross-report Skeleton-guided) share task identifiers, seed skeletons, model and generation settings, retrieval snapshots, and downstream filters. W restricts all three selected features to the seed report; S draws from the global feature pool. Both use affinity-weighted sampling and explicit skeleton guidance. Retrieval remains global in both variants, so this comparison isolates the provenance scope of selected features, not every retrieved fragment.
+
+Over a separately matched population, R (Random) selects three global features uniformly, C (Conditioned) uses affinity-weighted selection without exposing the skeleton to the LLM, and S adds the skeleton to the otherwise identical C inputs. R/C therefore isolates affinity-weighted selection, while C/S isolates explicit skeleton guidance.
+
+
+
+
+\cnpara{Historical-composition metrics}
+The historical unit is a complete bug report rather than an individual query extracted from it. Let $M(r)$ be the union of mechanisms detected in all queries from report $r$, and let $H=\bigcup_r \binom{M(r)}{2}$ be the mechanism pairs observed within at least one report. For a retained generated query $q$, let $M(q)$ be the mechanisms detected in its final main-query text. We report the number of distinct pairs in $\binom{M(q)}{2}$, the number absent from $H$, their ratio---the \emph{Historical Unseen Pair Rate} (HUPR)---and the fraction of retained queries containing at least one unseen pair. We also report a core view that excludes eight generic structural tags: \texttt{aggregation}, \texttt{match}, \texttt{path\_pattern}, \texttt{property\_access}, \texttt{read}, \texttt{relationship\_pattern}, \texttt{return}, and \texttt{write}.
+
+At the input level, the \emph{Cross-Report Recombination Rate} (CRR) is the fraction of tasks for which no single historical report contains all selected feature IDs. We additionally audit the conditional \emph{Cross-Report Novel Pair Rate} (CRNP): among selected feature-ID pair occurrences assigned to different source reports, the fraction never co-occurring in any historical report. These input-level metrics establish provenance composition; they do not by themselves show that each selected feature is realized in the output.
+
+Here, \emph{realized} means detected in retained main-query text; it does not imply verified runtime activation or a failure-critical interaction. HUPR measures absence from indexed historical mechanisms, whereas CRNP concerns selected feature-ID provenance.
+
+\cnpara{Task-matched retained-query samples}
+For W/S, we retain 1,000 task identifiers whose generated query satisfies the same structural and quality filters in both variants; each variant therefore contributes one main query for the same tasks. We apply the same procedure separately to R/C/S, with identical selected features and retrieved fragments for C and S. The two populations are compared only within their respective panels, and the analysis conditions on retained queries rather than generation acceptance.
+
+% ============================================================
+% RQ3: 24h line coverage on Neo4j and Memgraph.
+% Placed near the RQ3 entry so the double-column float lands before later
+% single-column result figures and does not reorder the evaluation narrative.
+% ============================================================
+\newcommand{\NeoCovHistDB}{37.600}
+\newcommand{\NeoCovGRASpDB}{26.117}
+\newcommand{\NeoCovGRev}{23.042}
+\newcommand{\NeoCovDinkel}{21.765}
+\newcommand{\NeoCovGDBMeter}{16.811}
+\newcommand{\NeoCovGamera}{16.527}
+\newcommand{\NeoCovGDsmith}{13.388}
+
+\newcommand{\MemCovHistDB}{29.630}
+\newcommand{\MemCovGRASpDB}{19.324}
+\newcommand{\MemCovDinkel}{18.162}
+\newcommand{\MemCovGamera}{16.083}
+\newcommand{\MemCovGDsmith}{15.064}
+\newcommand{\MemCovGRev}{14.875}
+\newcommand{\MemCovGDBMeter}{14.713}
+
+\begin{figure*}[!t]
+\centering
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  histdb xbar,
+  width=0.94\linewidth,
+  height=5.35cm,
+  xmin=0,
+  xmax=42,
+  xlabel={Line Coverage (\%)},
+  title={(a) Neo4j Line Coverage},
+  symbolic y coords={GDsmith,Gamera,GDBMeter,Dinkel,GRev,GRASpDB,HistDB},
+  ytick={GDsmith,Gamera,GDBMeter,Dinkel,GRev,GRASpDB,HistDB},
+  enlarge y limits=0.10,
+]
+\addplot+[xbar,bar shift=0pt,draw=ChartBase!85!black,fill=ChartBase] coordinates {
+  (\NeoCovGDsmith,GDsmith)
+  (\NeoCovGamera,Gamera)
+  (\NeoCovGDBMeter,GDBMeter)
+  (\NeoCovDinkel,Dinkel)
+  (\NeoCovGRev,GRev)
+  (\NeoCovGRASpDB,GRASpDB)
+};
+\addplot+[xbar,bar shift=0pt,draw=ChartBlue!85!black,fill=ChartBlue] coordinates {(\NeoCovHistDB,HistDB)};
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  histdb xbar,
+  width=0.94\linewidth,
+  height=5.35cm,
+  xmin=0,
+  xmax=35,
+  xlabel={Line Coverage (\%)},
+  title={(b) Memgraph Line Coverage},
+  symbolic y coords={GDBMeter,GRev,GDsmith,Gamera,Dinkel,GRASpDB,HistDB},
+  ytick={GDBMeter,GRev,GDsmith,Gamera,Dinkel,GRASpDB,HistDB},
+  enlarge y limits=0.10,
+]
+\addplot+[xbar,bar shift=0pt,draw=ChartBase!85!black,fill=ChartBase] coordinates {
+  (\MemCovGDBMeter,GDBMeter)
+  (\MemCovGRev,GRev)
+  (\MemCovGDsmith,GDsmith)
+  (\MemCovGamera,Gamera)
+  (\MemCovDinkel,Dinkel)
+  (\MemCovGRASpDB,GRASpDB)
+};
+\addplot+[xbar,bar shift=0pt,draw=ChartBlue!85!black,fill=ChartBlue] coordinates {(\MemCovHistDB,HistDB)};
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+\caption{Line coverage after 24 hours.}
+\Description{Two horizontal bar charts report Neo4j and Memgraph line coverage for seven testing methods after 24 hours. HistDB has the largest measured value in each panel.}
+\label{fig:baseline-coverage-cn}
+\end{figure*}
+
+\begin{table*}[t]
+\input{tables/table_07_historical_composition.tex}
+\end{table*}
+
+Table~\ref{tab:historical-composition} separates selection-side provenance from combinations realized in final query text. In the primary W/S comparison, W has 0\% CRR and 0\% selected-ID HUPR, as required by construction; conditional CRNP is undefined because W has no cross-report selected pair. S has 100\% CRR, 99.53\% selected-ID HUPR, and 100\% conditional CRNP. These checks verify that the two variants exercise the intended feature-source scopes.
+
+Cross-report sourcing produces 697 distinct realized mechanism pairs, including 86 historically unseen pairs, compared with 563 and 49 for W. These are increases of 23.8\% and 75.5\%, respectively. Unique HUPR rises from 8.70\% to 12.34\%, and the fraction of queries containing an unseen pair rises from 9.90\% to 15.50\%. Core unseen pairs increase from 43 to 77. Thus, after holding the seed skeleton and generation configuration fixed, widening the selected-feature source scope beyond one historical report increases both realized combination coverage and historical novelty.
+
+The secondary R/C/S panel separates affinity-weighted selection from explicit skeleton guidance. S covers 758 distinct realized mechanism pairs and 99 historically unseen pairs. Relative to C's 687 and 87 pairs, these counts increase by 10.3\% and 13.8\%, respectively. The fraction of queries containing an unseen pair rises from 14.20\% for C to 15.00\% for S, while unique HUPR changes from 12.66\% to 13.06\%. C covers more distinct pairs than R (687 versus 661) but essentially the same number of historically unseen pairs (87 versus 88). Affinity-weighted selection therefore broadens realized pair coverage relative to random selection, while the explicit skeleton yields the broadest coverage in this decomposition.
+
+\cnpara{Answer to RQ2}
+Within task-matched retained-query samples, cross-report sourcing increases realized combination coverage and historical novelty over the within-report control. Affinity-weighted selection broadens pair coverage relative to random selection, and explicit skeleton guidance yields the broadest coverage in the separate guidance decomposition.
+
+\subsection{RQ3: Comparison with Existing Testing Tools}
+\label{sec:rq3}
+
+On fixed target versions, we compare HistDB with GDsmith \cite{ref3}, Gamera \cite{ref5}, GDBMeter \cite{ref4}, Dinkel \cite{ref7}, GRev \cite{refGRev}, and GRASpDB \cite{ref17} using 24-hour code coverage, diversity in five disjoint 1,000-query samples per tool, and validated findings.
+
+
+
+
+
+
+\cnpara{Code coverage}
+Figure~\ref{fig:baseline-coverage-cn} reports coverage after 24 hours. We instrument Neo4j~2026.03.1 with JaCoCo \cite{ref28}; the fixed analysis scope contains 358,699 executable lines. For Memgraph~3.9.0, LCOV/gcov \cite{refLCOV,refGcov} reports coverage over 130,704 instrumented source lines. All tools in each comparison use the same target build and coverage scope.
+
+HistDB attains 37.60\% line coverage on Neo4j, compared with 26.12\% for the strongest baseline, GRASpDB, a difference of 11.48 percentage points. On Memgraph, HistDB attains 29.63\% line coverage, compared with 19.32\% for GRASpDB, a difference of 10.31 percentage points.
+
+
+
+\cnpara{Query diversity}
+For each tool, we remove exact-text duplicates from the retained query corpus and partition 5,000 queries into five disjoint samples of 1,000 queries. The resulting measurements describe diversity among distinct generated queries. The standard deviations describe variation among samples from one corpus per tool. Using the same detector as RQ2, we count normalized query shapes, feature sets, feature pairs, and core pairs, and report their arithmetic mean and sample standard deviation over the five samples.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/fig_baseline_semantic_heatmap.pdf}
+\caption{Query diversity across testing tools over five disjoint 1,000-query samples per retained corpus. Cells report means $\pm$ SD.}
+\Description{A heatmap compares HistDB and six existing tools across normalized query shapes, feature sets, feature pairs, and core-feature pairs. Colors are normalized by metric.}
+\label{fig:baseline-diversity-heatmap}
+\end{figure}
+
+In Figure~\ref{fig:baseline-diversity-heatmap}, GRev has the highest mean shape count, while HistDB leads on feature sets, feature pairs, and core-feature pairs. HistDB exceeds GRASpDB, the strongest baseline on these feature metrics, by 10.2\%, 50.9\%, and 60.9\%, respectively. These rankings distinguish normalized query structure from feature co-occurrence.
+
+\cnpara{Validated bug families}
+Figure~\ref{fig:bug-family-overlap} compares the sets of manually validated bug families from the fixed-version experiments. Counts are aggregated over each tool's evaluated GDBMSs. The upper bars show exact intersection sizes, and the left bars show each tool's total.
+
+\begin{figure}[htbp]
+\centering
+\begin{minipage}{0.78\linewidth}
+\input{figures/fig_bug_family_overlap.tex}
+\end{minipage}
+\end{figure}
+
+
+
+HistDB identifies 50 bug families: 3 on Neo4j, 13 on Memgraph, 11 on FalkorDB, 20 on ArcadeDB, and 3 on Apache AGE. GRASpDB, Dinkel, and GDsmith each identify one distinct family, all three also identified by HistDB. The shared families occur on Neo4j (GRASpDB) and FalkorDB (Dinkel and GDsmith). Thus, 47 families are found only by HistDB in these experiments.
+
+
+
+\cnpara{Answer to RQ3}
+HistDB attains the highest observed coverage in the reported Neo4j and Memgraph campaigns. It also yields the highest mean feature-set, feature-pair, and core-feature-pair counts in the sampled corpora. The fixed-version audit identifies 50 HistDB bug families across the five evaluated GDBMSs.
+
+\section{Discussion}
+
+Cross-report sourcing and explicit skeleton guidance affect different stages of generation. The W/S comparison shows that widening feature provenance increases the combinations realized in final queries, whereas C/S shows that an explicit skeleton helps instantiate otherwise matched features and evidence. Neither result implies that every selected feature is activated at runtime or causes a discovered bug; they establish complementary input-selection and output-composition effects. Coverage, diversity, retained reports, and deduplicated families remain separate outcomes and are not compared interchangeably.
+
+\subsection{Threats to Validity}
+
+\cnpara{Internal validity}
+Database versions, container state, client drivers, timeouts, and LLM stochasticity can affect the results. We use fixed database images, model configurations, prompt templates, and retrieval snapshots, record feature-selection and sampling seeds, and rerun tests from clean states. Each RQ2 comparison uses the same 1,000 task identifiers for its variants, stratified across three fresh generation streams. W/S and R/C/S use separately matched populations and are not compared across panels. W/S is further restricted to seed reports containing at least three positive-affinity feature IDs. Because each sample requires the generated query to satisfy the common filters in every compared variant, RQ2 evaluates composition among retained outputs rather than generation acceptance. RQ3 measures coverage in one 24-hour run per tool--DBMS pair; its five disjoint query samples quantify variation within one retained corpus per method.
+
+\cnpara{Construct validity}
+Execution discrepancies, issue reports, and deduplicated bug families are different units of measurement. RQ1 counts 148 retained reports from 161 submissions, whereas RQ3 counts manually deduplicated families. RQ2's realized metrics are computed from final Cypher text and capture syntactic mechanism co-occurrence, not runtime activation. An unseen pair is absent from the mechanisms detected in each report's indexed query fragments, which is not an exhaustive semantic audit of the full reports. These metrics neither attribute each realized mechanism to a selected feature or source report nor establish that an unseen pair is necessary for a bug. Maintainer confirmation of the running example establishes the defect, not the causal role of all generation inputs.
+
+\cnpara{External validity}
+The evaluation covers five Cypher-compatible GDBMSs; the target-specific equivalent-query checks are evaluated on Neo4j. Line coverage is compared on Neo4j and Memgraph. Tool--DBMS combinations differ in the bug-family comparison. Historical issue corpora are biased by project activity, reporting practices, and the availability of reproducible examples.
+
+\section{Related Work}
+
+\subsection{Graph Database Testing}
+
+Graph query languages combine paths, graph construction, and compositional clauses \cite{ref30,ref31,ref32}, creating interactions among topology, scope, and query structure. Existing GDBMS testers generate queries from graph state or context (GDsmith and Dinkel), construct metamorphic or equivalent-query oracles (GDBMeter, Gamera, GraphGenie, and GRev), test update persistence (GRASpDB), or use LLM-generated differential inputs (DGDB) \cite{ref3,ref7,ref4,ref5,ref6,refGRev,ref17,ref8}.
+
+HistDB differs in the source and composition of its generation inputs: a seed skeleton guides the selection of features from historical reports, and the selected structure and features guide joint graph and query generation.
+
+\subsection{DBMS Test Generation and Oracles}
+
+DBMS testing couples input generation with correctness oracles. Random, search-based, and state-aware generators construct SQL and database states \cite{ref34,ref35,ref36,ref37}; PQS, NoREC, TLP, DQP, CODDTest, Query Plan Guidance, and CERT derive signals from pivot rows, query rewrites, plans, or cardinality constraints \cite{ref13,ref14,ref15,ref16,ref20,ref38,ref39}. Coverage- and state-guided fuzzers instead prioritize inputs using online execution feedback \cite{ref18,ref19,ref46,ref47,ref48}. HistDB uses historical failures as generation priors, a source distinct from online state or coverage feedback.
+
+\subsection{LLM-Based Test Generation}
+
+LLM-based testers combine generation with search, execution feedback, repair, or structured-input synthesis \cite{ref21,ref22,ref23,ref49,ref50,ref53,ref51,ref52}. Retrieval can ground test generation in documentation, issues, or related tests \cite{ref11,ref12,ref24}. HistDB retrieves historical queries and target-dialect documentation only after selecting a seed skeleton and semantic features.
+
+\subsection{Test Generation from Historical Bugs}
+
+Historical failures serve as benchmarks or generation inputs. Defects4J, ManyBugs/IntroClass, and Bears package real bugs \cite{ref54,ref55,ref56}; K-Config, LeRe, JavaTailor, HistFuzz, and RETESTER reuse configurations, programs, ingredients, skeletons, or structural characteristics from past failures \cite{ref25,ref26,refJavaTailor,refHistFuzz,ref27}.
+
+BugForge~\cite{refBugForge} is the closest DBMS-oriented work to HistDB. It extracts raw PoCs from historical DBMS reports and adapts each PoC into executable tests while preserving bug-relevant data dependencies, operators, and structural cues. HistDB instead decomposes Cypher triggers into structural skeletons and reusable features, samples features across reports using independent skeleton--feature affinity scores, and jointly synthesizes a graph state and query. BugForge therefore emphasizes recovery and preservation of individual cases, whereas HistDB emphasizes cross-report abstraction and composition of interactions that need not occur in one report.
+
+\section{Conclusion}
+
+HistDB decomposes historical Cypher triggers into query skeletons and semantic features, independently ranks candidate features by skeleton--feature affinity, and jointly generates graph states and queries. Dialect-aware execution, reproduction, minimization, and manual validation retain reportable discrepancies.
+
+In matched RQ2 samples, cross-report sourcing covers 697 realized mechanism pairs, including 86 historically unseen pairs, versus 563 and 49 for the within-report control; explicit skeleton guidance further broadens coverage. Across five GDBMSs, HistDB yielded 148 retained reports, with 125 confirmed and 100 fixed, and achieved the highest observed Neo4j and Memgraph line coverage among the evaluated tools. These results support structured historical bug knowledge as test-generation guidance.
+
+% FSE requires an unnumbered Data Availability section after Conclusion.
+% Insert the author-confirmed anonymous artifact location or availability
+% explanation here, including the intended public-release policy.
+% \section*{Data Availability}
+
+% Keep the separately budgeted references on their own pages.
+\clearpage
+\begin{thebibliography}{99}
+\bibitem{ref1} N. Francis \emph{et al.}, ``Cypher: An evolving query language for property graphs,'' in \emph{Proc. ACM SIGMOD Int. Conf. Management of Data}, 2018, pp. 1433--1445. doi: \href{https://doi.org/10.1145/3183713.3190657}{10.1145/3183713.3190657}.
+\bibitem{ref3} Z. Hua \emph{et al.}, ``GDsmith: Detecting bugs in Cypher graph database engines,'' in \emph{Proc. ACM SIGSOFT Int. Symp. Software Testing and Analysis (ISSTA)}, 2023, pp. 163--174. doi: \href{https://doi.org/10.1145/3597926.3598046}{10.1145/3597926.3598046}.
+\bibitem{ref4} M. Kamm, M. Rigger, C. Zhang, and Z. Su, ``Testing graph database engines via query partitioning,'' in \emph{Proc. ACM SIGSOFT Int. Symp. Software Testing and Analysis (ISSTA)}, 2023, pp. 140--149. doi: \href{https://doi.org/10.1145/3597926.3598044}{10.1145/3597926.3598044}.
+\bibitem{ref5} Z. Zhuang, P. Li, P. Ma, W. Meng, and S. Wang, ``Testing graph database systems via graph-aware metamorphic relations,'' \emph{Proc. VLDB Endowment}, vol. 17, no. 4, pp. 836--848, 2023. doi: \href{https://doi.org/10.14778/3636218.3636236}{10.14778/3636218.3636236}.
+\bibitem{ref6} Y. Jiang, J. Liu, J. Ba, R. H. C. Yap, Z. Liang, and M. Rigger, ``Detecting logic bugs in graph database management systems via injective and surjective graph query transformation,'' in \emph{Proc. IEEE/ACM Int. Conf. Software Engineering (ICSE)}, 2024. doi: \href{https://doi.org/10.1145/3597503.3623307}{10.1145/3597503.3623307}.
+\bibitem{ref7} C. W\"ust, Z. Jiang, and Z. Su, ``Dinkel: State-aware and granular framework for validating graph databases,'' \emph{Proc. VLDB Endowment}, vol. 19, no. 6, pp. 1198--1211, 2026. doi: \href{https://doi.org/10.14778/3797919.3797928}{10.14778/3797919.3797928}.
+\bibitem{ref8} J. Wu, Z. Wu, R. Li, H. Qin, and G. Wang, ``Effective bug detection in graph database engines: An LLM-based approach,'' \emph{CoRR}, abs/2402.00292, 2024. doi: \href{https://doi.org/10.48550/arXiv.2402.00292}{10.48550/arXiv.2402.00292}.
+\bibitem{ref9} N. Francis \emph{et al.}, ``Formal semantics of the language Cypher,'' \emph{CoRR}, abs/1802.09984, 2018. doi: \href{https://doi.org/10.48550/arXiv.1802.09984}{10.48550/arXiv.1802.09984}.
+\bibitem{ref10} A. Green \emph{et al.}, ``Updating graph databases with Cypher,'' \emph{Proc. VLDB Endowment}, vol. 12, no. 12, pp. 2242--2253, 2019. doi: \href{https://doi.org/10.14778/3352063.3352139}{10.14778/3352063.3352139}.
+\bibitem{ref11} P. Lewis \emph{et al.}, ``Retrieval-augmented generation for knowledge-intensive NLP tasks,'' in \emph{Advances in Neural Information Processing Systems}, vol. 33, 2020, pp. 9459--9474.
+\bibitem{ref12} J. Shin, N. Shiri Harzevili, R. Aleithan, H. Hemmati, and S. Wang, ``Retrieval-augmented test generation: How far are we?'' in \emph{Proc. IEEE/ACM Int. Conf. Software Engineering (ICSE)}, 2026. Author preprint: \href{https://arxiv.org/abs/2409.12682}{arXiv:2409.12682}.
+\bibitem{ref13} M. Rigger and Z. Su, ``Testing database engines via pivoted query synthesis,'' in \emph{Proc. 14th USENIX Symp. Operating Systems Design and Implementation (OSDI)}, 2020, pp. 667--682.
+\bibitem{ref14} M. Rigger and Z. Su, ``Detecting optimization bugs in database engines via non-optimizing reference engine construction,'' in \emph{Proc. ACM Joint European Software Engineering Conf. and Symp. Foundations of Software Engineering (ESEC/FSE)}, 2020, pp. 1140--1152. doi: \href{https://doi.org/10.1145/3368089.3409710}{10.1145/3368089.3409710}.
+\bibitem{ref15} M. Rigger and Z. Su, ``Finding bugs in database systems via query partitioning,'' \emph{Proc. ACM Programming Languages}, vol. 4, OOPSLA, Art. 211, 2020. doi: \href{https://doi.org/10.1145/3428279}{10.1145/3428279}.
+\bibitem{ref16} J. Ba and M. Rigger, ``Keep it simple: Testing databases via differential query plans,'' \emph{Proc. ACM Management of Data}, vol. 2, no. 3, Art. 188, 2024. doi: \href{https://doi.org/10.1145/3654991}{10.1145/3654991}.
+\bibitem{ref17} S. Liu \emph{et al.}, ``Testing graph database systems with graph-state persistence oracle,'' in \emph{Proc. ACM SIGSOFT Int. Symp. Software Testing and Analysis (ISSTA)}, 2024, pp. 666--677. doi: \href{https://doi.org/10.1145/3650212.3680311}{10.1145/3650212.3680311}.
+\bibitem{ref18} R. Zhong, Y. Chen, H. Hu, H. Zhang, W. Lee, and D. Wu, ``SQUIRREL: Testing database management systems with language validity and coverage feedback,'' in \emph{Proc. ACM SIGSAC Conf. Computer and Communications Security (CCS)}, 2020, pp. 955--970. doi: \href{https://doi.org/10.1145/3372297.3417260}{10.1145/3372297.3417260}.
+\bibitem{ref19} Z.-M. Jiang, J.-J. Bai, and Z. Su, ``DynSQL: Stateful fuzzing for database management systems with complex and valid SQL query generation,'' in \emph{Proc. 32nd USENIX Security Symp.}, 2023, pp. 4949--4965.
+\bibitem{ref20} C. Zhang and M. Rigger, ``Constant optimization driven database system testing,'' \emph{Proc. ACM Management of Data}, vol. 3, no. 1, Art. 24, 2025. doi: \href{https://doi.org/10.1145/3709674}{10.1145/3709674}.
+\bibitem{ref21} J. Wang, Y. Huang, C. Chen, Z. Liu, S. Wang, and Q. Wang, ``Software testing with large language models: Survey, landscape, and vision,'' \emph{IEEE Trans. Software Engineering}, vol. 50, no. 4, pp. 911--936, 2024. doi: \href{https://doi.org/10.1109/TSE.2024.3368208}{10.1109/TSE.2024.3368208}.
+\bibitem{ref22} N. Alshahwan \emph{et al.}, ``Automated unit test improvement using large language models at Meta,'' in \emph{Companion Proc. ACM Int. Conf. Foundations of Software Engineering (FSE)}, 2024, pp. 185--196. doi: \href{https://doi.org/10.1145/3663529.3663839}{10.1145/3663529.3663839}.
+\bibitem{ref23} Y. Li, P. Liu, H. Wang, J. Chu, and W. E. Wong, ``Evaluating large language models for software testing,'' \emph{Computer Standards \& Interfaces}, vol. 93, Art. 103942, 2025. doi: \href{https://doi.org/10.1016/j.csi.2024.103942}{10.1016/j.csi.2024.103942}.
+\bibitem{ref24} Z. Zhang, X. Liu, Y. Lin, X. Gao, H. Sun, and Y. Yuan, ``Reference-based retrieval-augmented unit test generation,'' \emph{ACM Trans. Software Engineering and Methodology}, vol. 35, no. 6, Art. 149, 2026. doi: \href{https://doi.org/10.1145/3765758}{10.1145/3765758}.
+\bibitem{ref25} M. R. I. Rabin and M. A. Alipour, ``Configuring test generators using bug reports: A case study of GCC compiler and Csmith,'' in \emph{Proc. ACM/SIGAPP Symp. Applied Computing (SAC)}, 2021, pp. 1750--1758. doi: \href{https://doi.org/10.1145/3412841.3442047}{10.1145/3412841.3442047}.
+\bibitem{ref26} H. Zhong, ``Enriching compiler testing with real program from bug report,'' in \emph{Proc. IEEE/ACM Int. Conf. Automated Software Engineering (ASE)}, 2022, Art. 40, 12 pages. doi: \href{https://doi.org/10.1145/3551349.3556894}{10.1145/3551349.3556894}.
+\bibitem{ref27} H. Wang, Z. Xu, and S. H. Tan, ``Testing refactoring engine via historical bug report driven LLM,'' in \emph{Proc. IEEE/ACM Int. Conf. AI Foundation Models and Software Engineering (Forge)}, 2025, pp. 113--124. doi: \href{https://doi.org/10.1109/FORGE66646.2025.00020}{10.1109/FORGE66646.2025.00020}.
+\bibitem{ref28} JaCoCo contributors, ``JaCoCo Java code coverage library.'' [Online]. Available: \url{https://www.jacoco.org/jacoco/}. Accessed: Sep. 7, 2026.
+
+\bibitem{ref30} P. Barceló Baeza, ``Querying graph databases,'' in \emph{Proc. ACM SIGMOD-SIGACT-SIGAI Symp. Principles of Database Systems (PODS)}, 2013, pp. 175--188. doi: \href{https://doi.org/10.1145/2463664.2465216}{10.1145/2463664.2465216}.
+\bibitem{ref31} R. Angles, M. Arenas, P. Barceló, P. Boncz, G. H. L. Fletcher, C. Gutierrez, T. Lindaaker, M. Paradies, S. Plantikow, J. Sequeda, O. van Rest, and H. Voigt, ``G-CORE: A core for future graph query languages,'' in \emph{Proc. ACM SIGMOD Int. Conf. Management of Data}, 2018, pp. 1421--1432. doi: \href{https://doi.org/10.1145/3183713.3190654}{10.1145/3183713.3190654}.
+\bibitem{ref32} A. Green, M. Junghanns, M. Kiessling, T. Lindaaker, S. Plantikow, and P. Selmer, ``openCypher: New directions in property graph querying,'' in \emph{Proc. 21st Int. Conf. Extending Database Technology (EDBT)}, 2018, pp. 520--523.
+\bibitem{ref34} D. R. Slutz, ``Massive stochastic testing of SQL,'' in \emph{Proc. 24th Int. Conf. Very Large Data Bases (VLDB)}, 1998, pp. 618--622.
+\bibitem{ref35} H. Bati, L. Giakoumakis, S. Herbert, and A. Surna, ``A genetic approach for random testing of database systems,'' in \emph{Proc. 33rd Int. Conf. Very Large Data Bases (VLDB)}, 2007, pp. 1243--1251.
+\bibitem{ref36} C. Binnig, D. Kossmann, E. Lo, and M. T. Özsu, ``QAGen: Generating query-aware test databases,'' in \emph{Proc. ACM SIGMOD Int. Conf. Management of Data}, 2007, pp. 341--352. doi: \href{https://doi.org/10.1145/1247480.1247520}{10.1145/1247480.1247520}.
+\bibitem{ref37} C. Binnig, D. Kossmann, and E. Lo, ``Testing database applications,'' in \emph{Proc. ACM SIGMOD Int. Conf. Management of Data}, 2006, pp. 739--741. doi: \href{https://doi.org/10.1145/1142473.1142572}{10.1145/1142473.1142572}.
+\bibitem{ref38} J. Ba and M. Rigger, ``Testing database engines via query plan guidance,'' in \emph{Proc. IEEE/ACM Int. Conf. Software Engineering (ICSE)}, 2023, pp. 2060--2071. doi: \href{https://doi.org/10.1109/ICSE48619.2023.00174}{10.1109/ICSE48619.2023.00174}.
+\bibitem{ref39} J. Ba and M. Rigger, ``CERT: Finding performance issues in database systems through the lens of cardinality estimation,'' in \emph{Proc. IEEE/ACM Int. Conf. Software Engineering (ICSE)}, 2024. doi: \href{https://doi.org/10.1145/3597503.3639076}{10.1145/3597503.3639076}.
+\bibitem{ref40} W. M. McKeeman, ``Differential testing for software,'' \emph{Digital Technical Journal}, vol. 10, no. 1, pp. 100--107, 1998.
+\bibitem{ref41} T. Y. Chen, S. C. Cheung, and S. M. Yiu, ``Metamorphic testing: A new approach for generating next test cases,'' Dept. Computer Science, Hong Kong Univ. of Science and Technology, Tech. Rep. HKUST-CS98-01, 1998.
+\bibitem{ref42} S. Segura, G. Fraser, A. B. Sánchez, and A. Ruiz-Cortés, ``A survey on metamorphic testing,'' \emph{IEEE Trans. Software Engineering}, vol. 42, no. 9, pp. 805--824, 2016. doi: \href{https://doi.org/10.1109/TSE.2016.2532875}{10.1109/TSE.2016.2532875}.
+\bibitem{ref43} T. Y. Chen, F.-C. Kuo, H. Liu, P.-L. Poon, D. Towey, T. H. Tse, and Z. Q. Zhou, ``Metamorphic testing: A review of challenges and opportunities,'' \emph{ACM Computing Surveys}, vol. 51, no. 1, Art. 4, 2018. doi: \href{https://doi.org/10.1145/3143561}{10.1145/3143561}.
+\bibitem{ref46} V. J. M. Manès, H. Han, C. Han, S. K. Cha, M. Egele, E. J. Schwartz, and M. Woo, ``The art, science, and engineering of fuzzing: A survey,'' \emph{IEEE Trans. Software Engineering}, vol. 47, no. 11, pp. 2312--2331, 2021. doi: \href{https://doi.org/10.1109/TSE.2019.2946563}{10.1109/TSE.2019.2946563}.
+\bibitem{ref47} M. Böhme, V.-T. Pham, and A. Roychoudhury, ``Coverage-based greybox fuzzing as Markov chain,'' in \emph{Proc. ACM SIGSAC Conf. Computer and Communications Security (CCS)}, 2016, pp. 1032--1043. doi: \href{https://doi.org/10.1145/2976749.2978428}{10.1145/2976749.2978428}.
+\bibitem{ref48} M. Böhme, V.-T. Pham, M.-D. Nguyen, and A. Roychoudhury, ``Directed greybox fuzzing,'' in \emph{Proc. ACM SIGSAC Conf. Computer and Communications Security (CCS)}, 2017, pp. 2329--2344. doi: \href{https://doi.org/10.1145/3133956.3134020}{10.1145/3133956.3134020}.
+\bibitem{ref49} C. Lemieux, J. P. Inala, S. K. Lahiri, and S. Sen, ``CodaMOSA: Escaping coverage plateaus in test generation with pre-trained large language models,'' in \emph{Proc. IEEE/ACM Int. Conf. Software Engineering (ICSE)}, 2023, pp. 919--931. doi: \href{https://doi.org/10.1109/ICSE48619.2023.00085}{10.1109/ICSE48619.2023.00085}.
+\bibitem{ref50} M. Schäfer, S. Nadi, A. Eghbali, and F. Tip, ``An empirical evaluation of using large language models for automated unit test generation,'' \emph{IEEE Trans. Software Engineering}, vol. 50, no. 1, pp. 85--105, 2024. doi: \href{https://doi.org/10.1109/TSE.2023.3334955}{10.1109/TSE.2023.3334955}.
+\bibitem{ref51} Y. Deng, C. S. Xia, H. Peng, C. Yang, and L. Zhang, ``Large language models are zero-shot fuzzers: Fuzzing deep-learning libraries via large language models,'' in \emph{Proc. ACM SIGSOFT Int. Symp. Software Testing and Analysis (ISSTA)}, 2023, pp. 423--435. doi: \href{https://doi.org/10.1145/3597926.3598067}{10.1145/3597926.3598067}.
+\bibitem{ref52} C. S. Xia, M. Paltenghi, J. L. Tian, M. Pradel, and L. Zhang, ``Fuzz4All: Universal fuzzing with large language models,'' in \emph{Proc. IEEE/ACM Int. Conf. Software Engineering (ICSE)}, 2024, pp. 1547--1559. doi: \href{https://doi.org/10.1145/3597503.3639121}{10.1145/3597503.3639121}.
+\bibitem{ref53} Y. Chen, Z. Hu, C. Zhi, J. Han, S. Deng, and J. Yin, ``ChatUniTest: A framework for LLM-based test generation,'' in \emph{Companion Proc. ACM Int. Conf. Foundations of Software Engineering (FSE)}, 2024, pp. 572--576. doi: \href{https://doi.org/10.1145/3663529.3663801}{10.1145/3663529.3663801}.
+\bibitem{ref54} R. Just, D. Jalali, and M. D. Ernst, ``Defects4J: A database of existing faults to enable controlled testing studies for Java programs,'' in \emph{Proc. ACM SIGSOFT Int. Symp. Software Testing and Analysis (ISSTA)}, 2014, pp. 437--440. doi: \href{https://doi.org/10.1145/2610384.2628055}{10.1145/2610384.2628055}.
+\bibitem{ref55} C. Le Goues, N. Holtschulte, E. K. Smith, Y. Brun, P. Devanbu, S. Forrest, and W. Weimer, ``The ManyBugs and IntroClass benchmarks for automated repair of C programs,'' \emph{IEEE Trans. Software Engineering}, vol. 41, no. 12, pp. 1236--1256, 2015. doi: \href{https://doi.org/10.1109/TSE.2015.2454513}{10.1109/TSE.2015.2454513}.
+\bibitem{ref56} F. Madeiral, S. Urli, M. Maia, and M. Monperrus, ``Bears: An extensible Java bug benchmark for automatic program repair studies,'' in \emph{Proc. IEEE Int. Conf. Software Analysis, Evolution and Reengineering (SANER)}, 2019, pp. 468--478. doi: \href{https://doi.org/10.1109/SANER.2019.8667991}{10.1109/SANER.2019.8667991}.
+\par
+\bibitem{refGRev} Q. Mang, A. Fang, B. Yu, H. Chen, and P. He, ``Testing graph database systems via equivalent query rewriting,'' in \emph{Proc. IEEE/ACM Int. Conf. Software Engineering (ICSE)}, 2024, 12 pages. doi: \href{https://doi.org/10.1145/3597503.3639200}{10.1145/3597503.3639200}.
+\bibitem{refHistFuzz} M. Sun, Y. Yang, M. Wen, Y. Wang, Y. Zhou, and H. Jin, ``Validating SMT solvers via skeleton enumeration empowered by historical bug-triggering inputs,'' in \emph{Proc. IEEE/ACM Int. Conf. Software Engineering (ICSE)}, 2023, pp. 69--81. doi: \href{https://doi.org/10.1109/ICSE48619.2023.00018}{10.1109/ICSE48619.2023.00018}.
+\bibitem{refJavaTailor} Y. Zhao, Z. Wang, J. Chen, M. Liu, M. Wu, Y. Zhang, and L. Zhang, ``History-driven test program synthesis for JVM testing,'' in \emph{Proc. IEEE/ACM Int. Conf. Software Engineering (ICSE)}, 2022, pp. 1133--1144. doi: \href{https://doi.org/10.1145/3510003.3510059}{10.1145/3510003.3510059}.
+\bibitem{refBugForge} D. Li, Q. Liu, Y. Guo, J. Liang, Z. Wu, C. Zhang, J. Fu, H. Mao, Z. Guan, and Y. Jiang, ``BugForge: Constructing and utilizing DBMS bug repository to enhance DBMS testing,'' \emph{arXiv preprint arXiv:2604.03024}, 2026. doi: \href{https://doi.org/10.48550/arXiv.2604.03024}{10.48550/arXiv.2604.03024}.
+\bibitem{refCypherManual} Neo4j, Inc., ``Cypher Manual.'' [Online]. Available: \url{https://neo4j.com/docs/cypher-manual/current/}. Accessed: Sep. 7, 2026.
+\bibitem{refLCOV} Linux Test Project, ``LCOV code coverage tool.'' [Online]. Available: \url{https://github.com/linux-test-project/lcov}. Accessed: Sep. 7, 2026.
+\bibitem{refGcov} Free Software Foundation, ``gcov---A test coverage program,'' in \emph{Using the GNU Compiler Collection (GCC)}. [Online]. Available: \url{https://gcc.gnu.org/onlinedocs/gcc/Gcov.html}. Accessed: Sep. 7, 2026.
+\end{thebibliography}
+
+
+
+
+
+\makeatletter
+\let\baselinestretch\ACM@origbaselinestretch
+\makeatother
+\end{document}

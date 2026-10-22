@@ -1,0 +1,34 @@
+targets:
+  neo4j-2026.03.1:
+    dbms: neo4j
+    executor_target: repro_neo4j
+    image: neo4j:2026.03.1
+  neo4j-2026.04.0:
+    dbms: neo4j
+    executor_target: repro_neo4j
+    image: neo4j:2026.04.0
+  neo4j-2026.05.0:
+    dbms: neo4j
+    executor_target: repro_neo4j
+    image: neo4j:2026.05.0
+  neo4j-2026.06.0:
+    dbms: neo4j
+    executor_target: repro_neo4j
+    image: neo4j:2026.06.0
+  memgraph-3.9.0:
+    dbms: memgraph
+    executor_target: repro_memgraph
+    image: memgraph/memgraph:3.9.0
+  falkordb-4.16.8:
+    dbms: falkordb
+    executor_target: repro_falkordb
+    image: falkordb/falkordb:v4.16.8
+  arcadedb-26.4.1:
+    dbms: arcadedb
+    executor_target: repro_arcadedb
+    image: arcadedata/arcadedb:26.4.1
+  apache-age-1.7.0:
+    dbms: apache_age
+    executor_target: repro_age
+    image: apache/age:latest
+    require_resolved_image_id: true

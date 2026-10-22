@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_93b57d1a399c",
+  "skeleton_text": "MATCH (p:HOLE_LABEL_1) WHERE [ (p)-[:HOLE_REL_TYPE_1]->(pp:HOLE_LABEL_2) WHERE pp.HOLE_PROP_1 <> HOLE_VALUE_1 | pp ] <> [] RETURN p.HOLE_PROP_2",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#310",
+  "holes": []
+}

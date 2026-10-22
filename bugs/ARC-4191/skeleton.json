@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_9da3731d44f9",
+  "skeleton_text": "CREATE (n { prop: 'test'})",
+  "source_id": "RedisGraph/RedisGraph#363",
+  "source_query_id": "RedisGraph__RedisGraph__363__q001",
+  "holes": []
+}

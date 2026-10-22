@@ -1,0 +1,88 @@
+[
+  {
+    "feature_id": "ft_6da237efe02e",
+    "machine_name": "return_expression_without_match",
+    "description": "Returns a computed expression directly without a MATCH clause, testing standalone expression evaluation.",
+    "tags": [
+      "return",
+      "expression",
+      "no_match",
+      "standalone"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_514b762c560e",
+    "machine_name": "return_variables_from_optional_match",
+    "description": "RETURN clause projecting variables from an OPTIONAL MATCH, testing handling of null values when no matches are found.",
+    "tags": [
+      "return",
+      "optional_match",
+      "null_values",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_e06dfeac28e3",
+    "machine_name": "property_index_with_same_variable_name",
+    "description": "Uses the same variable name in both the node pattern and property reference, which can test variable scoping and reuse in index creation.",
+    "tags": [
+      "variable_reuse",
+      "syntax",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_38a1b63b2140",
+    "machine_name": "self_comparison_predicate",
+    "description": "WHERE clause with self-comparison predicate (attribute compared to itself)",
+    "tags": [
+      "predicate",
+      "self_comparison",
+      "always_true"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_82fbfcafe9d2",
+    "machine_name": "bidirectional_path_pattern",
+    "description": "A path pattern with both incoming and outgoing relationship directions from a middle node.",
+    "tags": [
+      "path_pattern",
+      "direction",
+      "middle_node"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_8d6d4e438b4b",
+    "machine_name": "return_aggregated_list",
+    "description": "Returns a single aggregated list of relationships, testing projection behavior with aggregated results.",
+    "tags": [
+      "return",
+      "aggregation_output",
+      "single_column"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

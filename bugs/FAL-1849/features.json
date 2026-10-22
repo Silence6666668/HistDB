@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_249db0ceb5ef",
+    "machine_name": "nested_call_subquery",
+    "description": "Multiple nested CALL subqueries with depth greater than one",
+    "tags": [
+      "subquery",
+      "nested",
+      "call",
+      "depth"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_fd5dd1a71c0b",
+    "machine_name": "subquery_result_propagation",
+    "description": "Returning a result from a subquery and using it in the outer query's RETURN clause",
+    "tags": [
+      "subquery",
+      "result",
+      "propagation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ff9772e40173",
+    "machine_name": "multiple_match_clauses",
+    "description": "Two separate MATCH clauses binding different nodes with distinct labels and property filters",
+    "tags": [
+      "match",
+      "multiple_clauses",
+      "node_binding"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_72102f9c8a17",
+    "machine_name": "simple_return_node",
+    "description": "Returning the entire matched node without projection or aggregation",
+    "tags": [
+      "return",
+      "node",
+      "no_projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_465f5787c0d0",
+    "machine_name": "create_node_with_properties",
+    "description": "Creates a single node with multiple numeric properties in a single CREATE clause.",
+    "tags": [
+      "write",
+      "node_creation",
+      "properties",
+      "single_node"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_fdbbb621874c",
+    "machine_name": "call_subquery_without_import",
+    "description": "CALL subquery that returns a literal value without importing external variables, used for isolated computations or testing subquery execution.",
+    "tags": [
+      "subquery",
+      "call",
+      "literal",
+      "isolation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

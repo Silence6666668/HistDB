@@ -1,0 +1,38 @@
+schema_version: 1
+family_id: HISTDB-AGE-001
+title: UNWIND null is counted as a non-null value
+paper_set: fixed-version-50
+dbms: apache_age
+symptom: count(x) returns one for the null row produced by UNWIND
+issue:
+  url: https://github.com/apache/age/issues/2383
+  status: confirmed
+  report_path: issue_reports/submitted/age/old/age_unwind_null_count_counts_null_as_one.md
+targets:
+  buggy: {id: apache-age-1.7.0}
+  fixed: []
+observation:
+  age_version: 1.7.0
+  postgresql_version: "18.1"
+  execution_image_requires_resolved_id: true
+test:
+  setup: []
+  query: |-
+    UNWIND [null] AS x
+    RETURN count(x) AS c
+  cleanup: []
+oracle:
+  type: scalar_equals
+  field: c
+  expected_buggy: 1
+  expected_correct: 0
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: RedisGraph__RedisGraph__110__q001
+  case_id: case_99e2a45b8c8e
+  source_artifacts:
+    - issue_reports/submitted/age/old/age_unwind_null_count_counts_null_as_one.md
+    - paper/bug_example_panels_by_database_20260810.md
+  skeleton_ids: []
+  feature_ids: []
+

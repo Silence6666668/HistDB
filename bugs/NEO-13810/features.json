@@ -1,0 +1,62 @@
+[
+  {
+    "feature_id": "ft_1ead472dd0a4",
+    "machine_name": "query_pattern_aggregation_count_match_return",
+    "description": "该查询包含 MATCH、RETURN 子句，涉及聚合计算。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#2038",
+    "source_query_id": "ArcadeData__arcadedb__2038__q001"
+  },
+  {
+    "feature_id": "ft_05f657817548",
+    "machine_name": "query_pattern_aggregation_count_match_path_pattern",
+    "description": "该查询包含 MATCH、RETURN 子句，涉及聚合计算，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3393",
+    "source_query_id": "ArcadeData__arcadedb__3393__q001"
+  },
+  {
+    "feature_id": "ft_fd5b1181e8c3",
+    "machine_name": "query_pattern_aggregation_call_count_match",
+    "description": "该查询包含 MATCH、CALL、WITH、WHERE、UNWIND、WITH、RETURN 子句，涉及聚合计算。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#384",
+    "source_query_id": "FalkorDB__FalkorDB__384__q001"
+  },
+  {
+    "feature_id": "ft_243f69798746",
+    "machine_name": "query_pattern_call_match_path_pattern_return",
+    "description": "该查询包含 CALL、MATCH、WHERE、RETURN 子句，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#525",
+    "source_query_id": "FalkorDB__FalkorDB__525__q001"
+  },
+  {
+    "feature_id": "ft_36e4a38e67aa",
+    "machine_name": "query_pattern_aggregation_call_count_return",
+    "description": "该查询包含 CALL、RETURN 子句，涉及聚合计算。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "RedisGraph/RedisGraph#853",
+    "source_query_id": "RedisGraph__RedisGraph__853__q006"
+  },
+  {
+    "feature_id": "ft_be4916535a24",
+    "machine_name": "query_pattern_match_path_pattern_return",
+    "description": "该查询包含 MATCH、RETURN 子句，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3285",
+    "source_query_id": "ArcadeData__arcadedb__3285__q003"
+  }
+]

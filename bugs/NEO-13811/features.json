@@ -1,0 +1,62 @@
+[
+  {
+    "feature_id": "ft_1722484e385d",
+    "machine_name": "query_pattern_match_return_where",
+    "description": "该查询包含 MATCH、WHERE、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#2342",
+    "source_query_id": "ArcadeData__arcadedb__2342__q001"
+  },
+  {
+    "feature_id": "ft_67ed6a230283",
+    "machine_name": "query_pattern_match_return",
+    "description": "该查询包含 MATCH、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#2110",
+    "source_query_id": "ArcadeData__arcadedb__2110__q002"
+  },
+  {
+    "feature_id": "ft_3e98a7efbc96",
+    "machine_name": "query_pattern_match_where",
+    "description": "该查询包含 MATCH、WHERE 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#754",
+    "source_query_id": "FalkorDB__FalkorDB__754__q001"
+  },
+  {
+    "feature_id": "ft_4486874db349",
+    "machine_name": "query_pattern_return_where",
+    "description": "该查询包含 WHERE、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "RedisGraph/RedisGraph#579",
+    "source_query_id": "RedisGraph__RedisGraph__579__q001"
+  },
+  {
+    "feature_id": "ft_a6251a6ec5b9",
+    "machine_name": "single_node_match",
+    "description": "Matches all nodes with a single variable binding and returns aggregated result.",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1451",
+    "source_query_id": "FalkorDB__FalkorDB__1451__q003"
+  },
+  {
+    "feature_id": "ft_8fda1f712b71",
+    "machine_name": "query_pattern_return",
+    "description": "该查询包含 RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#2119",
+    "source_query_id": "ArcadeData__arcadedb__2119__q001"
+  }
+]

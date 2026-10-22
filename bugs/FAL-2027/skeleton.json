@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_2ed4c5c14f5e",
+  "skeleton_text": "UNWIND [p=()-[]->()|reduce(a=HOLE_REDUCE_INIT, b in HOLE_REDUCE_LIST|HOLE_REDUCE_EXPR)] AS HOLE_ALIAS RETURN HOLE_ALIAS",
+  "source_id": null,
+  "source_query_id": "RedisGraph/RedisGraph#3032",
+  "holes": []
+}

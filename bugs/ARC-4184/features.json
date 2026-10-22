@@ -1,0 +1,87 @@
+[
+  {
+    "feature_id": "ft_667e1e507913",
+    "machine_name": "simple_match_return_aggregation",
+    "description": "Combination of MATCH with a node pattern, relationship traversal, and aggregation in RETURN.",
+    "tags": [
+      "full_query",
+      "pattern_aggregation",
+      "testing"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_9610b43688a9",
+    "machine_name": "create_relationship_between_nodes",
+    "description": "Creates a directed relationship between two nodes, testing relationship creation and connectivity.",
+    "tags": [
+      "create",
+      "relationship",
+      "directed"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_8e28f88b3f32",
+    "machine_name": "empty_pattern_in_list_comprehension",
+    "description": "List comprehension with an empty pattern '()-[]-()' that generates a list of 1s, testing pattern evaluation in comprehension without variable binding.",
+    "tags": [
+      "list_comprehension",
+      "empty_pattern",
+      "pattern_evaluation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_c64d932e6fa4",
+    "machine_name": "multi_type_variable_length_path",
+    "description": "Variable-length path traversal with multiple relationship types specified in a list, allowing any of the types to be matched at each hop.",
+    "tags": [
+      "path_pattern",
+      "variable_length",
+      "multi_type"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_53b0251726f5",
+    "machine_name": "full_write_workflow",
+    "description": "Complete write operation combining UNWIND data injection, ID-based matching, MERGE relationship creation, and result verification",
+    "tags": [
+      "write",
+      "workflow",
+      "integration"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ee868070f0b3",
+    "machine_name": "map_projection_on_node",
+    "description": "Projection of all properties from a node using map projection syntax n{.*}",
+    "tags": [
+      "projection",
+      "map_projection",
+      "properties",
+      "node"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

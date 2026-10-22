@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_7b6f3d07ba0b",
+  "skeleton_text": "MATCH (n) WITH n WHERE () <-[{k1: HOLE_VALUE}]- () RETURN *",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#1318",
+  "holes": []
+}

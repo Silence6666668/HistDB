@@ -1,0 +1,14 @@
+{
+  "input_dirs": [
+    "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\batch_runs\\historical_bug_queries_parallel_llm_v1\\stage1_shards\\neo4j",
+    "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\batch_runs\\historical_bug_queries_parallel_llm_v1\\stage1_shards\\arcadedb",
+    "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\batch_runs\\historical_bug_queries_parallel_llm_v1\\stage1_shards\\falkordb",
+    "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\batch_runs\\historical_bug_queries_parallel_llm_v1\\stage1_shards\\redisgraph"
+  ],
+  "output_dir": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\batch_runs\\historical_bug_queries_parallel_llm_v1\\stage1",
+  "processed_queries": 4141,
+  "extracted_feature_items": 16962,
+  "skipped": 0,
+  "unique_skeletons": 3252,
+  "feature_groups": 9148
+}

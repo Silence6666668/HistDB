@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_0e9f373199bf",
+  "skeleton_text": "MATCH (foo:HOLE_LABEL_0) RETURN foo, COLLECT { MATCH (foo)-->(bar:HOLE_LABEL_1) RETURN bar } AS bars",
+  "source_id": "FalkorDB/FalkorDB#929",
+  "source_query_id": "FalkorDB__FalkorDB__929__q001",
+  "holes": []
+}

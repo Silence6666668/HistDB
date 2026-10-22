@@ -1,0 +1,22 @@
+[
+  {
+    "feature_id": "ft_158416b76500",
+    "machine_name": "query_pattern_match_optional_match_path_pattern_return",
+    "description": "该查询包含 MATCH、OPTIONAL MATCH、MATCH、RETURN 子句，使用 OPTIONAL MATCH，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12573",
+    "source_query_id": "q_000014"
+  },
+  {
+    "feature_id": "ft_9a904cc24aeb",
+    "machine_name": "variable_length_relationship_traversal",
+    "description": "Traverses relationships with variable length (1 hop exactly) using the * operator",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "memgraph/memgraph#705",
+    "source_query_id": "memgraph__memgraph__705__q001"
+  }
+]

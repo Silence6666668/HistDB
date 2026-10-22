@@ -1,0 +1,11 @@
+CYPHER 25
+UNWIND [30,20] AS age
+RETURN age
+NEXT
+WHEN age >= 25 THEN
+  RETURN {v:age} AS a
+ELSE
+  RETURN [age] AS a
+NEXT
+FILTER a IS :: LIST<INTEGER>
+RETURN size(a) AS s;

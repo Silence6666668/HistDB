@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_fa2f6b6c9a9d",
+  "skeleton_text": "CREATE INDEX ON :HOLE_LABEL(HOLE_PROPERTY)",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#243",
+  "holes": []
+}

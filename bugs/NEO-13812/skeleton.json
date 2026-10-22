@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_cdf4d25bb471",
+  "skeleton_text": "CREATE (x) DELETE x MERGE (x)-[:HOLE_LABEL_0]->(x) CREATE ()",
+  "source_id": "FalkorDB/FalkorDB#651",
+  "source_query_id": "FalkorDB__FalkorDB__651__q001",
+  "holes": []
+}

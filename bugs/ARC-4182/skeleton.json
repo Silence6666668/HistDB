@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_7202f1665e11",
+  "skeleton_text": "FOREACH(a in []|SET (null).k=1) WITH null AS a6 ORDER BY reduce(a=null,b in [(n2)<-[a6]-(n3)-[]-(n2)|true]|a) RETURN 1;",
+  "source_id": "neo4j#13259",
+  "source_query_id": "neo4j__13259__q001",
+  "holes": []
+}

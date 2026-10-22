@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_03c80505e715",
+  "skeleton_text": "MATCH (n0 :HOLE_LABEL_0)-[r0]-(n1 :HOLE_LABEL_1) UNWIND HOLE_LIST_0 AS a0 RETURN a0",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#247",
+  "holes": []
+}

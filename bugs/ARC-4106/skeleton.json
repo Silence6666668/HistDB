@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_a9bf972a12da",
+  "skeleton_text": "RETURN size(HOLE_STRING)",
+  "source_id": null,
+  "source_query_id": "RedisGraph/RedisGraph#2086",
+  "holes": []
+}

@@ -1,0 +1,40 @@
+schema_version: 1
+family_id: HISTDB-FAL-010
+title: Pattern comprehension in WHERE fails filtered-alias resolution
+paper_set: fixed-version-50
+dbms: falkordb
+symptom: ANY over a correlated pattern comprehension raises an internal alias error
+issue:
+  url: https://github.com/FalkorDB/FalkorDB/issues/2028
+  status: confirmed
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_pattern_comprehension_in_where_may_fail_with_filtered_alias.md
+targets:
+  buggy:
+    id: falkordb-4.16.8
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Alice'})-[:FRIEND_OF {tags:['friend']}]->(:Person {name:'Bob'})"
+  query: |-
+    MATCH (n:Person {name:'Alice'}), (m:Person {name:'Bob'})
+    WHERE ANY(rel IN [(n)-[r:FRIEND_OF]->(m) | r] WHERE 'friend' IN rel.tags)
+    RETURN n.name AS person1, m.name AS person2
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: error_matches
+  category: FalkorDB.QueryError
+  pattern: '(?i)Unable to resolve filtered alias.*FRIEND_OF'
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: FalkorDB__FalkorDB__310__q002
+  case_id: case_7b2679b1f2d6
+  source_artifacts:
+    - issue_reports/submitted/falkordb/2026-5-1/falkordb_pattern_comprehension_in_where_may_fail_with_filtered_alias.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

@@ -1,0 +1,87 @@
+[
+  {
+    "feature_id": "ft_5e8597f3b966",
+    "machine_name": "parameterized_batch_write",
+    "description": "Using a parameterized batch input to perform write operations, which is common in data import or transactional contexts.",
+    "tags": [
+      "parameter",
+      "batch",
+      "write",
+      "transaction"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_5810f6e815c9",
+    "machine_name": "boolean_and_null_combination",
+    "description": "Combining boolean literals with null using AND operator to test null propagation in logical conjunction",
+    "tags": [
+      "boolean_logic",
+      "null_semantics",
+      "logical_operator"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_2fd7f7f055f8",
+    "machine_name": "limit_clause",
+    "description": "Limit the number of returned results to a specific count.",
+    "tags": [
+      "limit",
+      "pagination",
+      "return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_83c9e1967690",
+    "machine_name": "relationship_pattern_in_where",
+    "description": "Relationship existence check using pattern expression in WHERE clause",
+    "tags": [
+      "where",
+      "pattern_expression",
+      "relationship_check"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_0bb1a7e58a42",
+    "machine_name": "distinct_path_variable",
+    "description": "DISTINCT applied to a path variable in WITH clause",
+    "tags": [
+      "distinct",
+      "path_variable",
+      "with_clause"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_05dfe37f40fc",
+    "machine_name": "optional_match_with_shared_node",
+    "description": "OPTIONAL MATCH connecting two previously matched nodes via a shared intermediate node",
+    "tags": [
+      "optional_match",
+      "shared_node",
+      "bidirectional_relationship"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

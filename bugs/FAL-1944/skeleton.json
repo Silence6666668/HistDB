@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_a7a95a0a59a6",
+  "skeleton_text": "with range(HOLE_START, HOLE_END) as r MATCH p=()<--(n1)--(n2)--(n3)<--()-[e1]-()-->() RETURN DISTINCT HOLE_RETURN_EXPR LIMIT HOLE_LIMIT",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#321",
+  "holes": []
+}

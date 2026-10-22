@@ -1,0 +1,87 @@
+[
+  {
+    "feature_id": "ft_514b140ec307",
+    "machine_name": "merge_with_relationship_properties",
+    "description": "MERGE creating relationships with property maps, testing relationship creation with multiple properties.",
+    "tags": [
+      "merge",
+      "relationship",
+      "properties"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_0de2006fe87f",
+    "machine_name": "multiple_node_match",
+    "description": "Matches multiple node patterns in a single MATCH clause with comma separation",
+    "tags": [
+      "match",
+      "multiple_nodes",
+      "comma_separated"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_9498ee080d78",
+    "machine_name": "negative_integer_property",
+    "description": "Setting a negative integer value as a node property during creation",
+    "tags": [
+      "property",
+      "negative_integer",
+      "data_type"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_fcd3930c7706",
+    "machine_name": "nested_list_comprehension_with_any",
+    "description": "List comprehension containing nested ANY predicate with empty list condition",
+    "tags": [
+      "list_comprehension",
+      "nested_predicate",
+      "empty_list",
+      "any_operator"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_002dd4f69a4d",
+    "machine_name": "union_all_in_subquery",
+    "description": "UNION ALL combining two subqueries with different WHERE conditions on the same variable",
+    "tags": [
+      "union_all",
+      "subquery",
+      "variable_reuse"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_30b50bef07d1",
+    "machine_name": "aggregation_with_arithmetic",
+    "description": "Applying an aggregation function (max) and using its result in an arithmetic expression in the RETURN clause.",
+    "tags": [
+      "aggregation",
+      "arithmetic",
+      "alias"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

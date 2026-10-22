@@ -1,0 +1,22 @@
+[
+  {
+    "feature_id": "ft_eb4a95c8339a",
+    "machine_name": "multiple_write_clauses",
+    "description": "Combining multiple write clauses (CREATE, DELETE, MERGE) in a single query without explicit ordering or separation, testing execution order and side effects.",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "memgraph/memgraph#2093",
+    "source_query_id": "memgraph__memgraph__2093__q002"
+  },
+  {
+    "feature_id": "ft_448c7811cd83",
+    "machine_name": "query_pattern_create_match_path_pattern_return",
+    "description": "该查询包含 UNWIND、MATCH、WHERE、CREATE、SET、RETURN 子句，属于写查询，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#13036",
+    "source_query_id": "q_000186"
+  }
+]

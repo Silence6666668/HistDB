@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_320ff1297243",
+  "skeleton_text": "MATCH (n { foo: 'bar'}) \nRETURN n",
+  "source_id": "RedisGraph/RedisGraph#1230",
+  "source_query_id": "RedisGraph__RedisGraph__1230__q002",
+  "holes": []
+}

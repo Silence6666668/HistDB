@@ -1,0 +1,93 @@
+[
+  {
+    "feature_id": "ft_1fd54bde29e9",
+    "machine_name": "create_node_with_vector_property",
+    "description": "Create a node with a vector property containing an array of floating-point values.",
+    "tags": [
+      "write",
+      "property",
+      "array",
+      "vector"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f324e80e3c8c",
+    "machine_name": "single_node_mutation",
+    "description": "Performs a write operation (REMOVE) on a single matched node, useful for testing atomicity or isolation.",
+    "tags": [
+      "write",
+      "single_node",
+      "mutation",
+      "atomic"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_e1ea844bae78",
+    "machine_name": "large_scale_batch_operation",
+    "description": "Performs a write operation on a large number of elements (100,000 in this case) in a single query, testing scalability and performance.",
+    "tags": [
+      "batch",
+      "scalability",
+      "performance",
+      "large_scale",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_e6ac1b3ea773",
+    "machine_name": "node_property_assignment",
+    "description": "Assign a property to a node during creation with a string value.",
+    "tags": [
+      "write",
+      "property",
+      "string_value",
+      "node_creation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_11a058e95009",
+    "machine_name": "call_with_wildcard_binding",
+    "description": "CALL clause using WITH * to pass all current variables into a subquery",
+    "tags": [
+      "call",
+      "with",
+      "wildcard",
+      "binding"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_24291482372a",
+    "machine_name": "return_node_after_write_operations",
+    "description": "RETURN a node after performing multiple write operations (MERGE, DELETE), verifying the node state post-modification.",
+    "tags": [
+      "return",
+      "write_operations",
+      "node_projection",
+      "state_verification"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

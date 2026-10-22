@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_240ea76faea8",
+  "skeleton_text": "UNWIND $batch as row\nMATCH (a),(b) WHERE ID(a) = row.source_id AND ID(b) = row.target_id\nMERGE (a)-[r:`in`]->(b)\nRETURN a, b, r",
+  "source_id": "ArcadeData/arcadedb#3216",
+  "source_query_id": "ArcadeData__arcadedb__3216__q005",
+  "holes": []
+}

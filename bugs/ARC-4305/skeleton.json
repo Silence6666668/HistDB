@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_f1fe3ede1917",
+  "skeleton_text": "MATCH ()-[r:HOLE_LABEL_0]->() RETURN [key IN keys(r) | key + HOLE_STR_0 + r[key]] AS keyValue",
+  "source_id": "RedisGraph/RedisGraph#2262",
+  "source_query_id": "RedisGraph__RedisGraph__2262__q003",
+  "holes": []
+}

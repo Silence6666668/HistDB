@@ -1,0 +1,87 @@
+[
+  {
+    "feature_id": "ft_a8dd3272836d",
+    "machine_name": "path_variable_assignment",
+    "description": "Assign an entire path pattern to a variable for later use",
+    "tags": [
+      "path",
+      "variable",
+      "assignment"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a54d37d4c31e",
+    "machine_name": "merge_relationship_to_matched_node",
+    "description": "Merge a relationship from a newly merged node to a previously matched node, combining node and relationship creation.",
+    "tags": [
+      "merge",
+      "relationship",
+      "chained_operation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_cf1899b22f3f",
+    "machine_name": "basic_labeled_node_match",
+    "description": "Match nodes with specific labels (Parent and Child) in a directed relationship pattern",
+    "tags": [
+      "match",
+      "label",
+      "relationship",
+      "direction"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_9d14539b4151",
+    "machine_name": "boolean_return_expression",
+    "description": "RETURN clause with a boolean expression (equality check) rather than a simple variable or value.",
+    "tags": [
+      "return",
+      "boolean",
+      "expression"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_542cc1ecc9d7",
+    "machine_name": "batch_unwind_parameter",
+    "description": "Processing multiple input rows via UNWIND with a parameterized batch variable",
+    "tags": [
+      "parameter",
+      "batch",
+      "unwind"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_2aa53db65a2e",
+    "machine_name": "variable_length_path_traversal",
+    "description": "Traverses variable-length paths with a range of 1 to 2 hops between nodes of specific labels.",
+    "tags": [
+      "path_traversal",
+      "variable_length",
+      "label_filter"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

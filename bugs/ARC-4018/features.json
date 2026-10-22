@@ -1,0 +1,93 @@
+[
+  {
+    "feature_id": "ft_9c588bc945c6",
+    "machine_name": "create_multiple_nodes",
+    "description": "Creates multiple nodes in a single CREATE clause, each with distinct labels.",
+    "tags": [
+      "write",
+      "create",
+      "multiple_nodes",
+      "labels"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_373554d18244",
+    "machine_name": "parameter_unwind_create_nodes",
+    "description": "Creates multiple nodes from a parameter list using UNWIND, with a label and property assignment.",
+    "tags": [
+      "write",
+      "parameter",
+      "unwind",
+      "create",
+      "list_processing"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ab8d18114fa1",
+    "machine_name": "create_single_node_with_properties",
+    "description": "Create a single node with multiple literal properties including string and integer values",
+    "tags": [
+      "write",
+      "node_creation",
+      "properties",
+      "literal_values"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_688f66b5382e",
+    "machine_name": "create_relationship_with_dynamic_property",
+    "description": "Creates a relationship where a property value is dynamically derived from a property of the source node.",
+    "tags": [
+      "write",
+      "dynamic_property",
+      "relationship_creation",
+      "property_access"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_27a035c763d4",
+    "machine_name": "batch_create_and_connect",
+    "description": "Complete pattern: batch create nodes then connect them to existing nodes via MERGE",
+    "tags": [
+      "batch",
+      "create",
+      "match",
+      "merge",
+      "end_to_end"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f6c55f669c5f",
+    "machine_name": "create_node_with_properties",
+    "description": "Create a single node with multiple property key-value pairs in a single CREATE clause.",
+    "tags": [
+      "write",
+      "node_creation",
+      "properties"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

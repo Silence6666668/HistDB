@@ -1,0 +1,47 @@
+schema_version: 1
+family_id: HISTDB-MEM-004
+title: Deprecated CALL write subquery nullifies an outer variable
+paper_set: fixed-version-50
+dbms: memgraph
+symptom: an already-bound outer node becomes null after an implicit-import write subquery
+issue:
+  url: https://github.com/memgraph/memgraph/issues/4160
+  status: confirmed
+  report_path: issue_reports/submitted/memgraph/2026-5-17/memgraph_deprecated_call_write_subquery_may_nullify_outer_variable.md
+targets:
+  buggy:
+    id: memgraph-3.9.0
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Alice'}), (:Person {name:'Bob'})"
+  query: |-
+    MATCH (a:Person {name:'Alice'})
+    MATCH (b:Person {name:'Bob'})
+    WITH a, b
+    CALL {
+      CREATE (a)-[:LIKES]->(b)
+    }
+    RETURN a.name AS name
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: false
+  expected_buggy:
+    - {name: null}
+  expected_correct:
+    - {name: Alice}
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: FalkorDB__FalkorDB__367__q002
+  case_id: case_5451193665fc
+  source_artifacts:
+    - issue_reports/submitted/memgraph/2026-5-17/memgraph_deprecated_call_write_subquery_may_nullify_outer_variable.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_cda996b73742",
+  "skeleton_text": "match (n:HOLE_LABEL_0) return n.HOLE_PROP_0 as id, (n.HOLE_PROP_1+HOLE_NUM_0*n.HOLE_PROP_2) as score order by score DESC",
+  "source_id": "RedisGraph/RedisGraph#742",
+  "source_query_id": "RedisGraph__RedisGraph__742__q001",
+  "holes": []
+}

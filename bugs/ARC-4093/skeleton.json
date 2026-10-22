@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_f51748fb0c2a",
+  "skeleton_text": "MATCH (n:HOLE_LABEL) RETURN COUNT(n)",
+  "source_id": null,
+  "source_query_id": "ArcadeData/arcadedb#3479",
+  "holes": []
+}

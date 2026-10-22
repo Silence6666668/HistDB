@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_0e872196c165",
+  "skeleton_text": "CREATE (n0 :T2), (n1)<-[r1 :T1{id : 2, k51: 1}]-(n2)\nMATCH (n7) OPTIONAL MATCH (n7)<-[r7 :T1]-(n8) RETURN (r7.k51) AS a0",
+  "source_id": "RedisGraph/RedisGraph#2667",
+  "source_query_id": "RedisGraph__RedisGraph__2667__q002",
+  "holes": []
+}

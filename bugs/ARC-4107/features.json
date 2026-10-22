@@ -1,0 +1,87 @@
+[
+  {
+    "feature_id": "ft_a9a40a45ef07",
+    "machine_name": "return_all_entities",
+    "description": "RETURN all matched/created nodes and relationships",
+    "tags": [
+      "return",
+      "entities"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_02f8094596ab",
+    "machine_name": "aggregation_after_with",
+    "description": "Applying an aggregation function (COUNT) after a WITH clause that reduces the result set.",
+    "tags": [
+      "aggregation",
+      "COUNT",
+      "RETURN"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_5a25cd635793",
+    "machine_name": "aggregation_without_grouping",
+    "description": "Uses COUNT aggregation without GROUP BY, returning a single aggregated value.",
+    "tags": [
+      "aggregation",
+      "no_grouping",
+      "single_result"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_2becacd02684",
+    "machine_name": "multiple_properties_in_create",
+    "description": "Sets multiple properties (b and w) on a newly created node, testing property map syntax and multiple key-value pairs.",
+    "tags": [
+      "create",
+      "properties",
+      "multiple",
+      "map"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_36684f9032a1",
+    "machine_name": "order_by_with_reduce_aggregation",
+    "description": "ORDER BY clause using REDUCE aggregation function, testing ordering based on computed aggregate values",
+    "tags": [
+      "order_by",
+      "reduce",
+      "aggregation",
+      "ordering"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_22960aaf7758",
+    "machine_name": "with_star_after_merge",
+    "description": "WITH * clause used after a MERGE to pass all variables forward, testing variable propagation and potential side effects from write operations.",
+    "tags": [
+      "with",
+      "variable_propagation",
+      "write_operation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

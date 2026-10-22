@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_b85051405e57",
+  "skeleton_text": "MATCH (a) WITH a WHERE all(item in HOLE_LIST WHERE item IN a.HOLE_PROPERTY) RETURN a.HOLE_PROPERTY",
+  "source_id": null,
+  "source_query_id": "RedisGraph/RedisGraph#2853",
+  "holes": []
+}

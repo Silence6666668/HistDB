@@ -1,0 +1,145 @@
+[
+  {
+    "feature_id": "ft_b09739135961",
+    "machine_name": "literal_return",
+    "description": "Return a literal integer value directly without any computation or data retrieval.",
+    "tags": [
+      "return",
+      "literal",
+      "integer",
+      "simple"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d0523c7e5af0",
+    "machine_name": "single_node_creation",
+    "description": "Creates a single node without labels or properties.",
+    "tags": [
+      "write",
+      "node_creation",
+      "no_labels",
+      "no_properties"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_dd5d4cfd6ec4",
+    "machine_name": "unwind_with_parameter_map",
+    "description": "Using UNWIND to iterate over a list of parameter maps for batch processing",
+    "tags": [
+      "unwind",
+      "parameter",
+      "batch"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f490e77d27fb",
+    "machine_name": "label_filter_without_where",
+    "description": "Uses node label directly in MATCH clause to filter nodes without an explicit WHERE clause.",
+    "tags": [
+      "label",
+      "filter",
+      "match"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f0238e070b46",
+    "machine_name": "node_label_filter_with_string_equality",
+    "description": "Filter nodes by label and string property equality condition",
+    "tags": [
+      "label",
+      "string_filter",
+      "equality"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_b42d378595ed",
+    "machine_name": "label_filter_without_properties",
+    "description": "MATCH clause filters nodes by label L5 without property conditions, testing basic label matching.",
+    "tags": [
+      "match",
+      "label",
+      "filter"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_025520756af7",
+    "machine_name": "match_with_anonymous_relationships",
+    "description": "MATCH clause using anonymous relationships (empty brackets) in a chain pattern, which matches any relationship type.",
+    "tags": [
+      "match",
+      "anonymous_relationship",
+      "pattern"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_03c23c1755a1",
+    "machine_name": "subquery_with_typed_relationship",
+    "description": "Subquery uses typed relationship pattern ([:at_store]) in MATCH, contrasting with outer anonymous relationship",
+    "tags": [
+      "match",
+      "typed_relationship",
+      "path_pattern",
+      "subquery_pattern"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_2f736e54bc80",
+    "machine_name": "return_single_node_after_filter",
+    "description": "Returning a single node variable after filtering out rows based on a condition involving another variable",
+    "tags": [
+      "return",
+      "projection",
+      "filtering"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_87ac43e335d9",
+    "machine_name": "constant_return_value",
+    "description": "RETURN clause with a constant integer value instead of variables or expressions.",
+    "tags": [
+      "RETURN",
+      "constant",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

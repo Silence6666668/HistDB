@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_68b852b1e5e8",
+  "skeleton_text": "UNWIND [] AS dummy MATCH (n) WHERE n.id = 1 AND EXISTS { (n) } RETURN n",
+  "source_id": "FalkorDB/FalkorDB#1306",
+  "source_query_id": "FalkorDB__FalkorDB__1306__q002",
+  "holes": []
+}

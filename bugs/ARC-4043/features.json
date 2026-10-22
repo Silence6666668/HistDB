@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_ab157677d852",
+    "machine_name": "return_constant_after_complex_null_processing",
+    "description": "Returning a constant value (1) after a chain of null-processing operations in WITH and WHERE, testing query completion and result projection after null-related clauses.",
+    "tags": [
+      "return",
+      "constant",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7942b6159267",
+    "machine_name": "merge_node_with_label_and_properties",
+    "description": "MERGE clause creating a node with a specific label and property map, ensuring node existence or creating it if missing.",
+    "tags": [
+      "merge",
+      "node_creation",
+      "label",
+      "properties",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ddaecc28ac51",
+    "machine_name": "batch_parameter_unwind",
+    "description": "Processing multiple input rows via UNWIND with a parameterized batch",
+    "tags": [
+      "parameter",
+      "batch",
+      "iteration"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_35a24be28f35",
+    "machine_name": "size_function_on_list_literal",
+    "description": "Use of the size() function applied to a list literal containing NULL elements, testing function evaluation on constant lists.",
+    "tags": [
+      "function",
+      "list",
+      "null",
+      "constant"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_e16d63f40bf6",
+    "machine_name": "count_on_filtered_match",
+    "description": "Applying COUNT aggregation on a MATCH result that is filtered by a WHERE condition, testing aggregation behavior when no nodes match.",
+    "tags": [
+      "aggregation",
+      "count",
+      "zero_results"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_aba1d78cdee3",
+    "machine_name": "labeled_node_with_template_property",
+    "description": "Matching a labeled node with a property value containing a template expression (string concatenation with variable).",
+    "tags": [
+      "node_label",
+      "property_template",
+      "string_concatenation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

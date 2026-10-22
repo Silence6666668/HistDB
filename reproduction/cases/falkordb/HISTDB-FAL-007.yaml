@@ -1,0 +1,41 @@
+schema_version: 1
+family_id: HISTDB-FAL-007
+title: Re-matching multiple carried variables fails filtered-alias resolution
+paper_set: fixed-version-50
+dbms: falkordb
+symptom: a legal post-WITH MATCH reports an internal filtered-alias error
+issue:
+  url: https://github.com/FalkorDB/FalkorDB/issues/2004
+  status: confirmed
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_match_on_multiple_carried_variables_with_where_may_fail_filtered_alias.md
+targets:
+  buggy:
+    id: falkordb-4.16.8
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+  query: |-
+    CREATE (a:Person {name:'Alice', age:30}), (b:Person {name:'Bob', age:25})
+    WITH a, b
+    MATCH (a), (b)
+    WHERE a.age > 25 AND b.age < 30
+    RETURN a.name AS a, b.name AS b
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: error_matches
+  category: FalkorDB.QueryError
+  pattern: '(?i)Unable to resolve filtered alias.*b'
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: FalkorDB__FalkorDB__1280__q001
+  case_id: case_1bc866395fc0
+  source_artifacts:
+    - issue_reports/submitted/falkordb/2026-5-1/falkordb_match_on_multiple_carried_variables_with_where_may_fail_filtered_alias.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

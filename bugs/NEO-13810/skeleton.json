@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_81e81ed30268",
+  "skeleton_text": "UNWIND [1, 2, 3, 4, 5] AS depth CALL (depth) { MATCH (start:Person {name: 'Alice'})-[r:KNOWS*1..depth]->(end:Person) WHERE end.age > 25 RETURN min(end.age) AS minAge ORDER BY COUNT { () } } RETURN minAge AS result",
+  "source_id": "neo4j#13148",
+  "source_query_id": "",
+  "holes": []
+}

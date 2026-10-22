@@ -1,0 +1,64 @@
+targets:
+  - name: repro_neo4j
+    enabled: true
+    engine: bolt
+    uri: bolt://127.0.0.1:17687
+    user: neo4j
+    password_env: NEO4J_PASSWORD
+    database: neo4j
+    fetch_limit: 100
+    query_timeout_sec: 10
+    reset_schema_before_case: true
+    pre_case_queries:
+      - MATCH (n) DETACH DELETE n
+
+  - name: repro_memgraph
+    enabled: true
+    engine: bolt
+    uri: bolt://127.0.0.1:17688
+    host: 127.0.0.1
+    port: 17688
+    database: memgraph
+    fetch_limit: 100
+    query_timeout_sec: 10
+    hard_timeout_sec: 25
+    pre_case_queries:
+      - MATCH (n) DETACH DELETE n
+
+  - name: repro_falkordb
+    enabled: true
+    engine: falkordb
+    host: 127.0.0.1
+    port: 16379
+    database: histdb_repro
+    graph_name: histdb_repro
+    fetch_limit: 100
+    query_timeout_sec: 10
+
+  - name: repro_arcadedb
+    enabled: true
+    engine: arcadedb
+    host: 127.0.0.1
+    port: 12480
+    user: root
+    password_env: ARCADEDB_PASSWORD
+    database: histdb_repro
+    fetch_limit: 100
+    query_timeout_sec: 10
+    pre_case_queries:
+      - MATCH (n) DETACH DELETE n
+
+  - name: repro_age
+    enabled: true
+    engine: age
+    host: 127.0.0.1
+    port: 15455
+    user: postgresUser
+    password_env: AGE_PASSWORD
+    database: postgresDB
+    graph_name: histdb_repro
+    fetch_limit: 100
+    query_timeout_sec: 10
+    pre_case_sql:
+      - SELECT ag_catalog.drop_graph('histdb_repro', true) FROM ag_catalog.ag_graph WHERE name = 'histdb_repro';
+      - SELECT create_graph('histdb_repro');

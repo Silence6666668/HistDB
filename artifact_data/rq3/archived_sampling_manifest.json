@@ -1,0 +1,2830 @@
+{
+  "created_utc": "2026-10-11T07:54:48.945164+00:00",
+  "design": "30 disjoint 1000-query samples per tool from frozen retained corpora",
+  "independent_long_runs": false,
+  "database_execution_attempted": false,
+  "analysis_unit": "query text; not a standalone executable test",
+  "runs": 30,
+  "sample_size": 1000,
+  "master_seed": 20261011,
+  "selection": "lexically sort complete unique pool, random.Random(tool_seed).shuffle, partition first runs*sample_size",
+  "seed_assignment": "master_seed + index in sorted tool names",
+  "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "schema_note": "Empty setup/cleanup arrays for absent fields are analysis placeholders, not reconstructed database states. GRASpDB setup_source preserves its real graph definitions.",
+  "scripts": [
+    {
+      "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\scripts\\build_baseline_30x1000.py",
+      "bytes": 11762,
+      "sha256": "361340917bf66f7edfd81bbbab4670827286b5f2758276dede1c03181aaa4550"
+    },
+    {
+      "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\scripts\\build_repeated_baseline_query_samples.py",
+      "bytes": 5659,
+      "sha256": "ce1760387771551841f4907d597c7ed85fcbf30f2cc10766b28e77c36e742db2"
+    },
+    {
+      "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\scripts\\extract_neo4j_tool_query_samples.py",
+      "bytes": 18317,
+      "sha256": "cc22b4e58eaea41afa7ef1c843213f247d072c12b0380b42e6a06a1c8328dde2"
+    },
+    {
+      "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\scripts\\analyze_repeated_query_diversity.py",
+      "bytes": 5108,
+      "sha256": "48d4380c432e2d853ca2fc72bc060f5033d06ee96a8f9437f4cf7cd6cc0b538e"
+    },
+    {
+      "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\scripts\\analyze_tool_query_sample_metrics.py",
+      "bytes": 6078,
+      "sha256": "a0d834cd7d88f964936ef011d94b7f66cd460db080971f60169907f1950056b3"
+    },
+    {
+      "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\src\\stage3e_diversity\\metrics.py",
+      "bytes": 9478,
+      "sha256": "b1d91d0bb8012046521011266693f66ff968c930fbd9f3a93e8bde7687be5397"
+    }
+  ],
+  "tools": {
+    "Dinkel": {
+      "available_unique_queries": 46518,
+      "sampled_queries": 30000,
+      "seed": 20261011,
+      "runs": 30,
+      "sample_size": 1000,
+      "sorted_unique_query_pool_sha256": "f635ef5d386a85b86dc6c005962ed4ecd8906d19d4da581b66d97b7867d78b98",
+      "selected_queries": {
+        "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\selected_queries.jsonl",
+        "bytes": 38288630,
+        "sha256": "fbecf5b21ab5cf90d746409cba1a977d660447fde0faf87dde7fc5d4d9ae9b88"
+      },
+      "groups": [
+        {
+          "run": 1,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_01.jsonl",
+          "bytes": 1256815,
+          "sha256": "f4b8789159db4e65e4b5a5123c6cc4d06cde9ae5e15826c8716d2179a2938e75"
+        },
+        {
+          "run": 2,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_02.jsonl",
+          "bytes": 1255191,
+          "sha256": "1706e98779626c498e765ee55683a1d5d87fc86fa51e3c2ec60a8c1304635e89"
+        },
+        {
+          "run": 3,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_03.jsonl",
+          "bytes": 1300219,
+          "sha256": "1640b79f3654411b0f44f731586e687fbba544498419ce5a67aaea04cf37d312"
+        },
+        {
+          "run": 4,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_04.jsonl",
+          "bytes": 1279647,
+          "sha256": "239eb89e3f77f1db2fbc3c2aa6d484c40eec8c11878715ccf3456ec9b32aa7ea"
+        },
+        {
+          "run": 5,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_05.jsonl",
+          "bytes": 1261689,
+          "sha256": "92fd9d16ca2d9d50f2fa0dcaa64f093b6a016592ad3962fd1c974482dd310a42"
+        },
+        {
+          "run": 6,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_06.jsonl",
+          "bytes": 1277275,
+          "sha256": "13ace71bffa4961be9c3244c421b37573ccdbcebe6d9bc2572a082aad4d21233"
+        },
+        {
+          "run": 7,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_07.jsonl",
+          "bytes": 1246923,
+          "sha256": "76634eeb867d65a351ad8c5f7b4be284b46b7d71d4a3a1419f8f5a2156ecffab"
+        },
+        {
+          "run": 8,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_08.jsonl",
+          "bytes": 1273167,
+          "sha256": "3c2e882c84693c555260fbdbf8569ce1150ee8f24760d9b0cd3db69ad213314c"
+        },
+        {
+          "run": 9,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_09.jsonl",
+          "bytes": 1240951,
+          "sha256": "4e178fb065f34c1588663ea69424a749c5f80113b72f3986737c0b47e87bb0d9"
+        },
+        {
+          "run": 10,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_10.jsonl",
+          "bytes": 1282413,
+          "sha256": "60c589cb41c6172aa7c94ee557954917b16434bf16cac510171ddd1f9a72faf7"
+        },
+        {
+          "run": 11,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_11.jsonl",
+          "bytes": 1303275,
+          "sha256": "929db2250cb7edc5c3d5dc5869b23d2c3bfc22dbf67e2c712c4fb42e91ecf8af"
+        },
+        {
+          "run": 12,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_12.jsonl",
+          "bytes": 1256481,
+          "sha256": "e1367f4c6861998e22da5e2e46f5f011766d938216ee34d26ad42d9b45938d7d"
+        },
+        {
+          "run": 13,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_13.jsonl",
+          "bytes": 1270865,
+          "sha256": "ceefe6770e4dcdcc9ae1771ea7b91be4e89a4494e2f37900e28b87e563d7888d"
+        },
+        {
+          "run": 14,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_14.jsonl",
+          "bytes": 1289509,
+          "sha256": "bb4fbef27fe9d1ba7e11d5f56a3639772f61f33787f3cafefcaf133726851519"
+        },
+        {
+          "run": 15,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_15.jsonl",
+          "bytes": 1258131,
+          "sha256": "f339932aa3de642bd68e988d329a901d6729c66a22c00baffb003b7bb85c95e1"
+        },
+        {
+          "run": 16,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_16.jsonl",
+          "bytes": 1311753,
+          "sha256": "f2f5c284ba3a4627ad947f0b7bbe2044ae056002badadaa5864dfe15a41d3c27"
+        },
+        {
+          "run": 17,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_17.jsonl",
+          "bytes": 1261829,
+          "sha256": "b0df490552177176d694979beb3a08361708604df806a2324e986801dcaaaabe"
+        },
+        {
+          "run": 18,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_18.jsonl",
+          "bytes": 1270329,
+          "sha256": "296f0d5336d97cf8893a2b41777bdc4feddcfec65f26af3fc69e870f914c32f5"
+        },
+        {
+          "run": 19,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_19.jsonl",
+          "bytes": 1270987,
+          "sha256": "3fb6908b04df2453575d27fa5db33a90d423874e5f26762d5996d69beb65553b"
+        },
+        {
+          "run": 20,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_20.jsonl",
+          "bytes": 1326685,
+          "sha256": "5f830972c954bb369e2dc01fb53438ba81a0fda9e0b2b7449f6eecd3d193089e"
+        },
+        {
+          "run": 21,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_21.jsonl",
+          "bytes": 1274429,
+          "sha256": "b59cbffb3c474a108734b673a17ab71c5641adfaa39eb603ea2a9a1683c1561d"
+        },
+        {
+          "run": 22,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_22.jsonl",
+          "bytes": 1256527,
+          "sha256": "d880ae5eee35cd248ff0b9537a5f4a1c9dfdf6bf25ad905be2361e43ca72d16e"
+        },
+        {
+          "run": 23,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_23.jsonl",
+          "bytes": 1277401,
+          "sha256": "8c5a3686efd3317887b19771576cd561c3ae17f129c14e20d2f1e5d7bf60e5ab"
+        },
+        {
+          "run": 24,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_24.jsonl",
+          "bytes": 1273779,
+          "sha256": "e35b945db7b8ef5b31a2abdc21a883695183345c0c7dda987d60029ce37e39e0"
+        },
+        {
+          "run": 25,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_25.jsonl",
+          "bytes": 1311709,
+          "sha256": "de44fe38d5c124a90c83bc6e2bff62a41343df97171de130c1604930562d8fdd"
+        },
+        {
+          "run": 26,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_26.jsonl",
+          "bytes": 1300979,
+          "sha256": "dce12dc3614fbefe0f90cbea7d838953758c2c24fc82afa0a5c3271e199511a6"
+        },
+        {
+          "run": 27,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_27.jsonl",
+          "bytes": 1243737,
+          "sha256": "aeff2d0e48683d2f78f1d2afd7f95b000aa8d10a5441af637ab0c61d491f445e"
+        },
+        {
+          "run": 28,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_28.jsonl",
+          "bytes": 1294039,
+          "sha256": "21b199718a8a2c0c695735fbe8e277c6433b49255f40c60cfbffca5d0fa29046"
+        },
+        {
+          "run": 29,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_29.jsonl",
+          "bytes": 1278947,
+          "sha256": "ddd8dbda37ed89501e8443f34b7e4611f79860322cb2c5064873f808a763ad30"
+        },
+        {
+          "run": 30,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Dinkel\\sample_30.jsonl",
+          "bytes": 1282949,
+          "sha256": "e91ee155f0b052399f5694766e56015651849092512ff21f08370dae688aa8e9"
+        }
+      ],
+      "extractor_metadata": {
+        "sources": [
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\paper\\baseline_query_samples\\raw_neo4j_dinkel_genonly_50000_20260814.jsonl",
+            "bytes": 24586436,
+            "sha256": "4d49d527c9b4b16684759bc918231599e03d779c4b1a36ec5662c63284130068"
+          }
+        ],
+        "rows_seen": 50000,
+        "normalization": "strip + exact query-text dedup; matches old read_jsonl_corpus",
+        "collection_mode": "generation_only_retained_queries"
+      }
+    },
+    "GDBMeter": {
+      "available_unique_queries": 944913,
+      "sampled_queries": 30000,
+      "seed": 20261012,
+      "runs": 30,
+      "sample_size": 1000,
+      "sorted_unique_query_pool_sha256": "f0a5069a49ed102183e62f54cd505d886e353b294b38889b311d037e91e41372",
+      "selected_queries": {
+        "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\selected_queries.jsonl",
+        "bytes": 25201954,
+        "sha256": "2ab0b76bfe2dc6d7d80f096fdad69e1074f89bb54f31b5f4728010807dcb7842"
+      },
+      "groups": [
+        {
+          "run": 1,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_01.jsonl",
+          "bytes": 839498,
+          "sha256": "55c6f95689f46284d12c1bbb054c7a2eb1dc4b536e9bd9984aad589c4a3c3223"
+        },
+        {
+          "run": 2,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_02.jsonl",
+          "bytes": 857889,
+          "sha256": "417fc1a6001c4a563c2d74fd3d013c808b507e865e6c78ad9b922ae948dc23d6"
+        },
+        {
+          "run": 3,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_03.jsonl",
+          "bytes": 859113,
+          "sha256": "05c7dc7d5d021ffd5ebb3ac77b0e6f8e2a7c5f1d904af4cd0c1fba4a32f15bf7"
+        },
+        {
+          "run": 4,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_04.jsonl",
+          "bytes": 849458,
+          "sha256": "ee749b7532fec6dbaa62fe46a05a33344d6bc746cb7b9cf9b49f65fa40ec2b5a"
+        },
+        {
+          "run": 5,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_05.jsonl",
+          "bytes": 833477,
+          "sha256": "8f29dafff821304add1249053e662ae8d91156f97c7377e476304380d08aa1eb"
+        },
+        {
+          "run": 6,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_06.jsonl",
+          "bytes": 856926,
+          "sha256": "485a54a60ab07fca1d7d75c2dbe07acfbc9404f8d34251829947c2acfc211817"
+        },
+        {
+          "run": 7,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_07.jsonl",
+          "bytes": 847612,
+          "sha256": "d10be589e44595bdba784b60ba5383cb1717372dcb016c43cc20a79fae8c037b"
+        },
+        {
+          "run": 8,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_08.jsonl",
+          "bytes": 818192,
+          "sha256": "f251e723aea7e858f1e6623cfa83d26ef87341fadc0c796e99625825dd1e57da"
+        },
+        {
+          "run": 9,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_09.jsonl",
+          "bytes": 817887,
+          "sha256": "ee9130ada86328508e22aec4ef23e3ac4479a43ff9bf15f5cb1b5302672bdcfb"
+        },
+        {
+          "run": 10,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_10.jsonl",
+          "bytes": 842658,
+          "sha256": "7f6a3a51a0c92bf3ad64192845fe187805ca93948a80e94ab225e689dbd4b177"
+        },
+        {
+          "run": 11,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_11.jsonl",
+          "bytes": 872574,
+          "sha256": "72e20aa1fe6e9a7ee1d8f82a9580d731b0c801507f94d48eec7d5268e7871364"
+        },
+        {
+          "run": 12,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_12.jsonl",
+          "bytes": 848768,
+          "sha256": "a48179f5d354a5ceb96b37f220a1581ab73a930acca62204bd940cdc102ae58e"
+        },
+        {
+          "run": 13,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_13.jsonl",
+          "bytes": 840577,
+          "sha256": "d98feb2bf66a6d16fa6c23784c1c4ba93cc8a686634ad4095452774269db04ae"
+        },
+        {
+          "run": 14,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_14.jsonl",
+          "bytes": 809467,
+          "sha256": "1a65a3a5b3c9de4b36fcacd291b297f69a048ad41a45aea3ca4188df0d7b9f57"
+        },
+        {
+          "run": 15,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_15.jsonl",
+          "bytes": 847370,
+          "sha256": "373e15d7ea487312f4b7ef7b7b508b773f4760e04b2e860a9b18a26534d5e1c9"
+        },
+        {
+          "run": 16,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_16.jsonl",
+          "bytes": 823748,
+          "sha256": "9d40c0dd7d3f976f635c93ea091ce78a1b337dfd0db51c9cef2eea89d3756f27"
+        },
+        {
+          "run": 17,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_17.jsonl",
+          "bytes": 870731,
+          "sha256": "2f4e8ae2eb483d28c61b80841f5d8b39a4c708c8256437c4efbfa8cb9c0d4cb6"
+        },
+        {
+          "run": 18,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_18.jsonl",
+          "bytes": 833772,
+          "sha256": "1ace82ea757fcf35e714e2e6eb86b81dc15c3cc09ff29d4796c23989422b740e"
+        },
+        {
+          "run": 19,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_19.jsonl",
+          "bytes": 826695,
+          "sha256": "f906f8d069eef2dd43ac81791232605d7750f02180e3b4dba6e9f464e040185e"
+        },
+        {
+          "run": 20,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_20.jsonl",
+          "bytes": 825540,
+          "sha256": "4cb7501020459b0578ea09bbb7e24fe63e1b3a2f3345de93f7c14b2c97198c10"
+        },
+        {
+          "run": 21,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_21.jsonl",
+          "bytes": 852023,
+          "sha256": "dfbf4128de7df0fa01825fe278491bb8f451098b67781cde3398e68a2ad70eba"
+        },
+        {
+          "run": 22,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_22.jsonl",
+          "bytes": 837351,
+          "sha256": "f80b9159c8f324543bd834e10ad44e23c407edbd03229b77b7a22e6a3c791c01"
+        },
+        {
+          "run": 23,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_23.jsonl",
+          "bytes": 815612,
+          "sha256": "e5a8a5003d80f903ff8208a23ad5bfd88e36bec52d4691e77d7e5e581e3d75c7"
+        },
+        {
+          "run": 24,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_24.jsonl",
+          "bytes": 852204,
+          "sha256": "c78c451b3f55d83cc0ed7c3bf73f9f8fa03b3b674bfe01cadbb1d76f3032119f"
+        },
+        {
+          "run": 25,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_25.jsonl",
+          "bytes": 818334,
+          "sha256": "6411aa97136fc4481c014cd7ef56f25b628d574355fbe03250c7bac331d39009"
+        },
+        {
+          "run": 26,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_26.jsonl",
+          "bytes": 845877,
+          "sha256": "565449ae454288968d4ae8e4d138c2e56b04cc79f2294aa4f71b89cdbb531f5d"
+        },
+        {
+          "run": 27,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_27.jsonl",
+          "bytes": 831971,
+          "sha256": "6a4d128d1e8f0c4105699255a58003bdd880ccc0a54983dffa94bff10f51380a"
+        },
+        {
+          "run": 28,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_28.jsonl",
+          "bytes": 860201,
+          "sha256": "f20b5d0d7c39d6b318f36329a6d7b5715b99ce6e4d2b86a64bb751d9c71f3158"
+        },
+        {
+          "run": 29,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_29.jsonl",
+          "bytes": 844183,
+          "sha256": "2242556a0b316ffa762b6aa321dd2a8f787f4517b51deaf28541939b6b1ae256"
+        },
+        {
+          "run": 30,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDBMeter\\sample_30.jsonl",
+          "bytes": 822246,
+          "sha256": "1a8efb9e419c9a34de98d5e20364b94e3b3d2ba9f621b2920d37f22e6d429672"
+        }
+      ],
+      "extractor_metadata": {
+        "sources": [
+          "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs",
+          "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs"
+        ],
+        "files_seen": 147,
+        "collection_mode": "query_strings_extracted_from_retained_logs",
+        "input_files": [
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\2026-05-30_gdbmeter_neo4j_partition_10min\\stdout.log",
+            "bytes": 5386074,
+            "sha256": "49ec3f4acd991696692b84eb8922e26a316e66415bc31ad0ac635de429407ad5"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\2026-05-30_gdbmeter_neo4j_partition_10min_restart\\attempt_001\\stdout.log",
+            "bytes": 2025561,
+            "sha256": "fb8a30c59e723ef78850bf4c40b9bd29dc1358e2bdebb566a4224f26c7c464bf"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\2026-05-30_gdbmeter_neo4j_partition_10min_restart_v2\\attempt_001\\stdout.log",
+            "bytes": 5423152,
+            "sha256": "069f56e60ef24fe8c1d045486f7df0585226eee5e6a03c9e95740096e704b6d3"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\2026-05-30_gdbmeter_neo4j_partition_10min_restart_v2\\attempt_002\\stdout.log",
+            "bytes": 4884684,
+            "sha256": "1caff8acb5c3377b986d59ff0ecbb2c7ab4c81dd2020a56f812c8a99f6dfaac4"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\2026-05-30_gdbmeter_neo4j_partition_10min_restart_v2\\attempt_003\\stdout.log",
+            "bytes": 259378,
+            "sha256": "c8623fe8603b15af16b2e27826de8d0db8da8496a2ab8e0bc29bc21518b9d936"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_48h_20260616_221246\\stdout.log",
+            "bytes": 4982167,
+            "sha256": "f551ffca80cddde2b6c13395201db8ab1cbbe2eaa52c92acd64a79ee3242c4b9"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_001\\stdout.log",
+            "bytes": 6760340,
+            "sha256": "f7396dc63ace42be31073f10764139042cd34007d097fe35d29ac30e27807afd"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_002\\stdout.log",
+            "bytes": 1477354,
+            "sha256": "7900dbdd47f7267b321536cd27c522a40710347614fb1c7109f1fb82bb52bd6c"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_003\\stdout.log",
+            "bytes": 2326678,
+            "sha256": "cae4fe18fc86e7a370b54fcb1027ef1c6b30e2a9368b027bc31186d6c3158d16"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_004\\stdout.log",
+            "bytes": 5633588,
+            "sha256": "b6e6e35836c8d022773b624b2093c1c07e992a7b06b0c77b83747e31519e8ce0"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_005\\stdout.log",
+            "bytes": 4525141,
+            "sha256": "256f9d3dd95800f1d904e2d584acfdb0208c6429fc53575b7fd330dbc8122cf3"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_006\\stdout.log",
+            "bytes": 5671242,
+            "sha256": "58388da223c9fdec86b68c245ae387afcbcbfa75223838c9f69b2f546510faf1"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_007\\stdout.log",
+            "bytes": 6228456,
+            "sha256": "97c8245aeb1e2ff812a9d36233bfad71565d50e4253cee90d3d7f3e4b206a054"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_008\\stdout.log",
+            "bytes": 4891660,
+            "sha256": "aa4e8c1a7d01750ebb77058051ce0e59f699ef12a8f7c63ab8bc998334631d90"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_009\\stdout.log",
+            "bytes": 3060510,
+            "sha256": "279a04c8e7ed321ff309985c3d14a94dfd67c4b51b30041340cfccd2db345e81"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_010\\stdout.log",
+            "bytes": 3218768,
+            "sha256": "3f6fea4b3e255e1ce4bc171cfa03a0f09306e4d5859a24ff17b5d27df1d649fe"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_011\\stdout.log",
+            "bytes": 3262323,
+            "sha256": "89fc60638ee2945fb2cfb061c8f1d6d26989be9ab5549050840f79e74e1bbf40"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_012\\stdout.log",
+            "bytes": 2980968,
+            "sha256": "cd4dd3d800d72cf0981079a095f585e65a1f9bd5496a27cf5d7883fe18aac10e"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_013\\stdout.log",
+            "bytes": 3009036,
+            "sha256": "5c2472c3119940c5aad967f0020bc57e6382799b259b6e62da6bd1229553b87b"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_014\\stdout.log",
+            "bytes": 1112261,
+            "sha256": "cd11b497fb7e8c81f0e6762ce5b073ed314680c4418867dfc915c046506a62dc"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_015\\stdout.log",
+            "bytes": 2825775,
+            "sha256": "c266bd9147ea1f8e33596420391afe64646fa05ad73e9d068af90f7b1981484f"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_016\\stdout.log",
+            "bytes": 3137113,
+            "sha256": "61c0cfbd78f7ac57c7c454622aaac6c0df4b764ff6901d6ad9c7e2a5d59f26ef"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_017\\stdout.log",
+            "bytes": 3244991,
+            "sha256": "3e168f94631b834b7756437e415a004c773437f8ffc8d00aaa1c841ca4b46f68"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_018\\stdout.log",
+            "bytes": 6960355,
+            "sha256": "13ee92ce498b8a2cb734d8432509a97f300ac2fed83f067c46b009c5b075c065"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_019\\stdout.log",
+            "bytes": 5782601,
+            "sha256": "29aec350913f1035c07702a2095bb69e8a7ea21094d96bbfc85f8e8e38b26d9e"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_020\\stdout.log",
+            "bytes": 4684351,
+            "sha256": "58054e0bccb1c565afb45a3301ad20dd699e6d0b3b965e55928b7bdce0748f86"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_021\\stdout.log",
+            "bytes": 5254419,
+            "sha256": "623b218f94e20c60e839dff76dbdad0b585ab22c5cd70c0a258ee93d89b971c9"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_022\\stdout.log",
+            "bytes": 5647768,
+            "sha256": "930faf4ae6be23da2921f70f8c2951d1d530281549a9cfc5bdd6f8d47ba58206"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_023\\stdout.log",
+            "bytes": 6268664,
+            "sha256": "cf01b9567854f726c1aa9a7a1333b15c2cbb7d30d9d64739652682c9575c3553"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_024\\stdout.log",
+            "bytes": 4617208,
+            "sha256": "cfd591b6292a71e307e12ee201f01a8d72da6dcd89a6e1abcc143b75cc34cf43"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_025\\stdout.log",
+            "bytes": 1573199,
+            "sha256": "ccfd6c2a93c4b5f580a118db77ada87a2c26022d14bb41f3c44ec5fc3f97ab43"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_026\\stdout.log",
+            "bytes": 5045863,
+            "sha256": "6e400a8f0405e26eacb103e84fff4794051660b1a08aadf58443b71fb7369c5c"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_027\\stdout.log",
+            "bytes": 7374774,
+            "sha256": "d0561d2563a5e4f3571cf20b71ab6a46555907d5afdacfc3364c22cf67d5c799"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_028\\stdout.log",
+            "bytes": 5192205,
+            "sha256": "06b66c50fdb47f3282e0d226cbfa932590f45993af721ee69398bdb98e46e2d8"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_029\\stdout.log",
+            "bytes": 5076856,
+            "sha256": "ea30732e6782b328992d580375c583afd3bdf736dcede2d7098be43fe750f960"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_030\\stdout.log",
+            "bytes": 7074122,
+            "sha256": "c07c12a5c7dd0f577caa9be53008f5c574cefaad9f9b7df2095f5147bd933514"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_031\\stdout.log",
+            "bytes": 5185203,
+            "sha256": "dc1089488c5d8cf2cb6e22dfa95fd1648a054b69cf9cfc31481e7b97f1ab06cd"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_032\\stdout.log",
+            "bytes": 4824539,
+            "sha256": "0b6a73aa89e72e9a8763cc03849010cd350e1312d2c6d99199d15856b99ab67b"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_033\\stdout.log",
+            "bytes": 5166573,
+            "sha256": "0d614107a993dda57e19bdafdbbaac6668fe28f690914174345b6a973287948d"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_034\\stdout.log",
+            "bytes": 4533892,
+            "sha256": "21c605817bd32e0207417e44c8e6de9664d4d5a8c49a730390a0728c1bbdff3f"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_035\\stdout.log",
+            "bytes": 3557006,
+            "sha256": "a51585b4a94b9d0ca114b2b5f6c4438b33467347b5d47cebc103edc54e9dbfc4"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_036\\stdout.log",
+            "bytes": 6341935,
+            "sha256": "59b722ef3cbc516a3ea5d3789e23ff92c2646d9ca35812e3ac0b0c24ebe8bc9c"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_037\\stdout.log",
+            "bytes": 94619,
+            "sha256": "a8c69578c177a559d036cd5ee562560124a5027e441fcd3937afa36827ca0976"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_038\\stdout.log",
+            "bytes": 320,
+            "sha256": "b0bf5039a25dfcf2f7c7879b52e259324adb438b8b6a1d25db2b280827c12254"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_039\\stdout.log",
+            "bytes": 6815935,
+            "sha256": "cc665e0fb9bedabe8a5fea46e0422f2266018ada043857846c975c2112e75e7f"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_040\\stdout.log",
+            "bytes": 5985799,
+            "sha256": "229d5d7741ecdc1ca48c8f8fda1b266753dca4e6030147646eb0c44e3f8f1b3a"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_041\\stdout.log",
+            "bytes": 6699450,
+            "sha256": "5980ce856c6c48ff5882a67ca7d7246578c777dc01996c366b72e7a12f779dd8"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_042\\stdout.log",
+            "bytes": 6381033,
+            "sha256": "dad871f0b63407558a20dd27c08194bc3271de3fc296860a09591c041b07b245"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_043\\stdout.log",
+            "bytes": 4961132,
+            "sha256": "998c0c2c8e1e6fd9720bca15cf43850f80851b080be0abac42178fd7497b65ca"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_044\\stdout.log",
+            "bytes": 4783852,
+            "sha256": "82ff9f8a71ba3e1cf9621135e0f0d2c7891b37dc3e74877ef5215a8a4ba254fb"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_045\\stdout.log",
+            "bytes": 1985190,
+            "sha256": "701af59ae40dd0d675cc541e3665ba16cbfe9f3c079964a885c71fc02ab0492f"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_046\\stdout.log",
+            "bytes": 5904168,
+            "sha256": "ca96b5be572938c71b7e72b1159d0801e20f760e6932dbea63482b0fecbddaa5"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_047\\stdout.log",
+            "bytes": 7274970,
+            "sha256": "c35a0533dbfb7ad7d1483001a94fdfbe458d211c1006ccf215e1e27e0cdbe1ca"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_048\\stdout.log",
+            "bytes": 5699618,
+            "sha256": "ceb76591d3e1559eb10a090bd675e21ca81d73501f6936ff9cab5cd04962924d"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_049\\stdout.log",
+            "bytes": 4473235,
+            "sha256": "e616e380be48368d807737ebc8dbba580e8d1f5de6b0c9a1c3b0c99ed52f888c"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_050\\stdout.log",
+            "bytes": 5965600,
+            "sha256": "51081a708c51916e3cb6a3749ba695db2e4b9b051ce55e9416595d86dcb61d2d"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_051\\stdout.log",
+            "bytes": 2555920,
+            "sha256": "1341c7a853a9d8f66dce1a166fb403199823c0c38abc9b0b46888252d93618f8"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_052\\stdout.log",
+            "bytes": 1621383,
+            "sha256": "f4e346ae9bf3ca22588048e9581e7a4530ca8d0ce7f26e1b95f9c4a1c170a807"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_053\\stdout.log",
+            "bytes": 1039289,
+            "sha256": "977a1047b5f68e2ff014fb8979653342704e5c48dcfb6e170d3bc492d706af31"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_054\\stdout.log",
+            "bytes": 1022214,
+            "sha256": "3718e5004d0248970f944e03b7449392b1cbec1a608f14cb2cd66d20c88ec1e8"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_055\\stdout.log",
+            "bytes": 1582087,
+            "sha256": "813977bcd704eda7b6d147823b0a51cf3859d24f8fb6356768d7caf99b901ac8"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_056\\stdout.log",
+            "bytes": 610864,
+            "sha256": "743a9c925c251e76d1ffb7000bead88425c451ebeb83904c36b4fb1eec42ae20"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_neo4j_partition_restart_48h_20260616_223209_attempt_057\\stdout.log",
+            "bytes": 82323,
+            "sha256": "47035e6219d38262c2a10b668e38c9db4c1f21ec4749fee4507d3f1630c1744f"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_smoke20_20260616_v2\\stdout.log",
+            "bytes": 271911,
+            "sha256": "ba83b6f90cb3c808718bae1c8a1a2fe8bdc4be266c8f40e6c85f36398d97ef70"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_smoke20_20260616_v3\\stdout.log",
+            "bytes": 261266,
+            "sha256": "f356f387744622c26a15c0d6a1ea06d1e517b7d5a610b7e327bfb399591c21c8"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_smoke20_20260616_v4\\stdout.log",
+            "bytes": 263540,
+            "sha256": "e1a0fd6476c4c83e4720ab5222bf15074db44ea8887e4d43d06e117e6ed49cec"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\cov_gdbmeter_embedded_smoke20_20260616_v5\\stdout.log",
+            "bytes": 265067,
+            "sha256": "92ee8b8a6e277d922420cf0c3ba27b1a774ad192316489a0bfe16e2b71d272c7"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\wrapper_syntax_smoke_5s\\attempt_001\\stdout.log",
+            "bytes": 423,
+            "sha256": "9daba3a4fbfa31a9169bb8c68a357e462c7ad59591a0d8199de0c8255448a1b1"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\wrapper_syntax_smoke_5s_metrics\\attempt_001\\stdout.log",
+            "bytes": 423,
+            "sha256": "9daba3a4fbfa31a9169bb8c68a357e462c7ad59591a0d8199de0c8255448a1b1"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\baseline_runs\\wrapper_syntax_smoke_5s_rerun\\attempt_001\\stdout.log",
+            "bytes": 423,
+            "sha256": "9daba3a4fbfa31a9169bb8c68a357e462c7ad59591a0d8199de0c8255448a1b1"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260530T134351.log",
+            "bytes": 882871,
+            "sha256": "796eca07bac84adc6fb090478602413daf0fe695eee079487064e765dd9eb848"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260530T135030.log",
+            "bytes": 4130947,
+            "sha256": "62abff38229371a402961fceba2df40c8d48a4ac63d415f28d6b3da397c5384c"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260530T145208.log",
+            "bytes": 1554602,
+            "sha256": "e5d784ce5fce8a06b35ae8eb36d473bdea64c1aee2ce99a75bcdddac4437fd3e"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260530T145447.log",
+            "bytes": 4179817,
+            "sha256": "27ff812dcb6d2f892b657a7dfe2b42f4d5bd5bb90f758bc9e4fa6676b1652a37"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260530T145942.log",
+            "bytes": 3745101,
+            "sha256": "87f4a4f5f091640c232d169fab2bce3e6781313a16d1e707b766fa6b6d5615a4"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260530T150423.log",
+            "bytes": 197751,
+            "sha256": "0fb74fb4da10703e17a41c9b95b6cd061e62e2a1ac35f34434fdb05fa3a9282c"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260616T212906.log",
+            "bytes": 210460,
+            "sha256": "ddb7509e8cc4e748dda325f887985c826d4dade38356abecd2681209070a8b94"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260616T213049.log",
+            "bytes": 200695,
+            "sha256": "ac841e15f4253577e67e65a88b60e65f2ff71562268844f71578cd014f85d069"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260616T213212.log",
+            "bytes": 202441,
+            "sha256": "532732af46a8c329fa130f50932b96462cc4ea0c9cc3194a8bea966c9e0975fd"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260616T213341.log",
+            "bytes": 204144,
+            "sha256": "a08231faad8f3bf7cd7cc7e41a78324320615e97a10f274ac5ff971a42e63170"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260616T221248.log",
+            "bytes": 3825548,
+            "sha256": "cf9ac729211dcb97951e0b634cf343fdb14c34022e4ff5965a99e458c1275da8"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260616T223212.log",
+            "bytes": 5191405,
+            "sha256": "51d6ab1dc20bd2f22ffd439c0fcdbcbc515e7db0355c0b835727c9918133c28c"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260616T224612.log",
+            "bytes": 1133379,
+            "sha256": "03974ec49349743daffffaa0e7fb39263cf0c3cc32d31704b24b70b62e3bb9a4"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260616T225235.log",
+            "bytes": 1777919,
+            "sha256": "cadebf3f3985890e92c12ea11d18f2b74c38095ad21fd035b441a605044864c7"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260616T230148.log",
+            "bytes": 4316981,
+            "sha256": "d6029e8c6550a12194508e84d1c170bdb00be7150c43299a9f77af99f2bf9e8b"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260616T231623.log",
+            "bytes": 3463922,
+            "sha256": "7472699cf62dac37f26219e1c3ca25bae78b8e8f969f5ab01d306727f264e7ff"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260616T232907.log",
+            "bytes": 4357639,
+            "sha256": "3391a899875e3f7478ce605462e1452ed091a2492d9c219346fb750e034192e9"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260616T234249.log",
+            "bytes": 4779809,
+            "sha256": "d2393911517497d080ed59ede0492b39a573843d082597a3af05046ab06cb803"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260616T235652.log",
+            "bytes": 3756389,
+            "sha256": "ca56180a047a0b593c2e5627bd185bdae4c2781ef5074d7afc7f7b0beb286316"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T012104.log",
+            "bytes": 2350631,
+            "sha256": "0eab88128b43a0eb69f0d3d98d4c162343ec88bf9e8e55d130abaa2e52ea51f6"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T024419.log",
+            "bytes": 2484821,
+            "sha256": "b4e29d909fd0b9a112e3b8347c6d32ff2b4925f534f1ac203d6f0fdd71ff4834"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T040932.log",
+            "bytes": 2491768,
+            "sha256": "960c989ab629f159bb436ddaa8da3654a79e8b967c4d32e610a46805eb0d62d2"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T053322.log",
+            "bytes": 2291329,
+            "sha256": "461e4f140c4c781656ac5ef85213a2f97c83e9d234682e5de834b489a29e4772"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T065514.log",
+            "bytes": 2315129,
+            "sha256": "8774cde4ae4ad2a5ee004759ee1177802316db148c506dcd52148bb4a7df5e4d"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T081945.log",
+            "bytes": 847618,
+            "sha256": "7fc0dce759e34e06a05be5d24c5949a71aae54a1acd7bfc3107f3f41ede0a33d"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T090430.log",
+            "bytes": 2174284,
+            "sha256": "17f1231fae348389a7a0e63cf737c19813230ae3bd045d68ec52bbbfa8c9bfe7"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T102719.log",
+            "bytes": 2406590,
+            "sha256": "5c2a5826e4886db65bcd03cd6fac195a599c9ef461fbbb5c17052b1d93374d78"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T115258.log",
+            "bytes": 2474516,
+            "sha256": "7eb045c4ad8f778fb09416f8c93c7698b6155c81629fa36edf65eda21bd90392"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T130356.log",
+            "bytes": 5359168,
+            "sha256": "ebe35380f0336231a9a2f47c2c725b297eb80c990b539c9696aacda69b78375e"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T132249.log",
+            "bytes": 4406070,
+            "sha256": "ec805bdc591818ccb7124d1945412735f3b13587a3b1a169d5e2866c5630b70c"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T134257.log",
+            "bytes": 3590968,
+            "sha256": "2eefb32332ab4fb8183cda8ea7a6c970c253e66943fd65bfba92356f2b6e8eea"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T141503.log",
+            "bytes": 4038012,
+            "sha256": "da5f5a41865e755c2538d029dc65d2f65719c8a6dcaed421c59b0c35c67c06ef"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T143001.log",
+            "bytes": 4324001,
+            "sha256": "6cb2df66c293059c5d1c887e6c955429f172453806ac3ef65bb8805de1d0a8ba"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T144510.log",
+            "bytes": 4824293,
+            "sha256": "168eeb8e13ea5ceed3aed202ea846663e79712017e38aea0769115196c00c5e9"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T150134.log",
+            "bytes": 3551141,
+            "sha256": "39bbf2e9dd69db5e2552dd1035861d5c16d04c1770082a286eab89e89f067677"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T152215.log",
+            "bytes": 1209556,
+            "sha256": "f189a7f8227d57dc21f4229a723c6bfdf08fbe4c0ee029bf5f89ccc41669d31d"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T153110.log",
+            "bytes": 3886348,
+            "sha256": "9ab50157b26b3bbcc11b44e40581a04a088471e8f0061659fb035383a9b3d522"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T154635.log",
+            "bytes": 5675115,
+            "sha256": "45f6a8d762dd0b4ba481be604b0962c78af8d8fae9aa9b1b33c4157b18381805"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T160235.log",
+            "bytes": 3994268,
+            "sha256": "2c2477b3a90aca203aed83ce4e97bb815ee38300752eada90270a7629945c01a"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T161514.log",
+            "bytes": 3906197,
+            "sha256": "dcbdf06941678089e0d252bd0505d70bba649726abda0b590b20947a418687f9"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T162740.log",
+            "bytes": 5406715,
+            "sha256": "89e796a5a6d95b712cb951873f6699d0c7c6c90c4897590491cf366ca46d11d8"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T164616.log",
+            "bytes": 3978696,
+            "sha256": "ce1191ad199145eb407ff26286c515a7b9fb80cfda91dd1ff444adf40d1eeebf"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T165858.log",
+            "bytes": 3686969,
+            "sha256": "46e6c9b0485cf2a88fa86a6b59cb6178d1d2a9c4612c4d48be414e3cf2208958"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T171100.log",
+            "bytes": 3964810,
+            "sha256": "46b298953821db52517cfa41673a20ed315d912fdc094eaf2b46b6a007d566e6"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T172403.log",
+            "bytes": 3501361,
+            "sha256": "8b6aa2390c63e856ec64a1da546c8bc4bc2eaa6771958331893fc54f40d21b6b"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T173622.log",
+            "bytes": 2724223,
+            "sha256": "e4a5c840bacfbd5e43d309a45a08d782c13136ab65609d87b8c9e1917977270f"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T174920.log",
+            "bytes": 4851980,
+            "sha256": "33208d86ba01f9128eaa1cdcbdfef2b77e5e8a8a33eb450dafbcd07ed1f6bcbd"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T182456.log",
+            "bytes": 73340,
+            "sha256": "e2ce7a18b9fd0f5c69254f852e064eff2b55d30959021a9f4b05de8178208d8b"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T183503.log",
+            "bytes": 5230896,
+            "sha256": "7c6f285f3f63a824469e82f4a541ff12d8b4c0c9a6fd73460d3198f8a2c5d7e3"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T184939.log",
+            "bytes": 4581900,
+            "sha256": "dcf779cbc8ff2fefe47ef7094c5d608f9b54a8ca56e65b02657d919455117d5a"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T190325.log",
+            "bytes": 5147279,
+            "sha256": "7ae5d7e2d9593bdd2f8005ba1ea35240f9d2caee382830f79a58400dd8c2a950"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T191704.log",
+            "bytes": 4897106,
+            "sha256": "45aa23f5eb4d88785e4d4a61e1d00ddbfb0f45ffac074bd27e144eccf544c129"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T193008.log",
+            "bytes": 3805709,
+            "sha256": "36eb51bb58b5b03d6afa85dffe89e2ea51648c890f98b25a159a02403cfcdd2f"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T194202.log",
+            "bytes": 3667721,
+            "sha256": "ceb9caa035651398eba261fc1ef4b705972f50cfda65cf310a4ef72572900a8f"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T195916.log",
+            "bytes": 1536759,
+            "sha256": "f46df6814f4eea54e7fbc9e2b194f4449384fcc9f746943d7a856d8fb96aed59"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T201405.log",
+            "bytes": 4523069,
+            "sha256": "a6aa38eb2452fbd15b2a47b05fb7af29bf6e617708d18eeb82e5216b30b50946"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T210540.log",
+            "bytes": 5584059,
+            "sha256": "6724d50ecdcf040ee550102882dc46720cf44501cda303636cadf648aa64f492"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T221610.log",
+            "bytes": 4384695,
+            "sha256": "02efaa31b15d969712f9a6bde48ca243ef95708d3e237c2802f21a747365f038"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T225852.log",
+            "bytes": 3455840,
+            "sha256": "6a64d4c5a99434f15bed66067023956cff5c30db5ae2bf03360558bd6099f88b"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260617T235318.log",
+            "bytes": 4581325,
+            "sha256": "383e7bbd061519acd5e817ec6f127fc678dd61c9d6f2b4c240396654f0fa106d"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T005827.log",
+            "bytes": 1968705,
+            "sha256": "ac1dea3ed7c409d2fd17679dad480675bf27d1ddf0d984ef02f87e0326f063a4"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T030024.log",
+            "bytes": 1235960,
+            "sha256": "0accc75b7441762f3559c2e8279589acac2ab3ba0f6523483602f39a1a9b122c"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T050618.log",
+            "bytes": 797086,
+            "sha256": "ac171f290566e1f2a3a9543f156b48adfb3ea3d88e04f6b8da43bfaa621b9ff0"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T072608.log",
+            "bytes": 777723,
+            "sha256": "c1ea53cf3ea555d32e299ac17fec109f6f9f82503b6a00ed6d24ea2ca365e768"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T092013.log",
+            "bytes": 1215488,
+            "sha256": "79e09df53755ee9f58b5d892b0fa45696c87d041daa7dd28106e39e7b6a29743"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T110112.log",
+            "bytes": 468365,
+            "sha256": "f950b5f5e3e0236d3ce7e31e69a5a73fadcc006d85f1e5afcc77b5a0c26611bd"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T121924.log",
+            "bytes": 61660,
+            "sha256": "a11abdfe7a1441d6ed44a0bfac00012873a3ed7638e647191862dcc185c78334"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T155905.log",
+            "bytes": 4646,
+            "sha256": "fcb3f1308da81cd06ff8d766b00b68e9066190d5f5235a1e07b77d167d27baf0"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T155907.log",
+            "bytes": 2554,
+            "sha256": "8ee7d3ae7643aef3b4aedf6fa2e1159d9133f486d6b14e40ccb05b254d66a54b"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T155910.log",
+            "bytes": 3939,
+            "sha256": "0b482830645baa3739f4c363a2f7d9516665df70bb53ade71c52f563206e1186"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T155912.log",
+            "bytes": 32943,
+            "sha256": "bad3cc9ce78d128e6f8062a6f937cec09a3ac9d10cacd4670a835b5c7023a12c"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T155915.log",
+            "bytes": 6389,
+            "sha256": "293257257aa2a36768a56da4bcf8ec6828e5606a4ba8bbc2174b1863b6904d88"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T161321.log",
+            "bytes": 6107,
+            "sha256": "77a9a7877554bc8721b1d9605242f4a70439b752eb8745ac967ec0e64470458e"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T161325.log",
+            "bytes": 3717,
+            "sha256": "ba2c959199db839d8550915e3a1b30a0ca41d1f2f9627a28ba729698125af5aa"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T161329.log",
+            "bytes": 4702,
+            "sha256": "157096da6a5d71dd2aa597814666fa095d85311244e0203f501fb1667bffe7ad"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T162631.log",
+            "bytes": 2296,
+            "sha256": "53d283c16c93f86424ccb0d94426fcc72774aa495f1e18e77a4f0f087a609080"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\gdbmeter\\logs\\20260618T162637.log",
+            "bytes": 2342,
+            "sha256": "2c6dc9ea5c46cd3e25e0deca382039a301180d8b046ea1bc6c53aaeb35f78835"
+          }
+        ],
+        "normalization": "existing extract_from_text_file + normalize_query + looks_like_query; exact dedup",
+        "extraction_limit": null,
+        "statement_role_filter": "none; follows existing extractor (may include setup statements)"
+      }
+    },
+    "GDsmith": {
+      "available_unique_queries": 53454,
+      "sampled_queries": 30000,
+      "seed": 20261013,
+      "runs": 30,
+      "sample_size": 1000,
+      "sorted_unique_query_pool_sha256": "5f9e5a572bad0ce76799e090a383ef4148782d50697a06f9357f50b1e3c04b75",
+      "selected_queries": {
+        "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\selected_queries.jsonl",
+        "bytes": 26710249,
+        "sha256": "26a8e403b222fe6daa9773507526c058988a5775fa77102f617a0714e844dcfc"
+      },
+      "groups": [
+        {
+          "run": 1,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_01.jsonl",
+          "bytes": 893383,
+          "sha256": "9eef2f2218ffd79657716e327e59c6203d23d2d83fe77dbced7553c6841d22a8"
+        },
+        {
+          "run": 2,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_02.jsonl",
+          "bytes": 893037,
+          "sha256": "9f0fafb52e42da84080005627d2fc623ad950528a7e6940887fb4b33270db75f"
+        },
+        {
+          "run": 3,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_03.jsonl",
+          "bytes": 892265,
+          "sha256": "9e0b6f151eb4c8070a33f9cd4b39cde987bdc08461d2446fbbc84cc23684dd09"
+        },
+        {
+          "run": 4,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_04.jsonl",
+          "bytes": 891937,
+          "sha256": "1df53b97d8a911674cc9fb6e3baf00c0d0123665215fc344f31c2a644e3e0997"
+        },
+        {
+          "run": 5,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_05.jsonl",
+          "bytes": 876625,
+          "sha256": "08d16712af1e0fe8ac1edcb1df311540158ea0b5941da44cd67678b4f2d72375"
+        },
+        {
+          "run": 6,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_06.jsonl",
+          "bytes": 887778,
+          "sha256": "4b13867e0689d057bed741bb5353142767c2ecc204fc137aa84ddf74625067d6"
+        },
+        {
+          "run": 7,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_07.jsonl",
+          "bytes": 890357,
+          "sha256": "8b6e1bb792124e84df64be5526f4a59f63786f26a65dd15d87dfcb07f27c3e6e"
+        },
+        {
+          "run": 8,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_08.jsonl",
+          "bytes": 887525,
+          "sha256": "9a82ebc3422967be993907848a77eca40b0ec6f0ccefc2eae8d1bcc9ad20efa3"
+        },
+        {
+          "run": 9,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_09.jsonl",
+          "bytes": 887351,
+          "sha256": "087fc9660c4343dce1082ad14d907d30ce8a75d3da8c6d44fae3497e588d1897"
+        },
+        {
+          "run": 10,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_10.jsonl",
+          "bytes": 893741,
+          "sha256": "2f67cbe61fdc6a8aef18ffa5e343c3bc805e01184fd935234be76c8e72f4a357"
+        },
+        {
+          "run": 11,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_11.jsonl",
+          "bytes": 888497,
+          "sha256": "4d36192884318c76a56ab958581c616d678305153271bbe54d0d163edfce68f8"
+        },
+        {
+          "run": 12,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_12.jsonl",
+          "bytes": 888778,
+          "sha256": "ad4af7123acc4a144cde7c2f33d6c5409c914426959a0494e1d1651f0adaf93f"
+        },
+        {
+          "run": 13,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_13.jsonl",
+          "bytes": 879331,
+          "sha256": "b5cc1dc2a199741378c515dbab04a3c0453aae0db85dd7453c24af826aaca2c5"
+        },
+        {
+          "run": 14,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_14.jsonl",
+          "bytes": 898072,
+          "sha256": "497af6c462a4f31456fc04c69ae6aa6e3afc2b9c299288112b3710e19f05c1cb"
+        },
+        {
+          "run": 15,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_15.jsonl",
+          "bytes": 888117,
+          "sha256": "d836ff7635c59d51652524ccd9f0266880f187b94fb645e98b958f53b5d71b87"
+        },
+        {
+          "run": 16,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_16.jsonl",
+          "bytes": 898828,
+          "sha256": "f8ef1c3a933e2161bee800c8e8e1dd9ac43d5ae52a8c4d2650046c6d0211bd05"
+        },
+        {
+          "run": 17,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_17.jsonl",
+          "bytes": 897246,
+          "sha256": "06643096182d4ac72e4c709574b2264d62830e556306bf8a70031e39a931d096"
+        },
+        {
+          "run": 18,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_18.jsonl",
+          "bytes": 896609,
+          "sha256": "08863a32f7e4844a2587b671afe3f49b84f3e43544390d91db665d922d0e2476"
+        },
+        {
+          "run": 19,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_19.jsonl",
+          "bytes": 884479,
+          "sha256": "b3f562a5f8b847837b5caba3fa430c9f275709fe5c87d0f660efd88cdeb78175"
+        },
+        {
+          "run": 20,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_20.jsonl",
+          "bytes": 883527,
+          "sha256": "18c00bd4a72440bba35470720e2ba53cff74a1e80ec93df78b80e280fca7616f"
+        },
+        {
+          "run": 21,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_21.jsonl",
+          "bytes": 892966,
+          "sha256": "859e19484d490bf5683e961d108b0fdb1dfa4664dbb50cd03614860231335274"
+        },
+        {
+          "run": 22,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_22.jsonl",
+          "bytes": 890816,
+          "sha256": "3a7b8b29c34e3a2287313e4797633ebe7c9ac924aeee90c4854c68ae7d337150"
+        },
+        {
+          "run": 23,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_23.jsonl",
+          "bytes": 883496,
+          "sha256": "6c113059cfba30cccf0b0f1dcd342c5813160e6be7f5d55e201ed615e7af3bc6"
+        },
+        {
+          "run": 24,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_24.jsonl",
+          "bytes": 868093,
+          "sha256": "09ac6065fb7c730ab32547e196eba00b22d1d1bbd16a659debe58a26ff9b5ae3"
+        },
+        {
+          "run": 25,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_25.jsonl",
+          "bytes": 920042,
+          "sha256": "62a3b6b67d04aebcfa141472dc29dd0670459be6f170854fdd63e8c874eaff1d"
+        },
+        {
+          "run": 26,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_26.jsonl",
+          "bytes": 883481,
+          "sha256": "2dac178578fb02f478467ed0a0419341278d926851960a9c4ae89568d4759462"
+        },
+        {
+          "run": 27,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_27.jsonl",
+          "bytes": 895274,
+          "sha256": "9baf5fa18ea840a505c43fe92f4c99901bdf5db993827afcca30b0eba52da9b4"
+        },
+        {
+          "run": 28,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_28.jsonl",
+          "bytes": 895771,
+          "sha256": "d004dc167231758ee54f2ec38de10215308d55dac6ac58cddb77d0d2b6121ec1"
+        },
+        {
+          "run": 29,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_29.jsonl",
+          "bytes": 895230,
+          "sha256": "ea99ba63036a6f22f9820bb965e5be23b4cac91bfc183f16e485e9c2b5b6ec0d"
+        },
+        {
+          "run": 30,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GDsmith\\sample_30.jsonl",
+          "bytes": 887597,
+          "sha256": "f1b6744a789b25d375fbe9f35e54cc1b41e6a247c1c19151856a2094c5380ce6"
+        }
+      ],
+      "extractor_metadata": {
+        "source": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs",
+        "files_seen": 74,
+        "collection_mode": "query_strings_extracted_from_retained_logs",
+        "input_files": [
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\2026-05-30_gdsmith_neo4j_2026_04_random_crash_10min_restart\\attempt_001\\stdout.log",
+            "bytes": 55098,
+            "sha256": "8e8441e2a3288d4d7d3889411f300dd9a7a9b9251657ca3fd10d532f186bafc0"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\cov_gdsmith_neo4j_2026_04_10min_20260531\\attempt_001\\stderr.log",
+            "bytes": 262790,
+            "sha256": "73d737d9367c6cbd54161d71b702d343fcde8af04404ed855aa438555784511d"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\cov_gdsmith_neo4j_2026_04_10min_20260531\\attempt_001\\stdout.log",
+            "bytes": 40575,
+            "sha256": "93902da0371a6715875015758cfac0688ce7f02f947bf2a65d4a0d19f50bf71f"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\cov_gdsmith_restart_smoke_20260617_attempt_001\\stderr.log",
+            "bytes": 394994,
+            "sha256": "dc65127478fd656688b4b239e93a8cf4b41a9944c30d2d2a9efd94ad9fee048b"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\cov_gdsmith_restart_smoke_20260617_attempt_001\\stdout.log",
+            "bytes": 33393,
+            "sha256": "815158068d0c2e1891cf92d7c78ce0d3d52009798d6300f0456e0b2fec6c6bd6"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\cov_gdsmith_source_neo4j_2026_04_random_crash_48h_20260616_221246\\stdout.log",
+            "bytes": 2293735,
+            "sha256": "de6fd2c2af757a2ab2e2336a152c7e67f086a2e2c5cbf70a69724730cdb647a7"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\cov_gdsmith_source_neo4j_2026_04_random_crash_restart_tx60_snap300_48h_20260617_131952_attempt_001\\stdout.log",
+            "bytes": 3170520,
+            "sha256": "90626efc17bf3a73bbf9ded01c438a5555e0661829647d12675c2933f6101a8d"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\cov_gdsmith_source_neo4j_2026_04_random_crash_tx60_48h_20260616_222338\\stdout.log",
+            "bytes": 1944042,
+            "sha256": "23a40d9991e2e4bf9681fdc7e89be7293f848428d27cf95ed7f33b113fa66b41"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\cov_gdsmith_source_neo4j_2026_04_random_crash_tx60_snap300_48h_20260616_224100\\stdout.log",
+            "bytes": 53323,
+            "sha256": "97ab8f54b62afc056b4bdcb8dbc4159a6f7fbc1e05393d10f0aff890ad2dd5bc"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\cov_gdsmith_source_smoke30_20260616_v3\\stdout.log",
+            "bytes": 50139,
+            "sha256": "278c1a6633778ffc6700f8c8668f3b8238fef69600092c38f201db3799cd9b25"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a001\\stdout.log",
+            "bytes": 84473,
+            "sha256": "da1b0b299451948a63fbccdea4442c245849ed04b25002e5b14fb4258220d69f"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a002\\stdout.log",
+            "bytes": 54287,
+            "sha256": "5d221bc9b65907c10101697106d70d0c4f466d2b8e51f0426ed1ae362c6b8978"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a003\\stderr.log",
+            "bytes": 1545932,
+            "sha256": "1645b08d32f29a326c7985c9fb9603911f4f5fdd0b10a3bedabd9ae21bbf7d62"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a003\\stdout.log",
+            "bytes": 50864,
+            "sha256": "4b68e9d759fa730df7c7b5bae3e0d5d75746aae6ad9722289fe4f03b68b8b65e"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a004\\stdout.log",
+            "bytes": 86555,
+            "sha256": "0b8c1f16e98a32e30296306e9c1a46a2a5b35cfd67b72359a5c76af69b9b8d7c"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a005\\stdout.log",
+            "bytes": 145835,
+            "sha256": "54fdee2dfc5bc09cc6a91c84d4de15a40292532fa0fce83747ff59711b2018f1"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a006\\stdout.log",
+            "bytes": 228217,
+            "sha256": "c0085f90b2eb73c3126a3ed1ffbbc76eb9ab0cccbc28ee86c16469b5ab48fc5f"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a007\\stdout.log",
+            "bytes": 54326,
+            "sha256": "b0df8b3090889d76aa2b8262948b9bbec2ace1fd95225a104f175921b87f8c51"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a008\\stdout.log",
+            "bytes": 72259,
+            "sha256": "a8a4046853d15539076be3a816a9d37ed7f59e277271ceb1a421feaf4ca8f4ac"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a009\\stderr.log",
+            "bytes": 666598,
+            "sha256": "2a88e6c350e1b46819290cd78d8abc162d51e2036eb5151925e584c5d933aa87"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a009\\stdout.log",
+            "bytes": 37386,
+            "sha256": "185177a60d52dbb0132f8083b4740500445210d4470c294c6d16a503622a2a7e"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a010\\stderr.log",
+            "bytes": 352503,
+            "sha256": "f5675e3fc18176f684369f78857b86c63c76922b9ced6b0cf305355510cd40a4"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a010\\stdout.log",
+            "bytes": 33371,
+            "sha256": "3f78f830cef4bb27cb617f8054f4fc8d3cd2fd4608e8a2a8e02ffc93370c373b"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a011\\stdout.log",
+            "bytes": 68154,
+            "sha256": "5029038d6beeed82ce8b268a9f31d06120e6b1a57cc1aae9ef65ddff7136430c"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a012\\stderr.log",
+            "bytes": 482926,
+            "sha256": "616a9d76ba96072445cb9de825fc7dc9882d594cfb65932f708d5c1ddb3cfb19"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a012\\stdout.log",
+            "bytes": 43392,
+            "sha256": "2eb6de305e6292b974e8d969d84ed8e0aab3e4195058528ed763761843ce0256"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a013\\stderr.log",
+            "bytes": 1927914,
+            "sha256": "ccfb17fd9b420580e7f48fd939238d2aded55479bac909197b1637d6336a3c08"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48_0617_133825_a013\\stdout.log",
+            "bytes": 51192,
+            "sha256": "c6513cbd613a3499fc1f9c95599d722950a0296e6b199cdec81abdfa72c913c8"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a001\\stdout.log",
+            "bytes": 55577,
+            "sha256": "9eeb4ef7f61e2b12bf6cc4e36fc28387cfe965fc0090ded55d69c96beba472c0"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a002\\stderr.log",
+            "bytes": 477586,
+            "sha256": "9df5dea1192015cd25c577d6c901d726cf6a4e7f955574ef79571e49f0661f09"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a002\\stdout.log",
+            "bytes": 32768,
+            "sha256": "107a7ebf56a14fd3ccb3e7c08bb08aa1c31be37d5cdd5f93bbbd660f08419fbc"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a003\\stdout.log",
+            "bytes": 67225,
+            "sha256": "703697de89bdfddd5a1b108c9e07ac51ee5dfe51d6cb321a43afc7d6cd8eb71f"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a004\\stdout.log",
+            "bytes": 55408,
+            "sha256": "b76887c70fcddec4273970e094363347bb17a5e7f456903bd3de82768fb6da2b"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a005\\stdout.log",
+            "bytes": 72287,
+            "sha256": "b3c2abaa49713c36aa4603264c51fcde202a4f4bef4e6df7aaa6113788cb963b"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a006\\stderr.log",
+            "bytes": 1768471,
+            "sha256": "656dd707dcb467163a58462ccaee6a161435ad31d2e21b3bf477a138347ee483"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a006\\stdout.log",
+            "bytes": 51485,
+            "sha256": "00d2db0f5cbf315b2c46323b60f155092da64d59a4084c2c17177c2593c65e89"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a007\\stderr.log",
+            "bytes": 351640,
+            "sha256": "c1037bd3cbdfb107d15a488e8d914183c2c01a0b32f1e0c0c1780432a72d1dd1"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a007\\stdout.log",
+            "bytes": 38603,
+            "sha256": "1b3c4c13b4e45fd7eec42f9b6866c7aa1dcfa1752b41995fe2e3b9a029c796b2"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a008\\stderr.log",
+            "bytes": 1153251,
+            "sha256": "4a18911b8d3387df40e40d3e0b4873ece4053af4f719d1f3f59850ba81c13b3c"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a008\\stdout.log",
+            "bytes": 39399,
+            "sha256": "6e995854c2170e5aacaf8802c6fdac29bedd6a288d1ee089ce873670ff31b9f8"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a009\\stdout.log",
+            "bytes": 64802,
+            "sha256": "f93f4c8b938eb45e90f36498015cd05ab564a5c59066618d1e3083a7947ef599"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a010\\stderr.log",
+            "bytes": 314060,
+            "sha256": "0f02c7bfc1844d631751336c1c2101c4d147293eff6c9f725f229d89eb53e71a"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a010\\stdout.log",
+            "bytes": 34460,
+            "sha256": "9a8ad175174d6606167dcf9393ba3132aca1409495c2281bce10ec75a7e1dac5"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a011\\stderr.log",
+            "bytes": 626089,
+            "sha256": "3b21b4abaa29ed7202621af42250561c3fc5ed2377329cc515235cc4e622c7bc"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a011\\stdout.log",
+            "bytes": 41202,
+            "sha256": "ec9da4731cd20bce99e375f606ca7cd6db51573399863e804c2c2163af55c544"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a012\\stderr.log",
+            "bytes": 159,
+            "sha256": "725d10b65588728cb5a796a693d8a90e789cee75a6dcdec20f249eab405426b3"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a012\\stdout.log",
+            "bytes": 39071,
+            "sha256": "e6bdcbd3a32f87fc1a34b9cc5f1448269494dca1eec6edce66f5e69651588555"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a013\\stdout.log",
+            "bytes": 46093,
+            "sha256": "be7792f28f742b590925a8e2db402ced7ee68a9159e833adbae32a240244e83f"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a014\\stdout.log",
+            "bytes": 52321,
+            "sha256": "eab3d3fdccc6f3af880f8f9cfe7c10cde9ef416315232b4e0289fddc96b1e566"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a015\\stdout.log",
+            "bytes": 60628,
+            "sha256": "0116adb553052555ba1ce2a7559c6459f7baa78bffb736b2626f29634a2d892b"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a016\\stdout.log",
+            "bytes": 59492,
+            "sha256": "4dd6899f7c9153145dfee398d4f4c9fa3dcdf14b80551cbe66127fe1bc5ffb69"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a017\\stderr.log",
+            "bytes": 1346258,
+            "sha256": "fec08ac0db30e61b84e1bde9d588481b1e46c1ff5f241b6f8eb8a31c1b315065"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a017\\stdout.log",
+            "bytes": 43595,
+            "sha256": "45fcfb74a71e1552db43370d1eb40699a7b6d5113b24505e2cf4872d6ed3e6c8"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a018\\stdout.log",
+            "bytes": 68252,
+            "sha256": "3130eb0c41eebceea35eb49c6e54c5cef74f7eda4d06d8fbb040598282a6451a"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a019\\stdout.log",
+            "bytes": 97273,
+            "sha256": "a17c7649bd0c374e793f4939b0df74b16ac74a72e9f863e9c1d32fd9ce7fc752"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a020\\stdout.log",
+            "bytes": 51279,
+            "sha256": "f84f7888a3e6e7aa9a5ed0c79fa4ae7bdf7c5f38d903fca7feb201d95f4c785f"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a021\\stdout.log",
+            "bytes": 72326,
+            "sha256": "bce2378299286937535d1763bb5c714a0cfebe44cb5cac2c6877a0f264ad2ab2"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a022\\stdout.log",
+            "bytes": 100398,
+            "sha256": "a6abc8c8b4b002b67ae3f967f843e0cec357cf44ec42f0b8fdb9dc81f2034345"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a023\\stdout.log",
+            "bytes": 64830,
+            "sha256": "3a7c82edf2c330a6790599202ad7ac6a8c10bd3cb4e87babbc693a47bf9878bd"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a024\\stdout.log",
+            "bytes": 61010,
+            "sha256": "7204c68b85f5e92e6bf62572752cac2b1a0cd2ffc64c4cb5b6198b2dbe29ba51"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a025\\stderr.log",
+            "bytes": 1511427,
+            "sha256": "a5781b19f4457569b64bddab2a72ae6f9636975d4a964ef915aaff639bda3abe"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a025\\stdout.log",
+            "bytes": 49349,
+            "sha256": "bd68d264ecac39c5dc21eee34a34992ea811c93f196eafc8041575736595d6bd"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a026\\stdout.log",
+            "bytes": 64504,
+            "sha256": "b6ea60fc39145b3e5fa7ca51f79cca8b54fe4f427f3a624240f55475584ee060"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a027\\stdout.log",
+            "bytes": 50951,
+            "sha256": "daae4f8206c12ea26061b5c78477e6e236c52ebe89de37cb5d652783567827cd"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a028\\stderr.log",
+            "bytes": 441185,
+            "sha256": "72cd7c5121a03f961a18ffc2b7fa82e60e21845b8aff7b4fcbbca70ebc48ba1e"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a028\\stdout.log",
+            "bytes": 38347,
+            "sha256": "1bc1e8eb1ae673fca996f303c1d2e9fd356b3b90f0634ba55158081384d4f60d"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a029\\stderr.log",
+            "bytes": 653464,
+            "sha256": "b475db56c031859287829820f25101e692e128cdffcf64c8157912420e2f8014"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a029\\stdout.log",
+            "bytes": 37692,
+            "sha256": "a111c82cea45d869bcffcce1a2944958ee910f834460f9b8c87a61928c0c7f82"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a030\\stdout.log",
+            "bytes": 83899,
+            "sha256": "2eb71dbc490e939c3f496ae0332df5275629abd4c34b45fa97316612b5fe9bd5"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a031\\stderr.log",
+            "bytes": 310337,
+            "sha256": "db027afbe5cd48ef3dd477b022b2d33d0a7d28d05289d21b880f069287b6734c"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a031\\stdout.log",
+            "bytes": 32843,
+            "sha256": "72c608f4ca4c61f142a43a9b3fc91de0a0d8bf1f3c6c34399e2e2fe56b387773"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\gdsmith_cov48c_0617_194901_a032\\stdout.log",
+            "bytes": 84888,
+            "sha256": "183fe187a11c9684f6fb2b1cd3af062059b5ad3a10ab6caa77ca0d51a049ad7b"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\wrapper_smoke_gdsmith_neo4j_2026_04_10s_v3\\attempt_001\\stderr.log",
+            "bytes": 1361920,
+            "sha256": "05747e37f807f6cdf09ae93ba15d552ab7303660db20ce31301c781c6dff5e3c"
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\external_tools\\GDsmith\\baseline_runs\\wrapper_smoke_gdsmith_neo4j_2026_04_10s_v3\\attempt_001\\stdout.log",
+            "bytes": 40578,
+            "sha256": "49e88d6e267ea2e24a23df6f38b6bf3039495af7d746d4c61920cb903a01e387"
+          }
+        ],
+        "normalization": "existing extract_from_text_file + normalize_query + looks_like_query; exact dedup",
+        "extraction_limit": null,
+        "statement_role_filter": "none; follows existing extractor (may include setup statements)"
+      }
+    },
+    "GRASpDB": {
+      "available_unique_queries": 30000,
+      "sampled_queries": 30000,
+      "seed": 20261014,
+      "runs": 30,
+      "sample_size": 1000,
+      "sorted_unique_query_pool_sha256": "5b38e707f1e565b2f795a8822009bdf543254c8ac46d26b95be331533f7fd0c9",
+      "selected_queries": {
+        "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\selected_queries.jsonl",
+        "bytes": 57069292,
+        "sha256": "2d038a94df7e4a470f167fd0f33861725ffd892aa320da86264fb6b1ea9df0b7"
+      },
+      "groups": [
+        {
+          "run": 1,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_01.jsonl",
+          "bytes": 1910624,
+          "sha256": "03048ac12075181a8079d46d8180f98490e03aabda34b96b71d1b99b1489f366"
+        },
+        {
+          "run": 2,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_02.jsonl",
+          "bytes": 1917220,
+          "sha256": "1a226d8cbd325d1ff8875cd3974164316ee7cb6b8fab5901cfebd752724e3340"
+        },
+        {
+          "run": 3,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_03.jsonl",
+          "bytes": 1857349,
+          "sha256": "9403d486f16818db6de70acaf832db416321c2538bd7efa4363d4d2608c5a14f"
+        },
+        {
+          "run": 4,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_04.jsonl",
+          "bytes": 1939105,
+          "sha256": "e7a9667e45d2a36416c0698d3ee3bc0a0438e2a5fc3cab8b531d710b5c2f75f2"
+        },
+        {
+          "run": 5,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_05.jsonl",
+          "bytes": 1899204,
+          "sha256": "c5bfe8dd56b264914da028f454bf525795e7ad21d3c89e4bfcf21bb6995c5f9a"
+        },
+        {
+          "run": 6,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_06.jsonl",
+          "bytes": 1882971,
+          "sha256": "1335771af967d302858116d13252ccf4581e5b35d922a85ef963c66f0c63cc56"
+        },
+        {
+          "run": 7,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_07.jsonl",
+          "bytes": 1972958,
+          "sha256": "05a74fe2e5f0bb902d2dea4afc77e9c1766958105109a40998f6ceb830a93790"
+        },
+        {
+          "run": 8,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_08.jsonl",
+          "bytes": 1930659,
+          "sha256": "51473fe2a6a723e360f83634f2f9f67564c5531f2f9bd9316db21a9c0c2d3f6d"
+        },
+        {
+          "run": 9,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_09.jsonl",
+          "bytes": 1869202,
+          "sha256": "0e871dfe9ae6af69074042705d6115aca8692192cef5e48124d21cbeb8a6d4f7"
+        },
+        {
+          "run": 10,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_10.jsonl",
+          "bytes": 1925187,
+          "sha256": "c5df5579840c68552e7e654ce9c3a461e9c2719f3e0ceee5b1941d7d277d518b"
+        },
+        {
+          "run": 11,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_11.jsonl",
+          "bytes": 1912266,
+          "sha256": "3d44c53d6557bb7923f87533a6ae4b355774e11ea7e112a6fad47920c75297ac"
+        },
+        {
+          "run": 12,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_12.jsonl",
+          "bytes": 1900369,
+          "sha256": "19340e7417f035329b86a295ca2e19a16cc69b527b5c6be2173cb7ba6e3281d2"
+        },
+        {
+          "run": 13,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_13.jsonl",
+          "bytes": 1871288,
+          "sha256": "c1f4b74ae2e9f35eb682b81d2ab5bb891b2dedee829aec83d77fe7cbf22e7842"
+        },
+        {
+          "run": 14,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_14.jsonl",
+          "bytes": 1888033,
+          "sha256": "42e6e0b0a6f26c6f76826cbba29d848f4dfcc961f210d0c7e4707710b0d3277b"
+        },
+        {
+          "run": 15,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_15.jsonl",
+          "bytes": 1901871,
+          "sha256": "96afc7ac61ab16b9fbd377de9587002fa6a49dff504595d18881076ed2797101"
+        },
+        {
+          "run": 16,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_16.jsonl",
+          "bytes": 1878433,
+          "sha256": "7da882b8979dcb2cdcb92adeeb9b9a7a8e0287754b8418f0451c36b7de595142"
+        },
+        {
+          "run": 17,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_17.jsonl",
+          "bytes": 1880475,
+          "sha256": "e9ceefeabcc41d06a6ba354b46e672e9414f5299ad164a3f35cdbc587f59def5"
+        },
+        {
+          "run": 18,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_18.jsonl",
+          "bytes": 1923039,
+          "sha256": "c39aa4664b455efaa4efd9860b409acd227958ee43d82e50686c079d12307440"
+        },
+        {
+          "run": 19,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_19.jsonl",
+          "bytes": 1917976,
+          "sha256": "27382c822b6ffaecdd06cc750f6376c88479f61a1a080409d656f63aedc9b513"
+        },
+        {
+          "run": 20,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_20.jsonl",
+          "bytes": 1875807,
+          "sha256": "80cfdd49803b39959aeec619a350aabf972e7bdbfa8450bc7a04f82fa2006f3e"
+        },
+        {
+          "run": 21,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_21.jsonl",
+          "bytes": 1945456,
+          "sha256": "57e9433cdcd564f70095a42ec0254f14b4e58b50cfe51d5722c96d4db79566b4"
+        },
+        {
+          "run": 22,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_22.jsonl",
+          "bytes": 1931825,
+          "sha256": "4f76fca60c4e25e773ce7b5c901ce29273baf2f0848ed184173c3ff6068f286d"
+        },
+        {
+          "run": 23,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_23.jsonl",
+          "bytes": 1868234,
+          "sha256": "ac6f9b9c2569e7b49301a216b7f5eac6a4b13d6289f3d2111ea486acaabe538f"
+        },
+        {
+          "run": 24,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_24.jsonl",
+          "bytes": 1900252,
+          "sha256": "b09d388270b0b63c09927957de22443d794f1d813b094197c235e9a4ccada31e"
+        },
+        {
+          "run": 25,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_25.jsonl",
+          "bytes": 1910577,
+          "sha256": "c30b982fa2f844f426d3f0871d2be2b7b168da4d3eedc15614254363c0395230"
+        },
+        {
+          "run": 26,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_26.jsonl",
+          "bytes": 1890907,
+          "sha256": "ce1b5c07c3f143d639accce00772849f87f7c5da7b3e3b39de5c14e628c5eb6c"
+        },
+        {
+          "run": 27,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_27.jsonl",
+          "bytes": 1913864,
+          "sha256": "654cda0b52a6f5c87ec61cc5d330acbd0a1150fad881a48c848b66100b128950"
+        },
+        {
+          "run": 28,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_28.jsonl",
+          "bytes": 1865537,
+          "sha256": "1535ceff3d633d858f929bd891066e961a119dfe8f11a25c095ebb6b373c0264"
+        },
+        {
+          "run": 29,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_29.jsonl",
+          "bytes": 1910148,
+          "sha256": "ffa673e00f9f250be31353ea7553fabc841bf1c5c9a407e029d919ffd02df23c"
+        },
+        {
+          "run": 30,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRASpDB\\sample_30.jsonl",
+          "bytes": 1878456,
+          "sha256": "887b730da95236be4f0d2ac7e26d80d535074286eb69460feacd467b87a7b24d"
+        }
+      ],
+      "extractor_metadata": {
+        "sources": [
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\baseline_supplement\\graspdb_neo4j_genonly_30000_20261011\\queries.jsonl",
+            "bytes": 29659521,
+            "sha256": "81c3724e8a917173f2da01c967662e590d409c77f97da81251ff053d64c1e656"
+          }
+        ],
+        "rows_seen": 30000,
+        "normalization": "strip + exact query-text dedup; matches old read_jsonl_corpus",
+        "collection_mode": "fresh_native_generation_only_no_db_execution",
+        "generation_manifest": {
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\baseline_supplement\\graspdb_neo4j_genonly_30000_20261011\\manifest.json",
+          "bytes": 10224,
+          "sha256": "47e5f9c3077e152a1bd7d20f287064eb24be85618c7c81881294d1d9d9cd31d7"
+        }
+      }
+    },
+    "GRev": {
+      "available_unique_queries": 49568,
+      "sampled_queries": 30000,
+      "seed": 20261015,
+      "runs": 30,
+      "sample_size": 1000,
+      "sorted_unique_query_pool_sha256": "a705f6c3e2e66eb495305defd41c954ad5e30a9ebd9b0f7c1f3bf6d4bb226d3b",
+      "selected_queries": {
+        "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\selected_queries.jsonl",
+        "bytes": 64615016,
+        "sha256": "00eb52d0f46129e948fbcdbf0162e878f47f1283d6ba22e3e896137bec28f230"
+      },
+      "groups": [
+        {
+          "run": 1,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_01.jsonl",
+          "bytes": 2195697,
+          "sha256": "4a6f2f10e845691533fd7307b4a397dbd5c54d9b5c2cfd3947fa6d7e5b356e8c"
+        },
+        {
+          "run": 2,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_02.jsonl",
+          "bytes": 2153645,
+          "sha256": "e6fb197179967a3ce29fbaaccc62dc8c5742dea7e64d5495ad6e97ba5dda287d"
+        },
+        {
+          "run": 3,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_03.jsonl",
+          "bytes": 2129799,
+          "sha256": "207fa02dbdf8c82b38596812419ff410792ea3c142e6645c1aa46332048e3b1b"
+        },
+        {
+          "run": 4,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_04.jsonl",
+          "bytes": 2156749,
+          "sha256": "c18c8e9747669cb7bedcf323e713f1b4bd75e7ae82feafda6c30a50430ed14e6"
+        },
+        {
+          "run": 5,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_05.jsonl",
+          "bytes": 2133781,
+          "sha256": "f682627ff40bb72c9c64ff5492afc5c271bb2c6282e79cba7c740e6543caa25a"
+        },
+        {
+          "run": 6,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_06.jsonl",
+          "bytes": 2196455,
+          "sha256": "6f0256c1150c68cfba29da785af25d74af3b6d7d3239bf0147ae8b34aa27f494"
+        },
+        {
+          "run": 7,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_07.jsonl",
+          "bytes": 2164783,
+          "sha256": "e38a0971e52c9726922ea2239ef26113517646da06d6e6b675e60272be30e25b"
+        },
+        {
+          "run": 8,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_08.jsonl",
+          "bytes": 2109021,
+          "sha256": "5b01971d262bb01873f9fb4e0e5c9855765acc47c2ea227c4aaa0f9bc0eedd57"
+        },
+        {
+          "run": 9,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_09.jsonl",
+          "bytes": 2135407,
+          "sha256": "d7227c448354c054c0fa6f1cd50245189f2d9604f99c06b1fc804b4fc05add5b"
+        },
+        {
+          "run": 10,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_10.jsonl",
+          "bytes": 2152627,
+          "sha256": "0d3aba9815cbb3bd537926096b044d3b9e24394cfd06b607ab13c6b4d623bbed"
+        },
+        {
+          "run": 11,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_11.jsonl",
+          "bytes": 2182567,
+          "sha256": "f8d416d7ed54225e8b96ce61a8dc02d281170f8c88e4db423bb5690b1c5b98d6"
+        },
+        {
+          "run": 12,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_12.jsonl",
+          "bytes": 2196927,
+          "sha256": "a07891910ef6fc15be73d331465ec91425d82e735184096520465a334120688f"
+        },
+        {
+          "run": 13,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_13.jsonl",
+          "bytes": 2178437,
+          "sha256": "f6b001cea3448d91c70b608611046f10745021660df17c12419ea17102dc2713"
+        },
+        {
+          "run": 14,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_14.jsonl",
+          "bytes": 2137243,
+          "sha256": "9f81542413d3f08698e732593624564cb60988301932f21ed0b5d045dbb5bdc5"
+        },
+        {
+          "run": 15,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_15.jsonl",
+          "bytes": 2101723,
+          "sha256": "c86f983e99763901dc9478a054311549fc8753dab2720321642f66083a3c9bb3"
+        },
+        {
+          "run": 16,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_16.jsonl",
+          "bytes": 2148005,
+          "sha256": "399d6f2cc1c23b135859310e00f5afd379666c73feb2f3176d0672495dd39fda"
+        },
+        {
+          "run": 17,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_17.jsonl",
+          "bytes": 2151673,
+          "sha256": "9ec9f87328461c2dd612285b90bbbf4ce906918d1c4c8882368833ab7f88a7bb"
+        },
+        {
+          "run": 18,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_18.jsonl",
+          "bytes": 2158971,
+          "sha256": "c62b1632b089db639f9853fe2754cf6ace0a9cad159825ef7a3af9a6cae688f8"
+        },
+        {
+          "run": 19,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_19.jsonl",
+          "bytes": 2149537,
+          "sha256": "084f54e3ace81ede8e13d6b8cc10056e48bf74c0c969557332b85bc37cfc0ed6"
+        },
+        {
+          "run": 20,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_20.jsonl",
+          "bytes": 2182915,
+          "sha256": "4d41fa3d79aa63cd1926c353cefbafd6b87b8e368c45e17941fd1ae88e0a5cc9"
+        },
+        {
+          "run": 21,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_21.jsonl",
+          "bytes": 2121011,
+          "sha256": "745ed8d8da3dc9a6f8c4627b5a12a591147402d6c01e814ccc43e0f18f11d33f"
+        },
+        {
+          "run": 22,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_22.jsonl",
+          "bytes": 2181957,
+          "sha256": "d672e0ab91ca33a75e227f335a8bc4773af549a1043f5751e8dcf69b7b383bfc"
+        },
+        {
+          "run": 23,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_23.jsonl",
+          "bytes": 2210413,
+          "sha256": "5b6456e9a02aa3ce54a5910e09795b12eabf756f2e29a8aa86016ae05e4596ff"
+        },
+        {
+          "run": 24,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_24.jsonl",
+          "bytes": 2127357,
+          "sha256": "1dff6f0f73cc20bae0445c437fb40709ca95e2dbb6199bcb8b49b81fd09caf78"
+        },
+        {
+          "run": 25,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_25.jsonl",
+          "bytes": 2139475,
+          "sha256": "b63a10294356db393a0c818d4da1b47cbc5253f75585be66110c64d2dc4647d5"
+        },
+        {
+          "run": 26,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_26.jsonl",
+          "bytes": 2124585,
+          "sha256": "407deefeffa2c46cc5d4f798fa708f6745ba5b288991cf76392a9eb6ef7e7737"
+        },
+        {
+          "run": 27,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_27.jsonl",
+          "bytes": 2154517,
+          "sha256": "806e599e7ad357c0f16622a6a37be7a5056c0c6fcc528a3c57ebdc5e0f04d8c6"
+        },
+        {
+          "run": 28,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_28.jsonl",
+          "bytes": 2140099,
+          "sha256": "ca27fcc42651a8721e69271f46802775e0f0382296aecff3a7f10ae08a79755a"
+        },
+        {
+          "run": 29,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_29.jsonl",
+          "bytes": 2114531,
+          "sha256": "7db0077277580478ca35ccd0827e25f98038ff8b3740671b74ff4045664c5201"
+        },
+        {
+          "run": 30,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\GRev\\sample_30.jsonl",
+          "bytes": 2185109,
+          "sha256": "52b80b92e9f153c7ff166738696452ca31d60c11dd87c380d80878621e86d05a"
+        }
+      ],
+      "extractor_metadata": {
+        "sources": [
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\paper\\baseline_query_samples\\raw_neo4j_grev_genonly_50000_20260814.jsonl",
+            "bytes": 47418228,
+            "sha256": "3d82066672113fd5439bf978bc42b7f69e112500664f6d67f883ebbffbd7a4b7"
+          }
+        ],
+        "rows_seen": 50000,
+        "normalization": "strip + exact query-text dedup; matches old read_jsonl_corpus",
+        "collection_mode": "generation_only_retained_queries"
+      }
+    },
+    "Gamera": {
+      "available_unique_queries": 30602,
+      "sampled_queries": 30000,
+      "seed": 20261016,
+      "runs": 30,
+      "sample_size": 1000,
+      "sorted_unique_query_pool_sha256": "6d839f0231427435b8e791df5db10132074c5c1b6e357ccad81f9b8c9ba7cf56",
+      "selected_queries": {
+        "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\selected_queries.jsonl",
+        "bytes": 29113061,
+        "sha256": "abc212819b2a7223dc61fbce82720a459b081a11ead19fabb52df7fb5d98811f"
+      },
+      "groups": [
+        {
+          "run": 1,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_01.jsonl",
+          "bytes": 973735,
+          "sha256": "3a097392fa7ef247873f44cffb4154bdccde94447d3b7475782c3825b64b3066"
+        },
+        {
+          "run": 2,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_02.jsonl",
+          "bytes": 964709,
+          "sha256": "2b281200e229852586e5d90fa93f83f7beb64c46ca373ef418f2f33f037fea56"
+        },
+        {
+          "run": 3,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_03.jsonl",
+          "bytes": 976410,
+          "sha256": "5c8c7254ab31c192ab8d0c14e399bab491a89a17cee9080d5a8383e00552f762"
+        },
+        {
+          "run": 4,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_04.jsonl",
+          "bytes": 948054,
+          "sha256": "f8a9760a78628256c98ae47878dc52f6688bee3c0f47caa557fcf072e41616f7"
+        },
+        {
+          "run": 5,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_05.jsonl",
+          "bytes": 958039,
+          "sha256": "1b5f8c793cf7c37c678fef6204f6f6a4720db6186b90e335f3f7ed6fd2403e16"
+        },
+        {
+          "run": 6,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_06.jsonl",
+          "bytes": 984927,
+          "sha256": "0e5a9f045a24b6bd7d0657963de66a70adee63f3c546cc79c9e1985d1f748e05"
+        },
+        {
+          "run": 7,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_07.jsonl",
+          "bytes": 991203,
+          "sha256": "b04c134ba4ea7dc3d452585f8070e97538b3fc4327de4ee953e22ae6b8616b07"
+        },
+        {
+          "run": 8,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_08.jsonl",
+          "bytes": 995557,
+          "sha256": "9246e8b8962423228293a571f6de2d05beac95d428063754b1e3a3a75596a340"
+        },
+        {
+          "run": 9,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_09.jsonl",
+          "bytes": 953009,
+          "sha256": "70550f644c5f8b22b1c6de34bd70507a1d069a2f5fc609c956d84f69e79f8de2"
+        },
+        {
+          "run": 10,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_10.jsonl",
+          "bytes": 966585,
+          "sha256": "bb5c981d8b220dbf03fce88fca6835cec10c055a0d3ea5d02578865ca754b1d6"
+        },
+        {
+          "run": 11,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_11.jsonl",
+          "bytes": 982964,
+          "sha256": "e5f575e0fac20baee8e59660bdd0d973668133ccbecc3db1a95b546d72ec0c84"
+        },
+        {
+          "run": 12,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_12.jsonl",
+          "bytes": 946350,
+          "sha256": "b7ed457a468ebf61e8f8561c65bbdc6514fad7687cf343085488ce74ec1f8716"
+        },
+        {
+          "run": 13,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_13.jsonl",
+          "bytes": 978015,
+          "sha256": "d7d4e020553570d216c58a119fd78a244521399e90612ee1dcf5df65a8a7c396"
+        },
+        {
+          "run": 14,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_14.jsonl",
+          "bytes": 947463,
+          "sha256": "a3c7a659368181cfdbe1d4ba6c9f253bed8516062abfabd089e4505549b3d6b4"
+        },
+        {
+          "run": 15,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_15.jsonl",
+          "bytes": 962295,
+          "sha256": "76f13c56f8a05aafcda9c51479a66c0d98327aedde662ce5e41ab9dccf255598"
+        },
+        {
+          "run": 16,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_16.jsonl",
+          "bytes": 959447,
+          "sha256": "de3c0e5b56c4346430639866819f318fd4b6cdfc234294c8802f6bcd2aaff094"
+        },
+        {
+          "run": 17,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_17.jsonl",
+          "bytes": 995539,
+          "sha256": "2e5037b10fc97fe0c31c99a86758368eb9718ad4ddc8b34b0c58aef9dad26c19"
+        },
+        {
+          "run": 18,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_18.jsonl",
+          "bytes": 1003927,
+          "sha256": "3ca28b09d6b946ee8a0b8630c8a26ae7717e3c38df8b05eff41d629b096d4c67"
+        },
+        {
+          "run": 19,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_19.jsonl",
+          "bytes": 948018,
+          "sha256": "2b81481c3fc375f5e79fc288dcc556fe383d669efd5843a7c94679f1e1baa88a"
+        },
+        {
+          "run": 20,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_20.jsonl",
+          "bytes": 973388,
+          "sha256": "3c213b7e9e54254308022fb3d6b756a203bd55d55f08d57d5bfefa7386bf78a5"
+        },
+        {
+          "run": 21,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_21.jsonl",
+          "bytes": 988132,
+          "sha256": "1c6578fc9b13a5efb7a8804e3a1fcf933c39ff37cb62fad0e275cb2999af39fb"
+        },
+        {
+          "run": 22,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_22.jsonl",
+          "bytes": 966834,
+          "sha256": "5fbcf82a41a5e854d943ad4c1861da7a673bebe791bf36a61789c117fa7c08ab"
+        },
+        {
+          "run": 23,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_23.jsonl",
+          "bytes": 980964,
+          "sha256": "52a38ea17be049f57cf0c31f9c5f396a00070edc3867a57b81fb860942520802"
+        },
+        {
+          "run": 24,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_24.jsonl",
+          "bytes": 979225,
+          "sha256": "fa54f60b38e7712fb7f597c346b60092427a25a94b687d39a09046814dec65de"
+        },
+        {
+          "run": 25,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_25.jsonl",
+          "bytes": 973711,
+          "sha256": "faef1a4949883712b60b6987e322c8f35b7b1575454c3e7dce3dc8335f429a61"
+        },
+        {
+          "run": 26,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_26.jsonl",
+          "bytes": 962244,
+          "sha256": "6416c850784ca1112957f73e44b4b102d38cbbfe20bab6a8aa778ad419d40d9f"
+        },
+        {
+          "run": 27,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_27.jsonl",
+          "bytes": 930108,
+          "sha256": "1c88c4ce35c2717c409879482ca805ad6599214fe9d764b5985833aa5d53ec05"
+        },
+        {
+          "run": 28,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_28.jsonl",
+          "bytes": 967896,
+          "sha256": "ea59155297e0cec8384d23b4da9a7f5abcf5058ea2b1022949e1e76dafefdc95"
+        },
+        {
+          "run": 29,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_29.jsonl",
+          "bytes": 959123,
+          "sha256": "3878c59d9b57ae0ddefac916e211827b243144ceb62ac92ee7a27eddc96aaec9"
+        },
+        {
+          "run": 30,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\Gamera\\sample_30.jsonl",
+          "bytes": 995190,
+          "sha256": "9cb0711e9fa097d253f9daf949f6ab3fc5d0ae1df2e9858c6a5342d5af0b7bb4"
+        }
+      ],
+      "extractor_metadata": {
+        "sources": [
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\paper\\baseline_query_samples\\raw_neo4j_gamera_genonly_50000_20260814.jsonl",
+            "bytes": 13979771,
+            "sha256": "d836218755dedd0a863329ea5095317a80f6bbc8d20f26473965c0593ab7aea4"
+          }
+        ],
+        "rows_seen": 50000,
+        "normalization": "strip + exact query-text dedup; matches old read_jsonl_corpus",
+        "collection_mode": "generation_only_retained_queries"
+      }
+    },
+    "HistDB": {
+      "available_unique_queries": 47172,
+      "sampled_queries": 30000,
+      "seed": 20261017,
+      "runs": 30,
+      "sample_size": 1000,
+      "sorted_unique_query_pool_sha256": "a389d7c06a48f03aa0355fca276bdeec68ff08f0998110ae101bfb6fc38c956c",
+      "selected_queries": {
+        "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\selected_queries.jsonl",
+        "bytes": 60052612,
+        "sha256": "797e2d57383b8a9ebe49ff7a24a3ea1ae92837f62908187747694ea4bb431ee0"
+      },
+      "groups": [
+        {
+          "run": 1,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_01.jsonl",
+          "bytes": 2010606,
+          "sha256": "de1a2ddbcd46281c064c8c1e4ef3b6c5c00637a46a109fbbe524481e4ba33646"
+        },
+        {
+          "run": 2,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_02.jsonl",
+          "bytes": 2038794,
+          "sha256": "15ad25fa955ecd3c7345e7bfb56433ef2013063e58c01b82bca9fae61fb64ab7"
+        },
+        {
+          "run": 3,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_03.jsonl",
+          "bytes": 2021154,
+          "sha256": "b7fb263686366fc86530ce9878825b6ccfc15cd94bba6abfa11749b796329cfa"
+        },
+        {
+          "run": 4,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_04.jsonl",
+          "bytes": 2014822,
+          "sha256": "90b9c464f3b57e11e3f3aee9887f1aa95ab8e090e4050a48b652d295f128fd3d"
+        },
+        {
+          "run": 5,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_05.jsonl",
+          "bytes": 1972766,
+          "sha256": "183186bf42d8480a04c3de6d645228af843499498536eb2d0e1417ae56540499"
+        },
+        {
+          "run": 6,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_06.jsonl",
+          "bytes": 1982736,
+          "sha256": "9af2d52cce5c7ed9683c56cbe0b95d0cc2473121b085d7c8101b9b2ce164f7b4"
+        },
+        {
+          "run": 7,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_07.jsonl",
+          "bytes": 2012405,
+          "sha256": "440af9b5598a1bd0a2f042bbf7ef9baf5c4c2d2f2dc1241580a0257b2efde57f"
+        },
+        {
+          "run": 8,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_08.jsonl",
+          "bytes": 1984829,
+          "sha256": "1d77824a1a88e8942c11a7515e92f302192250cdbfdb7999a006f9b38b304976"
+        },
+        {
+          "run": 9,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_09.jsonl",
+          "bytes": 2060179,
+          "sha256": "c51e87e1f26c3f7fab988270893f45d9f6ca8e3f7334d9b92127c9204402b699"
+        },
+        {
+          "run": 10,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_10.jsonl",
+          "bytes": 2021426,
+          "sha256": "08cb1fddbf60e623fa576e84409e4733fc40d516171c94b4078e5ec3d0975f8a"
+        },
+        {
+          "run": 11,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_11.jsonl",
+          "bytes": 2002505,
+          "sha256": "65941edd5eb1a5fe4a4f02f5add9f63f0803e94ff9cb58dea4f65f5ec6e44944"
+        },
+        {
+          "run": 12,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_12.jsonl",
+          "bytes": 1960527,
+          "sha256": "37f684c077c1cd393be00cc70095ac28a305788a761d1c4189fe5bb9cd76e54d"
+        },
+        {
+          "run": 13,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_13.jsonl",
+          "bytes": 1968216,
+          "sha256": "7669bda2e105e7c07ef7286d63362f02ed0cf09ce366128a8c5e15bf4ad04f5a"
+        },
+        {
+          "run": 14,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_14.jsonl",
+          "bytes": 2018148,
+          "sha256": "337e1e916b12dd6f7bfd08e1d533b84c35888b472af750ec1f13df125b37e5bc"
+        },
+        {
+          "run": 15,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_15.jsonl",
+          "bytes": 2016177,
+          "sha256": "f117d16b9a7475e2efa7c1606b174a53338d3ddd1c74e6e5df067036d6118550"
+        },
+        {
+          "run": 16,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_16.jsonl",
+          "bytes": 1995802,
+          "sha256": "1865f80a3c9ae18850b001955b9b39b5968b44ac6ce1436632fd4fb196758861"
+        },
+        {
+          "run": 17,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_17.jsonl",
+          "bytes": 2011259,
+          "sha256": "679db76d72b811bc1f2778adbff81a899e9617da1ae4fd1f05e0f5152f372ac2"
+        },
+        {
+          "run": 18,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_18.jsonl",
+          "bytes": 1988277,
+          "sha256": "4a70e528cccd90fff6669ac142a04f6e3fc930c8885f733336368bbeb4b2a7a2"
+        },
+        {
+          "run": 19,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_19.jsonl",
+          "bytes": 1980302,
+          "sha256": "b59a5c3346c8321599bb2ca693236040d736911093d4cc1f3ae876614a2c4502"
+        },
+        {
+          "run": 20,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_20.jsonl",
+          "bytes": 2033341,
+          "sha256": "33e889263436fabd752c3191c260916eb423d7ee078a149059536232b26b3a04"
+        },
+        {
+          "run": 21,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_21.jsonl",
+          "bytes": 1992988,
+          "sha256": "ae60692c7bdc61400acad6f9ffd63f0952d4baa92b214c85b9c17086090f74e8"
+        },
+        {
+          "run": 22,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_22.jsonl",
+          "bytes": 1986662,
+          "sha256": "738ee0e78a1d758d6b9f78b393005da23e52d7e9e4dece570e23853295d3ca6a"
+        },
+        {
+          "run": 23,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_23.jsonl",
+          "bytes": 1972731,
+          "sha256": "67f42bf59cf6e1c2cec04051bba57d87d139f4e8417bd1f4ee1b9d046fc09062"
+        },
+        {
+          "run": 24,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_24.jsonl",
+          "bytes": 2029285,
+          "sha256": "15f7a18aa19ddf4b8ff6c0e90c265d783c05446c08d807d5784f99ce24d6e77d"
+        },
+        {
+          "run": 25,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_25.jsonl",
+          "bytes": 1966759,
+          "sha256": "e12cde21fd6877fbac6ccfef37cc334beeb9934f232eb48253ad74fb51b21623"
+        },
+        {
+          "run": 26,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_26.jsonl",
+          "bytes": 1976554,
+          "sha256": "888e01fbe640c95fea7e16478a7651dfce5b65552662538706ffd3b0fdbf68e8"
+        },
+        {
+          "run": 27,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_27.jsonl",
+          "bytes": 1991719,
+          "sha256": "5b5946aa160b7a304fcfd6dc33912b2b0d5fa12dbe6fa47cefc1312c88bac233"
+        },
+        {
+          "run": 28,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_28.jsonl",
+          "bytes": 2042193,
+          "sha256": "2bebf85fea56042980c44604d5b6e1baca38e9215d4b4eb3c08bfce6f659794e"
+        },
+        {
+          "run": 29,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_29.jsonl",
+          "bytes": 2038495,
+          "sha256": "3190cfee0321d55bb5161ffff9271e00f5c6e07d9aa43a36b0b2b3ec0ddda286"
+        },
+        {
+          "run": 30,
+          "queries": 1000,
+          "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\samples\\HistDB\\sample_30.jsonl",
+          "bytes": 1960955,
+          "sha256": "540de52b92977cd5840afe96cbc39322c5e66c6a2e39a346a5343fdd28b17a54"
+        }
+      ],
+      "extractor_metadata": {
+        "pooled_batches": 2,
+        "sources": [
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\batch_runs\\neo4j_large_stage3_20260515\\stage3_main\\instantiated_cases.jsonl",
+            "bytes": 44902428,
+            "sha256": "e6f96c3f91cf87a71351b3e76756dc27c1c1461dc81b470e58b320d56a4c15ad",
+            "rows_seen": 24501,
+            "new_unique_queries": 23591
+          },
+          {
+            "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\batch_runs\\crossdb_rich_stage3_20260515\\stage3_main\\instantiated_cases.jsonl",
+            "bytes": 44773886,
+            "sha256": "79107b597dfad9f1030086e73976bdaf195a158c9d7f573d925c02d77eb5443d",
+            "rows_seen": 24530,
+            "new_unique_queries": 23581
+          }
+        ],
+        "normalization": "existing normalize_query + looks_like_query; first occurrence retained"
+      }
+    }
+  },
+  "combined_queries": {
+    "path": "D:\\sci\\works\\get bugs\\graph-bug-fuzz-mvp\\data\\repeated_query_diversity_30x1000_20261011\\baseline_samples.jsonl",
+    "bytes": 301050814,
+    "sha256": "3076661e3953fe43f33ab178b8dc816da8800c55bfab15e48d20100bcc4bf220"
+  }
+}

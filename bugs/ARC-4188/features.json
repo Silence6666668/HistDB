@@ -1,0 +1,92 @@
+[
+  {
+    "feature_id": "ft_0c1ae1e85517",
+    "machine_name": "single_label_node_creation",
+    "description": "Creates nodes with a single label, testing basic label assignment.",
+    "tags": [
+      "write",
+      "node_creation",
+      "label"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_aef1a050a0c4",
+    "machine_name": "match_with_label_and_relationship",
+    "description": "MATCH clause with node labels and unspecified relationship direction",
+    "tags": [
+      "match",
+      "label",
+      "relationship",
+      "direction"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7dfc2ebdc998",
+    "machine_name": "label_filter_in_match",
+    "description": "Filtering nodes by label directly in the MATCH pattern, specifying labels A and B for the nodes.",
+    "tags": [
+      "label_filter",
+      "pattern",
+      "node_label",
+      "match"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a1ea38a86d84",
+    "machine_name": "bulk_write_pattern",
+    "description": "Combined pattern for batch node matching and relationship creation in a single query",
+    "tags": [
+      "bulk",
+      "write",
+      "pattern"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ebb65c1d1a1e",
+    "machine_name": "list_comprehension_for_edge_properties",
+    "description": "RETURN using list comprehensions to extract type and node IDs from collected edge lists",
+    "tags": [
+      "return",
+      "list_comprehension",
+      "edge_properties",
+      "type",
+      "startNode",
+      "endNode"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_c95f163b1284",
+    "machine_name": "write_and_return_aggregation",
+    "description": "Combine node creation with aggregation in a single query",
+    "tags": [
+      "write",
+      "aggregation",
+      "single_query",
+      "combination"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

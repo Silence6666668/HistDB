@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_aad4a00afcc1",
+  "skeleton_text": "MATCH (n:HOLE_LABEL_0) WITH COLLECT({ someArray:HOLE_LABEL_1.HOLE_PROP_0 }) as collection RETURN apoc.HOLE_PROP_1.HOLE_PROP_2(collection, { someArray: [] })",
+  "source_id": "neo4j#13175",
+  "source_query_id": "q_000297",
+  "holes": []
+}

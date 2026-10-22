@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_c37b288c390e",
+  "skeleton_text": "MATCH (n) WHERE n:EMBEDDING OR n:IMAGE_EMBEDDING\nreturn n",
+  "source_id": "ArcadeData/arcadedb#3278",
+  "source_query_id": "ArcadeData__arcadedb__3278__q002",
+  "holes": []
+}

@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_c658dfdff198",
+  "skeleton_text": "explain MATCH (v:HOLE_LABEL{name:HOLE_VALUE})--(n:HOLE_LABEL) with collect(v.HOLE_PROPERTY) as vc,n,v return n.HOLE_PROPERTY, [x in collect(v.HOLE_PROPERTY) where x>HOLE_VALUE| x+n.HOLE_PROPERTY];",
+  "source_id": null,
+  "source_query_id": "neo4j#12868",
+  "holes": []
+}

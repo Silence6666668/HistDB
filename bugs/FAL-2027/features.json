@@ -1,0 +1,91 @@
+[
+  {
+    "feature_id": "ft_94cc119f1381",
+    "machine_name": "property_filter_in_optional_match",
+    "description": "Filters nodes by a specific property value directly within the OPTIONAL MATCH pattern, testing property-based matching in optional contexts.",
+    "tags": [
+      "property_filter",
+      "optional_match",
+      "node_label"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_9b9d2bc9cf26",
+    "machine_name": "match_multiple_nodes_by_id_property",
+    "description": "MATCH binds two nodes using inline property filters on an 'id' property with integer values.",
+    "tags": [
+      "match",
+      "node",
+      "property_filter",
+      "binding"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_8fc52d2e4659",
+    "machine_name": "single_variable_node_creation",
+    "description": "Creates a node bound to a single variable without properties or additional patterns.",
+    "tags": [
+      "simple_creation",
+      "variable_binding",
+      "no_properties"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_2b748274cee7",
+    "machine_name": "multiple_with_ordering_limiting",
+    "description": "Multiple WITH clauses each applying ORDER BY and LIMIT to different node types before aggregation",
+    "tags": [
+      "ordering",
+      "limiting",
+      "aggregation",
+      "multiple_with"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_1eebe98e4a45",
+    "machine_name": "merge_with_parameterized_label_and_id",
+    "description": "MERGE node with dynamic label and parameterized ID using string concatenation and arithmetic division",
+    "tags": [
+      "merge",
+      "dynamic_label",
+      "parameterized_id",
+      "arithmetic",
+      "string_concat"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_886410c4dc1e",
+    "machine_name": "property_existence_negation",
+    "description": "Filter nodes by checking that a specific property does NOT exist on the node",
+    "tags": [
+      "predicate",
+      "property",
+      "negation",
+      "existence"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

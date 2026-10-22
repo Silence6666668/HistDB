@@ -1,0 +1,147 @@
+[
+  {
+    "feature_id": "ft_497df2c5dc74",
+    "machine_name": "match_create_combination",
+    "description": "Combines MATCH clause reading existing nodes with CREATE clause writing new nodes and relationships in a single query.",
+    "tags": [
+      "write",
+      "combination",
+      "pattern"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ede501d1a6d6",
+    "machine_name": "single_return_with_function_call",
+    "description": "Simple RETURN clause containing only a function call without variables or patterns, testing projection of computed values.",
+    "tags": [
+      "return",
+      "projection",
+      "function_call",
+      "no_match"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_47a0f9e51f28",
+    "machine_name": "function_without_alias",
+    "description": "Returning the result of a function call directly without assigning an alias in the RETURN clause.",
+    "tags": [
+      "function",
+      "projection",
+      "no_alias"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d86b91cb2401",
+    "machine_name": "rounding_mode_toward_zero",
+    "description": "Applying the 'TOWARD_ZERO' rounding mode in a numeric function.",
+    "tags": [
+      "rounding",
+      "mode",
+      "toward_zero",
+      "truncation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_5ee546270958",
+    "machine_name": "relationship_merge_with_empty_string_properties",
+    "description": "MERGE relationship with properties set to empty string values",
+    "tags": [
+      "merge",
+      "relationship_properties",
+      "empty_string",
+      "data_quality"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_cc295620f838",
+    "machine_name": "literal_property_assignment",
+    "description": "Assign a literal integer value to a node property",
+    "tags": [
+      "property",
+      "literal",
+      "integer"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_66bdc2861d19",
+    "machine_name": "optional_match_with_multiple_nodes_no_relationship",
+    "description": "OPTIONAL MATCH with multiple node patterns but no relationship pattern, creating a Cartesian product",
+    "tags": [
+      "optional_match",
+      "cartesian_product",
+      "node_pattern"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_0259d68ccb33",
+    "machine_name": "labeled_node_with_property_filter",
+    "description": "Node pattern with a label and an inline property equality filter",
+    "tags": [
+      "node_pattern",
+      "label",
+      "property_filter",
+      "inline"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_256c87815600",
+    "machine_name": "match_with_null_property_predicate",
+    "description": "MATCH clause using a null variable in a property predicate pattern",
+    "tags": [
+      "match",
+      "null_semantics",
+      "property_predicate"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ade9ffda4b55",
+    "machine_name": "exact_id_lookup",
+    "description": "Look up a node by a numeric ID property with exact match, typical for primary key queries",
+    "tags": [
+      "lookup",
+      "id",
+      "numeric",
+      "exact_match"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

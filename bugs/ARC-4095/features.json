@@ -1,0 +1,88 @@
+[
+  {
+    "feature_id": "ft_94997e704cec",
+    "machine_name": "return_multiple_nodes_from_match",
+    "description": "Return multiple nodes (both source and target) from a matched pattern in the result set.",
+    "tags": [
+      "return",
+      "multiple_variables",
+      "node_projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_b2ac7c29a1fa",
+    "machine_name": "fulltext_index_query",
+    "description": "Query nodes using a full-text index with a search term",
+    "tags": [
+      "fulltext",
+      "index",
+      "procedure",
+      "search"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_0a8289ff604f",
+    "machine_name": "match_with_label_only",
+    "description": "MATCH clause that matches nodes based solely on a label (:A) without specifying properties or variables.",
+    "tags": [
+      "MATCH",
+      "label_only",
+      "anonymous_node"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_c40c2409fb80",
+    "machine_name": "match_all_nodes",
+    "description": "Match all nodes in the graph without any filters or constraints.",
+    "tags": [
+      "match",
+      "return",
+      "no_filter",
+      "all_nodes"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_0492ee21c01c",
+    "machine_name": "empty_match_all_pairs",
+    "description": "Employs MATCH (),() to match all possible pairs of nodes in the graph, testing cartesian product behavior.",
+    "tags": [
+      "match",
+      "cartesian_product",
+      "empty_pattern"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_dc85fa38cc7b",
+    "machine_name": "single_node_return",
+    "description": "Return entire node object without projection or aliasing",
+    "tags": [
+      "return_clause",
+      "node_object",
+      "no_projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "feature_id": "ft_fb26b85a9232",
+    "machine_name": "query_pattern_distinct_match_optional_match_return",
+    "description": "该查询包含 OPTIONAL MATCH、MATCH、WITH、RETURN 子句，使用 OPTIONAL MATCH。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1573",
+    "source_query_id": "FalkorDB__FalkorDB__1573__q001"
+  },
+  {
+    "feature_id": "ft_3f44057b36c2",
+    "machine_name": "query_pattern_distinct_match_optional_match_order_by",
+    "description": "该查询包含 OPTIONAL MATCH、MATCH、RETURN、ORDER BY 子句，使用 OPTIONAL MATCH，带有排序逻辑，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1655",
+    "source_query_id": "FalkorDB__FalkorDB__1655__q002"
+  },
+  {
+    "feature_id": "ft_faf3031327fa",
+    "machine_name": "query_pattern_match_optional_match_order_by_return",
+    "description": "该查询包含 UNWIND、OPTIONAL MATCH、MATCH、RETURN、ORDER BY 子句，使用 OPTIONAL MATCH，带有排序逻辑。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "RedisGraph/RedisGraph#3205",
+    "source_query_id": "RedisGraph__RedisGraph__3205__q002"
+  },
+  {
+    "feature_id": "ft_2f9222782a43",
+    "machine_name": "query_pattern_distinct_match_order_by_return",
+    "description": "该查询包含 UNWIND、MATCH、RETURN、ORDER BY 子句，带有排序逻辑。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#13232",
+    "source_query_id": "neo4j__13232__q001"
+  },
+  {
+    "feature_id": "ft_67722bbaaa65",
+    "machine_name": "query_pattern_match_optional_match_return",
+    "description": "该查询包含 MATCH、OPTIONAL MATCH、MATCH、RETURN 子句，使用 OPTIONAL MATCH。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1281",
+    "source_query_id": "FalkorDB__FalkorDB__1281__q002"
+  },
+  {
+    "feature_id": "ft_7e8614743f59",
+    "machine_name": "query_pattern_distinct_match_return",
+    "description": "该查询包含 MATCH、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#285",
+    "source_query_id": "FalkorDB__FalkorDB__285__q002"
+  }
+]

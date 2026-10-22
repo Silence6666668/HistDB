@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_cbb27377bcb8",
+  "skeleton_text": "Match p = (b{id:'b'}) -[*]- (a{id:'a'}) RETURN p",
+  "source_id": "FalkorDB/FalkorDB#1183",
+  "source_query_id": "FalkorDB__FalkorDB__1183__q002",
+  "holes": []
+}

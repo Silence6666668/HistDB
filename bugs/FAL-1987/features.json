@@ -1,0 +1,88 @@
+[
+  {
+    "feature_id": "ft_e4edaf5adf16",
+    "machine_name": "return_multiple_expressions_with_aliases",
+    "description": "Returning multiple expressions including computed values and map projections, each with explicit aliases.",
+    "tags": [
+      "return",
+      "alias",
+      "multiple_expressions"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_35d0243eb2c4",
+    "machine_name": "node_creation_with_label_and_property",
+    "description": "Creates a single node with a label and a property using CREATE clause.",
+    "tags": [
+      "write",
+      "node_creation",
+      "label",
+      "property"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_50ae433f3275",
+    "machine_name": "combined_write_and_aggregation_workflow",
+    "description": "Full workflow: create nodes and relationships, then match and aggregate results in a single query",
+    "tags": [
+      "end_to_end",
+      "write_read",
+      "data_validation",
+      "workflow"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f1d3e596cd5e",
+    "machine_name": "multiple_match_clauses",
+    "description": "Two consecutive MATCH clauses without explicit relationship, testing clause chaining and variable scoping.",
+    "tags": [
+      "match",
+      "clause_chaining",
+      "variable_scope"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_656e9d69857d",
+    "machine_name": "implicit_null_handling_for_missing_relationships",
+    "description": "Potential null semantics when indegree() is called on nodes that have no incoming relationships of the specified type.",
+    "tags": [
+      "null_semantics",
+      "edge_case",
+      "function_behavior"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_cf7d520017a9",
+    "machine_name": "merge_complete_pattern",
+    "description": "MERGE clause with a full pattern including nodes and relationship, testing atomic creation of graph structures.",
+    "tags": [
+      "merge",
+      "pattern",
+      "atomic"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "feature_id": "ft_452a4f9148e6",
+    "machine_name": "multiple_write_clauses",
+    "description": "Multiple write clauses (MERGE, DELETE, CREATE) in a single query",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "RedisGraph/RedisGraph#3073",
+    "source_query_id": "RedisGraph__RedisGraph__3073__q001"
+  },
+  {
+    "feature_id": "ft_540121fd19f1",
+    "machine_name": "query_pattern_call_match_merge_return",
+    "description": "该查询包含 UNWIND、MATCH、WHERE、CALL、MERGE、RETURN 子句，属于写查询。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3256",
+    "source_query_id": "ArcadeData__arcadedb__3256__q001"
+  },
+  {
+    "feature_id": "ft_8cb46e17d56a",
+    "machine_name": "query_pattern_match_return_where_with",
+    "description": "该查询包含 MATCH、WITH、WHERE、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1316",
+    "source_query_id": "FalkorDB__FalkorDB__1316__q001"
+  },
+  {
+    "feature_id": "ft_ab882c93eb86",
+    "machine_name": "query_pattern_call_match_return_where",
+    "description": "该查询包含 CALL、MATCH、WHERE、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#182",
+    "source_query_id": "FalkorDB__FalkorDB__182__q001"
+  },
+  {
+    "feature_id": "ft_763e9fa9eb7a",
+    "machine_name": "query_pattern_match_merge_return_with",
+    "description": "该查询包含 MERGE、WITH、MATCH、RETURN 子句，属于写查询。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#733",
+    "source_query_id": "FalkorDB__FalkorDB__733__q001"
+  },
+  {
+    "feature_id": "ft_47ed078e7eb0",
+    "machine_name": "query_pattern_match_merge_return_set",
+    "description": "该查询包含 UNWIND、MATCH、WITH、MERGE、SET、RETURN 子句，属于写查询。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#988",
+    "source_query_id": "FalkorDB__FalkorDB__988__q002"
+  }
+]

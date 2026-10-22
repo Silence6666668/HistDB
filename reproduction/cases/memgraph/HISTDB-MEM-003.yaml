@@ -1,0 +1,45 @@
+schema_version: 1
+family_id: HISTDB-MEM-003
+title: A null list-comprehension predicate nullifies the whole result
+paper_set: fixed-version-50
+dbms: memgraph
+symptom: a missing property in one element produces null instead of filtering that element
+issue:
+  url: https://github.com/memgraph/memgraph/issues/4163
+  status: confirmed
+  report_path: issue_reports/submitted/memgraph/2026-5-17/memgraph_list_comprehension_filter_may_return_null_when_predicate_is_null_for_some_elements.md
+targets:
+  buggy:
+    id: memgraph-3.9.0
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - |-
+      CREATE (a:Person {name:'Alice'})-[:KNOWS]->(p:Person {name:'Charlie', age:35}),
+             (a)-[:LIKES]->(i:Item {name:'Widget'})
+  query: |-
+    MATCH (a:Person {name:'Alice'})-[:KNOWS]->(p:Person),
+          (a)-[:LIKES]->(i:Item)
+    RETURN [x IN [p, i] WHERE x.age > 25 | x.name] AS names
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: false
+  expected_buggy:
+    - {names: null}
+  expected_correct:
+    - {names: [Charlie]}
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: ArcadeData__arcadedb__3560__q003
+  case_id: case_9513cf9ab154
+  source_artifacts:
+    - issue_reports/submitted/memgraph/2026-5-17/memgraph_list_comprehension_filter_may_return_null_when_predicate_is_null_for_some_elements.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

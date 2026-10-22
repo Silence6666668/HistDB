@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_a5a78cc98d86",
+  "skeleton_text": "MATCH (HOLE_NODE) RETURN EXISTS((HOLE_NODE)<-[:HOLE_REL_TYPE]-(:HOLE_LABEL))",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#1248",
+  "holes": []
+}

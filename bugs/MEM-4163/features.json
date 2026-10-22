@@ -1,0 +1,146 @@
+[
+  {
+    "feature_id": "ft_2c39826b10b6",
+    "machine_name": "list_comprehension_with_concatenation",
+    "description": "Using list comprehension to transform property keys and values into concatenated strings, testing list operations and string manipulation.",
+    "tags": [
+      "list_comprehension",
+      "string_concatenation",
+      "transformation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_30792104ced7",
+    "machine_name": "anonymous_nodes_and_relationship",
+    "description": "Pattern matching with anonymous nodes and an anonymous relationship, focusing on structure without variable binding.",
+    "tags": [
+      "pattern",
+      "anonymous",
+      "binding"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_c689bbbcee0b",
+    "machine_name": "literal_property_values_in_merge",
+    "description": "Uses string and integer literals as property values within a MERGE pattern.",
+    "tags": [
+      "property_values",
+      "literals",
+      "merge"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_94b87ebc1e34",
+    "machine_name": "order_by_expression",
+    "description": "Order results by an expression involving a variable or alias.",
+    "tags": [
+      "order",
+      "expression",
+      "arithmetic"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d1ec2382f7a6",
+    "machine_name": "empty_list_foreach_skip",
+    "description": "FOREACH iterating over an empty list to skip execution of its inner operations",
+    "tags": [
+      "foreach",
+      "empty_list",
+      "skip_logic",
+      "control_flow"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a560eda73d16",
+    "machine_name": "node_id_lookup_by_constant",
+    "description": "Lookup node by ID using a constant value in WHERE clause",
+    "tags": [
+      "id_lookup",
+      "constant_predicate",
+      "node_filter"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_54ad43bceacd",
+    "machine_name": "variable_length_path_with_multiple_relationship_types",
+    "description": "Variable-length path traversal with multiple relationship types in a single pattern",
+    "tags": [
+      "path_pattern",
+      "relationship_types",
+      "variable_length"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_c9afe63ace9b",
+    "machine_name": "aggregate_count_over_filtered_nodes",
+    "description": "Performs COUNT aggregation on nodes filtered by label and predicate",
+    "tags": [
+      "aggregation",
+      "count",
+      "filtered_aggregation",
+      "node_count"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_509bfd1ef283",
+    "machine_name": "boolean_expression_return",
+    "description": "RETURN clause with a boolean expression combining conditions from WHERE, testing projection of predicate results.",
+    "tags": [
+      "return",
+      "boolean",
+      "expression",
+      "predicate_projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_4f6a4e8392c4",
+    "machine_name": "merge_with_complex_pattern",
+    "description": "MERGE with a 4-node pattern including self-reference, multiple relationship types, and node labels.",
+    "tags": [
+      "merge",
+      "pattern",
+      "self_reference",
+      "multiple_labels"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

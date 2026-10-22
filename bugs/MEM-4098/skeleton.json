@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_b8af8428cd3a",
+  "skeleton_text": "UNWIND $HOLE_ARRAY AS HOLE_VAR CREATE (:HOLE_LABEL HOLE_VAR)",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#126",
+  "holes": []
+}

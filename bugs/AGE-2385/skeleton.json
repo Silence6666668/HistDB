@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_9e6531d628da",
+  "skeleton_text": "MERGE (c:HOLE_LABEL {HOLE_PROPERTY_NAME: HOLE_PROPERTY_VALUE}) RETURN c.HOLE_RETURN_PROPERTY",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#1340",
+  "holes": []
+}

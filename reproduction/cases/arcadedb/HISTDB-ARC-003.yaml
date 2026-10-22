@@ -1,0 +1,46 @@
+schema_version: 1
+family_id: HISTDB-ARC-003
+title: CALL subquery reusing an outer variable name drops all rows
+paper_set: fixed-version-50
+dbms: arcadedb
+symptom: inner shadowing of p removes the outer Bob row and every subquery row
+issue:
+  url: https://github.com/ArcadeData/arcadedb/issues/3959
+  status: confirmed
+  report_path: issue_reports/submitted/arcadedb/old/arcadedb_call_subquery_reusing_outer_variable_name_may_drop_all_rows.md
+targets:
+  buggy: {id: arcadedb-26.4.1}
+  fixed: []
+observation: {reported_version: 26.4.1-SNAPSHOT, execution_target: "arcadedata/arcadedb:26.4.1"}
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Bob', age:30, role:'Employee'}), (:Person {name:'X', city:'Berlin'}), (:Person {name:'Y', city:'Paris'}), (:Person {name:'Z', city:'London'})"
+  query: |-
+    MATCH (p:Person {name:'Bob'})
+    CALL {
+      MATCH (p:Person)
+      WHERE p.city IS NOT NULL
+      RETURN p.city AS location
+    }
+    RETURN p.name AS outerName, location
+    ORDER BY location
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: true
+  expected_buggy: []
+  expected_correct:
+    - {outerName: Bob, location: Berlin}
+    - {outerName: Bob, location: London}
+    - {outerName: Bob, location: Paris}
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: null
+  case_id: null
+  source_artifacts:
+    - issue_reports/submitted/arcadedb/old/arcadedb_call_subquery_reusing_outer_variable_name_may_drop_all_rows.md
+  skeleton_ids: []
+  feature_ids: []
+

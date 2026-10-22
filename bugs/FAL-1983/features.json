@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_67783bb17e2a",
+    "machine_name": "schema_definition_without_existing_nodes",
+    "description": "Defines a schema element (index) without requiring existing nodes, which can test schema-only operations.",
+    "tags": [
+      "schema",
+      "index",
+      "no data",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_864551a8973b",
+    "machine_name": "return_source_node_with_limit",
+    "description": "Return the source node from a match with a limit of 1",
+    "tags": [
+      "return",
+      "limit",
+      "node",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_9da912cf9a1f",
+    "machine_name": "single_relationship_pattern",
+    "description": "Uses a single relationship pattern without variable assignment or additional constraints.",
+    "tags": [
+      "pattern",
+      "relationship_type",
+      "simple"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_c85ec1622329",
+    "machine_name": "match_all_nodes_after_writes",
+    "description": "MATCH (a) RETURN a to retrieve all nodes after write operations",
+    "tags": [
+      "match_all",
+      "return_all",
+      "post_write_read"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_2d16ea246238",
+    "machine_name": "unwind_range_as_alias",
+    "description": "Uses UNWIND to iterate over a range of integers, binding each value to an alias for use in subsequent clauses.",
+    "tags": [
+      "iteration",
+      "alias",
+      "range",
+      "unwind"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_4a4d8ccf0a94",
+    "machine_name": "yield_column_selection",
+    "description": "Selects a subset of columns from a procedure's output using YIELD, projecting only specified fields.",
+    "tags": [
+      "column_selection",
+      "projection",
+      "filtering"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

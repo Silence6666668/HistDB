@@ -1,0 +1,144 @@
+[
+  {
+    "feature_id": "ft_eca0acaf2e85",
+    "machine_name": "literal_property_values",
+    "description": "Property values are specified as literals (string and integer) directly in the property map.",
+    "tags": [
+      "properties",
+      "literals",
+      "string",
+      "integer"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_8268a4b26ae5",
+    "machine_name": "create_node_with_label",
+    "description": "Create a node with a specific label, in this case :Product.",
+    "tags": [
+      "write",
+      "node",
+      "label"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3baee8ebbe6d",
+    "machine_name": "return_anonymous_variable",
+    "description": "Return the matched anonymous variable directly without projection or aliasing.",
+    "tags": [
+      "return",
+      "anonymous",
+      "variable"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_6904e018da77",
+    "machine_name": "single_node_return",
+    "description": "Return a single node variable from a MATCH pattern",
+    "tags": [
+      "return",
+      "node",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f3ceee405593",
+    "machine_name": "directed_relationship_pattern",
+    "description": "Specifies a directed relationship in a match pattern",
+    "tags": [
+      "direction",
+      "pattern",
+      "relationship"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_8ddbc9dd898a",
+    "machine_name": "with_after_subquery",
+    "description": "Uses a WITH clause after a subquery to pass results to the main query, testing variable propagation and intermediate result handling.",
+    "tags": [
+      "with",
+      "subquery",
+      "variable_propagation",
+      "intermediate_result"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_cabcb2f64a61",
+    "machine_name": "variable_reuse_in_cycle",
+    "description": "Reuse of the same variable (p1) at both start and end of a pattern to enforce a closed cycle.",
+    "tags": [
+      "variable_reuse",
+      "cycle_enforcement",
+      "pattern_constraint"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_aff40a90b3b7",
+    "machine_name": "variable_reuse_across_statements",
+    "description": "Reuse the same variable name across different statements in a query.",
+    "tags": [
+      "variable_reuse",
+      "multi_statement"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_19232ec7d927",
+    "machine_name": "single_return_expression",
+    "description": "A query consisting solely of a RETURN clause with a single expression, testing minimal query structure.",
+    "tags": [
+      "return",
+      "expression",
+      "minimal",
+      "syntax"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_fb2754b82104",
+    "machine_name": "variable_assignment_in_create",
+    "description": "Assign variables to newly created nodes for potential later reference in the same query.",
+    "tags": [
+      "variable",
+      "binding",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "feature_id": "ft_5ee52e6508db",
+    "machine_name": "merge_with_property_creation",
+    "description": "MERGE clause creating a node with a property that may not exist, potentially leaving other properties null",
+    "tags": [
+      "write",
+      "merge",
+      "property",
+      "null_semantics"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7453e54f5f38",
+    "machine_name": "match_create_combination",
+    "description": "Combines a read-only MATCH clause with a write CREATE clause in the same query, testing transaction behavior and clause interaction.",
+    "tags": [
+      "write",
+      "clause_combination",
+      "transaction"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_6ee7d04c5b07",
+    "machine_name": "foreach_create_with_literal_list",
+    "description": "FOREACH iterates over a single-element literal list to create nodes with properties.",
+    "tags": [
+      "foreach",
+      "create",
+      "literal_list",
+      "single_iteration",
+      "property_assignment"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7610358c3a11",
+    "machine_name": "create_relationship_between_matched_nodes",
+    "description": "CREATE clause forming a directed relationship between previously matched nodes.",
+    "tags": [
+      "create",
+      "relationship",
+      "directed",
+      "type",
+      "matched_nodes"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d4ffa1ae776f",
+    "machine_name": "property_update_with_arithmetic",
+    "description": "Updates a node property by applying an arithmetic operation (addition) to its current value.",
+    "tags": [
+      "write",
+      "arithmetic",
+      "property_update",
+      "return_updated"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_de0c6b344632",
+    "machine_name": "duplicate_property_key",
+    "description": "Node creation with duplicate property keys in the same literal, testing property assignment semantics and conflict resolution.",
+    "tags": [
+      "write",
+      "property",
+      "duplicate",
+      "conflict"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

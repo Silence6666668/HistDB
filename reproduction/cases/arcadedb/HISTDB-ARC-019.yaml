@@ -1,0 +1,40 @@
+schema_version: 1
+family_id: HISTDB-ARC-019
+title: Node-label union pattern matches no rows
+paper_set: fixed-version-50
+dbms: arcadedb
+symptom: :Person|Company fails although both labels are populated
+issue:
+  url: https://github.com/ArcadeData/arcadedb/issues/4105
+  status: confirmed
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_node_label_union_pattern_may_match_no_rows.md
+targets:
+  buggy: {id: arcadedb-26.4.1}
+  fixed: []
+observation: {reported_version: 26.4.1-SNAPSHOT, execution_target: "arcadedata/arcadedb:26.4.1"}
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Alice'}), (:Company {name:'TechCorp'})"
+  query: |-
+    MATCH (n:Person|Company)
+    RETURN n.name AS name
+    ORDER BY name
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: true
+  expected_buggy: []
+  expected_correct:
+    - {name: Alice}
+    - {name: TechCorp}
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: FalkorDB__FalkorDB__1012__q002
+  case_id: case_aa53049aaad7
+  source_artifacts:
+    - issue_reports/submitted/arcadedb/2026-5-1/arcadedb_node_label_union_pattern_may_match_no_rows.md
+  skeleton_ids: []
+  feature_ids: []
+

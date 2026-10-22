@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_494f88c60cf4",
+  "skeleton_text": "MERGE (a:HOLE_LABEL_A {HOLE_PROP_A: HOLE_VALUE_A})<-[:HOLE_REL_TYPE]-(b:HOLE_LABEL_B {HOLE_PROP_B: HOLE_VALUE_B})<-[:HOLE_REL_TYPE]-(c:HOLE_LABEL_C {HOLE_PROP_C: HOLE_VALUE_C})",
+  "source_id": null,
+  "source_query_id": "ArcadeData/arcadedb#3326",
+  "holes": []
+}

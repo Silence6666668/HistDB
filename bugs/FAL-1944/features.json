@@ -1,0 +1,88 @@
+[
+  {
+    "feature_id": "ft_0c1ae1e85517",
+    "machine_name": "single_label_node_creation",
+    "description": "Creates nodes with a single label, testing basic label assignment.",
+    "tags": [
+      "write",
+      "node_creation",
+      "label"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3b00139d572a",
+    "machine_name": "multiple_label_filter",
+    "description": "Node matching with multiple labels in a single pattern",
+    "tags": [
+      "label",
+      "filter",
+      "node"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_649f847fc154",
+    "machine_name": "return_literal_after_conditional",
+    "description": "RETURN of a literal value (1) after a WHERE clause, testing projection behavior when no variables are selected.",
+    "tags": [
+      "return_literal",
+      "projection",
+      "no_variables"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_17aff1afac2b",
+    "machine_name": "limit_with_case_expression",
+    "description": "Using a CASE expression to dynamically set the LIMIT clause value, which tests evaluation of conditional logic in a non-standard clause position.",
+    "tags": [
+      "limit",
+      "case_expression",
+      "dynamic_limit",
+      "conditional_logic"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_b673872c8f86",
+    "machine_name": "node_label_single",
+    "description": "Assign a single label to a created node.",
+    "tags": [
+      "label",
+      "node_creation",
+      "schema"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f2c8951af1c7",
+    "machine_name": "label_filter_with_relationship",
+    "description": "Match nodes with specific labels and relationship type, filtering by label in pattern",
+    "tags": [
+      "match",
+      "label",
+      "relationship",
+      "direction"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

@@ -1,0 +1,15 @@
+fixed_version_families:
+  neo4j: 3
+  memgraph: 13
+  falkordb: 11
+  arcadedb: 20
+  apache_age: 3
+  total: 50
+
+retained_reports:
+  neo4j: 14
+  memgraph: 26
+  falkordb: 40
+  arcadedb: 53
+  apache_age: 15
+  total: 148

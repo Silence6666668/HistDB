@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_2425264a6cea",
+  "skeleton_text": "MATCH (a)-[b:RATED]->(c) RETURN count(b) SKIP 1;",
+  "source_id": "neo4j#12996",
+  "source_query_id": "neo4j__12996__q003",
+  "holes": []
+}

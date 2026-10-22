@@ -1,0 +1,86 @@
+[
+  {
+    "feature_id": "ft_21997280c937",
+    "machine_name": "collect_aggregation",
+    "description": "Aggregate all matched nodes into a list using collect()",
+    "tags": [
+      "aggregation",
+      "collect",
+      "list"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a9a40a45ef07",
+    "machine_name": "return_all_entities",
+    "description": "RETURN all matched/created nodes and relationships",
+    "tags": [
+      "return",
+      "entities"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_572b274f6fa6",
+    "machine_name": "list_membership_predicate",
+    "description": "Filter nodes by checking if a specific integer value is present in a node property list using the IN operator.",
+    "tags": [
+      "predicate",
+      "list_operation",
+      "property_access"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_99a56472c43e",
+    "machine_name": "aliased_return",
+    "description": "Return relationship and node with explicit aliases in projection",
+    "tags": [
+      "return",
+      "alias",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3cffe0d184a8",
+    "machine_name": "variable_reuse_across_labels",
+    "description": "A variable bound to a node with one label in a MATCH clause is reused in a subsequent MATCH clause with a different label, testing label intersection or overwriting behavior.",
+    "tags": [
+      "variable_reuse",
+      "label_semantics",
+      "node_binding"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_9aaf31ab67d2",
+    "machine_name": "literal_string_properties",
+    "description": "Uses literal string values for node properties in a write operation.",
+    "tags": [
+      "properties",
+      "literals",
+      "strings",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

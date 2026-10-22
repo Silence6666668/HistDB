@@ -1,0 +1,12 @@
+[
+  {
+    "feature_id": "ft_be84beee01bb",
+    "machine_name": "query_pattern_return_where",
+    "description": "该查询包含 RETURN、WHERE 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#13432",
+    "source_query_id": "q_000427"
+  }
+]

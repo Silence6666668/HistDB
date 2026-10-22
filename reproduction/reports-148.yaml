@@ -1,0 +1,1333 @@
+reports:
+- report_id: AGE-2378
+  dbms: apache_age
+  issue_url: https://github.com/apache/age/issues/2378
+  report_path: reproduction/report_snapshots/apache_age/2378.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: AGE-2382
+  dbms: apache_age
+  issue_url: https://github.com/apache/age/issues/2382
+  report_path: reproduction/report_snapshots/apache_age/2382.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: AGE-2383
+  dbms: apache_age
+  issue_url: https://github.com/apache/age/issues/2383
+  report_path: issue_reports/submitted/age/old/age_unwind_null_count_counts_null_as_one.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-AGE-001
+  reproduction_scope: paper_fixed_version
+- report_id: AGE-2384
+  dbms: apache_age
+  issue_url: https://github.com/apache/age/issues/2384
+  report_path: issue_reports/submitted/age/old/age_tail_returns_null_for_empty_or_singleton_list.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-AGE-002
+  reproduction_scope: paper_fixed_version
+- report_id: AGE-2385
+  dbms: apache_age
+  issue_url: https://github.com/apache/age/issues/2385
+  report_path: issue_reports/submitted/age/old/age_sum_aggregate_mishandles_null_inputs.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: AGE-2386
+  dbms: apache_age
+  issue_url: https://github.com/apache/age/issues/2386
+  report_path: reproduction/report_snapshots/apache_age/2386.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: AGE-2388
+  dbms: apache_age
+  issue_url: https://github.com/apache/age/issues/2388
+  report_path: reproduction/report_snapshots/apache_age/2388.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: AGE-2389
+  dbms: apache_age
+  issue_url: https://github.com/apache/age/issues/2389
+  report_path: reproduction/report_snapshots/apache_age/2389.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: AGE-2390
+  dbms: apache_age
+  issue_url: https://github.com/apache/age/issues/2390
+  report_path: issue_reports/submitted/age/old/age_match_cannot_see_nodes_created_earlier_in_same_query_after_with.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: AGE-2391
+  dbms: apache_age
+  issue_url: https://github.com/apache/age/issues/2391
+  report_path: issue_reports/submitted/age/old/age_map_literal_drops_null_valued_keys.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-AGE-003
+  reproduction_scope: paper_fixed_version
+- report_id: AGE-2392
+  dbms: apache_age
+  issue_url: https://github.com/apache/age/issues/2392
+  report_path: reproduction/report_snapshots/apache_age/2392.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: AGE-2393
+  dbms: apache_age
+  issue_url: https://github.com/apache/age/issues/2393
+  report_path: issue_reports/submitted/age/old/age_list_comprehension_where_filter_mishandles_null_elements.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: AGE-2394
+  dbms: apache_age
+  issue_url: https://github.com/apache/age/issues/2394
+  report_path: issue_reports/submitted/age/old/age_list_comprehension_projection_on_null_element_produces_nested_list.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: AGE-2395
+  dbms: apache_age
+  issue_url: https://github.com/apache/age/issues/2395
+  report_path: issue_reports/submitted/age/old/age_list_comprehension_over_collected_nodes_cannot_access_properties.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: AGE-2396
+  dbms: apache_age
+  issue_url: https://github.com/apache/age/issues/2396
+  report_path: reproduction/report_snapshots/apache_age/2396.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-3888
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/3888
+  report_path: reproduction/report_snapshots/arcadedb/3888.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-3938
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/3938
+  report_path: reproduction/report_snapshots/arcadedb/3938.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-3944
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/3944
+  report_path: reproduction/report_snapshots/arcadedb/3944.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-3950
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/3950
+  report_path: issue_reports/submitted/arcadedb/old/arcadedb_standalone_order_by_limit_before_match_may_ignore_selected_row.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-3951
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/3951
+  report_path: reproduction/report_snapshots/arcadedb/3951.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-3952
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/3952
+  report_path: reproduction/report_snapshots/arcadedb/3952.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-3956
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/3956
+  report_path: reproduction/report_snapshots/arcadedb/3956.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-3957
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/3957
+  report_path: reproduction/report_snapshots/arcadedb/3957.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-3959
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/3959
+  report_path: issue_reports/submitted/arcadedb/old/arcadedb_call_subquery_reusing_outer_variable_name_may_drop_all_rows.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-003
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-3996
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/3996
+  report_path: reproduction/report_snapshots/arcadedb/3996.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-3997
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/3997
+  report_path: issue_reports/submitted/arcadedb/2026-4-24/arcadedb_collected_relationship_list_may_drop_rows_after_later_variable_length_match.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-004
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-3998
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/3998
+  report_path: issue_reports/submitted/arcadedb/2026-4-24/arcadedb_merge_with_unbound_label_only_endpoint_may_reuse_existing_node.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-005
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-3999
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/3999
+  report_path: issue_reports/submitted/arcadedb/2026-4-24/arcadedb_relationship_variable_may_be_lost_after_later_variable_length_match.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-006
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4000
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4000
+  report_path: issue_reports/submitted/arcadedb/2026-4-24/arcadedb_set_may_leave_other_aliases_to_same_node_stale.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-007
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4014
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4014
+  report_path: issue_reports/submitted/arcadedb/2026-4-25/arcadedb_correlated_collect_subquery_with_outer_variable_access_may_evaluate_as_empty_list.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4015
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4015
+  report_path: issue_reports/submitted/arcadedb/2026-4-25/arcadedb_correlated_count_subquery_with_outer_variable_access_may_evaluate_as_zero.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-002
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4016
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4016
+  report_path: issue_reports/submitted/arcadedb/2026-4-25/arcadedb_repeated_self_referential_property_update_across_row_fanout_may_apply_only_last_row.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-008
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4017
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4017
+  report_path: issue_reports/submitted/arcadedb/2026-4-25/arcadedb_repeated_set_label_on_same_node_across_row_fanout_may_fail.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4018
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4018
+  report_path: issue_reports/submitted/arcadedb/2026-4-25/arcadedb_temporal_component_access_may_return_null.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-010
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4019
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4019
+  report_path: issue_reports/submitted/arcadedb/2026-4-25/arcadedb_with_carried_node_variable_may_become_null_after_create_or_merge.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-011
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4043
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4043
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_allreduce_may_evaluate_true_cases_as_false.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4092
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4092
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_anonymous_middle_node_in_linear_pattern_may_match_no_rows.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-012
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4093
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4093
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_backslash_in_string_literal_or_property_value_may_be_dropped.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4094
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4094
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_call_db_labels_may_nullify_carried_variables.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-013
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4095
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4095
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_consecutive_directed_relationship_patterns_may_reuse_same_relationship.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-014
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4096
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4096
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_consecutive_undirected_relationship_patterns_may_reuse_same_relationship.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-015
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4097
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4097
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_exists_subquery_returning_outer_variable_expression_may_evaluate_as_false.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-016
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4099
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4099
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_list_literal_containing_duration_may_drop_all_rows.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-017
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4100
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4100
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_list_subscript_with_inline_aggregate_index_may_return_null.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-009
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4101
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4101
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_match_immediately_after_create_may_not_see_newly_created_labeled_nodes.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-018
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4102
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4102
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_match_on_null_carried_variable_may_keep_row_instead_of_filtering.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4103
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4103
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_merge_on_match_set_may_return_pre_update_property_in_first_row.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4104
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4104
+  report_path: reproduction/report_snapshots/arcadedb/4104.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4105
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4105
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_node_label_union_pattern_may_match_no_rows.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-019
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4106
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4106
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_pattern_comprehension_over_existing_relationships_may_evaluate_as_empty_list.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-020
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4107
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4107
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_reduce_over_inline_aggregate_expression_may_be_evaluated_incorrectly.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4108
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4108
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_relationship_type_predicate_on_bound_relationship_variable_may_evaluate_as_false.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4109
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4109
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_repeated_relationship_variable_in_where_pattern_may_match_rows_instead_of_none.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4110
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4110
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_uncorrelated_pattern_predicate_may_evaluate_as_false_even_when_relationships_exist.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4111
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4111
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_variable_length_pattern_comprehension_may_duplicate_results.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4112
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4112
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_where_false_literal_predicate_may_be_ignored.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-ARC-001
+  reproduction_scope: paper_fixed_version
+- report_id: ARC-4182
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4182
+  report_path: issue_reports/submitted/arcadedb/2026-5-7/arcadedb_call_subquery_set_may_leave_outer_variable_stale.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4183
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4183
+  report_path: issue_reports/submitted/arcadedb/2026-5-7/arcadedb_id_function_may_return_record_id_strings_and_break_numeric_predicates.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4184
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4184
+  report_path: issue_reports/submitted/arcadedb/2026-5-7/arcadedb_map_projection_with_function_call_field_may_return_only_function_result.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4185
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4185
+  report_path: issue_reports/submitted/arcadedb/2026-5-7/arcadedb_nodes_deleted_earlier_in_same_query_may_still_match_later.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4186
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4186
+  report_path: issue_reports/submitted/arcadedb/2026-5-7/arcadedb_reduce_over_null_list_may_return_initial_accumulator_instead_of_null.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4188
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4188
+  report_path: issue_reports/submitted/arcadedb/2026-5-7/arcadedb_relationship_pattern_with_variable_property_constrained_endpoint_may_match_no_rows.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4189
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4189
+  report_path: issue_reports/submitted/arcadedb/2026-5-7/arcadedb_return_distinct_star_may_collapse_multiple_rows_into_one.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4190
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4190
+  report_path: issue_reports/submitted/arcadedb/2026-5-7/arcadedb_shortest_path_with_variable_length_relationship_type_alternation_may_match_no_rows.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4191
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4191
+  report_path: issue_reports/submitted/arcadedb/2026-5-7/arcadedb_write_only_call_subquery_may_return_one_empty_row.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4211
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4211
+  report_path: issue_reports/submitted/arcadedb/2026-5-12/arcadedb_node_label_disjunction_pattern_may_match_no_rows.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4213
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4213
+  report_path: issue_reports/submitted/arcadedb/2026-5-12/arcadedb_relationship_write_after_optional_match_with_null_endpoint_may_emit_rows_or_rebind_endpoint.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: ARC-4305
+  dbms: arcadedb
+  issue_url: https://github.com/ArcadeData/arcadedb/issues/4305
+  report_path: reproduction/report_snapshots/arcadedb/4305.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1845
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1845
+  report_path: reproduction/report_snapshots/falkordb/1845.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-FAL-002
+  reproduction_scope: paper_fixed_version
+- report_id: FAL-1846
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1846
+  report_path: issue_reports/submitted/falkordb/old/falkordb_call_subquery_merge_may_drop_rows.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-FAL-003
+  reproduction_scope: paper_fixed_version
+- report_id: FAL-1848
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1848
+  report_path: issue_reports/submitted/falkordb/old/falkordb_count_may_undercount_parallel_edges_of_different_types.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-FAL-001
+  reproduction_scope: paper_fixed_version
+- report_id: FAL-1849
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1849
+  report_path: issue_reports/submitted/falkordb/old/falkordb_merge_relationship_to_node_pattern_from_subquery_alias.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-FAL-004
+  reproduction_scope: paper_fixed_version
+- report_id: FAL-1943
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1943
+  report_path: reproduction/report_snapshots/falkordb/1943.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1944
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1944
+  report_path: issue_reports/submitted/falkordb/2026-4-29/falkordb_converging_pattern_may_reuse_same_relationship_twice.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1945
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1945
+  report_path: issue_reports/submitted/falkordb/2026-4-29/falkordb_created_relationship_may_be_invisible_to_later_match_in_same_query.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-FAL-008
+  reproduction_scope: paper_fixed_version
+- report_id: FAL-1946
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1946
+  report_path: issue_reports/submitted/falkordb/2026-4-29/falkordb_deleted_node_value_may_retain_pre_delete_properties.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1947
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1947
+  report_path: issue_reports/submitted/falkordb/2026-4-29/falkordb_directed_varlength_cycle_path_back_to_start_may_return_nodes_in_impossible_order.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1948
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1948
+  report_path: issue_reports/submitted/falkordb/2026-4-29/falkordb_grouped_aggregation_may_collapse_parallel_relationships_between_same_endpoints.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1949
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1949
+  report_path: issue_reports/submitted/falkordb/2026-4-29/falkordb_match_on_multiple_carried_variables_after_with_crashes_server.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1951
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1951
+  report_path: issue_reports/submitted/falkordb/2026-4-29/falkordb_optional_match_after_prior_traversal_may_duplicate_rows.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1952
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1952
+  report_path: reproduction/report_snapshots/falkordb/1952.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1953
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1953
+  report_path: issue_reports/submitted/falkordb/2026-4-29/falkordb_pattern_comprehension_may_drop_null_projection_elements.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1954
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1954
+  report_path: issue_reports/submitted/falkordb/2026-4-29/falkordb_pattern_exists_on_isolated_or_unrelated_node_may_return_true.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1955
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1955
+  report_path: issue_reports/submitted/falkordb/2026-4-29/falkordb_relationship_merge_after_batched_create_may_drop_all_rows.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1956
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1956
+  report_path: issue_reports/submitted/falkordb/2026-4-29/falkordb_relationship_merge_may_collapse_repeated_upstream_rows.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1957
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1957
+  report_path: issue_reports/submitted/falkordb/2026-4-29/falkordb_unbounded_undirected_varlength_pattern_may_undercount_paths_in_cyclic_graph.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1958
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1958
+  report_path: issue_reports/submitted/falkordb/2026-4-29/falkordb_union_may_fail_to_deduplicate_identical_rows_after_relationship_write.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1959
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1959
+  report_path: issue_reports/submitted/falkordb/2026-4-29/falkordb_variable_length_path_may_ignore_self_loop_contributed_paths.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-FAL-006
+  reproduction_scope: paper_fixed_version
+- report_id: FAL-1981
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1981
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_optional_match_on_two_bound_variables_may_crash_server.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1982
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1982
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_repeated_relationship_variable_in_post_with_pattern_predicate_may_crash_server.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1983
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1983
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_xor_with_anonymous_pattern_predicate_may_crash_server.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-1987
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1987
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_all_list_predicate_on_carried_variable_after_with_may_filter_matching_rows.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-FAL-009
+  reproduction_scope: paper_fixed_version
+- report_id: FAL-1997
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/1997
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_anonymous_pattern_predicate_after_with_may_fail_with_filtered_alias_errors.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-FAL-011
+  reproduction_scope: paper_fixed_version
+- report_id: FAL-2000
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/2000
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_carried_relationship_variable_may_lose_identity_in_later_match.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-2001
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/2001
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_duration_ordering_comparisons_may_return_boolean_instead_of_null.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-2002
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/2002
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_later_pattern_comprehension_in_same_return_clause_may_evaluate_as_empty.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-2003
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/2003
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_list_comprehension_over_collect_may_return_null_when_expression_uses_outer_variable.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-2004
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/2004
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_match_on_multiple_carried_variables_with_where_may_fail_filtered_alias.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-FAL-007
+  reproduction_scope: paper_fixed_version
+- report_id: FAL-2006
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/2006
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_nested_pattern_comprehension_inside_list_comprehension_may_ignore_outer_variable.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-2007
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/2007
+  report_path: issue_reports/submitted/falkordb/2026-5-7/falkordb_anonymous_undirected_relationship_pattern_may_collapse_parallel_edges_between_same_endpoints.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-2008
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/2008
+  report_path: issue_reports/submitted/falkordb/2026-5-7/falkordb_later_assignment_to_same_property_may_ignore_earlier_update_across_variables.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-2009
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/2009
+  report_path: issue_reports/submitted/falkordb/2026-5-7/falkordb_later_union_branches_may_not_see_nodes_created_before_union.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-FAL-005
+  reproduction_scope: paper_fixed_version
+- report_id: FAL-2010
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/2010
+  report_path: issue_reports/submitted/falkordb/2026-5-7/falkordb_top_level_optional_match_null_row_may_survive_later_where_filter.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-2027
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/2027
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_unwind_over_pattern_comprehension_may_fail_with_internal_alias_resolution_error.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-2028
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/2028
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_pattern_comprehension_in_where_may_fail_with_filtered_alias.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-FAL-010
+  reproduction_scope: paper_fixed_version
+- report_id: FAL-2030
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/2030
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_order_by_length_of_path_after_projecting_path_contents_may_raise_internal_alias_error.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-2066
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/2066
+  report_path: reproduction/report_snapshots/falkordb/2066.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: FAL-2196
+  dbms: falkordb
+  issue_url: https://github.com/FalkorDB/FalkorDB/issues/2196
+  report_path: reproduction/report_snapshots/falkordb/2196.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: MEM-3909
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/3909
+  report_path: reproduction/report_snapshots/memgraph/3909.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: MEM-3915
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/3915
+  report_path: reproduction/report_snapshots/memgraph/3915.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: MEM-3955
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/3955
+  report_path: reproduction/report_snapshots/memgraph/3955.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: MEM-3970
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/3970
+  report_path: reproduction/report_snapshots/memgraph/3970.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: MEM-3976
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/3976
+  report_path: issue_reports/submitted/memgraph/old/memgraph_order_by_projected_property_bug.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-MEM-007
+  reproduction_scope: paper_fixed_version
+- report_id: MEM-4007
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4007
+  report_path: reproduction/report_snapshots/memgraph/4007.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: MEM-4067
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4067
+  report_path: issue_reports/submitted/memgraph/2026-4-23/memgraph_union_all_limited_read_branch_followed_by_matched_write_hangs_candidate.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-MEM-008
+  reproduction_scope: paper_fixed_version
+- report_id: MEM-4068
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4068
+  report_path: reproduction/report_snapshots/memgraph/4068.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: MEM-4069
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4069
+  report_path: issue_reports/submitted/memgraph/2026-4-23/memgraph_list_comprehension_on_null_optional_relationship_properties_filters_out_rows.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: MEM-4070
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4070
+  report_path: issue_reports/submitted/memgraph/2026-4-23/memgraph_correlated_exists_in_where_may_trigger_internal_error_candidate.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: MEM-4084
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4084
+  report_path: reproduction/report_snapshots/memgraph/4084.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: MEM-4085
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4085
+  report_path: reproduction/report_snapshots/memgraph/4085.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: MEM-4086
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4086
+  report_path: reproduction/report_snapshots/memgraph/4086.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: MEM-4098
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4098
+  report_path: issue_reports/submitted/memgraph/2026-4-30/memgraph_later_union_branch_may_not_see_nodes_created_in_earlier_branch.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-MEM-002
+  reproduction_scope: paper_fixed_version
+- report_id: MEM-4099
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4099
+  report_path: issue_reports/submitted/memgraph/2026-4-30/memgraph_nested_pattern_comprehension_inside_outer_list_comprehension_may_duplicate_matches.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-MEM-012
+  reproduction_scope: paper_fixed_version
+- report_id: MEM-4100
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4100
+  report_path: issue_reports/submitted/memgraph/2026-4-30/memgraph_undirected_relationship_type_alternation_may_double_count_rows.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-MEM-013
+  reproduction_scope: paper_fixed_version
+- report_id: MEM-4123
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4123
+  report_path: issue_reports/submitted/memgraph/2026-5-7/memgraph_in_predicate_with_duplicate_string_literals_may_duplicate_matching_rows.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-MEM-001
+  reproduction_scope: paper_fixed_version
+- report_id: MEM-4124
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4124
+  report_path: issue_reports/submitted/memgraph/2026-5-7/memgraph_later_union_all_branch_may_not_see_relationships_created_in_earlier_branch.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-MEM-010
+  reproduction_scope: paper_fixed_version
+- report_id: MEM-4134
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4134
+  report_path: issue_reports/submitted/memgraph/2026-5-12/memgraph_pattern_comprehension_may_ignore_relationship_created_earlier_in_same_clause.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-MEM-011
+  reproduction_scope: paper_fixed_version
+- report_id: MEM-4159
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4159
+  report_path: issue_reports/submitted/memgraph/2026-5-17/memgraph_aggregate_plus_scalar_subexpression_over_empty_input_may_return_no_rows.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-MEM-009
+  reproduction_scope: paper_fixed_version
+- report_id: MEM-4160
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4160
+  report_path: issue_reports/submitted/memgraph/2026-5-17/memgraph_deprecated_call_write_subquery_may_nullify_outer_variable.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-MEM-004
+  reproduction_scope: paper_fixed_version
+- report_id: MEM-4161
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4161
+  report_path: issue_reports/submitted/memgraph/2026-5-17/memgraph_inline_size_of_pattern_comprehension_filter_after_with_may_ignore_correlation.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-MEM-005
+  reproduction_scope: paper_fixed_version
+- report_id: MEM-4162
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4162
+  report_path: issue_reports/submitted/memgraph/2026-5-17/memgraph_label_only_merge_binding_may_expand_after_later_same_label_merge.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-MEM-006
+  reproduction_scope: paper_fixed_version
+- report_id: MEM-4163
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4163
+  report_path: issue_reports/submitted/memgraph/2026-5-17/memgraph_list_comprehension_filter_may_return_null_when_predicate_is_null_for_some_elements.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-MEM-003
+  reproduction_scope: paper_fixed_version
+- report_id: MEM-4166
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4166
+  report_path: issue_reports/submitted/memgraph/2026-5-17/memgraph_tointeger_large_positive_float_may_wrap_to_int64_min.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: MEM-4180
+  dbms: memgraph
+  issue_url: https://github.com/memgraph/memgraph/issues/4180
+  report_path: reproduction/report_snapshots/memgraph/4180.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: NEO-13758
+  dbms: neo4j
+  issue_url: https://github.com/neo4j/neo4j/issues/13758
+  report_path: reproduction/report_snapshots/neo4j/13758.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: NEO-13810
+  dbms: neo4j
+  issue_url: https://github.com/neo4j/neo4j/issues/13810
+  report_path: reproduction/report_snapshots/neo4j/13810.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-NEO-001
+  reproduction_scope: paper_fixed_version
+- report_id: NEO-13811
+  dbms: neo4j
+  issue_url: https://github.com/neo4j/neo4j/issues/13811
+  report_path: reproduction/report_snapshots/neo4j/13811.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: NEO-13812
+  dbms: neo4j
+  issue_url: https://github.com/neo4j/neo4j/issues/13812
+  report_path: reproduction/report_snapshots/neo4j/13812.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: NEO-13818
+  dbms: neo4j
+  issue_url: https://github.com/neo4j/neo4j/issues/13818
+  report_path: reproduction/report_snapshots/neo4j/13818.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: NEO-13819
+  dbms: neo4j
+  issue_url: https://github.com/neo4j/neo4j/issues/13819
+  report_path: reproduction/report_snapshots/neo4j/13819.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: NEO-13825
+  dbms: neo4j
+  issue_url: https://github.com/neo4j/neo4j/issues/13825
+  report_path: reproduction/report_snapshots/neo4j/13825.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: NEO-13826
+  dbms: neo4j
+  issue_url: https://github.com/neo4j/neo4j/issues/13826
+  report_path: reproduction/report_snapshots/neo4j/13826.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: NEO-13827
+  dbms: neo4j
+  issue_url: https://github.com/neo4j/neo4j/issues/13827
+  report_path: reproduction/report_snapshots/neo4j/13827.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-NEO-002
+  reproduction_scope: paper_fixed_version
+- report_id: NEO-13856
+  dbms: neo4j
+  issue_url: https://github.com/neo4j/neo4j/issues/13856
+  report_path: reproduction/report_snapshots/neo4j/13856.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: NEO-13859
+  dbms: neo4j
+  issue_url: https://github.com/neo4j/neo4j/issues/13859
+  report_path: reproduction/report_snapshots/neo4j/13859.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids:
+  - HISTDB-NEO-003
+  reproduction_scope: paper_fixed_version
+- report_id: NEO-13860
+  dbms: neo4j
+  issue_url: https://github.com/neo4j/neo4j/issues/13860
+  report_path: reproduction/report_snapshots/neo4j/13860.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: NEO-13861
+  dbms: neo4j
+  issue_url: https://github.com/neo4j/neo4j/issues/13861
+  report_path: reproduction/report_snapshots/neo4j/13861.md
+  maintainer_status: not_confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12
+- report_id: NEO-13862
+  dbms: neo4j
+  issue_url: https://github.com/neo4j/neo4j/issues/13862
+  report_path: reproduction/report_snapshots/neo4j/13862.md
+  maintainer_status: confirmed
+  fix_status: fixed
+  family_ids: []
+  reproduction_scope: index_only
+  reason: Awaiting fixed-version family reconciliation in Tasks 8-12

@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_1ac982340c92",
+  "skeleton_text": "MATCH (a:HOLE_LABEL1) WHERE single(b IN [(a)-->(b:HOLE_LABEL2) | 1] WHERE true) RETURN a",
+  "source_id": "memgraph/memgraph#2505",
+  "source_query_id": "memgraph__memgraph__2505__q001",
+  "holes": []
+}

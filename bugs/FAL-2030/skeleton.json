@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_7697fbd0ec2b",
+  "skeleton_text": "MATCH (s:HOLE_LABEL{name:HOLE_VALUE}), (t:HOLE_LABEL{name:HOLE_VALUE}) WITH s,t MATCH p = (s)-[*HOLE_NUMBER]->(t) RETURN [x in nodes(p) | x.HOLE_PROPERTY]",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#367",
+  "holes": []
+}

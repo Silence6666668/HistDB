@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_0ca5ad0ee3cc",
+  "skeleton_text": "CYPHER n = 'Alice'; RETURN n.name",
+  "source_id": "RedisGraph/RedisGraph#1078",
+  "source_query_id": "RedisGraph__RedisGraph__1078__q001",
+  "holes": []
+}

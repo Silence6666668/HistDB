@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_1be2d25adfd7",
+    "machine_name": "parameter_usage_in_arithmetic",
+    "description": "Using a Cypher parameter in a basic arithmetic expression with addition.",
+    "tags": [
+      "parameter",
+      "arithmetic",
+      "return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_de45859ed1a2",
+    "machine_name": "subquery_with_array_aggregation",
+    "description": "Subquery using WITH clause to pass an array containing a COUNT aggregation result as a variable",
+    "tags": [
+      "subquery",
+      "aggregation",
+      "array",
+      "WITH"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_afe1b291fe5b",
+    "machine_name": "return_created_node",
+    "description": "Returns the newly created node immediately after creation in the same query.",
+    "tags": [
+      "write",
+      "return",
+      "node",
+      "immediate"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_96393d01242b",
+    "machine_name": "empty_relationship_pattern",
+    "description": "Uses an unspecified relationship type and direction in a pattern for existence checking.",
+    "tags": [
+      "wildcard_relationship",
+      "direction",
+      "pattern"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_bc8d7804cd9c",
+    "machine_name": "basic_directed_edge_with_property_filter",
+    "description": "Match a directed edge between two nodes with specific property values using WHERE clause",
+    "tags": [
+      "match",
+      "where",
+      "property_filter",
+      "directed_edge"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d10eb7e3c9fb",
+    "machine_name": "relationship_type_filter_in_comprehension",
+    "description": "Filtering relationships by type within a list comprehension (type(r) = \"CAPTURES\")",
+    "tags": [
+      "relationship_filter",
+      "type_check",
+      "list_comprehension"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

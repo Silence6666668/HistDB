@@ -1,0 +1,62 @@
+[
+  {
+    "feature_id": "ft_602a2e738f2f",
+    "machine_name": "query_pattern_match_optional_match_return_with",
+    "description": "该查询包含 MATCH、OPTIONAL MATCH、MATCH、WITH、RETURN 子句，使用 OPTIONAL MATCH。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3761",
+    "source_query_id": "ArcadeData__arcadedb__3761__q002"
+  },
+  {
+    "feature_id": "ft_78e3a647df36",
+    "machine_name": "query_pattern_call_match_optional_match_return",
+    "description": "该查询包含 OPTIONAL MATCH、MATCH、CALL、WITH、WHERE、OPTIONAL MATCH、MATCH、CALL、WITH、WHERE、RETURN、UNION、WITH、WHERE、RETURN 子句，使用 OPTIONAL MATCH，包含子查询。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12797",
+    "source_query_id": "neo4j__12797__q001"
+  },
+  {
+    "feature_id": "ft_4e3f94f47f49",
+    "machine_name": "query_pattern_match_return_with",
+    "description": "该查询包含 MATCH、WITH、MATCH、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1033",
+    "source_query_id": "FalkorDB__FalkorDB__1033__q002"
+  },
+  {
+    "feature_id": "ft_67722bbaaa65",
+    "machine_name": "query_pattern_match_optional_match_return",
+    "description": "该查询包含 MATCH、OPTIONAL MATCH、MATCH、RETURN 子句，使用 OPTIONAL MATCH。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1281",
+    "source_query_id": "FalkorDB__FalkorDB__1281__q002"
+  },
+  {
+    "feature_id": "ft_9b826218f676",
+    "machine_name": "query_pattern_call_return_with",
+    "description": "该查询包含 WITH、CALL、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#174",
+    "source_query_id": "FalkorDB__FalkorDB__174__q001"
+  },
+  {
+    "feature_id": "ft_2e380d1aa280",
+    "machine_name": "query_pattern_call_match_return",
+    "description": "该查询包含 MATCH、CALL、MATCH、CALL、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "RedisGraph/RedisGraph#1676",
+    "source_query_id": "RedisGraph__RedisGraph__1676__q002"
+  }
+]

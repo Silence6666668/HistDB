@@ -1,0 +1,62 @@
+[
+  {
+    "feature_id": "ft_f45f4f428f56",
+    "machine_name": "query_pattern_match_path_pattern_return_with",
+    "description": "该查询包含 MATCH、WITH、MATCH、RETURN 子句，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#127",
+    "source_query_id": "FalkorDB__FalkorDB__127__q002"
+  },
+  {
+    "feature_id": "ft_243f69798746",
+    "machine_name": "query_pattern_call_match_path_pattern_return",
+    "description": "该查询包含 CALL、MATCH、WHERE、RETURN 子句，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#525",
+    "source_query_id": "FalkorDB__FalkorDB__525__q001"
+  },
+  {
+    "feature_id": "ft_5b9833a789e0",
+    "machine_name": "query_pattern_match_pagination_path_pattern_return",
+    "description": "该查询包含 MATCH、WHERE、SET、RETURN、SKIP 子句，带有分页控制，属于写查询，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "RedisGraph/RedisGraph#2836",
+    "source_query_id": "RedisGraph__RedisGraph__2836__q002"
+  },
+  {
+    "feature_id": "ft_be4916535a24",
+    "machine_name": "query_pattern_match_path_pattern_return",
+    "description": "该查询包含 MATCH、RETURN 子句，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3285",
+    "source_query_id": "ArcadeData__arcadedb__3285__q003"
+  },
+  {
+    "feature_id": "ft_4e3f94f47f49",
+    "machine_name": "query_pattern_match_return_with",
+    "description": "该查询包含 MATCH、WITH、MATCH、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1033",
+    "source_query_id": "FalkorDB__FalkorDB__1033__q002"
+  },
+  {
+    "feature_id": "ft_9b826218f676",
+    "machine_name": "query_pattern_call_return_with",
+    "description": "该查询包含 WITH、CALL、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#174",
+    "source_query_id": "FalkorDB__FalkorDB__174__q001"
+  }
+]

@@ -1,0 +1,149 @@
+[
+  {
+    "feature_id": "ft_bac3d9cd65f8",
+    "machine_name": "directed_relationship_creation",
+    "description": "Creates directed relationships between nodes with specified relationship types",
+    "tags": [
+      "write",
+      "create",
+      "relationship",
+      "directed",
+      "relationship_type"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_09e7bd5f8942",
+    "machine_name": "minimal_create_clause",
+    "description": "Uses the CREATE clause in its simplest form with no additional clauses.",
+    "tags": [
+      "write",
+      "clause",
+      "minimal"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_8c615114e144",
+    "machine_name": "multiple_node_creation",
+    "description": "Creates multiple independent nodes in a single CREATE clause without relationships or properties.",
+    "tags": [
+      "write",
+      "creation",
+      "multiple_nodes",
+      "no_relationships"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_e4efef28bbb9",
+    "machine_name": "bidirectional_relationship_creation",
+    "description": "Creates pairs of directed relationships between nodes to form bidirectional connections",
+    "tags": [
+      "write",
+      "relationship",
+      "bidirectional",
+      "pattern"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a12bdb616583",
+    "machine_name": "merge_node_with_properties",
+    "description": "MERGE node with specific property values, creating if not exists",
+    "tags": [
+      "merge",
+      "node",
+      "properties",
+      "create"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_e7284afd9be8",
+    "machine_name": "merge_without_properties",
+    "description": "MERGE creates a node with no labels or properties, testing default node creation and uniqueness semantics.",
+    "tags": [
+      "write",
+      "merge",
+      "node_creation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_6a32d8b05d3f",
+    "machine_name": "write_operation_with_precise_node_identification",
+    "description": "Perform a write operation (CREATE) after precisely identifying nodes by unique property values.",
+    "tags": [
+      "write",
+      "create",
+      "property_based",
+      "precise_match"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d28ea01238d9",
+    "machine_name": "merge_node_with_label",
+    "description": "Merge a node with a label but no properties, ensuring existence without specifying attributes.",
+    "tags": [
+      "merge",
+      "label",
+      "node_creation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_43d531d81a20",
+    "machine_name": "relationship_merge_with_id_property",
+    "description": "MERGE relationship includes a property in the pattern to uniquely identify it",
+    "tags": [
+      "merge",
+      "relationship_pattern",
+      "property_in_pattern"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_8bb7507ac3e2",
+    "machine_name": "merge_with_label_and_properties",
+    "description": "MERGE with node label L3 and multiple properties including string and integer values",
+    "tags": [
+      "merge",
+      "label",
+      "properties",
+      "relationship"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

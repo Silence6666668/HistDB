@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_6cf6f4d6f809",
+    "machine_name": "multiple_merge_relationships",
+    "description": "Uses multiple MERGE clauses to create or match relationships from a single source node to multiple destination nodes, testing relationship creation concurrency.",
+    "tags": [
+      "merge",
+      "relationship",
+      "multiple",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_0f2cd0c3209a",
+    "machine_name": "implicit_node_label",
+    "description": "Create a node without explicit label specification, resulting in an unlabeled node.",
+    "tags": [
+      "write",
+      "node_creation",
+      "label",
+      "implicit"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a6fca9a17d38",
+    "machine_name": "union_of_match_queries",
+    "description": "Combines results from two independent MATCH queries using UNION, returning nodes from the first query and relationships from the second.",
+    "tags": [
+      "union",
+      "match",
+      "return",
+      "nodes",
+      "relationships"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_8fce4965a0f9",
+    "machine_name": "chained_merge_statements",
+    "description": "Multiple MERGE clauses chained in a single query, testing sequential node and relationship creation.",
+    "tags": [
+      "chained",
+      "merge",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_fe93c90548b2",
+    "machine_name": "subquery_with_write_operation",
+    "description": "Placing a write operation (MERGE) inside a CALL subquery, testing write behavior in isolated subqueries and transaction handling.",
+    "tags": [
+      "subquery",
+      "write",
+      "merge"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_cfab86f41660",
+    "machine_name": "create_and_set_in_single_query",
+    "description": "Combines node creation and property setting in one query.",
+    "tags": [
+      "write",
+      "combination",
+      "single_query"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_f92af0a63eb8",
+  "skeleton_text": "RETURN valuetype(HOLE_FUNCTION_ARG)",
+  "source_id": "memgraph/memgraph#1660",
+  "source_query_id": "memgraph__memgraph__1660__q002",
+  "holes": []
+}

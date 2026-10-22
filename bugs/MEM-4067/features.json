@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_729808696800",
+    "machine_name": "simple_aggregation_no_grouping",
+    "description": "Performing aggregation without GROUP BY, returning a single aggregated value, testing default grouping behavior.",
+    "tags": [
+      "aggregation",
+      "no_grouping",
+      "single_result"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_0b7ea777a0f5",
+    "machine_name": "exact_node_match_with_property",
+    "description": "Matches a single node by exact property value and label",
+    "tags": [
+      "match",
+      "property_filter",
+      "label"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3a0591edb31b",
+    "machine_name": "mixed_read_write_in_union",
+    "description": "UNION combining read-only RETURN, write operations in subquery, and CREATE write operation",
+    "tags": [
+      "union",
+      "read_write",
+      "subquery",
+      "create",
+      "merge"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_192a254d299b",
+    "machine_name": "minimal_write_query",
+    "description": "A write operation with no additional clauses like RETURN, MATCH, or WHERE.",
+    "tags": [
+      "write",
+      "minimal",
+      "no_return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ec1af8bca519",
+    "machine_name": "single_node_return_with_limit",
+    "description": "Return a single node result with LIMIT clause to restrict output.",
+    "tags": [
+      "return",
+      "limit",
+      "single_result"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_b38a00cf5e13",
+    "machine_name": "chained_node_relationship_creation",
+    "description": "Create multiple nodes and relationships in a single chained CREATE statement.",
+    "tags": [
+      "write",
+      "chained_creation",
+      "multiple_nodes",
+      "multiple_relationships"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

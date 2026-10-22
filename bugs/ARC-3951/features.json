@@ -1,0 +1,32 @@
+[
+  {
+    "feature_id": "ft_120846577cf4",
+    "machine_name": "query_pattern_match_path_pattern_return_where",
+    "description": "该查询包含 MATCH、WHERE、RETURN 子句，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3355",
+    "source_query_id": "ArcadeData__arcadedb__3355__q001"
+  },
+  {
+    "feature_id": "ft_3a44fde42bf7",
+    "machine_name": "query_pattern_match_order_by_path_pattern_return",
+    "description": "该查询包含 MATCH、RETURN、ORDER BY 子句，带有排序逻辑，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3711",
+    "source_query_id": "ArcadeData__arcadedb__3711__q005"
+  },
+  {
+    "feature_id": "ft_89e4cf9af439",
+    "machine_name": "query_pattern_distinct_match_path_pattern_return",
+    "description": "该查询包含 MATCH、WHERE、WITH、RETURN 子句，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#292",
+    "source_query_id": "FalkorDB__FalkorDB__292__q002"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "paired_input_identities_checked": 5000,
+  "distinct_features_per_input": 4,
+  "no_task_reuse": true,
+  "cohorts": 5,
+  "cohort_size": 1000,
+  "source_and_frozen_files_unchanged": true,
+  "generation_outputs_unchanged_during_analysis": true
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_a32e14574144",
+    "machine_name": "property_types_in_merge",
+    "description": "MERGE uses string and integer property values, testing type handling and property matching in merge operations.",
+    "tags": [
+      "properties",
+      "types",
+      "merge"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_79ae3ab08c26",
+    "machine_name": "single_node_retrieval",
+    "description": "Return a single node matched by a unique identifier",
+    "tags": [
+      "match",
+      "return",
+      "node",
+      "singleton"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a9dc1a1fbf85",
+    "machine_name": "property_assignment_with_literal_and_variable",
+    "description": "Node creation with mixed literal and variable-like property values",
+    "tags": [
+      "properties",
+      "literal",
+      "string",
+      "variable_like"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_cd8bacbf1c39",
+    "machine_name": "limit_result_set",
+    "description": "Restrict query results to a fixed number of rows using LIMIT clause",
+    "tags": [
+      "pagination",
+      "result_control",
+      "performance"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_5b8a4cdb7faf",
+    "machine_name": "label_and_property_match",
+    "description": "MATCH with both node label and exact property equality filter",
+    "tags": [
+      "match",
+      "label",
+      "property",
+      "filter",
+      "equality"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_6bc3f970c4d1",
+    "machine_name": "optional_match_with_three_nodes",
+    "description": "Uses OPTIONAL MATCH to find a pattern of three connected nodes where the middle node has incoming and outgoing relationships, returning null if not found.",
+    "tags": [
+      "optional_match",
+      "three_nodes",
+      "relationship_direction"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

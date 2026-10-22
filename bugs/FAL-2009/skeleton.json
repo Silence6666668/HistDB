@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_70a04bb988a8",
+  "skeleton_text": "merge (:person {name:'b'})",
+  "source_id": "RedisGraph/RedisGraph#548",
+  "source_query_id": "RedisGraph__RedisGraph__548__q002",
+  "holes": []
+}

@@ -1,0 +1,3 @@
+CALL {
+  CREATE (:N)
+};

@@ -1,0 +1,87 @@
+[
+  {
+    "feature_id": "ft_3e4480eaecb8",
+    "machine_name": "no_where_clause",
+    "description": "Query lacks a WHERE clause, testing default behavior when no predicates are applied.",
+    "tags": [
+      "predicate",
+      "absence",
+      "default"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_322cead15a2c",
+    "machine_name": "multiple_relationship_type_match",
+    "description": "Matches multiple relationship types using pipe operator in pattern",
+    "tags": [
+      "pattern",
+      "relationship_types",
+      "pipe_operator"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_867dc52e00e0",
+    "machine_name": "multiple_equality_chain",
+    "description": "Chaining equality operators without parentheses, testing precedence and associativity of boolean operators.",
+    "tags": [
+      "operator",
+      "precedence",
+      "boolean",
+      "expression"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_06008a99feb6",
+    "machine_name": "list_comprehension_with_range",
+    "description": "List comprehension using RANGE function to generate a sequence of numbers.",
+    "tags": [
+      "list_comprehension",
+      "range",
+      "aggregation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_0ce3f97eea28",
+    "machine_name": "projection_of_aggregated_result",
+    "description": "Return specific properties (p.title) alongside aggregated values (count) after grouping",
+    "tags": [
+      "projection",
+      "aggregation",
+      "property_access"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_1474aabb6818",
+    "machine_name": "yield_path_from_procedure",
+    "description": "YIELD path variable from procedure call for path processing",
+    "tags": [
+      "yield",
+      "procedure output",
+      "path variable"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

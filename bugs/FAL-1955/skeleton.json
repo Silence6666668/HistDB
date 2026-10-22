@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_b9aa8a507ba5",
+  "skeleton_text": "MATCH (a), (b) WITH a, b MATCH (a)-[e]-(b) RETURN a.v, e.v, b.v",
+  "source_id": "RedisGraph/RedisGraph#1036",
+  "source_query_id": "RedisGraph__RedisGraph__1036__q002",
+  "holes": []
+}

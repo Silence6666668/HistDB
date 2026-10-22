@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_7ba0034b2aa5",
+    "machine_name": "multiple_node_match_with_same_label",
+    "description": "Matches multiple nodes with the same label in separate patterns, potentially leading to Cartesian product behavior.",
+    "tags": [
+      "match",
+      "label",
+      "cartesian_product"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f2b99709558c",
+    "machine_name": "create_node_with_properties",
+    "description": "Create a single node with multiple properties including string and integer values.",
+    "tags": [
+      "write",
+      "node_creation",
+      "properties"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_dab7ba3ddd01",
+    "machine_name": "multiple_aggregations_in_return",
+    "description": "Returning multiple aggregated results (two COLLECT calls) alongside a non-aggregated node in the same RETURN clause.",
+    "tags": [
+      "return",
+      "aggregation",
+      "mixed_projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f2c9273005d5",
+    "machine_name": "constant_return_in_subquery",
+    "description": "Subqueries returning constant values with aliases, used for chaining",
+    "tags": [
+      "return",
+      "constant",
+      "alias",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_9e275325a3a4",
+    "machine_name": "variable_reuse_in_aggregation",
+    "description": "Reuse previously defined variables (nodeDOc, chunk, rel) within aggregation functions in the RETURN clause.",
+    "tags": [
+      "variable",
+      "reuse",
+      "aggregation",
+      "scoping"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_205fa13a734f",
+    "machine_name": "create_relationship_between_variables",
+    "description": "CREATE clause forming a relationship between previously bound node variables",
+    "tags": [
+      "create",
+      "relationship",
+      "write",
+      "variable_reuse"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

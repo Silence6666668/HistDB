@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_ef58367c89a8",
+  "skeleton_text": "CREATE ({HOLE_PROPERTY_KEY: HOLE_VALUE_1}), ({HOLE_PROPERTY_KEY: HOLE_VALUE_2}) MATCH (HOLE_NODE_VARIABLE) RETURN DISTINCT HOLE_NODE_VARIABLE.HOLE_PROPERTY_KEY AS HOLE_RETURN_ALIAS ORDER BY HOLE_RETURN_ALIAS DESC",
+  "source_id": null,
+  "source_query_id": "RedisGraph/RedisGraph#526",
+  "holes": []
+}

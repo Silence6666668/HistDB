@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_23e62b26fdd4",
+    "machine_name": "procedure_yield_return",
+    "description": "Use YIELD to bind procedure output to variables and RETURN a subset of properties",
+    "tags": [
+      "procedure",
+      "yield",
+      "return",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_742267f90f66",
+    "machine_name": "pagination_with_skip_limit",
+    "description": "Result pagination using SKIP and LIMIT clauses",
+    "tags": [
+      "pagination",
+      "skip",
+      "limit",
+      "result_window"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_431b7122f417",
+    "machine_name": "constant_return_value",
+    "description": "Returns a constant integer value, testing projection behavior and query termination with minimal output.",
+    "tags": [
+      "return",
+      "constant",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_984610a0a6d3",
+    "machine_name": "unwind_with_pattern_comprehension",
+    "description": "UNWIND clause using a pattern comprehension to generate a list of paths from a pattern match, enabling iteration over path results.",
+    "tags": [
+      "unwind",
+      "pattern_comprehension",
+      "path_generation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_bbfe6b36857f",
+    "machine_name": "point_literal_construction",
+    "description": "Constructing a point from literal latitude/longitude map in a function argument",
+    "tags": [
+      "spatial",
+      "literal",
+      "function",
+      "map"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_96395d988ff2",
+    "machine_name": "no_return_clause",
+    "description": "Procedure call without an explicit RETURN clause, relying on implicit result streaming.",
+    "tags": [
+      "implicit_return",
+      "procedure",
+      "streaming"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

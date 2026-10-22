@@ -1,0 +1,47 @@
+schema_version: 1
+family_id: HISTDB-MEM-002
+title: A later UNION branch misses nodes created in an earlier branch
+paper_set: fixed-version-50
+dbms: memgraph
+symptom: the later UNION branch sees only the pre-branch node set
+issue:
+  url: https://github.com/memgraph/memgraph/issues/4098
+  status: confirmed
+  report_path: issue_reports/submitted/memgraph/2026-4-30/memgraph_later_union_branch_may_not_see_nodes_created_in_earlier_branch.md
+targets:
+  buggy:
+    id: memgraph-3.9.0
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Alice'})"
+  query: |-
+    MATCH (n:Person)
+    CREATE (n)-[:KNOWS]->(:Person {name:'Bob'})
+    RETURN DISTINCT n.name AS name
+    UNION
+    MATCH (n:Person)
+    RETURN DISTINCT n.name AS name
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: false
+  expected_buggy:
+    - {name: Alice}
+  expected_correct:
+    - {name: Alice}
+    - {name: Bob}
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: FalkorDB__FalkorDB__126__q001
+  case_id: case_db27d2a38620
+  source_artifacts:
+    - issue_reports/submitted/memgraph/2026-4-30/memgraph_later_union_branch_may_not_see_nodes_created_in_earlier_branch.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

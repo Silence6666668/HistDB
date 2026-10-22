@@ -1,0 +1,62 @@
+[
+  {
+    "feature_id": "ft_ef4ae405376c",
+    "machine_name": "query_pattern_limit_match_pagination_return",
+    "description": "该查询包含 MATCH、RETURN、LIMIT 子句，带有分页控制。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3588",
+    "source_query_id": "ArcadeData__arcadedb__3588__q001"
+  },
+  {
+    "feature_id": "ft_58fd467275aa",
+    "machine_name": "query_pattern_aggregation_collect_limit_match",
+    "description": "该查询包含 MATCH、WHERE、RETURN、ORDER BY、LIMIT 子句，涉及聚合计算，带有排序逻辑，带有分页控制，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#109",
+    "source_query_id": "FalkorDB__FalkorDB__109__q001"
+  },
+  {
+    "feature_id": "ft_95a516b79210",
+    "machine_name": "query_pattern_limit_match_order_by_pagination",
+    "description": "该查询包含 MATCH、WHERE、RETURN、ORDER BY、LIMIT 子句，带有排序逻辑，带有分页控制，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#109",
+    "source_query_id": "FalkorDB__FalkorDB__109__q002"
+  },
+  {
+    "feature_id": "ft_3ebb46f20131",
+    "machine_name": "query_pattern_match_order_by_return_with",
+    "description": "该查询包含 MATCH、WITH、ORDER BY、RETURN 子句，带有排序逻辑。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1277",
+    "source_query_id": "FalkorDB__FalkorDB__1277__q001"
+  },
+  {
+    "feature_id": "ft_8cb46e17d56a",
+    "machine_name": "query_pattern_match_return_where_with",
+    "description": "该查询包含 MATCH、WITH、WHERE、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1316",
+    "source_query_id": "FalkorDB__FalkorDB__1316__q001"
+  },
+  {
+    "feature_id": "ft_a6251a6ec5b9",
+    "machine_name": "single_node_match",
+    "description": "Matches all nodes with a single variable binding and returns aggregated result.",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1451",
+    "source_query_id": "FalkorDB__FalkorDB__1451__q003"
+  }
+]

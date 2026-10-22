@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_fa768659b119",
+  "skeleton_text": "MATCH (p:HOLE_LABEL_1)-[:HOLE_REL_TYPE_1]->(:HOLE_LABEL_2) CALL { WITH p MATCH (p)-[:HOLE_REL_TYPE_2]->(f:HOLE_LABEL_3) RETURN f.HOLE_PROP_1 AS HOLE_ALIAS_1 LIMIT HOLE_LIMIT } MERGE (p)-[:HOLE_REL_TYPE_3]->(f:HOLE_LABEL_4 { HOLE_PROP_2: HOLE_ALIAS_1 }) RETURN p.HOLE_PROP_3 AS HOLE_ALIAS_2, HOLE_ALIAS_1",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#1849",
+  "holes": []
+}

@@ -1,0 +1,40 @@
+schema_version: 1
+family_id: HISTDB-ARC-007
+title: SET leaves another alias to the same node stale
+paper_set: fixed-version-50
+dbms: arcadedb
+symptom: m.age retains the pre-update value after n.age is updated
+issue:
+  url: https://github.com/ArcadeData/arcadedb/issues/4000
+  status: confirmed
+  report_path: issue_reports/submitted/arcadedb/2026-4-24/arcadedb_set_may_leave_other_aliases_to_same_node_stale.md
+targets:
+  buggy: {id: arcadedb-26.4.1}
+  fixed: []
+observation: {reported_version: 26.4.1-SNAPSHOT, execution_target: "arcadedata/arcadedb:26.4.1"}
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Alice', age:30}), (:Person {name:'Bob', age:25})"
+  query: |-
+    MATCH (n:Person {name:'Alice'}), (m:Person {name:'Alice'})
+    SET n.age = 35
+    RETURN n.age AS n_age, m.age AS m_age
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: false
+  expected_buggy:
+    - {n_age: 35, m_age: 30}
+  expected_correct:
+    - {n_age: 35, m_age: 35}
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: ArcadeData__arcadedb__3278__q002
+  case_id: null
+  source_artifacts:
+    - issue_reports/submitted/arcadedb/2026-4-24/arcadedb_set_may_leave_other_aliases_to_same_node_stale.md
+  skeleton_ids: []
+  feature_ids: []
+

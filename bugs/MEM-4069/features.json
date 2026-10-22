@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_9b5a8f5f970e",
+    "machine_name": "redundant_predicate_in_where",
+    "description": "WHERE clause contains identical repeated conditions that may test predicate simplification or optimization.",
+    "tags": [
+      "predicate",
+      "redundancy",
+      "optimization"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d8fd95072fb1",
+    "machine_name": "count_aggregation_on_relationship",
+    "description": "Performs COUNT aggregation on relationship variables, useful for testing aggregation behavior on edges.",
+    "tags": [
+      "aggregation",
+      "count",
+      "relationship"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_e79fd346575a",
+    "machine_name": "aggregation_after_optional_match",
+    "description": "COUNT aggregation applied after an OPTIONAL MATCH, which may include null values from unmatched patterns.",
+    "tags": [
+      "aggregation",
+      "count",
+      "optional_match",
+      "null_semantics"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_2afa4e0b0467",
+    "machine_name": "property_access_in_aggregation",
+    "description": "Access a node property (n.v) within an aggregation function (collect) to return a list of values rather than nodes.",
+    "tags": [
+      "property",
+      "aggregation",
+      "return",
+      "alias"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_607fae280af2",
+    "machine_name": "list_comprehension_in_where",
+    "description": "List comprehension used directly in WHERE clause predicate evaluation",
+    "tags": [
+      "list_comprehension",
+      "where_clause",
+      "predicate"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a4579a91b4ae",
+    "machine_name": "merge_relationship_with_multiple_properties",
+    "description": "MERGE creates or matches a relationship with multiple property key-value pairs including different data types (integer, string, boolean).",
+    "tags": [
+      "merge",
+      "relationship",
+      "properties",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

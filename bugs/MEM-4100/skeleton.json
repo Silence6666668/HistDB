@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_defa0b5a3059",
+  "skeleton_text": "MATCH (HOLE_NODE_1) WITH HOLE_NODE_1 OPTIONAL MATCH ()--() WHERE (HOLE_NODE_1)--() RETURN HOLE_RETURN_EXPR",
+  "source_id": null,
+  "source_query_id": "RedisGraph/RedisGraph#1346",
+  "holes": []
+}

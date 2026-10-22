@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_c91e77b51dd5",
+  "skeleton_text": "MATCH (HOLE_NODE1), (HOLE_NODE2) OPTIONAL MATCH (HOLE_NODE1), (HOLE_NODE2) RETURN HOLE_RETURN_EXPR",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#1281",
+  "holes": []
+}

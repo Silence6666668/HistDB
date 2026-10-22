@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_3f6e3b337e6d",
+  "skeleton_text": "MATCH (a:person) WHERE a.id = 1 or a.id = 2\nWITH a as a\nMATCH (b:person {id: 3})\nRETURN a, b",
+  "source_id": "FalkorDB/FalkorDB#883",
+  "source_query_id": "FalkorDB__FalkorDB__883__q004",
+  "holes": []
+}

@@ -1,0 +1,88 @@
+[
+  {
+    "feature_id": "ft_7de667ac1f7c",
+    "machine_name": "single_column_result",
+    "description": "Returns exactly one column from a query, testing simple result set structure.",
+    "tags": [
+      "result_structure",
+      "single_column"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_282cc4484718",
+    "machine_name": "label_based_node_filtering",
+    "description": "Filters nodes by specific labels (B and A) in a path traversal.",
+    "tags": [
+      "label",
+      "filter",
+      "node"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_45e35c4379ef",
+    "machine_name": "merge_with_multiple_properties",
+    "description": "MERGE creates a relationship with multiple properties including string, boolean, integer, and numeric values",
+    "tags": [
+      "merge",
+      "relationship",
+      "properties",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a98f650e166a",
+    "machine_name": "count_star_aggregation",
+    "description": "RETURN clause with COUNT(*) aggregation, testing basic aggregation behavior without grouping or filtering.",
+    "tags": [
+      "return",
+      "aggregation",
+      "count",
+      "star"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_bc3c5ca9a402",
+    "machine_name": "relationship_labels_return",
+    "description": "Returning the labels of a relationship variable directly in the RETURN clause, which tests relationship type metadata extraction.",
+    "tags": [
+      "return",
+      "labels",
+      "relationship",
+      "metadata"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_012bb5f35d31",
+    "machine_name": "descending_order_by_property",
+    "description": "ORDER BY with DESC modifier on a projected property alias",
+    "tags": [
+      "ordering",
+      "desc",
+      "property_alias"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

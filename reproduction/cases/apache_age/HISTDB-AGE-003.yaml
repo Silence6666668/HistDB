@@ -1,0 +1,35 @@
+schema_version: 1
+family_id: HISTDB-AGE-003
+title: Map literals drop keys whose values are null
+paper_set: fixed-version-50
+dbms: apache_age
+symptom: a one-key map becomes an empty map
+issue:
+  url: https://github.com/apache/age/issues/2391
+  status: confirmed
+  report_path: issue_reports/submitted/age/old/age_map_literal_drops_null_valued_keys.md
+targets:
+  buggy: {id: apache-age-1.7.0}
+  fixed: []
+observation:
+  age_version: 1.7.0
+  postgresql_version: "18.1"
+  execution_image_requires_resolved_id: true
+test:
+  setup: []
+  query: "RETURN {a:null} AS m"
+  cleanup: []
+oracle:
+  type: scalar_equals
+  field: m
+  expected_buggy: {}
+  expected_correct: {a: null}
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: null
+  case_id: null
+  source_artifacts:
+    - issue_reports/submitted/age/old/age_map_literal_drops_null_valued_keys.md
+    - paper/bug_example_panels_by_database_20260810.md
+  skeleton_ids: []
+  feature_ids: []

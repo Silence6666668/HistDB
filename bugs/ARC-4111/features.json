@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_5481bc770963",
+    "machine_name": "with_list_aliasing",
+    "description": "Alias a single node as a list in a WITH clause for subsequent operations",
+    "tags": [
+      "aliasing",
+      "list",
+      "WITH"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_fc39ab2a7746",
+    "machine_name": "implicit_cartesian_product_in_write",
+    "description": "Combines MATCH patterns without relationships, leading to a Cartesian product, followed by a write operation that may multiply effects.",
+    "tags": [
+      "cartesian_product",
+      "match",
+      "create",
+      "implicit_join"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_03f0f817000e",
+    "machine_name": "merge_empty_node",
+    "description": "MERGE clause creating a single anonymous node with no properties or labels",
+    "tags": [
+      "write",
+      "node_creation",
+      "anonymous"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7ad48f83263b",
+    "machine_name": "count_subquery_with_call",
+    "description": "COUNT subquery containing CALL clause with OPTIONAL MATCH inside",
+    "tags": [
+      "count_subquery",
+      "call_clause",
+      "nested_optional_match",
+      "aggregation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_787d0704fc7e",
+    "machine_name": "variable_length_path_with_reverse_direction",
+    "description": "Variable-length path traversal with reverse direction and unbounded upper limit using *1.. syntax.",
+    "tags": [
+      "path_pattern",
+      "variable_length",
+      "reverse_direction",
+      "unbounded_upper"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_791ad95e8339",
+    "machine_name": "match_create_with_where_filter",
+    "description": "MATCH with WHERE filter on relationship property followed by CREATE of new relationship with different property value",
+    "tags": [
+      "write",
+      "filter",
+      "relationship_property",
+      "create"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

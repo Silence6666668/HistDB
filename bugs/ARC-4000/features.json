@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_ca9f4e36d681",
+    "machine_name": "return_all_columns",
+    "description": "Returns all variables and their properties in scope using the RETURN * clause.",
+    "tags": [
+      "return_all",
+      "wildcard",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_282f89aa43e3",
+    "machine_name": "match_all_nodes",
+    "description": "MATCH clause without filters or patterns, returning all nodes in the graph.",
+    "tags": [
+      "match",
+      "all_nodes",
+      "no_filter"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d278bb282fec",
+    "machine_name": "multi_property_set",
+    "description": "Setting multiple properties on a single node in one SET clause.",
+    "tags": [
+      "write",
+      "property",
+      "update",
+      "multiple"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7bd7609d8e53",
+    "machine_name": "node_label_without_variable",
+    "description": "Creates a node with a label but no variable binding, making it anonymous in the query context.",
+    "tags": [
+      "create",
+      "node",
+      "label",
+      "anonymous"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7390b3a3b386",
+    "machine_name": "match_all_nodes",
+    "description": "Matches all nodes in the graph without any filters or constraints.",
+    "tags": [
+      "match",
+      "all_nodes",
+      "no_filter"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d61daf8dabba",
+    "machine_name": "match_all_nodes_of_label",
+    "description": "Retrieves all nodes with a specific label without any filtering conditions.",
+    "tags": [
+      "match",
+      "label",
+      "no_filter",
+      "return_all"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

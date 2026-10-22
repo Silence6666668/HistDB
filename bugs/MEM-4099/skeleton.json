@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_64a6a10f05ec",
+  "skeleton_text": "MATCH p = (n1:{HOLE_PROPERTY_NAME: HOLE_PROPERTY_VALUE}) -[*..HOLE_MAX_HOPS]- (n2) RETURN [n in nodes(p) | [(n)-[:HOLE_REL_TYPE]->(t) | t.HOLE_RETURN_PROPERTY]]",
+  "source_id": null,
+  "source_query_id": "RedisGraph/RedisGraph#2773",
+  "holes": []
+}

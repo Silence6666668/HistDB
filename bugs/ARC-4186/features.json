@@ -1,0 +1,86 @@
+[
+  {
+    "feature_id": "ft_7da5b7f10a89",
+    "machine_name": "optional_match_with_variable_length_path",
+    "description": "OPTIONAL MATCH with variable-length path pattern using range syntax (..1) for zero or one hop traversal.",
+    "tags": [
+      "optional_match",
+      "variable_length_path",
+      "range_syntax"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_338ad2ed89cc",
+    "machine_name": "optional_match_with_aggregation",
+    "description": "Combines OPTIONAL MATCH with an aggregation function (COUNT), testing null handling when no matches occur.",
+    "tags": [
+      "optional_match",
+      "aggregation",
+      "null_semantics"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_6b2a744d5bd3",
+    "machine_name": "constant_return_without_projection",
+    "description": "RETURN clause with constant literal value and no projection of matched variables",
+    "tags": [
+      "return_clause",
+      "constant_literal",
+      "no_projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_08d6f405139d",
+    "machine_name": "multiple_property_assignment",
+    "description": "Assign four distinct properties to a node in a single CREATE clause",
+    "tags": [
+      "property_map",
+      "initialization",
+      "multiple_values"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_02148d9cce4c",
+    "machine_name": "path_pattern_with_anonymous_relationship",
+    "description": "Path pattern using anonymous relationship in the second segment",
+    "tags": [
+      "path_pattern",
+      "anonymous_relationship",
+      "fixed_length"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7f445d9526ca",
+    "machine_name": "return_single_node",
+    "description": "Returning a single node from the matched pattern, focusing on the end node of the traversal.",
+    "tags": [
+      "return",
+      "node",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

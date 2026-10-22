@@ -1,0 +1,12 @@
+[
+  {
+    "feature_id": "ft_8fda1f712b71",
+    "machine_name": "query_pattern_return",
+    "description": "该查询包含 RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#2119",
+    "source_query_id": "ArcadeData__arcadedb__2119__q001"
+  }
+]

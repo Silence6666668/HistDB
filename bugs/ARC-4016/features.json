@@ -1,0 +1,91 @@
+[
+  {
+    "feature_id": "ft_d9c80de021c9",
+    "machine_name": "merge_node_with_properties",
+    "description": "Creates a node if it doesn't exist, with specified properties, using MERGE clause.",
+    "tags": [
+      "write",
+      "merge",
+      "node_creation",
+      "properties"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_5a785ad27533",
+    "machine_name": "create_with_relationship_and_node",
+    "description": "CREATE clause creating a relationship and a node with a property expression in the same statement.",
+    "tags": [
+      "create",
+      "relationship",
+      "node",
+      "property_expression"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_b8c707dbad14",
+    "machine_name": "node_property_match_without_label",
+    "description": "MATCH clause that filters nodes by property without specifying a node label.",
+    "tags": [
+      "match",
+      "property_filter",
+      "no_label"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f54595272117",
+    "machine_name": "mixed_type_properties",
+    "description": "Setting properties with various data types: string, integer, boolean, NULL, and empty string",
+    "tags": [
+      "data_types",
+      "property",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_028415c4345e",
+    "machine_name": "combined_match_unwind_set",
+    "description": "Combination of MATCH with variable-length path, UNWIND over path relationships, and SET property update in a single query.",
+    "tags": [
+      "combination",
+      "match",
+      "unwind",
+      "set",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_333b41b9c666",
+    "machine_name": "directed_relationship_creation",
+    "description": "Creating a directed relationship between two nodes in a single pattern, useful for testing relationship directionality.",
+    "tags": [
+      "relationship",
+      "directed",
+      "pattern",
+      "create"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

@@ -1,0 +1,31 @@
+﻿default:
+  provider: openai_compatible
+  api_key_env: DEEPSEEK_API_KEY
+  base_url: https://api.deepseek.com
+  model: deepseek-chat
+  temperature: 0.0
+  timeout_sec: 120
+  max_retries: 3
+
+tasks:
+  skeleton:
+    model: deepseek-chat
+  feature:
+    model: deepseek-chat
+  instantiation:
+    api_key_env: DEEPSEEK_API_KEY
+    base_url: https://api.deepseek.com
+    model: deepseek-chat
+  oracle_case_generation:
+    api_key_env: DEEPSEEK_API_KEY
+    base_url: https://api.deepseek.com
+    model: deepseek-chat
+  translate:
+    api_key_env: DEEPSEEK_API_KEY
+    base_url: https://api.deepseek.com
+    model: deepseek-chat
+  cypher25_rewrite:
+    api_key_env: DEEPSEEK_API_KEY
+    base_url: https://api.deepseek.com
+    model: deepseek-chat
+    temperature: 0.0

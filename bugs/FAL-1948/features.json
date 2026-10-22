@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_c29da0e9d729",
+    "machine_name": "aggregation_count_over_start_node",
+    "description": "Performs a count aggregation on the starting node of a pattern, returning a single aggregated value.",
+    "tags": [
+      "aggregation",
+      "count",
+      "return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f9d4da858f0f",
+    "machine_name": "create_node_with_label_and_property",
+    "description": "CREATE clause with node label and property assignment in the same pattern",
+    "tags": [
+      "create",
+      "node",
+      "label",
+      "property"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_86075fc723c8",
+    "machine_name": "incoming_relationship_traversal",
+    "description": "Traverse incoming relationships from a matched node",
+    "tags": [
+      "relationship",
+      "direction",
+      "traversal"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_509425aacbc5",
+    "machine_name": "property_access_in_return",
+    "description": "Access a specific property (title) of nodes in the RETURN clause",
+    "tags": [
+      "property",
+      "return",
+      "access"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_6041661e20ae",
+    "machine_name": "match_return_equality_predicate",
+    "description": "Matching nodes and returning a boolean result from an equality predicate comparing a property to a literal value.",
+    "tags": [
+      "match",
+      "return",
+      "predicate",
+      "equality",
+      "boolean"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_471725bf7b73",
+    "machine_name": "call_algo_procedure",
+    "description": "Calls a graph algorithm procedure (PageRank) with node label and relationship type parameters",
+    "tags": [
+      "procedure",
+      "algorithm",
+      "call"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

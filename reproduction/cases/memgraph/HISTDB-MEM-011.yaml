@@ -1,0 +1,44 @@
+schema_version: 1
+family_id: HISTDB-MEM-011
+title: Pattern comprehension misses a relationship created earlier in the same clause
+paper_set: fixed-version-50
+dbms: memgraph
+symptom: the immediately following pattern comprehension returns an empty list
+issue:
+  url: https://github.com/memgraph/memgraph/issues/4134
+  status: confirmed
+  report_path: issue_reports/submitted/memgraph/2026-5-12/memgraph_pattern_comprehension_may_ignore_relationship_created_earlier_in_same_clause.md
+targets:
+  buggy:
+    id: memgraph-3.9.0
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Charlie'}), (:City {name:'New York'})"
+  query: |-
+    MATCH (p:Person {name:'Charlie'}), (c:City {name:'New York'})
+    CREATE (p)-[:WORKS_IN]->(c)
+    RETURN p.name AS name,
+           [(p)-[:WORKS_IN]->(city) | city.name] AS cities
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: false
+  expected_buggy:
+    - {name: Charlie, cities: []}
+  expected_correct:
+    - {name: Charlie, cities: [New York]}
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: FalkorDB__FalkorDB__751__q002
+  case_id: case_8abb96f30071
+  source_artifacts:
+    - issue_reports/submitted/memgraph/2026-5-12/memgraph_pattern_comprehension_may_ignore_relationship_created_earlier_in_same_clause.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

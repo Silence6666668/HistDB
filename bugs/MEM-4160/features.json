@@ -1,0 +1,148 @@
+[
+  {
+    "feature_id": "ft_602820c8a905",
+    "machine_name": "multiple_labels_in_create",
+    "description": "Creates nodes with different labels (A, B, C) in a single query, testing label assignment and schema handling.",
+    "tags": [
+      "write",
+      "create",
+      "multiple_labels",
+      "schema"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_300847455e35",
+    "machine_name": "call_subquery_with_create",
+    "description": "CALL subquery containing a CREATE clause that creates a relationship pattern",
+    "tags": [
+      "subquery",
+      "write",
+      "create",
+      "relationship"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_e1223e21a551",
+    "machine_name": "bidirectional_relationship_creation",
+    "description": "Creates two nodes and a bidirectional relationship between them in a single CREATE clause",
+    "tags": [
+      "write",
+      "bidirectional",
+      "relationship",
+      "single_clause"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3b7caee9d1dc",
+    "machine_name": "multiple_write_clauses",
+    "description": "Combine multiple write clauses (CREATE, DELETE, MERGE) in a single query, testing clause ordering and side effects.",
+    "tags": [
+      "write",
+      "clause_combination",
+      "ordering"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3ac01e9cf56f",
+    "machine_name": "relationship_type_specification_in_create",
+    "description": "Specifies a relationship type 'A' during creation, testing type assignment and subsequent operations.",
+    "tags": [
+      "relationship",
+      "type",
+      "create",
+      "label"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7ed984bd0bbd",
+    "machine_name": "shared_node_with_multiple_labels",
+    "description": "Creates a node variable with multiple labels (X and Y) referenced across patterns, testing label combination behavior.",
+    "tags": [
+      "node_creation",
+      "label_combination",
+      "variable_reuse",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_9a65c6a3b61d",
+    "machine_name": "node_property_update_with_return",
+    "description": "Updates a property on a matched node and returns the modified node in the same query",
+    "tags": [
+      "write",
+      "property_update",
+      "return_modified"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_33b120cb601b",
+    "machine_name": "self_referencing_relationship",
+    "description": "Creates a node with a relationship pointing back to itself, testing self-loop semantics.",
+    "tags": [
+      "create",
+      "self-loop",
+      "relationship",
+      "node"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_39b187a21291",
+    "machine_name": "single_node_match",
+    "description": "Matches a single node with a label and returns it without further filtering or projection.",
+    "tags": [
+      "match",
+      "node",
+      "basic"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_03bbe4fb1edc",
+    "machine_name": "no_return_clause",
+    "description": "Executes a write operation without a RETURN clause, focusing on side effects rather than result projection.",
+    "tags": [
+      "write",
+      "no_return",
+      "side_effect"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

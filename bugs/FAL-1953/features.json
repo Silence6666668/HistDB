@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_55df86f04f0f",
+    "machine_name": "relationship_type_filter_in_list_comprehension",
+    "description": "List comprehension with WHERE clause filtering relationships by type, extracting first matching relationship using head() function",
+    "tags": [
+      "list_comprehension",
+      "relationship_filter",
+      "type_check",
+      "head_function",
+      "aliasing"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_326349e95dd7",
+    "machine_name": "anonymous_node_creation",
+    "description": "Creates nodes without explicit variable assignment in a CREATE clause.",
+    "tags": [
+      "write",
+      "anonymous_node",
+      "node_creation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_98606a005e04",
+    "machine_name": "undirected_relationship_traversal",
+    "description": "Using undirected relationship patterns (without arrow direction) to traverse KNOWS relationships in both directions.",
+    "tags": [
+      "undirected",
+      "relationship_traversal",
+      "bidirectional"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7f8928f1e403",
+    "machine_name": "multi_label_node_creation",
+    "description": "CREATE clause with multiple labels on a single node",
+    "tags": [
+      "write",
+      "node_creation",
+      "label",
+      "syntax"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d1e4232ad225",
+    "machine_name": "match_all_nodes_without_label",
+    "description": "MATCH clause with a single node pattern without label specification, binding all nodes in the database to a variable.",
+    "tags": [
+      "match",
+      "node_pattern",
+      "no_label"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_29e308435e68",
+    "machine_name": "detach_delete_node",
+    "description": "Deleting a node and all its relationships in a single operation",
+    "tags": [
+      "delete",
+      "detach",
+      "node",
+      "cleanup"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

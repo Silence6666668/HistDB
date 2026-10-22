@@ -1,0 +1,6 @@
+CYPHER 25
+MATCH (n)
+LET x = 1
+MATCH (n:_C25Fuzz)
+USING SCAN n:_C25Fuzz
+RETURN 1;

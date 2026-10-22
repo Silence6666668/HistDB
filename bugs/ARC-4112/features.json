@@ -1,0 +1,91 @@
+[
+  {
+    "feature_id": "ft_2c3e7551dd09",
+    "machine_name": "where_false_with_match",
+    "description": "MATCH clause with a WHERE false predicate, which should match no nodes but still processes the MATCH pattern.",
+    "tags": [
+      "match",
+      "where",
+      "predicate",
+      "false_condition"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_aae03d4a3d39",
+    "machine_name": "create_and_return_in_single_query",
+    "description": "Combining CREATE and RETURN clauses in one query to test write-read consistency and immediate data access.",
+    "tags": [
+      "create",
+      "return",
+      "consistency",
+      "write-read"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_736e2329a3a7",
+    "machine_name": "size_function_on_empty_list_comprehension",
+    "description": "size() function applied to a list comprehension that may evaluate to an empty list, used in a property context.",
+    "tags": [
+      "function",
+      "aggregation",
+      "list",
+      "null_semantics",
+      "property"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_b13a29792463",
+    "machine_name": "redundant_where_true",
+    "description": "WHERE true clause used as a placeholder or for structural consistency",
+    "tags": [
+      "predicate",
+      "placeholder",
+      "syntax"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_c08f9e457325",
+    "machine_name": "count_all_aggregation",
+    "description": "Using COUNT(*) to aggregate the total number of matched rows, ignoring nulls and individual values.",
+    "tags": [
+      "aggregation",
+      "count",
+      "return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7b1afbd29809",
+    "machine_name": "chained_with_transitions",
+    "description": "Multiple WITH clauses chaining variable scope transitions",
+    "tags": [
+      "chained_with",
+      "variable_passing",
+      "scope_management",
+      "pipeline"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

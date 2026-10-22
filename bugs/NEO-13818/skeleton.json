@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_a8485d9e5e98",
+  "skeleton_text": "UNWIND [32, 37, 40] AS ageValue OPTIONAL MATCH (p:Person) FILTER p.age = ageValue RETURN p.name AS name, p.age AS age",
+  "source_id": "neo4j#12818",
+  "source_query_id": "q_000082",
+  "holes": []
+}

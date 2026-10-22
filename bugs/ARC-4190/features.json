@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_f49878d982c5",
+    "machine_name": "parameterized_label",
+    "description": "Dynamic node label specified via string parameter, enabling schema-agnostic node matching.",
+    "tags": [
+      "parameter",
+      "label",
+      "dynamic"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3826c5ecb1fb",
+    "machine_name": "mixed_relationship_types_from_single_node",
+    "description": "Creates relationships of different types (HasFPF and HasFPB) from the same source node",
+    "tags": [
+      "create",
+      "relationship",
+      "type",
+      "mixed"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_551e7bb00aa5",
+    "machine_name": "property_value_variations",
+    "description": "Use different property value types (string literal and UUID-like string) in equality filters",
+    "tags": [
+      "property_values",
+      "string_literal",
+      "uuid_format",
+      "equality"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7fd484ca908f",
+    "machine_name": "count_aggregation_with_label_filter",
+    "description": "Uses COUNT aggregation on nodes filtered by label and properties",
+    "tags": [
+      "aggregation",
+      "count",
+      "return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_efc2fbd11384",
+    "machine_name": "optional_all_shortest_paths",
+    "description": "OPTIONAL MATCH with allShortestPaths function to find shortest paths between two specific nodes, returning null if no paths exist",
+    "tags": [
+      "optional_match",
+      "path_finding",
+      "shortest_paths",
+      "null_semantics"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_1d6636ed0d85",
+    "machine_name": "match_all_nodes_after_writes",
+    "description": "MATCH all nodes after write operations in a separate query part, testing data visibility and transaction isolation across parts.",
+    "tags": [
+      "match",
+      "return",
+      "all_nodes",
+      "read_after_write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

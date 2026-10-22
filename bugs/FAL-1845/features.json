@@ -1,0 +1,52 @@
+[
+  {
+    "feature_id": "ft_431fb5e559c7",
+    "machine_name": "query_pattern_aggregation_count_match_return",
+    "description": "该查询包含 MATCH、WHERE、RETURN 子句，涉及聚合计算。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12571",
+    "source_query_id": "q_000012"
+  },
+  {
+    "feature_id": "ft_3090131335d1",
+    "machine_name": "query_pattern_aggregation_count_match_path_pattern",
+    "description": "该查询包含 MATCH、WHERE、RETURN 子句，涉及聚合计算，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12980",
+    "source_query_id": "q_000155"
+  },
+  {
+    "feature_id": "ft_d7edf88a6109",
+    "machine_name": "query_pattern_match_order_by_return_with",
+    "description": "该查询包含 MATCH、WITH、ORDER BY、WITH、RETURN 子句，带有排序逻辑。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#13166",
+    "source_query_id": "q_000288"
+  },
+  {
+    "feature_id": "ft_45005fc49462",
+    "machine_name": "query_pattern_delete_order_by_return_with",
+    "description": "该查询包含 DELETE、WITH、RETURN、ORDER BY 子句，带有排序逻辑，属于写查询。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#13252",
+    "source_query_id": "q_000365"
+  },
+  {
+    "feature_id": "ft_44fb01b28bfd",
+    "machine_name": "query_pattern_aggregation_call_count_match",
+    "description": "该查询包含 MATCH、CALL、MATCH、OPTIONAL MATCH、MATCH、OPTIONAL MATCH、MATCH、WHERE、OPTIONAL MATCH、MATCH、WITH、RETURN 子句，涉及聚合计算，使用 OPTIONAL MATCH。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#13649",
+    "source_query_id": "q_000503"
+  }
+]

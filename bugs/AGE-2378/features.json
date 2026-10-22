@@ -1,0 +1,42 @@
+[
+  {
+    "feature_id": "ft_158416b76500",
+    "machine_name": "query_pattern_match_optional_match_path_pattern_return",
+    "description": "该查询包含 MATCH、OPTIONAL MATCH、MATCH、RETURN 子句，使用 OPTIONAL MATCH，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12573",
+    "source_query_id": "q_000014"
+  },
+  {
+    "feature_id": "ft_ce94e89dc23b",
+    "machine_name": "query_pattern_match_optional_match_return_where",
+    "description": "该查询包含 MATCH、OPTIONAL MATCH、MATCH、WHERE、RETURN 子句，使用 OPTIONAL MATCH。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12757",
+    "source_query_id": "q_000068"
+  },
+  {
+    "feature_id": "ft_5c59880f6c16",
+    "machine_name": "query_pattern_match_order_by_path_pattern_return",
+    "description": "该查询包含 MATCH、RETURN、ORDER BY、WITH、RETURN 子句，带有排序逻辑，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#13187",
+    "source_query_id": "q_000304"
+  },
+  {
+    "feature_id": "ft_10fbf06afd9f",
+    "machine_name": "query_pattern_exists",
+    "description": "该查询具有基本的 Cypher 匹配与返回结构。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12909",
+    "source_query_id": "q_000139"
+  }
+]

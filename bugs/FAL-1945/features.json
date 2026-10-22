@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_cbfd47caf49b",
+    "machine_name": "chained_create_statements",
+    "description": "Uses multiple CREATE clauses sequentially in a single query to build a graph structure.",
+    "tags": [
+      "create",
+      "chaining",
+      "graph_construction"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_2676e69a0514",
+    "machine_name": "cartesian_product_match",
+    "description": "Cartesian product between two node patterns without relationship constraints, which can produce large intermediate results.",
+    "tags": [
+      "cartesian",
+      "match",
+      "performance"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_31cc6ad339be",
+    "machine_name": "return_with_limit",
+    "description": "RETURN clause projecting specific properties and aggregated values, capped by a LIMIT for pagination or top-N results.",
+    "tags": [
+      "return",
+      "projection",
+      "limit",
+      "pagination"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_9baab7f26517",
+    "machine_name": "count_paths",
+    "description": "Aggregate count of matched paths.",
+    "tags": [
+      "aggregation",
+      "count",
+      "path_aggregation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_77adcebcf11d",
+    "machine_name": "set_node_properties_from_map",
+    "description": "Set all node properties from a map variable in one operation",
+    "tags": [
+      "write",
+      "set",
+      "properties",
+      "map",
+      "bulk_assignment"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_250c7687d65d",
+    "machine_name": "match_create_relationship",
+    "description": "Creates a relationship between two matched nodes using CREATE clause after MATCH.",
+    "tags": [
+      "write",
+      "relationship_creation",
+      "match_create"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

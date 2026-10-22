@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_b7613b2fa570",
+  "skeleton_text": "CYPHER 1=1 MATCH (_) WHERE (_.a = $`1`) return _",
+  "source_id": "RedisGraph/RedisGraph#2368",
+  "source_query_id": "RedisGraph__RedisGraph__2368__q001",
+  "holes": []
+}

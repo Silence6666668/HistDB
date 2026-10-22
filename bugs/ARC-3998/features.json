@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_24affef93b17",
+    "machine_name": "return_created_node",
+    "description": "Returns the newly created node immediately after creation in the same query",
+    "tags": [
+      "write",
+      "return",
+      "node",
+      "immediate"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_60a7df9e8d22",
+    "machine_name": "implicit_node_identity",
+    "description": "Creating nodes without assigning variables, relying on implicit database identifiers",
+    "tags": [
+      "write",
+      "node_creation",
+      "anonymous_nodes",
+      "identity"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_1b7c56e50893",
+    "machine_name": "count_aggregation_on_relationship",
+    "description": "Using count() aggregation function on relationship variable",
+    "tags": [
+      "aggregation",
+      "count",
+      "return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_51b396f42883",
+    "machine_name": "simple_node_match_with_property_filter",
+    "description": "Basic MATCH of all nodes filtered by a property equality condition, testing node retrieval with property constraints.",
+    "tags": [
+      "match",
+      "where",
+      "property",
+      "return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_387a390bc09a",
+    "machine_name": "merge_relationship_with_property",
+    "description": "MERGE clause creating a relationship with a property, testing relationship creation with properties and pattern matching.",
+    "tags": [
+      "merge",
+      "relationship_creation",
+      "relationship_property",
+      "pattern_matching"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_bf03a2d180e2",
+    "machine_name": "dynamic_label_merge",
+    "description": "Merge nodes with a dynamic label specified via parameter or variable interpolation",
+    "tags": [
+      "merge",
+      "dynamic_label",
+      "parameterized"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

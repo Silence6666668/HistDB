@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_1328d155cb92",
+  "skeleton_text": "OPTIONAL MATCH ALL SHORTEST (n3:HOLE_LABEL_0)<-[*HOLE_NUM_0..HOLE_PROP_0]-(n4:HOLE_LABEL_1) OPTIONAL MATCH (n17 :HOLE_LABEL_2 :HOLE_LABEL_3 )<-[r15 :HOLE_LABEL_4 ]-(n18 :HOLE_LABEL_5 ) RETURN DISTINCT (n18.HOLE_PROP_1) AS a4",
+  "source_id": "neo4j#13662",
+  "source_query_id": "neo4j__13662__q001",
+  "holes": []
+}

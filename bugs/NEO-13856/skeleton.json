@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_curated_cypher25_rewrite_with_star_alias_to_let",
+  "skeleton_text": "CYPHER 25 MATCH (n:Person) LET nextAge = n.age + 1 RETURN n.name AS name, nextAge ORDER BY name",
+  "source_id": "curated_cypher25_rewrite/with_star_alias_to_let",
+  "source_query_id": "",
+  "holes": []
+}

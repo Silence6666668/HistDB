@@ -1,0 +1,153 @@
+[
+  {
+    "feature_id": "ft_d1af7b15bbe7",
+    "machine_name": "unwind_merge_combination",
+    "description": "Combination of UNWIND and MERGE to create multiple nodes from array elements in a single query",
+    "tags": [
+      "unwind",
+      "merge",
+      "batch_operation",
+      "create"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a4d9cb3163f5",
+    "machine_name": "node_label_variety",
+    "description": "Includes nodes with different labels (A, B, C) in a creation pattern, testing label assignment and heterogeneity.",
+    "tags": [
+      "labels",
+      "create",
+      "heterogeneous_labels",
+      "schema"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_87fc5845f554",
+    "machine_name": "duplicate_edge_creation",
+    "description": "Creates multiple identical relationships between the same pair of nodes in a single CREATE clause.",
+    "tags": [
+      "write",
+      "duplicate",
+      "relationship",
+      "create"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a36ded7d2dfc",
+    "machine_name": "unwind_merge_node_creation",
+    "description": "Batch creation of nodes with unique IDs using UNWIND and MERGE to ensure idempotency.",
+    "tags": [
+      "write",
+      "batch",
+      "idempotent",
+      "node_creation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f6b55383c361",
+    "machine_name": "create_label_property_index",
+    "description": "Creates a schema index on a specific label and property combination to optimize lookups.",
+    "tags": [
+      "schema",
+      "index",
+      "write",
+      "optimization"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a4fcdfb6a1c0",
+    "machine_name": "single_label_node_creation",
+    "description": "Create a node with a single label and a property assignment in the same CREATE clause.",
+    "tags": [
+      "create",
+      "node",
+      "label",
+      "property",
+      "single_label"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_55ad4bd31c2e",
+    "machine_name": "merge_with_label_and_property_constraint",
+    "description": "MERGE operation that implicitly enforces a constraint based on label and property, useful for testing uniqueness behavior.",
+    "tags": [
+      "merge",
+      "constraint",
+      "label_property",
+      "testing_uniqueness"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_06ae675b033a",
+    "machine_name": "delete_all_nodes",
+    "description": "Deletes all nodes in the graph without any filtering or conditions.",
+    "tags": [
+      "write",
+      "delete",
+      "no_filter",
+      "all_nodes"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_897bbddb49ed",
+    "machine_name": "relationship_pattern_with_label",
+    "description": "Relationship pattern with label 'A' on relationships, testing labeled relationship matching and creation in MERGE.",
+    "tags": [
+      "relationship_pattern",
+      "label",
+      "merge",
+      "pattern_matching"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_63755ce994d5",
+    "machine_name": "path_variable_reuse_in_unwind",
+    "description": "Reusing a path variable (r) defined in MATCH within an UNWIND clause for relationship iteration.",
+    "tags": [
+      "variable_reuse",
+      "path",
+      "unwind",
+      "iteration"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

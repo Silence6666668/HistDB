@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_375b40a65710",
+  "skeleton_text": "MATCH (n0) WHERE (HOLE_STR_0 STARTS WITH HOLE_STR_1) MATCH (n1 :HOLE_LABEL_0) WHERE ((n1.HOLE_PROP_0) < HOLE_NUM_0) RETURN max(-HOLE_NUM_1) AS a0, n1, (n1.HOLE_PROP_1) AS a1",
+  "source_id": "RedisGraph/RedisGraph#2068",
+  "source_query_id": "RedisGraph__RedisGraph__2068__q014",
+  "holes": []
+}

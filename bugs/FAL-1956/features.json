@@ -1,0 +1,87 @@
+[
+  {
+    "feature_id": "ft_898d3e3f3a88",
+    "machine_name": "merge_relationship_between_matched_nodes",
+    "description": "Creating or reusing a directional relationship between two previously matched nodes",
+    "tags": [
+      "merge",
+      "relationship_creation",
+      "write_operation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_89000ec7c126",
+    "machine_name": "unwind_list_to_rows",
+    "description": "Expands a list into individual rows using UNWIND, enabling per-element processing such as node creation in a loop-like manner.",
+    "tags": [
+      "UNWIND",
+      "list_expansion",
+      "iteration"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_0780d0e25cb2",
+    "machine_name": "nested_call_subquery",
+    "description": "CALL subquery nested inside another CALL subquery, where the inner subquery contains an OPTIONAL MATCH clause",
+    "tags": [
+      "subquery",
+      "nested",
+      "optional_match",
+      "call"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ebf8ef9445ab",
+    "machine_name": "node_label_property_filter",
+    "description": "Filter nodes by label and property equality in a single pattern",
+    "tags": [
+      "node_filter",
+      "property",
+      "label"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_11cd01fafe5a",
+    "machine_name": "match_after_write_without_constraints",
+    "description": "MATCH clause follows a write operation (MERGE) without constraints, potentially matching any node",
+    "tags": [
+      "match",
+      "unconstrained_pattern",
+      "post_write_reading"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_e33f91da8a94",
+    "machine_name": "simple_aggregation_query",
+    "description": "A minimal query combining MATCH with a single aggregation in RETURN, without WHERE, ORDER BY, or other clauses.",
+    "tags": [
+      "basic",
+      "aggregation",
+      "no_filter"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "feature_id": "ft_65600d4c0422",
+    "machine_name": "single_return_expression",
+    "description": "A RETURN clause with exactly one expression, no aggregation or filtering.",
+    "tags": [
+      "return",
+      "simple",
+      "expression"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_99299323c7bb",
+    "machine_name": "write_after_match_with_property_filters",
+    "description": "Combination of MATCH with property filters followed by a write operation (DETACH DELETE), testing transaction or state change behavior.",
+    "tags": [
+      "match",
+      "write",
+      "property_filter",
+      "sequence"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3f859f6793a5",
+    "machine_name": "contradictory_where_condition",
+    "description": "WHERE clause containing a logical contradiction (always false) combined with other predicates",
+    "tags": [
+      "where",
+      "predicate",
+      "contradiction",
+      "logical_operator"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a8674da2cbcd",
+    "machine_name": "collect_with_list_comprehension",
+    "description": "Collect property values into a list and transform each element with list comprehension",
+    "tags": [
+      "aggregation",
+      "list_manipulation",
+      "transformation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_25d01af2877a",
+    "machine_name": "return_property_after_delete",
+    "description": "Returns a property from a deleted relationship in the same query, testing post-deletion variable availability and property access.",
+    "tags": [
+      "write",
+      "delete",
+      "return",
+      "property_access",
+      "variable_reuse"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_1ef3ba6f88b1",
+    "machine_name": "combined_optional_match_merge",
+    "description": "Combination of OPTIONAL MATCH clauses followed by a MERGE clause, testing interaction between optional patterns and write operations.",
+    "tags": [
+      "optional_match",
+      "merge",
+      "clause_combination",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

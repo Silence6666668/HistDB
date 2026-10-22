@@ -1,0 +1,1334 @@
+[
+  {
+    "report_id": "AGE-2378",
+    "dbms": "apache_age",
+    "issue_url": "https://github.com/apache/age/issues/2378",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.sql",
+    "test_sha256": "932d3e2675e2325e99d42d651ad4f34ab3476554078b56ccf66b145d97dab573"
+  },
+  {
+    "report_id": "AGE-2382",
+    "dbms": "apache_age",
+    "issue_url": "https://github.com/apache/age/issues/2382",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.sql",
+    "test_sha256": "5c2555c5375b3af7da7d37e90b0178dd0b6a81b638276bf67affa4d8e4b74d79"
+  },
+  {
+    "report_id": "AGE-2383",
+    "dbms": "apache_age",
+    "issue_url": "https://github.com/apache/age/issues/2383",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.sql",
+    "test_sha256": "a8be3e9c61b10aac560abba931c9b72ade0bc3e782296a2298d75aa225cb16ca"
+  },
+  {
+    "report_id": "AGE-2384",
+    "dbms": "apache_age",
+    "issue_url": "https://github.com/apache/age/issues/2384",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.sql",
+    "test_sha256": "78b3ee549a99d99b7fe9059dc2a682e1c8d58983a000961977b99b422f5e736b"
+  },
+  {
+    "report_id": "AGE-2385",
+    "dbms": "apache_age",
+    "issue_url": "https://github.com/apache/age/issues/2385",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.sql",
+    "test_sha256": "71b506be0a2647ed74a82cf84576a774e304d6045cde10f4ec72fcf8ca5268d1"
+  },
+  {
+    "report_id": "AGE-2386",
+    "dbms": "apache_age",
+    "issue_url": "https://github.com/apache/age/issues/2386",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.sql",
+    "test_sha256": "3f4fc8a03431ac0c630f203042a1666a873ad3235a9b4b5dd51efdde49b0cd9d"
+  },
+  {
+    "report_id": "AGE-2388",
+    "dbms": "apache_age",
+    "issue_url": "https://github.com/apache/age/issues/2388",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.sql",
+    "test_sha256": "f0aef516a1122943ebffc30680bc14496e321f71ccc8bd56de5aca7deef977b3"
+  },
+  {
+    "report_id": "AGE-2389",
+    "dbms": "apache_age",
+    "issue_url": "https://github.com/apache/age/issues/2389",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.sql",
+    "test_sha256": "703d82b6594971c63fc0d7aa20adef22c44446f8946f7987a3b9776bbe5b21b2"
+  },
+  {
+    "report_id": "AGE-2390",
+    "dbms": "apache_age",
+    "issue_url": "https://github.com/apache/age/issues/2390",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.sql",
+    "test_sha256": "9854a37057e9f76367f05ce53ba7ffbdd79e23de222a6d4eaad0e5c40e6c16ab"
+  },
+  {
+    "report_id": "AGE-2391",
+    "dbms": "apache_age",
+    "issue_url": "https://github.com/apache/age/issues/2391",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.sql",
+    "test_sha256": "b31bcd8ca16292ee5bc6e0708124913558b3a9ad713d971c70b408771f6d5c1e"
+  },
+  {
+    "report_id": "AGE-2392",
+    "dbms": "apache_age",
+    "issue_url": "https://github.com/apache/age/issues/2392",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.sql",
+    "test_sha256": "262c309d946e3787e8c0b9dd2d4e70f92163fce25a851359ab8961e7452b01cd"
+  },
+  {
+    "report_id": "AGE-2393",
+    "dbms": "apache_age",
+    "issue_url": "https://github.com/apache/age/issues/2393",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.sql",
+    "test_sha256": "482a3049cddff18a963c0814592599a866355124d816db920ab9cae99e4d3d16"
+  },
+  {
+    "report_id": "AGE-2394",
+    "dbms": "apache_age",
+    "issue_url": "https://github.com/apache/age/issues/2394",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.sql",
+    "test_sha256": "7b81827ec2bba27dd0ed926e87cd2b5df72df972eaecb8f256ba16791909f982"
+  },
+  {
+    "report_id": "AGE-2395",
+    "dbms": "apache_age",
+    "issue_url": "https://github.com/apache/age/issues/2395",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.sql",
+    "test_sha256": "eb20eaea837fe3d76286bcc10a22c9467e30d7161aa8dc065f6f2a6e488e4ec5"
+  },
+  {
+    "report_id": "AGE-2396",
+    "dbms": "apache_age",
+    "issue_url": "https://github.com/apache/age/issues/2396",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.sql",
+    "test_sha256": "85390c1f476812ea6f4615274a8aea33f37431cde9b2b2d9197ccea3cd6b3083"
+  },
+  {
+    "report_id": "ARC-3888",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/3888",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "a55d7e635f6b12bb22b7659b5f29916417f12f45775acdad1d3710658bd036d4"
+  },
+  {
+    "report_id": "ARC-3938",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/3938",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "68b80778e0f8fb3d8edade01ce22871ca1de6ff49facbcd61d33d7649176d6f5"
+  },
+  {
+    "report_id": "ARC-3944",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/3944",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "7fd589056f2fae1b8cf8e30c044df1535b3b6e3ae6361369fc2703e2514d7f6b"
+  },
+  {
+    "report_id": "ARC-3950",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/3950",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "90de61e26bb48c063771ea09526ec7643f551f5b77fa2ab762a5aa6534820f80"
+  },
+  {
+    "report_id": "ARC-3951",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/3951",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "c51dfa43df423172be669830ec5e1cbfb408fd797305e206e182954d642bd90e"
+  },
+  {
+    "report_id": "ARC-3952",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/3952",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "1aef5bb19690d425d8d52d185d17dab480b28091427697b0da1ddcb49d627c74"
+  },
+  {
+    "report_id": "ARC-3956",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/3956",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "ac316c04cf11667fc68bfdfb9bd79625489f568ef665e7b7720a11c0cf304ba0"
+  },
+  {
+    "report_id": "ARC-3957",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/3957",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "b13230f54c5f7266f681eefa6f37792616c6532fa070fa2aa2858746fb35cfc4"
+  },
+  {
+    "report_id": "ARC-3959",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/3959",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "a931e949bba07d772d9819de81fd53a6189e6ff80c6158a0fb4c337ddc7829c6"
+  },
+  {
+    "report_id": "ARC-3996",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/3996",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "0758ead4d6e07c9f53d5d5247258a0cc40094b9524857b866034de79f3b5b1dd"
+  },
+  {
+    "report_id": "ARC-3997",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/3997",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "4b5717f773a87aa4839ab9c583b24e8cd710493cad3f651a2edce52203aaab05"
+  },
+  {
+    "report_id": "ARC-3998",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/3998",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "eb1ffa88a15c9e8aa9dd34c6704ef2dfea22ebec4beab6acdeedb40847a6a140"
+  },
+  {
+    "report_id": "ARC-3999",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/3999",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "8661fe750cd3d2cffd1d183b4223a40377ca9a95fedfcf4ab12d998137b537e8"
+  },
+  {
+    "report_id": "ARC-4000",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4000",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "8893a5ba3d54f16f360087f801beed099f4fea7937dae5ade2bf8de9a42b763b"
+  },
+  {
+    "report_id": "ARC-4014",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4014",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "e71cead9455573753d4c96c4fce0fa1db0b0c58fb2d3ebcc4dc7817f54837d1c"
+  },
+  {
+    "report_id": "ARC-4015",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4015",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "b59e28eb53f9263db2a20e722db415fec3273e7cffda534d669f3fabb0b3dc1c"
+  },
+  {
+    "report_id": "ARC-4016",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4016",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "f58e5fd7b238d5cd339d70f4a79caa0233ca1dabdea7a8ceb3a0308246a8e59f"
+  },
+  {
+    "report_id": "ARC-4017",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4017",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "a70a75343ebddbaa30f48dd775c1b79f1e805f320b37d6a96d1a133bf18ff9c8"
+  },
+  {
+    "report_id": "ARC-4018",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4018",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "83e44a10e37257971d3929f0135fe818d68cd5ddeb7016e42839d4ef75c4b4f7"
+  },
+  {
+    "report_id": "ARC-4019",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4019",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "a7b6b5b3d44ed76015532e7ff9c4e3412adc64e3b818479787b83b97634dcf06"
+  },
+  {
+    "report_id": "ARC-4043",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4043",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "52efe8f8aec75b341a4e1e5d924f0dd71a5637a49089279d3363b9b51c12f628"
+  },
+  {
+    "report_id": "ARC-4092",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4092",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "aa3b918ca6bd56467e51be0dcca41f490e963b623957191b9c7ec0a62df46c89"
+  },
+  {
+    "report_id": "ARC-4093",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4093",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "3da494138d27562cee43832e254e5d50ad91ea1ed3771f9b75e5d523a4af2b9d"
+  },
+  {
+    "report_id": "ARC-4094",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4094",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "2770bb1a611ec1be5282ff13602628c0ce6c65c93645933715cb14b7de2e5b07"
+  },
+  {
+    "report_id": "ARC-4095",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4095",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "8b7e5cce4ab6553298529e7d64a78ec6a09aadcdbcbfa0ae0b8b3abf1d1748ce"
+  },
+  {
+    "report_id": "ARC-4096",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4096",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "28814f88ff1574d0b91087a641e48d3025c5995c3a12637c1c52968a1a57c009"
+  },
+  {
+    "report_id": "ARC-4097",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4097",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "280908a88eb1eb49f89f800eb3373b44b747181af96a4047aaf397198958aa3f"
+  },
+  {
+    "report_id": "ARC-4099",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4099",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "ced169b68adb8d090936b4d20c79235c0d2635e852f7dcdf1fbed2117fb1fbc1"
+  },
+  {
+    "report_id": "ARC-4100",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4100",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "c7747978491f9c3567901617c1af04b0d90e7c6857a05626e5c2c847d6b63ca9"
+  },
+  {
+    "report_id": "ARC-4101",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4101",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "e7ff1501be2f132a6122d3e95882bb8843d6a9f2126856e3ca57fb61a9f008f6"
+  },
+  {
+    "report_id": "ARC-4102",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4102",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "8f8f165165b695110df247c28ffb959fa3fb3d8616bb3d4c9d68bd5de912026f"
+  },
+  {
+    "report_id": "ARC-4103",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4103",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "1d81daf38a426bac478ef26795c18c8f896bc562b98f5ed4254900eb49a4de58"
+  },
+  {
+    "report_id": "ARC-4104",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4104",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "fe6bd0dca1cf9aec675966a921fc41b082cad1f6842f775e1fd7df099fabe2c6"
+  },
+  {
+    "report_id": "ARC-4105",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4105",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "6b0db4f29fe2f9fa53b584ac4e2421fabba1687802ba0dfff50161c1f08c4650"
+  },
+  {
+    "report_id": "ARC-4106",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4106",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "531cd32d81c6a1a9bae4217574a37c64076dc90e1f4474eecd3c4fcbe2ae2c4c"
+  },
+  {
+    "report_id": "ARC-4107",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4107",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "5042c3695ff3dd7ccca69f133e36d46c06a3d07ae86d458044da56e7ad574314"
+  },
+  {
+    "report_id": "ARC-4108",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4108",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "f1ffcd6d9b2c652c92033870baa1ea42610738e3205fb87d9370d4429cc6e5c6"
+  },
+  {
+    "report_id": "ARC-4109",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4109",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "c1c3a05afb7ef16c208876f7d268e03a3e9c194050d7a55b47f04635fa204100"
+  },
+  {
+    "report_id": "ARC-4110",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4110",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "1a466fde8c571021ce01b7c2fd27856a64eb5c89cb111026bb4511a4d6a849f3"
+  },
+  {
+    "report_id": "ARC-4111",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4111",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "18fc71f05c55485b7212d6d3dbcc580c6724ebaa861feb828a9003de01f6ffec"
+  },
+  {
+    "report_id": "ARC-4112",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4112",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "e2e8cbe5abad10d8006b4a8a1bdada32600e2016ec3ed6aca096ec13aa149c67"
+  },
+  {
+    "report_id": "ARC-4182",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4182",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "59214790f769ad34221c98a6bd5d7ddeb2b5cab1f652e526473c91273fd16460"
+  },
+  {
+    "report_id": "ARC-4183",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4183",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "24cf24b7454c3f5d255d828166eab9e5985288737a2a523e65800f0fe70586d8"
+  },
+  {
+    "report_id": "ARC-4184",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4184",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "7ae56d9fb83801ff866116eff1983a83188b9065386aa06258fe59ea6895ef15"
+  },
+  {
+    "report_id": "ARC-4185",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4185",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "1a15469bf924c20c7d39be36aae709d644c7e8ad6f83a964b621b7e143dacc36"
+  },
+  {
+    "report_id": "ARC-4186",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4186",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "3e29fc5703743f51a2f37bc4fc5f5e54aa150c7b697601a1c946f5b7d225b5b8"
+  },
+  {
+    "report_id": "ARC-4188",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4188",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "a217b6cde1c3fabb161cc80f0651804e916563a4c5cf8a109d542e2cd468288a"
+  },
+  {
+    "report_id": "ARC-4189",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4189",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "ff5b6276e84cde89890bad2cb525a3ea81d74053b17c935cd919328a738929e2"
+  },
+  {
+    "report_id": "ARC-4190",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4190",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "8f3c033ddd613dc81e46fe952388edd0bcfba656213e66b983672f6c34f6c29c"
+  },
+  {
+    "report_id": "ARC-4191",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4191",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "b1dba98e9585a8eeeb57460cd1176a6f0c17749c3812a03cfa430cd0b7944539"
+  },
+  {
+    "report_id": "ARC-4211",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4211",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "7578bfde0d0b274c8fe60f8d33544c1477ebff33910e09f89ff3e17fa5785124"
+  },
+  {
+    "report_id": "ARC-4213",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4213",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "16f724378dad700ffde64cb5d13f250558b0096853e47119ea153da980199315"
+  },
+  {
+    "report_id": "ARC-4305",
+    "dbms": "arcadedb",
+    "issue_url": "https://github.com/ArcadeData/arcadedb/issues/4305",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "ab73307741bc274d250cc747b89bea9549c52a889fb360c8e3b11fc7feb031e6"
+  },
+  {
+    "report_id": "FAL-1845",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1845",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "b5c0a824e7a32e252adae8654b70a3ab9c40886bbe16c808b286e75ad232f742"
+  },
+  {
+    "report_id": "FAL-1846",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1846",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "917a70e16f23269bf7a7dc83f2cb514162de872668a2882033495bc1f5af4f7b"
+  },
+  {
+    "report_id": "FAL-1848",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1848",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "9ea9ebd38c8b147d4178e11d74bb104dfb9ce69bba398b190a519d3106432e32"
+  },
+  {
+    "report_id": "FAL-1849",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1849",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "4a469e0cf61a14bd46a2b85b7e683aa34bf992181675abdd949b40dd5c0ce00e"
+  },
+  {
+    "report_id": "FAL-1943",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1943",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "d055109709ff1e2dead6d07ef44ca6717ec253fdd572acc8d72dc7b0ec2cbdcd"
+  },
+  {
+    "report_id": "FAL-1944",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1944",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "9bf7127235db5405adaf81c1fa64a88cdcf1dea5598d81a51998ab5a51f68361"
+  },
+  {
+    "report_id": "FAL-1945",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1945",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "8395cdc7b200b70d199797a1d6d23298fa0a471dbe6365b29bdeba9f1147cab8"
+  },
+  {
+    "report_id": "FAL-1946",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1946",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "7062609e8e76c2ae8e52a621ff1469eaf90cee56f3e86e780b1ff017527c7057"
+  },
+  {
+    "report_id": "FAL-1947",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1947",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "64a613b64148932b080c7c660a6a0634c92d7ec616782391f0bc33ded2253aab"
+  },
+  {
+    "report_id": "FAL-1948",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1948",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "4435f11d143d1b4b5b97e55cd42cf826888cbf8bec816492c885fbc9b1f22311"
+  },
+  {
+    "report_id": "FAL-1949",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1949",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "1c4b92aecc67243674dca07a886f59eae2ebe977261bdd79ea23fe85798ac3b5"
+  },
+  {
+    "report_id": "FAL-1951",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1951",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "3b9fa8ad6e16fdd7cd3a9c4772258f29c8fe1283b8d20799bb94c681ef7c600c"
+  },
+  {
+    "report_id": "FAL-1952",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1952",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "d47ddbc9632e6b11e641a25b609dfc7bdb983710a4aab4f3331fdc4d698aa330"
+  },
+  {
+    "report_id": "FAL-1953",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1953",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "3ded01d1e4a4cbb41a7e76045fd19513b82ca2b9bfac0f1de953e02af989fa56"
+  },
+  {
+    "report_id": "FAL-1954",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1954",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "6d3e9ccd54e1df36ad0eb844d23689c02490c2564d5759fca5a01a26877ca802"
+  },
+  {
+    "report_id": "FAL-1955",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1955",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "1cfe9b96f0ef5aab26d1930d34bf4227512468ec7c741fe88c32534d13087bf2"
+  },
+  {
+    "report_id": "FAL-1956",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1956",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "a3d29939953c22da8f0fb2aa6cde0f9707cc2c2993ee82c6995e89e6cf19d5e6"
+  },
+  {
+    "report_id": "FAL-1957",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1957",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "cc77e1b43474d9e58d231f6ec9c3ffde314de53d28c62675d8eb5a13e22183c0"
+  },
+  {
+    "report_id": "FAL-1958",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1958",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "6aeef83706db3adf31f103e823af3aee40a5c0bf37c03852fcfee152fba5f5a2"
+  },
+  {
+    "report_id": "FAL-1959",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1959",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "d4c67acaa73ef87f21f8612dcc367efff1ccdc951f8a52a0f128132c6c1147e1"
+  },
+  {
+    "report_id": "FAL-1981",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1981",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "19bce7ea3915214714537a32bc0b75708d629a9f30a92de3b60968672bec8e95"
+  },
+  {
+    "report_id": "FAL-1982",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1982",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "a3c20677581fb302cf606fdf37c724e65b87b9bd5af5b4b0153bbae25b379e5e"
+  },
+  {
+    "report_id": "FAL-1983",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1983",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "1cced01670ee59d314b39e22641940af5a4ff4789e865e8e14b7102427698604"
+  },
+  {
+    "report_id": "FAL-1987",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1987",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "dfe952a7a6fe7f19c7baae01c33d9be73eb8dc44cae2bafafa951a66863061be"
+  },
+  {
+    "report_id": "FAL-1997",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/1997",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "586c23e33a3766524c1810dbad009233fdf498f7432122fd51f1b929343d96b7"
+  },
+  {
+    "report_id": "FAL-2000",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/2000",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "37c4081b93cdc6501efbf8c6a4165ae1e7b383c51d93054c7aca96d9cbbfdaf9"
+  },
+  {
+    "report_id": "FAL-2001",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/2001",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "63111174b852ba7cfb65f0cad9c0f74f20cef9855fe5e1f312fc8ada15fde3b5"
+  },
+  {
+    "report_id": "FAL-2002",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/2002",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "bdfb41ca6e397bc8060e3378fcf158c809bf0c2c8f2764a4f1f01b1dcbdb91a7"
+  },
+  {
+    "report_id": "FAL-2003",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/2003",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "b5f483ed46e6161432b371e5723ff85ea538b45a7d862298713533989cb68582"
+  },
+  {
+    "report_id": "FAL-2004",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/2004",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "1e9fb5570202625bbd384989f8defc9d3ca7934c967146ded60912b0f27d35fe"
+  },
+  {
+    "report_id": "FAL-2006",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/2006",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "53480192eb4b379661405defb46e3e8368f9e3c2e05c8c0b2ab661c549d66634"
+  },
+  {
+    "report_id": "FAL-2007",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/2007",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "5c07fdf36a97effeba0b05884a84b95fe693ca0be9a969b514e26b055548ce53"
+  },
+  {
+    "report_id": "FAL-2008",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/2008",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "d34ad00173592e7c1ff0bcea6616b863b1a3e7ad4fe6f612dbd8fcfebeef2a09"
+  },
+  {
+    "report_id": "FAL-2009",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/2009",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "22e6cd80926e501bac46221701e028801abbff9a206156871d6243a65cf92ec3"
+  },
+  {
+    "report_id": "FAL-2010",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/2010",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "5708068febdd633b43162a4e228077e6e44f0f6849b2b2b35ee58a078c0116db"
+  },
+  {
+    "report_id": "FAL-2027",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/2027",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "2fea3b6c7c5fd0e2f6e03c9bafabc61297d3933e9bc79d09954ff0f1a81d9f73"
+  },
+  {
+    "report_id": "FAL-2028",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/2028",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "a6c5cfa9d3f8ae60ae6cce22be7ef9c3b4ff45042dc5b913d29021ca8862bc9d"
+  },
+  {
+    "report_id": "FAL-2030",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/2030",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "722b049f6a7a4e81d9b0625786314fc785ff8b757f27b64f129e4e340289197d"
+  },
+  {
+    "report_id": "FAL-2066",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/2066",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "79d9c23f575d98b1ab63de1af1dce5e98c14b9280c199eb89ca6c19e82a1194d"
+  },
+  {
+    "report_id": "FAL-2196",
+    "dbms": "falkordb",
+    "issue_url": "https://github.com/FalkorDB/FalkorDB/issues/2196",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "8fed941012e28b671e1581fc43599ce5fc4f1d258f34a0b198d0721f15774e7c"
+  },
+  {
+    "report_id": "MEM-3909",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/3909",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "c230e58681d9e16422c35856897cb55c06db1e411e0ab920b03c75ffb6e539cd"
+  },
+  {
+    "report_id": "MEM-3915",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/3915",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "7e941493fca91c0176a7ba700c1376ea686f85dc0ca79ab869d8d801062d48e9"
+  },
+  {
+    "report_id": "MEM-3955",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/3955",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "5685a2a1a512ca082ccaeb8d98d085a1db23cf3f2b45606e047604b6786a4536"
+  },
+  {
+    "report_id": "MEM-3970",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/3970",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "1248183dfa302a7f888ed600d8ce3d10341a1da081a87e8d7acf9b660ab591e2"
+  },
+  {
+    "report_id": "MEM-3976",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/3976",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "165b9f3edf64277f3c5b96f4b388d2786885a029bb44f801a4473cd5cf2918ac"
+  },
+  {
+    "report_id": "MEM-4007",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4007",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "ebf58295ae1cc36fdc21dc621a5615e06278c9fe28b5893fdd6cff762e4c1e3d"
+  },
+  {
+    "report_id": "MEM-4067",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4067",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "436558a05f6be081fc9ae2cc49cc36298db1151986a1a135b2aa1068223f8fef"
+  },
+  {
+    "report_id": "MEM-4068",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4068",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "1ab16ad57e673f072d86ce32c08f4b59999d98d707b54f819d4f4d5998d8d99b"
+  },
+  {
+    "report_id": "MEM-4069",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4069",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "7b2e1b1f980572f0c831d709c51d6c7b131e4dbb49fa68dc57d1aeaffd66027f"
+  },
+  {
+    "report_id": "MEM-4070",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4070",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "388225036fee1d1de2e889c8681388764646d088c32a8594d80b5fef17e2519b"
+  },
+  {
+    "report_id": "MEM-4084",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4084",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "c1b380ac6935b79068584372aa671a4412c883b701f2179b1a9673963ef6cf19"
+  },
+  {
+    "report_id": "MEM-4085",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4085",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "84f0e2d18b2bc10e06c2a3629e46ab7d979a9f91a1dbf7c2baf01f429db57222"
+  },
+  {
+    "report_id": "MEM-4086",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4086",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "50b79baba87d51e098e448e5fd6ad20eebb45bb92730e4f7c0c4c63f7065e8fb"
+  },
+  {
+    "report_id": "MEM-4098",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4098",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "d7b783799c04656e4d2d35473d700316c8964d264a93d33efb27d3e9806f8ecf"
+  },
+  {
+    "report_id": "MEM-4099",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4099",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "e6be7ea9d103171fbbcd072d1066860790ac29b8e30df93b0e5cb4a1b53d6125"
+  },
+  {
+    "report_id": "MEM-4100",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4100",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "f4d97274758ceedfec121fce6639376d53ac473796b3b0f2f6f800591c9a6105"
+  },
+  {
+    "report_id": "MEM-4123",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4123",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "cb437b6bf4c2bf09d620126cf5ca6c5a951cacf2b9386284ead862530101f628"
+  },
+  {
+    "report_id": "MEM-4124",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4124",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "f6f5c17d445d053d6e7ad609ae1d6620d3d474cfb987efe45a109f8730658970"
+  },
+  {
+    "report_id": "MEM-4134",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4134",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "209824148bf9bfd35032d87f5924728ec04d5f93167170037e183aa045618a9f"
+  },
+  {
+    "report_id": "MEM-4159",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4159",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "43ab2645cd6d529a647897ee2a9daf38b19b707b1719e0e444e6d07407e0a3ed"
+  },
+  {
+    "report_id": "MEM-4160",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4160",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "a4e5e8c3f696084a258826a7378a7e757c25483302a9cdb4e03a66ce508f68b7"
+  },
+  {
+    "report_id": "MEM-4161",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4161",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "d290b180352563d77e3b19113d55447f8b9e8833abf513d67a81c449cb5554c5"
+  },
+  {
+    "report_id": "MEM-4162",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4162",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "cf263a4715467002bd143cabf85bfb3aed93f1d017b30a6a214d116ace0e26cb"
+  },
+  {
+    "report_id": "MEM-4163",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4163",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "acb8088fb46ec37dfca82f1bc067e9ecdaf695b00f6a7a31ee5e66124f4b9780"
+  },
+  {
+    "report_id": "MEM-4166",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4166",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "9f11b16bad03dbcea8ad756d1c6aac600a6ecb4a8e6e7b6915ca440c20d86eb6"
+  },
+  {
+    "report_id": "MEM-4180",
+    "dbms": "memgraph",
+    "issue_url": "https://github.com/memgraph/memgraph/issues/4180",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "bf84e0f04d3808b62951befed8f068975605c38697db1e106b056a8e0329d876"
+  },
+  {
+    "report_id": "NEO-13758",
+    "dbms": "neo4j",
+    "issue_url": "https://github.com/neo4j/neo4j/issues/13758",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "213a3aa19dff95c7855dd50e9802133a28d9f18facc92469aa2cd0005e84bd7c"
+  },
+  {
+    "report_id": "NEO-13810",
+    "dbms": "neo4j",
+    "issue_url": "https://github.com/neo4j/neo4j/issues/13810",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "118958fb0017fa0114a9262c9b777a51a4c44193f45e2910f59fb9814aef54f5"
+  },
+  {
+    "report_id": "NEO-13811",
+    "dbms": "neo4j",
+    "issue_url": "https://github.com/neo4j/neo4j/issues/13811",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "f49fb694970f074441cf7f693a11aed2494234c6acd483c9a49a155b9c07acaf"
+  },
+  {
+    "report_id": "NEO-13812",
+    "dbms": "neo4j",
+    "issue_url": "https://github.com/neo4j/neo4j/issues/13812",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "56dd1989972e97d72c4c7a63f0f4fc60734e8a49a39f1f8000b6236ca09e22ac"
+  },
+  {
+    "report_id": "NEO-13818",
+    "dbms": "neo4j",
+    "issue_url": "https://github.com/neo4j/neo4j/issues/13818",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "2194fd3582cf87c65f29d928eff363ca7c7aa0d5e36166bdb3986c9add93c7cc"
+  },
+  {
+    "report_id": "NEO-13819",
+    "dbms": "neo4j",
+    "issue_url": "https://github.com/neo4j/neo4j/issues/13819",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "785204b2f26f57fc24f6d13629f64407b6c56e0044b0d68a7455fc1e4002812c"
+  },
+  {
+    "report_id": "NEO-13825",
+    "dbms": "neo4j",
+    "issue_url": "https://github.com/neo4j/neo4j/issues/13825",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "5465a2f2be0d817f749703e3732515a8ee14077f6e266f484caeb7f7a0ce2139"
+  },
+  {
+    "report_id": "NEO-13826",
+    "dbms": "neo4j",
+    "issue_url": "https://github.com/neo4j/neo4j/issues/13826",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "4b03f5be1251161909c72f1a32974427de795898c677e9d979d4903a2d92be8c"
+  },
+  {
+    "report_id": "NEO-13827",
+    "dbms": "neo4j",
+    "issue_url": "https://github.com/neo4j/neo4j/issues/13827",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "8c018510e5e510c6f71d15dee779f67e077ec2e16614732f66f3b9593c07cf20"
+  },
+  {
+    "report_id": "NEO-13856",
+    "dbms": "neo4j",
+    "issue_url": "https://github.com/neo4j/neo4j/issues/13856",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "4fc4fd4828b1b75b802ab9f8ea6f88ae9d36863ab56e3027df7ccf01c81dd3c8"
+  },
+  {
+    "report_id": "NEO-13859",
+    "dbms": "neo4j",
+    "issue_url": "https://github.com/neo4j/neo4j/issues/13859",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "12ac0df97676f221058d77f4451249e5c9ff273bf6137314fb0efbec43b0088f"
+  },
+  {
+    "report_id": "NEO-13860",
+    "dbms": "neo4j",
+    "issue_url": "https://github.com/neo4j/neo4j/issues/13860",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "5ec05f7f92960eddf5251e2de0a5cb19aae6fd7d89410d3ce73fb8aa61c1b33a"
+  },
+  {
+    "report_id": "NEO-13861",
+    "dbms": "neo4j",
+    "issue_url": "https://github.com/neo4j/neo4j/issues/13861",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "c10c068db7ffc32342332efc3cb3823cc7be914cd21510dfcb973a53fb0c0caf"
+  },
+  {
+    "report_id": "NEO-13862",
+    "dbms": "neo4j",
+    "issue_url": "https://github.com/neo4j/neo4j/issues/13862",
+    "skeleton_file": "skeleton.json",
+    "features_file": "features.json",
+    "test_file": "test.cypher",
+    "test_sha256": "658a6125c9c5b07796e4700102277a50c4ef9a6f9062847cfe615fd539bbd7bd"
+  }
+]

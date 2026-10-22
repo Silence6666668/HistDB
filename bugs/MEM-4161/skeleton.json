@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_6bf5f8d5e77d",
+  "skeleton_text": "MATCH (HOLE_NODE_LABEL:HOLE_LABEL_1)<-[HOLE_REL:HOLE_REL_TYPE]-(HOLE_NODE_LABEL_2:HOLE_LABEL_2) RETURN ID(HOLE_NODE_LABEL), COLLECT(ID(HOLE_NODE_LABEL_2)), COLLECT(HOLE_REL)",
+  "source_id": null,
+  "source_query_id": "ArcadeData/arcadedb#3404",
+  "holes": []
+}

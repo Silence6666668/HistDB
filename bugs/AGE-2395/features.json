@@ -1,0 +1,22 @@
+[
+  {
+    "feature_id": "ft_f2f1e915eb9e",
+    "machine_name": "query_pattern_aggregation_collect_match_return",
+    "description": "该查询包含 MATCH、WHERE、MATCH、WHERE、MATCH、WHERE、RETURN 子句，涉及聚合计算。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12618",
+    "source_query_id": "q_000027"
+  },
+  {
+    "feature_id": "ft_9cab8ee86266",
+    "machine_name": "query_pattern_match_return_with",
+    "description": "该查询包含 RETURN、WITH、MATCH、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#13102",
+    "source_query_id": "q_000222"
+  }
+]

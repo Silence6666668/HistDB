@@ -1,0 +1,48 @@
+schema_version: 1
+family_id: HISTDB-MEM-010
+title: A later UNION ALL branch misses a relationship created in an earlier branch
+paper_set: fixed-version-50
+dbms: memgraph
+symptom: the read branch omits the relationship written by the preceding branch
+issue:
+  url: https://github.com/memgraph/memgraph/issues/4124
+  status: confirmed
+  report_path: issue_reports/submitted/memgraph/2026-5-7/memgraph_later_union_all_branch_may_not_see_relationships_created_in_earlier_branch.md
+targets:
+  buggy:
+    id: memgraph-3.9.0
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Alice'}), (:Person {name:'Bob'})"
+  query: |-
+    MATCH (a:Person {name:'Alice'}), (b:Person {name:'Bob'})
+    MERGE (a)-[:KNOWS {since:-1}]->(b)
+    RETURN a.name AS a, b.name AS b
+    UNION ALL
+    MATCH (a:Person)-[r:KNOWS]->(b:Person)
+    WHERE r.since < 0
+    RETURN a.name AS a, b.name AS b
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: false
+  expected_buggy:
+    - {a: Alice, b: Bob}
+  expected_correct:
+    - {a: Alice, b: Bob}
+    - {a: Alice, b: Bob}
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: FalkorDB__FalkorDB__1183__q002
+  case_id: case_f5e429a3f230
+  source_artifacts:
+    - issue_reports/submitted/memgraph/2026-5-7/memgraph_later_union_all_branch_may_not_see_relationships_created_in_earlier_branch.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

@@ -1,0 +1,42 @@
+schema_version: 1
+family_id: HISTDB-MEM-007
+title: ORDER BY reinterprets a projected property alias as a scalar property lookup
+paper_set: fixed-version-50
+dbms: memgraph
+symptom: ordering by the projected property raises a property-lookup type error
+issue:
+  url: https://github.com/memgraph/memgraph/issues/3976
+  status: confirmed
+  report_path: issue_reports/submitted/memgraph/old/memgraph_order_by_projected_property_bug.md
+targets:
+  buggy:
+    id: memgraph-3.9.0
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Alice'})-[:WORKS_FOR]->(:Person {name:'Bob'}), (:Person {name:'Charlie'})"
+    - "MATCH (a:Person {name:'Alice'}), (c:Person {name:'Charlie'}) CREATE (a)-[:KNOWS]->(c)"
+  query: |-
+    MATCH (employee:Person)-[:WORKS_FOR]->(p)
+    OPTIONAL MATCH (employee)-[:KNOWS]->(friend)
+    RETURN employee.name AS employee, p.name AS boss, friend.name AS optionalFriend
+    ORDER BY employee.name
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: error_matches
+  category: Memgraph.ClientError.MemgraphError.MemgraphError
+  pattern: '(?i)Only nodes, edges, maps, temporal types and graphs have properties'
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: null
+  case_id: null
+  source_artifacts:
+    - issue_reports/submitted/memgraph/old/memgraph_order_by_projected_property_bug.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

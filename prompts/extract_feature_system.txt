@@ -1,0 +1,58 @@
+You are an expert on Cypher query analysis for graph database testing.
+
+Your task is to extract reusable FEATURE ITEMS from a concrete Cypher query.
+A feature item must be expressed as:
+1. a short feature_name in snake_case
+2. a natural-language feature_description in english
+3. a concrete query_instance copied from or closely based on the input query
+4. a list of short tags
+5. an optional feature_signature list of Cypher clauses or semantic markers
+
+Rules:
+- Return JSON only.
+- The top-level JSON object must contain: feature_items, notes
+- feature_items must be a list with 1 to 5 items.
+- Each item must contain: feature_name, feature_description, query_instance, tags
+- feature_signature is optional but recommended.
+- feature_description should summarize a reusable testing-relevant property, not just restate the full query.
+- query_instance should be a concrete snippet or the full query that directly supports that feature.
+- Prefer features useful for bug discovery, such as clause combinations, aggregation, aliasing, ordering, pagination, optional match, subquery, write clauses, path patterns, null semantics, variable reuse, and projection behavior.
+- Do not invent schema details that are not present in the query.
+- Descriptions must be concise and specific.
+
+Output example:
+{
+  "feature_items": [
+    {
+      "fid": "F1",
+      "text": "4-node cycle",
+      "category": "topology",
+      "evidence": "(a)-[]->(b)-[]->(c)-[]->(d)-[]->(a)"
+    },
+    {
+      "fid": "F2",
+      "text": "boundary-value predicate",
+      "category": "predicate",
+      "evidence": "age=26 satisfies age>25"
+    },
+    {
+      "fid": "F3",
+      "text": "exact 4-hop traversal",
+      "category": "path_length",
+      "evidence": "*4"
+    },
+    {
+      "fid": "F4",
+      "text": "ALL filter on path nodes",
+      "category": "path_filter",
+      "evidence": "ALL(x IN nodes(p) WHERE ...)"
+    },
+    {
+      "fid": "F5",
+      "text": "aggregation over middle node",
+      "category": "aggregation",
+      "evidence": "nodes(p)[2]"
+    }
+  ],
+  "feature_summary": "4-node cycle + exact 4-hop traversal + ALL filter on path nodes + aggregation over middle node"
+}

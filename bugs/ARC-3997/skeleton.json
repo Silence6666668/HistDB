@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_99fdc96784cb",
+  "skeleton_text": "MATCH (a:A),(b:B) WHERE ((a)-[:R]->(b)) RETURN a, b",
+  "source_id": "FalkorDB/FalkorDB#349",
+  "source_query_id": "FalkorDB__FalkorDB__349__q002",
+  "holes": []
+}

@@ -1,0 +1,40 @@
+schema_version: 1
+family_id: HISTDB-MEM-009
+title: Aggregate plus scalar expression over empty input drops the aggregate row
+paper_set: fixed-version-50
+dbms: memgraph
+symptom: the aggregate result row disappears when combined inline with a scalar function
+issue:
+  url: https://github.com/memgraph/memgraph/issues/4159
+  status: confirmed
+  report_path: issue_reports/submitted/memgraph/2026-5-17/memgraph_aggregate_plus_scalar_subexpression_over_empty_input_may_return_no_rows.md
+targets:
+  buggy:
+    id: memgraph-3.9.0
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+  query: |-
+    MATCH (n:MissingLabel)
+    RETURN count(*) + abs(-1) AS v
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: false
+  expected_buggy: []
+  expected_correct:
+    - {v: 1}
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: FalkorDB__FalkorDB__37__q005
+  case_id: case_e8279b2b0853
+  source_artifacts:
+    - issue_reports/submitted/memgraph/2026-5-17/memgraph_aggregate_plus_scalar_subexpression_over_empty_input_may_return_no_rows.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

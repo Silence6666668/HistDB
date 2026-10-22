@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_26d30e1d7bba",
+  "skeleton_text": "MATCH (p:HOLE_LABEL) CALL { WITH p UNWIND range(HOLE_RANGE_START, HOLE_RANGE_END) AS i CREATE (:HOLE_LABEL {HOLE_PROPERTY: p.HOLE_PROPERTY}) } RETURN count(*)",
+  "source_id": "memgraph/memgraph#1829",
+  "source_query_id": "memgraph__memgraph__1829__q002",
+  "holes": []
+}

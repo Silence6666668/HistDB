@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_257e5c9961ae",
+  "skeleton_text": "MATCH (HOLE_NODE0)--(HOLE_NODE0) WITH * WHERE (HOLE_NODE0)--(HOLE_NODE0) MATCH (HOLE_NODE1)-[HOLE_REL1]-() WITH * WHERE (HOLE_NODE1)-[HOLE_REL1]->()<-[HOLE_REL1]-() RETURN *",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#1333",
+  "holes": []
+}

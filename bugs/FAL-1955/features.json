@@ -1,0 +1,91 @@
+[
+  {
+    "feature_id": "ft_10b23be1762c",
+    "machine_name": "batch_node_creation_with_range",
+    "description": "Batch creation of nodes using a numeric range generator and UNWIND for iteration",
+    "tags": [
+      "write",
+      "batch",
+      "range",
+      "unwind",
+      "node_creation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f1a0400081d7",
+    "machine_name": "node_return_without_projection",
+    "description": "RETURN clause returning entire node objects rather than specific properties or expressions, testing full node serialization.",
+    "tags": [
+      "return",
+      "node_object",
+      "serialization"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_67964c1218fc",
+    "machine_name": "list_contains_check_via_any",
+    "description": "Checking if list contains specific string element using ANY predicate with NOT negation",
+    "tags": [
+      "list_operation",
+      "any_predicate",
+      "negation",
+      "string_matching"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_4e54c7a99aae",
+    "machine_name": "single_label_node_creation",
+    "description": "Create a node with a single label and property assignment in one CREATE clause",
+    "tags": [
+      "write",
+      "label",
+      "property",
+      "creation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_063dbff83610",
+    "machine_name": "merge_relationship_with_direction",
+    "description": "MERGE to create or match a directed relationship with specific type",
+    "tags": [
+      "merge",
+      "relationship",
+      "direction",
+      "type"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_0218deec9fcc",
+    "machine_name": "case_expression_in_order_by",
+    "description": "Using CASE expression within ORDER BY clause, evaluating conditional logic for sorting criteria.",
+    "tags": [
+      "case",
+      "order_by",
+      "expression"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

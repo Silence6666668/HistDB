@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_1a18fbaf6548",
+  "skeleton_text": "MATCH (person:HOLE_LABEL_0) RETURN person {actedIn:[(person)-[:HOLE_LABEL_1]->(movie:HOLE_LABEL_2) | movie { .HOLE_PROP_0 }]} AS person ORDER BY person.HOLE_PROP_1 ASC LIMIT HOLE_NUM_0",
+  "source_id": "neo4j#12558",
+  "source_query_id": "q_000003",
+  "holes": []
+}

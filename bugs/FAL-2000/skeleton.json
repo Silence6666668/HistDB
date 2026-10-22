@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_f9b51aa6ed79",
+  "skeleton_text": "MATCH ()-[HOLE_REL]->() WITH HOLE_REL MATCH (HOLE_NODE_A)-[HOLE_REL]->(HOLE_NODE_B) RETURN HOLE_NODE_A, HOLE_NODE_B",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#127",
+  "holes": []
+}

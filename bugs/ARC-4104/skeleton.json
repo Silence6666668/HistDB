@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_bcf5618ffbbc",
+  "skeleton_text": "MATCH (a {name:HOLE_LABEL_0}), (b {name:HOLE_LABEL_1}) MERGE (a)-[r:HOLE_LABEL_2]->(b) ON CREATE SET r = a",
+  "source_id": "RedisGraph/RedisGraph#2262",
+  "source_query_id": "RedisGraph__RedisGraph__2262__q002",
+  "holes": []
+}

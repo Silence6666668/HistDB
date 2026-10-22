@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_e43fcb24cefb",
+    "machine_name": "string_concatenation_in_return",
+    "description": "Uses string concatenation in the RETURN clause to format output with aggregated values.",
+    "tags": [
+      "string",
+      "concatenation",
+      "formatting",
+      "output"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d3d84e2b3b72",
+    "machine_name": "property_equality_in_match",
+    "description": "Uses inline property equality {key:'value'} in MATCH pattern to filter nodes.",
+    "tags": [
+      "property_filter",
+      "inline",
+      "match_pattern"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_eb3efae9eb87",
+    "machine_name": "merge_node_with_properties",
+    "description": "Creates a node with a label and properties if it does not exist, or matches it if it does, using MERGE with inline property assignment.",
+    "tags": [
+      "merge",
+      "node_creation",
+      "property_assignment",
+      "label"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_fcf9d70ff0ad",
+    "machine_name": "set_property_on_path_variable",
+    "description": "SET clause applied to a path variable (p) rather than a node or relationship, testing property assignment on path objects.",
+    "tags": [
+      "set_clause",
+      "path_variable",
+      "property_assignment"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3410a04d370b",
+    "machine_name": "single_node_return",
+    "description": "Returning a single matched node variable without projection",
+    "tags": [
+      "return",
+      "node",
+      "variable",
+      "no_projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d8beef72e178",
+    "machine_name": "string_property_comparison",
+    "description": "Compare string property with less-than operator on literal string",
+    "tags": [
+      "string_comparison",
+      "property_access",
+      "operator"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

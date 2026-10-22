@@ -1,0 +1,62 @@
+[
+  {
+    "feature_id": "ft_158416b76500",
+    "machine_name": "query_pattern_match_optional_match_path_pattern_return",
+    "description": "该查询包含 MATCH、OPTIONAL MATCH、MATCH、RETURN 子句，使用 OPTIONAL MATCH，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12573",
+    "source_query_id": "q_000014"
+  },
+  {
+    "feature_id": "ft_35173f620e22",
+    "machine_name": "query_pattern_aggregation_match_optional_match_path_pattern",
+    "description": "该查询包含 MATCH、WHERE、OPTIONAL MATCH、MATCH、RETURN 子句，涉及聚合计算，使用 OPTIONAL MATCH，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12657",
+    "source_query_id": "q_000040"
+  },
+  {
+    "feature_id": "ft_78e3a647df36",
+    "machine_name": "query_pattern_call_match_optional_match_return",
+    "description": "该查询包含 OPTIONAL MATCH、MATCH、CALL、WITH、WHERE、OPTIONAL MATCH、MATCH、CALL、WITH、WHERE、RETURN、UNION、WITH、WHERE、RETURN 子句，使用 OPTIONAL MATCH，包含子查询。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12797",
+    "source_query_id": "q_000078"
+  },
+  {
+    "feature_id": "ft_8ade3f1f73f1",
+    "machine_name": "query_pattern_aggregation_match_max_optional_match",
+    "description": "该查询包含 MATCH、WITH、OPTIONAL MATCH、MATCH、WITH、OPTIONAL MATCH、MATCH、OPTIONAL MATCH、MATCH、RETURN 子句，涉及聚合计算，使用 OPTIONAL MATCH。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12832",
+    "source_query_id": "q_000090"
+  },
+  {
+    "feature_id": "ft_86aa04613c21",
+    "machine_name": "query_pattern_match_optional_match_return_with",
+    "description": "该查询包含 MATCH、OPTIONAL MATCH、MATCH、WITH、MATCH、OPTIONAL MATCH、MATCH、OPTIONAL MATCH、MATCH、RETURN 子句，使用 OPTIONAL MATCH。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12833",
+    "source_query_id": "q_000091"
+  },
+  {
+    "feature_id": "ft_d7edf88a6109",
+    "machine_name": "query_pattern_match_order_by_return_with",
+    "description": "该查询包含 MATCH、WITH、ORDER BY、WITH、RETURN 子句，带有排序逻辑。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#13166",
+    "source_query_id": "q_000288"
+  }
+]

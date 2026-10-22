@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_cbe2c5a44b18",
+    "machine_name": "simple_node_return",
+    "description": "Return entire matched node without projection or aliasing",
+    "tags": [
+      "return",
+      "node",
+      "no_projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ed5b7914c886",
+    "machine_name": "parameterized_where_predicate",
+    "description": "WHERE clause uses a parameter ($b) for equality comparison with a node property",
+    "tags": [
+      "parameter",
+      "where",
+      "equality",
+      "property"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d7c3a2aaa677",
+    "machine_name": "bidirectional_relationship_pattern",
+    "description": "MATCH clause with a bidirectional relationship pattern where a node is connected to another node via an undirected relationship.",
+    "tags": [
+      "match",
+      "bidirectional",
+      "relationship"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_bd3c340ad0ca",
+    "machine_name": "create_with_return_after_with",
+    "description": "CREATE clause followed by WITH * and then MATCH with RETURN, testing statement chaining after WITH.",
+    "tags": [
+      "create",
+      "with",
+      "match",
+      "return",
+      "chaining"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_e4d4bd3a9620",
+    "machine_name": "single_label_index",
+    "description": "Index creation targeting a single node label, not multiple labels.",
+    "tags": [
+      "schema",
+      "index",
+      "single_label"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_dae2cf680b3c",
+    "machine_name": "label_predicate_in_where",
+    "description": "Use label predicates (e.g., n:LABEL) within a WHERE clause instead of inline in MATCH",
+    "tags": [
+      "label_predicate",
+      "where_clause",
+      "separation",
+      "filter_placement"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_6d32fcd07b0a",
+    "machine_name": "literal_return_value",
+    "description": "RETURN clause returns a literal integer value without any variables or expressions.",
+    "tags": [
+      "literal",
+      "integer",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_cbe2c5a44b18",
+    "machine_name": "simple_node_return",
+    "description": "Return entire matched node without projection or aliasing",
+    "tags": [
+      "return",
+      "node",
+      "no_projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_1575a116f6e2",
+    "machine_name": "multi_label_match_with_where",
+    "description": "Two separate MATCH clauses with WHERE filters on different node labels and hash properties",
+    "tags": [
+      "match",
+      "where",
+      "multi_label",
+      "hash_filter",
+      "with_binding"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3ce421b48edd",
+    "machine_name": "aliased_aggregation_result",
+    "description": "Returns an aggregated value with an explicit alias in the result projection.",
+    "tags": [
+      "alias",
+      "projection",
+      "aggregation",
+      "return_clause"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_22187e36d4f7",
+    "machine_name": "subquery_main_query_chaining",
+    "description": "Chaining of a CALL subquery with UNWIND and MATCH in the main query, testing execution order and variable scoping",
+    "tags": [
+      "subquery_chaining",
+      "execution_order",
+      "variable_scope",
+      "full_query"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f3fbd3557fd0",
+    "machine_name": "single_relationship_return",
+    "description": "Return only the relationship variable from a pattern match",
+    "tags": [
+      "return",
+      "projection",
+      "relationship"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

@@ -1,0 +1,720 @@
+{
+  "complete": true,
+  "computed_utc": "2026-10-15T07:34:03.617224+00:00",
+  "feature_count": 5,
+  "matched_tasks": 5000,
+  "available_pairs": 5523,
+  "cohorts": 5,
+  "cohort_size": 1000,
+  "independent_generator_runs": false,
+  "database_execution": false,
+  "aggregate": {
+    "W": {
+      "cohort": {
+        "mean": 3.0,
+        "sd": 1.5811388300841898
+      },
+      "input_tasks": {
+        "mean": 1000.0,
+        "sd": 0.0
+      },
+      "input_assigned_crr_rate": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "input_strict_crr_rate": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "selected_unique_pairs": {
+        "mean": 4139.2,
+        "sd": 90.78105529239016
+      },
+      "selected_unique_unseen_pairs": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "selected_unique_hupr": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "selected_occurrence_hupr": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "selected_cross_report_pair_rate": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "accepted_queries": {
+        "mean": 1000.0,
+        "sd": 0.0
+      },
+      "unique_mechanism_pairs": {
+        "mean": 522.6,
+        "sd": 16.65232716469383
+      },
+      "unique_unseen_mechanism_pairs": {
+        "mean": 38.8,
+        "sd": 7.5960516059331775
+      },
+      "unique_hupr": {
+        "mean": 0.07397161130081632,
+        "sd": 0.012344789130435487
+      },
+      "occurrence_hupr": {
+        "mean": 0.0023253920205388422,
+        "sd": 0.00030881995916593797
+      },
+      "query_unseen_composition_rate": {
+        "mean": 0.0848,
+        "sd": 0.008167006795638167
+      },
+      "unique_core_mechanism_pairs": {
+        "mean": 284.6,
+        "sd": 9.555103348473004
+      },
+      "unique_unseen_core_pairs": {
+        "mean": 32.0,
+        "sd": 5.5677643628300215
+      },
+      "unique_core_hupr": {
+        "mean": 0.11205867241490383,
+        "sd": 0.016049076511595553
+      },
+      "core_occurrence_hupr": {
+        "mean": 0.008088156200085723,
+        "sd": 0.001071127917540862
+      },
+      "core_query_unseen_composition_rate": {
+        "mean": 0.0848,
+        "sd": 0.008167006795638167
+      },
+      "pair_occurrences": {
+        "mean": 60453.8,
+        "sd": 574.8571126810557
+      },
+      "unseen_pair_occurrences": {
+        "mean": 140.6,
+        "sd": 18.92881401461803
+      },
+      "core_pair_occurrences": {
+        "mean": 15137.2,
+        "sd": 211.43249513733693
+      },
+      "core_unseen_pair_occurrences": {
+        "mean": 122.4,
+        "sd": 15.962455951387932
+      }
+    },
+    "S": {
+      "cohort": {
+        "mean": 3.0,
+        "sd": 1.5811388300841898
+      },
+      "input_tasks": {
+        "mean": 1000.0,
+        "sd": 0.0
+      },
+      "input_assigned_crr_rate": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "input_strict_crr_rate": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "selected_unique_pairs": {
+        "mean": 9875.4,
+        "sd": 9.44986772394196
+      },
+      "selected_unique_unseen_pairs": {
+        "mean": 9822.2,
+        "sd": 8.843076387773658
+      },
+      "selected_unique_hupr": {
+        "mean": 0.9946129782356499,
+        "sd": 0.0003864893767373604
+      },
+      "selected_occurrence_hupr": {
+        "mean": 0.99466,
+        "sd": 0.00039115214431214847
+      },
+      "selected_cross_report_pair_rate": {
+        "mean": 0.9951599999999999,
+        "sd": 0.00035071355833500773
+      },
+      "selected_crnp_rate": {
+        "mean": 0.9994975661595623,
+        "sd": 0.00015889576167590384
+      },
+      "accepted_queries": {
+        "mean": 1000.0,
+        "sd": 0.0
+      },
+      "unique_mechanism_pairs": {
+        "mean": 626.8,
+        "sd": 16.87305544351704
+      },
+      "unique_unseen_mechanism_pairs": {
+        "mean": 68.6,
+        "sd": 11.545561917897283
+      },
+      "unique_hupr": {
+        "mean": 0.1091843976698839,
+        "sd": 0.015980442507767176
+      },
+      "occurrence_hupr": {
+        "mean": 0.004530081190114933,
+        "sd": 0.00041728408271046074
+      },
+      "query_unseen_composition_rate": {
+        "mean": 0.2104,
+        "sd": 0.010163660757817529
+      },
+      "unique_core_mechanism_pairs": {
+        "mean": 372.4,
+        "sd": 13.011533345459327
+      },
+      "unique_unseen_core_pairs": {
+        "mean": 61.8,
+        "sd": 9.311283477587823
+      },
+      "unique_core_hupr": {
+        "mean": 0.165488506622264,
+        "sd": 0.020108596775346443
+      },
+      "core_occurrence_hupr": {
+        "mean": 0.015132424836779065,
+        "sd": 0.0012675009410843872
+      },
+      "core_query_unseen_composition_rate": {
+        "mean": 0.2104,
+        "sd": 0.010163660757817529
+      },
+      "pair_occurrences": {
+        "mean": 80211.0,
+        "sd": 1124.9588881376956
+      },
+      "unseen_pair_occurrences": {
+        "mean": 363.4,
+        "sd": 34.68861484694943
+      },
+      "core_pair_occurrences": {
+        "mean": 22976.4,
+        "sd": 503.2119831641532
+      },
+      "core_unseen_pair_occurrences": {
+        "mean": 347.8,
+        "sd": 31.995312156626944
+      }
+    }
+  },
+  "per_arm": {
+    "W": [
+      {
+        "cohort": 1,
+        "input_tasks": 1000,
+        "input_assigned_crr_rate": 0.0,
+        "input_strict_crr_rate": 0.0,
+        "selected_unique_pairs": 4230,
+        "selected_unique_unseen_pairs": 0,
+        "selected_unique_hupr": 0.0,
+        "selected_occurrence_hupr": 0.0,
+        "selected_cross_report_pair_rate": 0.0,
+        "selected_crnp_rate": null,
+        "accepted_queries": 1000,
+        "unique_mechanism_pairs": 511,
+        "unique_unseen_mechanism_pairs": 33,
+        "unique_hupr": 0.06457925636007827,
+        "occurrence_hupr": 0.00263571475345426,
+        "query_unseen_composition_rate": 0.095,
+        "unique_core_mechanism_pairs": 275,
+        "unique_unseen_core_pairs": 27,
+        "unique_core_hupr": 0.09818181818181818,
+        "core_occurrence_hupr": 0.008706467661691543,
+        "core_query_unseen_composition_rate": 0.095,
+        "pair_occurrences": 61084,
+        "unseen_pair_occurrences": 161,
+        "core_pair_occurrences": 15276,
+        "core_unseen_pair_occurrences": 133
+      },
+      {
+        "cohort": 2,
+        "input_tasks": 1000,
+        "input_assigned_crr_rate": 0.0,
+        "input_strict_crr_rate": 0.0,
+        "selected_unique_pairs": 4148,
+        "selected_unique_unseen_pairs": 0,
+        "selected_unique_hupr": 0.0,
+        "selected_occurrence_hupr": 0.0,
+        "selected_cross_report_pair_rate": 0.0,
+        "selected_crnp_rate": null,
+        "accepted_queries": 1000,
+        "unique_mechanism_pairs": 512,
+        "unique_unseen_mechanism_pairs": 32,
+        "unique_hupr": 0.0625,
+        "occurrence_hupr": 0.00209325707504409,
+        "query_unseen_composition_rate": 0.078,
+        "unique_core_mechanism_pairs": 279,
+        "unique_unseen_core_pairs": 28,
+        "unique_core_hupr": 0.1003584229390681,
+        "core_occurrence_hupr": 0.007017313746065058,
+        "core_query_unseen_composition_rate": 0.078,
+        "pair_occurrences": 60671,
+        "unseen_pair_occurrences": 127,
+        "core_pair_occurrences": 15248,
+        "core_unseen_pair_occurrences": 107
+      },
+      {
+        "cohort": 3,
+        "input_tasks": 1000,
+        "input_assigned_crr_rate": 0.0,
+        "input_strict_crr_rate": 0.0,
+        "selected_unique_pairs": 4072,
+        "selected_unique_unseen_pairs": 0,
+        "selected_unique_hupr": 0.0,
+        "selected_occurrence_hupr": 0.0,
+        "selected_cross_report_pair_rate": 0.0,
+        "selected_crnp_rate": null,
+        "accepted_queries": 1000,
+        "unique_mechanism_pairs": 547,
+        "unique_unseen_mechanism_pairs": 46,
+        "unique_hupr": 0.08409506398537477,
+        "occurrence_hupr": 0.002471006852925672,
+        "query_unseen_composition_rate": 0.084,
+        "unique_core_mechanism_pairs": 298,
+        "unique_unseen_core_pairs": 37,
+        "unique_core_hupr": 0.12416107382550336,
+        "core_occurrence_hupr": 0.008754736704560303,
+        "core_query_unseen_composition_rate": 0.084,
+        "pair_occurrences": 60704,
+        "unseen_pair_occurrences": 150,
+        "core_pair_occurrences": 15306,
+        "core_unseen_pair_occurrences": 134
+      },
+      {
+        "cohort": 4,
+        "input_tasks": 1000,
+        "input_assigned_crr_rate": 0.0,
+        "input_strict_crr_rate": 0.0,
+        "selected_unique_pairs": 4024,
+        "selected_unique_unseen_pairs": 0,
+        "selected_unique_hupr": 0.0,
+        "selected_occurrence_hupr": 0.0,
+        "selected_cross_report_pair_rate": 0.0,
+        "selected_crnp_rate": null,
+        "accepted_queries": 1000,
+        "unique_mechanism_pairs": 533,
+        "unique_unseen_mechanism_pairs": 48,
+        "unique_hupr": 0.0900562851782364,
+        "occurrence_hupr": 0.002517665620436731,
+        "query_unseen_composition_rate": 0.091,
+        "unique_core_mechanism_pairs": 291,
+        "unique_unseen_core_pairs": 39,
+        "unique_core_hupr": 0.13402061855670103,
+        "core_occurrence_hupr": 0.009119773018982638,
+        "core_query_unseen_composition_rate": 0.091,
+        "pair_occurrences": 59579,
+        "unseen_pair_occurrences": 150,
+        "core_pair_occurrences": 14803,
+        "core_unseen_pair_occurrences": 135
+      },
+      {
+        "cohort": 5,
+        "input_tasks": 1000,
+        "input_assigned_crr_rate": 0.0,
+        "input_strict_crr_rate": 0.0,
+        "selected_unique_pairs": 4222,
+        "selected_unique_unseen_pairs": 0,
+        "selected_unique_hupr": 0.0,
+        "selected_occurrence_hupr": 0.0,
+        "selected_cross_report_pair_rate": 0.0,
+        "selected_crnp_rate": null,
+        "accepted_queries": 1000,
+        "unique_mechanism_pairs": 510,
+        "unique_unseen_mechanism_pairs": 35,
+        "unique_hupr": 0.06862745098039216,
+        "occurrence_hupr": 0.001909315800833458,
+        "query_unseen_composition_rate": 0.076,
+        "unique_core_mechanism_pairs": 280,
+        "unique_unseen_core_pairs": 29,
+        "unique_core_hupr": 0.10357142857142858,
+        "core_occurrence_hupr": 0.006842489869129077,
+        "core_query_unseen_composition_rate": 0.076,
+        "pair_occurrences": 60231,
+        "unseen_pair_occurrences": 115,
+        "core_pair_occurrences": 15053,
+        "core_unseen_pair_occurrences": 103
+      }
+    ],
+    "S": [
+      {
+        "cohort": 1,
+        "input_tasks": 1000,
+        "input_assigned_crr_rate": 1.0,
+        "input_strict_crr_rate": 1.0,
+        "selected_unique_pairs": 9891,
+        "selected_unique_unseen_pairs": 9836,
+        "selected_unique_hupr": 0.9944393893438479,
+        "selected_occurrence_hupr": 0.9945,
+        "selected_cross_report_pair_rate": 0.9949,
+        "selected_crnp_rate": 0.9995979495426676,
+        "accepted_queries": 1000,
+        "unique_mechanism_pairs": 645,
+        "unique_unseen_mechanism_pairs": 87,
+        "unique_hupr": 0.13488372093023257,
+        "occurrence_hupr": 0.004980460322743691,
+        "query_unseen_composition_rate": 0.218,
+        "unique_core_mechanism_pairs": 384,
+        "unique_unseen_core_pairs": 75,
+        "unique_core_hupr": 0.1953125,
+        "core_occurrence_hupr": 0.01623902480606939,
+        "core_query_unseen_composition_rate": 0.218,
+        "pair_occurrences": 81117,
+        "unseen_pair_occurrences": 404,
+        "core_pair_occurrences": 23462,
+        "core_unseen_pair_occurrences": 381
+      },
+      {
+        "cohort": 2,
+        "input_tasks": 1000,
+        "input_assigned_crr_rate": 1.0,
+        "input_strict_crr_rate": 1.0,
+        "selected_unique_pairs": 9873,
+        "selected_unique_unseen_pairs": 9822,
+        "selected_unique_hupr": 0.9948343968398663,
+        "selected_occurrence_hupr": 0.9949,
+        "selected_cross_report_pair_rate": 0.9952,
+        "selected_crnp_rate": 0.9996985530546624,
+        "accepted_queries": 1000,
+        "unique_mechanism_pairs": 634,
+        "unique_unseen_mechanism_pairs": 68,
+        "unique_hupr": 0.10725552050473186,
+        "occurrence_hupr": 0.004839947515658654,
+        "query_unseen_composition_rate": 0.222,
+        "unique_core_mechanism_pairs": 377,
+        "unique_unseen_core_pairs": 65,
+        "unique_core_hupr": 0.1724137931034483,
+        "core_occurrence_hupr": 0.016437292376720307,
+        "core_query_unseen_composition_rate": 0.222,
+        "pair_occurrences": 80786,
+        "unseen_pair_occurrences": 391,
+        "core_pair_occurrences": 23179,
+        "core_unseen_pair_occurrences": 381
+      },
+      {
+        "cohort": 3,
+        "input_tasks": 1000,
+        "input_assigned_crr_rate": 1.0,
+        "input_strict_crr_rate": 1.0,
+        "selected_unique_pairs": 9866,
+        "selected_unique_unseen_pairs": 9812,
+        "selected_unique_hupr": 0.994526657206568,
+        "selected_occurrence_hupr": 0.9945,
+        "selected_cross_report_pair_rate": 0.9952,
+        "selected_crnp_rate": 0.9992966237942122,
+        "accepted_queries": 1000,
+        "unique_mechanism_pairs": 612,
+        "unique_unseen_mechanism_pairs": 66,
+        "unique_hupr": 0.10784313725490197,
+        "occurrence_hupr": 0.00444709858582265,
+        "query_unseen_composition_rate": 0.197,
+        "unique_core_mechanism_pairs": 364,
+        "unique_unseen_core_pairs": 57,
+        "unique_core_hupr": 0.1565934065934066,
+        "core_occurrence_hupr": 0.01464049939372165,
+        "core_query_unseen_composition_rate": 0.197,
+        "pair_occurrences": 78703,
+        "unseen_pair_occurrences": 350,
+        "core_pair_occurrences": 22267,
+        "core_unseen_pair_occurrences": 326
+      },
+      {
+        "cohort": 4,
+        "input_tasks": 1000,
+        "input_assigned_crr_rate": 1.0,
+        "input_strict_crr_rate": 1.0,
+        "selected_unique_pairs": 9871,
+        "selected_unique_unseen_pairs": 9823,
+        "selected_unique_hupr": 0.9951372707932327,
+        "selected_occurrence_hupr": 0.9952,
+        "selected_cross_report_pair_rate": 0.9957,
+        "selected_crnp_rate": 0.9994978407150749,
+        "accepted_queries": 1000,
+        "unique_mechanism_pairs": 606,
+        "unique_unseen_mechanism_pairs": 55,
+        "unique_hupr": 0.09075907590759076,
+        "occurrence_hupr": 0.003907357418432373,
+        "query_unseen_composition_rate": 0.204,
+        "unique_core_mechanism_pairs": 354,
+        "unique_unseen_core_pairs": 50,
+        "unique_core_hupr": 0.14124293785310735,
+        "core_occurrence_hupr": 0.01333161865569273,
+        "core_query_unseen_composition_rate": 0.204,
+        "pair_occurrences": 81129,
+        "unseen_pair_occurrences": 317,
+        "core_pair_occurrences": 23328,
+        "core_unseen_pair_occurrences": 311
+      },
+      {
+        "cohort": 5,
+        "input_tasks": 1000,
+        "input_assigned_crr_rate": 1.0,
+        "input_strict_crr_rate": 1.0,
+        "selected_unique_pairs": 9876,
+        "selected_unique_unseen_pairs": 9818,
+        "selected_unique_hupr": 0.9941271769947347,
+        "selected_occurrence_hupr": 0.9942,
+        "selected_cross_report_pair_rate": 0.9948,
+        "selected_crnp_rate": 0.9993968636911942,
+        "accepted_queries": 1000,
+        "unique_mechanism_pairs": 637,
+        "unique_unseen_mechanism_pairs": 67,
+        "unique_hupr": 0.10518053375196232,
+        "occurrence_hupr": 0.004475542107917297,
+        "query_unseen_composition_rate": 0.211,
+        "unique_core_mechanism_pairs": 383,
+        "unique_unseen_core_pairs": 62,
+        "unique_core_hupr": 0.1618798955613577,
+        "core_occurrence_hupr": 0.015013688951691247,
+        "core_query_unseen_composition_rate": 0.211,
+        "pair_occurrences": 79320,
+        "unseen_pair_occurrences": 355,
+        "core_pair_occurrences": 22646,
+        "core_unseen_pair_occurrences": 340
+      }
+    ]
+  },
+  "pooled": {
+    "W": {
+      "input_tasks": 5000,
+      "input_assigned_crr_rate": 0.0,
+      "input_strict_crr_rate": 0.0,
+      "selected_unique_pairs": 7118,
+      "selected_unique_unseen_pairs": 0,
+      "selected_unique_hupr": 0.0,
+      "selected_occurrence_hupr": 0.0,
+      "selected_cross_report_pair_rate": 0.0,
+      "selected_crnp_rate": null,
+      "accepted_queries": 5000,
+      "unique_mechanism_pairs": 606,
+      "unique_unseen_mechanism_pairs": 69,
+      "unique_hupr": 0.11386138613861387,
+      "occurrence_hupr": 0.0023257429640485792,
+      "query_unseen_composition_rate": 0.0848,
+      "unique_core_mechanism_pairs": 350,
+      "unique_unseen_core_pairs": 60,
+      "unique_core_hupr": 0.17142857142857143,
+      "core_occurrence_hupr": 0.008086039690299395,
+      "core_query_unseen_composition_rate": 0.0848,
+      "pair_occurrences": 302269,
+      "unseen_pair_occurrences": 703,
+      "core_pair_occurrences": 75686,
+      "core_unseen_pair_occurrences": 612
+    },
+    "S": {
+      "input_tasks": 5000,
+      "input_assigned_crr_rate": 1.0,
+      "input_strict_crr_rate": 1.0,
+      "selected_unique_pairs": 47151,
+      "selected_unique_unseen_pairs": 46897,
+      "selected_unique_hupr": 0.994613051685012,
+      "selected_occurrence_hupr": 0.99466,
+      "selected_cross_report_pair_rate": 0.99516,
+      "selected_crnp_rate": 0.9994975682302343,
+      "accepted_queries": 5000,
+      "unique_mechanism_pairs": 762,
+      "unique_unseen_mechanism_pairs": 128,
+      "unique_hupr": 0.1679790026246719,
+      "occurrence_hupr": 0.004530550672601015,
+      "query_unseen_composition_rate": 0.2104,
+      "unique_core_mechanism_pairs": 485,
+      "unique_unseen_core_pairs": 116,
+      "unique_core_hupr": 0.23917525773195877,
+      "core_occurrence_hupr": 0.015137271287059766,
+      "core_query_unseen_composition_rate": 0.2104,
+      "pair_occurrences": 401055,
+      "unseen_pair_occurrences": 1817,
+      "core_pair_occurrences": 114882,
+      "core_unseen_pair_occurrences": 1739
+    }
+  },
+  "statistics": [
+    {
+      "metric": "unique_mechanism_pairs",
+      "label": "Distinct query-element pairs",
+      "W_values": [
+        511,
+        512,
+        547,
+        533,
+        510
+      ],
+      "S_values": [
+        645,
+        634,
+        612,
+        606,
+        637
+      ],
+      "n_pairs": 5,
+      "n_nonzero": 5,
+      "zero_pairs": 0,
+      "statistic": 0.0,
+      "z_scipy": -2.0225995873897262,
+      "p_raw": 0.0625,
+      "r_from_reported_Z": -0.9045340337332908,
+      "r_magnitude": 0.9045340337332908,
+      "positive_rank_sum": 15.0,
+      "negative_rank_sum": 0.0,
+      "rank_biserial_S_minus_W": 1.0,
+      "positive_pairs": 5,
+      "negative_pairs": 0,
+      "paired_differences_S_minus_W": [
+        134.0,
+        122.0,
+        65.0,
+        73.0,
+        127.0
+      ],
+      "mean_difference_S_minus_W": 104.2,
+      "p_normal_approximation_diagnostic_only": 0.043114446783075355,
+      "test": "two-sided exact sign-enumerated Wilcoxon signed-rank",
+      "sign_assignments": 32,
+      "p_holm_4": 0.25
+    },
+    {
+      "metric": "unique_unseen_mechanism_pairs",
+      "label": "Historically unseen query-element pairs",
+      "W_values": [
+        33,
+        32,
+        46,
+        48,
+        35
+      ],
+      "S_values": [
+        87,
+        68,
+        66,
+        55,
+        67
+      ],
+      "n_pairs": 5,
+      "n_nonzero": 5,
+      "zero_pairs": 0,
+      "statistic": 0.0,
+      "z_scipy": -2.0225995873897262,
+      "p_raw": 0.0625,
+      "r_from_reported_Z": -0.9045340337332908,
+      "r_magnitude": 0.9045340337332908,
+      "positive_rank_sum": 15.0,
+      "negative_rank_sum": 0.0,
+      "rank_biserial_S_minus_W": 1.0,
+      "positive_pairs": 5,
+      "negative_pairs": 0,
+      "paired_differences_S_minus_W": [
+        54.0,
+        36.0,
+        20.0,
+        7.0,
+        32.0
+      ],
+      "mean_difference_S_minus_W": 29.8,
+      "p_normal_approximation_diagnostic_only": 0.043114446783075355,
+      "test": "two-sided exact sign-enumerated Wilcoxon signed-rank",
+      "sign_assignments": 32,
+      "p_holm_4": 0.25
+    },
+    {
+      "metric": "unique_hupr",
+      "label": "Historically unseen pairs (%)",
+      "W_values": [
+        0.06457925636007827,
+        0.0625,
+        0.08409506398537477,
+        0.0900562851782364,
+        0.06862745098039216
+      ],
+      "S_values": [
+        0.13488372093023257,
+        0.10725552050473186,
+        0.10784313725490197,
+        0.09075907590759076,
+        0.10518053375196232
+      ],
+      "n_pairs": 5,
+      "n_nonzero": 5,
+      "zero_pairs": 0,
+      "statistic": 0.0,
+      "z_scipy": -2.0225995873897262,
+      "p_raw": 0.0625,
+      "r_from_reported_Z": -0.9045340337332908,
+      "r_magnitude": 0.9045340337332908,
+      "positive_rank_sum": 15.0,
+      "negative_rank_sum": 0.0,
+      "rank_biserial_S_minus_W": 1.0,
+      "positive_pairs": 5,
+      "negative_pairs": 0,
+      "paired_differences_S_minus_W": [
+        0.07030446457,
+        0.044755520505,
+        0.02374807327,
+        0.000702790729,
+        0.036553082772
+      ],
+      "mean_difference_S_minus_W": 0.03521278636920001,
+      "p_normal_approximation_diagnostic_only": 0.043114446783075355,
+      "test": "two-sided exact sign-enumerated Wilcoxon signed-rank",
+      "sign_assignments": 32,
+      "p_holm_4": 0.25
+    },
+    {
+      "metric": "query_unseen_composition_rate",
+      "label": "Queries containing an unseen pair (%)",
+      "W_values": [
+        0.095,
+        0.078,
+        0.084,
+        0.091,
+        0.076
+      ],
+      "S_values": [
+        0.218,
+        0.222,
+        0.197,
+        0.204,
+        0.211
+      ],
+      "n_pairs": 5,
+      "n_nonzero": 5,
+      "zero_pairs": 0,
+      "statistic": 0.0,
+      "z_scipy": -2.0318563844357893,
+      "p_raw": 0.0625,
+      "r_from_reported_Z": -0.9086737992230741,
+      "r_magnitude": 0.9086737992230741,
+      "positive_rank_sum": 15.0,
+      "negative_rank_sum": 0.0,
+      "rank_biserial_S_minus_W": 1.0,
+      "positive_pairs": 5,
+      "negative_pairs": 0,
+      "paired_differences_S_minus_W": [
+        0.123,
+        0.144,
+        0.113,
+        0.113,
+        0.135
+      ],
+      "mean_difference_S_minus_W": 0.1256,
+      "p_normal_approximation_diagnostic_only": 0.04216819709715596,
+      "test": "two-sided exact sign-enumerated Wilcoxon signed-rank",
+      "sign_assignments": 32,
+      "p_holm_4": 0.25
+    }
+  ],
+  "test": "two-sided exact sign-enumerated Wilcoxon signed-rank",
+  "effect_size": "abs(standardized Wilcoxon Z)/sqrt(actual paired cohort count=5)",
+  "history_boundary": "report-level union of recorded instance element labels; generated main_query only"
+}

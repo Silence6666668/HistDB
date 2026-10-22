@@ -1,0 +1,144 @@
+[
+  {
+    "feature_id": "ft_d3bde363fc7d",
+    "machine_name": "variable_length_path_traversal",
+    "description": "Variable-length path traversal with unbounded depth using * operator",
+    "tags": [
+      "path_pattern",
+      "variable_length",
+      "traversal"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_65b8532a89d0",
+    "machine_name": "single_label_pattern",
+    "description": "Use a single label in node pattern without properties or multiple labels",
+    "tags": [
+      "pattern",
+      "label",
+      "node"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_8c487291f7b2",
+    "machine_name": "multiple_match_clauses",
+    "description": "Two separate MATCH clauses with different patterns, where the second uses a variable from the first.",
+    "tags": [
+      "match",
+      "clause_combination",
+      "variable_reuse"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_9f46d3526873",
+    "machine_name": "list_filter_in_with_clause",
+    "description": "Filter a list using WHERE condition inside list comprehension within WITH clause",
+    "tags": [
+      "list_filter",
+      "with_star",
+      "conditional_comprehension"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3a59a7f157b0",
+    "machine_name": "pattern_expression_in_size",
+    "description": "Embedding a relationship pattern directly inside the size() function as an expression.",
+    "tags": [
+      "pattern_expression",
+      "function_argument",
+      "inline"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_0bffa0464d6e",
+    "machine_name": "empty_list_foreach_noop",
+    "description": "FOREACH with empty list input that results in no CREATE operations, testing loop behavior with zero iterations.",
+    "tags": [
+      "foreach",
+      "empty_list",
+      "noop",
+      "write_clause"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ee7de6f7a8d2",
+    "machine_name": "create_node_with_label_and_properties",
+    "description": "Creates a single node with a label and a property map containing a numeric value.",
+    "tags": [
+      "write",
+      "node_creation",
+      "label",
+      "properties"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a78de7fd32f5",
+    "machine_name": "combined_create_set_return",
+    "description": "Chain CREATE, SET, and RETURN in a single query for node creation and immediate return",
+    "tags": [
+      "write_chain",
+      "create_set_return",
+      "single_query"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_5f8618018521",
+    "machine_name": "return_assigned_node",
+    "description": "RETURN clause projecting the node variable after modification, testing side effects of SET.",
+    "tags": [
+      "return",
+      "projection",
+      "modified_variable"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_192a254d299b",
+    "machine_name": "minimal_write_query",
+    "description": "A write operation with no additional clauses like RETURN, MATCH, or WHERE.",
+    "tags": [
+      "write",
+      "minimal",
+      "no_return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

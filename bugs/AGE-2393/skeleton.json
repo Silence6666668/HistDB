@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_c41060b3d60e",
+  "skeleton_text": "RETURN any(v IN HOLE_LIST WHERE HOLE_CONDITION)",
+  "source_id": "memgraph/memgraph#2481",
+  "source_query_id": "memgraph__memgraph__2481__q003",
+  "holes": []
+}

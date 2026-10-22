@@ -1,0 +1,86 @@
+[
+  {
+    "feature_id": "ft_bb4c46cc2cbc",
+    "machine_name": "anonymous_node_match",
+    "description": "Matching nodes without assigning variables, focusing only on relationships or counts.",
+    "tags": [
+      "node",
+      "anonymous",
+      "match"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_2ee975645916",
+    "machine_name": "multiple_match_clauses",
+    "description": "Two consecutive MATCH clauses with different patterns, potentially testing join behavior across relationships.",
+    "tags": [
+      "match",
+      "join",
+      "multiple_patterns"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_359c1f61fb85",
+    "machine_name": "set_label_change",
+    "description": "Changes the label of a matched node using SET, which tests label mutation operations and potential conflicts with existing labels.",
+    "tags": [
+      "write",
+      "label_mutation",
+      "set_clause"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a06f23262eae",
+    "machine_name": "return_source_node",
+    "description": "Return the source node from a matched pattern.",
+    "tags": [
+      "return",
+      "node",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_9515c4e999b0",
+    "machine_name": "merge_with_literal_properties",
+    "description": "MERGE uses literal property values (not parameters or expressions), testing literal parsing and storage.",
+    "tags": [
+      "properties",
+      "literals",
+      "merge"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_586135ba1ee9",
+    "machine_name": "count_star_with_alias",
+    "description": "Using COUNT(*) with an alias, testing row counting and alias assignment in return clauses.",
+    "tags": [
+      "aggregation",
+      "count",
+      "alias"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

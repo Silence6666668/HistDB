@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_e3c4caa81fe4",
+  "skeleton_text": "MERGE (n:PIPELINE_CONFIG) ON CREATE SET n.pipelines = [\"miaou\"] ON MATCH SET n.pipelines = [\"miaou\"] RETURN n.pipelines as pipelines",
+  "source_id": "ArcadeData/arcadedb#3253",
+  "source_query_id": "ArcadeData__arcadedb__3253__q001",
+  "holes": []
+}

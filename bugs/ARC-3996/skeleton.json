@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_e6b6309bd7db",
+  "skeleton_text": "CALL db.HOLE_PROP_0.HOLE_PROP_1.HOLE_PROP_2(HOLE_STR_0, HOLE_STR_1) YIELD node RETURN node LIMIT HOLE_NUM_0;",
+  "source_id": "neo4j#12662",
+  "source_query_id": "neo4j__12662__q003",
+  "holes": []
+}

@@ -1,0 +1,44 @@
+schema_version: 1
+family_id: HISTDB-ARC-011
+title: Carried node variables become null after an unrelated CREATE
+paper_set: fixed-version-50
+dbms: arcadedb
+symptom: property access on each carried node returns null after the write
+issue:
+  url: https://github.com/ArcadeData/arcadedb/issues/4019
+  status: confirmed
+  report_path: issue_reports/submitted/arcadedb/2026-4-25/arcadedb_with_carried_node_variable_may_become_null_after_create_or_merge.md
+targets:
+  buggy: {id: arcadedb-26.4.1}
+  fixed: []
+observation: {reported_version: 26.4.1-SNAPSHOT, execution_target: "arcadedata/arcadedb:26.4.1"}
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Alice'}), (:Person {name:'Bob'})"
+  query: |-
+    MATCH (n:Person)
+    WITH n
+    CREATE (:Temp {x:1})
+    RETURN n.name AS name
+    ORDER BY name
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: true
+  expected_buggy:
+    - {name: null}
+    - {name: null}
+  expected_correct:
+    - {name: Alice}
+    - {name: Bob}
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: null
+  case_id: null
+  source_artifacts:
+    - issue_reports/submitted/arcadedb/2026-4-25/arcadedb_with_carried_node_variable_may_become_null_after_create_or_merge.md
+  skeleton_ids: []
+  feature_ids: []
+

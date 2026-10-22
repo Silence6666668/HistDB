@@ -1,0 +1,86 @@
+[
+  {
+    "feature_id": "ft_4ed4d893d614",
+    "machine_name": "return_all_pattern_variables",
+    "description": "Return all variables from the MATCH pattern (u, r, a) without aggregation or transformation.",
+    "tags": [
+      "return",
+      "projection",
+      "all_variables"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_75dd7a7d56d4",
+    "machine_name": "path_variable_with_relationship_aggregation",
+    "description": "Assigns a path variable but aggregates over a relationship variable within the path, testing variable scope in aggregation.",
+    "tags": [
+      "path",
+      "variable_scope",
+      "aggregation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ffc607374c3b",
+    "machine_name": "match_node_by_property",
+    "description": "MATCH clause filtering nodes by exact property value",
+    "tags": [
+      "read",
+      "property_filter",
+      "exact_match"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_98b6d29e2577",
+    "machine_name": "string_literal_with_backslash",
+    "description": "SET clause with string literal containing backslash character that may require escaping",
+    "tags": [
+      "write",
+      "string",
+      "escaping"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_6a17a58af5d7",
+    "machine_name": "variable_reuse_in_where",
+    "description": "Variable reused in WHERE clause with equality predicate, testing identity comparison and potential optimization.",
+    "tags": [
+      "WHERE",
+      "variable_reuse",
+      "equality"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_33e6b23827cf",
+    "machine_name": "simple_return_projection",
+    "description": "Return a single node variable in a basic projection.",
+    "tags": [
+      "return",
+      "projection",
+      "node"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

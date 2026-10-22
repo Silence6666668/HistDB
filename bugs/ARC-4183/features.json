@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_ba0b54449aa0",
+    "machine_name": "id_range_filter",
+    "description": "Filter nodes by internal ID using a numeric range condition",
+    "tags": [
+      "where",
+      "id",
+      "range",
+      "filter"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a77e9f88e118",
+    "machine_name": "basic_return_projection",
+    "description": "Projects the result of a function (labels()) directly in the RETURN clause without aliasing.",
+    "tags": [
+      "projection",
+      "return",
+      "no_alias"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_97d00a3661e9",
+    "machine_name": "string_comparison_in_where",
+    "description": "String literal compared to node property using greater-than operator in WHERE clause",
+    "tags": [
+      "predicate",
+      "string",
+      "comparison",
+      "where"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_bfb0c598e732",
+    "machine_name": "anonymous_node_creation",
+    "description": "Creating nodes without variable assignment in CREATE pattern",
+    "tags": [
+      "write",
+      "node",
+      "anonymous"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_74fea27dccd0",
+    "machine_name": "exact_property_match_in_node_pattern",
+    "description": "Matches a node using an exact property value filter within the node pattern, without a separate WHERE clause.",
+    "tags": [
+      "match",
+      "property_filter",
+      "node_pattern",
+      "exact_match"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_91129b325b5d",
+    "machine_name": "id_function_on_nodes_and_relationships",
+    "description": "Use ID() function to retrieve internal identifiers for nodes and relationships in a query.",
+    "tags": [
+      "function",
+      "id",
+      "aggregation",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

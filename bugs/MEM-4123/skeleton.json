@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_2fc2c9c6bfa2",
+  "skeleton_text": "UNWIND [[\"b4a1ab55-c226-48dc-8152-f7dc928625c9\",\"f0d44c28-5695-44c1-8386-384d2fa1ce01\"]] AS x MATCH (a:node{id:x[0]}), (b:node{id:x[1]}) WITH a, b LIMIT 1 MERGE (a)-[:event_userId]->(b)",
+  "source_id": "FalkorDB/FalkorDB#164",
+  "source_query_id": "FalkorDB__FalkorDB__164__q006",
+  "holes": []
+}

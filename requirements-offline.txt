@@ -1,0 +1,10 @@
+numpy==1.26.4
+scipy==1.13.1
+statsmodels==0.14.2
+PyYAML==6.0.1
+pytest==7.4.4
+neo4j==6.0.3
+openai==2.14.0
+requests==2.32.2
+beautifulsoup4==4.12.3
+pandas==2.2.2

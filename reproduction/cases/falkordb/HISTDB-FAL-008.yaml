@@ -1,0 +1,44 @@
+schema_version: 1
+family_id: HISTDB-FAL-008
+title: A created relationship is invisible to a later MATCH in the same query
+paper_set: fixed-version-50
+dbms: falkordb
+symptom: read-after-write returns zero rows even though the relationship was created
+issue:
+  url: https://github.com/FalkorDB/FalkorDB/issues/1945
+  status: confirmed
+  report_path: issue_reports/submitted/falkordb/2026-4-29/falkordb_created_relationship_may_be_invisible_to_later_match_in_same_query.md
+targets:
+  buggy:
+    id: falkordb-4.16.8
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+  query: |-
+    CREATE (a:Person {name:'Alice'})
+    CREATE (b:Person {name:'Bob'})
+    CREATE (a)-[:KNOWS {since:2020}]->(b)
+    WITH a, b
+    MATCH (a)-[r:KNOWS]->(b)
+    RETURN r.since AS since
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: false
+  expected_buggy: []
+  expected_correct:
+    - {since: 2020}
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: FalkorDB__FalkorDB__1311__q001
+  case_id: case_81d4657fd17c
+  source_artifacts:
+    - issue_reports/submitted/falkordb/2026-4-29/falkordb_created_relationship_may_be_invisible_to_later_match_in_same_query.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

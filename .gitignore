@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+configs/local_env.ps1
+configs/*.env
+output/
+runs/
+*.log
+.DS_Store
+Thumbs.db

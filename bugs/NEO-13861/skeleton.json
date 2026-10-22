@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_374cc69cdaa7",
+  "skeleton_text": "CYPHER 25 MATCH (n0 {name: 'Alice', city: 'NYC'})<-[r0 :KNOWS]-(n1)-[r1 :LIKES {since: 2020}]->(n2) FILTER (NOT (((n0.city) = (n1.city)) IS NULL)) AND n1.name STARTS WITH 'B' LET i = range(1, 3) UNWIND i AS i CALL (n0, n1, n2) { RETURN n0.name AS name0, n1.name AS name1, n2.name AS name2 } RETURN DISTINCT n0, n1, n2, r0, r1, i, name0, name1, name2 ORDER BY i",
+  "source_id": "neo4j#13642",
+  "source_query_id": "",
+  "holes": []
+}

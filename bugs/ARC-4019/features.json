@@ -1,0 +1,32 @@
+[
+  {
+    "feature_id": "ft_3ebb46f20131",
+    "machine_name": "query_pattern_match_order_by_return_with",
+    "description": "该查询包含 MATCH、WITH、ORDER BY、RETURN 子句，带有排序逻辑。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1277",
+    "source_query_id": "FalkorDB__FalkorDB__1277__q001"
+  },
+  {
+    "feature_id": "ft_5ed0360611c7",
+    "machine_name": "query_pattern_create_match_order_by_return",
+    "description": "该查询包含 CREATE、MATCH、WITH、ORDER BY、RETURN 子句，带有排序逻辑，属于写查询。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#460",
+    "source_query_id": "FalkorDB__FalkorDB__460__q003"
+  },
+  {
+    "feature_id": "ft_a6251a6ec5b9",
+    "machine_name": "single_node_match",
+    "description": "Matches all nodes with a single variable binding and returns aggregated result.",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1451",
+    "source_query_id": "FalkorDB__FalkorDB__1451__q003"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_70edc30489fb",
+  "skeleton_text": "MATCH (HOLE_NODE_VAR)--()--(HOLE_NODE_VAR) RETURN count(HOLE_NODE_VAR)",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#351",
+  "holes": []
+}

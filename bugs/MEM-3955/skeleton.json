@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_57e72e3dd920",
+  "skeleton_text": "MATCH () CALL { OPTIONAL MATCH ({n0:HOLE_LABEL_0(HOLE_STR_0)}) CALL { RETURN null AS n1 UNION ALL RETURN null AS n1 } WITH HOLE_NUM_0 AS n2 ORDER BY COUNT { () } SKIP HOLE_NUM_1 RETURN HOLE_NUM_2 AS n3 } RETURN HOLE_NUM_3",
+  "source_id": "neo4j#13431",
+  "source_query_id": "q_000425",
+  "holes": []
+}

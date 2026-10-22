@@ -1,0 +1,22 @@
+[
+  {
+    "feature_id": "ft_158416b76500",
+    "machine_name": "query_pattern_match_optional_match_path_pattern_return",
+    "description": "该查询包含 MATCH、OPTIONAL MATCH、MATCH、RETURN 子句，使用 OPTIONAL MATCH，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12573",
+    "source_query_id": "q_000014"
+  },
+  {
+    "feature_id": "ft_5c59880f6c16",
+    "machine_name": "query_pattern_match_order_by_path_pattern_return",
+    "description": "该查询包含 MATCH、RETURN、ORDER BY、WITH、RETURN 子句，带有排序逻辑，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#13187",
+    "source_query_id": "q_000304"
+  }
+]

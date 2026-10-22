@@ -1,0 +1,92 @@
+[
+  {
+    "feature_id": "ft_26ba1e949938",
+    "machine_name": "distinct_literal_return_alias",
+    "description": "RETURN DISTINCT with a literal integer value aliased to a column, testing duplicate elimination on constant values and projection aliasing.",
+    "tags": [
+      "return",
+      "distinct",
+      "literal",
+      "alias",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_e9ca4765baf7",
+    "machine_name": "node_creation_without_label",
+    "description": "Create a node without specifying a label, testing default node creation behavior.",
+    "tags": [
+      "write",
+      "node_creation",
+      "no_label",
+      "default"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ca166bc7da6e",
+    "machine_name": "variable_reuse_across_patterns",
+    "description": "Reusing the same node variable across multiple relationship patterns in a CREATE statement.",
+    "tags": [
+      "write",
+      "create",
+      "variable_reuse",
+      "consistency"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_9b694d6ef2b5",
+    "machine_name": "merge_node_with_properties",
+    "description": "Creates or matches a node with specified properties using MERGE, ensuring atomic existence.",
+    "tags": [
+      "write",
+      "merge",
+      "node_creation",
+      "property_setting"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_6875725ab8bf",
+    "machine_name": "create_index_on_label_property",
+    "description": "Creates an index on a specific label and property combination to optimize queries filtering or matching on that property.",
+    "tags": [
+      "schema",
+      "index",
+      "write",
+      "optimization"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_0d711a7f9241",
+    "machine_name": "distinct_path_aggregation",
+    "description": "Using DISTINCT on a path variable to eliminate duplicate paths before returning, testing aggregation behavior with path objects.",
+    "tags": [
+      "distinct",
+      "aggregation",
+      "path_variable"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

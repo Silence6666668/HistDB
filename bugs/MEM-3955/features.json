@@ -1,0 +1,42 @@
+[
+  {
+    "feature_id": "ft_431fb5e559c7",
+    "machine_name": "query_pattern_aggregation_count_match_return",
+    "description": "该查询包含 MATCH、WHERE、RETURN 子句，涉及聚合计算。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12571",
+    "source_query_id": "q_000012"
+  },
+  {
+    "feature_id": "ft_158416b76500",
+    "machine_name": "query_pattern_match_optional_match_path_pattern_return",
+    "description": "该查询包含 MATCH、OPTIONAL MATCH、MATCH、RETURN 子句，使用 OPTIONAL MATCH，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12573",
+    "source_query_id": "q_000014"
+  },
+  {
+    "feature_id": "ft_78e3a647df36",
+    "machine_name": "query_pattern_call_match_optional_match_return",
+    "description": "该查询包含 OPTIONAL MATCH、MATCH、CALL、WITH、WHERE、OPTIONAL MATCH、MATCH、CALL、WITH、WHERE、RETURN、UNION、WITH、WHERE、RETURN 子句，使用 OPTIONAL MATCH，包含子查询。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12797",
+    "source_query_id": "q_000078"
+  },
+  {
+    "feature_id": "ft_2cff37c68344",
+    "machine_name": "query_pattern_aggregation_count_match_order_by",
+    "description": "该查询包含 MATCH、WITH、MATCH、WHERE、WITH、ORDER BY、RETURN 子句，涉及聚合计算，带有排序逻辑，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#13168",
+    "source_query_id": "q_000289"
+  }
+]

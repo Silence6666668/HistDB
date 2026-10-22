@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_b176625fe988",
+  "skeleton_text": "RETURN round(HOLE_NUMERIC_VALUE, HOLE_PRECISION, HOLE_ROUNDING_MODE)",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#309",
+  "holes": []
+}

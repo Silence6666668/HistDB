@@ -1,0 +1,42 @@
+[
+  {
+    "feature_id": "ft_452a4f9148e6",
+    "machine_name": "multiple_write_clauses",
+    "description": "Multiple write clauses (MERGE, DELETE, CREATE) in a single query",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "RedisGraph/RedisGraph#3073",
+    "source_query_id": "RedisGraph__RedisGraph__3073__q001"
+  },
+  {
+    "feature_id": "ft_5c848035ca3c",
+    "machine_name": "query_pattern_match_merge_optional_match_path_pattern",
+    "description": "该查询包含 OPTIONAL MATCH、MATCH、MERGE、RETURN 子句，使用 OPTIONAL MATCH，属于写查询，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#462",
+    "source_query_id": "FalkorDB__FalkorDB__462__q001"
+  },
+  {
+    "feature_id": "ft_c20e1133708b",
+    "machine_name": "query_pattern_match_merge_path_pattern_set",
+    "description": "该查询包含 MATCH、MERGE、SET 子句，属于写查询，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#789",
+    "source_query_id": "FalkorDB__FalkorDB__789__q003"
+  },
+  {
+    "feature_id": "ft_48b9cb471780",
+    "machine_name": "single_node_match",
+    "description": "Match a single node with label X, no relationships or patterns",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1554",
+    "source_query_id": "FalkorDB__FalkorDB__1554__q003"
+  }
+]

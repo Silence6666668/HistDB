@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_96ba0d538a45",
+  "skeleton_text": "MATCH (u)-[e:member|owner]->(t) WHERE ID(u) = 0 DELETE e SET t.score = t.score -u.score RETURN e, t",
+  "source_id": "RedisGraph/RedisGraph#835",
+  "source_query_id": "RedisGraph__RedisGraph__835__q002",
+  "holes": []
+}

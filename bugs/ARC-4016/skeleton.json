@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_206332adc194",
+  "skeleton_text": "create (a:A), (b:B), (a)-[:R]->(a), (a)-[:R]->(b)",
+  "source_id": "RedisGraph/RedisGraph#2865",
+  "source_query_id": "RedisGraph__RedisGraph__2865__q007",
+  "holes": []
+}

@@ -1,0 +1,74 @@
+# Five-target config for the ablation bug-finding runs, no coverage.
+# Uses the plain (uninstrumented) Neo4j and Memgraph containers.
+targets:
+  - name: neo4j_2026_03_1
+    enabled: true
+    engine: bolt
+    uri: bolt://localhost:7687
+    host: localhost
+    port: 7687
+    user: neo4j
+    password_env: NEO4J_PASSWORD
+    database: neo4j
+    fetch_limit: 20
+    query_timeout_sec: 10
+    hard_timeout_sec: 30
+    restart_on_failure: false
+    pre_case_queries:
+      - MATCH (n) DETACH DELETE n
+
+  - name: memgraph_3_9_0
+    enabled: true
+    engine: bolt
+    uri: bolt://localhost:7688
+    host: localhost
+    port: 7688
+    user: ""
+    password_env: MEMGRAPH_PASSWORD
+    database: memgraph
+    fetch_limit: 20
+    query_timeout_sec: 10
+    hard_timeout_sec: 25
+    restart_on_failure: false
+    pre_case_queries:
+      - MATCH (n) DETACH DELETE n
+
+  - name: falkordb_4_16_8
+    enabled: true
+    engine: falkordb
+    host: localhost
+    port: 6379
+    user: default
+    password_env: FALKORDB_PASSWORD
+    database: fuzz_graph
+    graph_name: fuzz_graph
+    fetch_limit: 20
+    query_timeout_sec: 10
+
+  - name: age_local
+    enabled: true
+    engine: age
+    host: localhost
+    port: 5455
+    user: postgres
+    password_env: AGE_PASSWORD
+    database: postgres
+    graph_name: fuzz_graph
+    fetch_limit: 20
+    query_timeout_sec: 10
+    pre_case_sql:
+      - SELECT ag_catalog.drop_graph('fuzz_graph', true) FROM ag_catalog.ag_graph WHERE name = 'fuzz_graph';
+      - SELECT create_graph('fuzz_graph');
+
+  - name: arcadedb_26_4_2
+    enabled: true
+    engine: arcadedb
+    host: localhost
+    port: 2480
+    user: root
+    password_env: ARCADEDB_PASSWORD
+    database: arcade
+    fetch_limit: 20
+    query_timeout_sec: 10
+    pre_case_queries:
+      - MATCH (n) DETACH DELETE n

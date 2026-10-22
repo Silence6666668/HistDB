@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_08a9601fb554",
+    "machine_name": "multi_match_with_where",
+    "description": "Multiple MATCH clauses with WHERE conditions on node properties",
+    "tags": [
+      "match",
+      "where",
+      "multiple"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_74fea27dccd0",
+    "machine_name": "exact_property_match_in_node_pattern",
+    "description": "Matches a node using an exact property value filter within the node pattern, without a separate WHERE clause.",
+    "tags": [
+      "match",
+      "property_filter",
+      "node_pattern",
+      "exact_match"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d715bf218d7f",
+    "machine_name": "empty_node_match",
+    "description": "Matches all nodes in the graph without specifying labels or properties, returning a count.",
+    "tags": [
+      "match",
+      "aggregation",
+      "count",
+      "empty_pattern"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3823451d37ed",
+    "machine_name": "where_pattern_predicate",
+    "description": "WHERE clause that uses a pattern predicate to filter results based on a relationship pattern, rather than a property condition.",
+    "tags": [
+      "where",
+      "pattern_predicate",
+      "filter"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_02cda1dc3a7f",
+    "machine_name": "multiple_consecutive_match_clauses",
+    "description": "Multiple consecutive MATCH clauses without relationships, each binding a new variable.",
+    "tags": [
+      "match",
+      "clause_combination",
+      "variable_binding"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_1196743e3377",
+    "machine_name": "duration_literal_creation",
+    "description": "Creating a node property with a duration literal containing complex components (years, months, days, weeks, minutes, seconds).",
+    "tags": [
+      "write",
+      "duration",
+      "property",
+      "literal"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

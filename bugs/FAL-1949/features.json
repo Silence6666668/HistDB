@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_1626f42e0743",
+    "machine_name": "self_relationship_with_label",
+    "description": "A node with a label is matched to itself via a relationship, indicating potential self-loops or variable reuse.",
+    "tags": [
+      "self_relationship",
+      "label",
+      "variable_reuse"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_416e77a8678b",
+    "machine_name": "node_label_filter_with_multiple_conditions",
+    "description": "Filter nodes by label and multiple WHERE conditions including string equality and numeric comparison",
+    "tags": [
+      "filter",
+      "label",
+      "where",
+      "conditions"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_2bfe6f2f2c54",
+    "machine_name": "unwind_with_subquery_in_list",
+    "description": "UNWIND clause with a list containing a subquery that returns a path variable, using EXISTS subquery for conditional evaluation.",
+    "tags": [
+      "unwind",
+      "subquery",
+      "exists",
+      "list_comprehension",
+      "path_variable"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_22e538026f21",
+    "machine_name": "match_set_combination",
+    "description": "Combine MATCH and SET clauses to find and modify nodes in a single query",
+    "tags": [
+      "read_write",
+      "combination",
+      "clause_sequence"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_464116784388",
+    "machine_name": "node_label_filter",
+    "description": "Match nodes with a specific label and filter by property value",
+    "tags": [
+      "label",
+      "property_filter",
+      "basic_match"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_2fbc4a161465",
+    "machine_name": "variable_binding_in_creation",
+    "description": "Binds a variable to a newly created node for potential later reference in the same query.",
+    "tags": [
+      "write",
+      "variable",
+      "binding",
+      "node"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

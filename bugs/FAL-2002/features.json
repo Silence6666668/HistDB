@@ -1,0 +1,89 @@
+[
+  {
+    "feature_id": "ft_a1c927608720",
+    "machine_name": "property_projection",
+    "description": "Return a specific property (id) from matched nodes in the result set.",
+    "tags": [
+      "property",
+      "projection",
+      "return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_1b86f708a50d",
+    "machine_name": "conditional_constraint_creation",
+    "description": "Conditionally creates a uniqueness constraint only if it does not already exist, using IF NOT EXISTS clause.",
+    "tags": [
+      "constraint",
+      "conditional",
+      "uniqueness",
+      "schema"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_aff857ed59b6",
+    "machine_name": "floating_point_division_in_set",
+    "description": "Property value calculation using floating-point division (orders/total) in SET clause",
+    "tags": [
+      "arithmetic",
+      "division",
+      "floating_point",
+      "property_calculation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_8e37da185f01",
+    "machine_name": "direct_node_projection",
+    "description": "Project and return the entire node object rather than specific properties.",
+    "tags": [
+      "projection",
+      "node_object",
+      "no_properties"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_678674e8054f",
+    "machine_name": "label_filtered_node_match",
+    "description": "Match nodes with specific labels and filter by property equality",
+    "tags": [
+      "match",
+      "label",
+      "property_filter",
+      "equality"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_a276d596f741",
+    "machine_name": "complex_cyclic_pattern",
+    "description": "Multiple interconnected cycles forming a complex graph topology",
+    "tags": [
+      "topology",
+      "cycle",
+      "interconnected"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

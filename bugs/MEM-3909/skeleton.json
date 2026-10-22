@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "target_derived_mem_3909",
+  "skeleton_text": "RETURN 1 AS x LIMIT 1\nUNION\nRETURN 2 AS x LIMIT 1;",
+  "source_id": "MEM-3909",
+  "source_query_id": "MEM-3909",
+  "holes": []
+}

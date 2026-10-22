@@ -1,0 +1,58 @@
+services:
+  neo4j:
+    image: ${NEO4J_IMAGE:-neo4j:2026.03.1}
+    profiles: ["neo4j"]
+    container_name: baseline_neo4j_2026_03_1
+    ports:
+      - "${NEO4J_HTTP_PORT:-7474}:7474"
+      - "${NEO4J_BOLT_PORT:-7687}:7687"
+    environment:
+      NEO4J_AUTH: "none"
+    volumes:
+      - ${NEO4J_DATA_ROOT:-/data/experiments/dbdata/neo4j}:/data
+
+  memgraph:
+    image: ${MEMGRAPH_IMAGE:-memgraph/memgraph:3.9.0}
+    profiles: ["memgraph"]
+    container_name: baseline_memgraph_3_9_0
+    ports:
+      - "${MEMGRAPH_BOLT_PORT:-7787}:7687"
+    volumes:
+      - ${MEMGRAPH_DATA_ROOT:-/data/experiments/dbdata/memgraph}:/var/opt/memgraph
+    command:
+      - "--storage-properties-on-edges=true"
+      - "--query-plan-cache-max-size=0"
+      - "--storage-enable-schema-metadata=true"
+      - "--query-execution-timeout-sec=20"
+      - "--storage-access-timeout-sec=60"
+
+  falkordb:
+    image: ${FALKORDB_IMAGE:-falkordb/falkordb:v4.16.8}
+    profiles: ["falkordb"]
+    container_name: baseline_falkordb_4_16_8
+    ports:
+      - "${FALKORDB_PORT:-6379}:6379"
+    volumes:
+      - ${FALKORDB_DATA_ROOT:-/data/experiments/dbdata/falkordb}:/data
+
+  apache-age:
+    image: ${AGE_IMAGE:-apache/age:latest}
+    profiles: ["apache-age"]
+    container_name: baseline_apache_age_local
+    ports:
+      - "${AGE_PORT:-5455}:5432"
+    environment:
+      POSTGRES_PASSWORD: ${AGE_PASSWORD:-123}
+    volumes:
+      - ${AGE_DATA_ROOT:-/data/experiments/dbdata/apache-age}:/var/lib/postgresql/data
+
+  arcadedb:
+    image: ${ARCADEDB_IMAGE:-arcadedata/arcadedb:26.4.1}
+    profiles: ["arcadedb"]
+    container_name: baseline_arcadedb_26_4_1
+    ports:
+      - "${ARCADEDB_HTTP_PORT:-2480}:2480"
+    environment:
+      JAVA_OPTS: "-Darcadedb.server.rootPassword=${ARCADEDB_PASSWORD:-password}"
+    volumes:
+      - ${ARCADEDB_DATA_ROOT:-/data/experiments/dbdata/arcadedb}:/home/arcadedb/databases

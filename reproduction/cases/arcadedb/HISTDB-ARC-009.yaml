@@ -1,0 +1,39 @@
+schema_version: 1
+family_id: HISTDB-ARC-009
+title: Inline aggregate list subscript returns null
+paper_set: fixed-version-50
+dbms: arcadedb
+symptom: a valid aggregate-derived index selects null instead of the first score
+issue:
+  url: https://github.com/ArcadeData/arcadedb/issues/4100
+  status: confirmed
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_list_subscript_with_inline_aggregate_index_may_return_null.md
+targets:
+  buggy: {id: arcadedb-26.4.1}
+  fixed: []
+observation: {reported_version: 26.4.1-SNAPSHOT, execution_target: "arcadedata/arcadedb:26.4.1"}
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Alice', scores:[85,92,78]})"
+  query: |-
+    MATCH (p:Person {name:'Alice'})
+    OPTIONAL MATCH (p)-[:HAS_FRIEND]->(f:Person)
+    WITH p, collect(f) AS friends
+    RETURN p.scores[toInteger(avg(size(friends)))] AS selectedScore
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: scalar_equals
+  field: selectedScore
+  expected_buggy: null
+  expected_correct: 85
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: RedisGraph__RedisGraph__2271__q002
+  case_id: case_b60c9a310195
+  source_artifacts:
+    - issue_reports/submitted/arcadedb/2026-5-1/arcadedb_list_subscript_with_inline_aggregate_index_may_return_null.md
+  skeleton_ids: []
+  feature_ids: []
+

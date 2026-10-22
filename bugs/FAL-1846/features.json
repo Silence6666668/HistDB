@@ -1,0 +1,88 @@
+[
+  {
+    "feature_id": "ft_efcafa00e2c1",
+    "machine_name": "list_comprehension_with_collect",
+    "description": "List comprehension [ a1 IN collect(0) ] uses collect() inside, testing aggregation within list construction.",
+    "tags": [
+      "list_comprehension",
+      "aggregation",
+      "collect"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_c07731595b16",
+    "machine_name": "return_property_filtered_by_where",
+    "description": "RETURN clause projects a property from a node filtered earlier by WHERE condition, testing property access after filtering.",
+    "tags": [
+      "return",
+      "property",
+      "filtering"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_cf9b2e5c791c",
+    "machine_name": "unwind_in_subquery",
+    "description": "Uses UNWIND to expand a list into rows within a subquery, generating multiple rows from a single list element.",
+    "tags": [
+      "unwind",
+      "list_expansion",
+      "row_generation",
+      "subquery"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_085fe129b22b",
+    "machine_name": "merge_node_with_property",
+    "description": "Creates or matches a node with a specific property value using MERGE, ensuring idempotent node creation.",
+    "tags": [
+      "merge",
+      "node_creation",
+      "property_set"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_650f783eaf8a",
+    "machine_name": "multiple_relationship_types",
+    "description": "Create relationships with distinct types in a single chain.",
+    "tags": [
+      "relationship",
+      "type",
+      "multiple",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_5813c45f93a6",
+    "machine_name": "merge_with_composite_condition",
+    "description": "MERGE using both a dynamic label and a property condition, testing node matching with multiple criteria.",
+    "tags": [
+      "merge",
+      "composite_condition",
+      "label_property"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

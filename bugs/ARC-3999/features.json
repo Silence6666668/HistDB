@@ -1,0 +1,91 @@
+[
+  {
+    "feature_id": "ft_857127424b0a",
+    "machine_name": "vector_index_with_metadata",
+    "description": "Creation of a vector index with explicit metadata configuration, including dimensions and similarity metric.",
+    "tags": [
+      "vector",
+      "index",
+      "metadata",
+      "configuration",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7c9cce8deedf",
+    "machine_name": "implicit_transaction_boundary",
+    "description": "A write operation that implicitly defines a transaction boundary, useful for testing commit/rollback behavior.",
+    "tags": [
+      "transaction",
+      "write",
+      "implicit_boundary"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_c68473fd43f3",
+    "machine_name": "count_aggregation_no_grouping",
+    "description": "A RETURN clause with count(*) to aggregate all matched rows into a single count, testing aggregation without grouping keys.",
+    "tags": [
+      "aggregation",
+      "count",
+      "no_grouping",
+      "return_clause"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_61634857e511",
+    "machine_name": "merge_with_label_and_single_property",
+    "description": "MERGE using a label and a single property in the property map, testing property-based node matching.",
+    "tags": [
+      "merge",
+      "label",
+      "single_property",
+      "matching"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_eec8b4b5fd82",
+    "machine_name": "multiple_set_operations",
+    "description": "Performs multiple property assignments on the same node variable in a single SET clause",
+    "tags": [
+      "write",
+      "property_assignment",
+      "multiple_assignments",
+      "variable_reuse"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7179ce1f97cf",
+    "machine_name": "path_count_aggregation",
+    "description": "Counting all matched paths using COUNT() aggregation",
+    "tags": [
+      "aggregation",
+      "counting",
+      "path_analysis"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

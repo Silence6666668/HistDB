@@ -1,0 +1,33 @@
+schema_version: 1
+family_id: HISTDB-ARC-017
+title: List literal containing a duration drops the result row
+paper_set: fixed-version-50
+dbms: arcadedb
+symptom: scalar duration succeeds but embedding it in a list yields zero rows
+issue:
+  url: https://github.com/ArcadeData/arcadedb/issues/4099
+  status: confirmed
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_list_literal_containing_duration_may_drop_all_rows.md
+targets:
+  buggy: {id: arcadedb-26.4.1}
+  fixed: []
+observation: {reported_version: 26.4.1-SNAPSHOT, execution_target: "arcadedata/arcadedb:26.4.1"}
+test:
+  setup: []
+  query: "RETURN [1, duration({months:1000000})] AS x"
+  cleanup: []
+oracle:
+  type: exact_rows
+  ordered: false
+  expected_buggy: []
+  expected_correct:
+    - {x: [1, P83333Y4M]}
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: null
+  case_id: case_6abe4d41381f
+  source_artifacts:
+    - issue_reports/submitted/arcadedb/2026-5-1/arcadedb_list_literal_containing_duration_may_drop_all_rows.md
+  skeleton_ids: []
+  feature_ids: []
+

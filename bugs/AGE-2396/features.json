@@ -1,0 +1,32 @@
+[
+  {
+    "feature_id": "ft_120846577cf4",
+    "machine_name": "query_pattern_match_path_pattern_return_where",
+    "description": "该查询包含 MATCH、WHERE、RETURN 子句，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12980",
+    "source_query_id": "q_000157"
+  },
+  {
+    "feature_id": "ft_9a904cc24aeb",
+    "machine_name": "variable_length_relationship_traversal",
+    "description": "Traverses relationships with variable length (1 hop exactly) using the * operator",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "memgraph/memgraph#705",
+    "source_query_id": "memgraph__memgraph__705__q001"
+  },
+  {
+    "feature_id": "ft_10fbf06afd9f",
+    "machine_name": "query_pattern_exists",
+    "description": "该查询具有基本的 Cypher 匹配与返回结构。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12909",
+    "source_query_id": "q_000139"
+  }
+]

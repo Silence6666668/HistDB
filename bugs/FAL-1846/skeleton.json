@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_88f033fb9cc5",
+  "skeleton_text": "UNWIND HOLE_unwind_list AS HOLE_unwind_var CALL { MERGE HOLE_merge_pattern RETURN HOLE_return_expr AS HOLE_return_alias } RETURN HOLE_final_return_expr",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#749",
+  "holes": []
+}

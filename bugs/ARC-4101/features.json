@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_99f4a425d079",
+    "machine_name": "collect_with_projection",
+    "description": "Using COLLECT aggregation with property projection on nodes",
+    "tags": [
+      "aggregation",
+      "collect",
+      "property_projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3f125752dc14",
+    "machine_name": "order_by_desc_with_aggregation",
+    "description": "Order results by an aggregated column in descending order.",
+    "tags": [
+      "order_by",
+      "desc",
+      "aggregation",
+      "sorting"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_b97af9b27b8a",
+    "machine_name": "merge_with_prematched_nodes",
+    "description": "MERGE uses nodes previously matched by MATCH, testing binding reuse across clauses.",
+    "tags": [
+      "merge",
+      "match",
+      "binding_reuse",
+      "integration"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f88b152232a7",
+    "machine_name": "single_property_update_with_condition",
+    "description": "Update a single property on nodes filtered by a specific identifier condition.",
+    "tags": [
+      "write",
+      "property",
+      "filter",
+      "condition"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_52c132f0a2ce",
+    "machine_name": "return_multiple_nodes",
+    "description": "Returns multiple nodes from a match, testing projection of graph entities without properties.",
+    "tags": [
+      "return",
+      "projection",
+      "nodes"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_7a624a6f6ece",
+    "machine_name": "create_relationship_between_matched",
+    "description": "Creates a directed relationship with specific type between previously matched nodes",
+    "tags": [
+      "create",
+      "relationship",
+      "directed",
+      "typed"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

@@ -1,0 +1,43 @@
+schema_version: 1
+family_id: HISTDB-FAL-009
+title: ALL predicate on a carried list property filters a matching row
+paper_set: fixed-version-50
+dbms: falkordb
+symptom: the predicate evaluates true as a projection but removes the row after WITH
+issue:
+  url: https://github.com/FalkorDB/FalkorDB/issues/1987
+  status: confirmed
+  report_path: issue_reports/submitted/falkordb/2026-5-1/falkordb_all_list_predicate_on_carried_variable_after_with_may_filter_matching_rows.md
+targets:
+  buggy:
+    id: falkordb-4.16.8
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (:Person {name:'Alice', tags:['friend', 'colleague']})"
+  query: |-
+    MATCH (a:Person)
+    WITH a
+    WHERE all(item IN ['friend', 'colleague'] WHERE item IN a.tags)
+    RETURN a.name AS name, a.tags AS tags
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: false
+  expected_buggy: []
+  expected_correct:
+    - {name: Alice, tags: [friend, colleague]}
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: FalkorDB__FalkorDB__349__q011
+  case_id: case_390b867b078a
+  source_artifacts:
+    - issue_reports/submitted/falkordb/2026-5-1/falkordb_all_list_predicate_on_carried_variable_after_with_may_filter_matching_rows.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

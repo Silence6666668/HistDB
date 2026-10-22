@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_bca00acf7af6",
+  "skeleton_text": "MATCH (x {name:HOLE_LABEL_0}) CALL { WITH x RETURN x AS y UNION WITH x MATCH (x)-[]-(y) RETURN y } WITH y AS z RETURN z.HOLE_PROP_0, id(z)",
+  "source_id": "neo4j#12669",
+  "source_query_id": "q_000055",
+  "holes": []
+}

@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_e149b28bb645",
+  "skeleton_text": "MATCH (p:HOLE_LABEL_0) OPTIONAL MATCH (p)-[:HOLE_LABEL_1]->(c:HOLE_LABEL_2) RETURN p.HOLE_PROP_0 as name, c.HOLE_PROP_1 as company ORDER BY name",
+  "source_id": "ArcadeData/arcadedb#3711",
+  "source_query_id": "ArcadeData__arcadedb__3711__q004",
+  "holes": []
+}

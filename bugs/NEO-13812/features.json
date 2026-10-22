@@ -1,0 +1,32 @@
+[
+  {
+    "feature_id": "ft_68e0d7f4bfd1",
+    "machine_name": "query_pattern_create_delete_merge_path_pattern",
+    "description": "该查询包含 CREATE、DELETE、MERGE、DELETE、MERGE 子句，属于写查询，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1018",
+    "source_query_id": "FalkorDB__FalkorDB__1018__q002"
+  },
+  {
+    "feature_id": "ft_eb4a95c8339a",
+    "machine_name": "multiple_write_clauses",
+    "description": "Combining multiple write clauses (CREATE, DELETE, MERGE) in a single query without explicit ordering or separation, testing execution order and side effects.",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "memgraph/memgraph#2093",
+    "source_query_id": "memgraph__memgraph__2093__q002"
+  },
+  {
+    "feature_id": "ft_89363d4922c8",
+    "machine_name": "self_referencing_relationship",
+    "description": "Creates a relationship where a node connects to itself, testing reflexive edge semantics.",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1572",
+    "source_query_id": "FalkorDB__FalkorDB__1572__q001"
+  }
+]

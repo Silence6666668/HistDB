@@ -1,0 +1,42 @@
+[
+  {
+    "feature_id": "ft_602a2e738f2f",
+    "machine_name": "query_pattern_match_optional_match_return_with",
+    "description": "该查询包含 MATCH、OPTIONAL MATCH、MATCH、WITH、RETURN 子句，使用 OPTIONAL MATCH。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3761",
+    "source_query_id": "ArcadeData__arcadedb__3761__q002"
+  },
+  {
+    "feature_id": "ft_b4d78a10bb1b",
+    "machine_name": "query_pattern_match_optional_match_path_pattern_return",
+    "description": "该查询包含 MATCH、OPTIONAL MATCH、MATCH、WITH、RETURN 子句，使用 OPTIONAL MATCH，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3761",
+    "source_query_id": "ArcadeData__arcadedb__3761__q001"
+  },
+  {
+    "feature_id": "ft_3ebb46f20131",
+    "machine_name": "query_pattern_match_order_by_return_with",
+    "description": "该查询包含 MATCH、WITH、ORDER BY、RETURN 子句，带有排序逻辑。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1277",
+    "source_query_id": "FalkorDB__FalkorDB__1277__q001"
+  },
+  {
+    "feature_id": "ft_a6251a6ec5b9",
+    "machine_name": "single_node_match",
+    "description": "Matches all nodes with a single variable binding and returns aggregated result.",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1451",
+    "source_query_id": "FalkorDB__FalkorDB__1451__q003"
+  }
+]

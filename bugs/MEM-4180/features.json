@@ -1,0 +1,46 @@
+[
+  {
+    "feature_id": "ft_08d2fc43462b",
+    "machine_name": "simple_aliasing_in_return",
+    "description": "Aliasing a computed expression in the RETURN clause with AS.",
+    "tags": [
+      "alias",
+      "return",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": "RETURN $n + 1 AS val",
+    "source_id": "ArcadeData/arcadedb#3560",
+    "source_query_id": "ArcadeData__arcadedb__3560__q006"
+  },
+  {
+    "feature_id": "ft_73f8170457a0",
+    "machine_name": "pattern_comprehension_in_node_property",
+    "description": "Using a pattern comprehension inside a node property value during MATCH.",
+    "tags": [
+      "pattern_comprehension",
+      "property",
+      "match",
+      "size_function"
+    ],
+    "flags": {},
+    "query_instance": "MATCH ({k:size([()-[]-()|1])}) RETURN 1",
+    "source_id": "neo4j#13221",
+    "source_query_id": "neo4j__13221__q002"
+  },
+  {
+    "feature_id": "ft_cde7d8bbe252",
+    "machine_name": "ordering_and_limit_on_aggregated_property",
+    "description": "Order results by a computed value in descending order and apply a limit.",
+    "tags": [
+      "ordering",
+      "limit",
+      "descending",
+      "pagination"
+    ],
+    "flags": {},
+    "query_instance": "ORDER BY a.rc DESC LIMIT 10",
+    "source_id": "RedisGraph/RedisGraph#2386",
+    "source_query_id": "RedisGraph__RedisGraph__2386__q011"
+  }
+]

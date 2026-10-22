@@ -1,0 +1,62 @@
+[
+  {
+    "feature_id": "ft_9b826218f676",
+    "machine_name": "query_pattern_call_return_with",
+    "description": "该查询包含 WITH、CALL、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#174",
+    "source_query_id": "FalkorDB__FalkorDB__174__q001"
+  },
+  {
+    "feature_id": "ft_d4649afd4397",
+    "machine_name": "query_pattern_return_with",
+    "description": "该查询包含 WITH、RETURN、WITH 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3333",
+    "source_query_id": "ArcadeData__arcadedb__3333__q001"
+  },
+  {
+    "feature_id": "ft_b4f01880c927",
+    "machine_name": "query_pattern_call_return",
+    "description": "该查询包含 CALL、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1209",
+    "source_query_id": "FalkorDB__FalkorDB__1209__q003"
+  },
+  {
+    "feature_id": "ft_2bc294aa0804",
+    "machine_name": "query_pattern_call_with",
+    "description": "该查询包含 CALL、WITH 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#9055",
+    "source_query_id": "neo4j__9055__q007"
+  },
+  {
+    "feature_id": "ft_8fda1f712b71",
+    "machine_name": "query_pattern_return",
+    "description": "该查询包含 RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#2119",
+    "source_query_id": "ArcadeData__arcadedb__2119__q001"
+  },
+  {
+    "feature_id": "ft_8d13c75af0d9",
+    "machine_name": "query_pattern_call",
+    "description": "该查询包含 CALL 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1209",
+    "source_query_id": "FalkorDB__FalkorDB__1209__q001"
+  }
+]

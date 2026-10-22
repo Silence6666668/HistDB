@@ -1,0 +1,48 @@
+schema_version: 1
+family_id: HISTDB-FAL-004
+title: Relationship MERGE to a subquery-derived node alias fails
+paper_set: fixed-version-50
+dbms: falkordb
+symptom: a node pattern keyed by a subquery scalar cannot be used as a relationship endpoint
+issue:
+  url: https://github.com/FalkorDB/FalkorDB/issues/1849
+  status: confirmed
+  report_path: issue_reports/submitted/falkordb/old/falkordb_merge_relationship_to_node_pattern_from_subquery_alias.md
+targets:
+  buggy:
+    id: falkordb-4.16.8
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (c:Country {name:'France'}), (p:Person {name:'John'}), (f:Person {name:'Harry'})"
+    - "MATCH (p:Person {name:'John'}), (c:Country {name:'France'}) CREATE (p)-[:WORKING_IN]->(c)"
+    - "MATCH (p:Person {name:'John'}), (f:Person {name:'Harry'}) CREATE (p)-[:FRIENDS_WITH]->(f)"
+  query: |-
+    MATCH (p:Person)-[:WORKING_IN]->(:Country)
+    CALL {
+      WITH p
+      MATCH (p)-[:FRIENDS_WITH]->(f:Person)
+      RETURN f.name AS friend_name
+      LIMIT 1
+    }
+    MERGE (p)-[:HAS_FRIEND]->(f:Person {name: friend_name})
+    RETURN p.name AS person_name, friend_name
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: error_matches
+  category: FalkorDB.QueryError
+  pattern: '(?i)Failed to create relationship; endpoint was not found'
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: FalkorDB__FalkorDB__1849__q002
+  case_id: case_ff951857a3b5
+  source_artifacts:
+    - issue_reports/submitted/falkordb/old/falkordb_merge_relationship_to_node_pattern_from_subquery_alias.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

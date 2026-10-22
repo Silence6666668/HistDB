@@ -1,0 +1,49 @@
+schema_version: 1
+family_id: HISTDB-FAL-001
+title: Parallel relationships of different types are undercounted
+paper_set: fixed-version-50
+dbms: falkordb
+symptom: two matching parallel relationships collapse to one aggregate row
+issue:
+  url: https://github.com/FalkorDB/FalkorDB/issues/1848
+  status: confirmed
+  report_path: issue_reports/submitted/falkordb/old/falkordb_count_may_undercount_parallel_edges_of_different_types.md
+targets:
+  buggy:
+    id: falkordb-4.16.8
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - |-
+      CREATE (a:Person {name:'Alice'}),
+             (b:Person {name:'Bob'}),
+             (a)-[:FRIENDS_WITH]->(b),
+             (a)-[:WORKS_WITH]->(b)
+  query: |-
+    MATCH (p:Person {name:'Alice'})
+    MATCH (p)-[:FRIENDS_WITH|WORKS_WITH]->(friend)
+    WITH friend, count(*) AS connectionCount
+    RETURN friend.name AS friendName, connectionCount
+    ORDER BY friendName
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: true
+  expected_buggy:
+    - {friendName: Bob, connectionCount: 1}
+  expected_correct:
+    - {friendName: Bob, connectionCount: 2}
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: FalkorDB__FalkorDB__1848__q003
+  case_id: case_cfcaf7cc330f
+  source_artifacts:
+    - issue_reports/submitted/falkordb/old/falkordb_count_may_undercount_parallel_edges_of_different_types.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

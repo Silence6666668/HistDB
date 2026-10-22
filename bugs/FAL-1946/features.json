@@ -1,0 +1,91 @@
+[
+  {
+    "feature_id": "ft_d6f1cf61c253",
+    "machine_name": "subquery_with_unwind_aggregation",
+    "description": "Subquery using UNWIND on a literal list followed by aggregation functions (max and apoc.agg.median) and returning a map.",
+    "tags": [
+      "subquery",
+      "unwind",
+      "aggregation",
+      "apoc",
+      "map_return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_91a5506d92c7",
+    "machine_name": "merge_return_created_node",
+    "description": "MERGE followed by RETURN of the merged node, testing node creation and projection",
+    "tags": [
+      "merge",
+      "return",
+      "node_projection",
+      "write_read"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_2644af0b511c",
+    "machine_name": "return_constant_after_create",
+    "description": "RETURN clause with constant value following CREATE operations",
+    "tags": [
+      "return",
+      "constant",
+      "after_write",
+      "simple"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_c766df4357a1",
+    "machine_name": "match_all_nodes",
+    "description": "Matches all nodes in the graph without any filtering or constraints.",
+    "tags": [
+      "match",
+      "all_nodes",
+      "no_filter"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_1e1da6097b15",
+    "machine_name": "match_all_nodes_without_filter",
+    "description": "MATCH clause selecting all nodes without any filtering or pattern constraints.",
+    "tags": [
+      "match",
+      "no_filter",
+      "all_nodes"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ee93399fec7e",
+    "machine_name": "node_match_by_label_and_property",
+    "description": "Match a node by a specific label and an exact property value equality filter.",
+    "tags": [
+      "match",
+      "label",
+      "property_filter",
+      "equality"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

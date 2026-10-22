@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_80845ea0372f",
+  "skeleton_text": "MATCH (HOLE_NODE_VAR) OPTIONAL MATCH path=(HOLE_NODE_VAR)-[HOLE_REL_VAR]-() RETURN CASE WHEN path IS NULL THEN false ELSE true END AS HOLE_ALIAS",
+  "source_id": "memgraph/memgraph#1294",
+  "source_query_id": "memgraph__memgraph__1294__q002",
+  "holes": []
+}

@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_9f35ccc1d7c2",
+  "skeleton_text": "MATCH (HOLE_NODE) WHERE ()-[]-() XOR HOLE_BOOLEAN RETURN HOLE_RETURN",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#271",
+  "holes": []
+}

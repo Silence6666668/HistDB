@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_ecfcbb5c3db6",
+  "skeleton_text": "RETURN allReduce(acc = HOLE_INITIAL_VALUE, x IN HOLE_LIST | HOLE_EXPRESSION, HOLE_CONDITION) as HOLE_ALIAS",
+  "source_id": null,
+  "source_query_id": "ArcadeData/arcadedb#3424",
+  "holes": []
+}

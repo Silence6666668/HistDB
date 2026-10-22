@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_dfcfc100eb7f",
+  "skeleton_text": "MATCH (a)-[b]->(c) WHERE b:HOLE_LABEL RETURN b",
+  "source_id": null,
+  "source_query_id": "RedisGraph/RedisGraph#2270",
+  "holes": []
+}

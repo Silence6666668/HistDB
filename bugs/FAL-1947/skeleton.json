@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_efecfc0467a5",
+  "skeleton_text": "MATCH (n1 :L0), (n0 :L3 :L2) MATCH (n3 :L3)-[r2 :T4]->(n2 :L1), (n0 :L3) WITH n2 MATCH (n4 :L3)<-[r3 :T3]-(n1), (n0) WHERE (n2.k7) RETURN COUNT(*)",
+  "source_id": "FalkorDB/FalkorDB#443",
+  "source_query_id": "FalkorDB__FalkorDB__443__q002",
+  "holes": []
+}

@@ -1,0 +1,2656 @@
+{
+  "format_version": 1,
+  "source_corpus_sha256": {
+    "corpus\\neo4j_official\\chunks\\merged_chunks.jsonl": "10d2bdecd92e59dd19150db61d58cf68f623664951a4362fe124a261c26c612e",
+    "corpus\\neo4j_official\\embeddings\\embedding_records.jsonl": "28bff041b8dfc172d19ba24ce2b5d40572aa0a08cade0c3f00dc4ce5bd8f02c2",
+    "corpus\\memgraph_official\\chunks\\merged_chunks.jsonl": "6c200e17f98dcaa5beca394422442cea954416c3bbada81cdfd194de7d46bc9a",
+    "corpus\\memgraph_official\\embeddings\\embedding_records.jsonl": "a8c79b14f50e49e46526ea8dccdef9b587aef928e09e956384d6117b93d2df85"
+  },
+  "decisions": [
+    {
+      "body_sha256": "8a39c6d81fd8e408bdc68777c9b094065f604f3ac2efb9e55211e368b56ff17b",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__009e6802395a_031"
+      ],
+      "reason": "Mixed definition includes explicitly unsupported quantified path pattern comprehension."
+    },
+    {
+      "body_sha256": "4c019752da87c86e2e3b7382679f87d720eeab40fdca0132056172fce5a11bed",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__0277a15fa04e_022"
+      ],
+      "reason": "Error-output definition for intentionally conflicting CREATE INDEX."
+    },
+    {
+      "body_sha256": "2f8b5f940515353ac0a90ac5cfa7fd8d7599def7885937c6e9bd1772784572e5",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__0277a15fa04e_023"
+      ],
+      "reason": "Error-output definition for intentionally conflicting CREATE INDEX."
+    },
+    {
+      "body_sha256": "c379b3305d3e37be468421af3cd1f498eee53c75deeaade2bdd69c15072ad944",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__0277a15fa04e_024"
+      ],
+      "reason": "Error-output definition for intentionally conflicting CREATE INDEX."
+    },
+    {
+      "body_sha256": "b759f0f3cc693914cb2ece16b02e409fa3bcc0aca2d62c63b0b7337f8cac03e7",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__0277a15fa04e_025"
+      ],
+      "reason": "Error-output definition for intentionally conflicting CREATE INDEX."
+    },
+    {
+      "body_sha256": "374c24d4251284035e3e77851a9ef44bd9a5cdfde91dd890503bcad412b3ea87",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__0277a15fa04e_031"
+      ],
+      "reason": "Mixed definition includes concrete duplicate/conflicting CREATE INDEX negative examples."
+    },
+    {
+      "body_sha256": "59edc0a3b5bbd26c21a5d1ef51eab78fc41544e1b158f958484b3a1e3cf102af",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__0277a15fa04e_032"
+      ],
+      "reason": "Mixed definition includes concrete duplicate/conflicting CREATE INDEX negative examples."
+    },
+    {
+      "body_sha256": "1a40d964436b4679385aa2220c7cb21f46d92a8c4a0c8fbec2703f69d0600b55",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__0a25fce88bd5_010"
+      ],
+      "reason": "Error-output definition for unsupported heterogeneous list property."
+    },
+    {
+      "body_sha256": "cbc26c7d0e05a14f6eb300a9ce9e617a8778e98ae32c702f8ff3be7513f16cf8",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__11b6d0b46978_075"
+      ],
+      "reason": "Error-output definition for invalid aggregation grouping."
+    },
+    {
+      "body_sha256": "9089f760681fec39ab2a003331ba56f341abf4de013f85363b8ccf2a928a4cd1",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__11b6d0b46978_081"
+      ],
+      "reason": "Mixed definition includes explicitly invalid aggregation queries."
+    },
+    {
+      "body_sha256": "af9fcb9038cf81a7de329024c3d6f89753f199e1c02982b222feaf090deb419b",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__11b6d0b46978_082"
+      ],
+      "reason": "Mixed definition includes explicitly invalid aggregation queries."
+    },
+    {
+      "body_sha256": "71e9f4ffbe42f61562c550c7dc2df22c64c572ef4672c2b2e1fc4a08244634c2",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__23707fa76ebe_056"
+      ],
+      "reason": "Mixed syntax/semantics definition includes concrete explicitly forbidden path or variable patterns."
+    },
+    {
+      "body_sha256": "c66b71b54c9e8a1984a93d8ab52277b4a466f7195e185faeada4b906cdb41c7f",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__23707fa76ebe_057"
+      ],
+      "reason": "Mixed syntax/semantics definition includes concrete explicitly forbidden path or variable patterns."
+    },
+    {
+      "body_sha256": "14a4308c2468bb6f54bc69b67e2a054f4b3066b1afa13d62f9167058738407e0",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__23707fa76ebe_058"
+      ],
+      "reason": "Mixed syntax/semantics definition includes concrete explicitly forbidden path or variable patterns."
+    },
+    {
+      "body_sha256": "3c6e2dc82d1e0285f96d44afc41147e5d4da1f3ed953e1d06c71ec3e6088826f",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__23707fa76ebe_059"
+      ],
+      "reason": "Mixed syntax/semantics definition includes concrete explicitly forbidden path or variable patterns."
+    },
+    {
+      "body_sha256": "1e44be2a97de0fd9e84e5424f9831d0c7c590c207b2ee90624c170732dbf41cb",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__23707fa76ebe_063"
+      ],
+      "reason": "Mixed syntax/semantics definition includes concrete explicitly forbidden path or variable patterns."
+    },
+    {
+      "body_sha256": "0284bd2cf39047aeaee210acc72e769328636e4ce15f34ae488c48f97544383a",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__23707fa76ebe_065"
+      ],
+      "reason": "Mixed definition includes forbidden multiple path patterns with selective shortest path selector."
+    },
+    {
+      "body_sha256": "a1d4bf4a301e9d2856f6dea9d02d7b641ad3f6f2659c2b388e8d15725998f8e9",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__23707fa76ebe_067"
+      ],
+      "reason": "Mixed definition contains forbidden quantified/multiple/zero-relationship shortestPath arguments."
+    },
+    {
+      "body_sha256": "a099296039deb648c1aff59e016d80d0369723f4417b13dab7add0f01e7ca334",
+      "keep": true,
+      "chunk_ids": [
+        "doc_cypher_manual__23707fa76ebe_069"
+      ],
+      "reason": "Valid relationship uniqueness/no-results examples."
+    },
+    {
+      "body_sha256": "a9622bf85f4fd5aed0466d1fc8aa005ab3f83421efd5c2ce3efa5cc1c4043de0",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__23707fa76ebe_071"
+      ],
+      "reason": "Mixed definition includes forbidden multiple selective path patterns under DIFFERENT RELATIONSHIPS."
+    },
+    {
+      "body_sha256": "575ed1b91ae510e6abe204ff05ba4d733d287cff1aebddf357c7a913aa7b0577",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__23707fa76ebe_072"
+      ],
+      "reason": "Mixed syntax/semantics definition includes concrete explicitly forbidden path or variable patterns."
+    },
+    {
+      "body_sha256": "a5b837ea8d8022dd84500a290e9bc3c1a19e19ececa3c6eabc4f9c8ebe5cb70e",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__357dee3f6e35_007"
+      ],
+      "reason": "Error-output definition for shadowed COLLECT subquery variable."
+    },
+    {
+      "body_sha256": "1eebf8f3c3e3a8b28498882ae112292b5fd408a5ae4903162efb30919d91f8dc",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__357dee3f6e35_018"
+      ],
+      "reason": "Mixed definition contains intentionally invalid shadowing COLLECT subquery."
+    },
+    {
+      "body_sha256": "c00867063baecb31795ae03199bf525eeb591d50229c1017c75e45c2157f99b2",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__370305d7a135_001"
+      ],
+      "reason": "Error-output definition for constraint-backed index drop."
+    },
+    {
+      "body_sha256": "83bec1fea8477da3b21d45868f248544a85ab132b2eac500764c642cac3f31c0",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__370305d7a135_002"
+      ],
+      "reason": "Mixed definition includes concrete forbidden DROP INDEX uniqueBookIsbn."
+    },
+    {
+      "body_sha256": "4aecf34e96d02dd9d09a0d7de4fba410fde2cbe3c6016cebbeca559d13b4c62e",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__3fba6be67421_007"
+      ],
+      "reason": "Mixed definition contains explicit invalid scope/legacy variable-length WHERE example."
+    },
+    {
+      "body_sha256": "14178551a95a14b0e645feb50868b78d68b66a4603936dd8d2c2008ee1f54604",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__3fba6be67421_008"
+      ],
+      "reason": "Mixed definition contains explicit invalid scope/legacy variable-length WHERE example."
+    },
+    {
+      "body_sha256": "28edee78dedd108bf61ca0ec11c663f5c3ec22ad5167632ee138d02c722b9dca",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__48af73560234_004"
+      ],
+      "reason": "Mixed definition includes Node-valued WHERE predicate and error output."
+    },
+    {
+      "body_sha256": "8481facf9625f6019e3a1722c6dff8b9945a3187c06b3adfc38f4a19ff666165",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_008"
+      ],
+      "reason": "Error-output definition for unhandled division by zero."
+    },
+    {
+      "body_sha256": "d9c66be12ea7dbfa352c1d3ba8a80d125c23962642b6f0e74569274ca7ca3369",
+      "keep": true,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_011"
+      ],
+      "reason": "Valid transaction status output/error-handling/retry definition; no concrete rejected outer query."
+    },
+    {
+      "body_sha256": "0848f5ed1208a3f97ffe11321314aebf97517ba6f4dded4cd80e1a809113574f",
+      "keep": true,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_012"
+      ],
+      "reason": "Valid transaction status output/error-handling/retry definition; no concrete rejected outer query."
+    },
+    {
+      "body_sha256": "d17df7826c49025883bdd391dc61cbff8234316138852c758855aa92ec200a60",
+      "keep": true,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_015"
+      ],
+      "reason": "Valid transaction status output/error-handling/retry definition; no concrete rejected outer query."
+    },
+    {
+      "body_sha256": "5f61eb4e10d38ab8f5bdbc52e526b22501da039f499af4bc34509f2d1c1ebb46",
+      "keep": true,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_016"
+      ],
+      "reason": "Valid transaction status output/error-handling/retry definition; no concrete rejected outer query."
+    },
+    {
+      "body_sha256": "69b53d8cb438b4bf4258ad912606275acd5a739fd102b12f2bc92f8b9c78b118",
+      "keep": true,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_017"
+      ],
+      "reason": "Valid transaction status output/error-handling/retry definition; no concrete rejected outer query."
+    },
+    {
+      "body_sha256": "addab0e84604ea7f455935297334dc0d6be26e532dbf9035611710dba7bb2f44",
+      "keep": true,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_022"
+      ],
+      "reason": "Deadlock output associated with successfully handled ON ERROR CONTINUE/report-status query."
+    },
+    {
+      "body_sha256": "a477b483ce50b6e3d5c34463641f697f2ce68be74bef4701e7acadd6e4a1efbf",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_026"
+      ],
+      "reason": "Mixed definition includes intentionally failing unhandled/ON ERROR FAIL or forbidden status query."
+    },
+    {
+      "body_sha256": "324debf76e5e1eb8f3e1c803d31e7de957a5e6004e079a6e827f773b2c9b4b29",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_027"
+      ],
+      "reason": "Mixed definition includes intentionally failing unhandled/ON ERROR FAIL or forbidden status query."
+    },
+    {
+      "body_sha256": "bd2e53e1f3616fd2c651b9bd1617abd61cfc259aab9c2bac9a48355b1c2f4967",
+      "keep": true,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_028"
+      ],
+      "reason": "Valid transaction status output/error-handling/retry definition; no concrete rejected outer query."
+    },
+    {
+      "body_sha256": "856c548797e2e7230c0b9bcc327d8d108f19c2cd88034c03602aa52455bbde6b",
+      "keep": true,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_029"
+      ],
+      "reason": "Valid transaction status output/error-handling/retry definition; no concrete rejected outer query."
+    },
+    {
+      "body_sha256": "05f9a543ff5b457549805807bd6c21f62588ffed9f8d133f37272b8a5ded631c",
+      "keep": true,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_030"
+      ],
+      "reason": "Valid transaction status output/error-handling/retry definition; no concrete rejected outer query."
+    },
+    {
+      "body_sha256": "69566f49ba8b5a34fdb5ce3d659ded6ff5a89ae1e6bf96747a8294768bae4c93",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_031"
+      ],
+      "reason": "Mixed definition includes intentionally failing unhandled/ON ERROR FAIL or forbidden status query."
+    },
+    {
+      "body_sha256": "20857212a386b29f1c71151d6b7f746cf07b8e7e3c8a0d939ac6f5197705325e",
+      "keep": true,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_033"
+      ],
+      "reason": "Valid transaction status output/error-handling/retry definition; no concrete rejected outer query."
+    },
+    {
+      "body_sha256": "78e9be2932586a5818499bb2c7a6bcd595fd45c0d051a463b79527501dde32d1",
+      "keep": true,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_034"
+      ],
+      "reason": "Valid transaction status output/error-handling/retry definition; no concrete rejected outer query."
+    },
+    {
+      "body_sha256": "fcb2a684332ef55f52409d0983b4455a138057cb19b8b651f01a284e0cde96c4",
+      "keep": true,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_035"
+      ],
+      "reason": "Valid transaction status output/error-handling/retry definition; no concrete rejected outer query."
+    },
+    {
+      "body_sha256": "f9710fc908b2d091ce482fed5a3d13ea488bd3d83ea585cf7230b1e31665f247",
+      "keep": true,
+      "chunk_ids": [
+        "doc_cypher_manual__50a08bc93086_037"
+      ],
+      "reason": "Valid transaction status output/error-handling/retry definition; no concrete rejected outer query."
+    },
+    {
+      "body_sha256": "3cc0b5a8a782120f3332787c735e03d19b302f09870bdd1b9b468374f87bb990",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__591dd9ccf221_014"
+      ],
+      "reason": "Mixed definition contains intentionally shadowing COUNT subquery."
+    },
+    {
+      "body_sha256": "52aa7447886a78dc3e35d880a4557c2a145217e7a34985dafe0c7274eef465fc",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__6760f5269df8_014"
+      ],
+      "reason": "Error-output definition for unsupported toFloat(DATE)."
+    },
+    {
+      "body_sha256": "bd0e2950e550e9befa685af56d628b642951594819fbc07758846a1ca76a45a2",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__6760f5269df8_019"
+      ],
+      "reason": "Mixed definition contains explicitly rejected toFloat(DATE)."
+    },
+    {
+      "body_sha256": "bbee599b57bf215f7060398c7a923f1ad4d8d9abce226090f8ea242aca040d60",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__6c861657547c_014"
+      ],
+      "reason": "Mixed definition includes explicit overflowing VECTOR INT8 counterexample and error output."
+    },
+    {
+      "body_sha256": "47e8de94df2912cb4610a499eb082366d41fdbf4ce83e84548a41dd13793f127",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_017"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "bb6ad59b8ca9739acbfabdc5270ff84498bd0fbec13b786888d243910ff49507",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_018"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "bf18eb542fb4e6f3de86d3f1fd2e7eb70474846a4fbdf3768244a8801e116cdb",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_019"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "7077d80ac50d0b6bab6f8aaeed276efb26088095148ba97e889341f2e34007fe",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_021"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "7d7cbe841ae10592bc0237dc684a5da3efed4d22833a3d8e0a2ea2f42fbc3135",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_022"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "e434ce4052ba386eae42f1b9dff2a79a61f0aa56bec8340d54eac0455ff68ffa",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_023"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "a998783d57ae086eb831e9d74f1e9036d493d37d3faa70cd87c1cccfeef33403",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_024"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "5f5c99c40d1d82fce69fd33f0932b75fb571ffdd9c54975fc0ddce6046bbf075",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_025"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "380ec5a032444d6891a2344adf7f83677c8c9f91e2aea92033fb9e9df300344d",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_026"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "48645026cc45f0f15c5cf333d9add398e7c68517c3891aff0750c9f1634c3347",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_027"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "093c755045f3fa984c3dbc6f115a1e706376c2ab0d9241e429388d6b854ccb28",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_028"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "07a8d96b8a6d97756a1e027583377e2aceedd72839feb0745524b90be6a2d432",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_029"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "707a0a9bd1ef9c3c21bd859b9504db373b4c719c979b834132aa630e240a5207",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_030"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "2abaf46641c9c7ec17d65d9ce159686b3975b3fba441bdbef905ebd83fba568a",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_031"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "119f169048eb3110884c2f32033ac5f8d486797b7f31354f6f3f741840d5f384",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_032"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "163b6dc772021a699796adf2c9ccad8b1c8fbd5451dbe46be720618d93be181a",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_033"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "9caae73b479148953871406f5b4f2bd20dd8c13bd4d917c171ffb673b7b4418d",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_034"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "79b40e0bb0e5c0b0634a435cae087c7df9c0958a4a4aba62e8b9bf4a72e27d57",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_035"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "7615d3093389ea472b42e33360adcd23c47f53989c30dde1ce2e5aeb4db60bf4",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_036"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "0602f8e1501bf1635a6aff64f1fa45717d649889cdb1e678026cdf77468a1089",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_037"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "544629c70f120c46647b30ff387821f1127fc7e0b983a620d2a0082ac146d9b9",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_038"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "4534eaf45793a3eae5e2d4e9fcbcce4df0306ba72f868bca4f906a34b1c15a4d",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_040"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "47e71ac12652be4baa01886041ca75c8c38713eed1a263524474d12c5c711b5f",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_041"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "e102c256bf7e0d9793b6c3710d1eead77bed01865e75d09a5ba18363f2581914",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_047"
+      ],
+      "reason": "Mixed SEARCH definition includes wrong-filter-variable and nonindexed-property negative queries."
+    },
+    {
+      "body_sha256": "c3697287cd786f25e6f2dfc4dfa881dc03ff7afee2049e9c1bebf69cdc33773b",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8158cdc8590b_048"
+      ],
+      "reason": "SEARCH counterexample or error output: explicitly forbidden variable/pattern/predicate/dimension configuration."
+    },
+    {
+      "body_sha256": "425e1a660317075872d314459d5e463965b6f8f3eaaa412b9e3bf19d88fd5039",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8837f91a0cdf_003"
+      ],
+      "reason": "Mixed definition includes explicitly invalid CREATE variable reuse."
+    },
+    {
+      "body_sha256": "3fd533b13595305a9267db981a699109022e4a2051a3935ef39e8ee8dc9dd515",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__8837f91a0cdf_004"
+      ],
+      "reason": "Mixed definition includes explicitly invalid CREATE variable reuse."
+    },
+    {
+      "body_sha256": "cd33830bd902156223c86e1001d41deb94d5468ca41a9fcb8e13c773fade5928",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__91af7abf0d15_011"
+      ],
+      "reason": "Mixed definition explicitly demonstrates invalid YIELD * followed by RETURN."
+    },
+    {
+      "body_sha256": "bc09fab30b4fb65b1394eb334a324ce9fe299c39350f5f6031b2c94b4f7cb92d",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__9cd48e3a7aca_007"
+      ],
+      "reason": "Mixed definition contains explicitly invalid FILTER inside node patterns."
+    },
+    {
+      "body_sha256": "d2f4a412981bf89365f77ae2c9ff05e31fb78a91ef465f5a1be816b1ba38501f",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__9dfe3c9937fe_040"
+      ],
+      "reason": "CASE static type-error output or mixed definition with concrete invalid query."
+    },
+    {
+      "body_sha256": "d9fc20f2a310e9f3f153b5ddbcbd9f76b962c8e772ce69f5bb9fb5f187e61670",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__9dfe3c9937fe_043"
+      ],
+      "reason": "CASE static type-error output or mixed definition with concrete invalid query."
+    },
+    {
+      "body_sha256": "7366daddac19ffad25a0193a47b02a4e5add63e31d71146ad00f4745f67e4567",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__a104b9c79faa_011"
+      ],
+      "reason": "Error-output definition for invalid importing WITH."
+    },
+    {
+      "body_sha256": "815c5dec6fbb212238b0e3ddff12176e45e510b5c4394f0bc2dd3d1265a24886",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__a104b9c79faa_040"
+      ],
+      "reason": "Mixed definition includes concrete invalid CALL scope or importing-WITH counterexamples."
+    },
+    {
+      "body_sha256": "c92e0d849e6f5dd48c317c63414df21bac172ee10ff6440a86ae911467b7b0d1",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__a104b9c79faa_041"
+      ],
+      "reason": "Mixed definition includes concrete invalid CALL scope or importing-WITH counterexamples."
+    },
+    {
+      "body_sha256": "b1a7e87bac8a36c4cd9b917bb250afb9a14936850688742546a3c5671071d146",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__a545d200b490_019"
+      ],
+      "reason": "Concrete true = NOT false inline expression explicitly invalid."
+    },
+    {
+      "body_sha256": "4daf8cc3530be3194a2cffb0190e28b9c117fecd6acbf1e21807de3865f8d6b7",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__accde66cfc42_049"
+      ],
+      "reason": "Explicit invalid empty-map temporal constructor inline counterexample."
+    },
+    {
+      "body_sha256": "8e4bd0b2c8dbe02c1741f3b8e563f9df111ac330650ef81e6fa7ecd3abfa59fd",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__accde66cfc42_204"
+      ],
+      "reason": "Explicit invalid empty-map temporal constructor inline counterexample."
+    },
+    {
+      "body_sha256": "96a3f54ed9b4e78853898c779e42dffa88fe3dd02a1f4deec32230ba1f25b188",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__accde66cfc42_275"
+      ],
+      "reason": "Explicit invalid empty-map temporal constructor inline counterexample."
+    },
+    {
+      "body_sha256": "19794e102ad1a46d93814df986d66732c7fd4766e405e15d158f41a9b51a793a",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__bd4a0135d222_002"
+      ],
+      "reason": "Error-output definition for de-scoped variable p."
+    },
+    {
+      "body_sha256": "734dc3bb74024803a7df23a9d7c0c9f369e097cb8f6e96322325972f21db857a",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__bd4a0135d222_044"
+      ],
+      "reason": "Mixed definition includes concrete WITH de-scoped RETURN p negative query."
+    },
+    {
+      "body_sha256": "9bb7487b65db0e0175a1dc83cbd58d3b1016a79d1a65cdd34441999ae29ca2eb",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__c489c7755c3e_003"
+      ],
+      "reason": "Concrete unaliased RETURN 1/RETURN 1+1 before NEXT described as forbidden."
+    },
+    {
+      "body_sha256": "ff0f8b71404e5bef5ef01a19e4a4da6ae04b1a183ea3cba95357c47e0ddec106",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__cd1dec93923d_018"
+      ],
+      "reason": "Explicit left/right(original,null) inline failing function expression."
+    },
+    {
+      "body_sha256": "6532073da3ad45fa4988ad8c4dfaefa31a5dfa521e31697a488749be73b1a09d",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__cd1dec93923d_063"
+      ],
+      "reason": "Explicit left/right(original,null) inline failing function expression."
+    },
+    {
+      "body_sha256": "3c3a22929a0e2863872e66bd12fedef74585017dfe9c4a3e7c165c20df01982c",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__d325f19a9dba_038"
+      ],
+      "reason": "Error-output definition for inaccessible aggregation ORDER BY variable."
+    },
+    {
+      "body_sha256": "4d5f273140073ca3ebe7fb58557f53d7ac90c0f241240a23cdf3bc47962ab8df",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__d325f19a9dba_044"
+      ],
+      "reason": "Continuation/mixed definition contains exact invalid pre-aggregation ORDER BY o.orderDate query."
+    },
+    {
+      "body_sha256": "6777e6e8213ec3e6fbfb1922e8bb7ba3ca848b26782e32bc5bdc994a688f65fa",
+      "keep": true,
+      "chunk_ids": [
+        "doc_cypher_manual__d9c4a70ca6c4_004"
+      ],
+      "reason": "Invalid-path heading remains but actual invalid arrow was dropped by extraction; surviving patterns are valid."
+    },
+    {
+      "body_sha256": "3be9e8fc89f76b850f1bc8b92ca7083c330f7eb6f7df252d12bc10b87467627c",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__dbf76aec968e_011"
+      ],
+      "reason": "Mixed definition contains explicitly shadowing EXISTS subquery."
+    },
+    {
+      "body_sha256": "041cfb115d150631210d2c6213ee816202e809b5aaf0553638b44d55243e4cd4",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__e426240a2047_006"
+      ],
+      "reason": "Explicit invalid duration()/duration({}) inline constructor expressions."
+    },
+    {
+      "body_sha256": "50a668fe22f746f03845ed076372c3dfc1273d91d30f77bb72c4808970025b1f",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__e7efcf4757b4_058"
+      ],
+      "reason": "Error output or mixed definition for forbidden TERMINATE WHERE without YIELD."
+    },
+    {
+      "body_sha256": "fe610686e648e3af100d1eb6850ebfa7f3ba154924b06c36b08a87e2c0d1519f",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__e7efcf4757b4_070"
+      ],
+      "reason": "Error output or mixed definition for forbidden TERMINATE WHERE without YIELD."
+    },
+    {
+      "body_sha256": "396ee0a7047d9822a8d9aa4ceba96f199f14ef1cfca1cdedc36020f0a09897c0",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__ed59dce6e0e7_014"
+      ],
+      "reason": "Mixed definition contains unaliased/mismatched WHEN return columns."
+    },
+    {
+      "body_sha256": "e01f38f664e36e418dfce8d5bcb681612208bc540ea1c59821271bd024b91261",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__ed59dce6e0e7_015"
+      ],
+      "reason": "Mixed definition includes invalid WHEN branch columns and clause placement."
+    },
+    {
+      "body_sha256": "4f4e9e08db4f98b31ea49cc849c50af00b213ba40fc3c7aa00694134fdd3122d",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__f7dbf4281d33_011"
+      ],
+      "reason": "Error-output definition for unbounded REPEATABLE ELEMENTS."
+    },
+    {
+      "body_sha256": "8b06a555fbb512d4fe767be85bd0dc5c0812540f0ba892a77cf21958117c0a99",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__f7dbf4281d33_016"
+      ],
+      "reason": "Continuation chunk contains exact unbounded REPEATABLE ELEMENTS negative query; error explanation in previous chunk."
+    },
+    {
+      "body_sha256": "1d6fd932740d246569d517853866fb6635dad08ece14043c5a665cefd5da3094",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__fa448871e3be_004"
+      ],
+      "reason": "Error-output definition for invalid MERGE property/entity/constraint counterexample."
+    },
+    {
+      "body_sha256": "87418762e0d9f57910eb3219d06e3d20ebaded630f71f9097ed16e7014847167",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__fa448871e3be_026"
+      ],
+      "reason": "Error-output definition for invalid MERGE property/entity/constraint counterexample."
+    },
+    {
+      "body_sha256": "0daace39b4ecc142daa21e2bd9758a0d1f82a723f376a2415711f870c95b8df8",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__fa448871e3be_027"
+      ],
+      "reason": "Error-output definition for invalid MERGE property/entity/constraint counterexample."
+    },
+    {
+      "body_sha256": "0a4fae3e53285a930f6959671a0f54f73c9faa50de7081b2fbfaa8c1ce949ebb",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__fa448871e3be_042"
+      ],
+      "reason": "Error-output definition for invalid MERGE property/entity/constraint counterexample."
+    },
+    {
+      "body_sha256": "723e6bf0156ced0994c863963b85cdc3e043c8732769acfe1b6d0dfb9321e8cb",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__fa448871e3be_054"
+      ],
+      "reason": "Mixed definition includes concrete MERGE uniqueness constraint negative examples."
+    },
+    {
+      "body_sha256": "b5c2516aee0215690a703c48ded9df3437161607d35c352ffb2f414494e780e8",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__fa448871e3be_055"
+      ],
+      "reason": "Mixed definition includes concrete MERGE uniqueness constraint negative examples."
+    },
+    {
+      "body_sha256": "f1f6a2317b1621b7b3ad266914319911869154218cb73547c70c516591b0808a",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__fa448871e3be_056"
+      ],
+      "reason": "Mixed definition includes concrete MERGE uniqueness constraint negative examples."
+    },
+    {
+      "body_sha256": "398701a71539de71451290ad853bc529d3badf594ee8129409915ba88b9c9be5",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__fa8519a11480_010"
+      ],
+      "reason": "Error output or mixed definition for incompatible nullability union."
+    },
+    {
+      "body_sha256": "bc3856f808deda3f13b2bcebca4b4447eca76f55dd493191752b710f67ec8180",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__fa8519a11480_022"
+      ],
+      "reason": "Error output or mixed definition for incompatible nullability union."
+    },
+    {
+      "body_sha256": "6f6ec0db8bc0663fcb082876770d747512dd282e57a8c0b779f146bf3846dec6",
+      "keep": false,
+      "chunk_ids": [
+        "doc_cypher_manual__fd6667f4cd10_045"
+      ],
+      "reason": "Mixed definition contains WITH dropping p followed by invalid RETURN p."
+    },
+    {
+      "body_sha256": "739307d04b7f1c85ee0fb09626ebe61b41d96b39487c1da0a0734da78e158795",
+      "keep": false,
+      "chunk_ids": [
+        "doc_memgraph_querying__030d9c3af88c_002"
+      ],
+      "reason": "Mixed definition embeds an explicitly failing nested assignment to string n.name."
+    },
+    {
+      "body_sha256": "6ba84472f59362da59fea173b625eebe90690f872270956cc4fc62b117fe363f",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__17a1a6e015dc_001"
+      ],
+      "reason": "OPTIONAL MATCH failure to find a pattern means successful null behavior, not query rejection."
+    },
+    {
+      "body_sha256": "d0bc274e9188bde43271122d86a9f1e50ba4bcc56b7f8d68d18957d7d15e9619",
+      "keep": false,
+      "chunk_ids": [
+        "doc_memgraph_querying__17a1a6e015dc_003"
+      ],
+      "reason": "Mixed definition embeds the explicitly failing ORDER BY reference to the old variable after RETURN aliases it."
+    },
+    {
+      "body_sha256": "49c649d42929008928352d80bba2e2055d26cd17e86a3b89cdc9e04d6535edec",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__17a1a6e015dc_006"
+      ],
+      "reason": "Positive nested SET/REMOVE examples with conditional precondition warnings; no illustrated invalid input."
+    },
+    {
+      "body_sha256": "0f64d6583de092f6de9bb4a95cd05ebba7194536b43cf16be441bd327ef35f42",
+      "keep": false,
+      "chunk_ids": [
+        "doc_memgraph_querying__17a1a6e015dc_007"
+      ],
+      "reason": "Mixed definition embeds DELETE node and explicitly says the above query reports an error for connected nodes."
+    },
+    {
+      "body_sha256": "ead146736ec03259b7df91769baf000cd7167d9cde44f3a3ff038971c181536b",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__17a1a6e015dc_010"
+      ],
+      "reason": "Describes an unsupported batching variant but illustrates supported USING PERIODIC COMMIT corrections."
+    },
+    {
+      "body_sha256": "2896cd3c8c3373dc64fa2cc7ce054fdc40e5b55fde17d5cfa6c55ac6687bfdb7",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__1a6d1620d7fe_005"
+      ],
+      "reason": "assert function signature describes exception semantics without an illustrated failing invocation."
+    },
+    {
+      "body_sha256": "38d6679e59e9b1fb14bb00480bcd431d7e77ab0cc2d46369659bc06cfade898c",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__1a6d1620d7fe_025"
+      ],
+      "reason": "toString signature describes unstringifiable inputs without an illustrated failing invocation."
+    },
+    {
+      "body_sha256": "1af45fe56ec3bdec2d30e637a21d97fca4ecf81170993fa76790b73c6f010c06",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__1bc0faa053ea_003"
+      ],
+      "reason": "FOREACH positive examples and null-skipping semantics; no explicit invalid example."
+    },
+    {
+      "body_sha256": "af599fcd2c1a423ccd6f844cbedfbcc3541a55c639da8d03437fb4c474c92892",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__22d195d6a29c_005"
+      ],
+      "reason": "Positive text-index syntax and a general duplicate-name warning, not an intentionally failing query."
+    },
+    {
+      "body_sha256": "249854927742b56b19fe9edff8914b6e6ea02da1b12be406a54c9ceb274c175b",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__32c4d38715d7_001"
+      ],
+      "reason": "General LOAD PARQUET row-count/type restrictions without a failing query illustration."
+    },
+    {
+      "body_sha256": "3db47b9151ee398b5029a1fd17080b2400e451d585dc742b94ab6925e391896b",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__33472c7f0c3a_000"
+      ],
+      "reason": "Positive CREATE examples; dynamic MATCH/MERGE restriction does not invalidate the illustrated CREATE."
+    },
+    {
+      "body_sha256": "244df4ef6e7f581201bbc8292f32315f2d51738dad6dff46c43dd0abc31eb4e4",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__33472c7f0c3a_001"
+      ],
+      "reason": "Positive CREATE relationship examples; restriction concerns dynamic MATCH/MERGE."
+    },
+    {
+      "body_sha256": "5f176d3fd0e0efff606d1dafe2fdba88a43ed59724487a238baafdd8cfb54c5b",
+      "keep": false,
+      "chunk_ids": [
+        "doc_memgraph_querying__34e7dc2c27b7_004"
+      ],
+      "reason": "Mixed definition includes an explicitly unsupported parameter property map in MATCH."
+    },
+    {
+      "body_sha256": "578f9d0c276b259bb00f59978761c5cce1ae7a71f49e2bf4c1073ca33012d66e",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__34e7dc2c27b7_005"
+      ],
+      "reason": "General exists/CASE limitation followed by supported pattern-comprehension examples, without illustrated exists/CASE misuse."
+    },
+    {
+      "body_sha256": "e2b767b78f6fccd2c835c493f12ee45ef02eba9e35bcbf0c03eb023fd99093f2",
+      "keep": false,
+      "chunk_ids": [
+        "doc_memgraph_querying__34e7dc2c27b7_006"
+      ],
+      "reason": "Mixed definition embeds the explicitly failing heterogeneous STRING plus INTEGER property list."
+    },
+    {
+      "body_sha256": "02c79fa8140c2b52cc27f75eae798c4f044d2249d431f0072c7f72023d4f59f4",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__38dd38c9b7b4_000"
+      ],
+      "reason": "Schema configuration and mode/transaction restrictions, not an illustrated invalid query."
+    },
+    {
+      "body_sha256": "cdb0e442641acb204ff75763fe772d526208bb582ca0c884ec70638c0703cc04",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__38dd38c9b7b4_002"
+      ],
+      "reason": "Schema output and performance discussion; invalidation is schema maintenance, not an invalid Cypher example."
+    },
+    {
+      "body_sha256": "38f0481704658d26c6e868cf3baf3a136bcee53d2be420875b4a7783171e0028",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__3a616f754b56_000"
+      ],
+      "reason": "LOAD CSV syntax documents IGNORE BAD error handling, not a supplied invalid row example."
+    },
+    {
+      "body_sha256": "8239a555cf80e878994f9a7783227655ef72ddc629c4468df06d4bd691766240",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__3a616f754b56_001"
+      ],
+      "reason": "LOAD CSV general row-count constraints without an illustrated failing query."
+    },
+    {
+      "body_sha256": "4a8f983049efd7be136d8cef5fdf744cf7c0618a5f34970a0e7704f70a3db12b",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__4269c14e6f2c_001"
+      ],
+      "reason": "Positive syntax/style examples with relationship naming restriction; no invalid hyphenated relationship example."
+    },
+    {
+      "body_sha256": "06407fed1b40e710808d7f44ca22f9a57fb6a238e9a0a38301ea7bc732a01a29",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__4269c14e6f2c_002"
+      ],
+      "reason": "Bad syntax comment introduces stylistically discouraged escaping; escaped string literals are valid and contrasted with recommended quote style."
+    },
+    {
+      "body_sha256": "cc54ba8435a60ce5833264dacf2de405048b59362abc8bcf52200d30f906fb1c",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__4aff3c28733a_005"
+      ],
+      "reason": "Positive EXISTS examples and explanation of general pattern-expression limits."
+    },
+    {
+      "body_sha256": "ee50ae59fdbda69e3fc337d782f26152d45f8be96e0532e0620360fc20ad43ac",
+      "keep": false,
+      "chunk_ids": [
+        "doc_memgraph_querying__4aff3c28733a_006"
+      ],
+      "reason": "Mixed definition embeds the explicitly forbidden EXISTS subquery shadowing of countryName."
+    },
+    {
+      "body_sha256": "373252eb94ec8493a042893fccb8a7ee4b8ef8af786c9dc9787dc2137d9af1c8",
+      "keep": false,
+      "chunk_ids": [
+        "doc_memgraph_querying__521f3b92642b_043"
+      ],
+      "reason": "Mixed definition embeds the intentional MATC typo and its parser error output."
+    },
+    {
+      "body_sha256": "e1b894551177788b52e611119de4f3c4bd31cf40bfcaa2cce88b4e525731a85a",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__521f3b92642b_050"
+      ],
+      "reason": "Cache invalidation and unsupported caching explain internal behavior; supplied Cartesian query is valid."
+    },
+    {
+      "body_sha256": "69e8c2d4683f10e0385fab74f9c79001247de52787f26671e1f6a7fe9090c1f4",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__528d0ff89fa2_027"
+      ],
+      "reason": "Valid vector-index creation with conditional memory-allocation failure warning."
+    },
+    {
+      "body_sha256": "8f7c0a7717abec007985097f0bf4a0a183d11c8237bfaf1a737d9307ed9ef2ea",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__528d0ff89fa2_028"
+      ],
+      "reason": "Supported vector-search calls use numeric lists; warning concerns other input types."
+    },
+    {
+      "body_sha256": "810baff95ff3fcc371cfc421fb33cce75831bd4e54403db3562698d9dbd0175e",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__58027bc779ef_000"
+      ],
+      "reason": "Positive WITH-separated read/write query; no illustrated missing-WITH error."
+    },
+    {
+      "body_sha256": "9cbb8a9a99ed87ed25708705db1a6f89de970401b03b660b7ab054c1d9e74281",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__68432435c506_000"
+      ],
+      "reason": "Parallel execution fallback is supported successful behavior, not rejected queries."
+    },
+    {
+      "body_sha256": "64de180d79992b58d9f5058daf37fc1d36e14389f689098fafe09ec13b4e8660",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__68432435c506_001"
+      ],
+      "reason": "Supported parallel aggregation examples with thread/performance limitations."
+    },
+    {
+      "body_sha256": "f741566710e5d55f18bce44d9c02afe76d80a9e136f254be2d8cbea216807915",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__6aa5a2006a60_000"
+      ],
+      "reason": "Clause glossary; OPTIONAL MATCH failure to find means successful null behavior."
+    },
+    {
+      "body_sha256": "59a1c97042dc79b3ced30b0d37089b65eecc17a736b083fe2cd360420063f485",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__7ee70b69af66_000"
+      ],
+      "reason": "Invalid uses appears only in the table of contents; actual illustrated Cartesian CALL is valid."
+    },
+    {
+      "body_sha256": "1977b441c4557c402be4d2f69d3e6dc656a1a9c141bdd30bea9552002d68778b",
+      "keep": false,
+      "chunk_ids": [
+        "doc_memgraph_querying__7ee70b69af66_001"
+      ],
+      "reason": "Mixed definition ends with the explicitly invalid CALL subquery returning n already used in the outer scope."
+    },
+    {
+      "body_sha256": "37f5064d06009d1dc396285a712e5827033e59c7eb07f97b70229dcf6dc3ddba",
+      "keep": false,
+      "chunk_ids": [
+        "doc_memgraph_querying__7ee70b69af66_002"
+      ],
+      "reason": "Mixed definition contains two explicit CALL semantic errors: unaliased returned expression and unbound imported variable o."
+    },
+    {
+      "body_sha256": "2306444789fde493bd8b5908130ce013f9b78f4891a57105174fd834cfb6fc4b",
+      "keep": false,
+      "chunk_ids": [
+        "doc_memgraph_querying__82d45e545edf_000"
+      ],
+      "reason": "Mixed dialect comparison explicitly states Memgraph does not support the illustrated named range-index syntax."
+    },
+    {
+      "body_sha256": "47d4ebae0b2c24687a4e4ae0a0e2649a539c5e24276d1ada43c02d75692319ee",
+      "keep": false,
+      "chunk_ids": [
+        "doc_memgraph_querying__82d45e545edf_001"
+      ],
+      "reason": "Mixed dialect comparison embeds an explicitly unsupported NOT relationship type expression."
+    },
+    {
+      "body_sha256": "3ef3976c15855939ffc6c48c686c6cf645d23448d370b2a5b26b1ceae87bc3c2",
+      "keep": false,
+      "chunk_ids": [
+        "doc_memgraph_querying__82d45e545edf_002"
+      ],
+      "reason": "Mixed definition embeds explicitly unsupported quantified paths and other illustrative unsupported expressions."
+    },
+    {
+      "body_sha256": "a035ba22f04e45046aea72797945746a59d7943d6583561d0f5cc4d29e286c68",
+      "keep": false,
+      "chunk_ids": [
+        "doc_memgraph_querying__82d45e545edf_003"
+      ],
+      "reason": "Mixed definition embeds unsupported multi-value CASE WHEN and IS :: INTEGER expressions."
+    },
+    {
+      "body_sha256": "f8a6a4090218c4f1b697fffeb5ac0548fc57e3a04cc3cd1d28c289e4f7ecd4cc",
+      "keep": false,
+      "chunk_ids": [
+        "doc_memgraph_querying__c09f54ad2632_000"
+      ],
+      "reason": "Mixed definition embeds DELETE of a connected Country node and its error output."
+    },
+    {
+      "body_sha256": "0ec9fd04ff512f1eb6aae251ba3508c0551c35ee2e9ea375cfd736f24c55e02e",
+      "keep": false,
+      "chunk_ids": [
+        "doc_memgraph_querying__c0c72c7df699_002"
+      ],
+      "reason": "Mixed definition embeds the explicitly failing ORDER BY alias scope counterexample."
+    },
+    {
+      "body_sha256": "0531ba3349691c08b111840bac5b50bf3685f62b56b82de67666baafac328f0a",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__c603784f5ecb_000"
+      ],
+      "reason": "Invalid MERGE usage occurs only in contents; illustrated label/property MERGE queries are positive."
+    },
+    {
+      "body_sha256": "58a7c870b25e8035232973f1b7ede3e761d0142a8d865150f8460ca95fb35cca",
+      "keep": false,
+      "chunk_ids": [
+        "doc_memgraph_querying__c603784f5ecb_003"
+      ],
+      "reason": "Mixed definition embeds MERGE with a null property and its explicit runtime error."
+    },
+    {
+      "body_sha256": "7142198ec8d7acb30f1cc9875bb41ea2c3ba4397d029593cc0aadd941f8c0ef5",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__e4839facc6f4_000"
+      ],
+      "reason": "Supported parallel-execution examples and successful single-thread fallback semantics."
+    },
+    {
+      "body_sha256": "26884d99d41bc1e71873e2f2f433d4d37433ba3621df32dea4d6f0e2fd0bb447",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__f57610263ec3_007"
+      ],
+      "reason": "TTL configuration and concurrent serialization warnings, not intentional invalid queries."
+    },
+    {
+      "body_sha256": "aa78f2719222e829a4f4be65a9b9614c5a9f965bc79734c490c06a4ebb8dfab7",
+      "keep": true,
+      "chunk_ids": [
+        "doc_memgraph_querying__fce5682fc504_000"
+      ],
+      "reason": "OPTIONAL MATCH examples successfully return null; missing patterns are not query errors."
+    },
+    {
+      "body_sha256": "b33c7a71427041d2ffcd04e4c8d740f930003b4352bcfca537eb762f015ed88d",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__009e6802395a_031"
+      ],
+      "reason": "Concrete quantified path pattern comprehension explicitly unsupported."
+    },
+    {
+      "body_sha256": "96395a5875359946ffd8c5a03135ee9edf824c613373a83aef5aaf44feafac7d",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__009e6802395a_032"
+      ],
+      "reason": "Correct legacy variable-length pattern-comprehension rewrite."
+    },
+    {
+      "body_sha256": "f26e6d0399304c5a88aac5e2269a12916c9f42c7eed96666a7012f4072ddbccc",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__0277a15fa04e_041"
+      ],
+      "reason": "Successful IF NOT EXISTS no-op notification; following failure heading refers to next example."
+    },
+    {
+      "body_sha256": "5bc4018293941d66f3b89bdcf4462b18bd51d6e5804586cb13a1b91746f028f5",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__0277a15fa04e_042"
+      ],
+      "reason": "Concrete CREATE INDEX counterexample conflicts with existing index or constraint (can not be created)."
+    },
+    {
+      "body_sha256": "960aa15b6c2d3480e9e194da2d9b64066c9c60cf4569b72a431bc077bb1adc4d",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__0277a15fa04e_043"
+      ],
+      "reason": "Documented duplicate index-name failure."
+    },
+    {
+      "body_sha256": "3f7be5bc795c6a635cc63ddef5c7a826d7995de9670631914ab52cf826221e27",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__0277a15fa04e_044"
+      ],
+      "reason": "Concrete CREATE INDEX counterexample conflicts with existing index or constraint (can not be created)."
+    },
+    {
+      "body_sha256": "7a0ec87d8e52ba2a4b284b1cd857b313548f0da05a46d8f1b3a820125fa7a94f",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__0277a15fa04e_045"
+      ],
+      "reason": "Concrete CREATE INDEX counterexample conflicts with existing index or constraint (can not be created)."
+    },
+    {
+      "body_sha256": "680afc7b457dce94cdec8936f52dd4f3426af10dab6aec65356cb28d239e2fd8",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__0a25fce88bd5_013"
+      ],
+      "reason": "Heterogeneous list property assignment intentionally raises unsupported property value type."
+    },
+    {
+      "body_sha256": "d95b1ef52401dd0962121bdcc1aded575ffa29e26925639e42e9cc8b778e2942",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__11b6d0b46978_026"
+      ],
+      "reason": "Invalid expression combines non-grouping n.x with count(*)."
+    },
+    {
+      "body_sha256": "5cbe7c2e000b3e7762d8dda0207164cdce7752daa8ed4232859390434839c160",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__11b6d0b46978_031"
+      ],
+      "reason": "Implicit grouping expression p.age intentionally raises 42I18."
+    },
+    {
+      "body_sha256": "32fb7920e5457380ff311dfa4db010b64480c99b448a03bf7f6d187c1372d018",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__11b6d0b46978_033"
+      ],
+      "reason": "Valid rewritten query computes groupingKey in WITH."
+    },
+    {
+      "body_sha256": "4018b1dffb5bf3ba886d3c544cd097b93745b23048b1312b3e627cdfe4e5e258",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__23707fa76ebe_023",
+        "syn_cypher_manual__23707fa76ebe_023"
+      ],
+      "reason": "Illegal standalone zero-lower-bound quantified path."
+    },
+    {
+      "body_sha256": "0fe564503d465ee1e23de033875ab5d7a497cb74a5d256ad1cd1cb425b1d18bc",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__23707fa76ebe_024",
+        "syn_cypher_manual__23707fa76ebe_024"
+      ],
+      "reason": "Incomplete path pattern ends in a relationship."
+    },
+    {
+      "body_sha256": "a011a18ebb161aa691ab9fd039888c5e1a5ea4e166532cfc9bd212ff97cd383e",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__23707fa76ebe_025",
+        "syn_cypher_manual__23707fa76ebe_025"
+      ],
+      "reason": "Illegal concatenation of two simple path patterns."
+    },
+    {
+      "body_sha256": "370000a7fe456f2de3855272cd4f931876d1a4038ddc14c28aaf68416ca683fe",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__23707fa76ebe_038",
+        "syn_cypher_manual__23707fa76ebe_038"
+      ],
+      "reason": "Invalid quantified single-node pattern."
+    },
+    {
+      "body_sha256": "d3070075556d399c72622f39bdfe5b43462cbd69339e02a9d5f0568e3509ad0e",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__23707fa76ebe_039",
+        "syn_cypher_manual__23707fa76ebe_039"
+      ],
+      "reason": "Illegal nested quantified relationship/path pattern."
+    },
+    {
+      "body_sha256": "2d1de2ddcd58bf5fcdf266c80123dd0530ef3cdd4c12f80e168882c367b0ae77",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__23707fa76ebe_041",
+        "syn_cypher_manual__23707fa76ebe_041"
+      ],
+      "reason": "Valid WHERE inside quantified pattern; trailing syntax-error narrative introduces next code block."
+    },
+    {
+      "body_sha256": "c0d8a4ed897803d1e34c098c28dc75bdae1eb65c95717570855d633153805577",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__23707fa76ebe_042",
+        "syn_cypher_manual__23707fa76ebe_042"
+      ],
+      "reason": "Group variables treated as singleton outside quantified pattern; documented syntax error."
+    },
+    {
+      "body_sha256": "46b68a5c19851b5463d770904ecc0386058cadfbadf4873b907bc2bf1dccfa65",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__23707fa76ebe_065",
+        "syn_cypher_manual__23707fa76ebe_065"
+      ],
+      "reason": "Valid query returns no rows; trailing error narrative introduces next query."
+    },
+    {
+      "body_sha256": "5bc64bd424cfa9e87f1bc79478f6145a0f60d92919d1f41e417db7d156f387eb",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__23707fa76ebe_066",
+        "syn_cypher_manual__23707fa76ebe_066"
+      ],
+      "reason": "Same variable used for fixed and variable length relationship; documented error."
+    },
+    {
+      "body_sha256": "6fc6c51710eead0cf26c8903b127f0940ab7ce80c11eedc53ec39d66f8723a35",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__23707fa76ebe_106",
+        "syn_cypher_manual__23707fa76ebe_106"
+      ],
+      "reason": "Valid relationship uniqueness example returns no paths."
+    },
+    {
+      "body_sha256": "cef66715debf9d1966c5d4a3bd7b565e37d95a3d625e5a64521b7d5a69c53190",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__23707fa76ebe_119",
+        "syn_cypher_manual__23707fa76ebe_119"
+      ],
+      "reason": "Adjacent node patterns explicitly invalid syntax."
+    },
+    {
+      "body_sha256": "bdcd48fcd9147a388aaa3d9b9679c329348bd6ab8ea4a9c7e1373c903b9b3272",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__2f6a1bca3cce_004"
+      ],
+      "reason": "Valid elementId(n); type-error rule does not describe supplied node argument."
+    },
+    {
+      "body_sha256": "ee8cccab833613eb6502f65d9b34adbcd1a7613df5b326a1e92bee303f4cf43a",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__2f6a1bca3cce_023"
+      ],
+      "reason": "Valid conversions including unparseable string returning null."
+    },
+    {
+      "body_sha256": "bcdf54b334c76c62199b71919ff3dc3f95d9326a7ad21691b632bbc68b074145",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__2f6a1bca3cce_025"
+      ],
+      "reason": "Valid float conversions; unparseable string returns null."
+    },
+    {
+      "body_sha256": "ad9a1cce01fcba5b7919e12410f05fde8c52f090a418f41205b7746431198d08",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__2f6a1bca3cce_027"
+      ],
+      "reason": "Valid integer conversions; unparseable string returns null."
+    },
+    {
+      "body_sha256": "b9131009e323345fad64a263fa151c14eb2f7977c24587026880c9eaec78f2cd",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__357dee3f6e35_005"
+      ],
+      "reason": "COLLECT subquery intentionally shadows imported name variable."
+    },
+    {
+      "body_sha256": "b7b36b57648c70fb82a691ca551eea8ec84e44d750b78b7f759250ae4dfda343",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__370305d7a135_001"
+      ],
+      "reason": "General successful DROP INDEX syntax conditional on existence, not a concrete negative execution."
+    },
+    {
+      "body_sha256": "a7ed75401e6e8b0fb909d458002fc1be2ce2bb520e99c6a2471e5589dce61047",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__370305d7a135_004"
+      ],
+      "reason": "Intentional failure dropping constraint-backed index."
+    },
+    {
+      "body_sha256": "224b23cf1f8d1baa9178f0f89394d886e30cebaf484df7ff9a1e20a9f33aa93c",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__3fba6be67421_008"
+      ],
+      "reason": "RETURN n references variable dropped by WITH."
+    },
+    {
+      "body_sha256": "4f20d45dd7a61cac429b5904bce1eadbbd0f3e83599923a5d21ed6c828597559",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__3fba6be67421_009"
+      ],
+      "reason": "Valid RETURN name; preceding rewrite explanation references previous invalid RETURN n."
+    },
+    {
+      "body_sha256": "4e5a5b0c41c1411c2efe70274e491c7fce441118b9bcf67a06a0f1544a393c65",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__3fba6be67421_015"
+      ],
+      "reason": "WHERE inside legacy variable-length relationship explicitly unsupported."
+    },
+    {
+      "body_sha256": "295e8d07367fe73c8e6e13187aaa46237369ce2ff65770d30549597a67a72cf7",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__48af73560234_007"
+      ],
+      "reason": "Node-valued WHERE predicate explicitly raises expected-Boolean error."
+    },
+    {
+      "body_sha256": "06590fe3ab6cc8208f884e64e6abe0c09c5f4af0dc5b312456796de008ef8b91",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__48af73560234_008"
+      ],
+      "reason": "Error-output code block for invalid Node-valued predicate."
+    },
+    {
+      "body_sha256": "f828700fed8b2a0f1a13add3edafb4f0104022e5c4556f9f08939e0c8f5cb708",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__4d46143be9e7_014"
+      ],
+      "reason": "Valid post-filter query returns narrower result; does not meet intended search semantics but no invalid execution."
+    },
+    {
+      "body_sha256": "942273898d91de1b2d99185a5c1848c75c67be9b7fd79eb82babccc0d7f21114",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_012"
+      ],
+      "reason": "Unhandled division by zero intentionally fails outer transaction."
+    },
+    {
+      "body_sha256": "f1b4711ab40e01acbf618866418a71696e711a076322d16e6467f641b8a8592d",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_013"
+      ],
+      "reason": "Successful read of nodes retained after previous transaction failure."
+    },
+    {
+      "body_sha256": "4a1fec8bcde39714d184578b0c3ba3b25f21e38af12c9b77f9af355770bb9c63",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_014"
+      ],
+      "reason": "Valid transaction error-handling/retry/status example with successful outer query."
+    },
+    {
+      "body_sha256": "eb7b1293d57a94439f6ca5fb22949ba61c352d8b67a8f7651f811d20c9f9928a",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_015"
+      ],
+      "reason": "Valid transaction error-handling/retry/status example with successful outer query."
+    },
+    {
+      "body_sha256": "ae0fa004c97f9cc15f10b8de2baa452e43d107bbe73b7bd437257d32605d2934",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_016"
+      ],
+      "reason": "Valid transaction error-handling/retry/status example with successful outer query."
+    },
+    {
+      "body_sha256": "3f683fd01824df4ed8e643c10215a320d25cdc181e3ed08dd668a6caba0250ad",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_017"
+      ],
+      "reason": "Valid transaction error-handling/retry/status example with successful outer query."
+    },
+    {
+      "body_sha256": "7d70fcf041a8efb32648a0cdb3b5381364545c2b6fda7dfd6e6dcf928a5c1173",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_018"
+      ],
+      "reason": "ON ERROR FAIL query intentionally raises division-by-zero error."
+    },
+    {
+      "body_sha256": "055daf9641247f76bfadac5ac488cf5af611c96d25c3c63c8e1213702df3d7f5",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_019"
+      ],
+      "reason": "Valid transaction error-handling/retry/status example with successful outer query."
+    },
+    {
+      "body_sha256": "9baa8a59ff71f4706d3aee7d3e51e9a7c3bf347e4e8c5d68d06b576c2b209330",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_020"
+      ],
+      "reason": "Valid transaction error-handling/retry/status example with successful outer query."
+    },
+    {
+      "body_sha256": "02df587c7afa19a815409d17c9949161fef9198a345237348ea6ef35930d2d64",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_023"
+      ],
+      "reason": "Valid transaction error-handling/retry/status example with successful outer query."
+    },
+    {
+      "body_sha256": "3906e26bd2d10d66f16ce9df447965115de436d005054abc6001928a60a2337a",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_026"
+      ],
+      "reason": "Valid transaction error-handling/retry/status example with successful outer query."
+    },
+    {
+      "body_sha256": "d643ec9070ef291dea94f655f9b1c87294329d12bb0b0d27a4ec290ecdf6a632",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_027"
+      ],
+      "reason": "Valid transaction error-handling/retry/status example with successful outer query."
+    },
+    {
+      "body_sha256": "7ce1c000c2942ac7018cfd987ce14d2b1ed855339003630acc34e58540d25b27",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_028"
+      ],
+      "reason": "REPORT STATUS with ON ERROR FAIL explicitly disallowed."
+    },
+    {
+      "body_sha256": "54a91cdbc9632739342a7f4c5b35004be4e0c91fa833ea48c2f942a0db63ab28",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_029"
+      ],
+      "reason": "Error-output block for disallowed REPORT STATUS with ON ERROR FAIL."
+    },
+    {
+      "body_sha256": "205ab33f67c479bbe9f868777514e550a8c978db5eb5310f82039f5e0543e52d",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_032"
+      ],
+      "reason": "Valid transaction error-handling/retry/status example with successful outer query."
+    },
+    {
+      "body_sha256": "8a88cee8b871d668cab332bf544d474dd3bb20180fe4cf7aa0f85d1c7b26acb4",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_033"
+      ],
+      "reason": "Valid transaction error-handling/retry/status example with successful outer query."
+    },
+    {
+      "body_sha256": "1cb1fd14f2e05659d6048d91f0d1f7bb31ffffdf9e2c54d08aaeb7d54b86537a",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_034"
+      ],
+      "reason": "Valid transaction error-handling/retry/status example with successful outer query."
+    },
+    {
+      "body_sha256": "4379d444d4d75366000a568944dbe5958f7b6d73eba072c8337723b0828bcd97",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__50a08bc93086_036"
+      ],
+      "reason": "Valid transaction error-handling/retry/status example with successful outer query."
+    },
+    {
+      "body_sha256": "6522f3e110cc82d2a25dcfecb494103db325daba915b8073ed7e98d6a0e74fee",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__591dd9ccf221_005"
+      ],
+      "reason": "COUNT subquery intentionally shadows imported name variable."
+    },
+    {
+      "body_sha256": "01f5fafd924d65c4b7b3a896f51b5db460b1c4987c99865abf2a1a920f25ae91",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__6760f5269df8_002"
+      ],
+      "reason": "toFloat(date) explicitly unsupported and raises invalid entity type."
+    },
+    {
+      "body_sha256": "0b57a5ac396df983703acda6cb0c40f6ec7773a491b6dd4804355f8bd3beeaf4",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__6c861657547c_007"
+      ],
+      "reason": "Successful vector result represented by older-driver placeholder warning; not an invalid query."
+    },
+    {
+      "body_sha256": "97d9b2d24be6a713ae48b9453b570e909ae72ab2bd6f1db25ee3ed48d8795fa6",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__6c861657547c_008"
+      ],
+      "reason": "VECTOR INT8 value 128 intentionally overflows; code contains error output."
+    },
+    {
+      "body_sha256": "d6741d2aa9516c2b1885af19d847de7b0e8e5cd69f9532bd5c457c531da66880",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__8158cdc8590b_017"
+      ],
+      "reason": "SEARCH query explicitly rejected: wrong binding/property/dimension/reference, with attached error output."
+    },
+    {
+      "body_sha256": "1883256da14087def80b5e0ee7513d44f938727274b1b0aa6fa6f883881cf97a",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__8158cdc8590b_018"
+      ],
+      "reason": "SEARCH query explicitly rejected: wrong binding/property/dimension/reference, with attached error output."
+    },
+    {
+      "body_sha256": "8a014ecdb2f4f151d4d9eab370933e838b4b56603b999f1b38c0f0467e9d6d46",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__8158cdc8590b_019"
+      ],
+      "reason": "SEARCH query explicitly rejected: wrong binding/property/dimension/reference, with attached error output."
+    },
+    {
+      "body_sha256": "25182b66acd1ccc9d395ba6babd0d620a4eb904df79b32a3e0024889599f0369",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__8158cdc8590b_022"
+      ],
+      "reason": "SEARCH query explicitly rejected: wrong binding/property/dimension/reference, with attached error output."
+    },
+    {
+      "body_sha256": "09b3fd780d186626d15d73c48e7ab3e47aca0ac7e285dbe155c9e7c2cd70af84",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__8158cdc8590b_023"
+      ],
+      "reason": "SEARCH query explicitly rejected: wrong binding/property/dimension/reference, with attached error output."
+    },
+    {
+      "body_sha256": "af6320d1e2b2f68af47947f3fd020f0567422129e52e81ae98c1b75b419c6379",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__8158cdc8590b_024"
+      ],
+      "reason": "SEARCH query explicitly rejected: wrong binding/property/dimension/reference, with attached error output."
+    },
+    {
+      "body_sha256": "fa564bc2dbaaee66d9294bcf94cb4a2b7bf4107b6e6200dd21a185e8a90e8657",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__8837f91a0cdf_005"
+      ],
+      "reason": "CREATE redeclares bound charlie with new label; documented failure."
+    },
+    {
+      "body_sha256": "4daa2ffc94817c295850371aff0a27ccf9e5ab5829b339b86756e547842030f0",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__8837f91a0cdf_007"
+      ],
+      "reason": "CREATE properties reference variables defined in same statement; documented failure."
+    },
+    {
+      "body_sha256": "347331aec499c8cd38fba53c3b8950da937ac4eb82eea7b60e960144dc1e025b",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__91af7abf0d15_008"
+      ],
+      "reason": "Explicit invalid YIELD * in non-standalone procedure call."
+    },
+    {
+      "body_sha256": "e21945c174a44596ca74e573b0a7a3ae8f4644c5381fb2f02347ded1d3448506",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__9cd48e3a7aca_011"
+      ],
+      "reason": "FILTER illegally placed inside node patterns."
+    },
+    {
+      "body_sha256": "190d98365d50d43fba28f264f254a9aceb087296f797a56f7a7077fe947b617e",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__9dfe3c9937fe_010"
+      ],
+      "reason": "CASE contains statically invalid property access on STRING date and raises type error."
+    },
+    {
+      "body_sha256": "a69ea76a02e6e7fd47714a298e8d06d93eb306200000f73cc1611f45be6bfa3c",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__a104b9c79faa_008"
+      ],
+      "reason": "CALL subquery intentionally violates scope/import rules."
+    },
+    {
+      "body_sha256": "4bab868d841b7f1ee8180be566615e4e6eb6e66f7c6478d11f1f577be5d54917",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__a104b9c79faa_009"
+      ],
+      "reason": "CALL subquery intentionally violates scope/import rules."
+    },
+    {
+      "body_sha256": "12516c8606df98c79529686ab8718f528622761124269e06a28f90d457166b35",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__a104b9c79faa_010"
+      ],
+      "reason": "CALL subquery intentionally violates scope/import rules."
+    },
+    {
+      "body_sha256": "c311c660623002e4cf94c145612301ef6674a8c51f7ce7675496e34307120beb",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__a104b9c79faa_012"
+      ],
+      "reason": "CALL subquery intentionally violates scope/import rules."
+    },
+    {
+      "body_sha256": "6e1a3ab363385e96c2122ae20fb187fd188981b57128f77ebe6c782688c23352",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__a104b9c79faa_013"
+      ],
+      "reason": "Valid workaround using second WITH; explicitly does not throw."
+    },
+    {
+      "body_sha256": "2607fc259ac4811a22da44a05b761d7f116e7a606c994f8d56d4333f58e68862",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__accde66cfc42_026"
+      ],
+      "reason": "Successful temporal alias parses valid string; surrounding exception rule is general."
+    },
+    {
+      "body_sha256": "6a795859d7eb3046a48153175f99ec898aca4564fb503e2d537417e0f1a45705",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__accde66cfc42_045"
+      ],
+      "reason": "Successful temporal alias parses valid string; surrounding exception rule is general."
+    },
+    {
+      "body_sha256": "f2612569b1deccc3b12cdaa5b4236889e3e34596744ab363d76ee82714f128b4",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__accde66cfc42_056"
+      ],
+      "reason": "Successful temporal alias parses valid string; surrounding exception rule is general."
+    },
+    {
+      "body_sha256": "b6a228ed9a9135246091db7522b34d4f2dcc41f808cf3e9a98dfdbe04d6467eb",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__accde66cfc42_067"
+      ],
+      "reason": "Successful temporal alias parses valid string; surrounding exception rule is general."
+    },
+    {
+      "body_sha256": "1658176f76cc1edea3f7301e3b0b6f9ec3dcfdf5960142c6ff2817c3ad48b05d",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__af992a556313_004"
+      ],
+      "reason": "Valid Cypher 25 query; mention of Cypher 5 restriction is version context."
+    },
+    {
+      "body_sha256": "615d77931286664b4c8c9e3fb4f5caee9373e1b45adb1a09cbb402e6c0665c7f",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__bd4a0135d222_003"
+      ],
+      "reason": "RETURN p references variable de-scoped by WITH."
+    },
+    {
+      "body_sha256": "a73e5df6e195f7373ddb6f168b5316ecf96d6298c96fb8f7e3f44361f44a61aa",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__bd4a0135d222_004"
+      ],
+      "reason": "Valid WITH * example; preceding syntax error text belongs to previous bad query."
+    },
+    {
+      "body_sha256": "9becb1802050bd144a332f1440101b2503e48ca5d9b8a59c5d88b36cb47bc9eb",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__d325f19a9dba_014"
+      ],
+      "reason": "ORDER BY references inaccessible pre-aggregation variable o."
+    },
+    {
+      "body_sha256": "a045df7762792e724619824e7af6d0168989c2cb6c4a5a63813e85d15581fa06",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__d67dad2b0b7d_001"
+      ],
+      "reason": "Spatial dimension mismatch returns null with successful projection; not query failure."
+    },
+    {
+      "body_sha256": "ad38904787a09fa2be195d6d30b185bcde2023432e8e1bf8f5b31636530a1c13",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__d8fa4e5be6ad_004"
+      ],
+      "reason": "Valid UNWIND empty/null semantics or workaround."
+    },
+    {
+      "body_sha256": "0e2d6b9986d9e54775ae3c51d32fa056f4637279f688186d975c2a3eac3f64b7",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__d8fa4e5be6ad_005"
+      ],
+      "reason": "Valid UNWIND empty/null semantics or workaround."
+    },
+    {
+      "body_sha256": "89d2cb62283e2f8736d567cac264a9ea3a10a201a4f72ad636a881de9189c2ea",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__d8fa4e5be6ad_006"
+      ],
+      "reason": "Valid UNWIND empty/null semantics or workaround."
+    },
+    {
+      "body_sha256": "ed48ddfd54bb80cbba007367331dc6b53e51459c234349490a224190e8bae595",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__d9c4a70ca6c4_013"
+      ],
+      "reason": "Valid node-only path; trailing invalid-path heading refers to next examples."
+    },
+    {
+      "body_sha256": "d798bfd34bf75011504c510aefdb4d92845d3064c432820e1502a1cbc218056c",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__d9c4a70ca6c4_015"
+      ],
+      "reason": "Valid path; trailing invalid-path heading refers to next examples."
+    },
+    {
+      "body_sha256": "d4fb66218c248c6835e2f04cfec472f5f137dcac1bb17aa964ef3ea4d763cfea",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__d9c4a70ca6c4_016"
+      ],
+      "reason": "Relationship-only arrow explicitly listed as invalid path pattern."
+    },
+    {
+      "body_sha256": "31e89cfccd921f18032ea1cda607aa73e415a2183c9b2b6c9d4de2a4441835c9",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__dbf76aec968e_007"
+      ],
+      "reason": "EXISTS subquery intentionally shadows imported name variable."
+    },
+    {
+      "body_sha256": "bfc79b2802948277dad34ec7c364c29ac9f465de408ed25500a860c577904a26",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__e7efcf4757b4_008"
+      ],
+      "reason": "TERMINATE TRANSACTIONS with WHERE but no YIELD explicitly invalid."
+    },
+    {
+      "body_sha256": "db16c107dd5401611b8a2890529a6680cbd5c6e7f2e46332b5946b3804e0c6d8",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__ed59dce6e0e7_004"
+      ],
+      "reason": "WHEN branches return unaliased different columns; explicitly violates equal-column rule."
+    },
+    {
+      "body_sha256": "03d38139bbc94fc707459acdd8ee5490b9a76d43362cbbab3fedde4389ee28e4",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__ed59dce6e0e7_007"
+      ],
+      "reason": "WHEN illegally placed as regular clause immediately after MATCH."
+    },
+    {
+      "body_sha256": "a0475c632e6a502c58d0d3d1134bb70eddb0eadd5a81428e3ae64aea1ac29872",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__f7dbf4281d33_007"
+      ],
+      "reason": "Unbounded REPEATABLE ELEMENTS query explicitly raises unsafe usage error."
+    },
+    {
+      "body_sha256": "a3be9a5e97923d14105230dcc4b59e3fec589f48f1cbec352c54a07e7af5e250",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__fa448871e3be_005"
+      ],
+      "reason": "MERGE intentionally contains invalid null property or same-clause entity reference."
+    },
+    {
+      "body_sha256": "3f2571c8f17f051a99c8ce5d77899c1462d7682b60f9aca74dbfbbf70ecdb309",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__fa448871e3be_013"
+      ],
+      "reason": "MERGE intentionally contains invalid null property or same-clause entity reference."
+    },
+    {
+      "body_sha256": "ed63c2bf3e6565ec4e0f4ca17eb3707b9bd927a9bdc9a1133f6543cf513cbbdc",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__fa448871e3be_014"
+      ],
+      "reason": "MERGE intentionally contains invalid null property or same-clause entity reference."
+    },
+    {
+      "body_sha256": "c007e713566ae6f985e36f12e9a6b52d4d7039e966a65f95e2943afefd2a1950",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__fa448871e3be_015"
+      ],
+      "reason": "Valid MERGE creates missing Movie; preceding syntax error belongs to previous query."
+    },
+    {
+      "body_sha256": "52e5f39244dfd39de0b9985e9a5d9a4e7d597915f48b66a9e0fcc72e1520054d",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__fa448871e3be_022"
+      ],
+      "reason": "MERGE intentionally fails documented uniqueness constraint due to partial/conflicting/unbound match."
+    },
+    {
+      "body_sha256": "0b210ff137e1f945eba65914419321173e267ec8372d52f63725f671fb106433",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__fa448871e3be_023"
+      ],
+      "reason": "Successful MERGE+SET fix; trailing failure heading introduces next example."
+    },
+    {
+      "body_sha256": "febcfd4138d2026bb4644317b881e046c4149fe11ce2ac3e37ea34266dffe905",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__fa448871e3be_024"
+      ],
+      "reason": "Successful MERGE+SET fix; trailing failure heading introduces next example."
+    },
+    {
+      "body_sha256": "34f91250dd4b92ae69ca42618e9ac029eb366fe8725e2ab1a494a7c012722c50",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__fa448871e3be_025"
+      ],
+      "reason": "MERGE intentionally fails documented uniqueness constraint due to partial/conflicting/unbound match."
+    },
+    {
+      "body_sha256": "18ec2e672e825a92827981bcd0c3ec52036825eed545d5bd305780c6531cbbbc",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__fa448871e3be_026"
+      ],
+      "reason": "MERGE intentionally fails documented uniqueness constraint due to partial/conflicting/unbound match."
+    },
+    {
+      "body_sha256": "21bf9440d5797f24cc817489f6ca5baf5c85342ec97e23f2a73036b2c3312089",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__fa8519a11480_012"
+      ],
+      "reason": "Mixed nullability closed union intentionally raises syntax error."
+    },
+    {
+      "body_sha256": "eaea88cbfa2a9ae212941cfccc44724c6ba9783111ef82870c3f50915296daee",
+      "keep": false,
+      "chunk_ids": [
+        "ex_cypher_manual__fd6667f4cd10_004"
+      ],
+      "reason": "RETURN p references variable de-scoped by WITH."
+    },
+    {
+      "body_sha256": "baafd2a7e95f4090f540e6f37862415ff317d2435663eb90eb983b8e84076fe4",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__fd6667f4cd10_005"
+      ],
+      "reason": "LET preserves p and validly returns results."
+    },
+    {
+      "body_sha256": "5ccdca144b956ba104747454053f585a5bf3c0fc6e96d92b8deb18db0c6a6805",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__fd6667f4cd10_007"
+      ],
+      "reason": "Valid WITH/LET composition; prose describes restrictions on hypothetical replacement."
+    },
+    {
+      "body_sha256": "8b4c6ee2f6f101d185dc7d0a078b4020cf4adcbcff7567abe28af44bc1a37056",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__fd6667f4cd10_008"
+      ],
+      "reason": "Valid WITH/LET composition; prose describes restrictions on hypothetical replacement."
+    },
+    {
+      "body_sha256": "db33f50ffec947eefd3ecc6f843ba87cf297db74bfabd6fecbf96c44752b3653",
+      "keep": true,
+      "chunk_ids": [
+        "ex_cypher_manual__fd6667f4cd10_011"
+      ],
+      "reason": "Valid WITH/LET composition; prose describes restrictions on hypothetical replacement."
+    },
+    {
+      "body_sha256": "3cab020356033568162dfe09bb88df34a059174dfc96a64cfe908df7b45d1945",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__030d9c3af88c_023"
+      ],
+      "reason": "Successful result age=21 belongs to the preceding valid nested-property read. Following context introduces the next failing string-parent assignment. Sole false positive among six current generic-policy hits."
+    },
+    {
+      "body_sha256": "574ee07ce392bab20f5b3ce7de8bf9224c7f4260cbbbb0093e7b264f651413fc",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__030d9c3af88c_024"
+      ],
+      "reason": "Explicit exception counterexample: string parent cannot accept a nested property."
+    },
+    {
+      "body_sha256": "e7dc1f97ca3acba218ffed828e44acdc0702b2c49070e5655a6c33b39313098a",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__17a1a6e015dc_019",
+        "ex_memgraph_querying__c0c72c7df699_026"
+      ],
+      "reason": "Valid ORDER BY n.name DESC, n.lastName; following narrative introduces the next alias scope error."
+    },
+    {
+      "body_sha256": "e04f9028f0948feb2e5202cbe9535f91ed6b10379b4a75097040731cb2356c70",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__17a1a6e015dc_020",
+        "ex_memgraph_querying__c0c72c7df699_027"
+      ],
+      "reason": "Explicit alias scope error counterexample."
+    },
+    {
+      "body_sha256": "42a175b71a7b8e3ca545cc675b81c07e5188b5a57e36cbfc8815d3cc7f684009",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__17a1a6e015dc_039"
+      ],
+      "reason": "Valid nested-property SET creates the parent map; warning only describes other parent types."
+    },
+    {
+      "body_sha256": "f04dd0d7d2755653197482b98d49bad361f759323e6c597ed4dd1a6d66fcf921",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__17a1a6e015dc_040"
+      ],
+      "reason": "Valid nested-property REMOVE in the established dataset; warning describes absent parent maps, not this example's result."
+    },
+    {
+      "body_sha256": "9d7f81fbb3aa82fefcda93f6479fd67d399d3acd79226221014e49f72e059c39",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__17a1a6e015dc_043"
+      ],
+      "reason": "Explicit failing connected-node DELETE; following DETACH example is the correction."
+    },
+    {
+      "body_sha256": "9bf8dc0b5ab02c1c9b8b54d55507118da2086d9be919f90c259eb50c8546b002",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__17a1a6e015dc_044"
+      ],
+      "reason": "Corrected DETACH DELETE succeeds; preceding error narrative refers to the previous plain DELETE."
+    },
+    {
+      "body_sha256": "7a9c4c9991e9bd14a486b208f7a3ae0986d0ddaf119dea8fc657ca63803a5796",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__17a1a6e015dc_047"
+      ],
+      "reason": "Valid REMOVE example. Following discussion of transaction rollback does not mark the example invalid."
+    },
+    {
+      "body_sha256": "576ed0ca60e82d204024cdfd36cbdcb59c32e590762df87cc1685652b8bf8a49",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__1bc0faa053ea_000"
+      ],
+      "reason": "FOREACH syntax with valid null behavior: skips updates and does not fail."
+    },
+    {
+      "body_sha256": "4d76bd2e76db3d364b9a7cc2dae92deacb9d98de4ab238b9df69b831d71f8619",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__22d195d6a29c_006"
+      ],
+      "reason": "Positive edge text-index syntax. Duplicate-name failure is conditional and is not the illustrated invocation."
+    },
+    {
+      "body_sha256": "2e48317d41f39fbb2fa0843d191b1689ee764e888bf875eb9401b210c89c9d33",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__33472c7f0c3a_009"
+      ],
+      "reason": "Successful previous CREATE result table with next-section unsupported-MATCH/MERGE warning."
+    },
+    {
+      "body_sha256": "31a07b6544763e2e7b01693abd0d85e79770799cccdd91009f62b487810cf596",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__33472c7f0c3a_010"
+      ],
+      "reason": "Supported dynamic label CREATE, not the unsupported dynamic MATCH/MERGE mentioned in context."
+    },
+    {
+      "body_sha256": "5149873739e7f8f4623b732935abb15b70523400c47d2e4b7105bcba35f5b1c1",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__33472c7f0c3a_017"
+      ],
+      "reason": "Successful previous CREATE relationship result table; warning introduces the following dynamic CREATE section."
+    },
+    {
+      "body_sha256": "e2860b32fb730471dca5d9c05f773bd30903722b88e034a682c32998d77717f9",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__33472c7f0c3a_018"
+      ],
+      "reason": "Supported dynamic relationship type CREATE; restriction is about MATCH/MERGE."
+    },
+    {
+      "body_sha256": "4fe14d30aa4a1180a23b173ad0054facff790c1a368c3c7e5b1834de0ba7679e",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__34e7dc2c27b7_008"
+      ],
+      "reason": "Supported CREATE property map parameter. The not-supported marker introduces the next MATCH example."
+    },
+    {
+      "body_sha256": "07563922370f954abc2937e4770ef4e20845fb8e8bf0b8059b69583cb6390749",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__34e7dc2c27b7_009"
+      ],
+      "reason": "MATCH property map parameter is explicitly marked not supported."
+    },
+    {
+      "body_sha256": "47eb73ffdbbcf0de8c6c8a119b8b10b8e3c96edbd2bd24bf85a9f1f6454bc0d7",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__34e7dc2c27b7_019"
+      ],
+      "reason": "Supported homogeneous movie title list. Following narrative introduces the next heterogeneous-list failure."
+    },
+    {
+      "body_sha256": "72ac925a54b30a5b6e72ecfcf1f9c1d12469e5944491444ff06d1565ab12de3d",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__34e7dc2c27b7_020"
+      ],
+      "reason": "Explicit failure example storing a heterogeneous list as the resume property."
+    },
+    {
+      "body_sha256": "566c051661d7adde5120403686ca6969804c5291e5f78ebc16a3851b66f67e15",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__4269c14e6f2c_003"
+      ],
+      "reason": "Valid naming snippets; following relationship naming restriction does not invalidate them."
+    },
+    {
+      "body_sha256": "452f5210bc8b9ad97390ba3374a3dddbeeba73cb879a66623dc2dae770298765",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__4269c14e6f2c_004"
+      ],
+      "reason": "Valid relationship naming snippets; no illustrated hyphenated type."
+    },
+    {
+      "body_sha256": "3bd6b84ba666572f546fc7e8fbdff70b791643b7b97e49d934a91a6d49f3088a",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__4269c14e6f2c_006"
+      ],
+      "reason": "Positive MERGE formatting example; exception means a style-rule exception."
+    },
+    {
+      "body_sha256": "6fddd56bab16161067812feaa0c809ccbdcf5c53c5c2f9022a72af01ded09017",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__4269c14e6f2c_007"
+      ],
+      "reason": "Bad syntax means unnecessary escaped quoting in a style comparison, not a documented query error."
+    },
+    {
+      "body_sha256": "a075d5af02e6842ee686c7fe2d246d3ecc7961df8c7d803bc3425e2564b8cbc6",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__4aff3c28733a_023"
+      ],
+      "reason": "Successful NOT EXISTS result table; following general pattern-expression limitations introduce another positive example."
+    },
+    {
+      "body_sha256": "7d1cb60048ba5c1149a2e5cdc5568edc71308b869adb3914b0b31b658992625a",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__4aff3c28733a_031"
+      ],
+      "reason": "Successful previous EXISTS/UNION result table (Anna, Harry); following narrative introduces the next shadowing failure."
+    },
+    {
+      "body_sha256": "6fc71a77b2334a644eb516990f5aeff2e24d3e7595ecc0063f42cb306f28f004",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__4aff3c28733a_032"
+      ],
+      "reason": "Explicitly failing EXISTS subquery shadows countryName from the outer scope."
+    },
+    {
+      "body_sha256": "c6d96190a57c65cf66b67af9a0b24b12ff001b45e2d9310c999c9e02e11f08cd",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__4aff3c28733a_033"
+      ],
+      "reason": "Attached result block belongs to the explicitly invalid shadowing example, despite the scraped page displaying result rows."
+    },
+    {
+      "body_sha256": "2bdaa82b3a3cbbbf5d3caa68fe013571d7fd0e83643e9935e9d7481fdf5fce33",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__521f3b92642b_001"
+      ],
+      "reason": "Intentional lexical failure example misspells MATCH."
+    },
+    {
+      "body_sha256": "d09abd7d5b853413aa3ab31a688d516db98e9fec7f8252381a793390b68fe5e6",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__521f3b92642b_002"
+      ],
+      "reason": "Parser error output of the intentional MATC typo."
+    },
+    {
+      "body_sha256": "822684892f180de8d6c07c74e92fc7b46b1364c3f10b73514f2fb7c3398da8ea",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__7ee70b69af66_010"
+      ],
+      "reason": "Explicit invalid CALL use returns the variable n already present in the outer scope."
+    },
+    {
+      "body_sha256": "8d2342ea7b20c1430892d7e49ecfc137f6ecc0a54509f54f1ab9c154ddac5e39",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__7ee70b69af66_011"
+      ],
+      "reason": "Valid CALL correction uses separate p variable. Invalid use in trailing context introduces next example."
+    },
+    {
+      "body_sha256": "64e0c5222c400685715218cb6c82f05f0014c76c6b13aa74097c5fd88a0ed8ce",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__7ee70b69af66_012"
+      ],
+      "reason": "Explicit invalid CALL use returns parent.age without an alias then refers to parent outside the subquery."
+    },
+    {
+      "body_sha256": "f2305b00234534e3fc03191bdb8897b61581e5a401c79c69d312817e0d8ee2e1",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__7ee70b69af66_013"
+      ],
+      "reason": "Valid CALL correction aliases parent.age AS parent_age. Trailing Invalid use belongs to next example."
+    },
+    {
+      "body_sha256": "347b72cac4864c50b23816f0d7149b6c640faf59e9ad391967f5414d1062d967",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__7ee70b69af66_014"
+      ],
+      "reason": "Explicit invalid CALL use imports unbound variable o."
+    },
+    {
+      "body_sha256": "7ca38fe07370fbafd83f4e67f91413504a4515bc6619f31bab0a58acb895cd4f",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__82d45e545edf_000"
+      ],
+      "reason": "Illustrative named range-index query explicitly identified as unsupported in Memgraph."
+    },
+    {
+      "body_sha256": "0c2ff6860036d9afb82605de294b47cc1b567fec131b13f73eb3e4cc232aec1a",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__82d45e545edf_001"
+      ],
+      "reason": "Supported Memgraph CREATE INDEX ON correction; preceding unsupported named-index warning is about the previous query."
+    },
+    {
+      "body_sha256": "87527184ffacf1961ae6e577e8e9db684d8ea5ad5265c55772b5d67e706fec6b",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__82d45e545edf_016"
+      ],
+      "reason": "Illustrative NOT relationship type expression explicitly identified as unsupported in Memgraph."
+    },
+    {
+      "body_sha256": "9978b8180948a7a556906fe1b1781b5b3619e8773aea1920a68b171194fba9da",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__82d45e545edf_017"
+      ],
+      "reason": "Valid Memgraph type(r) != ACTED_IN workaround; preceding not-supported statement concerns the previous !ACTED_IN query."
+    },
+    {
+      "body_sha256": "035be5c38f76e5784d693effb02166a67ee4ebfc600a66dc88a5dd1050fb4776",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__82d45e545edf_018"
+      ],
+      "reason": "Illustrative fixed quantified path explicitly identified as unsupported in Memgraph."
+    },
+    {
+      "body_sha256": "70a1c50afc7b5de1d307b649f42e7c344e9311823b9bc2ffcb09f46db7c22cd2",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__82d45e545edf_019"
+      ],
+      "reason": "Valid Memgraph *2 traversal correction; preceding unsupported marker concerns --{2}."
+    },
+    {
+      "body_sha256": "1b253723269dde089441b5e1ba197f6cb181d766dee2eab25e8da561ae6386f4",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__82d45e545edf_020"
+      ],
+      "reason": "Illustrative ranged quantified path is the same unsupported construct as the preceding fixed-length example; the following DFS example is the Memgraph rewrite."
+    },
+    {
+      "body_sha256": "32e6c27ead7ce2159a73c1ebe8060c65a40b29d990e173d751d0e22147108cc1",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__82d45e545edf_021"
+      ],
+      "reason": "Valid Memgraph *1..4 traversal; following unsupported COUNT-subquery description introduces a later section."
+    },
+    {
+      "body_sha256": "ff413c24e8327b5543c6d4ce88867f2d91c212ae4d43c7070dca9ecd6443a1e6",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__82d45e545edf_022"
+      ],
+      "reason": "Unsupported multi-value WHEN counterexample."
+    },
+    {
+      "body_sha256": "1fedb8a5fcc0d8a7e9ab3af745eb0f24aea9f620a7c940a93af6eddce5494c42",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__82d45e545edf_023"
+      ],
+      "reason": "Attached code is the valid CASE correction, but the same chunk's narrative literally contains the full unsupported multi-value WHEN query. Conservatively omit the mixed chunk."
+    },
+    {
+      "body_sha256": "05296d21bd07122d44cba2a3b5d60e4f005efd5c940f1d23010c3fbedf810305",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__82d45e545edf_024"
+      ],
+      "reason": "Explicit unsupported type-predicate example."
+    },
+    {
+      "body_sha256": "70cbfdc53a3b9485eb23adf3fdd4a43897b9ae8960f15c4bdddc687ed0996133",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__c09f54ad2632_000"
+      ],
+      "reason": "Failing DELETE query on the documented dataset. Its own local narrative has no negative marker, but the next output and mixed definition establish that this exact query errors."
+    },
+    {
+      "body_sha256": "4c606fd69c3809e48ab190fdaab5fc008d4dbb613d2abb8579e4cf2d65e41990",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__c09f54ad2632_001"
+      ],
+      "reason": "Error output from the connected Country node DELETE counterexample."
+    },
+    {
+      "body_sha256": "c10bb322cac71758c4f344b36de081cef50a6c76abced9a47152ebf74e50ff9a",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__c603784f5ecb_024"
+      ],
+      "reason": "Explicit invalid MERGE null literal property example."
+    },
+    {
+      "body_sha256": "329a1ac1634a3a7a29b45d07df5c085b25a5635ec4025a6b8139614b2f9296b2",
+      "keep": false,
+      "chunk_ids": [
+        "ex_memgraph_querying__c603784f5ecb_025"
+      ],
+      "reason": "Error output from the invalid MERGE null property example."
+    },
+    {
+      "body_sha256": "8532f332c3b6c7d3bd46d021786d2f380a378b1afb1107b07bbc0c7cd7497800",
+      "keep": true,
+      "chunk_ids": [
+        "ex_memgraph_querying__f57610263ec3_000"
+      ],
+      "reason": "Valid TTL maintenance queries; batching mitigates possible concurrent serialization errors."
+    },
+    {
+      "body_sha256": "2bcd1fd5a8e18047d6a95ca932cf007560025fb1c8fd815fecee2c5410a24bad",
+      "keep": true,
+      "chunk_ids": [
+        "syn_cypher_manual__23707fa76ebe_017"
+      ],
+      "reason": "Valid grammar/pattern/no-results example with general rule or adjacent negative context."
+    },
+    {
+      "body_sha256": "02f730b26fd4342217cf55fa92eeb1e9abef87f68c0b961a5e5386cc00400278",
+      "keep": true,
+      "chunk_ids": [
+        "syn_cypher_manual__23707fa76ebe_026",
+        "ex_cypher_manual__23707fa76ebe_026"
+      ],
+      "reason": "Valid shortest-path subpath or rewritten single-pattern/single-relationship example adjacent to rejected patterns."
+    },
+    {
+      "body_sha256": "fa3ac046efa8dd964c2274aa478264f0031262b8067cca667910d684cc91008e",
+      "keep": false,
+      "chunk_ids": [
+        "syn_cypher_manual__23707fa76ebe_027",
+        "ex_cypher_manual__23707fa76ebe_027"
+      ],
+      "reason": "Concrete path counterexample violates documented subpath selector, single selective path, or shortestPath argument restrictions."
+    },
+    {
+      "body_sha256": "5ffc8c66b860e45bdd3a415e6c70b537578638b5084d596b9b15f9a4d0b9836c",
+      "keep": true,
+      "chunk_ids": [
+        "syn_cypher_manual__23707fa76ebe_037"
+      ],
+      "reason": "Valid grammar/pattern/no-results example with general rule or adjacent negative context."
+    },
+    {
+      "body_sha256": "41e7f72385d2f169b13064f675ac56ca4bce9dc355d246ba3e25a2b53a7f64fd",
+      "keep": true,
+      "chunk_ids": [
+        "syn_cypher_manual__23707fa76ebe_059"
+      ],
+      "reason": "Valid grammar/pattern/no-results example with general rule or adjacent negative context."
+    },
+    {
+      "body_sha256": "06ee990affecd45db89c42c2c88d81eb9ad8e6f2603584137cb66778736bc052",
+      "keep": false,
+      "chunk_ids": [
+        "syn_cypher_manual__23707fa76ebe_075",
+        "ex_cypher_manual__23707fa76ebe_075"
+      ],
+      "reason": "Concrete path counterexample violates documented subpath selector, single selective path, or shortestPath argument restrictions."
+    },
+    {
+      "body_sha256": "9b61adca2feea83ffab5d8961364a29a75f738a598ec4665cefa2d4627dbf66a",
+      "keep": true,
+      "chunk_ids": [
+        "syn_cypher_manual__23707fa76ebe_076",
+        "ex_cypher_manual__23707fa76ebe_076"
+      ],
+      "reason": "Valid shortest-path subpath or rewritten single-pattern/single-relationship example adjacent to rejected patterns."
+    },
+    {
+      "body_sha256": "994ce9a765a89b75350186bf8a929a68161b1002282398ef59399225bdefa685",
+      "keep": false,
+      "chunk_ids": [
+        "syn_cypher_manual__23707fa76ebe_085",
+        "ex_cypher_manual__23707fa76ebe_085"
+      ],
+      "reason": "Concrete path counterexample violates documented subpath selector, single selective path, or shortestPath argument restrictions."
+    },
+    {
+      "body_sha256": "26a48ff8398c9952a9a47bea87422fdc9f3b10cd8d39b88225eb1de4c017fa45",
+      "keep": true,
+      "chunk_ids": [
+        "syn_cypher_manual__23707fa76ebe_086",
+        "ex_cypher_manual__23707fa76ebe_086"
+      ],
+      "reason": "Valid shortest-path subpath or rewritten single-pattern/single-relationship example adjacent to rejected patterns."
+    },
+    {
+      "body_sha256": "05bfbf473267eee905b289defd41c955b4e0e542d090df2d83ff296b016679b9",
+      "keep": false,
+      "chunk_ids": [
+        "syn_cypher_manual__23707fa76ebe_087",
+        "ex_cypher_manual__23707fa76ebe_087"
+      ],
+      "reason": "Concrete path counterexample violates documented subpath selector, single selective path, or shortestPath argument restrictions."
+    },
+    {
+      "body_sha256": "972f7e6c447f9a8cc5fa34ef4abfa2a719ccadcd290987a0dd313cf69e90c0bb",
+      "keep": true,
+      "chunk_ids": [
+        "syn_cypher_manual__23707fa76ebe_123",
+        "ex_cypher_manual__23707fa76ebe_123"
+      ],
+      "reason": "Internal quantified pattern expansion notation; not a submitted negative query."
+    }
+  ]
+}

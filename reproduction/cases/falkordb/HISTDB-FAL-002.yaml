@@ -1,0 +1,54 @@
+schema_version: 1
+family_id: HISTDB-FAL-002
+title: DELETE subquery reports zero for the second shared-target row
+paper_set: fixed-version-50
+dbms: falkordb
+symptom: the second existing relationship is deleted but count(r) reports zero
+issue:
+  url: https://github.com/FalkorDB/FalkorDB/issues/1845
+  status: confirmed
+  report_path: reproduction/report_snapshots/falkordb/1845.md
+targets:
+  buggy:
+    id: falkordb-4.16.8
+  fixed: []
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - |-
+      CREATE (a:Person {name:'Alice'})-[:WORKS_FOR]->(b:Person {name:'Bob'}),
+             (c:Person {name:'Charlie'})-[:WORKS_FOR]->(b)
+  query: |-
+    MATCH (employee:Person)-[:WORKS_FOR]->(p)
+    WITH employee, p
+    CALL {
+      WITH employee, p
+      MATCH (employee)-[r:WORKS_FOR]->(p)
+      DELETE r
+      RETURN count(r) AS deleted
+    }
+    RETURN employee.name AS employee_name, p.name AS manager_name, deleted
+    ORDER BY employee_name
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: true
+  expected_buggy:
+    - {employee_name: Alice, manager_name: Bob, deleted: 1}
+    - {employee_name: Charlie, manager_name: Bob, deleted: 0}
+  expected_correct:
+    - {employee_name: Alice, manager_name: Bob, deleted: 1}
+    - {employee_name: Charlie, manager_name: Bob, deleted: 1}
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: FalkorDB__FalkorDB__299__q001
+  case_id: case_aba990a0c57f
+  source_artifacts:
+    - reproduction/report_snapshots/falkordb/1845.md
+    - data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json
+  skeleton_ids: []
+  feature_ids: []
+

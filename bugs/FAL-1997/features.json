@@ -1,0 +1,88 @@
+[
+  {
+    "feature_id": "ft_d364a7631614",
+    "machine_name": "node_label_and_property_filter_in_match",
+    "description": "Matches nodes with specific label and property value in single MATCH clause",
+    "tags": [
+      "match",
+      "label_filter",
+      "property_filter"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_357d4bbc6bef",
+    "machine_name": "create_single_node_with_properties",
+    "description": "Create a single node with multiple properties using the CREATE clause.",
+    "tags": [
+      "create",
+      "node",
+      "properties",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_4c0a3ffc67d3",
+    "machine_name": "or_predicate_with_parameters",
+    "description": "Use OR operator in WHERE clause with two parameterized equality checks.",
+    "tags": [
+      "predicate",
+      "or_operator",
+      "equality",
+      "parameter"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_393501b88ba3",
+    "machine_name": "with_alias_and_order",
+    "description": "Use WITH to alias a variable and apply ORDER BY before returning",
+    "tags": [
+      "alias",
+      "ordering",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_b13a29792463",
+    "machine_name": "redundant_where_true",
+    "description": "WHERE true clause used as a placeholder or for structural consistency",
+    "tags": [
+      "predicate",
+      "placeholder",
+      "syntax"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_658d91b289c5",
+    "machine_name": "mixed_read_write_in_single_query",
+    "description": "Combination of OPTIONAL MATCH (read) and MERGE (write) in one query, testing read-write interaction.",
+    "tags": [
+      "read_write",
+      "clause_combination",
+      "transaction"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

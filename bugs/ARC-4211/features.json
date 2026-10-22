@@ -1,0 +1,88 @@
+[
+  {
+    "feature_id": "ft_857db4aa5a6d",
+    "machine_name": "return_node_variable",
+    "description": "Return a node variable directly",
+    "tags": [
+      "return",
+      "node_variable",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_725221318cc5",
+    "machine_name": "parameterized_property_filter",
+    "description": "Filter nodes by property equality using a parameterized value, testing parameter binding and property access.",
+    "tags": [
+      "parameter",
+      "property_filter",
+      "equality"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_50cb602cf1c2",
+    "machine_name": "return_property_alias",
+    "description": "RETURN clause with property access and explicit alias, testing projection and column naming behavior.",
+    "tags": [
+      "return",
+      "property_access",
+      "alias",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_29fce4b19ed2",
+    "machine_name": "redundant_inequality_conditions",
+    "description": "WHERE clause contains redundant inequality checks (e.g., p1 <> p2 appears twice, p2 <> p2 is always false)",
+    "tags": [
+      "redundancy",
+      "semantic_error",
+      "testing_artifact"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_4b4f73cc6766",
+    "machine_name": "multiple_label_node_matching",
+    "description": "Matching nodes with multiple labels in a single pattern, testing label intersection semantics.",
+    "tags": [
+      "node",
+      "label",
+      "intersection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3e130a4f1371",
+    "machine_name": "last_function_on_path_relationships",
+    "description": "Using last() function to extract the final relationship from a path for later use",
+    "tags": [
+      "aggregation",
+      "path_function",
+      "aliasing",
+      "WITH"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

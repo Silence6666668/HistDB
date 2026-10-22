@@ -1,0 +1,56 @@
+schema_version: 1
+family_id: HISTDB-NEO-002
+title: NEXT and a filtered UNION branch trigger an internal planner error
+paper_set: fixed-version-50
+dbms: neo4j
+symptom: internal planner error for a graph-independent read-only query
+issue:
+  url: https://github.com/neo4j/neo4j/issues/13827
+  status: confirmed
+  report_path: reproduction/report_snapshots/neo4j/13827.md
+targets:
+  buggy:
+    id: neo4j-2026.05.0
+  fixed: []
+test:
+  setup: []
+  query: |-
+    CYPHER 25
+    RETURN 1 AS y
+    NEXT
+    RETURN 1 AS y
+    UNION
+    FILTER false
+    UNWIND [] AS z
+    RETURN z AS y
+  cleanup: []
+oracle:
+  type: error_matches
+  category: Neo.DatabaseError.Statement.ExecutionFailed
+  pattern: '(?i)(RegularSinglePlannerQuery|Expected:.*Actual:|VerifyBestPlan)'
+  reference_query: |-
+    CYPHER 5
+    RETURN 1 AS y
+    UNION
+    WITH 2 AS z
+    WHERE false
+    UNWIND [] AS z2
+    RETURN z2 AS y
+  equivalence_preconditions:
+    - graph-independent and read-only
+    - both branches project the same column y
+    - compare result bags without relying on row order
+    - no side effects or runtime-specific configuration
+reproduction:
+  attempts: 3
+  timeout_sec: 10
+provenance:
+  query_id: neo4j_github_13827__q001
+  case_id: null
+  source_artifacts:
+    - reproduction/report_snapshots/neo4j/13827.md
+    - data/oracle2_smoke/neo4j_silence6666668_issue_details_20260815.json
+    - paper/final/histdb_fse27_abstract_intro_polished_v6.tex
+  skeleton_ids:
+    - sk_8624e4727baf
+  feature_ids: []

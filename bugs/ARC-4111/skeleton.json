@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_519bfe6cc864",
+  "skeleton_text": "LOAD CSV WITH HEADERS FROM HOLE_FILE AS row MATCH (a:HOLE_LABEL {HOLE_PROPERTY: row.HOLE_SOURCE_COLUMN}) MATCH (b:HOLE_LABEL {HOLE_PROPERTY: row.HOLE_TARGET_COLUMN}) CREATE (a)-[:HOLE_REL_TYPE]->(b)",
+  "source_id": null,
+  "source_query_id": "ArcadeData/arcadedb#3766",
+  "holes": []
+}

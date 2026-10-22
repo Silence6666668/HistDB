@@ -1,0 +1,91 @@
+[
+  {
+    "feature_id": "ft_4b6f971ed856",
+    "machine_name": "multiple_node_labels",
+    "description": "Create nodes with distinct labels in a single operation.",
+    "tags": [
+      "node",
+      "label",
+      "multiple",
+      "write"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f07b6c7e54b1",
+    "machine_name": "batch_unwind_merge",
+    "description": "Batch processing using UNWIND with parameterized input to MERGE nodes with multiple properties",
+    "tags": [
+      "batch",
+      "unwind",
+      "merge",
+      "parameter"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3b7caee9d1dc",
+    "machine_name": "multiple_write_clauses",
+    "description": "Combine multiple write clauses (CREATE, DELETE, MERGE) in a single query, testing clause ordering and side effects.",
+    "tags": [
+      "write",
+      "clause_combination",
+      "ordering"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_846f9ba3e810",
+    "machine_name": "relationship_property_map_in_merge",
+    "description": "MERGE specifies a relationship with a property map containing mixed types (integer and booleans), testing property initialization during creation.",
+    "tags": [
+      "property_map",
+      "data_types",
+      "merge",
+      "relationship"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_73f8170457a0",
+    "machine_name": "pattern_comprehension_in_node_property",
+    "description": "Using a pattern comprehension inside a node property value during MATCH, which evaluates a subgraph pattern to compute a property value for matching nodes.",
+    "tags": [
+      "pattern_comprehension",
+      "property",
+      "match",
+      "size_function"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_bc2f07ad93a7",
+    "machine_name": "chained_merge_operations",
+    "description": "Multiple MERGE clauses in sequence, testing atomicity and dependency in graph modifications.",
+    "tags": [
+      "merge",
+      "chained",
+      "transaction",
+      "dependency"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

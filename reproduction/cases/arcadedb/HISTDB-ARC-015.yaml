@@ -1,0 +1,46 @@
+schema_version: 1
+family_id: HISTDB-ARC-015
+title: Consecutive undirected pattern positions reuse the same relationship
+paper_set: fixed-version-50
+dbms: arcadedb
+symptom: sameRel=true rows violate relationship uniqueness within the pattern
+issue:
+  url: https://github.com/ArcadeData/arcadedb/issues/4096
+  status: confirmed
+  report_path: issue_reports/submitted/arcadedb/2026-5-1/arcadedb_consecutive_undirected_relationship_patterns_may_reuse_same_relationship.md
+targets:
+  buggy: {id: arcadedb-26.4.1}
+  fixed: []
+observation: {reported_version: 26.4.1-SNAPSHOT, execution_target: "arcadedata/arcadedb:26.4.1"}
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (a:Person {name:'Alice'}), (b:Person {name:'Bob'}), (c:Person {name:'Charlie'}), (a)-[:KNOWS]->(b), (b)-[:KNOWS]->(c)"
+  query: |-
+    MATCH (a:Person)-[r1:KNOWS]-(b:Person)-[r2:KNOWS]-(c:Person)
+    RETURN a.name AS a, b.name AS b, c.name AS c, r1 = r2 AS sameRel
+    ORDER BY a, b, c
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: exact_rows
+  ordered: true
+  expected_buggy:
+    - {a: Alice, b: Bob, c: Alice, sameRel: true}
+    - {a: Alice, b: Bob, c: Charlie, sameRel: false}
+    - {a: Bob, b: Alice, c: Bob, sameRel: true}
+    - {a: Bob, b: Charlie, c: Bob, sameRel: true}
+    - {a: Charlie, b: Bob, c: Alice, sameRel: false}
+    - {a: Charlie, b: Bob, c: Charlie, sameRel: true}
+  expected_correct:
+    - {a: Alice, b: Bob, c: Charlie, sameRel: false}
+    - {a: Charlie, b: Bob, c: Alice, sameRel: false}
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: FalkorDB__FalkorDB__309__q012
+  case_id: case_2f777341a8a3
+  source_artifacts:
+    - issue_reports/submitted/arcadedb/2026-5-1/arcadedb_consecutive_undirected_relationship_patterns_may_reuse_same_relationship.md
+  skeleton_ids: []
+  feature_ids: []
+

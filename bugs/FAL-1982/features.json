@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_db3611aec105",
+    "machine_name": "relationship_type_filter",
+    "description": "Filter relationships by type using WHERE clause with colon syntax",
+    "tags": [
+      "filter",
+      "relationship",
+      "type",
+      "where"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_2644af0b511c",
+    "machine_name": "return_constant_after_create",
+    "description": "RETURN clause with constant value following CREATE operations",
+    "tags": [
+      "return",
+      "constant",
+      "after_write",
+      "simple"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d45a55761b0a",
+    "machine_name": "merge_relationship_with_target_node",
+    "description": "MERGE clause creating a relationship and its target node in a single pattern, testing relationship existence and node creation.",
+    "tags": [
+      "merge",
+      "relationship",
+      "pattern",
+      "node_creation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ee2912164301",
+    "machine_name": "string_literal_property_filter",
+    "description": "Filters nodes based on exact string matches with literal values including spaces",
+    "tags": [
+      "property",
+      "string",
+      "literal",
+      "filter"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_580e1a47bdc9",
+    "machine_name": "chained_variable_length_paths",
+    "description": "Two consecutive variable-length path patterns chained together in a single MATCH clause.",
+    "tags": [
+      "path_pattern",
+      "chained_paths",
+      "intermediate_node"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3a865679bb8b",
+    "machine_name": "single_return_clause",
+    "description": "Query consisting solely of a RETURN clause without any preceding clauses.",
+    "tags": [
+      "return",
+      "minimal",
+      "clause"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

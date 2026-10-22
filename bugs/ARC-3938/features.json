@@ -1,0 +1,22 @@
+[
+  {
+    "feature_id": "ft_120846577cf4",
+    "machine_name": "query_pattern_match_path_pattern_return_where",
+    "description": "该查询包含 MATCH、WHERE、RETURN 子句，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3355",
+    "source_query_id": "ArcadeData__arcadedb__3355__q001"
+  },
+  {
+    "feature_id": "ft_5744e409ac6d",
+    "machine_name": "query_pattern_aggregation_collect_match_path_pattern",
+    "description": "该查询包含 MATCH、WITH、RETURN 子句，涉及聚合计算，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#126",
+    "source_query_id": "FalkorDB__FalkorDB__126__q005"
+  }
+]

@@ -1,0 +1,85 @@
+[
+  {
+    "feature_id": "ft_bd6b47a19781",
+    "machine_name": "multiple_degree_functions_in_return",
+    "description": "Return multiple degree function results in same RETURN clause",
+    "tags": [
+      "return",
+      "multiple_expressions",
+      "function_combination"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f4eab49936ea",
+    "machine_name": "unbounded_relationship_pattern",
+    "description": "Undirected relationship pattern without type or variable, matching any relationship in either direction.",
+    "tags": [
+      "relationship_pattern",
+      "undirected",
+      "wildcard"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_8fd99fc1eea9",
+    "machine_name": "return_all_entities",
+    "description": "Returning all matched nodes and relationships from the operation",
+    "tags": [
+      "return",
+      "all_variables",
+      "entities"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_df79e8b50f4d",
+    "machine_name": "return_aggregation_only",
+    "description": "RETURN clause containing only an aggregation function without grouping",
+    "tags": [
+      "return",
+      "aggregation",
+      "no_grouping"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_ea77f58e243a",
+    "machine_name": "return_single_node_with_limit",
+    "description": "Return a single node type with a LIMIT clause to restrict the number of results.",
+    "tags": [
+      "return",
+      "limit",
+      "node_variable"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_76fea302e260",
+    "machine_name": "basic_query_structure",
+    "description": "Basic Cypher query structure with MATCH, WHERE, and RETURN clauses in sequence",
+    "tags": [
+      "structure",
+      "clause_sequence"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

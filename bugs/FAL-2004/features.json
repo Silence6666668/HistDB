@@ -1,0 +1,87 @@
+[
+  {
+    "feature_id": "ft_181e76c48f3e",
+    "machine_name": "return_literal",
+    "description": "Return a literal integer value in the RETURN clause",
+    "tags": [
+      "return",
+      "literal",
+      "integer"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_74efe165a080",
+    "machine_name": "match_node_by_id_property",
+    "description": "MATCH clause with exact property match on a node using an id property",
+    "tags": [
+      "match",
+      "property",
+      "id"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_aece6842e39e",
+    "machine_name": "boolean_return_constant",
+    "description": "RETURN clause outputs a constant boolean value (TRUE), testing projection of literal boolean values.",
+    "tags": [
+      "return",
+      "boolean",
+      "constant"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_58798d610c3d",
+    "machine_name": "return_all_properties",
+    "description": "Using RETURN * to return all properties and labels of a newly created node",
+    "tags": [
+      "return",
+      "wildcard",
+      "projection"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_1516c0cce58b",
+    "machine_name": "count_star_without_grouping",
+    "description": "RETURN COUNT(*) without any GROUP BY clause, testing aggregation over all matched rows, including those from optional matches.",
+    "tags": [
+      "aggregation",
+      "count",
+      "no_grouping",
+      "return"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_6d5c1c36120b",
+    "machine_name": "node_label_filter",
+    "description": "Filter nodes by label in MATCH clause",
+    "tags": [
+      "label",
+      "match",
+      "node"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

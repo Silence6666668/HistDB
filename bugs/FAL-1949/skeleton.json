@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_25b76a729f9d",
+  "skeleton_text": "OPTIONAL MATCH (HOLE_NODE_0) WITH * CALL { WITH HOLE_NODE_0 RETURN DISTINCT HOLE_NODE_0 AS HOLE_NODE_1 } MATCH (HOLE_NODE_0), (HOLE_NODE_1) RETURN *",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#1322",
+  "holes": []
+}

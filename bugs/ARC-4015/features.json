@@ -1,0 +1,91 @@
+[
+  {
+    "feature_id": "ft_c92f609b20fc",
+    "machine_name": "node_label_match",
+    "description": "Match nodes with specific labels (A and B) in a pattern.",
+    "tags": [
+      "label",
+      "pattern",
+      "match"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_c48c40113ba0",
+    "machine_name": "return_node_variable",
+    "description": "RETURN clause returns a node variable (n) directly, testing projection of node entities rather than properties.",
+    "tags": [
+      "return",
+      "node_projection",
+      "variable_reuse"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_85050eddaa42",
+    "machine_name": "distinct_with_where_count_subquery",
+    "description": "DISTINCT combined with WHERE clause containing COUNT subquery that aliases the variable",
+    "tags": [
+      "distinct",
+      "where",
+      "count",
+      "subquery",
+      "alias"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_8496d7dc759c",
+    "machine_name": "multiple_merge_nodes",
+    "description": "Uses multiple MERGE clauses to create or match distinct nodes with different properties, testing sequential node creation behavior.",
+    "tags": [
+      "merge",
+      "multiple",
+      "node",
+      "properties"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3a2ba9d90ec7",
+    "machine_name": "multiple_node_creation_with_properties",
+    "description": "Creates multiple nodes with labels and properties in a single CREATE clause.",
+    "tags": [
+      "write",
+      "node_creation",
+      "multiple_nodes",
+      "properties"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d2b1e8829dd4",
+    "machine_name": "distinct_path_return",
+    "description": "Returning distinct paths to eliminate duplicate path results from the graph traversal.",
+    "tags": [
+      "distinct",
+      "path",
+      "return",
+      "duplicate_elimination"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

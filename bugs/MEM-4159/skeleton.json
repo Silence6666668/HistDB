@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_72f60758ca97",
+  "skeleton_text": "MATCH p=(n1:HOLE_LABEL1)-[]-(n2:HOLE_LABEL2)-[]-(n3:HOLE_LABEL3:HOLE_LABEL4)-[r1:HOLE_REL_TYPE]-(n4:HOLE_LABEL5:HOLE_LABEL6:HOLE_LABEL7) RETURN COUNT(p)",
+  "source_id": null,
+  "source_query_id": "FalkorDB/FalkorDB#37",
+  "holes": []
+}

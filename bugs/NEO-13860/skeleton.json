@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "reconstructed_precursor_neo_13860",
+  "skeleton_text": "MATCH (p:Person) WHERE p.age > 25 OPTIONAL MATCH (p)-[:KNOWS]->(friend:Person) WITH p, collect(friend) AS friends WHERE COUNT { MATCH ALL SHORTEST PATHS (p)-[:KNOWS*]-(q:Person) WHERE q.age < p.age RETURN q } > 0 RETURN p.name AS personName, size(friends) AS friendCount ORDER BY friendCount DESC LIMIT 3",
+  "source_id": "",
+  "source_query_id": "q_000196",
+  "holes": []
+}

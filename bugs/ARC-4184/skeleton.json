@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_367fe7731914",
+  "skeleton_text": "RETURN toBoolean(0)",
+  "source_id": "neo4j#13093",
+  "source_query_id": "neo4j__13093__q004",
+  "holes": []
+}

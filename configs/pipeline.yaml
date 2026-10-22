@@ -1,0 +1,13 @@
+paths:
+  input_queries: data/queries/prepared_queries.jsonl
+  output_dir: data/stage1
+
+stage1:
+  skeleton_mode: llm   # llm or heuristic
+  feature_mode: llm    # llm or heuristic
+  max_items: null
+  overwrite: false
+  save_pretty_json: true
+
+logging:
+  verbose: true

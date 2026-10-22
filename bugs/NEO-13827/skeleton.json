@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_454e8de78641",
+  "skeleton_text": "CYPHER 25 MATCH (x:Node)-[r:KNOWS]->(y:Node) FILTER x.name IN ['Alice', 'Diana'] AND y.name STARTS WITH 'B' OR y.name = 'Eve' WITH x, y, r UNWIND (CASE WHEN r IS NOT NULL THEN [r] ELSE [] END) AS rel WITH x, y, rel MATCH (x)-[r2:KNOWS]->(z:Node) WHERE z.name = y.name RETURN x.name AS source, y.name AS target, rel AS relationship UNION MATCH (x:Node)-[r:KNOWS]->(y:Node) WHERE x.name IN ['Alice', 'Diana'] AND y.name STARTS WITH 'B' OR y.name = 'Eve' WITH x, y, r UNWIND (CASE WHEN r IS NOT NULL THEN [r] ELSE [] END) AS rel WITH x, y, rel MATCH (x)-[r2:KNOWS]->(z:Node) WHERE z.name = y.name RETURN x.name AS source, y.name AS target, rel AS relationship",
+  "source_id": "ArcadeData/arcadedb#3560",
+  "source_query_id": "",
+  "holes": []
+}

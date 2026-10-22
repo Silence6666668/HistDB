@@ -1,0 +1,3272 @@
+[
+  {
+    "source_workspace_path": "prompts/cypher25_llm_rewrite_system.txt",
+    "package_path": "prompts/cypher25_llm_rewrite_system.txt",
+    "source_sha256": "285a68a38234d76ca5ff2919e762b8cb9226ba0f365770db8eb86627baf1808d",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "prompts/cypher25_llm_rewrite_verify_system.txt",
+    "package_path": "prompts/cypher25_llm_rewrite_verify_system.txt",
+    "source_sha256": "1614aeebeced69e34356dc1933288a8a620bf7664192eb599f3d8b821291dc89",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "prompts/extract_feature_system.txt",
+    "package_path": "prompts/extract_feature_system.txt",
+    "source_sha256": "6bf87a99262601c5e18b5c5bd34d35588cc6a9850c9daf4f706e04083bba0253",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "prompts/extract_skeleton_system.txt",
+    "package_path": "prompts/extract_skeleton_system.txt",
+    "source_sha256": "bd14d593c0efaaebb50600b4377ee6a6e3d6a59edd60ad92cb1919470f0e716a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "prompts/instantiate_case_system.txt",
+    "package_path": "prompts/instantiate_case_system.txt",
+    "source_sha256": "38a680abeffb3f481d1101fbab025f4de64dd9213424ac6946c8adde1b93a9b9",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/analyze_historical_composition_ablation.py",
+    "package_path": "scripts/analyze_historical_composition_ablation.py",
+    "source_sha256": "2edb932dcf4e15b23cfb9d4613700d0f227f48a628957a556e6e39fca1d268cd",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/analyze_repeated_query_diversity.py",
+    "package_path": "scripts/analyze_repeated_query_diversity.py",
+    "source_sha256": "48d4380c432e2d853ca2fc72bc060f5033d06ee96a8f9437f4cf7cd6cc0b538e",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/analyze_tool_query_sample_metrics.py",
+    "package_path": "scripts/analyze_tool_query_sample_metrics.py",
+    "source_sha256": "a0d834cd7d88f964936ef011d94b7f66cd460db080971f60169907f1950056b3",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/bootstrap_ubuntu.sh",
+    "package_path": "scripts/bootstrap_ubuntu.sh",
+    "source_sha256": "923fe18bae2958130ad098663daea1fc3b21f290a1aafeb0ca7857f42cdf1f5b",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/build_random_conditioned_skeleton_ablation.py",
+    "package_path": "scripts/build_random_conditioned_skeleton_ablation.py",
+    "source_sha256": "2b3d0ed1cfba926b098b44cd4b0253bf7bdc47c74b63494ce74a353a3be2a287",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/build_within_report_skeleton_ablation.py",
+    "package_path": "scripts/build_within_report_skeleton_ablation.py",
+    "source_sha256": "85a7df0d83c98922ac7ef34ce20659108d9e27d8b683aa5158829f60a171cfe7",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/collect_memgraph_lcov_report.sh",
+    "package_path": "scripts/collect_memgraph_lcov_report.sh",
+    "source_sha256": "43d0cde20b0a61f778713824492077ee782aaa5157fdfad1e8b3894c53c3c9eb",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/collect_neo4j_jacoco_report.ps1",
+    "package_path": "scripts/collect_neo4j_jacoco_report.ps1",
+    "source_sha256": "1bd722696bd77ec34684aa9511f93df6e4b57279c3b0c0d27d54d3dc175c70b2",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/collect_neo4j_jacoco_timeseries.ps1",
+    "package_path": "scripts/collect_neo4j_jacoco_timeseries.ps1",
+    "source_sha256": "52d143decfb2c11eff90327dcf14efc8d3d0d634fb09c947bd5148ed0a6aedb9",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/collect_neo4j_whole_jvm_jacoco_report.ps1",
+    "package_path": "scripts/collect_neo4j_whole_jvm_jacoco_report.ps1",
+    "source_sha256": "ebeb6c035da904b475e691bd7691707bc2ef0eb8e3eb2f6507417b378e772f09",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/fetch_baseline_tools.sh",
+    "package_path": "scripts/fetch_baseline_tools.sh",
+    "source_sha256": "fe55ec8ce32a2b0c2717db8363cc2f8ed337fac2f17d46cd2c4647d2a21a3be3",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/llvm-cov-gcov-wrapper.sh",
+    "package_path": "scripts/llvm-cov-gcov-wrapper.sh",
+    "source_sha256": "a5a40c37d5cbdd5355cfd28e30304ef6da801623b4d1ae9378d24ac66f0e366f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/minimize_candidates.py",
+    "package_path": "scripts/minimize_candidates.py",
+    "source_sha256": "5849c751ce671e6ceeb98cba20835780810e85ac897074cb284aa625fa3e7ded",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/prepare_jacoco.ps1",
+    "package_path": "scripts/prepare_jacoco.ps1",
+    "source_sha256": "9a5c523a0aaca74585958164f5df75ab1d664133a7d5802e3dc1fdaffebbd9a9",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/reproduce_archived_results.py",
+    "package_path": "scripts/reproduce_archived_results.py",
+    "source_sha256": "c83ab128b4942d76d1a57674465c0d7b83ea57d1740cb66ef861941c4de6e01b",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/review_candidates.py",
+    "package_path": "scripts/review_candidates.py",
+    "source_sha256": "6a5c185658acadab863c4335b85ef6fea990c3b22c31e991d0d396a10ce9ff72",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/rq2_current_inputs.py",
+    "package_path": "scripts/rq2_current_inputs.py",
+    "source_sha256": "4531804641dfb3c9aa20dbc6960b64bd9e1d75e5a370a4df3cac647ddee81049",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/rq2_existing_sources.py",
+    "package_path": "scripts/rq2_existing_sources.py",
+    "source_sha256": "6f8cb1cdab1f8c5cfbafe023c35e3fb6f6b94b5ef4444d92dde31efcd3141087",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_dinkel_neo4j_jacoco_24h.ps1",
+    "package_path": "scripts/run_dinkel_neo4j_jacoco_24h.ps1",
+    "source_sha256": "806b5b398fc426ec18c246cf9aee6425f5d844c3324cd365070d20ad9e3e2efa",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_gamera_cypher_with_restarts.ps1",
+    "package_path": "scripts/run_gamera_cypher_with_restarts.ps1",
+    "source_sha256": "ff9d11f56a7377e036ca788d4444f6d081a69e22d9fce3c8b62373953355fb78",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_gamera_neo4j_jacoco_24h.ps1",
+    "package_path": "scripts/run_gamera_neo4j_jacoco_24h.ps1",
+    "source_sha256": "5290bc34d9752e9507f26540b3cdb5118851930c27cf724f6a74babdd9c57f99",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_gdbmeter_external_neo4j_jacoco_24h.ps1",
+    "package_path": "scripts/run_gdbmeter_external_neo4j_jacoco_24h.ps1",
+    "source_sha256": "99904087b5e079ec3eee16ef5f676e0e008a80e78dfde4d99ba59ddee2fe9d14",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_gdbmeter_with_restarts.ps1",
+    "package_path": "scripts/run_gdbmeter_with_restarts.ps1",
+    "source_sha256": "315a4ebb6e92c1e2ad18530f7dfa4a17c44273ac17d75356709135bf51eb717f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_gdsmith_neo4j_jacoco_24h.ps1",
+    "package_path": "scripts/run_gdsmith_neo4j_jacoco_24h.ps1",
+    "source_sha256": "b137e466f992ef61eaa01d0599dccbc1e3c8d2b49288c3c47c62c43f4b653b11",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_gdsmith_with_restarts.ps1",
+    "package_path": "scripts/run_gdsmith_with_restarts.ps1",
+    "source_sha256": "7e29217723bdae35b33322445feb6a8fd52d808db62cf93e7e77f6d024bf2b3f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_graspdb_baseline_24h.sh",
+    "package_path": "scripts/run_graspdb_baseline_24h.sh",
+    "source_sha256": "60193fbbccc66ee67375933004fd287ce2768e0424ba740dc185d7174f6772f1",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_grev_fixed_target_longrun.ps1",
+    "package_path": "scripts/run_grev_fixed_target_longrun.ps1",
+    "source_sha256": "68a7f33729f1a6f989d04f58bab22beaa37680e4edd8169f9e43af5d7df188e7",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_grev_fixed_target_longrun.py",
+    "package_path": "scripts/run_grev_fixed_target_longrun.py",
+    "source_sha256": "69e98aa9f92a80504ba556d40afb66daf2ef3b4580cbfbcd35a5b08b0c80beda",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_histdb_memgraph_coverage_epoch.sh",
+    "package_path": "scripts/run_histdb_memgraph_coverage_epoch.sh",
+    "source_sha256": "d1c9e20a4364d3cb920c40d88c5caa8985fd9d5e81d1ab8dd4ad0622fc085788",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_memgraph_source_lcov_command.sh",
+    "package_path": "scripts/run_memgraph_source_lcov_command.sh",
+    "source_sha256": "4fd8c4deb5977914a3637a6ee9e4a1dfb3229e3938272c393e1aea95191e63db",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_reproduction_smoke.ps1",
+    "package_path": "scripts/run_reproduction_smoke.ps1",
+    "source_sha256": "9ee5b6e40887aa4d90dab2f04889f0247f6c29bba9124360fd0b981865993a64",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_rq2_completion.py",
+    "package_path": "scripts/run_rq2_completion.py",
+    "source_sha256": "73c54a3b7a4a7b231495e8fcc9d4099083e61ae4dd14b73872ada1ec29ec7897",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_rq2_complexity_pilot.py",
+    "package_path": "scripts/run_rq2_complexity_pilot.py",
+    "source_sha256": "289819fd50d3282933e53b806bea044d93e5d7fc0781f79501e972ce5ac0ef2b",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_rq2_feature_count_sensitivity.py",
+    "package_path": "scripts/run_rq2_feature_count_sensitivity.py",
+    "source_sha256": "0d93ee5e3b1f95a051715d5ccd7fb02a91614d1425ccc623cc946797a2ee9df1",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_rq2_ws_paired_completion.py",
+    "package_path": "scripts/run_rq2_ws_paired_completion.py",
+    "source_sha256": "04910d0de913e08250eeaa42228a41a8c2d33a4e5a2bbc010641c13efd5d1035",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/run_stage4_coverage_only.py",
+    "package_path": "scripts/run_stage4_coverage_only.py",
+    "source_sha256": "40efcaacbc432c64727441f2efd5fb2099bb43a0bb35f172e4e8f624d6343d2a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/sample_jacoco_snapshots.ps1",
+    "package_path": "scripts/sample_jacoco_snapshots.ps1",
+    "source_sha256": "82591616a76a51371f97162fffc38a57a2cc39cde43d7ee73488b29e6ca8261e",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/split_jsonl_into_shards.py",
+    "package_path": "scripts/split_jsonl_into_shards.py",
+    "source_sha256": "47a6054dbe3667bb6b8a1f2a3c30eceff90edbe9e3b5f99b65ea0713d64d75a3",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/start_neo4j_jacoco_container.ps1",
+    "package_path": "scripts/start_neo4j_jacoco_container.ps1",
+    "source_sha256": "08297ecc7d301add519b4d364a954b6aaa5ecb5493d7728c2551f2a8a17dd66d",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/summarize_jacoco_csv.py",
+    "package_path": "scripts/summarize_jacoco_csv.py",
+    "source_sha256": "6872121c31de55f623b3c39e20df9709a06b6a9c0c9629adfdf64cecdd826aab",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "scripts/triage_ablation_differential.py",
+    "package_path": "scripts/triage_ablation_differential.py",
+    "source_sha256": "55a990fe46c2970c4f470107016b2f41ec7dacf1bcc77e344ff8b31e7d532abd",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/__init__.py",
+    "package_path": "src/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/cli/__init__.py",
+    "package_path": "src/cli/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/cli/reproduce.py",
+    "package_path": "src/cli/reproduce.py",
+    "source_sha256": "1404d699410994c62a047f3b1cfca0a137fb1d8c4c41c0b48cde2252fd21570b",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/cli/run_stage1.py",
+    "package_path": "src/cli/run_stage1.py",
+    "source_sha256": "cd949ce9e84aeb34e4650245a85ef6228cd171c2df350c95ffbcf2632ca39fea",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/cli/run_stage2.py",
+    "package_path": "src/cli/run_stage2.py",
+    "source_sha256": "86b91f0763cc32701108961f0c623969cf2f4c77f082db0815e7317b556e44f1",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/cli/run_stage3.py",
+    "package_path": "src/cli/run_stage3.py",
+    "source_sha256": "c4c72da6b551cf07ba30eb81e30679a769fd578cdc74a885893700f6d7e061bb",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/cli/run_stage3b_llm_cypher25_rewrite.py",
+    "package_path": "src/cli/run_stage3b_llm_cypher25_rewrite.py",
+    "source_sha256": "8f222a45f10c8a0ada2c2b7257e872bbabaa735682e45417f0361454df873e4d",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/cli/run_stage4.py",
+    "package_path": "src/cli/run_stage4.py",
+    "source_sha256": "986429cd317fb1e1816c47ce778304c08a1276bdb80c247ae6f5a9587618517b",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/cli/run_stage45.py",
+    "package_path": "src/cli/run_stage45.py",
+    "source_sha256": "51052eefadfe48166e8795ecc8ed99b468540555b5183a3cfa816fce1925840b",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/cli/run_stage45b_selfdiff.py",
+    "package_path": "src/cli/run_stage45b_selfdiff.py",
+    "source_sha256": "1e47aaca06a4a96cb2154f555b6d99877797e1d92f49c3b485598bfee8e37a01",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/cli/run_stage4b_selfdiff.py",
+    "package_path": "src/cli/run_stage4b_selfdiff.py",
+    "source_sha256": "23555edded86c1a99938ad486c9a58f4efa817e0bcec73b29e6d4e0bd0179da0",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/common/__init__.py",
+    "package_path": "src/common/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/common/config.py",
+    "package_path": "src/common/config.py",
+    "source_sha256": "b412ac1afb0500825cc206904cfe6d2b636eec93db07566a6d47403f953b4a02",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/common/io_utils.py",
+    "package_path": "src/common/io_utils.py",
+    "source_sha256": "dcb320bd7c6b6a19058218c6c29e5566876999eeee46296fac7585e5f6848b03",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/common/jsonl_utils.py",
+    "package_path": "src/common/jsonl_utils.py",
+    "source_sha256": "c5796047b72159585cb54a7f9167955b19db72e7da9b4de191bae6bbbebb9463",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/common/text_utils.py",
+    "package_path": "src/common/text_utils.py",
+    "source_sha256": "601b100844b3ce15f023834b23193033d39332273d6e6cc75912c2dfa815a2dc",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/llm/__init__.py",
+    "package_path": "src/llm/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/llm/model_client.py",
+    "package_path": "src/llm/model_client.py",
+    "source_sha256": "dcd530bbf10fdd57e3ba182ac31219deac5fa3699c7bcde83d11a1f90165a40a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/reproduction/__init__.py",
+    "package_path": "src/reproduction/__init__.py",
+    "source_sha256": "c37b73d103fe107166a97c626c313ec229290d1ed38e4ba5650bdc6f6465aa00",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/reproduction/adapter.py",
+    "package_path": "src/reproduction/adapter.py",
+    "source_sha256": "98c6adb23977227c9f8548d8ab03f848d52299f189eddb0f1b040fc0db339a3e",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/reproduction/audit.py",
+    "package_path": "src/reproduction/audit.py",
+    "source_sha256": "0baf3894b91bf35bf66fc32b98234827390126b8f072ec52de681f6496074a3a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/reproduction/doctor.py",
+    "package_path": "src/reproduction/doctor.py",
+    "source_sha256": "5e3de44606700e45ff9dd799b30fe8164dc2832a8575d63d87a7a624061fc68b",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/reproduction/manifest.py",
+    "package_path": "src/reproduction/manifest.py",
+    "source_sha256": "9258881e21a5729d3dce63079a5d977fef3b80c059a6dccd85c7a95e37f71182",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/reproduction/models.py",
+    "package_path": "src/reproduction/models.py",
+    "source_sha256": "01adc628b02c1d36586eaaffd15d887657e7cffba2a58aea681ea05f53b16890",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/reproduction/normalize.py",
+    "package_path": "src/reproduction/normalize.py",
+    "source_sha256": "d8173e2550138bba6c2e8505cb7baee56bfd02976d36cb9c9800ba497ae7c5bb",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/reproduction/oracles.py",
+    "package_path": "src/reproduction/oracles.py",
+    "source_sha256": "52adf634e204435f5dc653b7934d398fbb21a64009f68a090b236d0b4842e909",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/reproduction/report_oracle.py",
+    "package_path": "src/reproduction/report_oracle.py",
+    "source_sha256": "149dbc03c97b2bc921a0bcf7e9a13f101a492afb1780f049b09145a2d863a70a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/reproduction/reporting.py",
+    "package_path": "src/reproduction/reporting.py",
+    "source_sha256": "701d831a4cc8f28651134905ac8abd29bdd081a57c708c3c4743e9449bb3c9ce",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/reproduction/runner.py",
+    "package_path": "src/reproduction/runner.py",
+    "source_sha256": "81c23654e013574dc2db5803923af767744d236fafff5a9e6a2e6461e2cace0f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage1/__init__.py",
+    "package_path": "src/stage1/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage1/build_pools.py",
+    "package_path": "src/stage1/build_pools.py",
+    "source_sha256": "4f6e6a8df1f35051055fcbe2f472d57b6bbb9c6a453e19e2419ee64060ea3b91",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage1/extract_features.py",
+    "package_path": "src/stage1/extract_features.py",
+    "source_sha256": "03210715c89ce5611435af27af04c9de91b7b3eca588a789894ff4a300303b25",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage1/extract_skeletons.py",
+    "package_path": "src/stage1/extract_skeletons.py",
+    "source_sha256": "7a8971b3946ae84c7fc352def6a9fea462902c4a8cc0a8509434bf8cd4ea1ba9",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage2/__init__.py",
+    "package_path": "src/stage2/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage2/build_fragment_corpus.py",
+    "package_path": "src/stage2/build_fragment_corpus.py",
+    "source_sha256": "a9c99b935d710d2be58006cf337108ae331bd9c4706a4a317a06d5e1ccb067e0",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage2/common.py",
+    "package_path": "src/stage2/common.py",
+    "source_sha256": "319bc8058ed9a14eb64709d12fab97062e75f47df5b5e9d949d994e46c3a6729",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage2/documentation_example_review.json",
+    "package_path": "src/stage2/documentation_example_review.json",
+    "source_sha256": "abd555b5e53786309db542c988749958926c81ef1b8489ffbcc609f59c05f941",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage2/feature_selection.py",
+    "package_path": "src/stage2/feature_selection.py",
+    "source_sha256": "7b10ec67728a3956d9898f191e1b84aea797867e6eb491d8fdc7ebd419005a06",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage2/fragment_policy.py",
+    "package_path": "src/stage2/fragment_policy.py",
+    "source_sha256": "23afcbf8c1a43779288f3f96aa430b3b8b2dd05000f15e015ce48d81fb054589",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage2/group_fragments.py",
+    "package_path": "src/stage2/group_fragments.py",
+    "source_sha256": "3e66d3387f14e637b1084e1b82698a995924175cbc7fb19ece069ab312f685c8",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage2/official_filter.py",
+    "package_path": "src/stage2/official_filter.py",
+    "source_sha256": "dffcfcb4c3d4af5dd843ad38fcafa0a47c4e0874c675a06066f3aafc99859a24",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage2/retrieval_query_builder.py",
+    "package_path": "src/stage2/retrieval_query_builder.py",
+    "source_sha256": "3b19e39944f7d3bd9a90b9e575933e2c25fbee8118e2b670d50bc38f3637624c",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage2/retriever.py",
+    "package_path": "src/stage2/retriever.py",
+    "source_sha256": "47e27464da8ded0f53d93da0e2d531a72c66dd269296de6a0625681556ddecf6",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage3/__init__.py",
+    "package_path": "src/stage3/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage3/instantiate_cases.py",
+    "package_path": "src/stage3/instantiate_cases.py",
+    "source_sha256": "c06cb24b13d07f009b5c31d1cb6a16d7e1ac3f42fd43f84ef13bef6d9cf9f0f5",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage3/llm_cypher25_rewrite.py",
+    "package_path": "src/stage3/llm_cypher25_rewrite.py",
+    "source_sha256": "ee990ea65322564f06c95fab64c704272b8284c6c2f873d49069ffdadf407898",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage3/postprocess_cases.py",
+    "package_path": "src/stage3/postprocess_cases.py",
+    "source_sha256": "8cf4bd1b559524ea602a2997d4e0a231bf04f064696747600b42a5dbed9174d5",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage3/quality_gates.py",
+    "package_path": "src/stage3/quality_gates.py",
+    "source_sha256": "d96a729cd3072146dcb11736c618efb4070c61077aecdd78192b2f2b2de60f63",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage3/rewrite_cases.py",
+    "package_path": "src/stage3/rewrite_cases.py",
+    "source_sha256": "10d5fe2d972e58b2b49b087c058297e95f2938872edeaaa8823d0aa0d476c0c1",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage3/validate_queries.py",
+    "package_path": "src/stage3/validate_queries.py",
+    "source_sha256": "ede280cfaa0f0fe97932030f081076d9d5425bf45374504a9747f1597ca99e69",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage3e_diversity/__init__.py",
+    "package_path": "src/stage3e_diversity/__init__.py",
+    "source_sha256": "c99395be6a56421cc3d985ad01f800f82b3f7b4cc18cf02652045d62208d19e9",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage3e_diversity/diverse_sample.py",
+    "package_path": "src/stage3e_diversity/diverse_sample.py",
+    "source_sha256": "20a4fae329c9b12107f9672402c3d3b50e909c76bbb9602a157100378e99541f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage3e_diversity/metrics.py",
+    "package_path": "src/stage3e_diversity/metrics.py",
+    "source_sha256": "b1d91d0bb8012046521011266693f66ff968c930fbd9f3a93e8bde7687be5397",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage4/__init__.py",
+    "package_path": "src/stage4/__init__.py",
+    "source_sha256": "5384bfdb2df380b6557cc7a71d16891415bccaa87699406e236f752c6415389f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage4/compare.py",
+    "package_path": "src/stage4/compare.py",
+    "source_sha256": "e250b72c2c41283005c44f14672328b8a79a1348f4adfce53c446c076763f065",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage4/executor.py",
+    "package_path": "src/stage4/executor.py",
+    "source_sha256": "281e13704bc7ffc24158b1453d2ccc81713a1f82b710f8273a38e5808f9a21d5",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage4/executor_age.py",
+    "package_path": "src/stage4/executor_age.py",
+    "source_sha256": "980eed4be51bf481a4e60f4b2ce71a9760973ca997a6ae9f7d7abf365705301c",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage4/executor_agensgraph.py",
+    "package_path": "src/stage4/executor_agensgraph.py",
+    "source_sha256": "f898a2ef9237dab43905966154983346d3ae701192ef79a72a4d46800391392e",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage4/executor_arcadedb.py",
+    "package_path": "src/stage4/executor_arcadedb.py",
+    "source_sha256": "bab3e6804403f14e246e86e8a846a531fae73b85155158de7e60baf477188d17",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage4/executor_falkordb.py",
+    "package_path": "src/stage4/executor_falkordb.py",
+    "source_sha256": "45baa461c0e0e652f1b376b4e3910dd002b503cf592f02bd34f83b4e86ad2467",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage4/executor_kuzu.py",
+    "package_path": "src/stage4/executor_kuzu.py",
+    "source_sha256": "b616400553ea048b19d9a8b90a5a0c65b5619c1c36435256bf343549af68e3d6",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage4/executor_memgraph_cli.py",
+    "package_path": "src/stage4/executor_memgraph_cli.py",
+    "source_sha256": "9d99fffdc5dfb04cefa5a5ca6af98bdc3f301735584513aec2ec9c20b824f129",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "src/stage4/executor_neo4j_http.py",
+    "package_path": "src/stage4/executor_neo4j_http.py",
+    "source_sha256": "0f73425516dbcd1c7d4f126f78233d53794a4ddf4c0ebd6ec818d03a50cf5798",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "docs/artifact/requirements-mainline.txt",
+    "package_path": "requirements.txt",
+    "source_sha256": "98f2e0ac04f2283aa0e58493ec45b7d35a1716ff77bf1f2897f58b38f2910d8d",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "docs/artifact/PIPELINE-mainline.md",
+    "package_path": "docs/PIPELINE.md",
+    "source_sha256": "ea8d790fcf6f4082db1d59f253cc49dafa2aac65cc645cb29e51a1087c0a9d09",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "requirements-baseline.txt",
+    "package_path": "requirements-baseline.txt",
+    "source_sha256": "fdc23434284d8bf14ca30ce4e52d9dfecaffda0eacdc573dd0c37cbc2aa79051",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": ".env.example",
+    "package_path": ".env.example",
+    "source_sha256": "70de89f9486137ebfa0aff0fed3caab5f2844b46f3e3ea753a5895a0c40cb188",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "pytest.ini",
+    "package_path": "pytest.ini",
+    "source_sha256": "c792b3858b971c0714113d4f08f59790ecbed1e6dc99b5633f9d5d2dfbbd73d9",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "docs/artifact/README-paper.md",
+    "package_path": "README.md",
+    "source_sha256": "5a4c8b171395dd8eca578e5cf207b3f723b589e1c4e897f2d84fd6b1fa7f16cc",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "docs/artifact/requirements-offline.txt",
+    "package_path": "requirements-offline.txt",
+    "source_sha256": "1d00b52acd217cdb1b3b3924ff26dfeb01bca5a06b983d3ef9189a9ea400c793",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "docs/artifact/gitignore",
+    "package_path": ".gitignore",
+    "source_sha256": "520cf76a09957e798002a0f20fdd07403450963247764b717425fd285a15a18b",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "docs/artifact/offline.yml",
+    "package_path": ".github/workflows/offline.yml",
+    "source_sha256": "95d3f3011ede9a9a030e96f1f655d230650245f642a3e2da429ce06b86ba3d01",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "configs/model.yaml",
+    "package_path": "configs/model.yaml",
+    "source_sha256": "ed9d3953d42e01fe503993f08abbdd1281c6332c8438a7a77218d4e13632614f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "configs/pipeline.yaml",
+    "package_path": "configs/pipeline.yaml",
+    "source_sha256": "4fce6808a42c99cd379eabcc438a938aa43fb1e8d5e4583e45be4d21e6ee70c8",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "configs/docker-compose.fixed-baselines.yml",
+    "package_path": "configs/docker-compose.fixed-baselines.yml",
+    "source_sha256": "e75b1cf07469d2384d27ba58aff73d3994b54c3403536682e247cacdfc09e080",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "configs/server_ubuntu_layout.env.example",
+    "package_path": "configs/server_ubuntu_layout.env.example",
+    "source_sha256": "45abdabeba532ef1755a29fb64e256e68cfee1ef0932ac8614754cd55457e99a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "configs/baseline_tool_repos.env.example",
+    "package_path": "configs/baseline_tool_repos.env.example",
+    "source_sha256": "de98fdc08046a0f15f116f95be3e280ee81916c499bfd348df3ddd11c1187ce6",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "configs/baseline_target_versions.env.example",
+    "package_path": "configs/baseline_target_versions.env.example",
+    "source_sha256": "55722af38877f944ac246d5cb0aeac1b05afa21138e51e5ccfb59008b80fd221",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "configs/db_targets_memgraph_source_coverage_7787.yaml",
+    "package_path": "configs/db_targets_memgraph_source_coverage_7787.yaml",
+    "source_sha256": "2de591aef4b0b47c41b98186eec9942e4504203a83a7d5ab3dea9b14954282a0",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "configs/db_targets_ablation_5db_plain.yaml",
+    "package_path": "configs/db_targets_ablation_5db_plain.yaml",
+    "source_sha256": "97671ec1e92e7a90512d015cc1fcc8240ef8adf0d490a2dd49f0dfc93be47831",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/db_targets.yaml",
+    "package_path": "configs/db_targets.yaml",
+    "source_sha256": "3c0a2924a30577e9ee95e63f1a420180e27784196cfa8642dd76613c202bc15a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "tests/test_archived_artifact.py",
+    "package_path": "tests/test_archived_artifact.py",
+    "source_sha256": "fff9bbda6cf86c32f713102db31205ab6fe86612879924b729739242459c22a1",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "tests/test_reproduction_manifest.py",
+    "package_path": "tests/test_reproduction_manifest.py",
+    "source_sha256": "04826e9697b85bd2921133809060e91c81844ba29e7f095612a63a5718faffce",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "tests/test_reproduction_oracles.py",
+    "package_path": "tests/test_reproduction_oracles.py",
+    "source_sha256": "ddf7d9fab28a99cdb7eb13a20b155f2e2c7924bc9b81b9eaf7950ee93f1d8f34",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "tests/test_reproduction_audit.py",
+    "package_path": "tests/test_reproduction_audit.py",
+    "source_sha256": "31ebab7566e88ea88395b177aafc5590c6e318bf7bab07f4c92d6bf259834878",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "tests/test_reproduction_catalog.py",
+    "package_path": "tests/test_reproduction_catalog.py",
+    "source_sha256": "b196f0c921bf949d4cc953b6e399d15682c0a05ea899eaa16068730233e66626",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "tests/test_feature_selection_unique.py",
+    "package_path": "tests/test_feature_selection_unique.py",
+    "source_sha256": "8a7774ef6d00ed3bdd99ff7afe9ee96d6720fdafadf330646c18851deee14ce2",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "tests/test_rq2_current_inputs.py",
+    "package_path": "tests/test_rq2_current_inputs.py",
+    "source_sha256": "8af7ff1d8e93005d609e63c6e7d910f603c30879b811ec25b447153cc43adff0",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "tests/test_rq2_feature_count_sensitivity.py",
+    "package_path": "tests/test_rq2_feature_count_sensitivity.py",
+    "source_sha256": "9acf8ffddcaa10bd1806e23cf3c03e97acdde00448ee8ccce9376d92a0aeed0f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "tests/test_paper_prompt.py",
+    "package_path": "tests/test_paper_prompt.py",
+    "source_sha256": "fd0153b6660da9033927d3597326b662aa1c0b5230b20d46dfa8f69c06a276e7",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/apache_age/HISTDB-AGE-001.yaml",
+    "package_path": "reproduction/cases/apache_age/HISTDB-AGE-001.yaml",
+    "source_sha256": "aa3dac6e1ab6d867c7649c752c509d109080d216d6d9e2b8fcaddcb63ba26d1c",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/apache_age/HISTDB-AGE-002.yaml",
+    "package_path": "reproduction/cases/apache_age/HISTDB-AGE-002.yaml",
+    "source_sha256": "ee097ae0c3baa745ea8f74e8f35383bfe8f7516787e6f7f8a08ccc8a09933198",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/apache_age/HISTDB-AGE-003.yaml",
+    "package_path": "reproduction/cases/apache_age/HISTDB-AGE-003.yaml",
+    "source_sha256": "20274daf91acabf627333092f0dbcbf97cc29100fcbae8ab9f6c66fb995e56a9",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-001.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-001.yaml",
+    "source_sha256": "8ea0b97f181193b22406f7219ebdd7ac80d9b535b91349721c496993f372ab8f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-002.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-002.yaml",
+    "source_sha256": "36267c02611d649c918eec9695cf94c420c2eeab80bb9eed8c3957eb0db45875",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-003.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-003.yaml",
+    "source_sha256": "1605b737095df9fc83e7b89bf5c03aaf73ff1d7a2c89dc7c6f4f00b6de45d3fe",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-004.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-004.yaml",
+    "source_sha256": "05ac9f532f0dac2ad9b115b0f8e8e7ec88b6aab4158a8d540d5adaef35aeaee5",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-005.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-005.yaml",
+    "source_sha256": "b9503703db4b038412db4674fc4a7e24efec077295ea555d2f6adb5e1bf3edbc",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-006.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-006.yaml",
+    "source_sha256": "db7a631fe34bbb396b4442aabcecc3089726d3af23f32042cc7d039d02f62766",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-007.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-007.yaml",
+    "source_sha256": "62f076e41ea2005b0326deb4c40d7a2710df9f1042c0d78b391f38d5c908bd11",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-008.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-008.yaml",
+    "source_sha256": "4e4da15b5e223af3d718c42bc145dfce94030d1e3baedee43dd123609f7e9a25",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-009.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-009.yaml",
+    "source_sha256": "a6180a551175489313051fbd84a89aa4e3303af38b6b2b023d70c64e26227c1b",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-010.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-010.yaml",
+    "source_sha256": "014efc6bc53bf58b955b41ff9e968367b57379f27c2b63520b1af497a991e89d",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-011.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-011.yaml",
+    "source_sha256": "8662e10e337bc595e046c311733566ef1aaf343d992621199aeaf76fc25acfb2",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-012.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-012.yaml",
+    "source_sha256": "4ba668224c4b67ab996c77577a06173de38057307140783444d8925a07652798",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-013.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-013.yaml",
+    "source_sha256": "16c469893b822e87a95ed64e53b2d8c858d0d58929e1ea077fddf52805cbf59a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-014.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-014.yaml",
+    "source_sha256": "d7c0f374f88c218285ad139d7a9bd5978a07d9b17447c19041954562059e16da",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-015.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-015.yaml",
+    "source_sha256": "f8f22409f01e14005f506f214d142dc4f1b6ed08afca6514419aed5e228272ad",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-016.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-016.yaml",
+    "source_sha256": "5671e95607fc3d4d8a5bb7dc8b948770dbbc610b57d43ad45b2e950daa7e177d",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-017.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-017.yaml",
+    "source_sha256": "dd5794f173de273835c1569353d691d37b52224a0a445f2b5a19fc3642ecb560",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-018.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-018.yaml",
+    "source_sha256": "c8218079a69854236b6a76beafbcbc584e8828bb38ecafb07aff4644a5199125",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-019.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-019.yaml",
+    "source_sha256": "bdc3e8023d62e79d6928344eab502f0f1b687fa03fa40ebb7c47f31ffc4bf9d7",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/arcadedb/HISTDB-ARC-020.yaml",
+    "package_path": "reproduction/cases/arcadedb/HISTDB-ARC-020.yaml",
+    "source_sha256": "ca7078b3ad6dfa1b04dfdc3f913d29c1c0f6ad423f8b72cf181954d47b8750dc",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/falkordb/HISTDB-FAL-001.yaml",
+    "package_path": "reproduction/cases/falkordb/HISTDB-FAL-001.yaml",
+    "source_sha256": "6dd36cd511740a14145385edb94a403952ac759ab5f8deac8a9bae865988d980",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/falkordb/HISTDB-FAL-002.yaml",
+    "package_path": "reproduction/cases/falkordb/HISTDB-FAL-002.yaml",
+    "source_sha256": "2954fdbff3bd58668145144b11cc8ed3edf7ad23b533d28f0bdb1d30614dc235",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/falkordb/HISTDB-FAL-003.yaml",
+    "package_path": "reproduction/cases/falkordb/HISTDB-FAL-003.yaml",
+    "source_sha256": "92bc0bae4859a58d72431d338ca90eb3a3ca5767bd4b402b371fddb35faff153",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/falkordb/HISTDB-FAL-004.yaml",
+    "package_path": "reproduction/cases/falkordb/HISTDB-FAL-004.yaml",
+    "source_sha256": "0df67f2cdf37d56469f2dd7c10709c59d89b944e6b1781871e2533793761c0e5",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/falkordb/HISTDB-FAL-005.yaml",
+    "package_path": "reproduction/cases/falkordb/HISTDB-FAL-005.yaml",
+    "source_sha256": "5a704cdc7c398144833d7613ffbc994e329da9050aeb14b6d3e6b4613f07718c",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/falkordb/HISTDB-FAL-006.yaml",
+    "package_path": "reproduction/cases/falkordb/HISTDB-FAL-006.yaml",
+    "source_sha256": "c6843ab58495eeeccdd94fc7741a48e5b3c477304672a46b1f746b2f6831714d",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/falkordb/HISTDB-FAL-007.yaml",
+    "package_path": "reproduction/cases/falkordb/HISTDB-FAL-007.yaml",
+    "source_sha256": "cbb6a0248105c2864c1e6a08eb30186ad89863a64fa69592924afa68f4c11824",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/falkordb/HISTDB-FAL-008.yaml",
+    "package_path": "reproduction/cases/falkordb/HISTDB-FAL-008.yaml",
+    "source_sha256": "942b387ef7ab8c9053143155e8c4959368b757efa5c49ccb2a636904b19cce7f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/falkordb/HISTDB-FAL-009.yaml",
+    "package_path": "reproduction/cases/falkordb/HISTDB-FAL-009.yaml",
+    "source_sha256": "6b77597f0ec1bae7107e9f448b18b4074fa2392252b07ccc02791199f36afd58",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/falkordb/HISTDB-FAL-010.yaml",
+    "package_path": "reproduction/cases/falkordb/HISTDB-FAL-010.yaml",
+    "source_sha256": "3dbf4a61fa301f32cbfa0826817037fe294a3f13455784c161b00cdc8301650f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/falkordb/HISTDB-FAL-011.yaml",
+    "package_path": "reproduction/cases/falkordb/HISTDB-FAL-011.yaml",
+    "source_sha256": "39c5811c0632160a42cf1e5a0172e656e4e454354f49723b650275cb4d83576d",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/memgraph/HISTDB-MEM-001.yaml",
+    "package_path": "reproduction/cases/memgraph/HISTDB-MEM-001.yaml",
+    "source_sha256": "e7120bbe14abb1503977fc810737cc21e2bb1e888174df1deeef6d73d5d03078",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/memgraph/HISTDB-MEM-002.yaml",
+    "package_path": "reproduction/cases/memgraph/HISTDB-MEM-002.yaml",
+    "source_sha256": "4d854954a47b47e115dd6f6906f9304c445845f8aa53bd2415e19b46169d39a5",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/memgraph/HISTDB-MEM-003.yaml",
+    "package_path": "reproduction/cases/memgraph/HISTDB-MEM-003.yaml",
+    "source_sha256": "604c2be42b910ae163ab3519ee2a3168a15be9e54eba43792e2d21b5e832bfff",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/memgraph/HISTDB-MEM-004.yaml",
+    "package_path": "reproduction/cases/memgraph/HISTDB-MEM-004.yaml",
+    "source_sha256": "d00c6daf600aa96e03db24c15017a7da19b9b708ee4f5c805bc685784c7c9486",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/memgraph/HISTDB-MEM-005.yaml",
+    "package_path": "reproduction/cases/memgraph/HISTDB-MEM-005.yaml",
+    "source_sha256": "1b5c17f5a42716f04940df04ff4e4127d78a3aeb96a6ff6746319ad5b81fdbb6",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/memgraph/HISTDB-MEM-006.yaml",
+    "package_path": "reproduction/cases/memgraph/HISTDB-MEM-006.yaml",
+    "source_sha256": "43b5fd92a3d43642a8abe02df18d3610a7b576325bdfd61d6279709d1024578e",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/memgraph/HISTDB-MEM-007.yaml",
+    "package_path": "reproduction/cases/memgraph/HISTDB-MEM-007.yaml",
+    "source_sha256": "cdaa8bca52191a2d8d99d019b60ebb884c7aa6c25752d188e48c1c766aca9a5f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/memgraph/HISTDB-MEM-008.yaml",
+    "package_path": "reproduction/cases/memgraph/HISTDB-MEM-008.yaml",
+    "source_sha256": "8d97abfdf6e67b27f66707f5fa9eae77520dc5eb863c31534bc4d16ea144d9c2",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/memgraph/HISTDB-MEM-009.yaml",
+    "package_path": "reproduction/cases/memgraph/HISTDB-MEM-009.yaml",
+    "source_sha256": "9de614b4a65456ee0940053d4bfbf04cd2fedb47903a77e5ab66bce05f50bbf1",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/memgraph/HISTDB-MEM-010.yaml",
+    "package_path": "reproduction/cases/memgraph/HISTDB-MEM-010.yaml",
+    "source_sha256": "1f3d586799edac122ce5d82c6a69b2fc076e63e34b765f753c4cba93eeaea26e",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/memgraph/HISTDB-MEM-011.yaml",
+    "package_path": "reproduction/cases/memgraph/HISTDB-MEM-011.yaml",
+    "source_sha256": "5686019cad0862641b15fdb50a0de47e56dd9676f407dfb624ef46f3b9982f0d",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/memgraph/HISTDB-MEM-012.yaml",
+    "package_path": "reproduction/cases/memgraph/HISTDB-MEM-012.yaml",
+    "source_sha256": "534efa3f9acde6f5522812db5c73978f211fd5d48649890b4092831834308960",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/memgraph/HISTDB-MEM-013.yaml",
+    "package_path": "reproduction/cases/memgraph/HISTDB-MEM-013.yaml",
+    "source_sha256": "2a93c71233a8a3101368f87f804dc5f34a6926af0c14d835b3e47847121e5949",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/neo4j/HISTDB-NEO-001.yaml",
+    "package_path": "reproduction/cases/neo4j/HISTDB-NEO-001.yaml",
+    "source_sha256": "085fa430011c2b594817e81166816eeee6c5e2421d37b3f87a0f87598249093e",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/neo4j/HISTDB-NEO-002.yaml",
+    "package_path": "reproduction/cases/neo4j/HISTDB-NEO-002.yaml",
+    "source_sha256": "16f551683e32db76eac8485b1638f87b098ae6b009de271e5623f79cf50fd77a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/cases/neo4j/HISTDB-NEO-003.yaml",
+    "package_path": "reproduction/cases/neo4j/HISTDB-NEO-003.yaml",
+    "source_sha256": "97a0fb4561d5adf747dcf745b3fc44fe2712b120d9de7392a13d6bead1ee8696",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/db_targets.yaml",
+    "package_path": "reproduction/db_targets.yaml",
+    "source_sha256": "3c0a2924a30577e9ee95e63f1a420180e27784196cfa8642dd76613c202bc15a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/docker-compose.yml",
+    "package_path": "reproduction/docker-compose.yml",
+    "source_sha256": "c324ed4318d31358fe67311b4bd1f0dae877441fb06683a4f0414693e79ea911",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/family-map.csv",
+    "package_path": "reproduction/family-map.csv",
+    "source_sha256": "5616d0bf8d02c0293cc585076cc20d71d7c7da67b6b46727bed06ad291f07d71",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/paper-claims.yaml",
+    "package_path": "reproduction/paper-claims.yaml",
+    "source_sha256": "271112a6241d92075cf984e0788a9e385b108e4410e16851c6a02f82a69c0ee1",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/reports-148.yaml",
+    "package_path": "reproduction/reports-148.yaml",
+    "source_sha256": "20fbb6d20d8c84c9e6978e080b2eb3bdcc3345dd6f9e4d1b76dc7055a26b6cc0",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/targets.yaml",
+    "package_path": "reproduction/targets.yaml",
+    "source_sha256": "b0a4bdcf24c83272c0cdce0a7babb51c1b49ad66c2f41261e9bdde18f178f181",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "docs/artifact/CATALOG.md",
+    "package_path": "docs/CATALOG.md",
+    "source_sha256": "8ef06305814db5ebec4b386960b6ee92bf60bd9f4307037eea15431d9ae9b961",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/apache_age/2378.md",
+    "package_path": "reproduction/report_snapshots/apache_age/2378.md",
+    "source_sha256": "db954dc79b3aad1ef24f9e8fe957dbf91c47b1060fd8b3d07f6a465a1adb43ad",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/apache_age/2382.md",
+    "package_path": "reproduction/report_snapshots/apache_age/2382.md",
+    "source_sha256": "91980ae7b9e51e1093b812c28e81bc34a1195b42f58993c1bdd5a1e004cb8cb9",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/age/old/age_unwind_null_count_counts_null_as_one.md",
+    "package_path": "issue_reports/submitted/age/old/age_unwind_null_count_counts_null_as_one.md",
+    "source_sha256": "958c96da6db9a3283ca5c9d6a23ca310ec409b01fe28935865022362ad4fe289",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/age/old/age_tail_returns_null_for_empty_or_singleton_list.md",
+    "package_path": "issue_reports/submitted/age/old/age_tail_returns_null_for_empty_or_singleton_list.md",
+    "source_sha256": "f6c7251e08d8813f31122389d9b28e17eb8f464689a09562d21802ae65e25aab",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/age/old/age_sum_aggregate_mishandles_null_inputs.md",
+    "package_path": "issue_reports/submitted/age/old/age_sum_aggregate_mishandles_null_inputs.md",
+    "source_sha256": "dde9b26b562a8b34f94b81c91030b2f169dd6f9c7a21aa6b22938f0b0bf37cd9",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/apache_age/2386.md",
+    "package_path": "reproduction/report_snapshots/apache_age/2386.md",
+    "source_sha256": "91ca52a1e55862dcf84c47fbcf61b8f1f180fdfb4f46e86a6f2b1be8a0994f9e",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/apache_age/2388.md",
+    "package_path": "reproduction/report_snapshots/apache_age/2388.md",
+    "source_sha256": "339a9a9df9894f7f6375079e253e377bc128326fd6f1460529bd0307765d7c71",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/apache_age/2389.md",
+    "package_path": "reproduction/report_snapshots/apache_age/2389.md",
+    "source_sha256": "d67398ac77ac0c3f32925be34695bc1272fc8df6c70cb12c6d069da0e5b8ded0",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/age/old/age_match_cannot_see_nodes_created_earlier_in_same_query_after_with.md",
+    "package_path": "issue_reports/submitted/age/old/age_match_cannot_see_nodes_created_earlier_in_same_query_after_with.md",
+    "source_sha256": "55cfce4cc3abcb08168267a00545b778cda198a5fa83663130651e4b3268ea85",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/age/old/age_map_literal_drops_null_valued_keys.md",
+    "package_path": "issue_reports/submitted/age/old/age_map_literal_drops_null_valued_keys.md",
+    "source_sha256": "29413bdab6e20d4aa8b9e87984c2ef35804431e9c60d7301d1fb39effbf4adcc",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/apache_age/2392.md",
+    "package_path": "reproduction/report_snapshots/apache_age/2392.md",
+    "source_sha256": "9e934abf0e1b364daf33f56f8f393f2a036cefbb2c9ab0d1ea40b4f893ccc7f8",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/age/old/age_list_comprehension_where_filter_mishandles_null_elements.md",
+    "package_path": "issue_reports/submitted/age/old/age_list_comprehension_where_filter_mishandles_null_elements.md",
+    "source_sha256": "d18179c783eedb348fa3f25d226df54f17252f3cacf181217b46c022a4bfa214",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/age/old/age_list_comprehension_projection_on_null_element_produces_nested_list.md",
+    "package_path": "issue_reports/submitted/age/old/age_list_comprehension_projection_on_null_element_produces_nested_list.md",
+    "source_sha256": "c00e82020c6745c99f106f9f91f2430d0017b00c3ee60f266cb7099ece88fc3d",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/age/old/age_list_comprehension_over_collected_nodes_cannot_access_properties.md",
+    "package_path": "issue_reports/submitted/age/old/age_list_comprehension_over_collected_nodes_cannot_access_properties.md",
+    "source_sha256": "e0539d251ace82b2c96da15a2534a10d0e184bca9e4531bf9f7705046f02e832",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/apache_age/2396.md",
+    "package_path": "reproduction/report_snapshots/apache_age/2396.md",
+    "source_sha256": "7fd9299ba229502ce33d48dd4c844c3eb3ae377110b89576698d39388f5f69b7",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/arcadedb/3888.md",
+    "package_path": "reproduction/report_snapshots/arcadedb/3888.md",
+    "source_sha256": "044da3c8017f4f95877df826ee52db347463f26160d829a4950b5fc707437d25",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/arcadedb/3938.md",
+    "package_path": "reproduction/report_snapshots/arcadedb/3938.md",
+    "source_sha256": "19c56d684cca5aeb550e510fc3d7443b1f2b2cb45e3e4a3404bbdaff60bb716f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/arcadedb/3944.md",
+    "package_path": "reproduction/report_snapshots/arcadedb/3944.md",
+    "source_sha256": "9505281f22ca25fa06d70ded550a0fba2bbb784ae68acc777505d7e9246fad5f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/old/arcadedb_standalone_order_by_limit_before_match_may_ignore_selected_row.md",
+    "package_path": "issue_reports/submitted/arcadedb/old/arcadedb_standalone_order_by_limit_before_match_may_ignore_selected_row.md",
+    "source_sha256": "09e834bfff7f110ebc0037688421f9963417e26833fc941452116c3914b8aaed",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/arcadedb/3951.md",
+    "package_path": "reproduction/report_snapshots/arcadedb/3951.md",
+    "source_sha256": "ecd815b2cf3fc361c95b991e92eb085a318451f53802e8ec59df0d830fc50da1",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/arcadedb/3952.md",
+    "package_path": "reproduction/report_snapshots/arcadedb/3952.md",
+    "source_sha256": "3ddaa3ed2a9625c71c93a4ca8a65dab5d00047e22280dc3fa98a807e20934538",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/arcadedb/3956.md",
+    "package_path": "reproduction/report_snapshots/arcadedb/3956.md",
+    "source_sha256": "0fafb7ee1c6d63d00ea55a5f29ca7e2012624c66cce821ee4f5b8043e8cb21d9",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/arcadedb/3957.md",
+    "package_path": "reproduction/report_snapshots/arcadedb/3957.md",
+    "source_sha256": "bc3220727c5ded6823f2c27527528805834d355f002873d6ee3b0b409e4ffede",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/old/arcadedb_call_subquery_reusing_outer_variable_name_may_drop_all_rows.md",
+    "package_path": "issue_reports/submitted/arcadedb/old/arcadedb_call_subquery_reusing_outer_variable_name_may_drop_all_rows.md",
+    "source_sha256": "481b614c4cdd539634d9c2224259c27cbea45d04050a30d5a14654cafb7e26bc",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/arcadedb/3996.md",
+    "package_path": "reproduction/report_snapshots/arcadedb/3996.md",
+    "source_sha256": "6f85b89847d958047528b71efd81d100f3f896d0e9a27fad5b5aec8883a9cda8",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-4-24/arcadedb_collected_relationship_list_may_drop_rows_after_later_variable_length_match.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-4-24/arcadedb_collected_relationship_list_may_drop_rows_after_later_variable_length_match.md",
+    "source_sha256": "b3d6dbad1de59ccb465b14e1994ecdc616ec5929eaca96dc6cab0fed2d14599e",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-4-24/arcadedb_merge_with_unbound_label_only_endpoint_may_reuse_existing_node.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-4-24/arcadedb_merge_with_unbound_label_only_endpoint_may_reuse_existing_node.md",
+    "source_sha256": "bd2364c488405d3c7f1d43406beedb3d10da7e04308fb43a768901deee645f49",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-4-24/arcadedb_relationship_variable_may_be_lost_after_later_variable_length_match.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-4-24/arcadedb_relationship_variable_may_be_lost_after_later_variable_length_match.md",
+    "source_sha256": "65cd7fe215985a90dd305ea20244575c253086b7f646670cec59aa484693cce4",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-4-24/arcadedb_set_may_leave_other_aliases_to_same_node_stale.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-4-24/arcadedb_set_may_leave_other_aliases_to_same_node_stale.md",
+    "source_sha256": "590cfa16a3b70e7865b407cbcd49d302467b5129e1021f86b7e8f1f3ef1f3227",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-4-25/arcadedb_correlated_collect_subquery_with_outer_variable_access_may_evaluate_as_empty_list.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-4-25/arcadedb_correlated_collect_subquery_with_outer_variable_access_may_evaluate_as_empty_list.md",
+    "source_sha256": "8cad3046287e1e02288e0f81dc21ad86c78c16dcc75f57de40fd0c35c9a3afbf",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-4-25/arcadedb_correlated_count_subquery_with_outer_variable_access_may_evaluate_as_zero.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-4-25/arcadedb_correlated_count_subquery_with_outer_variable_access_may_evaluate_as_zero.md",
+    "source_sha256": "063085b3d665210ce539bbdd6e34cd8c272eb34de268151bdd714a3d7945d617",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-4-25/arcadedb_repeated_self_referential_property_update_across_row_fanout_may_apply_only_last_row.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-4-25/arcadedb_repeated_self_referential_property_update_across_row_fanout_may_apply_only_last_row.md",
+    "source_sha256": "5e207dbd3d60cd618f2f032538b2150eacdfdcf5332a089ddc3d41f852b3e60c",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-4-25/arcadedb_repeated_set_label_on_same_node_across_row_fanout_may_fail.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-4-25/arcadedb_repeated_set_label_on_same_node_across_row_fanout_may_fail.md",
+    "source_sha256": "d0831d5d1c195a5e8830165aee36a8c996d43ddbd74b9496e3070dd1700698e5",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-4-25/arcadedb_temporal_component_access_may_return_null.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-4-25/arcadedb_temporal_component_access_may_return_null.md",
+    "source_sha256": "c5d8cd0f615214d27fc0d6346460765a890e11c34763919918bdab88f7d1d3ef",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-4-25/arcadedb_with_carried_node_variable_may_become_null_after_create_or_merge.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-4-25/arcadedb_with_carried_node_variable_may_become_null_after_create_or_merge.md",
+    "source_sha256": "88f440f06a69cc68db86100a84dab765d99726227dfe1c4d29bd7f489b0275d0",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_allreduce_may_evaluate_true_cases_as_false.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_allreduce_may_evaluate_true_cases_as_false.md",
+    "source_sha256": "da365762919f2ebc07c5cc4a7ec456974957cc5004612f62dec8b7de73fba60f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_anonymous_middle_node_in_linear_pattern_may_match_no_rows.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_anonymous_middle_node_in_linear_pattern_may_match_no_rows.md",
+    "source_sha256": "0a79a55b2ba75495aaaca383b75af16530ec6015c97493332f79aca99bc277a4",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_backslash_in_string_literal_or_property_value_may_be_dropped.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_backslash_in_string_literal_or_property_value_may_be_dropped.md",
+    "source_sha256": "3e9c92980ca4d7363e038ba4ffc57388d623cf5674d385364b8be5fc5cc93b07",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_call_db_labels_may_nullify_carried_variables.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_call_db_labels_may_nullify_carried_variables.md",
+    "source_sha256": "dee482345e54cc50c376f9d8a2b8b2bb8bbaac18c0f9b257c92b3a36e844cd61",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_consecutive_directed_relationship_patterns_may_reuse_same_relationship.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_consecutive_directed_relationship_patterns_may_reuse_same_relationship.md",
+    "source_sha256": "241d0435ca79e309970b80229982166341c0819470d1e4e09ffe876db4170abc",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_consecutive_undirected_relationship_patterns_may_reuse_same_relationship.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_consecutive_undirected_relationship_patterns_may_reuse_same_relationship.md",
+    "source_sha256": "9e9398efaf06bd916fa58c48aeca58f83895d299a233f9f97e4a8a7cd05ac45c",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_exists_subquery_returning_outer_variable_expression_may_evaluate_as_false.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_exists_subquery_returning_outer_variable_expression_may_evaluate_as_false.md",
+    "source_sha256": "9a4fd4031554b0e3b968cf13928551d73133b373c25f40cc1d00f85baf3712c7",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_list_literal_containing_duration_may_drop_all_rows.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_list_literal_containing_duration_may_drop_all_rows.md",
+    "source_sha256": "fa62d3a360e6b034497cb09d87191a266b58fafd4ed35270ce8ca3c88df6be62",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_list_subscript_with_inline_aggregate_index_may_return_null.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_list_subscript_with_inline_aggregate_index_may_return_null.md",
+    "source_sha256": "7ac791f58076ab3f91743230108234b399675306e4f9376d2e15cea88d2d25ec",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_match_immediately_after_create_may_not_see_newly_created_labeled_nodes.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_match_immediately_after_create_may_not_see_newly_created_labeled_nodes.md",
+    "source_sha256": "7d3fa72b312a87485e5f8467308b298c8f157e69ca7c2f8e0e13fbf699630abb",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_match_on_null_carried_variable_may_keep_row_instead_of_filtering.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_match_on_null_carried_variable_may_keep_row_instead_of_filtering.md",
+    "source_sha256": "b5a5bae7076a3f1d3c7b1f5d735c267f47281be9b1fb70f2f42581ddbc826e7f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_merge_on_match_set_may_return_pre_update_property_in_first_row.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_merge_on_match_set_may_return_pre_update_property_in_first_row.md",
+    "source_sha256": "c96c40523c9ca8a8c6961fa85af2e441cdd82e6177d83bf9a332c1f3c0463628",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/arcadedb/4104.md",
+    "package_path": "reproduction/report_snapshots/arcadedb/4104.md",
+    "source_sha256": "4317d17dd07df1ca5e5d5a734af6b3d96945439959e2368ff365244cd5d2c108",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_node_label_union_pattern_may_match_no_rows.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_node_label_union_pattern_may_match_no_rows.md",
+    "source_sha256": "6bbbf2891f6fc08f8963555b18a6a5e94f084653ef73bbfbb289be9194209968",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_pattern_comprehension_over_existing_relationships_may_evaluate_as_empty_list.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_pattern_comprehension_over_existing_relationships_may_evaluate_as_empty_list.md",
+    "source_sha256": "69a2fc237fbb2e0e8ee2d020ca811443cd2eb6d5d6f1f2753fc29f820a0de571",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_reduce_over_inline_aggregate_expression_may_be_evaluated_incorrectly.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_reduce_over_inline_aggregate_expression_may_be_evaluated_incorrectly.md",
+    "source_sha256": "c9d494e998bb8209343a019a1294ca2f684eb0dbfa2292baae8bb297332fd862",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_relationship_type_predicate_on_bound_relationship_variable_may_evaluate_as_false.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_relationship_type_predicate_on_bound_relationship_variable_may_evaluate_as_false.md",
+    "source_sha256": "b1d332bf834296ffd281e2c956993223a9b00adece19f5ecd735d901132159f8",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_repeated_relationship_variable_in_where_pattern_may_match_rows_instead_of_none.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_repeated_relationship_variable_in_where_pattern_may_match_rows_instead_of_none.md",
+    "source_sha256": "d7eac4d5dc20214d9330ca8016acd41edfcf137e4ea12e0c88cb3fbd0b0ba881",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_uncorrelated_pattern_predicate_may_evaluate_as_false_even_when_relationships_exist.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_uncorrelated_pattern_predicate_may_evaluate_as_false_even_when_relationships_exist.md",
+    "source_sha256": "98b74c45992bff88ad67869bc4b7579bfdff0f7dbaa05b5a9d9f50a4f4a66500",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_variable_length_pattern_comprehension_may_duplicate_results.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_variable_length_pattern_comprehension_may_duplicate_results.md",
+    "source_sha256": "cc7f3ca8da9892f7d33f9308f67e6887acea641c895e083652925e932b2298c6",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_where_false_literal_predicate_may_be_ignored.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-1/arcadedb_where_false_literal_predicate_may_be_ignored.md",
+    "source_sha256": "ece49d47086a0bb03f9a134075757cf49ece3dd3418e337812ba70d2b7fdaf91",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_call_subquery_set_may_leave_outer_variable_stale.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_call_subquery_set_may_leave_outer_variable_stale.md",
+    "source_sha256": "337109b51ef0dcab5e4eaebe871b1bfa658a1bc2f1ebb71f2c5995119c187b73",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_id_function_may_return_record_id_strings_and_break_numeric_predicates.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_id_function_may_return_record_id_strings_and_break_numeric_predicates.md",
+    "source_sha256": "3ad8b757bd088e9c96134a0575d8ba1a797206aa4fb48a16cfc2195ddc8daf0a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_map_projection_with_function_call_field_may_return_only_function_result.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_map_projection_with_function_call_field_may_return_only_function_result.md",
+    "source_sha256": "6483849f93fd5b87b61b139d80784b10eb42335f91d09b1c6b2a540c4ee3031b",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_nodes_deleted_earlier_in_same_query_may_still_match_later.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_nodes_deleted_earlier_in_same_query_may_still_match_later.md",
+    "source_sha256": "a9546e86b45a2a9643070f2e21cd1650de717b1eddbc57bd7b488ae0a8a9895f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_reduce_over_null_list_may_return_initial_accumulator_instead_of_null.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_reduce_over_null_list_may_return_initial_accumulator_instead_of_null.md",
+    "source_sha256": "b8595aadbc046bafcac21a5124ed3cf67e70c73a189c09e7f0cfb2f81636adb4",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_relationship_pattern_with_variable_property_constrained_endpoint_may_match_no_rows.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_relationship_pattern_with_variable_property_constrained_endpoint_may_match_no_rows.md",
+    "source_sha256": "eb6e5a1afc93077ffe6b37b1380c3badab99055e839b220e1d9a8fac01be08a1",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_return_distinct_star_may_collapse_multiple_rows_into_one.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_return_distinct_star_may_collapse_multiple_rows_into_one.md",
+    "source_sha256": "4d45ce6a97c666a1a0ad61df05f6946f5405e7ac6a2f2b42eddb0d6aeb883c6f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_shortest_path_with_variable_length_relationship_type_alternation_may_match_no_rows.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_shortest_path_with_variable_length_relationship_type_alternation_may_match_no_rows.md",
+    "source_sha256": "12ff81a81be53e7b24abcf54b896197195897538d05ccd96207fc056cf1d19c4",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_write_only_call_subquery_may_return_one_empty_row.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-7/arcadedb_write_only_call_subquery_may_return_one_empty_row.md",
+    "source_sha256": "90fade19dcfe549f805c6759ec841ae9174156fbb2c7d45087acbd83c9c1d6a8",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-12/arcadedb_node_label_disjunction_pattern_may_match_no_rows.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-12/arcadedb_node_label_disjunction_pattern_may_match_no_rows.md",
+    "source_sha256": "f65e49d019f6d09898dc3a0b5519d5c75a250221a19f40833497978d3da6c5c1",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/arcadedb/2026-5-12/arcadedb_relationship_write_after_optional_match_with_null_endpoint_may_emit_rows_or_rebind_endpoint.md",
+    "package_path": "issue_reports/submitted/arcadedb/2026-5-12/arcadedb_relationship_write_after_optional_match_with_null_endpoint_may_emit_rows_or_rebind_endpoint.md",
+    "source_sha256": "55986fad49279c07fec451c002e6c7ff4a69f18a2cfe0615a42554be513bebfc",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/arcadedb/4305.md",
+    "package_path": "reproduction/report_snapshots/arcadedb/4305.md",
+    "source_sha256": "fbe1b0740eacd0a38946731bf5b9e6dadcbeac2d759ce4b96bebcfb2a0e9fe94",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/falkordb/1845.md",
+    "package_path": "reproduction/report_snapshots/falkordb/1845.md",
+    "source_sha256": "a70535e5458f5cde87c9c2549a15ae726346f20a5266d2d0e5d8af14da5e57bc",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/old/falkordb_call_subquery_merge_may_drop_rows.md",
+    "package_path": "issue_reports/submitted/falkordb/old/falkordb_call_subquery_merge_may_drop_rows.md",
+    "source_sha256": "8eefea1f2da93fbf048797e524a0fb45907b0e6a305ad32680dbab3fd221b823",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/old/falkordb_count_may_undercount_parallel_edges_of_different_types.md",
+    "package_path": "issue_reports/submitted/falkordb/old/falkordb_count_may_undercount_parallel_edges_of_different_types.md",
+    "source_sha256": "592c1dd463c338c92219b7c501a4f6f98e3a656e62ba8d495d7eb1e7ae95af04",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/old/falkordb_merge_relationship_to_node_pattern_from_subquery_alias.md",
+    "package_path": "issue_reports/submitted/falkordb/old/falkordb_merge_relationship_to_node_pattern_from_subquery_alias.md",
+    "source_sha256": "a876ee779b798d7438bb22fda008c0b8216be17dc3450f5190103e641c780950",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/falkordb/1943.md",
+    "package_path": "reproduction/report_snapshots/falkordb/1943.md",
+    "source_sha256": "e1e7e07e7e7f0a2371f3d07504999bd53b48f3913c262850db783202bcf9931a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_converging_pattern_may_reuse_same_relationship_twice.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_converging_pattern_may_reuse_same_relationship_twice.md",
+    "source_sha256": "2eb3a35afb350f8336c2529428fb71b0bc2b18d3aac35b2c9ca54495fb5b8884",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_created_relationship_may_be_invisible_to_later_match_in_same_query.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_created_relationship_may_be_invisible_to_later_match_in_same_query.md",
+    "source_sha256": "1d7eabae22f579f756715af7f6267a75274ba71efb5755cf65eb9e5b8c9eb8a1",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_deleted_node_value_may_retain_pre_delete_properties.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_deleted_node_value_may_retain_pre_delete_properties.md",
+    "source_sha256": "7e2869ca0c817aaf265ee298aeaa562ea8faa784b6a12bb231ea78ab7e131186",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_directed_varlength_cycle_path_back_to_start_may_return_nodes_in_impossible_order.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_directed_varlength_cycle_path_back_to_start_may_return_nodes_in_impossible_order.md",
+    "source_sha256": "2e99a809f1fd6f5c86053bc8a68cc12a867d67c470d0e74a2682bfd241be8cfc",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_grouped_aggregation_may_collapse_parallel_relationships_between_same_endpoints.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_grouped_aggregation_may_collapse_parallel_relationships_between_same_endpoints.md",
+    "source_sha256": "5b5fbbcd591b3e5906a5df97798962e8186b4b214e324cc2a4bdaf337b0c018a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_match_on_multiple_carried_variables_after_with_crashes_server.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_match_on_multiple_carried_variables_after_with_crashes_server.md",
+    "source_sha256": "dbe3543e300c68d4aeb4faaddd138acfa4f118f3aba1eab58c849598b0ee79d8",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_optional_match_after_prior_traversal_may_duplicate_rows.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_optional_match_after_prior_traversal_may_duplicate_rows.md",
+    "source_sha256": "6a2d85b4f5939537109f546f360556278781a057c00e30035d23689ee511c6b2",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/falkordb/1952.md",
+    "package_path": "reproduction/report_snapshots/falkordb/1952.md",
+    "source_sha256": "5f01f89f3bb076a1e8199a0c1adc21ef104a4fa5b9628b6d863eecbe75a9bc87",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_pattern_comprehension_may_drop_null_projection_elements.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_pattern_comprehension_may_drop_null_projection_elements.md",
+    "source_sha256": "1ef03f2e715950218706948378c57e276dbd3f9a951cc2e4b5b913b77c1b51cb",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_pattern_exists_on_isolated_or_unrelated_node_may_return_true.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_pattern_exists_on_isolated_or_unrelated_node_may_return_true.md",
+    "source_sha256": "59f504fcb1dca2e84af4371f09db52367c2ff036a86f8cecddd36028f16b54ad",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_relationship_merge_after_batched_create_may_drop_all_rows.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_relationship_merge_after_batched_create_may_drop_all_rows.md",
+    "source_sha256": "fb4a58cf08e362075e71c9aa72904730fb78e12d83f90c0497ec406f8b0f704f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_relationship_merge_may_collapse_repeated_upstream_rows.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_relationship_merge_may_collapse_repeated_upstream_rows.md",
+    "source_sha256": "f1766ae5d614841f52465048721e5fe27cd6f20cdc287b1073ce1dd34d496074",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_unbounded_undirected_varlength_pattern_may_undercount_paths_in_cyclic_graph.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_unbounded_undirected_varlength_pattern_may_undercount_paths_in_cyclic_graph.md",
+    "source_sha256": "6df34055c2b4457fd39a0c7abfaa0aca276af27bd00e982708aeb19961454abd",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_union_may_fail_to_deduplicate_identical_rows_after_relationship_write.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_union_may_fail_to_deduplicate_identical_rows_after_relationship_write.md",
+    "source_sha256": "415a5f4d2db693b19be972c5fa47bdd5c2c8988e7641cf5530b7535eb7155ef2",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_variable_length_path_may_ignore_self_loop_contributed_paths.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-4-29/falkordb_variable_length_path_may_ignore_self_loop_contributed_paths.md",
+    "source_sha256": "f376433c29422e021bd55d4e0ee4363f126f8ef110fbc4b0f5bb3a46e9b8918c",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_optional_match_on_two_bound_variables_may_crash_server.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_optional_match_on_two_bound_variables_may_crash_server.md",
+    "source_sha256": "622ff92f5f16ec60b87bdaf50c79066ec05294041f475c5f10f80316cc335247",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_repeated_relationship_variable_in_post_with_pattern_predicate_may_crash_server.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_repeated_relationship_variable_in_post_with_pattern_predicate_may_crash_server.md",
+    "source_sha256": "ee40ffaf7f22ed51b407c9af120a889c16d188d81b368f545b999501dd2e3ae1",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_xor_with_anonymous_pattern_predicate_may_crash_server.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_xor_with_anonymous_pattern_predicate_may_crash_server.md",
+    "source_sha256": "d01dea27df5f2de1dd4e038d12149ed323a4ee47e58bff06425e4dec023cd100",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_all_list_predicate_on_carried_variable_after_with_may_filter_matching_rows.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_all_list_predicate_on_carried_variable_after_with_may_filter_matching_rows.md",
+    "source_sha256": "9dee0ed3231147aefe91dae01e08a2c2a5d34e5b3ed2d9bf3a9ad1693ec788e2",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_anonymous_pattern_predicate_after_with_may_fail_with_filtered_alias_errors.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_anonymous_pattern_predicate_after_with_may_fail_with_filtered_alias_errors.md",
+    "source_sha256": "2b696dbf047df61feee765acc9d9e99374a9dd9701f71126a92c9ffda6859255",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_carried_relationship_variable_may_lose_identity_in_later_match.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_carried_relationship_variable_may_lose_identity_in_later_match.md",
+    "source_sha256": "b69d9e63945d18885a271d95118c2d300eb86d189cfc0529c44db5e65530ca59",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_duration_ordering_comparisons_may_return_boolean_instead_of_null.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_duration_ordering_comparisons_may_return_boolean_instead_of_null.md",
+    "source_sha256": "621b6b1f3002b8b57aec8d157dcb91601ca481ecc0f2df4b8f6a722baf50ce08",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_later_pattern_comprehension_in_same_return_clause_may_evaluate_as_empty.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_later_pattern_comprehension_in_same_return_clause_may_evaluate_as_empty.md",
+    "source_sha256": "93f4d9c6fc4ec79890e2745f916ac964e757c15a655817a777faefccc8ab049d",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_list_comprehension_over_collect_may_return_null_when_expression_uses_outer_variable.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_list_comprehension_over_collect_may_return_null_when_expression_uses_outer_variable.md",
+    "source_sha256": "42d0fd63b1770b5e9f3909d84d7c81a4cf051ab5fda0dd26dfd6097d1a074c28",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_match_on_multiple_carried_variables_with_where_may_fail_filtered_alias.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_match_on_multiple_carried_variables_with_where_may_fail_filtered_alias.md",
+    "source_sha256": "ca38ae320cbf8bd7b6097a1b924a4a72ed1fdaf229cb36ba1ab1028cee6ffef4",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_nested_pattern_comprehension_inside_list_comprehension_may_ignore_outer_variable.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_nested_pattern_comprehension_inside_list_comprehension_may_ignore_outer_variable.md",
+    "source_sha256": "9edbf913aef9f3fe7425cf4b6f275f2625acee388f9b305238295f641b681dff",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-7/falkordb_anonymous_undirected_relationship_pattern_may_collapse_parallel_edges_between_same_endpoints.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-7/falkordb_anonymous_undirected_relationship_pattern_may_collapse_parallel_edges_between_same_endpoints.md",
+    "source_sha256": "672fbbe9c3e5106cd6392386926d4f32d0e43c5c9e524003d2c2bab73b4fc53e",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-7/falkordb_later_assignment_to_same_property_may_ignore_earlier_update_across_variables.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-7/falkordb_later_assignment_to_same_property_may_ignore_earlier_update_across_variables.md",
+    "source_sha256": "0666fe5b982d3e741ef9f7d740fe51a5d58bcd4d5bf1590aa93b27d1c4bdb7d3",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-7/falkordb_later_union_branches_may_not_see_nodes_created_before_union.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-7/falkordb_later_union_branches_may_not_see_nodes_created_before_union.md",
+    "source_sha256": "cef0e80ee04ba9ca23c8a5dbc898442aacbf066809b143b89f100a13d8ce8437",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-7/falkordb_top_level_optional_match_null_row_may_survive_later_where_filter.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-7/falkordb_top_level_optional_match_null_row_may_survive_later_where_filter.md",
+    "source_sha256": "36fae845c6852e5278bd23732e409bbed72cbeae0d8f58481d1a62b56640eb45",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_unwind_over_pattern_comprehension_may_fail_with_internal_alias_resolution_error.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_unwind_over_pattern_comprehension_may_fail_with_internal_alias_resolution_error.md",
+    "source_sha256": "69dc38253c5b072ad1babe047130c691ef7ace145d624e64a78d7da8e5226a81",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_pattern_comprehension_in_where_may_fail_with_filtered_alias.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_pattern_comprehension_in_where_may_fail_with_filtered_alias.md",
+    "source_sha256": "305fa15c189fd6ceee9d388238ddaab67fd7d87bb1b07fb94a9bb913374d210b",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_order_by_length_of_path_after_projecting_path_contents_may_raise_internal_alias_error.md",
+    "package_path": "issue_reports/submitted/falkordb/2026-5-1/falkordb_order_by_length_of_path_after_projecting_path_contents_may_raise_internal_alias_error.md",
+    "source_sha256": "07301213fc3d650af654c332daa09b51185e944fb9a8e3eb0936d95298da8911",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/falkordb/2066.md",
+    "package_path": "reproduction/report_snapshots/falkordb/2066.md",
+    "source_sha256": "45b9b7f419be5e8c491083281567094684414584bb1913768dc3d9275c533c93",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/falkordb/2196.md",
+    "package_path": "reproduction/report_snapshots/falkordb/2196.md",
+    "source_sha256": "7d7b470d967b77e5ead95549a986d23e4316e70c4d41714642c900a505c4373b",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/memgraph/3909.md",
+    "package_path": "reproduction/report_snapshots/memgraph/3909.md",
+    "source_sha256": "21c1f35e321898cb5137ea225e45303fd78dfecc53c1a9fb4086ef5bed7d4662",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/memgraph/3915.md",
+    "package_path": "reproduction/report_snapshots/memgraph/3915.md",
+    "source_sha256": "88e9732abdd089cdbd7f150c8df0f550ea37ac80e1939197948510d00f6aa20c",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/memgraph/3955.md",
+    "package_path": "reproduction/report_snapshots/memgraph/3955.md",
+    "source_sha256": "06b6ad2df6684c2d0f0423d6c6e6160e36a1328dc912ae84085959099302aebd",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/memgraph/3970.md",
+    "package_path": "reproduction/report_snapshots/memgraph/3970.md",
+    "source_sha256": "d6b958972719f6a93996dd8a545de5873294bd7ee953969506b466dd2d1f9847",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/memgraph/old/memgraph_order_by_projected_property_bug.md",
+    "package_path": "issue_reports/submitted/memgraph/old/memgraph_order_by_projected_property_bug.md",
+    "source_sha256": "71bef7515383eea1609c764181bf5066f4600401c9b99b8e05d9da409d7e53b2",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/memgraph/4007.md",
+    "package_path": "reproduction/report_snapshots/memgraph/4007.md",
+    "source_sha256": "39d5b493b8c6f850d08ee98cf07dcf9247421f1c4c5f5f0e6b7b38b86d736059",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/memgraph/2026-4-23/memgraph_union_all_limited_read_branch_followed_by_matched_write_hangs_candidate.md",
+    "package_path": "issue_reports/submitted/memgraph/2026-4-23/memgraph_union_all_limited_read_branch_followed_by_matched_write_hangs_candidate.md",
+    "source_sha256": "64ae5fbebf9babacb42330024dc84bd4cdcc6495fc3a7e7b54ad0572b53208e2",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/memgraph/4068.md",
+    "package_path": "reproduction/report_snapshots/memgraph/4068.md",
+    "source_sha256": "cc824fa32e921ad7dc0824f063b70fd385abad7d33531ed92e41ef1fb4f23edd",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/memgraph/2026-4-23/memgraph_list_comprehension_on_null_optional_relationship_properties_filters_out_rows.md",
+    "package_path": "issue_reports/submitted/memgraph/2026-4-23/memgraph_list_comprehension_on_null_optional_relationship_properties_filters_out_rows.md",
+    "source_sha256": "400b9f90f75dcd51f4c528540e6afe2f012b1e480c653a4f2ec449d2a8701156",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/memgraph/2026-4-23/memgraph_correlated_exists_in_where_may_trigger_internal_error_candidate.md",
+    "package_path": "issue_reports/submitted/memgraph/2026-4-23/memgraph_correlated_exists_in_where_may_trigger_internal_error_candidate.md",
+    "source_sha256": "0418dada96228d76ab782ef31da129e8362b8ddcb48e5c3b47db2c3fc982a1af",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/memgraph/4084.md",
+    "package_path": "reproduction/report_snapshots/memgraph/4084.md",
+    "source_sha256": "c469ce2879bbf62582cf1a00692d109e0f8c80c73741b59a3dc48f5a409653e3",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/memgraph/4085.md",
+    "package_path": "reproduction/report_snapshots/memgraph/4085.md",
+    "source_sha256": "905c8311f6ad4594963605b19180f48a9a24745e08b1a810e291a02bfede0420",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/memgraph/4086.md",
+    "package_path": "reproduction/report_snapshots/memgraph/4086.md",
+    "source_sha256": "081d78522e682600b1c173b0b760602eed2f54112cd1a480a5ab950a2c810f88",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/memgraph/2026-4-30/memgraph_later_union_branch_may_not_see_nodes_created_in_earlier_branch.md",
+    "package_path": "issue_reports/submitted/memgraph/2026-4-30/memgraph_later_union_branch_may_not_see_nodes_created_in_earlier_branch.md",
+    "source_sha256": "5f04211cf8c271b1bd66578810c23037b455c50f752ff828cff9adbb59d7020a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/memgraph/2026-4-30/memgraph_nested_pattern_comprehension_inside_outer_list_comprehension_may_duplicate_matches.md",
+    "package_path": "issue_reports/submitted/memgraph/2026-4-30/memgraph_nested_pattern_comprehension_inside_outer_list_comprehension_may_duplicate_matches.md",
+    "source_sha256": "9195e7f5dabebd6e1f15356a56eccd639f70e86c2dac50372f86a29c2b227ba3",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/memgraph/2026-4-30/memgraph_undirected_relationship_type_alternation_may_double_count_rows.md",
+    "package_path": "issue_reports/submitted/memgraph/2026-4-30/memgraph_undirected_relationship_type_alternation_may_double_count_rows.md",
+    "source_sha256": "425bacf97006dcba7e74a6bfee18ce4b6571c0babfdd3efba1b10080ea882ca8",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/memgraph/2026-5-7/memgraph_in_predicate_with_duplicate_string_literals_may_duplicate_matching_rows.md",
+    "package_path": "issue_reports/submitted/memgraph/2026-5-7/memgraph_in_predicate_with_duplicate_string_literals_may_duplicate_matching_rows.md",
+    "source_sha256": "425b90c20e36e7fd05f3155ea6914c9c2fbcd8f643f15649ab1569e0d690bf05",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/memgraph/2026-5-7/memgraph_later_union_all_branch_may_not_see_relationships_created_in_earlier_branch.md",
+    "package_path": "issue_reports/submitted/memgraph/2026-5-7/memgraph_later_union_all_branch_may_not_see_relationships_created_in_earlier_branch.md",
+    "source_sha256": "0d734fd73151bc548bde477b32a95dda603812a551cedc162b10c3db3d8a6dab",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/memgraph/2026-5-12/memgraph_pattern_comprehension_may_ignore_relationship_created_earlier_in_same_clause.md",
+    "package_path": "issue_reports/submitted/memgraph/2026-5-12/memgraph_pattern_comprehension_may_ignore_relationship_created_earlier_in_same_clause.md",
+    "source_sha256": "748d8bf0c76d98f3de0d6215f7653a78d949f47eb2bcc13ae0fd7c27e5fa1123",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/memgraph/2026-5-17/memgraph_aggregate_plus_scalar_subexpression_over_empty_input_may_return_no_rows.md",
+    "package_path": "issue_reports/submitted/memgraph/2026-5-17/memgraph_aggregate_plus_scalar_subexpression_over_empty_input_may_return_no_rows.md",
+    "source_sha256": "bf45681587c516cbc87aad737562b2af227c61712c3aee767685c3a15a74b9a7",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/memgraph/2026-5-17/memgraph_deprecated_call_write_subquery_may_nullify_outer_variable.md",
+    "package_path": "issue_reports/submitted/memgraph/2026-5-17/memgraph_deprecated_call_write_subquery_may_nullify_outer_variable.md",
+    "source_sha256": "94f6f9475e18d72ccbe99ea13b7d72d2d94e3d06c7352523d9d4110d91f04763",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/memgraph/2026-5-17/memgraph_inline_size_of_pattern_comprehension_filter_after_with_may_ignore_correlation.md",
+    "package_path": "issue_reports/submitted/memgraph/2026-5-17/memgraph_inline_size_of_pattern_comprehension_filter_after_with_may_ignore_correlation.md",
+    "source_sha256": "a5a494508bb493e10fda2bfb5f3c5cb867cc984d2362b49d8ec93f5189813680",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/memgraph/2026-5-17/memgraph_label_only_merge_binding_may_expand_after_later_same_label_merge.md",
+    "package_path": "issue_reports/submitted/memgraph/2026-5-17/memgraph_label_only_merge_binding_may_expand_after_later_same_label_merge.md",
+    "source_sha256": "259c230abfe867995f4f8ae1249ec478f1c474bee38d287342d076df734d92f9",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/memgraph/2026-5-17/memgraph_list_comprehension_filter_may_return_null_when_predicate_is_null_for_some_elements.md",
+    "package_path": "issue_reports/submitted/memgraph/2026-5-17/memgraph_list_comprehension_filter_may_return_null_when_predicate_is_null_for_some_elements.md",
+    "source_sha256": "978e7f5ff574c9041b36aae00b8feda05e7bd311a71ee128bd809188c09fe2c4",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "issue_reports/submitted/memgraph/2026-5-17/memgraph_tointeger_large_positive_float_may_wrap_to_int64_min.md",
+    "package_path": "issue_reports/submitted/memgraph/2026-5-17/memgraph_tointeger_large_positive_float_may_wrap_to_int64_min.md",
+    "source_sha256": "d716852dbc5f4a70db62af7a3888a5d4eaabeac1428b2565cdf6a3f18db4f075",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/memgraph/4180.md",
+    "package_path": "reproduction/report_snapshots/memgraph/4180.md",
+    "source_sha256": "599eaf1d1d0bba711473c5a3dbe3a7fbfbec25f2d9c60503812180fd545730a8",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/neo4j/13758.md",
+    "package_path": "reproduction/report_snapshots/neo4j/13758.md",
+    "source_sha256": "4ed12903dccacaca5cadaf89ee182f132d7d8e04538f7eb01f8ba368b0693431",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/neo4j/13810.md",
+    "package_path": "reproduction/report_snapshots/neo4j/13810.md",
+    "source_sha256": "d937b56d9f5309ff8e5fe3de14111c634b5f962a65202834989de43c77a515a4",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/neo4j/13811.md",
+    "package_path": "reproduction/report_snapshots/neo4j/13811.md",
+    "source_sha256": "48ddea2d4dbe230c00ce38f36e9f502522e37829b44c4587015710b24cb6bbc9",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/neo4j/13812.md",
+    "package_path": "reproduction/report_snapshots/neo4j/13812.md",
+    "source_sha256": "436d74448e6733b1d51bc577edf33bc120ab2d8313a18ca1f36dd66ee91d6118",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/neo4j/13818.md",
+    "package_path": "reproduction/report_snapshots/neo4j/13818.md",
+    "source_sha256": "f42893342c94a1899a62c02297cf17cccd359987a711e6c245bd03c53e1a756b",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/neo4j/13819.md",
+    "package_path": "reproduction/report_snapshots/neo4j/13819.md",
+    "source_sha256": "f96ab32ebc5422c2cf954beb06d7a7c246b8c89f5369e8368f5ba410e49525eb",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/neo4j/13825.md",
+    "package_path": "reproduction/report_snapshots/neo4j/13825.md",
+    "source_sha256": "ab811a460624e760b68091f6a758999a056bfb39bdc0967d01ad1a81f2f68406",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/neo4j/13826.md",
+    "package_path": "reproduction/report_snapshots/neo4j/13826.md",
+    "source_sha256": "610f887719ec7e382be8097699fdc8320ef9b0a2c2b268dcaaaf5e3800478b98",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/neo4j/13827.md",
+    "package_path": "reproduction/report_snapshots/neo4j/13827.md",
+    "source_sha256": "0c28970ecb6685c4398ca0c63c730c17dfbe9891c5f207a75ffff753f118d998",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/neo4j/13856.md",
+    "package_path": "reproduction/report_snapshots/neo4j/13856.md",
+    "source_sha256": "002721d63f0919126cbdc7ca2fd8bd34282d4f92a41bf0948763634866075f33",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/neo4j/13859.md",
+    "package_path": "reproduction/report_snapshots/neo4j/13859.md",
+    "source_sha256": "1ff71a72a018b42b8fe104025d2d07605f0467aaf09533be4106551c40ef08e2",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/neo4j/13860.md",
+    "package_path": "reproduction/report_snapshots/neo4j/13860.md",
+    "source_sha256": "16f4ef22b9400ef68836d7e8c0c4e546faa3386ec0dfcb1b00bf030c2d9de653",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/neo4j/13861.md",
+    "package_path": "reproduction/report_snapshots/neo4j/13861.md",
+    "source_sha256": "b87422a56a5197887c9181f49d16bc0aa64e338abac5ee3a366f37892320e00b",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "reproduction/report_snapshots/neo4j/13862.md",
+    "package_path": "reproduction/report_snapshots/neo4j/13862.md",
+    "source_sha256": "070380e52a62978e415bdd95002acc80fc8385b15a728b52652a7e0938452a81",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "paper/bug_example_panels_by_database_20260810.md",
+    "package_path": "paper/bug_example_panels_by_database_20260810.md",
+    "source_sha256": "1a0f4316bda93bd71e1aaf1ff2923729a33d2375beb8978513dbf934d2705cf7",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json",
+    "package_path": "data/baseline_comparison_runs/full_generation_fixed_versions_20260811/analysis_bug_yield/manual_review/manual_confirmed_families.json",
+    "source_sha256": "cc5c7d395db939075f82b4069727f13537faeda7d75078e255532de45ff72870",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/oracle2_smoke/neo4j_silence6666668_issue_details_20260815.json",
+    "package_path": "data/oracle2_smoke/neo4j_silence6666668_issue_details_20260815.json",
+    "source_sha256": "d7eec0718fcb3c876b99572cb5eeab27cf60d861c720d28dc8fb98b0294bfec9",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/feedback_runs/confirmed_bug_feedback_small_20260719_v1/normalized/prepared_queries.jsonl",
+    "package_path": "data/feedback_runs/confirmed_bug_feedback_small_20260719_v1/normalized/prepared_queries.jsonl",
+    "source_sha256": "f3b25d64241969f831bb79aec6c5966536215d927dbdb722938eeac798f7d008",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "paper/final/histdb_fse27_abstract_intro_polished_v6.tex",
+    "package_path": "paper/final/histdb_fse27_abstract_intro_polished_v6.tex",
+    "source_sha256": "acdef05967970fdeed02205f578858bf322d2003bf49b3b889eaa4f8af11f3e4",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/frozen/base_inputs.jsonl",
+    "package_path": "artifact_data/knowledge/base_inputs.jsonl.gz",
+    "source_sha256": "c14f1254917f2bd46aac7083cccc3fa793ab141b97d4d43188567e7ec296bebd",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/frozen/features.jsonl",
+    "package_path": "artifact_data/knowledge/features.jsonl.gz",
+    "source_sha256": "8d375c426394e432d93bcd795e65876fa24704e5c687cb31aa8fda90ee970ab2",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/frozen/memgraph_docs.jsonl",
+    "package_path": "artifact_data/knowledge/memgraph_docs.jsonl.gz",
+    "source_sha256": "a8c79b14f50e49e46526ea8dccdef9b587aef928e09e956384d6117b93d2df85",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/frozen/model.json",
+    "package_path": "artifact_data/knowledge/model.json",
+    "source_sha256": "e9ef7556250985cc687b5d8422c58a840382ebc563511b2cbd8c5174287f2a45",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/frozen/neo4j_docs.jsonl",
+    "package_path": "artifact_data/knowledge/neo4j_docs.jsonl.gz",
+    "source_sha256": "28bff041b8dfc172d19ba24ce2b5d40572aa0a08cade0c3f00dc4ce5bd8f02c2",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/frozen/pipeline.json",
+    "package_path": "artifact_data/knowledge/pipeline.json",
+    "source_sha256": "4ce2012965452cea914f1ea5f9b08284b68f47736d3f8aa6c51d27dc52198a94",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/frozen/skeletons.jsonl",
+    "package_path": "artifact_data/knowledge/skeletons.jsonl.gz",
+    "source_sha256": "1badd738b7a6aaaa1ce0909fbce59edbf911b2bcede889f2376ec3dcd9116aec",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/batch_runs/historical_bug_queries_parallel_llm_v1/stage1/skeletons.jsonl",
+    "package_path": "artifact_data/historical_knowledge/four_project_archive/skeletons.jsonl.gz",
+    "source_sha256": "2030ddf66994874017a54e0dee29526b2818ea2893779076992f88532aad3f0d",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/batch_runs/historical_bug_queries_parallel_llm_v1/stage1/features.jsonl",
+    "package_path": "artifact_data/historical_knowledge/four_project_archive/features.jsonl.gz",
+    "source_sha256": "5c267706f68e23a6b2c127ae51f3b2e462fcdb7cda5b233f86c35116ec988423",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/batch_runs/historical_bug_queries_parallel_llm_v1/stage1/skeleton_pool.jsonl",
+    "package_path": "artifact_data/historical_knowledge/four_project_archive/skeleton_pool.jsonl.gz",
+    "source_sha256": "de39287cde295406f44b75974cc72290dec1cafd2f968305baf9cea3ceda40a1",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/batch_runs/historical_bug_queries_parallel_llm_v1/stage1/feature_pool.jsonl",
+    "package_path": "artifact_data/historical_knowledge/four_project_archive/feature_pool.jsonl.gz",
+    "source_sha256": "ecf31481ab61938fcf82c08a229a3af26c50a60a7b7b8b8c43cff380fcce94ef",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/batch_runs/historical_bug_queries_parallel_llm_v1/stage1/summary.json",
+    "package_path": "artifact_data/historical_knowledge/four_project_archive/summary.json",
+    "source_sha256": "862aaacd3a08b7a28257d0cd9bf7394e5b6c0e6948418f850b43cb966939b023",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/stage1_runs/stage1_memgraph_llm/skeletons.jsonl",
+    "package_path": "artifact_data/historical_knowledge/memgraph_archive/skeletons.jsonl.gz",
+    "source_sha256": "95d9d0984ab2a1eb2a82e69c61d0290ec0be48e7ce408436dbbdb309241c45e7",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/stage1_runs/stage1_memgraph_llm/features.jsonl",
+    "package_path": "artifact_data/historical_knowledge/memgraph_archive/features.jsonl.gz",
+    "source_sha256": "1e25d599f669822880f32c05e3f6aba5203c6bac93cd32df1f65872710d81475",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/stage1_runs/stage1_memgraph_llm/skeleton_pool.jsonl",
+    "package_path": "artifact_data/historical_knowledge/memgraph_archive/skeleton_pool.jsonl.gz",
+    "source_sha256": "5981d64dbabaa2693791d5f44f1c7820030dd75d85691da2292a6720d7653364",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/stage1_runs/stage1_memgraph_llm/feature_pool.jsonl",
+    "package_path": "artifact_data/historical_knowledge/memgraph_archive/feature_pool.jsonl.gz",
+    "source_sha256": "e008cf4685aff2fa8ba722b321d05a85edec33bc4972ec4a100750cf14f85363",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/stage1_runs/stage1_memgraph_llm/summary.json",
+    "package_path": "artifact_data/historical_knowledge/memgraph_archive/summary.json",
+    "source_sha256": "b8e762f00b76b254d664ae4394bdaa8251e47604645517fb22fe9db6d8d3570d",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/results.json",
+    "package_path": "artifact_data/rq2/main/results.json",
+    "source_sha256": "1d7968a68bc1573002c19aeed886c6abf940be0143ac9a25c7a58eb891c573a6",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_01.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_01.jsonl.gz",
+    "source_sha256": "fe021e8fe84db45bc15ae72480985e41b5b36613f4bda3f2570632abfe1bb4be",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_02.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_02.jsonl.gz",
+    "source_sha256": "568df7680880a5824865b53bb4fb9d7560259c77cf86a55956e3d609f8007323",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_03.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_03.jsonl.gz",
+    "source_sha256": "3ab14949a83575a8a2979ffc3f332a2aaf6d7ac6e1d8df8d7a63525784392369",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_04.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_04.jsonl.gz",
+    "source_sha256": "42accf950451ece3c3665953da26eafba6ba912831e6f34b63830d17cf5a44ae",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_05.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_05.jsonl.gz",
+    "source_sha256": "94afc95f9fbb7c51649251d60914988c838abcd3bccdb5327e1f3b8376bf6df9",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_06.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_06.jsonl.gz",
+    "source_sha256": "823e8d01a4c5287bd4c5407c60a8b7336602507fbf369ae2455b6d6d56af75cc",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_07.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_07.jsonl.gz",
+    "source_sha256": "c52ff4e28409985b5715e19ce9cd905d0129589b85c22ecbf18853b8853b800d",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_08.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_08.jsonl.gz",
+    "source_sha256": "9a676a8f9de062fb00ee4045ca7042264104cb8d14a9a6ad5f859535cc9cd0cc",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_09.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_09.jsonl.gz",
+    "source_sha256": "4008d1dbb3b5c91d883731fa21a311e075f3784a354750a1853a4d99f8ad4e46",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_10.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_10.jsonl.gz",
+    "source_sha256": "ef9abf70a77c85eb991d74e8b259cec57c872d26453131e3a755de8668a39b69",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_11.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_11.jsonl.gz",
+    "source_sha256": "5cbbfafdaca12348388000084c306e7929ef82a41960f7f2b09ebe5292362e96",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_12.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_12.jsonl.gz",
+    "source_sha256": "6ae98643cd6921d9dafd1ba6faad9e54cb77b2b925265eced903d94998cda235",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_13.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_13.jsonl.gz",
+    "source_sha256": "da1ed4fe0e4fbee2435120f23ee137e2a1048045fb8ef9f32cc4fcf65b61ed30",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_14.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_14.jsonl.gz",
+    "source_sha256": "56dc74f45bfb77d7c5b728b82a0671b42a05ca87e1c9b5a36ee3d23718eebac6",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_15.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_15.jsonl.gz",
+    "source_sha256": "1b14793088df8908401f368f67df2d2c2609b46d9077015149f039c7423f5515",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_16.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_16.jsonl.gz",
+    "source_sha256": "e80bdf2d0bf1690fb2bbbaf54758dee4bd950cfacb8f35adb12d812462353bea",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_17.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_17.jsonl.gz",
+    "source_sha256": "ac31ff87d6e782cb8bc17dfee5e5caa6bc59a4f901128e0cdee5ea6fa52158c7",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_18.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_18.jsonl.gz",
+    "source_sha256": "22d5836f55e9bece0c2fa38e55c5f0f9ed9a36d47aa0f2a03e59cfc3b6f8298d",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_19.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_19.jsonl.gz",
+    "source_sha256": "f44cb968267c64d0e6132c8577629802ab4d7ea52ec1551ec799142af8dda22a",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_20.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_20.jsonl.gz",
+    "source_sha256": "85db35329faa71dd1dedb66392b2801bca23bf648ccd905641b3e58272bf9831",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_21.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_21.jsonl.gz",
+    "source_sha256": "bd020f78f2a211206364387f13b32df78a7df54480e565d15bcf6e71ef9d53d8",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_22.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_22.jsonl.gz",
+    "source_sha256": "b8bdac87d592c2de9c9c308b1089ce89cd3e1bdcf118152ab816d7919a0fe5c2",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_23.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_23.jsonl.gz",
+    "source_sha256": "62b404f134307fb28b2566d2442bf9f346d494cb8f9b0c2b2b68aad3b2852d1c",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_24.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_24.jsonl.gz",
+    "source_sha256": "46592f5e9bdb4e8a886ba5ac0251f0710706ec07b1b89669355fe1aa78f25d34",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_25.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_25.jsonl.gz",
+    "source_sha256": "a66eec14341a27fb533cff990c23cb38f833970c34542e3273100ec1892bad66",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_26.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_26.jsonl.gz",
+    "source_sha256": "0b69ce77ea3849c54428fa7effa24493587b7a3e576285e92f55a5bbd751a90d",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_27.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_27.jsonl.gz",
+    "source_sha256": "fc8f7435cabcc8efbae462db00f2ae934d2d8d2a78ffc17c9c3d772f0cb5b05c",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_28.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_28.jsonl.gz",
+    "source_sha256": "573194338a3a3538749cb0b90261a6bc6a51db3d1c26e32be744b0f07ba62fb0",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_29.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_29.jsonl.gz",
+    "source_sha256": "89f982da22417746b233269f51683e8f1ab0d7ad81436c683b2878d3e26600e8",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/S/cohort_30.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/S/cohort_30.jsonl.gz",
+    "source_sha256": "863628928138885404da8ed52960f5ce05d238f536d9b36e61a4ce5bb8fbd623",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_01.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_01.jsonl.gz",
+    "source_sha256": "356740f89fd0881a11cf883d4d5a5c1b9b576de4af4594764aa6033e7e17add5",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_02.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_02.jsonl.gz",
+    "source_sha256": "04a1d2818afe73130c7ac7fff619696be2a71f8af888f632b75dd98b1c04557d",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_03.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_03.jsonl.gz",
+    "source_sha256": "1f0bc2dda5241a5edc7f08c96ad64420940c05309c892211b3f8e50640d6b5ef",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_04.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_04.jsonl.gz",
+    "source_sha256": "e4d95e647c269b4b9e0ab885cd65d1f71841c9da2ae0eacf4ab69d3553a318bb",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_05.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_05.jsonl.gz",
+    "source_sha256": "91dffe085e1cbafca74b13976f4916370c7f22e0002e0125acb61c02afbe550a",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_06.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_06.jsonl.gz",
+    "source_sha256": "c9e174521c28a585b9c5ab38c4d45984dbece1e5782626ac7659b228d7fca224",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_07.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_07.jsonl.gz",
+    "source_sha256": "3b9459a7062103ed8d111ae3259973afeb606f956ab184dc93c13e6f4c9cdaa9",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_08.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_08.jsonl.gz",
+    "source_sha256": "c021ff84c75c4e3ed1bc2d04fd9b12e1c889cdc8364e878082e7a3a69d489fdd",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_09.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_09.jsonl.gz",
+    "source_sha256": "a220bff0f84f6373e80a0a327aec9f6ab511d9892776eab4a8258df01caf1357",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_10.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_10.jsonl.gz",
+    "source_sha256": "b8c064550d9ba9180219cf68f120f28d415facfd952fdd9f103b9020bdcc3ceb",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_11.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_11.jsonl.gz",
+    "source_sha256": "67130f70a140cd58d8cab0a84517cef8e026a9b0be02d1e986339def0fe7d284",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_12.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_12.jsonl.gz",
+    "source_sha256": "dc34e660c85533ddf4686b3c32338fde172e4aba5abe0fdf0648d24fc479b4ea",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_13.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_13.jsonl.gz",
+    "source_sha256": "466218d829ae0943859559cf139b4cdd1480dbd8475b9a6176e41381d88bbde4",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_14.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_14.jsonl.gz",
+    "source_sha256": "78f3b9c7f7b4dec36d4810d9379d6c043f69676e367c3e87a75fb2c9c8fd1859",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_15.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_15.jsonl.gz",
+    "source_sha256": "a7e83584f092dd2dabcef9eb24c362a006a7a0e5dff8a1cf2e5da79cc34bcf9b",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_16.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_16.jsonl.gz",
+    "source_sha256": "ee116489426989df0a01a7cf2f505b42b74ae35edc0b553e71690a8a15941247",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_17.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_17.jsonl.gz",
+    "source_sha256": "e25f89364b972a5f04174525d732f1b1b3ea55b038e1d76990dd885d0b6dc66b",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_18.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_18.jsonl.gz",
+    "source_sha256": "e661631dea5a452c0c5c739f986a80c73572b2bd5172abea282fa1165692bf18",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_19.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_19.jsonl.gz",
+    "source_sha256": "cc411e6c9e89239acbd9cf304b461b1dd6ad33c58df5b141f54c724ba1222a67",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_20.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_20.jsonl.gz",
+    "source_sha256": "1dc1a02a7efe87c6628b30435427c43d8f3dd326b660521ec26d8c5f3e39cc48",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_21.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_21.jsonl.gz",
+    "source_sha256": "70a1ec68234ea6a709a7447af29b9964985c168c96a7fa2f53f5f4bd5bd9a32f",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_22.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_22.jsonl.gz",
+    "source_sha256": "0c338e0cdceb3efe422609aaba3bbfa47e8122ba083f264a92c3f27a9b8e4240",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_23.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_23.jsonl.gz",
+    "source_sha256": "c82f45a7e4aecd42496782ce0c37ad343cb5a04b2164bdd278bcb958e0418003",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_24.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_24.jsonl.gz",
+    "source_sha256": "0d8e0628ef2f93ef006cf67daa2de5140f04167f0e4085233bf10ab327acd93f",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_25.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_25.jsonl.gz",
+    "source_sha256": "31536f44c712df2d0cc9905c99f6d5def21fa7151c7b65f11fa06c925e4f2d28",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_26.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_26.jsonl.gz",
+    "source_sha256": "fe0c73fa0cf72c1765ae45ff4127dcb1bfee768b15918279f19b6e34cf7dcd52",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_27.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_27.jsonl.gz",
+    "source_sha256": "a7c531e13cbee868ba6716cd478d5e708bace701141baa48ab8abfbed4d1c8a5",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_28.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_28.jsonl.gz",
+    "source_sha256": "554f16df1b60da3f6bcf104641172845fc08876aa400413ca27ef774e60fa626",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_29.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_29.jsonl.gz",
+    "source_sha256": "b0013a60a663334355355b70828ef1909247de321b7ccd00038953a808e17b32",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/cohorts/W/cohort_30.jsonl",
+    "package_path": "artifact_data/rq2/main/cohorts/W/cohort_30.jsonl.gz",
+    "source_sha256": "30353b2019da2f55d4880c5bee571aba6d579fbc9baa3a3d5d0643d8b8d79a81",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/scripts/build_random_conditioned_skeleton_ablation.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/scripts/build_random_conditioned_skeleton_ablation.py",
+    "source_sha256": "2b3d0ed1cfba926b098b44cd4b0253bf7bdc47c74b63494ce74a353a3be2a287",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/scripts/build_within_report_skeleton_ablation.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/scripts/build_within_report_skeleton_ablation.py",
+    "source_sha256": "85a7df0d83c98922ac7ef34ce20659108d9e27d8b683aa5158829f60a171cfe7",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/scripts/rq2_current_inputs.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/scripts/rq2_current_inputs.py",
+    "source_sha256": "4531804641dfb3c9aa20dbc6960b64bd9e1d75e5a370a4df3cac647ddee81049",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/__init__.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/cli/__init__.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/cli/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/cli/run_stage3.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/cli/run_stage3.py",
+    "source_sha256": "c4c72da6b551cf07ba30eb81e30679a769fd578cdc74a885893700f6d7e061bb",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/common/__init__.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/common/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/common/config.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/common/config.py",
+    "source_sha256": "b412ac1afb0500825cc206904cfe6d2b636eec93db07566a6d47403f953b4a02",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/common/io_utils.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/common/io_utils.py",
+    "source_sha256": "dcb320bd7c6b6a19058218c6c29e5566876999eeee46296fac7585e5f6848b03",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/common/jsonl_utils.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/common/jsonl_utils.py",
+    "source_sha256": "c5796047b72159585cb54a7f9167955b19db72e7da9b4de191bae6bbbebb9463",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/common/text_utils.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/common/text_utils.py",
+    "source_sha256": "601b100844b3ce15f023834b23193033d39332273d6e6cc75912c2dfa815a2dc",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/llm/__init__.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/llm/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/llm/model_client.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/llm/model_client.py",
+    "source_sha256": "dcd530bbf10fdd57e3ba182ac31219deac5fa3699c7bcde83d11a1f90165a40a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/stage2/__init__.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/stage2/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/stage2/build_fragment_corpus.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/stage2/build_fragment_corpus.py",
+    "source_sha256": "a9c99b935d710d2be58006cf337108ae331bd9c4706a4a317a06d5e1ccb067e0",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/stage2/common.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/stage2/common.py",
+    "source_sha256": "319bc8058ed9a14eb64709d12fab97062e75f47df5b5e9d949d994e46c3a6729",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/stage2/documentation_example_review.json",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/stage2/documentation_example_review.json",
+    "source_sha256": "abd555b5e53786309db542c988749958926c81ef1b8489ffbcc609f59c05f941",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/stage2/feature_selection.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/stage2/feature_selection.py",
+    "source_sha256": "7b10ec67728a3956d9898f191e1b84aea797867e6eb491d8fdc7ebd419005a06",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/stage2/fragment_policy.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/stage2/fragment_policy.py",
+    "source_sha256": "23afcbf8c1a43779288f3f96aa430b3b8b2dd05000f15e015ce48d81fb054589",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/stage2/group_fragments.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/stage2/group_fragments.py",
+    "source_sha256": "3e66d3387f14e637b1084e1b82698a995924175cbc7fb19ece069ab312f685c8",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/stage2/retrieval_query_builder.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/stage2/retrieval_query_builder.py",
+    "source_sha256": "3b19e39944f7d3bd9a90b9e575933e2c25fbee8118e2b670d50bc38f3637624c",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/stage2/retriever.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/stage2/retriever.py",
+    "source_sha256": "47e27464da8ded0f53d93da0e2d531a72c66dd269296de6a0625681556ddecf6",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/stage3/__init__.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/stage3/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/stage3/instantiate_cases.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/stage3/instantiate_cases.py",
+    "source_sha256": "9f46ee4981d254f90a72476056d71c8f959f98f10605b6046ce44731bef8d235",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/stage3/postprocess_cases.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/stage3/postprocess_cases.py",
+    "source_sha256": "8cf4bd1b559524ea602a2997d4e0a231bf04f064696747600b42a5dbed9174d5",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/stage3/quality_gates.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/stage3/quality_gates.py",
+    "source_sha256": "d96a729cd3072146dcb11736c618efb4070c61077aecdd78192b2f2b2de60f63",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/code_snapshot/src/stage3/validate_queries.py",
+    "package_path": "artifact_data/rq2/main/code_snapshot/src/stage3/validate_queries.py",
+    "source_sha256": "ede280cfaa0f0fe97932030f081076d9d5425bf45374504a9747f1597ca99e69",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_paired_30x1000_20261014/final_verification.json",
+    "package_path": "artifact_data/rq2/main/archived_final_verification.json",
+    "source_sha256": "80e688c8f45bca9b9833771e94526ab2028f0ae4505fde62f6f0bce0c00aa59e",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/results.json",
+    "package_path": "artifact_data/rq2/4features/results.json",
+    "source_sha256": "f0f5123973d5ba7ff6a40562243ac35f7f38e86c6d92c105c82b37c21fca30cd",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/cohorts/S/cohort_01.jsonl",
+    "package_path": "artifact_data/rq2/4features/cohorts/S/cohort_01.jsonl.gz",
+    "source_sha256": "8028e8b73b5da4ac3a692c06324f65439f9f7f9f04fc78a730de7cd28612e96e",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/cohorts/S/cohort_02.jsonl",
+    "package_path": "artifact_data/rq2/4features/cohorts/S/cohort_02.jsonl.gz",
+    "source_sha256": "f66676f0f7593ece86d97efc9d85bea05e5e314ccb96fa07f93604061e6e4060",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/cohorts/S/cohort_03.jsonl",
+    "package_path": "artifact_data/rq2/4features/cohorts/S/cohort_03.jsonl.gz",
+    "source_sha256": "f59ec065c0ce5ca0bd1e2d12d95894803f905c990954c766b1720767309473c9",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/cohorts/S/cohort_04.jsonl",
+    "package_path": "artifact_data/rq2/4features/cohorts/S/cohort_04.jsonl.gz",
+    "source_sha256": "3c5bd3cc1e9316eee922f1ca8e73cf7a78ab830be7401eefc05e9bbdccfcc952",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/cohorts/S/cohort_05.jsonl",
+    "package_path": "artifact_data/rq2/4features/cohorts/S/cohort_05.jsonl.gz",
+    "source_sha256": "d27317faa88d285f86e96d2c3f3ad7d1665ac486569ea16c9227555210b1b57c",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/cohorts/W/cohort_01.jsonl",
+    "package_path": "artifact_data/rq2/4features/cohorts/W/cohort_01.jsonl.gz",
+    "source_sha256": "daa0fcef82107e78ea1af808ab2a39027220081366a4688a0256dfa9450d6fd9",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/cohorts/W/cohort_02.jsonl",
+    "package_path": "artifact_data/rq2/4features/cohorts/W/cohort_02.jsonl.gz",
+    "source_sha256": "96a0c648d7d10c5e112abafd9a18f585a4fccee7bd20fc13a5570d73bbc2677e",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/cohorts/W/cohort_03.jsonl",
+    "package_path": "artifact_data/rq2/4features/cohorts/W/cohort_03.jsonl.gz",
+    "source_sha256": "8a485c28e3bcdc29ac8d85efe44bb3d0533f5ab2df18769068ed2ac9c40a60c1",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/cohorts/W/cohort_04.jsonl",
+    "package_path": "artifact_data/rq2/4features/cohorts/W/cohort_04.jsonl.gz",
+    "source_sha256": "75787190b086e268ef0655bd4622b66db1bfc0873fd88aa03440e78bcf06ce88",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/cohorts/W/cohort_05.jsonl",
+    "package_path": "artifact_data/rq2/4features/cohorts/W/cohort_05.jsonl.gz",
+    "source_sha256": "8d6428cee589cad1d0c7ae2a69ed588e955901292016a0486a0ac1743b945ba0",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/scripts/build_random_conditioned_skeleton_ablation.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/scripts/build_random_conditioned_skeleton_ablation.py",
+    "source_sha256": "2b3d0ed1cfba926b098b44cd4b0253bf7bdc47c74b63494ce74a353a3be2a287",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/scripts/build_within_report_skeleton_ablation.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/scripts/build_within_report_skeleton_ablation.py",
+    "source_sha256": "85a7df0d83c98922ac7ef34ce20659108d9e27d8b683aa5158829f60a171cfe7",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/scripts/rq2_current_inputs.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/scripts/rq2_current_inputs.py",
+    "source_sha256": "4531804641dfb3c9aa20dbc6960b64bd9e1d75e5a370a4df3cac647ddee81049",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/__init__.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/cli/__init__.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/cli/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/cli/run_stage3.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/cli/run_stage3.py",
+    "source_sha256": "c4c72da6b551cf07ba30eb81e30679a769fd578cdc74a885893700f6d7e061bb",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/common/__init__.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/common/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/common/config.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/common/config.py",
+    "source_sha256": "b412ac1afb0500825cc206904cfe6d2b636eec93db07566a6d47403f953b4a02",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/common/io_utils.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/common/io_utils.py",
+    "source_sha256": "dcb320bd7c6b6a19058218c6c29e5566876999eeee46296fac7585e5f6848b03",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/common/jsonl_utils.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/common/jsonl_utils.py",
+    "source_sha256": "c5796047b72159585cb54a7f9167955b19db72e7da9b4de191bae6bbbebb9463",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/common/text_utils.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/common/text_utils.py",
+    "source_sha256": "601b100844b3ce15f023834b23193033d39332273d6e6cc75912c2dfa815a2dc",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/llm/__init__.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/llm/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/llm/model_client.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/llm/model_client.py",
+    "source_sha256": "dcd530bbf10fdd57e3ba182ac31219deac5fa3699c7bcde83d11a1f90165a40a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/stage2/__init__.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/stage2/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/stage2/build_fragment_corpus.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/stage2/build_fragment_corpus.py",
+    "source_sha256": "a9c99b935d710d2be58006cf337108ae331bd9c4706a4a317a06d5e1ccb067e0",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/stage2/common.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/stage2/common.py",
+    "source_sha256": "319bc8058ed9a14eb64709d12fab97062e75f47df5b5e9d949d994e46c3a6729",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/stage2/documentation_example_review.json",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/stage2/documentation_example_review.json",
+    "source_sha256": "abd555b5e53786309db542c988749958926c81ef1b8489ffbcc609f59c05f941",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/stage2/feature_selection.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/stage2/feature_selection.py",
+    "source_sha256": "7b10ec67728a3956d9898f191e1b84aea797867e6eb491d8fdc7ebd419005a06",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/stage2/fragment_policy.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/stage2/fragment_policy.py",
+    "source_sha256": "23afcbf8c1a43779288f3f96aa430b3b8b2dd05000f15e015ce48d81fb054589",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/stage2/group_fragments.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/stage2/group_fragments.py",
+    "source_sha256": "3e66d3387f14e637b1084e1b82698a995924175cbc7fb19ece069ab312f685c8",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/stage2/retrieval_query_builder.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/stage2/retrieval_query_builder.py",
+    "source_sha256": "3b19e39944f7d3bd9a90b9e575933e2c25fbee8118e2b670d50bc38f3637624c",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/stage2/retriever.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/stage2/retriever.py",
+    "source_sha256": "47e27464da8ded0f53d93da0e2d531a72c66dd269296de6a0625681556ddecf6",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/stage3/__init__.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/stage3/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/stage3/instantiate_cases.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/stage3/instantiate_cases.py",
+    "source_sha256": "9f46ee4981d254f90a72476056d71c8f959f98f10605b6046ce44731bef8d235",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/stage3/postprocess_cases.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/stage3/postprocess_cases.py",
+    "source_sha256": "8cf4bd1b559524ea602a2997d4e0a231bf04f064696747600b42a5dbed9174d5",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/stage3/quality_gates.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/stage3/quality_gates.py",
+    "source_sha256": "d96a729cd3072146dcb11736c618efb4070c61077aecdd78192b2f2b2de60f63",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/code_snapshot/src/stage3/validate_queries.py",
+    "package_path": "artifact_data/rq2/4features/code_snapshot/src/stage3/validate_queries.py",
+    "source_sha256": "ede280cfaa0f0fe97932030f081076d9d5425bf45374504a9747f1597ca99e69",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_4features_5000_20261015/verification.json",
+    "package_path": "artifact_data/rq2/4features/archived_verification.json",
+    "source_sha256": "99f4a973275e9e598b66b061074d5eb3ab9a07df8785cad671f208b4cae5c0a0",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/results.json",
+    "package_path": "artifact_data/rq2/5features/results.json",
+    "source_sha256": "b1b6a1d69a39614b33d4b1f131fd8769d5dbdde5be72c3ccec375c10b1a039e1",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/cohorts/S/cohort_01.jsonl",
+    "package_path": "artifact_data/rq2/5features/cohorts/S/cohort_01.jsonl.gz",
+    "source_sha256": "0be9a452676032b8b16c0a2adf5e0d115ad30edcd0d284d2455d9eca1690e349",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/cohorts/S/cohort_02.jsonl",
+    "package_path": "artifact_data/rq2/5features/cohorts/S/cohort_02.jsonl.gz",
+    "source_sha256": "53f8d96e1ffa0d5fc2f031edd3cc53d2950b5166743ef2f5d78d532d10a43d2c",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/cohorts/S/cohort_03.jsonl",
+    "package_path": "artifact_data/rq2/5features/cohorts/S/cohort_03.jsonl.gz",
+    "source_sha256": "cf8e777e8bf246675e0bfbb1b5564e65d1b45cdf3a463b0fdf4e8033b29a894e",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/cohorts/S/cohort_04.jsonl",
+    "package_path": "artifact_data/rq2/5features/cohorts/S/cohort_04.jsonl.gz",
+    "source_sha256": "4abd74fdc71d64d858e91f534240f3c0a31aabf349790b6faace568f01b6fa6d",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/cohorts/S/cohort_05.jsonl",
+    "package_path": "artifact_data/rq2/5features/cohorts/S/cohort_05.jsonl.gz",
+    "source_sha256": "70cd2ee785ad30b3f98fdfb9180c97e548a97adbc46c3c30a0958a6f7f6bd4f7",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/cohorts/W/cohort_01.jsonl",
+    "package_path": "artifact_data/rq2/5features/cohorts/W/cohort_01.jsonl.gz",
+    "source_sha256": "e252f5d3bb7bfb2c08ae7beaeeaffe1fab8871b5dbedf356da7ee9f6e3055071",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/cohorts/W/cohort_02.jsonl",
+    "package_path": "artifact_data/rq2/5features/cohorts/W/cohort_02.jsonl.gz",
+    "source_sha256": "8aef41cb7d9395da02d4c32cd9af727ed661fd965341a0c6755c982a5379ce74",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/cohorts/W/cohort_03.jsonl",
+    "package_path": "artifact_data/rq2/5features/cohorts/W/cohort_03.jsonl.gz",
+    "source_sha256": "59d132978011d37aa8e67bb771bbcf58248f7e87881204835bf28f80d94cf916",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/cohorts/W/cohort_04.jsonl",
+    "package_path": "artifact_data/rq2/5features/cohorts/W/cohort_04.jsonl.gz",
+    "source_sha256": "91eed18e809955e331f6eeba9bf42badcab706e81e800598857323d3e1634537",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/cohorts/W/cohort_05.jsonl",
+    "package_path": "artifact_data/rq2/5features/cohorts/W/cohort_05.jsonl.gz",
+    "source_sha256": "9bc13768b7857a006f66f50775335be54befc9c05d517f7dcc2a04e3b4ff6c3a",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/scripts/build_random_conditioned_skeleton_ablation.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/scripts/build_random_conditioned_skeleton_ablation.py",
+    "source_sha256": "2b3d0ed1cfba926b098b44cd4b0253bf7bdc47c74b63494ce74a353a3be2a287",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/scripts/build_within_report_skeleton_ablation.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/scripts/build_within_report_skeleton_ablation.py",
+    "source_sha256": "85a7df0d83c98922ac7ef34ce20659108d9e27d8b683aa5158829f60a171cfe7",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/scripts/rq2_current_inputs.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/scripts/rq2_current_inputs.py",
+    "source_sha256": "4531804641dfb3c9aa20dbc6960b64bd9e1d75e5a370a4df3cac647ddee81049",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/__init__.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/cli/__init__.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/cli/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/cli/run_stage3.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/cli/run_stage3.py",
+    "source_sha256": "c4c72da6b551cf07ba30eb81e30679a769fd578cdc74a885893700f6d7e061bb",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/common/__init__.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/common/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/common/config.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/common/config.py",
+    "source_sha256": "b412ac1afb0500825cc206904cfe6d2b636eec93db07566a6d47403f953b4a02",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/common/io_utils.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/common/io_utils.py",
+    "source_sha256": "dcb320bd7c6b6a19058218c6c29e5566876999eeee46296fac7585e5f6848b03",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/common/jsonl_utils.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/common/jsonl_utils.py",
+    "source_sha256": "c5796047b72159585cb54a7f9167955b19db72e7da9b4de191bae6bbbebb9463",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/common/text_utils.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/common/text_utils.py",
+    "source_sha256": "601b100844b3ce15f023834b23193033d39332273d6e6cc75912c2dfa815a2dc",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/llm/__init__.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/llm/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/llm/model_client.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/llm/model_client.py",
+    "source_sha256": "dcd530bbf10fdd57e3ba182ac31219deac5fa3699c7bcde83d11a1f90165a40a",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/stage2/__init__.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/stage2/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/stage2/build_fragment_corpus.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/stage2/build_fragment_corpus.py",
+    "source_sha256": "a9c99b935d710d2be58006cf337108ae331bd9c4706a4a317a06d5e1ccb067e0",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/stage2/common.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/stage2/common.py",
+    "source_sha256": "319bc8058ed9a14eb64709d12fab97062e75f47df5b5e9d949d994e46c3a6729",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/stage2/documentation_example_review.json",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/stage2/documentation_example_review.json",
+    "source_sha256": "abd555b5e53786309db542c988749958926c81ef1b8489ffbcc609f59c05f941",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/stage2/feature_selection.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/stage2/feature_selection.py",
+    "source_sha256": "7b10ec67728a3956d9898f191e1b84aea797867e6eb491d8fdc7ebd419005a06",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/stage2/fragment_policy.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/stage2/fragment_policy.py",
+    "source_sha256": "23afcbf8c1a43779288f3f96aa430b3b8b2dd05000f15e015ce48d81fb054589",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/stage2/group_fragments.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/stage2/group_fragments.py",
+    "source_sha256": "3e66d3387f14e637b1084e1b82698a995924175cbc7fb19ece069ab312f685c8",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/stage2/retrieval_query_builder.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/stage2/retrieval_query_builder.py",
+    "source_sha256": "3b19e39944f7d3bd9a90b9e575933e2c25fbee8118e2b670d50bc38f3637624c",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/stage2/retriever.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/stage2/retriever.py",
+    "source_sha256": "47e27464da8ded0f53d93da0e2d531a72c66dd269296de6a0625681556ddecf6",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/stage3/__init__.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/stage3/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/stage3/instantiate_cases.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/stage3/instantiate_cases.py",
+    "source_sha256": "9f46ee4981d254f90a72476056d71c8f959f98f10605b6046ce44731bef8d235",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/stage3/postprocess_cases.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/stage3/postprocess_cases.py",
+    "source_sha256": "8cf4bd1b559524ea602a2997d4e0a231bf04f064696747600b42a5dbed9174d5",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/stage3/quality_gates.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/stage3/quality_gates.py",
+    "source_sha256": "d96a729cd3072146dcb11736c618efb4070c61077aecdd78192b2f2b2de60f63",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/code_snapshot/src/stage3/validate_queries.py",
+    "package_path": "artifact_data/rq2/5features/code_snapshot/src/stage3/validate_queries.py",
+    "source_sha256": "ede280cfaa0f0fe97932030f081076d9d5425bf45374504a9747f1597ca99e69",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/ablation_runs/rq2_ws_5features_5000_20261015/verification.json",
+    "package_path": "artifact_data/rq2/5features/archived_verification.json",
+    "source_sha256": "69bd9f152e37f92424df601690e5dd74f01c02919857608cbfac49af6416b321",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/repeated_query_diversity_30x1000_20261011/baseline_samples.jsonl",
+    "package_path": "artifact_data/rq3/baseline_samples.jsonl.gz",
+    "source_sha256": "3076661e3953fe43f33ab178b8dc816da8800c55bfab15e48d20100bcc4bf220",
+    "gzip": true
+  },
+  {
+    "source_workspace_path": "data/repeated_query_diversity_30x1000_20261011/baseline_metrics/summary.json",
+    "package_path": "artifact_data/rq3/summary.json",
+    "source_sha256": "dd0ada6686a8e5133d4a5eda65427e8d95fc72add323fb9eaf215e33fff387b0",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/repeated_query_diversity_30x1000_20261011/mannwhitney_cliffs_delta_20261013.json",
+    "package_path": "artifact_data/rq3/mannwhitney_cliffs_delta.json",
+    "source_sha256": "767daac210d1b1d5a866eecfcdda46e1370b0926430a949d70f708298d128207",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/repeated_query_diversity_30x1000_20261011/baseline_samples_manifest.json",
+    "package_path": "artifact_data/rq3/archived_sampling_manifest.json",
+    "source_sha256": "09317caf24e6444362dd634c6852f6b398318cefbda9b25796501ec41164a3aa",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "data/repeated_query_diversity_30x1000_20261011/verification.json",
+    "package_path": "artifact_data/rq3/archived_verification.json",
+    "source_sha256": "4b6952624c963df4f6fd5d49e3ff8bd72a7b67db9ab945031029a42960e84865",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "paper/coverage_curves/memgraph_line_coverage_timeseries_available_2026-08-11.csv",
+    "package_path": "paper/coverage_curves/memgraph_line_coverage_timeseries_available_2026-08-11.csv",
+    "source_sha256": "9db8480c549000e78994c46d29eb9ea91fd1f81864053c0c28ac51ed345652b4",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "paper/coverage_curves/neo4j_line_coverage_timeseries_available_2026-08-11.csv",
+    "package_path": "paper/coverage_curves/neo4j_line_coverage_timeseries_available_2026-08-11.csv",
+    "source_sha256": "f594c8485ca2dd329291f2380bea9ef01de3b18d9e1ec340b18fa83edd4c3c0f",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "docs/artifact/BASELINES-mainline.md",
+    "package_path": "docs/BASELINES.md",
+    "source_sha256": "bbf42b9d5f692bec2ad927e7c2bbddc1ab0dbc6e6a3e984054eb1a557a05e115",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "paper/fixed_baseline_versions.md",
+    "package_path": "paper/fixed_baseline_versions.md",
+    "source_sha256": "fa939bcd0bf961f6641cc2a339c1f161992e363a2958f215dda6c65ecfdec999",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "paper/baseline_expansion_matrix.md",
+    "package_path": "paper/baseline_expansion_matrix.md",
+    "source_sha256": "8ada7ee1d9ede991812a891d40a62ea8121f207d4acbdd2ea665779ed0e96873",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "paper/external_baseline_artifacts.md",
+    "package_path": "paper/external_baseline_artifacts.md",
+    "source_sha256": "bc4c774efbeed861eebcb4c1c2cbeebcb0a580eff80dcbaccf942f20175212f2",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "paper/evaluation_data_audit_20261010/baseline_family_correspondence/evidence_excerpt.json",
+    "package_path": "paper/evaluation_data_audit_20261010/baseline_family_correspondence/evidence_excerpt.json",
+    "source_sha256": "8294d2d678fff5d17ce0ff32c1e81433d9909bd6ba0e2a72a70c57991c5257a0",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "paper/evaluation_data_audit_20261010/baseline_family_correspondence/mapping.csv",
+    "package_path": "paper/evaluation_data_audit_20261010/baseline_family_correspondence/mapping.csv",
+    "source_sha256": "33e6f052560201635d341fafede933ec9ecc168fbfbec143db50c8fe60ef5990",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "paper/evaluation_data_audit_20261010/baseline_family_correspondence/source_manifest.json",
+    "package_path": "paper/evaluation_data_audit_20261010/baseline_family_correspondence/source_manifest.json",
+    "source_sha256": "0ccef1ce0382232b3a168e5b232889207c92e609fe5c785b2ff5af9acb049173",
+    "gzip": false
+  },
+  {
+    "source_workspace_path": "C:/Users/Administrator/Downloads/HistDB (1).pdf",
+    "package_path": "paper/HistDB.pdf",
+    "source_sha256": "2fb476769cbdcad882ddbe9b94e88f821360e0a73ccbc09b948dd9a59b379508",
+    "gzip": false
+  }
+]

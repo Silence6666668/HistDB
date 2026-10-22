@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_1649f89b26d2",
+  "skeleton_text": "MATCH (me:HOLE_LABEL_0 {name:HOLE_LABEL_1})-[:HOLE_LABEL_2*HOLE_NUM_0]-(friendOfFriend:HOLE_LABEL_3) WHERE NOT (me)-[:HOLE_LABEL_4]-(friendOfFriend) AND me <> friendOfFriend RETURN friendOfFriend.HOLE_PROP_0 as suggestedFriend, count(friendOfFriend) as friendsInCommon ORDER BY friendsInCommon DESC",
+  "source_id": "RedisGraph/RedisGraph#1559",
+  "source_query_id": "RedisGraph__RedisGraph__1559__q010",
+  "holes": []
+}

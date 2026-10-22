@@ -1,0 +1,90 @@
+[
+  {
+    "feature_id": "ft_c2797b97fe2d",
+    "machine_name": "merge_on_match_set_nested_property",
+    "description": "MERGE with ON MATCH SET clause updating a nested property (dot notation) on a matched node",
+    "tags": [
+      "merge",
+      "on_match",
+      "set",
+      "nested_property",
+      "dot_notation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_92d62e24626e",
+    "machine_name": "merge_relationship_after_cleanup",
+    "description": "MERGE creates a relationship after deleting old ones, testing relationship replacement semantics.",
+    "tags": [
+      "merge",
+      "relationship_creation",
+      "sequence"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_80da2ff8c58e",
+    "machine_name": "create_node_with_label",
+    "description": "Creates a node with a specific label, testing label assignment and node creation.",
+    "tags": [
+      "write",
+      "node_creation",
+      "label"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_238dcf57972f",
+    "machine_name": "single_node_match",
+    "description": "Match any single node without constraints or labels.",
+    "tags": [
+      "match",
+      "node",
+      "no_label",
+      "limit"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_f8f8922ad696",
+    "machine_name": "match_create_relationship",
+    "description": "Creates a relationship from a matched node to a newly created node with properties",
+    "tags": [
+      "write",
+      "relationship_creation",
+      "node_creation",
+      "property_assignment"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_76391f5c1d1a",
+    "machine_name": "empty_node_creation",
+    "description": "Create a node with no labels or properties.",
+    "tags": [
+      "write",
+      "node_creation",
+      "empty"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]

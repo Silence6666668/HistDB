@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_63decfb8ad75",
+  "skeleton_text": "MATCH (employee:HOLE_LABEL_0)-[:HOLE_LABEL_1]->(p) WITH employee, p CALL { WITH employee, p MATCH (employee)-[r:HOLE_LABEL_2]->(p) DELETE r RETURN count(r) AS deleted } RETURN employee.HOLE_PROP_0 AS employee_name, p.HOLE_PROP_1 AS manager_name, deleted ORDER BY employee_name",
+  "source_id": "FalkorDB/FalkorDB#1845",
+  "source_query_id": "FalkorDB__FalkorDB__1845__q002",
+  "holes": []
+}

@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_90f9d9e767e0",
+  "skeleton_text": "MERGE (t:Thing {id: $thingId})",
+  "source_id": "ArcadeData/arcadedb#3476",
+  "source_query_id": "ArcadeData__arcadedb__3476__q004",
+  "holes": []
+}

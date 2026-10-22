@@ -1,0 +1,62 @@
+[
+  {
+    "feature_id": "ft_120846577cf4",
+    "machine_name": "query_pattern_match_path_pattern_return_where",
+    "description": "该查询包含 MATCH、WHERE、RETURN 子句，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3355",
+    "source_query_id": "ArcadeData__arcadedb__3355__q001"
+  },
+  {
+    "feature_id": "ft_f45f4f428f56",
+    "machine_name": "query_pattern_match_path_pattern_return_with",
+    "description": "该查询包含 MATCH、WITH、MATCH、RETURN 子句，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#127",
+    "source_query_id": "FalkorDB__FalkorDB__127__q002"
+  },
+  {
+    "feature_id": "ft_8cb46e17d56a",
+    "machine_name": "query_pattern_match_return_where_with",
+    "description": "该查询包含 MATCH、WITH、WHERE、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "FalkorDB/FalkorDB#1316",
+    "source_query_id": "FalkorDB__FalkorDB__1316__q001"
+  },
+  {
+    "feature_id": "ft_1722484e385d",
+    "machine_name": "query_pattern_match_return_where",
+    "description": "该查询包含 MATCH、WHERE、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#2342",
+    "source_query_id": "ArcadeData__arcadedb__2342__q001"
+  },
+  {
+    "feature_id": "ft_be4916535a24",
+    "machine_name": "query_pattern_match_path_pattern_return",
+    "description": "该查询包含 MATCH、RETURN 子句，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3285",
+    "source_query_id": "ArcadeData__arcadedb__3285__q003"
+  },
+  {
+    "feature_id": "ft_7cfcdde4f4f4",
+    "machine_name": "query_pattern_return_where_with",
+    "description": "该查询包含 WITH、RETURN、WHERE 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "ArcadeData/arcadedb#3330",
+    "source_query_id": "ArcadeData__arcadedb__3330__q001"
+  }
+]

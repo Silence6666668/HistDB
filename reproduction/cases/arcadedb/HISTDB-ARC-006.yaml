@@ -1,0 +1,39 @@
+schema_version: 1
+family_id: HISTDB-ARC-006
+title: Relationship variable is lost after a variable-length MATCH
+paper_set: fixed-version-50
+dbms: arcadedb
+symptom: count(r) becomes zero after carrying r through a later traversal
+issue:
+  url: https://github.com/ArcadeData/arcadedb/issues/3999
+  status: confirmed
+  report_path: issue_reports/submitted/arcadedb/2026-4-24/arcadedb_relationship_variable_may_be_lost_after_later_variable_length_match.md
+targets:
+  buggy: {id: arcadedb-26.4.1}
+  fixed: []
+observation: {reported_version: 26.4.1-SNAPSHOT, execution_target: "arcadedata/arcadedb:26.4.1"}
+test:
+  setup:
+    - MATCH (n) DETACH DELETE n
+    - "CREATE (a:Person {name:'Alice'}), (b:Person {name:'Bob'}), (a)-[:KNOWS]->(b)"
+  query: |-
+    MATCH (a:Person {name:'Alice'})-[r:KNOWS]->(b:Person {name:'Bob'})
+    WITH a, b, r
+    MATCH path = (a)-[:KNOWS*]->(b)
+    RETURN count(r) AS rc
+  cleanup:
+    - MATCH (n) DETACH DELETE n
+oracle:
+  type: scalar_equals
+  field: rc
+  expected_buggy: 0
+  expected_correct: 1
+reproduction: {attempts: 3, timeout_sec: 10}
+provenance:
+  query_id: ArcadeData__arcadedb__3128__q002
+  case_id: case_3f08615c7a71
+  source_artifacts:
+    - issue_reports/submitted/arcadedb/2026-4-24/arcadedb_relationship_variable_may_be_lost_after_later_variable_length_match.md
+  skeleton_ids: []
+  feature_ids: []
+

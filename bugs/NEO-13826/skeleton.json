@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_15ae01831ed5",
+  "skeleton_text": "CYPHER 25 MATCH (p:Person) WHERE p.name STARTS WITH 'A' WITH p CALL (p) { MERGE (p)-[r:KNOWS]->(q:Person {name: 'Dave'}) ON CREATE SET r.since = 2020 RETURN r.since AS since } RETURN p.name, since ORDER BY p.name",
+  "source_id": "neo4j#13712",
+  "source_query_id": "",
+  "holes": []
+}

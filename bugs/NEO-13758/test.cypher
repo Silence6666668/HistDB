@@ -1,0 +1,3 @@
+RETURN 1 AS x;
+
+CYPHER x=1 RETURN 1 AS x;

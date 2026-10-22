@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_5c60d6ab0121",
+  "skeleton_text": "UNWIND [0, 4] AS unwind_var UNWIND [[0, 4, 1, 5, 2], 5, 4, [0, 'LIT2' >= 'LIT2' OR NULL <> [ ], 4, 8, 9, 2], 3] AS unwind_var MERGE (:label6)<-[:reltype4]-(node_0)<-[:reltype3]-(node_1:label3)-[:reltype1]->(node_2:label3)<-[:reltype8]-(node_2) ON CREATE SET node_2.prop7 = node_1.prop9, node_2.prop5 = node_2.prop5, node_2.prop2 = FALSE, node_1.prop6 = node_2.prop3 SET node_2.prop8 = 69070360099 RETURN DISTINCT * , node_0.prop1 , node_2.prop5 AS alias_0",
+  "source_id": "RedisGraph/RedisGraph#2970",
+  "source_query_id": "RedisGraph__RedisGraph__2970__q001",
+  "holes": []
+}

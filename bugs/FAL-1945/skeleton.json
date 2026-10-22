@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "sk_cb56c1b9e398",
+  "skeleton_text": "CREATE (HOLE_NODE_VAR:HOLE_LABEL {HOLE_PROPERTY_NAME: HOLE_PROPERTY_VALUE}) return HOLE_NODE_VAR",
+  "source_id": null,
+  "source_query_id": "ArcadeData/arcadedb#3391",
+  "holes": []
+}

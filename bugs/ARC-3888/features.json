@@ -1,0 +1,22 @@
+[
+  {
+    "feature_id": "ft_1722484e385d",
+    "machine_name": "query_pattern_match_return_where",
+    "description": "该查询包含 MATCH、WHERE、RETURN 子句。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#12675",
+    "source_query_id": "q_000059"
+  },
+  {
+    "feature_id": "ft_8272ab8bb6cc",
+    "machine_name": "query_pattern_order_by_return",
+    "description": "该查询包含 RETURN、ORDER BY 子句，带有排序逻辑。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#13091",
+    "source_query_id": "q_000213"
+  }
+]

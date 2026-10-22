@@ -1,0 +1,7 @@
+{
+  "skeleton_id": "target_derived_mem_3915",
+  "skeleton_text": "OPTIONAL MATCH nextPath = (:Person)\nCALL {\n  WITH nextPath\n  RETURN nextPath AS path\n  UNION ALL\n  WITH nextPath\n  RETURN nextPath AS path\n}\nRETURN *",
+  "source_id": "MEM-3915",
+  "source_query_id": "MEM-3915",
+  "holes": []
+}

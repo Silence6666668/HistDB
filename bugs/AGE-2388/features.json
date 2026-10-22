@@ -1,0 +1,22 @@
+[
+  {
+    "feature_id": "ft_ef4ae405376c",
+    "machine_name": "query_pattern_limit_match_pagination_return",
+    "description": "该查询包含 MATCH、RETURN、LIMIT 子句，带有分页控制。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#13045",
+    "source_query_id": "q_000190"
+  },
+  {
+    "feature_id": "ft_f623e64bafb7",
+    "machine_name": "query_pattern_limit_match_order_by_pagination",
+    "description": "该查询包含 MATCH、RETURN、ORDER BY、LIMIT 子句，带有排序逻辑，带有分页控制，包含图模式路径匹配。",
+    "tags": [],
+    "flags": {},
+    "query_instance": null,
+    "source_id": "neo4j#13380",
+    "source_query_id": "q_000413"
+  }
+]

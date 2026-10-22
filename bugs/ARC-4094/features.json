@@ -1,0 +1,86 @@
+[
+  {
+    "feature_id": "ft_7d5ddba09b71",
+    "machine_name": "simple_pattern_projection",
+    "description": "Project all matched pattern elements directly in RETURN clause",
+    "tags": [
+      "projection",
+      "return",
+      "pattern"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_54524ce1c8df",
+    "machine_name": "yield_path_from_procedure",
+    "description": "YIELD clause extracting path results from a procedure call",
+    "tags": [
+      "yield",
+      "procedure_output",
+      "path_variable"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_4b8df52ddfd6",
+    "machine_name": "large_limit_clause",
+    "description": "Uses a limit clause with a high value (100000) to test pagination and result truncation behavior.",
+    "tags": [
+      "limit",
+      "pagination",
+      "truncation"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_3ddc0b443bf2",
+    "machine_name": "path_variable_assignment",
+    "description": "Assign a path pattern to a variable for potential later use or reference.",
+    "tags": [
+      "path_variable",
+      "assignment",
+      "pattern"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_4ecf3aaefd82",
+    "machine_name": "return_all_entities",
+    "description": "Returning all matched nodes and relationships from a MERGE operation",
+    "tags": [
+      "return",
+      "entities"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  },
+  {
+    "feature_id": "ft_d0752e0b8624",
+    "machine_name": "create_with_incoming_relationship",
+    "description": "CREATE pattern with an incoming relationship direction (from right to left node)",
+    "tags": [
+      "create",
+      "relationship",
+      "direction",
+      "pattern"
+    ],
+    "flags": {},
+    "query_instance": null,
+    "source_id": null,
+    "source_query_id": null
+  }
+]
